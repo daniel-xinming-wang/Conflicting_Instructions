@@ -1,6 +1,43 @@
-# ConInstruct: Evaluating Large Language Models on Conflict Detection and Resolution in Instructions
+## vLLM Generation and Hidden-State Extraction
 
-Instruction-following is a critical capability of Large Language Models (LLMs). While existing works primarily focus on assessing how well LLMs adhere to user instructions, they often overlook scenarios where instructions contain conflicting constraints—a common occurrence in complex prompts. The behavior of LLMs under such conditions remains under-explored. To bridge this gap, we introduce ConInstruct, a benchmark specifically designed to assess LLMs’ ability to detect and resolve conflicts within user instructions. Using this dataset, we evaluate LLMs’ conflict detection performance and analyze their conflict resolution behavior. Our experiments reveal two key findings: (1) Most proprietary LLMs exhibit strong conflict detection capabilities, whereas among open-source models, only DeepSeek-R1 demonstrates similarly strong performance. DeepSeek-R1 and Claude-4.5-Sonnet achieve the highest average F1-scores at 91.5% and 87.3%, respectively, ranking first and second overall. (2) Despite their strong conflict detection abilities, LLMs rarely explicitly notify users about the conflicts or request clarification when faced with conflicting constraints. These results underscore a critical shortcoming in current LLMs and highlight an important area for future improvement when designing instruction-following LLMs. 
+`LLMs/llama_vllm.py` generates model responses with vLLM, and
+`LLMs/extract_coninstruct_hidden_states.py` extracts hidden states from the
+ConInstruct conflict-resolution prompts.
+
+### Generate Responses
+
+Run the following in a Jupyter notebook:
+
+```bash
+%%bash
+model=Qwen/Qwen3.5-9B
+
+for conflict_type_idx in 1 2 3 4 5 6 7 8 9
+do
+  VLLM_USE_FLASHINFER_SAMPLER=0 python LLMs/llama_vllm.py \
+    --model $model \
+    --cache_dir "" \
+    --task conflict_resolution \
+    --conflict_type_idx $conflict_type_idx \
+    --dtype auto \
+    --trust_remote_code
+done
+```
+
+### Extract Hidden States
+
+Run the following in a Jupyter notebook:
+
+```bash
+!python LLMs/extract_coninstruct_hidden_states.py \
+  --model Qwen/Qwen3.5-9B \
+  --cache_dir "" \
+  --torch-dtype auto \
+  --trust-remote-code \
+  --batch-size 16
+```
+
+# Below are from the original repository.
 
 ## Requirements
 
@@ -45,16 +82,4 @@ Run the following script to get the distributions of conflict resolution behavio
 
 ```bash
 sh scripts/conflict_resolution_density.sh
-```
-
-## Citation
-If you want to use this code or dataset in your research, please cite our [paper](https://arxiv.org/abs/2511.14342):
-
-```bash
-@inproceedings{he2026ConInstruct,
-  title={ConInstruct: Evaluating Large Language Models on Conflict Detection and Resolution in Instructions},
-  author={Xingwei He, and Qianru Zhang, and Pengfei Chen, and Guanhua Chen, and Linlin Yu, and Yuan Yuan, and Siu-Ming Yiu},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2026}
-}
 ```
