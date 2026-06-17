@@ -37,7 +37,7 @@ Run the following in a Jupyter notebook:
   --batch-size 16
 ```
 
-# Below are from the original repository.
+# Below are from the ConInstruct repository.
 
 ## Requirements
 
