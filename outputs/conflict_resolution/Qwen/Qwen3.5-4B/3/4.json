@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Compose an email to a conference organizer to ask about registration details. The email must include the keyword \"registration\" exactly three times and the phrase \"Could you please provide more information?\" at least once. It should provide specific details about the purpose of the inquiry, such as the dates, fees, and deadlines for registration. The email must consist of exactly three paragraphs, written in a formal tone throughout. Ensure that all sentences begin with a capital letter, and the email should include at least five uppercase words. Avoid using the keyword \"provide\" in the email.",
+    "response": "Subject: Inquiry Regarding Upcoming Conference Registration Details\n\nDear Conference Committee,\n\nI am writing to express my strong interest in attending the Annual Tech Summit scheduled for October 15th through October 17th. As I prepare to finalize my plans, I require specific details concerning the registration process, including the current fees and the strict deadline for registration. Understanding these parameters is essential for me to secure a spot before the opportunity expires.\n\nCould you please provide more information regarding any early bird discounts or group rates that might be available? I need clarity on whether the registration fees change based on the date of submission and if there are any additional costs for accommodation or meals included in the event package. Your prompt response on this matter would greatly assist me in making an informed decision.\n\nThank you for your time and assistance in clarifying these important logistics. I look forward to receiving the necessary documents and guidelines so I can complete my registration without delay. Please let me know if further documentation is required to facilitate this process.\n\nSincerely,\n\nAlex JORDAN\nSenior Analyst at GLOBAL CORP",
+    "conflicts": {
+        "Conflicts between Keyword Constraints and Phrase Constraints": {
+            "new_constraint": "Avoid using the keyword \"provide\" in the email.",
+            "org_constraint": "The phrase \"Could you please provide more information?\" must appear at least once."
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must include at least three paragraphs: an introduction explaining the purpose of the email, a detailed description of the transaction in question, and a closing paragraph requesting a prompt response. The phrase \"transaction details\" must appear exactly twice, and the phrase \"customer support\" must appear at least once. The keywords \"transaction\" and \"clarification\" must appear in the same paragraph, with no more than five words separating them. The email must be written in the first person and formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email. The total word count of the email must not exceed 200 words. The keyword \"support\" must not appear in the response.",
+    "response": "{\n  \"subject\": \"Clarification Needed on Recent Transaction\",\n  \"body\": [\n    \"I am writing to request clarification regarding a recent transaction that appeared on my account statement. I need to understand the specifics of this transaction to ensure my records are accurate.\",\n    \"The transaction details show a charge of $150.00 from an unfamiliar merchant on October 15th. I have reviewed the transaction details again but cannot identify the source of this deduction.\",\n    \"Please provide a prompt response so I can resolve this matter quickly. If further information is needed, my customer support team is available to assist with any additional verification steps.\"\n  ],\n  \"signature\": \"Sincerely, John Doe\"\n}",
+    "conflicts": {
+        "Conflicts between Keyword Constraints and Phrase Constraints": {
+            "new_constraint": "The keyword \"support\" must not appear in the response.",
+            "org_constraint": "The email must include the phrase \"customer support\" at least once."
+        }
+    }
+}

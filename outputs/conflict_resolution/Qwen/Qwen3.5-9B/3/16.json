@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "Write a response email to your employee, approving their requested vacation days. The email must be tailored for a professional audience, ensuring clarity and avoiding jargon. It should consist of exactly three paragraphs, with the first paragraph acknowledging the request, the second paragraph approving the vacation days, and the third paragraph providing any necessary follow-up instructions or reminders. Include the phrase \"We value your contributions to the team\" in the response. The letter \"e\" must appear at least 50 times throughout the email. Format the email in Markdown, including at least one level-2 header, one unordered list with at least three items, and one hyperlink formatted as [text](URL). The word \"contribution\" must appear only in its singular form.",
+    "response": "## Vacation Approval Notice\n\nDear Team Member, I am writing to formally acknowledge your recent request for scheduled vacation time. We have carefully reviewed your application and noted the specific dates you have selected for your well-deserved break. We value your contributions to the team, and ensuring you have adequate time to rest is a priority for our leadership.\n\nI am pleased to inform you that your request has been fully approved. You are authorized to take your requested leave starting next Monday and returning on the following Tuesday. Please remember that your absence will be covered by the designated backup staff members listed below:\n*   Sarah Jenkins will handle all client communications.\n*   Mike Ross will manage the ongoing project deadlines.\n*   Lisa Wong will oversee the weekly reporting schedule.\n\nBefore you depart, please ensure that all your current tasks are documented and handed over smoothly. You may find additional resources regarding remote work policies at [HR Policy Guide](https://example.com/hr-policies). We look forward to seeing you return refreshed and ready to continue your excellent work with us.",
+    "conflicts": {
+        "Conflicts between Keyword Constraints and Phrase Constraints": {
+            "new_constraint": "The word \"contribution\" must appear only in its singular form.",
+            "org_constraint": "Include the phrase \"We value your contributions to the team\" in the response."
+        }
+    }
+}

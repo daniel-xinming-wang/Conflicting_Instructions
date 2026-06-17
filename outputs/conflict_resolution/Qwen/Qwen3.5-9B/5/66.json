@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "How has the rise of social media affected mental health in adolescents? Your response must be written in the third person. Incorporate the keyword \"impact\" as a noun and \"engage\" as a verb. The response must include specific details about the psychological, social, and behavioral effects of social media, and it should be formatted in JSON with the following keys: \"introduction\" (String), \"analysis\" (Array of Strings), and \"conclusion\" (String). The \"analysis\" key must contain exactly three elements, each representing a distinct effect. The \"conclusion\" key must incude the phrase \"a pressing concern for society\". The \"introduction\" key contains at least 100 words. The response contains no more than 80 words.",
+    "response": "{\n  \"introduction\": \"The rapid proliferation of social media platforms has fundamentally altered adolescent development, creating a complex digital landscape where constant connectivity reshapes identity formation and emotional regulation. While these tools offer unprecedented opportunities for connection, they simultaneously introduce significant risks that demand careful examination by researchers, educators, and policymakers worldwide to understand the full scope of this modern phenomenon.\",\n  \"analysis\": [\n    \"Psychological effects include heightened anxiety and depression linked to social comparison.\",\n    \"Social dynamics shift as cyberbullying erodes trust and community support systems.\",\n    \"Behavioral changes manifest through sleep disruption and reduced face-to-face engagement.\"\n  ],\n  \"conclusion\": \"Understanding the impact of these platforms is a pressing concern for society.\"\n}",
+    "conflicts": {
+        "Conflicts between Length Constraints": {
+            "new_constraint": "The response contains no more than 80 words.",
+            "org_constraint": "The \"introduction\" key contains at least 100 words."
+        }
+    }
+}

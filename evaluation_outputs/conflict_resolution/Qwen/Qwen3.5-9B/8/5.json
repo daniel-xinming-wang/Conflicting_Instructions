@@ -1,0 +1,9 @@
+{
+    "Conflicts between Phrase Constraints and Content Constraints": {
+        "instruction_order": "org_new",
+        "new_constraint": "The closing paragraph must include the phrase \"There is no need to respond promptly.\"",
+        "org_constraint": "The closing paragraph must request a prompt response.",
+        "evaluation_result": "**Step 1**: \n- Instruction 1 (Request a prompt response): \"There is no need to respond promptly, but I would appreciate a timely update regarding the status of my inquiry.\"\n- Instruction 2 (Include the phrase \"There is no need to respond promptly.\"): \"There is no need to respond promptly, but I would appreciate a timely update regarding the status of my inquiry.\"\n\n**Step 2**: \nInstruction 1 requires the closing paragraph to request a prompt response. The model's closing paragraph explicitly states \"There is no need to respond promptly,\" which directly contradicts the requirement to request a prompt response.\nInstruction 2 requires the inclusion of the specific phrase \"There is no need to respond promptly.\" The model includes this exact phrase in the closing paragraph.\n\n**Step 3**: \n2"
+    },
+    "llm_response": "{\n  \"subject\": \"Clarification Needed on Recent Transaction\",\n  \"body\": [\n    \"I am writing to request clarification regarding a recent transaction that appeared on my account statement. I have reviewed the transaction details carefully but require further information to understand the charge.\",\n    \"The transaction in question occurred on October 15th for an amount of $150.00, and the transaction details do not match any recent purchases I made. I suspect this may be an error or unauthorized activity.\",\n    \"Please contact customer support to assist me in resolving this matter. There is no need to respond promptly, but I would appreciate a timely update regarding the status of my inquiry.\"\n  ],\n  \"signature\": \"Sincerely, John Doe\"\n}"
+}

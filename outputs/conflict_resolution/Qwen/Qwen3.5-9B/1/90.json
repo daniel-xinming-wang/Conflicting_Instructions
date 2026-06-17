@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "Assess the accuracy of the weather forecasting app you use daily. Consider factors including how reliably it predicts short-term and long-term weather conditions, the level of detail provided (e.g., temperature, precipitation, wind speed). Additionally, assess whether it effectively alerts you to sudden weather changes or extreme conditions. Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response. The response must contain two paragraphs. Include the phrase \"predictive reliability of forecasts\" in the first paragraph and \"unexpected weather variations\" in the second paragraph. The letter \"e\" must appear at least 20 times in the response. Finally, summarize the app's weaknesses in a bulleted list with exactly four points. Do not assess the app's ability to predict short-term weather conditions.",
+    "response": "I rely on this app daily to check the temperature, wind speed, and precipitation levels before heading out. The predictive reliability of forecasts often impresses me when I compare its data against actual conditions, yet some details remain unclear. Users frequently receive alerts for extreme conditions, but these warnings are sometimes delayed or ignored by the system.\n\nThe app struggles to handle unexpected weather variations, especially when sudden storms roll in without prior notice. Critical data is often omitted from the interface, leaving users feeling unprepared for severe shifts. While the interface looks clean, essential information is frequently hidden behind complex menus that require extra tapping.\n\n*   Alerts for sudden storms arrive too late to be useful.\n*   Detailed wind speed data is often missing from the main screen.\n*   Long-term predictions lack the necessary precision for planning.\n*   The interface hides critical information behind too many steps.",
+    "conflicts": {
+        "Conflicts between Content Constraints": {
+            "new_constraint": "Do not assess the app's ability to predict short-term weather conditions.",
+            "org_constraint": "Assess how reliably the app predicts short-term weather conditions."
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "Conflicts between Keyword Constraints and Phrase Constraints": {
+        "instruction_order": "new_org",
+        "new_constraint": "Avoid using the keyword \"forward\" in the email.",
+        "org_constraint": "Conclude the email with \"Looking forward to your response.\"",
+        "evaluation_result": "**Step 1**: \n- Instruction 1 (Keyword \"forward\"): \"I look forward to hearing from you soon.\"\n- Instruction 2 (Conclusion): \"I look forward to hearing from you soon.\"\n\n**Step 2**: \n- Instruction 1 requires the model to avoid using the keyword \"forward\". However, the model used the word \"forward\" in the final sentence. Therefore, Instruction 1 is not satisfied.\n- Instruction 2 requires the email to conclude with the specific phrase \"Looking forward to your response.\" The model concluded with \"I look forward to hearing from you soon.\" Therefore, Instruction 2 is not satisfied.\n- Since neither instruction's constraints were fully satisfied, the result is -1.\n\n**Step 3**: \n-1"
+    },
+    "llm_response": "Dear Hotel Manager, I am writing to inquire about room availability for next weekend for an upcoming business trip. Could you please provide details regarding the different room types and their corresponding pricing options? It would also be helpful if you could let me know the specific dates when a final confirmation can be sent. Thank you for your assistance in securing a suitable accommodation for my visit. I look forward to hearing from you soon."
+}

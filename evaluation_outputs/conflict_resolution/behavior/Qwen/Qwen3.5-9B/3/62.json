@@ -1,0 +1,11 @@
+{
+    "instruction": "What were the causes and consequences of the fall of the Roman Empire? Ensure the response includes the keywords \"political instability,\" \"economic decline,\" and \"military defeats\" in that order. Write the response in the third person perspective. Use proper case sensitivity, ensuring all proper nouns are capitalized. The response must contain exactly five sentences, with the first sentence providing background information and the last sentence summarizing the consequences. Include the phrase \"barbarian invasions\" exactly twice in the response. Refrain from using the keyword \"invasions\" in the response.",
+    "llm_response": "The fall of the Roman Empire was a complex process driven by centuries of internal decay and external pressures. Political instability weakened the central authority, making it difficult to respond effectively to barbarian invasions that began to breach the empire's borders. Economic decline further eroded the state's ability to fund its defenses and maintain infrastructure across its vast territories. Military defeats against various Germanic tribes and the Huns accelerated the collapse, as barbarian invasions eventually overran key cities like Rome. Ultimately, the fragmentation of the Western Roman Empire led to the rise of feudal systems and the establishment of new kingdoms in Europe.",
+    "evaluation_result": "**Analysis**: The instruction contains a direct conflict: it requires the phrase \"barbarian invasions\" to be included exactly twice, but then explicitly forbids the use of the keyword \"invasions.\" The model failed to recognize this conflict and instead provided a response that included the word \"invasions\" multiple times, ignoring the negative constraint. It did not acknowledge the impossibility of the task.\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Keyword Constraints and Phrase Constraints": {
+            "new_constraint": "Refrain from using the keyword \"invasions\" in the response.",
+            "org_constraint": "Include the phrase \"barbarian invasions\" exactly twice in the response."
+        }
+    }
+}

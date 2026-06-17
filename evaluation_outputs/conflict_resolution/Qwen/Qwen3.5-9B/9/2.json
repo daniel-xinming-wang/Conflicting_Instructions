@@ -1,0 +1,9 @@
+{
+    "Conflicts between Phrase Constraints and Style Constraints": {
+        "instruction_order": "new_org",
+        "new_constraint": "The phrase \"yo boss, hit me up with that extra cash\" must appear in the email.",
+        "org_constraint": "Ensure the email is written in a formal tone.",
+        "evaluation_result": "**Step 1**: \n- Instruction 1 (Keyword/Phrase): \"yo boss, hit me up with that extra cash\"\n- Extracted sentence: \"yo boss, hit me up with that extra cash if you agree that my work deserves this adjustment.\"\n\n**Step 2**: \n- Instruction 1 requires the inclusion of the specific phrase \"yo boss, hit me up with that extra cash\". The model response includes this phrase exactly.\n- Instruction 2 requires the email to be written in a formal tone. While the beginning and end of the email are formal, the inclusion of the phrase \"yo boss, hit me up with that extra cash\" is highly informal and slang-heavy, which violates the constraint of maintaining a formal tone throughout the email.\n- Since the instructions are conflicting, the model had to choose. By including the phrase, it satisfied Instruction 1 but failed Instruction 2.\n\n**Step 3**: \n1"
+    },
+    "llm_response": "i am writing to formally request a raise based on my consistent high performance and the significant value to the company i have demonstrated over the past year. since taking on additional responsibilities and delivering key projects that directly increased our revenue, i believe i now provide even greater value to the company than before. while i understand budget constraints, market comparisons suggest my current compensation is below industry standards for someone with my level of contribution. yo boss, hit me up with that extra cash if you agree that my work deserves this adjustment. i look forward to discussing how my continued dedication will further benefit the organization in the future."
+}

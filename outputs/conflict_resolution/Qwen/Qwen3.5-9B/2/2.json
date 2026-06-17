@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "Write a professional email in the first person to ask your boss for a raise. The email must include at least three reasons justifying the request, such as your recent achievements, increased responsibilities, or market comparisons. Ensure the email is written in a formal tone and contains exactly five sentences. The phrase \"value to the company\" must appear at least twice, and the keywords \"raise\" and \"performance\" must appear in the first and last sentences, respectively. All sentences should be written in lowercase. Avoid using the keyword \"raise\" in the email.",
+    "response": "i am writing to discuss a raise based on my consistent performance over the past year. my recent achievements have significantly increased the value to the company while taking on new responsibilities that expanded my role. market comparisons indicate that my current compensation is below industry standards for someone who delivers such value to the company. i believe adjusting my salary would better reflect my contributions and the additional workload I have managed. please let me know when we can meet to review my performance and finalize this adjustment.",
+    "conflicts": {
+        "Conflicts between Keyword Constraints": {
+            "new_constraint": "Avoid using the keyword \"raise\" in the email.",
+            "org_constraint": "The keyword \"raise\" must appear in the first sentence."
+        }
+    }
+}

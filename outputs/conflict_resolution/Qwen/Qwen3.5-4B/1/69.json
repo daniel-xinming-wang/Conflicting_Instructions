@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "How does the Big Bang theory explain the origin of the universe? Ensure the response includes the phrase \"cosmic expansion\" and provides background information on the theory's development. The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs). The \"explanation\" must contain exactly 100 words, and the \"key_terms\" must include the term \"singularity.\" Tailor the response for a layperson audience, simplifying technical jargon and providing clear explanations. Additionally, the letter \"e\" must appear at least 20 times in the response. Focus on the current state of the theory without mentioning how it evolved.",
+    "response": "{\n  \"explanation\": \"The Big Bang theory describes how the universe began from a tiny, extremely dense point called a singularity. This event happened billions of years ago and caused everything to expand rapidly. Since then, cosmic expansion has continued, making space larger and galaxies moving apart. Scientists believe all matter and energy emerged from this initial explosion. The universe was once very hot and small, then cooled down over time. Today, we see evidence like the cosmic microwave background radiation supporting this view. It explains why the universe looks the way it does now. This model helps us understand the origin of stars, planets, and life itself. We still study these ancient events to learn more about reality.\",\n  \"key_terms\": [\n    \"singularity\",\n    \"cosmic expansion\",\n    \"radiation\"\n  ],\n  \"historical_context\": {\n    \"development_origin\": \"Proposed by Georges Lema\u00eetre in 1927 based on mathematical solutions to Einstein's equations.\",\n    \"observational_support\": \"Confirmed by Edwin Hubble's observations of redshift in distant galaxies showing universal expansion.\"\n  }\n}",
+    "conflicts": {
+        "Conflicts between Content Constraints": {
+            "new_constraint": "Focus on the current state of the theory without mentioning how it evolved.",
+            "org_constraint": "The response must provide background information on the theory's development."
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "instruction": "Compose an email to a conference organizer to ask about registration details. The email must include the keyword \"registration\" exactly three times and the phrase \"Could you please provide more information?\" at least once. It should provide specific details about the purpose of the inquiry, such as the dates, fees, and deadlines for registration. The email must consist of exactly three paragraphs, written in a formal tone throughout. Ensure that all sentences begin with a capital letter, and the email should include at least five uppercase words. Ensure the email is written in an informal tone.",
+    "llm_response": "Dear Conference Team, I am writing to inquire about the upcoming tech summit scheduled for next month. I am particularly interested in understanding the specific dates, the total fees, and the strict deadlines for registration.\n\nCould you please provide more information regarding any last-minute changes or special packages available? It would be very helpful if you could clarify the exact cutoff date for online registration and whether there are any early bird discounts still active.\n\nI look forward to hearing from you soon so I can finalize my plans. Please let me know if you need any further details from my side to process the registration. Thanks again for your help!",
+    "evaluation_result": "**Analysis**: The instruction contains a direct conflict regarding the tone: it requires the email to be \"written in a formal tone throughout\" and also \"written in an informal tone.\" The model response chooses a formal tone and ignores the instruction to be informal. It does not acknowledge the conflict or ask for clarification; it simply provides a response that attempts to satisfy the other constraints (number of paragraphs, specific details, keywords, etc.).\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Style Constraints": {
+            "new_constraint": "Ensure the email is written in an informal tone.",
+            "org_constraint": "The email must be written in a formal tone throughout."
+        }
+    }
+}

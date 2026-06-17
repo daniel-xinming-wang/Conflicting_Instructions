@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Draft an email to a hotel requesting room availability for next weekend. The email must contain exactly five sentences and be written exclusively in English. Include the keywords \"room availability,\" \"next weekend,\" and \"confirmation\" in the email. Begin the email with the phrase \"Dear Hotel Manager,\" and conclude with \"Looking forward to your response.\" Tailor the email for a professional tone, ensuring it is clear and concise while avoiding overly formal or technical language. Provide a brief explanation of the purpose of the stay, such as a vacation or business trip, and request details about room types and pricing. The email must not include the purpose of the stay.",
+    "response": "Dear Hotel Manager, I am writing to inquire about room availability for next weekend. Could you please provide details regarding the different room types and their corresponding pricing? We would also appreciate a confirmation of your rates before we finalize our booking plans. Thank you for your assistance in helping us secure a suitable stay. Looking forward to your response.",
+    "conflicts": {
+        "Conflicts between Content Constraints": {
+            "new_constraint": "The email must not include the purpose of the stay.",
+            "org_constraint": "Provide a brief explanation of the purpose of the stay, such as a vacation or business trip."
+        }
+    }
+}

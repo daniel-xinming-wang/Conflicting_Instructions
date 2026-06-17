@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses. The plan must include detailed content covering a breakdown of monthly income, expenses, and savings goals, along with strategies for managing unexpected costs. Ensure the response includes the phrase \"budgeting for success\" and avoids using the words \"debt\" or \"loan.\" Tailor the response for a layperson audience, simplifying financial terminology and providing clear explanations for any technical terms. The response must be formatted in JSON with the following keys: \"Income\", \"Expenses\", \"Savings\", and \"Strategies\". Each key must have a value in the form of an object containing at least two elements. The \"Income\" key must contain at most four sentences. Use the word \"loan\" as a noun in the response.",
+    "response": "{\n  \"Income\": {\n    \"description\": \"Your monthly earnings come from your part-time job, which serves as the primary source of funds to cover your education and daily needs.\",\n    \"sources\": [\n      \"Hourly wages from your part-time employment\",\n      \"Any scholarships or grants you receive directly\"\n    ]\n  },\n  \"Expenses\": {\n    \"fixed_costs\": [\n      \"Tuition fees and mandatory school charges\",\n      \"Rent for your housing and utility bills\"\n    ],\n    \"variable_costs\": [\n      \"Groceries and personal items\",\n      \"Transportation and entertainment\"\n    ]\n  },\n  \"Savings\": {\n    \"short_term_goal\": \"Building an emergency fund to cover three months of living costs without relying on a loan.\",\n    \"long_term_goal\": \"Saving for future career opportunities or graduate school after graduation.\"\n  },\n  \"Strategies\": {\n    \"daily_habits\": \"Track every dollar you spend using a simple app to ensure you stay on track with budgeting for success.\",\n    \"unexpected_costs\": \"Keep a small cash reserve specifically for emergencies like car repairs or medical bills to avoid financial stress.\"\n  }\n}",
+    "conflicts": {
+        "Conflicts between Keyword Constraints": {
+            "new_constraint": "Use the word \"loan\" as a noun in the response.",
+            "org_constraint": "Avoid using the word \"loan.\""
+        }
+    }
+}

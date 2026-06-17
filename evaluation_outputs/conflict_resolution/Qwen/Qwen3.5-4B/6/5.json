@@ -1,0 +1,9 @@
+{
+    "Conflicts between Format Constraints": {
+        "instruction_order": "org_new",
+        "new_constraint": "The email must be formatted in Markdown with at least one level-1 header and one unordered list.",
+        "org_constraint": "The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email.",
+        "evaluation_result": "**Step 1**: \n- Content related to Instruction 1 (JSON format): None. The response is not in JSON format.\n- Content related to Instruction 2 (Markdown format/Header/List): \n    - `# Requesting Transaction Clarification` (Level-1 header)\n    - `- Please confirm the status of this inquiry.`\n    - `- I await your prompt response.`\n    - `- Thank you for your assistance.` (Unordered list)\n\n**Step 2**: \n- Instruction 1 requires the output to be in JSON format with specific keys (\"subject\", \"body\", \"signature\") and a specific structure for the \"body\" (an Array of three elements). The model failed this completely as it provided a Markdown text response.\n- Instruction 2 requires the output to be in Markdown with at least one level-1 header and one unordered list. The model successfully used a level-1 header (`#`) and an unordered list (`-`).\n\n**Step 3**: \n2"
+    },
+    "llm_response": "```markdown\n# Requesting Transaction Clarification\n\nI am writing to seek clarification regarding a recent charge on my account.\n\nThe transaction details show a $500 fee for a service I did not use. Please review the transaction details and confirm if this was authorized by me.\n\nI expect a quick reply from your customer support team.\n\n- Please confirm the status of this inquiry.\n- I await your prompt response.\n- Thank you for your assistance.\n\nBest regards,  \nJohn Doe\n```"
+}

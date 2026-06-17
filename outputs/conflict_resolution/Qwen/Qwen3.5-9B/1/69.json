@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "How does the Big Bang theory explain the origin of the universe? Ensure the response includes the phrase \"cosmic expansion\" and provides background information on the theory's development. The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs). The \"explanation\" must contain exactly 100 words, and the \"key_terms\" must include the term \"singularity.\" Tailor the response for a layperson audience, simplifying technical jargon and providing clear explanations. Additionally, the letter \"e\" must appear at least 20 times in the response. Focus on the current state of the theory without mentioning how it evolved.",
+    "response": "{\n  \"explanation\": \"The Big Bang theory explains that the universe began as an extremely hot, dense point. From this state, everything we see today started expanding outward. This cosmic expansion continues today, stretching space itself. Galaxies move away from each other, creating a vast, cooling cosmos. Scientists believe matter formed first, then atoms, stars, and planets appeared later. Light from the early universe still travels through space, helping us understand its history. The theory suggests no center exists; instead, space grows everywhere equally. It remains our best model for how everything started and keeps evolving as new data arrives.\",\n  \"key_terms\": [\n    \"singularity\",\n    \"cosmic expansion\",\n    \"observable universe\"\n  ],\n  \"historical_context\": {\n    \"early_ideas\": \"Scientists like Georges Lemaitre first proposed the idea of an expanding universe in the 1920s based on observations.\",\n    \"modern_support\": \"Later discoveries of cosmic microwave background radiation provided strong evidence supporting the current standard model.\"\n  }\n}",
+    "conflicts": {
+        "Conflicts between Content Constraints": {
+            "new_constraint": "Focus on the current state of the theory without mentioning how it evolved.",
+            "org_constraint": "The response must provide background information on the theory's development."
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "Compose an email to a conference organizer to ask about registration details. The email must include the keyword \"registration\" exactly three times and the phrase \"Could you please provide more information?\" at least once. It should provide specific details about the purpose of the inquiry, such as the dates, fees, and deadlines for registration. The email must consist of exactly three paragraphs, written in a formal tone throughout. Ensure that all sentences begin with a capital letter, and the email should include at least five uppercase words. The keyword 'registration' must appear only in its plural form ('registrations') in the email and must appear at least once.",
+    "response": "Subject: Inquiry Regarding Upcoming Conference Registrations\n\nDear Conference Committee, I am writing to seek clarification on the upcoming event scheduled for October 15th through October 17th, specifically concerning the details of our group registrations. Could you please provide more information regarding the total fees associated with these registrations and the final deadline by which all payments must be submitted?\n\nOur organization plans to send five delegates, and we require a clear breakdown of costs before we finalize our internal budget for the trip. We understand that early bird rates may apply, but we need to confirm if those discounts are still available for registrations submitted after this Friday. Please clarify the exact amount per person and any potential additional charges for materials or meals included in the standard registration package.\n\nWe appreciate your prompt response as we aim to secure our spots before the venue reaches capacity. If further documentation is needed to process our group registrations, kindly let us know immediately so we can prepare the necessary forms. Thank you for your assistance in ensuring a smooth process for all attendees.",
+    "conflicts": {
+        "Conflicts between Keyword Constraints": {
+            "new_constraint": "The keyword 'registration' must appear only in its plural form ('registrations') in the email and must appear at least once.",
+            "org_constraint": "The keyword \"registration\" must appear exactly three times."
+        }
+    }
+}

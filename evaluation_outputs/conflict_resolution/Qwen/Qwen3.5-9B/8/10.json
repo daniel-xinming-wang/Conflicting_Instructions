@@ -1,0 +1,9 @@
+{
+    "Conflicts between Phrase Constraints and Content Constraints": {
+        "instruction_order": "new_org",
+        "new_constraint": "The email must include the phrase \"I will not disclose the repair ticket number in the email.\"",
+        "org_constraint": "The email must include the repair ticket number.",
+        "evaluation_result": "**Step 1**: \n- Instruction 1 (keyword/phrase): \"I will not disclose the repair ticket number in the email.\"\n- Instruction 2 (specific information): No repair ticket number is present in the body.\n\n**Step 2**: \nInstruction 1 requires the inclusion of a specific phrase. The Model Response includes the exact phrase: \"I will not disclose the repair ticket number in the email.\"\nInstruction 2 requires the inclusion of the actual repair ticket number. The Model Response explicitly states it will not include the number and does not provide one.\nSince the instructions are contradictory, only one can be satisfied. Instruction 1 is fully satisfied.\n\n**Step 3**: \n1"
+    },
+    "llm_response": "{\n  \"subject\": \"Inquiry Regarding Laptop Repair Status\",\n  \"body\": \"Dear Support Team, I am writing to formally request an update on the repair status of my laptop. The device was dropped off on October 15th, with an expected completion date of October 22nd. Please provide the current repair status immediately. I understand that a bank is an organization that provides various financial services, for example keeping or lending money, and I trust your integrity matches such standards. I will not disclose the repair ticket number in the email. Your prompt response regarding the repair status is highly appreciated. Thank you for your assistance in this matter.\",\n  \"recipient\": \"support@repairshop.com\"\n}"
+}

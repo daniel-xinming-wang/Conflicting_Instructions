@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "How does the Big Bang theory explain the origin of the universe? Ensure the response includes the phrase \"cosmic expansion\" and provides background information on the theory's development. The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs). The \"explanation\" must contain exactly 100 words, and the \"key_terms\" must include the term \"singularity.\" Tailor the response for a layperson audience, simplifying technical jargon and providing clear explanations. Additionally, the letter \"e\" must appear at least 20 times in the response. Do not include the keyword \"expansion\" in the response.",
+    "response": "{\n  \"explanation\": \"The Big Bang theory describes how the universe began from a tiny, extremely dense point called a singularity. Scientists like Georges Lema\u00eetre first proposed this idea in the 1920s. Over time, evidence such as cosmic microwave background radiation supported the view that space itself has been stretching ever since. This process, known as cosmic expansion, means galaxies are moving away from each other. It explains why the universe is getting larger and older. The early universe was very hot and filled with energy. As it cooled, atoms formed and stars began to shine. This event marks the start of everything we see today. The theory remains the best explanation for our existence.\",\n  \"key_terms\": [\n    \"singularity\",\n    \"cosmic microwave background\",\n    \"inflation\"\n  ],\n  \"historical_context\": {\n    \"proposer\": \"Georges Lema\u00eetre\",\n    \"year\": \"1927\"\n  }\n}",
+    "conflicts": {
+        "Conflicts between Keyword Constraints and Phrase Constraints": {
+            "new_constraint": "Do not include the keyword \"expansion\" in the response.",
+            "org_constraint": "Ensure the response includes the phrase \"cosmic expansion.\""
+        }
+    }
+}

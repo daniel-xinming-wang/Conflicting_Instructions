@@ -1,0 +1,11 @@
+{
+    "instruction": "Write a professional email in the first person to ask your boss for a raise. The email must include at least three reasons justifying the request, such as your recent achievements, increased responsibilities, or market comparisons. Ensure the email is written in a formal tone and contains exactly five sentences. The phrase \"value to the company\" must appear at least twice, and the keywords \"raise\" and \"performance\" must appear in the first and last sentences, respectively. All sentences should be written in lowercase. The phrase \"value to the company\" must be included once in the email.",
+    "llm_response": "i am writing to formally request a raise based on my recent performance. since taking on additional responsibilities and delivering key projects, my value to the company has grown significantly. i believe my current contributions and market comparisons justify this increase in compensation. i am confident that my continued dedication will further enhance my value to the company in the coming year. i look forward to discussing how my performance aligns with the proposed raise.",
+    "evaluation_result": "**Analysis**: The instruction contains a direct conflict regarding the phrase \"value to the company\": one constraint requires it to appear at least twice, while another constraint requires it to be included exactly once. The model ignored this conflict and the instruction to include it only once, instead opting to include it twice (satisfying the first constraint but violating the second). Additionally, the model failed to follow the constraint regarding the placement of the keyword \"performance\" in the last sentence (it used \"performance\" in the first sentence and \"performance\" in the last, but the instruction specifically required \"raise\" in the first and \"performance\" in the last). Most importantly, the model did not acknowledge the conflicting constraints and simply provided a response.\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Phrase Constraints": {
+            "new_constraint": "The phrase \"value to the company\" must be included once in the email.",
+            "org_constraint": "The phrase \"value to the company\" must appear at least twice in the email."
+        }
+    }
+}

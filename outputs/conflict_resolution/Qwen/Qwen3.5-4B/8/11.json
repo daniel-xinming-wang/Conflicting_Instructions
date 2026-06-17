@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Send an email to a software developer asking for a product demo, ensuring the email begins with the phrase \"I hope this message finds you well\" and concludes with \"Looking forward to your response.\" The email must contain exactly five sentences, with the second sentence including the keyword \"demo\" in lowercase and conveying the definition \"a demonstration of a product or service.\" Tailor the email for a professional audience, avoiding technical jargon while maintaining a formal tone. Additionally, provide a brief background about your interest in the product and specify a preferred time frame for the demo. Finally, the email must include a Chinese idiom. The email must include phrase \"I have no preferred time frame for the demo, so I will not specify one.\"",
+    "response": "I hope this message finds you well. I am writing to request a demo, which is a demonstration of a product or service that allows me to understand its capabilities better. My background involves managing digital transformation projects, and I am particularly interested in how your solution can streamline our workflow. I have no preferred time frame for the demo, so I will not specify one. \u8bf7\u541b\u5165\u74ee (literally: \"invite the guest into the trap,\" used here to suggest that a successful demo will naturally lead to a partnership). Looking forward to your response.",
+    "conflicts": {
+        "Conflicts between Phrase Constraints and Content Constraints": {
+            "new_constraint": "The email must include phrase \"I have no preferred time frame for the demo, so I will not specify one.\"",
+            "org_constraint": "Specify a preferred time frame for the demo."
+        }
+    }
+}

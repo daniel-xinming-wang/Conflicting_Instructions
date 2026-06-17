@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Assess the accuracy of the weather forecasting app you use daily. Consider factors including how reliably it predicts short-term and long-term weather conditions, the level of detail provided (e.g., temperature, precipitation, wind speed). Additionally, assess whether it effectively alerts you to sudden weather changes or extreme conditions. Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response. The response must contain two paragraphs. Include the phrase \"predictive reliability of forecasts\" in the first paragraph and \"unexpected weather variations\" in the second paragraph. The letter \"e\" must appear at least 20 times in the response. Finally, summarize the app's weaknesses in a bulleted list with exactly four points. Write the response entirely in passive voice.",
+    "response": "The predictive reliability of forecasts is frequently tested against daily reality, yet the app often fails to capture rapid shifts in atmospheric pressure. Detailed temperature and wind speed data are provided, but these figures are sometimes outdated when sudden storms are approaching.\n\nUnexpected weather variations are rarely anticipated by the system, as severe alerts are often delayed until conditions have already intensified. Precipitation estimates are frequently inaccurate, leading to confusion when heavy rain is expected but does not materialize as predicted.\n\n*   Short-term predictions are often overly optimistic regarding sunshine duration.\n*   Long-term forecasts are frequently contradicted by actual seasonal trends.\n*   Wind speed measurements are sometimes exaggerated during calm periods.\n*   Severe weather warnings are issued late, reducing preparation time for users.",
+    "conflicts": {
+        "Conflicts between Style Constraints": {
+            "new_constraint": "Write the response entirely in passive voice.",
+            "org_constraint": "Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response."
+        }
+    }
+}

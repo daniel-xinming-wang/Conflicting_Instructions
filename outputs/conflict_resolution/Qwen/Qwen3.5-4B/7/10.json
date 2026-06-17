@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Send an email to a repair shop to check the status of a laptop repair. The email must include the keyword \"bank\" as a noun, conveying the definition \"an organization that provides various financial services, for example keeping or lending money\" from the Oxford Dictionary. The email must be written in JSON format with the following keys: \"subject\" (String), \"body\" (String), and \"recipient\" (String). The \"body\" key must contain exactly 100 words, and the \"subject\" key must be a String with at most 10 words. The tone of the email must remain formal throughout. Additionally, the phrase \"repair status\" must appear exactly three times in the body of the email. The email must include the following information: the repair ticket number, the date the laptop was dropped off, and the expected completion date. Address the recipient using casual terms like \"Hey\" or \"Hiya\" instead of formal greetings.",
+    "response": "```json\n{\n  \"subject\": \"Laptop Repair Inquiry\",\n  \"body\": \"Hiya, I am writing to check the repair status of my laptop. Ticket number 8842 was dropped off on October 24th. Please confirm the repair status and expected completion date. I need to know the repair status soon. My bank account is tied to this device for work expenses, so timely updates are vital. Thank you for your prompt assistance regarding this matter. I look forward to hearing from you shortly about the repair status. Best regards, John Doe.\"\n}\n```",
+    "conflicts": {
+        "Conflicts between Style Constraints": {
+            "new_constraint": "Address the recipient using casual terms like \"Hey\" or \"Hiya\" instead of formal greetings.",
+            "org_constraint": "The tone of the email must remain formal throughout."
+        }
+    }
+}

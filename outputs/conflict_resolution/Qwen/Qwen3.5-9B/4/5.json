@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must include at least three paragraphs: an introduction explaining the purpose of the email, a detailed description of the transaction in question, and a closing paragraph requesting a prompt response. The phrase \"transaction details\" must appear exactly twice, and the phrase \"customer support\" must appear at least once. The keywords \"transaction\" and \"clarification\" must appear in the same paragraph, with no more than five words separating them. The email must be written in the first person and formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email. The total word count of the email must not exceed 200 words. Each paragraph must include the phrase \"transaction details.\"",
+    "response": "{\n  \"subject\": \"Request for Transaction Clarification\",\n  \"body\": [\n    \"I am writing to request clarification regarding a recent transaction on my account. Please review the transaction details provided below to assist me.\",\n    \"The transaction in question occurred yesterday and shows an unusual charge. I need clarification on the transaction details to understand this activity.\",\n    \"Please contact customer support immediately if you need further information. I await your prompt response regarding these transaction details.\"\n  ],\n  \"signature\": \"Sincerely, John Doe\"\n}",
+    "conflicts": {
+        "Conflicts between Phrase Constraints": {
+            "new_constraint": "Each paragraph must include the phrase \"transaction details.\"",
+            "org_constraint": "The phrase \"transaction details\" must appear exactly twice."
+        }
+    }
+}

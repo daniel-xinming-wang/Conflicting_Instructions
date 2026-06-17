@@ -1,0 +1,11 @@
+{
+    "instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The email must be written exclusively in English and include an English idiom. It should consist of at least six sentences, with the first sentence starting with the phrase \"Dear Sarah\" and the last sentence ending with the phrase \"looking forward to it.\" The keyword \"dinner\" must appear exactly twice in the email. The tone should be warm and conversational, written in the first person, and include a brief mention of why the dinner is special. The email must consist of exactly five sentences.",
+    "llm_response": "Dear Sarah, I hope you are having a wonderful week so far. We are planning a special dinner next Monday at 7 to celebrate the anniversary of your marriage. This meal is truly a once-in-a-lifetime opportunity to share stories with everyone we love. Please let me know if you can make it, as I would be delighted to have you there. I am looking forward to it.",
+    "evaluation_result": "**Analysis**: The instruction contains a direct conflict regarding the length of the email: it asks for \"at least six sentences\" and then specifies the email must consist of \"exactly five sentences.\" The model response provides an email that is six sentences long. It does not acknowledge the conflict, nor does it ask for clarification; it simply chooses one of the conflicting constraints (the \"at least six\" constraint) and fulfills the rest of the prompt.\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Length Constraints": {
+            "new_constraint": "The email must consist of exactly five sentences.",
+            "org_constraint": "The email should consist of at least six sentences."
+        }
+    }
+}

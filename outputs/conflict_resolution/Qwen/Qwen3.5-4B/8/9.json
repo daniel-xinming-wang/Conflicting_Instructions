@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Send an email to a public park office asking about picnic reservations. The email must include the adjective \"available\" in the sense of \"able to be used or obtained\" and the verb \"confirm\" in the sense of \"establish the truth or correctness of something.\" Begin the email with the phrase \"Dear Park Office,\" and conclude it with the phrase \"Looking forward to your response.\" The email should contain exactly 150 words, with each sentence containing no more than 20 words. Write the email exclusively in English, incorporating a relevant English idiom. Tailor the email for a general audience, avoiding technical jargon, and provide a brief explanation of why the reservation is needed, including the intended date, number of attendees, and any specific requirements. The email must include the phrase \"I will not disclose the number of attendees in the email.\"",
+    "response": "Dear Park Office, I am writing to check picnic table availability soon. We need a spot for our family gathering next weekend. Please confirm if any large tables are free that day. Our group will have about twenty people coming together. We plan to bring chairs and a small cooler for food. I will not disclose the exact number of attendees in the email. This is just a rough estimate for our planning needs. We hope to find a quiet area away from loud noise. A picnic table is essential for everyone to sit comfortably. Please let us know if your staff can help us book. We want to ensure our event goes smoothly without issues. Finding a spot is often like finding a needle in a haystack. Could you send us details on how to make a reservation? We would appreciate a quick reply to this inquiry today. Thank you for your time and helpful assistance with this request. Looking forward to your response.",
+    "conflicts": {
+        "Conflicts between Phrase Constraints and Content Constraints": {
+            "new_constraint": "The email must include the phrase \"I will not disclose the number of attendees in the email.\"",
+            "org_constraint": "The email must include the number of attendees."
+        }
+    }
+}

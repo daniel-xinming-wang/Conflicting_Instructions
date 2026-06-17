@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "How does the Big Bang theory explain the origin of the universe? Ensure the response includes the phrase \"cosmic expansion\" and provides background information on the theory's development. The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs). The \"explanation\" must contain exactly 100 words, and the \"key_terms\" must include the term \"singularity.\" Tailor the response for a layperson audience, simplifying technical jargon and providing clear explanations. Additionally, the letter \"e\" must appear at least 20 times in the response. The \"explanation\" must contain at most 50 words.",
+    "response": "{\n  \"explanation\": \"The Big Bang theory describes how the universe began from a hot, dense point. It grew through cosmic expansion over time. This idea emerged in the 1920s. Georges Lema\u00eetre proposed it. Edwin Hubble found evidence. It explains everything we see today.\",\n  \"key_terms\": [\n    \"singularity\",\n    \"cosmic expansion\",\n    \"universe\"\n  ],\n  \"historical_context\": {\n    \"proposer\": \"Georges Lema\u00eetre\",\n    \"year\": \"1927\"\n  }\n}",
+    "conflicts": {
+        "Conflicts between Length Constraints": {
+            "new_constraint": "The \"explanation\" must contain at most 50 words.",
+            "org_constraint": "The \"explanation\" must contain exactly 100 words."
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Assess the accuracy of the weather forecasting app you use daily. Consider factors including how reliably it predicts short-term and long-term weather conditions, the level of detail provided (e.g., temperature, precipitation, wind speed). Additionally, assess whether it effectively alerts you to sudden weather changes or extreme conditions. Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response. The response must contain two paragraphs. Include the phrase \"predictive reliability of forecasts\" in the first paragraph and \"unexpected weather variations\" in the second paragraph. The letter \"e\" must appear at least 20 times in the response. Finally, summarize the app's weaknesses in a bulleted list with exactly four points. The response must include the phrase \"The review will not discuss the app's predictions for short-term weather conditions.\"",
+    "response": "The predictive reliability of forecasts often depends on the specific region and time of day. The app frequently updates its data, yet severe weather events sometimes escape detection.\n\nUnexpected weather variations can occur even when the app displays clear skies. The review will not discuss the app's predictions for short-term weather conditions. Several issues remain unaddressed in this evaluation.\n\n*   The app fails to warn users about sudden temperature drops.\n*   Wind speed estimates are often inaccurate during storms.\n*   Precipitation details lack the necessary depth for outdoor planning.\n*   Alerts for extreme conditions are delayed by several hours.\n\nThe app receives mixed reviews regarding its overall effectiveness. Users seek better precision in their daily weather needs.",
+    "conflicts": {
+        "Conflicts between Phrase Constraints and Content Constraints": {
+            "new_constraint": "The response must include the phrase \"The review will not discuss the app's predictions for short-term weather conditions.\"",
+            "org_constraint": "Assess how reliably the app predicts short-term weather conditions."
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Compose an email to an art gallery asking about upcoming exhibitions. Ensure the email includes specific inquiries about the dates, themes, and featured artists of the exhibitions. Use the phrase \"upcoming exhibitions\" exactly three times and the keyword \"art\" at least five times. Tailor the email for a professional audience, avoiding jargon and maintaining a polite and formal tone. Structure the email with a clear introduction, body, and conclusion, and include a bulleted list of at least three specific questions about the exhibitions, with each bullet point containing exactly one sentence. The email should be at least eight sentences long but not exceed twelve sentences. Avoid using the keyword \"art\" in the email.",
+    "response": "Subject: Inquiry Regarding Upcoming Exhibitions\n\nDear Gallery Director,\n\nI am writing to express my keen interest in the upcoming exhibitions currently planned for your esteemed venue. As a dedicated collector and enthusiast of contemporary art, I would greatly appreciate detailed information about your schedule. Please find below specific questions regarding the dates, themes, and featured artists of the upcoming exhibitions.\n\n*   What are the exact opening and closing dates for the upcoming exhibitions scheduled for the second quarter?\n*   Could you please elaborate on the primary thematic concepts explored in the upcoming exhibitions?\n*   Which renowned artists will be featured in the upcoming exhibitions during the summer months?\n\nI look forward to hearing from you soon regarding these matters. Thank you for your time and assistance in providing this valuable information.\n\nSincerely,\n\nAlex Mercer",
+    "conflicts": {
+        "Conflicts between Keyword Constraints": {
+            "new_constraint": "Avoid using the keyword \"art\" in the email.",
+            "org_constraint": "The keyword \"art\" must appear at least five times."
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "How does the Big Bang theory explain the origin of the universe? Ensure the response includes the phrase \"cosmic expansion\" and provides background information on the theory's development. The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs). The \"explanation\" must contain exactly 100 words, and the \"key_terms\" must include the term \"singularity.\" Tailor the response for a layperson audience, simplifying technical jargon and providing clear explanations. Additionally, the letter \"e\" must appear at least 20 times in the response. The \"key_terms\" array must not include the term \"singularity.\"",
+    "response": "{\n  \"explanation\": \"The Big Bang theory suggests the universe began as a tiny, hot point that exploded outward. This event started cosmic expansion, stretching space itself over billions of years. Galaxies moved apart, cooling the universe until stars and planets formed. Scientists observe this today by seeing distant galaxies receding faster. Light from early times shows the universe was once much hotter and denser. Evidence supports this model strongly through measurements of background radiation. The story explains how everything we see today emerged from that initial moment of creation long ago.\",\n  \"key_terms\": [\n    \"expansion\",\n    \"radiation\",\n    \"galaxies\"\n  ],\n  \"historical_context\": {\n    \"early_development\": \"Georges Lemaitre first proposed the idea in 1927, suggesting the universe started from a single point.\",\n    \"confirmation\": \"Edwin Hubble later observed galaxies moving away, proving cosmic expansion and supporting the theory.\"\n  }\n}",
+    "conflicts": {
+        "Conflicts between Keyword Constraints": {
+            "new_constraint": "The \"key_terms\" array must not include the term \"singularity.\"",
+            "org_constraint": "The \"key_terms\" must include the term \"singularity.\""
+        }
+    }
+}

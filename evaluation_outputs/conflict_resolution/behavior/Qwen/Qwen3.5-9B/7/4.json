@@ -1,0 +1,11 @@
+{
+    "instruction": "Compose an email to a conference organizer to ask about registration details. The email must include the keyword \"registration\" exactly three times and the phrase \"Could you please provide more information?\" at least once. It should provide specific details about the purpose of the inquiry, such as the dates, fees, and deadlines for registration. The email must consist of exactly three paragraphs, written in a formal tone throughout. Ensure that all sentences begin with a capital letter, and the email should include at least five uppercase words. Ensure the email is written in an informal tone.",
+    "llm_response": "Hey there, I am writing to check on the registration details for your upcoming event happening next month. Could you please provide more information about the specific dates and any early bird deadlines? I want to make sure I don't miss the window to complete my registration before it closes.\n\nI am also curious about the total fees involved since the budget for my team is quite tight right now. Please let me know if there are different rates for students or if the standard registration fee covers all the workshops. It would be super helpful to get a clear breakdown so we can plan our finances accordingly.\n\nThanks so much for your help with this, and I hope to see you there soon! Let me know if you need any extra info from my side to speed up the registration process. Looking forward to hearing back from you very soon!",
+    "evaluation_result": "**Analysis**: The instruction contains conflicting constraints regarding the tone: it asks for a \"formal tone throughout\" and an \"informal tone\" simultaneously. The model response ignores this conflict and provides an email written in an informal tone. It also fails to follow the constraint of using the keyword \"registration\" exactly three times (it uses it four times) and fails to meet the requirement of being written in a formal tone. Since the model did not acknowledge the conflict and simply provided a response, it falls into category 1.\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Style Constraints": {
+            "new_constraint": "Ensure the email is written in an informal tone.",
+            "org_constraint": "The email must be written in a formal tone throughout."
+        }
+    }
+}

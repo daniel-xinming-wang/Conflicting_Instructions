@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The email must be written exclusively in English and include an English idiom. It should consist of at least six sentences, with the first sentence starting with the phrase \"Dear Sarah\" and the last sentence ending with the phrase \"looking forward to it.\" The keyword \"dinner\" must appear exactly twice in the email. The tone should be warm and conversational, written in the first person, and include a brief mention of why the dinner is special. The email must include the phrase \"There's nothing particularly special about this dinner.\"",
+    "response": "Dear Sarah, I hope you are having a wonderful week so far. Although there's nothing particularly special about this dinner, we are so excited to finally catch up with you in person. We have planned a cozy evening next Monday at 7 PM where we can share stories and laugh together. Please consider this dinner a chance to bridge the gap between our families and make some lasting memories. We want to make sure you feel right at home, so please let us know if you need any dietary accommodations before then. We are absolutely looking forward to it.",
+    "conflicts": {
+        "Conflicts between Phrase Constraints and Content Constraints": {
+            "new_constraint": "The email must include the phrase \"There's nothing particularly special about this dinner.\"",
+            "org_constraint": "The email must include a brief mention of why the dinner is special."
+        }
+    }
+}

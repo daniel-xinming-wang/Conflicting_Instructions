@@ -1,0 +1,9 @@
+{
+    "Conflicts between Phrase Constraints and Style Constraints": {
+        "instruction_order": "new_org",
+        "new_constraint": "The email must include the phrase \"What's up with my laptop?\"",
+        "org_constraint": "The tone of the email must remain formal throughout.",
+        "evaluation_result": "**Step 1**: \n- Phrase \"What's up with my laptop?\": \"What's up with my laptop?\"\n\n**Step 2**: \n- Instruction 1 requires the inclusion of the specific phrase \"What's up with my laptop?\". The model response includes this phrase exactly.\n- Instruction 2 requires the tone of the email to remain formal throughout. The inclusion of the phrase \"What's up with my laptop?\" is highly informal/colloquial, which violates the constraint of maintaining a formal tone throughout the email.\n- Therefore, Instruction 1 is fully satisfied, while Instruction 2 is not.\n\n**Step 3**: \n1"
+    },
+    "llm_response": "```json\n{\n  \"subject\": \"Laptop Repair Inquiry - Ticket #8821\",\n  \"body\": \"Dear Support Team, I am writing to inquire about the current repair status of my laptop, ticket number 8821. It was dropped off on October 10th, with an expected completion date of October 15th. What's up with my laptop? I need to know the repair status immediately. Furthermore, please confirm if the repair status has changed. My bank account is tied to this device for work expenses, so timely updates are crucial. Thank you for your prompt assistance regarding this matter.\"\n}\n```"
+}

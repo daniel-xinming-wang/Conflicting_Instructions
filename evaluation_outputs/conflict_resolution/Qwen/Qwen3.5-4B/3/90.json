@@ -1,0 +1,9 @@
+{
+    "Conflicts between Keyword Constraints and Phrase Constraints": {
+        "instruction_order": "new_org",
+        "new_constraint": "The keyword \"variation\" must only appear in the singular form.",
+        "org_constraint": "Include the phrase \"unexpected weather variations\" in the second paragraph.",
+        "evaluation_result": "**Step 1**: \n- Instruction 1 (keyword \"variation\" in singular): \"The system often fails to warn me about unexpected weather variations before they arrive.\" (Note: \"variations\" is plural).\n- Instruction 2 (phrase \"unexpected weather variations\" in second paragraph): \"The system often fails to warn me about unexpected weather variations before they arrive.\"\n\n**Step 2**: \nInstruction 1 requires the keyword \"variation\" to appear *only* in its singular form. However, the model used the plural form \"variations\". Therefore, Instruction 1 is not satisfied.\nInstruction 2 requires the specific phrase \"unexpected weather variations\" to be included in the second paragraph. The model included this exact phrase in the second paragraph. Therefore, Instruction 2 is fully satisfied.\n\n**Step 3**: \n2"
+    },
+    "llm_response": "I evaluate the predictive reliability of forecasts daily by checking how well the app matches actual conditions. The app frequently updates its data, yet severe weather events sometimes escape detection.\n\nThe system often fails to warn me about unexpected weather variations before they arrive. Detailed alerts regarding wind speed and precipitation are generated, but these messages occasionally lack precision.\n\n*   The app underestimates the intensity of sudden storms.\n*   Long-term predictions frequently deviate from observed reality.\n*   Wind speed estimates are often less accurate than temperature readings.\n*   Alerts for extreme conditions sometimes arrive too late to be useful."
+}

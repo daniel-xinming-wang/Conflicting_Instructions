@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "Evaluate the storyline of the Harry Potter series by including at least three of the following keywords: \"magic,\" \"friendship,\" \"conflict,\" \"destiny,\" and \"sacrifice,\" ensuring that \"magic\" and \"friendship\" appear in the same sentence. Ensure the response provides detailed background information on the main themes, character development, and plot progression. The response must include the phrase \"the power of love\". Additionally, format the response in JSON, including keys for 'themes', 'character development', and 'plot progression', each key's value must be a string describing the respective element. Each key must contain at least three sentences. Include at least two metaphors in the response. The response must contain at most eight sentences.",
+    "response": "{\n  \"themes\": \"The series explores how magic and friendship intertwine to create a resilient bond against overwhelming odds. Conflict serves as a dark storm that tests the characters' resolve, yet the power of love acts as a lighthouse guiding them through the fog. Ultimately, destiny is not a rigid script but a path forged by choices made in the face of sacrifice.\",\n  \"character development\": \"Harry evolves from a frightened orphan into a leader who understands that true strength comes from vulnerability. His journey mirrors a seed breaking through concrete, symbolizing growth that defies impossible circumstances. Through trials, he learns that even the smallest acts of kindness can ripple outward to change the world.\",\n  \"plot progression\": \"The narrative begins with a quiet introduction to the wizarding world before escalating into a global war where every battle feels like a chess match with life on the line. As the stakes rise, the story shifts from personal survival to a cosmic struggle where the fate of all depends on one final confrontation. The resolution reveals that the greatest victory was never defeating a villain, but preserving hope through immense sacrifice.\"\n}",
+    "conflicts": {
+        "Conflicts between Length Constraints": {
+            "new_constraint": "The response must contain at most eight sentences.",
+            "org_constraint": "The response must contain at least nine sentences."
+        }
+    }
+}

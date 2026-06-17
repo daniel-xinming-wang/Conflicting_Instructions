@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must include at least three paragraphs: an introduction explaining the purpose of the email, a detailed description of the transaction in question, and a closing paragraph requesting a prompt response. The phrase \"transaction details\" must appear exactly twice, and the phrase \"customer support\" must appear at least once. The keywords \"transaction\" and \"clarification\" must appear in the same paragraph, with no more than five words separating them. The email must be written in the first person and formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email. The total word count of the email must not exceed 200 words. The email must include the phrase \"You should clarify this matter immediately.\"",
+    "response": "{\n  \"subject\": \"Clarification Needed Regarding Recent Transaction\",\n  \"body\": [\n    \"I am writing to request clarification regarding a recent charge on my account that I believe is incorrect. Please review the transaction details provided below to understand the issue.\",\n    \"The transaction occurred on October 24th for an amount of $150.00, which does not match any purchase I made. You should clarify this matter immediately as it affects my budget.\",\n    \"I have attached the transaction details for your reference and hope to resolve this quickly. Please contact my customer support team or reply directly with an update.\"\n  ],\n  \"signature\": \"John Doe\"\n}",
+    "conflicts": {
+        "Conflicts between Phrase Constraints and Style Constraints": {
+            "new_constraint": "The email must include the phrase \"You should clarify this matter immediately.\"",
+            "org_constraint": "The email must be written in the first person."
+        }
+    }
+}

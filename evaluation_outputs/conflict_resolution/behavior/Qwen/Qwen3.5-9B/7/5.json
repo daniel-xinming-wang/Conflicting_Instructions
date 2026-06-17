@@ -1,0 +1,11 @@
+{
+    "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must include at least three paragraphs: an introduction explaining the purpose of the email, a detailed description of the transaction in question, and a closing paragraph requesting a prompt response. The phrase \"transaction details\" must appear exactly twice, and the phrase \"customer support\" must appear at least once. The keywords \"transaction\" and \"clarification\" must appear in the same paragraph, with no more than five words separating them. The email must be written in the first person and formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email. The total word count of the email must not exceed 200 words. The email must be written in the second person.",
+    "llm_response": "{\n  \"subject\": \"Clarification Needed on Recent Transaction\",\n  \"body\": [\n    \"I am writing to request clarification regarding a recent transaction on my account. Please review the transaction details carefully to ensure accuracy.\",\n    \"The transaction in question occurred on October 15th for an amount of $150.00, which does not match any of my recent purchases. I need further transaction details to understand this charge.\",\n    \"Please contact customer support immediately if you require more information. I look forward to your prompt response regarding this matter.\"\n  ],\n  \"signature\": \"Sincerely, John Doe\"\n}",
+    "evaluation_result": "**Analysis**: The instruction contains a direct conflict regarding the point of view: it requires the email to be written in the \"first person\" and also in the \"second person.\" The model chose to write the email in the first person (\"I am writing...\", \"my account\") and ignored the second-person constraint. It did not acknowledge the conflict or ask for clarification; it simply provided a response that followed most other constraints.\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Style Constraints": {
+            "new_constraint": "The email must be written in the second person.",
+            "org_constraint": "The email must be written in the first person."
+        }
+    }
+}

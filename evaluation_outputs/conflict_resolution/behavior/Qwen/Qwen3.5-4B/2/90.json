@@ -1,0 +1,11 @@
+{
+    "instruction": "Assess the accuracy of the weather forecasting app you use daily. Consider factors including how reliably it predicts short-term and long-term weather conditions, the level of detail provided (e.g., temperature, precipitation, wind speed). Additionally, assess whether it effectively alerts you to sudden weather changes or extreme conditions. Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response. The response must contain two paragraphs. Include the phrase \"predictive reliability of forecasts\" in the first paragraph and \"unexpected weather variations\" in the second paragraph. The letter \"e\" must appear at least 20 times in the response. Finally, summarize the app's weaknesses in a bulleted list with exactly four points. The letter \"e\" must appear at most 19 times in the response.",
+    "llm_response": "The predictive reliability of forecasts often feels high, yet severe weather events are frequently underestimated.\n\nUnexpected weather variations sometimes catch users off guard despite detailed alerts.\n\n*   Localized errors occur near complex terrain.\n*   Wind speed estimates are rarely precise.\n*   Long-term trends are seldom accurate.\n*   Extreme heat warnings are often delayed.",
+    "evaluation_result": "**Analysis**: The instruction contains a direct conflict regarding the constraint for the letter \"e\": it must appear at least 20 times, but also at most 19 times. The model ignored this conflict and provided a response that satisfies the \"at least 20\" condition (the response contains many more than 20 'e's), but fails the \"at most 19\" condition. Since the model did not acknowledge the impossibility of the constraint and simply provided a response, it falls into category 1.\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Keyword Constraints": {
+            "new_constraint": "The letter \"e\" must appear at most 19 times in the response.",
+            "org_constraint": "The letter \"e\" must appear at least 20 times in the response."
+        }
+    }
+}

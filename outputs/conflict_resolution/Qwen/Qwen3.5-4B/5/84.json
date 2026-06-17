@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Evaluate the storyline of the Harry Potter series by including at least three of the following keywords: \"magic,\" \"friendship,\" \"conflict,\" \"destiny,\" and \"sacrifice,\" ensuring that \"magic\" and \"friendship\" appear in the same sentence. Ensure the response provides detailed background information on the main themes, character development, and plot progression. The response must include the phrase \"the power of love\". Additionally, format the response in JSON, including keys for 'themes', 'character development', and 'plot progression', each key's value must be a string describing the respective element. Each key must contain at least three sentences. Include at least two metaphors in the response. The response must contain at most eight sentences.",
+    "response": "{\n  \"themes\": \"The series explores how magic and friendship intertwine to overcome the dark forces threatening the wizarding world. Conflict arises from the struggle between light and dark, while destiny dictates the path of the chosen one. Ultimately, the story reveals that the power of love is a stronger spell than any incantation.\",\n  \"character development\": \"Harry, Ron, and Hermione evolve from reluctant allies into a bond that defies the rigid hierarchies of the magical society. Their growth mirrors the journey of a ship navigating a storm, learning to trust one another when the winds of war blow. Each character faces personal sacrifices that reshape their identity and deepen their commitment to the greater good.\",\n  \"plot progression\": \"The narrative moves from the wonder of discovering magic to the grim reality of war, where every victory requires a heavy price. As the conflict escalates, the protagonists must confront their own mortality, proving that true heroism often demands sacrifice. The final chapters show how their unwavering friendship becomes the shield that protects the future of magic.\"\n}",
+    "conflicts": {
+        "Conflicts between Length Constraints": {
+            "new_constraint": "The response must contain at most eight sentences.",
+            "org_constraint": "The response must contain at least nine sentences."
+        }
+    }
+}

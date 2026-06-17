@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Write a response email to your employee, approving their requested vacation days. The email must be tailored for a professional audience, ensuring clarity and avoiding jargon. It should consist of exactly three paragraphs, with the first paragraph acknowledging the request, the second paragraph approving the vacation days, and the third paragraph providing any necessary follow-up instructions or reminders. Include the phrase \"We value your contributions to the team\" in the response. The letter \"e\" must appear at least 50 times throughout the email. Format the email in Markdown, including at least one level-2 header, one unordered list with at least three items, and one hyperlink formatted as [text](URL). The letter \"e\" must appear at most 40 times throughout the email.",
+    "response": "It is great to hear from you regarding your upcoming time off. We appreciate you sharing your plans with us so we can ensure everything runs smoothly while you are away.\n\nWe have reviewed your request and are pleased to approve your requested vacation days. Please note the following details for your schedule:\n- Your leave starts on Monday, October 16th.\n- You must submit your updated calendar by Friday.\n- Please check [our internal portal](https://example.com) for final confirmation.\n\nWe value your contributions to the team and look forward to welcoming you back refreshed. Please ensure all pending tasks are completed before you leave.",
+    "conflicts": {
+        "Conflicts between Keyword Constraints": {
+            "new_constraint": "The letter \"e\" must appear at most 40 times throughout the email.",
+            "org_constraint": "The letter \"e\" must appear at least 50 times throughout the email."
+        }
+    }
+}

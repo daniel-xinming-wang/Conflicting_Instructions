@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "How does the Big Bang theory explain the origin of the universe? Ensure the response includes the phrase \"cosmic expansion\" and provides background information on the theory's development. The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs). The \"explanation\" must contain exactly 100 words, and the \"key_terms\" must include the term \"singularity.\" Tailor the response for a layperson audience, simplifying technical jargon and providing clear explanations. Additionally, the letter \"e\" must appear at least 20 times in the response. The \"key_terms\" array must not include the term \"singularity.\"",
+    "response": "{\n  \"explanation\": \"The Big Bang theory describes how the universe began from a hot, dense point and has been expanding ever since. Scientists like Georges Lema\u00eetre first proposed this idea in the 1920s. Evidence such as cosmic expansion and the cosmic microwave background radiation supports this view. It explains that space itself stretched, creating galaxies and stars over billions of years. This event released energy and matter, leading to the complex world we see today. The theory remains the best explanation for our cosmic origins based on current evidence and observations made by astronomers worldwide.\",\n  \"key_terms\": [\n    \"universe\",\n    \"galaxy\",\n    \"radiation\"\n  ],\n  \"historical_context\": {\n    \"proposer\": \"Georges Lema\u00eetre\",\n    \"year\": \"1927\"\n  }\n}",
+    "conflicts": {
+        "Conflicts between Keyword Constraints": {
+            "new_constraint": "The \"key_terms\" array must not include the term \"singularity.\"",
+            "org_constraint": "The \"key_terms\" must include the term \"singularity.\""
+        }
+    }
+}

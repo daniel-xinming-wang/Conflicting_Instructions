@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Write a professional email in the first person to ask your boss for a raise. The email must include at least three reasons justifying the request, such as your recent achievements, increased responsibilities, or market comparisons. Ensure the email is written in a formal tone and contains exactly five sentences. The phrase \"value to the company\" must appear at least twice, and the keywords \"raise\" and \"performance\" must appear in the first and last sentences, respectively. All sentences should be written in lowercase. The phrase \"I do not want to disclose any reasons for my raise request\" must appear at least once in the email.",
+    "response": "subject: request for performance review and raise\ni am writing to formally request a raise based on my recent achievements and the increased responsibilities i have taken on.\nmy contributions have consistently added significant value to the company, and i believe my current compensation no longer reflects the value to the company i provide daily.\ni do not want to disclose any reasons for my raise request beyond these documented facts and market comparisons that support my case.\ni am confident that my continued dedication will further enhance the team's success and justify this adjustment.\ni look forward to discussing how my performance aligns with the company's goals and how a raise would be the appropriate next step.",
+    "conflicts": {
+        "Conflicts between Phrase Constraints and Content Constraints": {
+            "new_constraint": "The phrase \"I do not want to disclose any reasons for my raise request\" must appear at least once in the email.",
+            "org_constraint": "The email must include at least three reasons justifying the request, such as your recent achievements, increased responsibilities, or market comparisons."
+        }
+    }
+}

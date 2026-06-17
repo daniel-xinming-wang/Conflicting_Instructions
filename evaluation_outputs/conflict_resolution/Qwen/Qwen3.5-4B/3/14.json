@@ -1,0 +1,9 @@
+{
+    "Conflicts between Keyword Constraints and Phrase Constraints": {
+        "instruction_order": "new_org",
+        "new_constraint": "Avoid using the keyword \"forward\" in the email.",
+        "org_constraint": "The last sentence must end with the phrase \"looking forward to it.\"",
+        "evaluation_result": "**Step 1**: \n- Instruction 1 (keyword \"forward\"): \"Looking forward to it.\"\n- Instruction 2 (phrase \"looking forward to it.\"): \"Looking forward to it.\"\n\n**Step 2**: \nInstruction 1 requires the model to avoid using the keyword \"forward\". However, the model used the word \"forward\" in the final sentence. Therefore, Instruction 1 is not satisfied.\nInstruction 2 requires the last sentence to end with the phrase \"looking forward to it.\" The model's last sentence is \"Looking forward to it.\", which satisfies this constraint.\n\n**Step 3**: \n2"
+    },
+    "llm_response": "Dear Sarah, I hope this email finds you well and that you are having a wonderful week. We are planning a special dinner next Monday at 7, and it will be a lovely way to celebrate our anniversary. This meal is particularly meaningful because it marks a year of us working together to build a happy life. Please join us for this evening; we would love to have you there to share in the joy. We are truly excited to see you and can't wait for the night ahead. Looking forward to it."
+}

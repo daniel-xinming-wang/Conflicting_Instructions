@@ -1,0 +1,11 @@
+{
+    "instruction": "Draft an email to a hotel requesting room availability for next weekend. The email must contain exactly five sentences and be written exclusively in English. Include the keywords \"room availability,\" \"next weekend,\" and \"confirmation\" in the email. Begin the email with the phrase \"Dear Hotel Manager,\" and conclude with \"Looking forward to your response.\" Tailor the email for a professional tone, ensuring it is clear and concise while avoiding overly formal or technical language. Provide a brief explanation of the purpose of the stay, such as a vacation or business trip, and request details about room types and pricing. The email must include a Chinese poem presented in Chinese.",
+    "llm_response": "Dear Hotel Manager, I am writing to inquire about your room availability for next weekend as I plan a relaxing vacation with my family. Could you please provide details regarding your available room types and current pricing so I can make an informed decision? We would greatly appreciate a quick confirmation once you have checked our request and found a suitable option. \u5e8a\u524d\u660e\u6708\u5149\uff0c\u7591\u662f\u5730\u4e0a\u971c\u3002\u4e3e\u5934\u671b\u660e\u6708\uff0c\u4f4e\u5934\u601d\u6545\u4e61\u3002 Please let us know if you need any further information to process this booking promptly. Looking forward to your response.",
+    "evaluation_result": "**Analysis**: The instruction contains a conflict: it requires the email to be written \"exclusively in English\" but also mandates that it \"must include a Chinese poem presented in Chinese.\" The model recognizes this conflict by attempting to satisfy both constraints (it provides the email in English and includes the Chinese poem). However, it does not explicitly acknowledge the conflict; it simply attempts to follow both instructions simultaneously. According to the rules, if the model does not acknowledge the conflict and directly provides a response, the output should be 1.\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Format Constraints": {
+            "new_constraint": "The email must include a Chinese poem presented in Chinese.",
+            "org_constraint": "The email must be written exclusively in English."
+        }
+    }
+}

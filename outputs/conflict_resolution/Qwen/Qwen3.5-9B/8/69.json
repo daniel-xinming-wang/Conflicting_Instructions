@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "How does the Big Bang theory explain the origin of the universe? Ensure the response includes the phrase \"cosmic expansion\" and provides background information on the theory's development. The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs). The \"explanation\" must contain exactly 100 words, and the \"key_terms\" must include the term \"singularity.\" Tailor the response for a layperson audience, simplifying technical jargon and providing clear explanations. Additionally, the letter \"e\" must appear at least 20 times in the response. The respone must include the phrase \"The response will not include the background information on the theory's development.\"",
+    "response": "{\n  \"explanation\": \"The Big Bang theory suggests the universe began as an extremely hot, dense point called a singularity. About 13.8 billion years ago, this point exploded, starting cosmic expansion. Everything we see today, like galaxies and stars, formed from this initial burst. Matter cooled down, allowing atoms to create. Over time, gravity pulled matter together into structures. This simple idea explains why the universe looks the way it does now. Scientists use evidence like light from distant stars to support this view. It is a powerful story about our origins.\",\n  \"key_terms\": [\n    \"singularity\",\n    \"cosmic expansion\",\n    \"Big Bang\"\n  ],\n  \"historical_context\": {\n    \"early_development\": \"Georges Lemaitre first proposed the idea in the 1920s based on Einstein's equations.\",\n    \"modern_support\": \"Edwin Hubble later observed galaxies moving away, proving the universe is expanding.\"\n  }\n}\n\nThe response will not include the background information on the theory's development.",
+    "conflicts": {
+        "Conflicts between Phrase Constraints and Content Constraints": {
+            "new_constraint": "The respone must include the phrase \"The response will not include the background information on the theory's development.\"",
+            "org_constraint": "The response must provide background information on the theory's development."
+        }
+    }
+}

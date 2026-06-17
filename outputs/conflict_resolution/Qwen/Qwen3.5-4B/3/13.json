@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? The email must be tailored for a general audience, ensuring it is easy to read and avoids any jargon. It should consist of exactly three paragraphs, with the first paragraph introducing the idea of the book club, the second paragraph outlining its purpose and logistics, and the third paragraph inviting recipients to join. Include a bulleted list in the second paragraph with exactly three points, each containing at least 10 words and starting with the phrase \"Key details include.\" The keyword \"book club\" must appear at least four times throughout the email, with one instance in the opening sentence and one in the closing sentence. The keyword \"detail\" must appear only in its singular form.",
+    "response": "Subject: Join Our New Book Club\n\nAre you ready to discover new stories and connect with friends over the pages of a **book club**? We are excited to announce the launch of a fresh literary group designed for everyone who loves reading and sharing ideas.\n\nOur **book club** meets monthly to discuss a variety of genres, from classic novels to modern thrillers, ensuring there is something for every reader. Key details include:\n*   Key details include that each meeting lasts for about two hours to allow for deep discussion.\n*   Key details include that we will select our next book together during the previous month's gathering.\n*   Key details include that a single detail about the author will be shared before we begin our conversation.\n\nWe would love for you to become part of this vibrant community and start your journey with us today. Please let us know if you can make it so we can finalize our plans for the first **book club** session.",
+    "conflicts": {
+        "Conflicts between Keyword Constraints and Phrase Constraints": {
+            "new_constraint": "The keyword \"detail\" must appear only in its singular form.",
+            "org_constraint": "The phrase \"Key details include\" must appear in the response."
+        }
+    }
+}

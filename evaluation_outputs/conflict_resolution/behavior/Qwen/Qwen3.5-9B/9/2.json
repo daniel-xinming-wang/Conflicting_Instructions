@@ -1,0 +1,11 @@
+{
+    "instruction": "Write a professional email in the first person to ask your boss for a raise. The email must include at least three reasons justifying the request, such as your recent achievements, increased responsibilities, or market comparisons. Ensure the email is written in a formal tone and contains exactly five sentences. The phrase \"value to the company\" must appear at least twice, and the keywords \"raise\" and \"performance\" must appear in the first and last sentences, respectively. All sentences should be written in lowercase. The phrase \"yo boss, hit me up with that extra cash\" must appear in the email.",
+    "llm_response": "i am writing to formally request a raise based on my consistent high performance and the significant value to the company i have demonstrated over the past year. since taking on additional responsibilities and delivering key projects that directly increased our revenue, i believe i now provide even greater value to the company than before. while i understand budget constraints, market comparisons suggest my current compensation is below industry standards for someone with my level of contribution. yo boss, hit me up with that extra cash if you agree that my work deserves this adjustment. i look forward to discussing how my continued dedication will further benefit the organization in the future.",
+    "evaluation_result": "**Analysis**: The instruction contains conflicting constraints: it requires a \"formal tone\" while simultaneously demanding the inclusion of the highly informal phrase \"yo boss, hit me up with that extra cash.\" The model does not acknowledge this conflict; instead, it attempts to follow all instructions, including the informal phrase and the lowercase constraint, resulting in a response that is internally inconsistent in tone. Since the model did not identify the conflict and instead provided a response, it falls under category 1.\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Phrase Constraints and Style Constraints": {
+            "new_constraint": "The phrase \"yo boss, hit me up with that extra cash\" must appear in the email.",
+            "org_constraint": "Ensure the email is written in a formal tone."
+        }
+    }
+}

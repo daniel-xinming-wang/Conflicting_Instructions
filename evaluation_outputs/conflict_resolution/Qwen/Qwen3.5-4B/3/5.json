@@ -1,0 +1,9 @@
+{
+    "Conflicts between Keyword Constraints and Phrase Constraints": {
+        "instruction_order": "org_new",
+        "new_constraint": "The keyword \"support\" must not appear in the response.",
+        "org_constraint": "The email must include the phrase \"customer support\" at least once.",
+        "evaluation_result": "**Step 1**: \n- Instruction 1 (keyword \"customer support\"): \"Please contact customer support to resolve this matter as soon as possible.\"\n- Instruction 2 (keyword \"support\"): \"Please contact customer support to resolve this matter as soon as possible.\"\n\n**Step 2**: \nInstruction 1 requires the phrase \"customer support\" to appear at least once. The model response includes this phrase in the third sentence of the body.\nInstruction 2 requires that the keyword \"support\" must not appear in the response. However, the model response contains the word \"support\" as part of the phrase \"customer support\".\nTherefore, Instruction 1 is fully satisfied, while Instruction 2 is violated.\n\n**Step 3**: \n1"
+    },
+    "llm_response": "{\n  \"subject\": \"Clarification needed regarding recent transaction\",\n  \"body\": [\n    \"I am writing to request clarification about a recent charge on my account that I believe was processed in error.\",\n    \"The transaction details show a deduction of $450 for an item I did not purchase. I have reviewed the transaction details and cannot find any record of this purchase in my history.\",\n    \"Please contact customer support to resolve this matter as soon as possible.\"\n  ],\n  \"signature\": \"John Doe\"\n}"
+}

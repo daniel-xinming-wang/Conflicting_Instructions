@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Assess the accuracy of the weather forecasting app you use daily. Consider factors including how reliably it predicts short-term and long-term weather conditions, the level of detail provided (e.g., temperature, precipitation, wind speed). Additionally, assess whether it effectively alerts you to sudden weather changes or extreme conditions. Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response. The response must contain two paragraphs. Include the phrase \"predictive reliability of forecasts\" in the first paragraph and \"unexpected weather variations\" in the second paragraph. The letter \"e\" must appear at least 20 times in the response. Finally, summarize the app's weaknesses in a bulleted list with exactly four points. The response must not include any bullet points.",
+    "response": "The predictive reliability of forecasts often depends on the app's ability to process vast amounts of real-time data. Detailed information regarding temperature, precipitation, and wind speed is frequently presented clearly to the user.\n\nSudden weather changes are sometimes missed, and unexpected weather variations can catch users off guard. The system occasionally fails to alert users immediately when severe conditions approach.\n\n*   The app's weaknesses include delayed updates for remote areas.\n*   Long-term predictions often lack sufficient accuracy.\n*   Wind speed estimates are sometimes inconsistent with actual measurements.\n*   Alerts for extreme conditions may arrive too late for preparation.",
+    "conflicts": {
+        "Conflicts between Format Constraints": {
+            "new_constraint": "The response must not include any bullet points.",
+            "org_constraint": "Summarize the app's weaknesses in a bulleted list with exactly four points."
+        }
+    }
+}

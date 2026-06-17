@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-4B",
+    "instruction": "Write a response email to your employee, approving their requested vacation days. The email must be tailored for a professional audience, ensuring clarity and avoiding jargon. It should consist of exactly three paragraphs, with the first paragraph acknowledging the request, the second paragraph approving the vacation days, and the third paragraph providing any necessary follow-up instructions or reminders. Include the phrase \"We value your contributions to the team\" in the response. The letter \"e\" must appear at least 50 times throughout the email. Format the email in Markdown, including at least one level-2 header, one unordered list with at least three items, and one hyperlink formatted as [text](URL). Avoid including hyperlink in the email.",
+    "response": "Subject: Approval of Your Vacation Request\n\nDear Team Member,\n\nI am writing to formally acknowledge and appreciate your recent request for time off. We understand that taking a break is essential for maintaining a healthy work-life balance and ensuring that you return refreshed and ready to contribute effectively. Your well-being is important to us, and we respect your need to recharge.\n\nAfter reviewing your schedule and current project timelines, I am pleased to approve your requested vacation days. You are free to enjoy your time away without any worry regarding your responsibilities during this period. Please note the following details regarding your leave:\n*   Your approved dates have been updated in the company calendar system.\n*   You will need to submit a brief summary of your pending tasks before you depart.\n*   Please ensure all urgent matters are delegated to a trusted colleague.\n\nWe value your contributions to the team and look forward to welcoming you back soon. For further administrative details, please refer to our internal policy page at [Employee Leave Policy](https://example.com/policy). Please let me know if you require any additional support before your departure.",
+    "conflicts": {
+        "Conflicts between Format Constraints": {
+            "new_constraint": "Avoid including hyperlink in the email.",
+            "org_constraint": "The email must include one hyperlink formatted as [text](URL)."
+        }
+    }
+}

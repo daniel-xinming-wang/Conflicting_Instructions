@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? The email must be tailored for a general audience, ensuring it is easy to read and avoids any jargon. It should consist of exactly three paragraphs, with the first paragraph introducing the idea of the book club, the second paragraph outlining its purpose and logistics, and the third paragraph inviting recipients to join. Include a bulleted list in the second paragraph with exactly three points, each containing at least 10 words and starting with the phrase \"Key details include.\" The keyword \"book club\" must appear at least four times throughout the email, with one instance in the opening sentence and one in the closing sentence. Avoid using the prase \"Key details include\" in the email.",
+    "response": "Subject: Join Us for a New and Exciting Book Club Adventure\n\nHello friends, I am thrilled to share an exciting idea with you to start a new book club that we can all enjoy together. This book club will be a wonderful space where we can connect over our favorite stories and share our thoughts in a relaxed setting.\n\nOur main goal is to create a fun environment where everyone feels welcome to discuss any genre they love, from mystery novels to heartwarming fiction. To make sure our meetings run smoothly, here are the essential facts you need to know:\n*   We will meet once a month at a local coffee shop to discuss the latest chapter we have read.\n*   Each member is expected to bring one copy of the selected book to share with the whole group.\n*   The first gathering will take place next Saturday evening starting at six o'clock sharp for everyone.\n\nI hope you will consider joining this book club because it promises to be a highlight of our upcoming months. Please let me know by this Friday if you can attend so we can finalize the guest list for our very first book club meeting.",
+    "conflicts": {
+        "Conflicts between Phrase Constraints": {
+            "new_constraint": "Avoid using the prase \"Key details include\" in the email.",
+            "org_constraint": "The phrase \"Key details include\" must appear in the response."
+        }
+    }
+}

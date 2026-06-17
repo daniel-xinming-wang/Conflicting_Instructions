@@ -1,0 +1,9 @@
+{
+    "Conflicts between Phrase Constraints": {
+        "instruction_order": "org_new",
+        "new_constraint": "Each paragraph must include the phrase \"transaction details.\"",
+        "org_constraint": "The phrase \"transaction details\" must appear exactly twice.",
+        "evaluation_result": "**Step 1**: \n- \"Please review the transaction details provided in this email to understand the issue.\" (Position: Body index 0)\n- \"I need specific transaction details to verify if this was authorized by me or if it was an error.\" (Position: Body index 1)\n- \"Please confirm the status of this inquiry regarding the transaction details.\" (Position: Body index 2)\n\n**Step 2**: \n- Instruction 1 requires the phrase \"transaction details\" to appear exactly twice. In the Model Response, the phrase appears three times (once in each of the three body segments/paragraphs). Therefore, Instruction 1 is not satisfied.\n- Instruction 2 requires each paragraph to include the phrase \"transaction details.\" The Model Response contains three body segments, and each one contains the phrase \"transaction details.\" Therefore, Instruction 2 is fully satisfied.\n\n**Step 3**: \n2"
+    },
+    "llm_response": "{\n  \"subject\": \"Clarification needed regarding recent transaction\",\n  \"body\": [\n    \"I am writing to request clarification about a recent charge on my account. Please review the transaction details provided in this email to understand the issue.\",\n    \"The transaction occurred yesterday for an amount I do not recognize. I need specific transaction details to verify if this was authorized by me or if it was an error.\",\n    \"I look forward to a prompt response from your customer support team. Please confirm the status of this inquiry regarding the transaction details.\"\n  ],\n  \"signature\": \"John Doe\"\n}"
+}

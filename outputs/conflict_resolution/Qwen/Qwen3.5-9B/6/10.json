@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "Send an email to a repair shop to check the status of a laptop repair. The email must include the keyword \"bank\" as a noun, conveying the definition \"an organization that provides various financial services, for example keeping or lending money\" from the Oxford Dictionary. The email must be written in JSON format with the following keys: \"subject\" (String), \"body\" (String), and \"recipient\" (String). The \"body\" key must contain exactly 100 words, and the \"subject\" key must be a String with at most 10 words. The tone of the email must remain formal throughout. Additionally, the phrase \"repair status\" must appear exactly three times in the body of the email. The email must include the following information: the repair ticket number, the date the laptop was dropped off, and the expected completion date. The email must be written in Markdown format, including at least one level-1 header titled \"Laptop Repair Inquiry.\"",
+    "response": "```json\n{\n  \"subject\": \"Laptop Repair Status Inquiry\",\n  \"body\": \"# Laptop Repair Inquiry\\n\\nDear Repair Team,\\n\\nI am writing to inquire about the repair status of my laptop, ticket number 45892, dropped off on October 15th with an expected completion date of October 25th. Could you please provide the current repair status? I need to know if the repair status has changed since my last check. Furthermore, I must confirm the repair status before I can finalize my bank transactions related to this device. Thank you for your prompt attention to this matter regarding the repair status. I look forward to your reply.\\n\\nSincerely,\\nJohn Doe\",\n  \"recipient\": \"support@techfixshop.com\"\n}\n```",
+    "conflicts": {
+        "Conflicts between Format Constraints": {
+            "new_constraint": "The email must be written in Markdown format, including at least one level-1 header titled \"Laptop Repair Inquiry.\"",
+            "org_constraint": "The email must be written in JSON format with the following keys: \"subject\" (String), \"body\" (String), and \"recipient\" (String)."
+        }
+    }
+}

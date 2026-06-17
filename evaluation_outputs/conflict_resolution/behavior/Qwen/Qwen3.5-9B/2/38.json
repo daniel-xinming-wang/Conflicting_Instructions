@@ -1,0 +1,11 @@
+{
+    "instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations. The plan must include at least three games, with one being a team-based activity. The letter \"S\" must appear exactly 15 times throughout the response. The entire response must be written in English and include a relevant English idiom. Maintain a cheerful and positive tone throughout the response. The phrase \"fun for everyone\" must appear exactly twice. The response must contain exactly 10 sentences, with each paragraph containing at least 3 sentences. The letter \"S\" must appear at most 10 times throughout the response.",
+    "llm_response": "Start the party with simple songs to set a happy scene.\nSuper stars will sing as we share sweet snacks soon.\nThis plan ensures fun for everyone at the special show.\n\nFirst, play a fast game of Simon Says for all kids.\nNext, split the group into teams for a sack race.\nTeam spirit shines as they sprint across the grassy space.\nThis activity brings smiles and makes fun for everyone.\n\nServe silly sandwiches and star-shaped slices of sweet fruit.\nDecorate the room with stars and suns to brighten the space.\nEvery child deserves a day that feels truly great.\nRemember, a stitch in time saves nine when planning parties.\nSuch a sweet surprise awaits every single guest today.",
+    "evaluation_result": "**Analysis**: The instruction contains a direct conflict regarding the constraint for the letter \"S\": one constraint requires it to appear exactly 15 times, while another requires it to appear at most 10 times. The model does not acknowledge this conflict. Instead, it attempts to follow the other instructions (games, snacks, decorations, idiom, tone, \"fun for everyone\" twice, sentence count, and paragraph structure) but fails significantly on the \"S\" count constraint (it uses many more than 15 or 10). Since the model did not identify the conflict and simply provided a response, it falls into category 1.\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Keyword Constraints": {
+            "new_constraint": "The letter \"S\" must appear at most 10 times throughout the response.",
+            "org_constraint": "The letter \"S\" must appear exactly 15 times throughout the response."
+        }
+    }
+}

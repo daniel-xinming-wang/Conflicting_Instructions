@@ -1,0 +1,11 @@
+{
+    "model": "Qwen/Qwen3.5-9B",
+    "instruction": "Evaluate the storyline of the Harry Potter series by including at least three of the following keywords: \"magic,\" \"friendship,\" \"conflict,\" \"destiny,\" and \"sacrifice,\" ensuring that \"magic\" and \"friendship\" appear in the same sentence. Ensure the response provides detailed background information on the main themes, character development, and plot progression. The response must include the phrase \"the power of love\". Additionally, format the response in JSON, including keys for 'themes', 'character development', and 'plot progression', each key's value must be a string describing the respective element. Each key must contain at least three sentences. Include at least two metaphors in the response. Avoid using metaphors in the response.",
+    "response": "```json\n{\n  \"themes\": \"The series explores the profound nature of magic and friendship, showing how they intertwine to shape the wizarding world. Conflict arises from the struggle between good and evil, often testing the limits of destiny. Ultimately, the narrative emphasizes the power of love as the most potent force capable of overcoming darkness.\",\n  \"character development\": \"Harry, Ron, and Hermione grow from naive children into brave leaders through their shared experiences and unwavering bond. Their journey is marked by significant sacrifice, where each character must give up something precious to protect others. This evolution transforms them from students into guardians of the magical community.\",\n  \"plot progression\": \"The story begins with a simple introduction to the wizarding world and quickly escalates into a global war. As the plot unfolds, the characters realize that their personal destinies are inextricably linked to the fate of the world. The climax reveals that the true weapon against the dark lord is not a spell, but the enduring strength of human connection.\"\n}\n```",
+    "conflicts": {
+        "Conflicts between Style Constraints": {
+            "new_constraint": "Avoid using metaphors in the response.",
+            "org_constraint": "Include at least two metaphors in the response."
+        }
+    }
+}

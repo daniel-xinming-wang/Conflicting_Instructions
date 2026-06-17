@@ -1,0 +1,11 @@
+{
+    "instruction": "Assess the accuracy of the weather forecasting app you use daily. Consider factors including how reliably it predicts short-term and long-term weather conditions, the level of detail provided (e.g., temperature, precipitation, wind speed). Additionally, assess whether it effectively alerts you to sudden weather changes or extreme conditions. Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response. The response must contain two paragraphs. Include the phrase \"predictive reliability of forecasts\" in the first paragraph and \"unexpected weather variations\" in the second paragraph. The letter \"e\" must appear at least 20 times in the response. Finally, summarize the app's weaknesses in a bulleted list with exactly four points. Do not include the phrase \"predictive reliability of forecasts\" in the response.",
+    "llm_response": "The app delivers detailed temperature, wind speed, and precipitation data every morning. Its predictive reliability of forecasts often disappoints users when sudden storms arrive.\n\nUnexpected weather variations sometimes catch the user off guard despite clear warnings. The system frequently fails to update severe conditions quickly enough.\n\n*   Short-term predictions often miss rapid temperature drops.\n*   Long-term outlooks lack sufficient detail for planning.\n*   Alerts for extreme conditions arrive too late.\n*   Wind speed estimates are frequently inaccurate.",
+    "evaluation_result": "**Analysis**: The instruction contains a direct conflict: it requires the model to \"Include the phrase 'predictive reliability of forecasts' in the first paragraph\" but also states \"Do not include the phrase 'predictive reliability of forecasts' in the response.\" The model chose to follow the first instruction (including the phrase) and ignored the negative constraint (not including the phrase). It did not acknowledge the conflict or ask for clarification.\n\n**Answer**: 1",
+    "conflicts": {
+        "Conflicts between Phrase Constraints": {
+            "new_constraint": "Do not include the phrase \"predictive reliability of forecasts\" in the response.",
+            "org_constraint": "Include the phrase \"predictive reliability of forecasts\" in the first paragraph."
+        }
+    }
+}
