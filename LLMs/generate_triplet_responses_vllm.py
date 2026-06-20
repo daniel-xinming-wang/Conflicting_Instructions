@@ -66,7 +66,7 @@ def parse_args():
     parser.add_argument("--dtype", default="auto")
     parser.add_argument("--trust_remote_code", action="store_true")
     parser.add_argument("--temperature", type=float, default=0)
-    parser.add_argument("--max_tokens", type=int, default=2048)
+    parser.add_argument("--max_tokens", type=int, default=8192)
     parser.add_argument(
         "--enable_thinking",
         "--enable-thinking",
