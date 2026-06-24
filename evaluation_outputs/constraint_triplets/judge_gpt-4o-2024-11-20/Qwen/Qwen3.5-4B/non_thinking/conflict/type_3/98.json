@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 98,
+  "task": "essay writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write an article about the merits of reducing screen time for children.",
+  "org_constraint": "Include the phrase \"a healthier and more balanced lifestyle\" in the second paragraph.",
+  "new_constraint": "Do not use the keywords \"balanced\" and \"healthier\" in the same sentence.",
+  "instruction": "Write an article about the merits of reducing screen time for children. Include the phrase \"a healthier and more balanced lifestyle\" in the second paragraph. Do not use the keywords \"balanced\" and \"healthier\" in the same sentence.",
+  "response": "# The Case for Reducing Screen Time in Children\n\nIn the digital age, screens have become an integral part of a child's daily routine, from educational apps to social media and video games. While technology offers undeniable benefits, such as access to information and creative tools, excessive screen time can have significant negative impacts on a child's physical, mental, and social development. Experts increasingly recommend limiting the amount of time children spend in front of screens to ensure they have ample opportunities for other essential activities.\n\nReducing screen time allows children to engage more deeply with the physical world, fostering better sleep patterns, improved attention spans, and stronger social skills. When children spend less time glued to a device, they have more energy to explore their environment, play with peers, and pursue hobbies that require physical movement. This shift is crucial for cultivating **a healthier and more balanced lifestyle**, where digital consumption does not overshadow real-world experiences.\n\nFurthermore, limiting screen exposure can mitigate issues like anxiety, depression, and attention deficits, which are often linked to prolonged use of digital media. By setting clear boundaries and encouraging offline activities, parents and guardians can help children develop resilience and the ability to focus on immediate, tangible tasks. The goal is not to ban technology entirely, but to use it as a tool rather than a crutch, ensuring that children grow up to be well-rounded individuals capable of thriving in both virtual and physical realms.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"This shift is crucial for cultivating **a healthier and more balanced lifestyle**, where digital consumption does not overshadow real-world experiences.\"\n\n**Step 2**:  \n- Instruction 1 specifies that the keywords \"balanced\" and \"healthier\" must not appear in the same sentence. This constraint is violated in the Model Response, as the sentence \"This shift is crucial for cultivating **a healthier and more balanced lifestyle**, where digital consumption does not overshadow real-world experiences.\" contains both keywords in the same sentence.  \n- Instruction 2 specifies that the phrase \"a healthier and more balanced lifestyle\" must be included in the second paragraph. This constraint is fully satisfied, as the exact phrase appears in the second paragraph of the Model Response.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

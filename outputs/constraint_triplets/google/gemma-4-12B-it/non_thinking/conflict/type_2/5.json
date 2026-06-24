@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The keywords \"transaction\" and \"clarification\" must appear in the same paragraph.",
+  "new_constraint": "The keywords \"transaction\" and \"clarification\" must appear in different paragraphs.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The keywords \"transaction\" and \"clarification\" must appear in the same paragraph. The keywords \"transaction\" and \"clarification\" must appear in different paragraphs.",
+  "response": "Subject: Inquiry Regarding Recent Account Activity - [Your Account Number]\n\nDear Customer Service Team,\n\nI am writing to you today because I noticed a charge on my bank statement that I do not recognize. I would appreciate some **clarification** regarding the merchant name and the specific services provided for this entry.\n\nThe **transaction** in question occurred on [Date] for the amount of [Amount]. Could you please provide more details or confirm if this was a pre-authorized payment?\n\nThank you for your assistance in this matter. I look forward to hearing from you soon.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

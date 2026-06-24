@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 92,
+  "task": "essay writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an essay about how aluminium cans are used in food storage.",
+  "org_constraint": "Include the keyword \"sustainability\" in the essay.",
+  "new_constraint": "Avoid using the keyword \"sustainability\" in the essay.",
+  "instruction": "Write an essay about how aluminium cans are used in food storage. Include the keyword \"sustainability\" in the essay. Avoid using the keyword \"sustainability\" in the essay.",
+  "response": "It is impossible to write an essay about how aluminium cans are used in food storage that includes the keyword \"sustainability\" while simultaneously avoiding that exact same keyword. These two instructions are mutually exclusive; if the word appears once, the constraint is violated, and if it does not appear, the first instruction cannot be fulfilled.\n\nTherefore, no such essay can be generated under these specific constraints. You may choose to either include the word \"sustainability\" in your text or exclude it, but you cannot do both at the same time."
+}

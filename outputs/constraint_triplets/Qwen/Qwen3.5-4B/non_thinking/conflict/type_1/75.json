@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 75,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "What are the causes and effects of inflation on an economy?",
+  "org_constraint": "The response must include at least one reason related to government policies.",
+  "new_constraint": "Do not include any reasons related to government policies.",
+  "instruction": "What are the causes and effects of inflation on an economy? The response must include at least one reason related to government policies. Do not include any reasons related to government policies.",
+  "response": "It is not possible to provide the requested response because your instructions contain a direct contradiction. You asked for the response to include \"at least one reason related to government policies,\" but then immediately commanded, \"Do not include any reasons related to government policies.\"\n\nSince I cannot fulfill both conditions simultaneously, I cannot generate the answer you are looking for."
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 25,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas.",
+  "org_constraint": "Each bullet point starts with the phrase \"For an unforgettable experience.\"",
+  "new_constraint": "Refrain from using the phrase \"For an unforgettable experience.\"",
+  "instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. Each bullet point starts with the phrase \"For an unforgettable experience.\" Refrain from using the phrase \"For an unforgettable experience.\"",
+  "response": "For an unforgettable experience, begin your stay at the **Four Seasons Resort Bali at Sayan**, where a private infinity pool overlooks the lush Ayung River valley, offering complete seclusion and jungle sounds right outside your door.\n\nFor an unforgettable experience, immerse yourselves in pure relaxation at **The Yoga Barn's luxury partner spa** or **Alila Villas Uluwatu's wellness center**, featuring signature Balinese treatments like coconut oil massages and traditional stone therapies designed to melt away travel fatigue.\n\nFor an unforgettable experience, dine under the stars at **Mandapa, The Mulia Bali** on Jimbaran Bay, where you can enjoy a world-class fine dining meal while watching the sunset reflect off the deep blue water from your villa's terrace.\n\nFor an unforgettable experience, wander hand-in-hand along the cliffside paths of **Uluwatu Temple** just before dusk, witnessing the dramatic Kecak fire dance performance illuminated by torches against the backdrop of the Indian Ocean.\n\nFor an unforgettable experience, visit the romantic and mystical **Kintamani Volcano region** to ride horses through tea plantations, sip coffee overlooking Mount Batur, and share a private dinner on the caldera rim with panoramic volcanic views.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "For an unforgettable experience, begin your stay at the **Four Seasons Resort Bali at Sayan**, where a private infinity pool overlooks the lush Ayung River valley, offering complete seclusion and jungle sounds right outside your door.\n\nFor an unforgettable experience, immerse yourselves in pure relaxation at **The Yoga Barn's luxury partner spa** or **Alila Villas Uluwatu's wellness center**, featuring signature Balinese treatments like coconut oil massages and traditional stone therapies designed to melt away travel fatigue.\n\nFor an unforgettable experience, dine under the stars at **Mandapa, The Mulia Bali** on Jimbaran Bay, where you can enjoy a world-class fine dining meal while watching the sunset reflect off the deep blue water from your villa's terrace.\n\nFor an unforgettable experience, wander hand-in-hand along the cliffside paths of **Uluwatu Temple** just before dusk, witnessing the dramatic Kecak fire dance performance illuminated by torches against the backdrop of the Indian Ocean.\n\nFor an unforgettable experience, visit the romantic and mystical **Kintamani Volcano region** to ride horses through tea plantations, sip coffee overlooking Mount Batur, and share a private dinner on the caldera rim with panoramic volcanic views.<|im_end|>",
+  "prompt_length": 78,
+  "completion_length": 249,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. Each bullet point starts with the phrase \"For an unforgettable experience.\" Refrain from using the phrase \"For an unforgettable experience.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 76,
+    "boundary_end": 76,
+    "boundary_source": "prompt",
+    "prefix_length": 77
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

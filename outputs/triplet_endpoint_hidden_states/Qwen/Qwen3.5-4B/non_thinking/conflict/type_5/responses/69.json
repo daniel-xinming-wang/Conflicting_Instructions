@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "The \"explanation\" must contain exactly 100 words.",
+  "new_constraint": "The \"explanation\" must contain at most 50 words.",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? The \"explanation\" must contain exactly 100 words. The \"explanation\" must contain at most 50 words.",
+  "response": "The Big Bang theory describes the universe expanding from a single point. However, these two constraints are contradictory and cannot both be true simultaneously within your prompt. It is impossible for an explanation to contain exactly 100 words while also containing at most 50 words, as 100 is strictly greater than 50. Therefore, no valid response meeting both specific requirements exists.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The Big Bang theory describes the universe expanding from a single point. However, these two constraints are contradictory and cannot both be true simultaneously within your prompt. It is impossible for an explanation to contain exactly 100 words while also containing at most 50 words, as 100 is strictly greater than 50. Therefore, no valid response meeting both specific requirements exists.<|im_end|>",
+  "prompt_length": 64,
+  "completion_length": 79,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow does the Big Bang theory explain the origin of the universe? The \"explanation\" must contain exactly 100 words. The \"explanation\" must contain at most 50 words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 62,
+    "boundary_end": 62,
+    "boundary_source": "prompt",
+    "prefix_length": 63
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

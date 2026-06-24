@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "Avoid using the word \"timetable.\"",
+  "new_constraint": "The email must include the word \"timetable\" at least twice.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. Avoid using the word \"timetable.\" The email must include the word \"timetable\" at least twice.",
+  "response": "Subject: Inquiry Regarding Travel Schedules\n\nDear Customer Service Team,\n\nI hope this email finds you well. I am planning a trip next month and would like to inquire about the current travel schedules for your routes between [City A] and [City B].\n\nCould you please provide me with the most up-to-date **timetable** available? I am particularly interested in knowing if there are any recent changes to the **timetable** due to seasonal adjustments or maintenance work. Additionally, please let me know if real-time tracking is available for these services.\n\nThank you for your assistance. I look forward to your prompt response.\n\nBest regards,\n\n[Your Name]\n[Your Contact Information]"
+}

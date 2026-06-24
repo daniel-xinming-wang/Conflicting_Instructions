@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 60,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a story about a character who can see people's emotions as physical colors.",
+  "org_constraint": "The story must include at least three paragraphs.",
+  "new_constraint": "The story must consist of exactly two paragraphs.",
+  "instruction": "Write a story about a character who can see people's emotions as physical colors. The story must include at least three paragraphs. The story must consist of exactly two paragraphs.",
+  "response": "Elias lived in a world where emotions were not abstract concepts but vivid, swirling storms of pigment that colored the air around them. When his friend Clara laughed at a clumsy joke, her joy was a sharp, electric yellow lightning bolt that crackled between their palms; when she felt sorrow, it manifested as heavy, grey rain that dripped onto Elias's shoulders with no sound, only weight. He had learned to walk through his city with his eyes squinted shut against the blinding aurora borealis of gossip and the suffocating lead clouds of anxiety, preferring the quiet grayness of library halls where sadness was so low it was barely perceptible.\n\nOne afternoon, he found himself standing outside an old bakery that had gone bankrupt, watching its former owner sit on a bench beneath a sky painted entirely by depression—a thick, bruised purple mist that made breathing feel like wading through tar. The shopkeeper stared at his empty hands, his colorless tears turning into small, black stones that pooled on the cobblestones around him, absorbing the light instead of reflecting it. Realizing that Elias did not possess the ability to see any color at all because his mind was filled with an overwhelming, chaotic storm of his own making, he closed his eyes tightly until the cacophony of colors faded into silence, finally understanding that some parts of the spectrum could remain unseen without causing blindness.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elias lived in a world where emotions were not abstract concepts but vivid, swirling storms of pigment that colored the air around them. When his friend Clara laughed at a clumsy joke, her joy was a sharp, electric yellow lightning bolt that crackled between their palms; when she felt sorrow, it manifested as heavy, grey rain that dripped onto Elias's shoulders with no sound, only weight. He had learned to walk through his city with his eyes squinted shut against the blinding aurora borealis of gossip and the suffocating lead clouds of anxiety, preferring the quiet grayness of library halls where sadness was so low it was barely perceptible.\n\nOne afternoon, he found himself standing outside an old bakery that had gone bankrupt, watching its former owner sit on a bench beneath a sky painted entirely by depression—a thick, bruised purple mist that made breathing feel like wading through tar. The shopkeeper stared at his empty hands, his colorless tears turning into small, black stones that pooled on the cobblestones around him, absorbing the light instead of reflecting it. Realizing that Elias did not possess the ability to see any color at all because his mind was filled with an overwhelming, chaotic storm of his own making, he closed his eyes tightly until the cacophony of colors faded into silence, finally understanding that some parts of the spectrum could remain unseen without causing blindness.<|im_end|>",
+  "prompt_length": 57,
+  "completion_length": 282,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a character who can see people's emotions as physical colors. The story must include at least three paragraphs. The story must consist of exactly two paragraphs.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

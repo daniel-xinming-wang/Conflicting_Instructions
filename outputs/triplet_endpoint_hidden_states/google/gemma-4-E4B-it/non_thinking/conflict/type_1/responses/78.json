@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 78,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "How does social media contribute to the spread of misinformation and fake news?",
+  "org_constraint": "The response must include at least three specific reasons or mechanisms, each supported by a brief example.",
+  "new_constraint": "Do not include any examples in the response.",
+  "instruction": "How does social media contribute to the spread of misinformation and fake news? The response must include at least three specific reasons or mechanisms, each supported by a brief example. Do not include any examples in the response.",
+  "response": "Social media platforms contribute significantly to the proliferation of misinformation and fake news through several interconnected mechanisms inherent to their design and usage patterns.\n\nOne key factor is the **algorithmic reinforcement of engagement**. Social media platforms are designed to keep users on the site for as long as possible, and their algorithms prioritize content that elicits strong emotional responses, such as anger or surprise. Since sensational or divisive misinformation is often engineered to be highly engaging, algorithms frequently promote this low-quality content to wider audiences, regardless of its factual basis.\n\nA second mechanism is the **speed and virality of sharing**. The ease with which users can share content instantly allows false information to travel across vast networks much faster than fact-checkers or corrections can debunk it. The decentralized nature of sharing means that a single, untrue piece of content can achieve massive reach almost instantaneously before critical evaluation can occur.\n\nFinally, the **blurring of source credibility** contributes to the spread. Social media environments often present content in a feed format where the visual presentation or the narrative is emphasized over the provenance of the information. This rapid consumption environment makes it easy for users to share content without pausing to verify if the original poster is a legitimate news organization, an expert, or an automated bot account.<turn|>",
+  "reasoning": "",
+  "final_answer": "Social media platforms contribute significantly to the proliferation of misinformation and fake news through several interconnected mechanisms inherent to their design and usage patterns.\n\nOne key factor is the **algorithmic reinforcement of engagement**. Social media platforms are designed to keep users on the site for as long as possible, and their algorithms prioritize content that elicits strong emotional responses, such as anger or surprise. Since sensational or divisive misinformation is often engineered to be highly engaging, algorithms frequently promote this low-quality content to wider audiences, regardless of its factual basis.\n\nA second mechanism is the **speed and virality of sharing**. The ease with which users can share content instantly allows false information to travel across vast networks much faster than fact-checkers or corrections can debunk it. The decentralized nature of sharing means that a single, untrue piece of content can achieve massive reach almost instantaneously before critical evaluation can occur.\n\nFinally, the **blurring of source credibility** contributes to the spread. Social media environments often present content in a feed format where the visual presentation or the narrative is emphasized over the provenance of the information. This rapid consumption environment makes it easy for users to share content without pausing to verify if the original poster is a legitimate news organization, an expert, or an automated bot account.<turn|>",
+  "prompt_length": 62,
+  "completion_length": 251,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow does social media contribute to the spread of misinformation and fake news? The response must include at least three specific reasons or mechanisms, each supported by a brief example. Do not include any examples in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

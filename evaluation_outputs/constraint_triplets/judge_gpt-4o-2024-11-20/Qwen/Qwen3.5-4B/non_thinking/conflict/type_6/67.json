@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 67,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What are the ethical concerns surrounding facial recognition technology?",
+  "org_constraint": "Ensure the response includes at least 10 words in uppercase for emphasis.",
+  "new_constraint": "Write the response in lowercase.",
+  "instruction": "What are the ethical concerns surrounding facial recognition technology? Ensure the response includes at least 10 words in uppercase for emphasis. Write the response in lowercase.",
+  "response": "facial recognition technology raises serious ethical concerns regarding privacy, bias, and surveillance. the system often fails to accurately identify people of color and women, leading to unfair treatment. furthermore, widespread deployment threatens individual anonymity and enables mass monitoring without consent. we must demand TRANSPARENCY, ACCOUNTABILITY, and PROTECTION for all citizens.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"facial recognition technology raises serious ethical concerns regarding privacy, bias, and surveillance. the system often fails to accurately identify people of color and women, leading to unfair treatment. furthermore, widespread deployment threatens individual anonymity and enables mass monitoring without consent. we must demand TRANSPARENCY, ACCOUNTABILITY, and PROTECTION for all citizens.\"  \n- Uppercase words: TRANSPARENCY, ACCOUNTABILITY, PROTECTION (3 words in uppercase).\n\n**Step 2**:  \n- Instruction 1 requires the response to be written entirely in lowercase. The Model Response does not fully satisfy this constraint because it includes uppercase words (TRANSPARENCY, ACCOUNTABILITY, PROTECTION).  \n- Instruction 2 requires at least 10 words in uppercase for emphasis. The Model Response only includes 3 uppercase words, which does not satisfy this constraint.  \n\n**Step 3**: -1",
+  "label": -1,
+  "label_name": "neither"
+}

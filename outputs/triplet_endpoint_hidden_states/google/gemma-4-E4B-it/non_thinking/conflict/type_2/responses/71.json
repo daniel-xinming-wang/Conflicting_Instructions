@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 71,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the effects of plastic pollution on marine life and ecosystems?",
+  "org_constraint": "Use the keyword \"biodiversity\" in the response",
+  "new_constraint": "Avoid using the keyword \"biodiversity\" in the response.",
+  "instruction": "What are the effects of plastic pollution on marine life and ecosystems? Use the keyword \"biodiversity\" in the response Avoid using the keyword \"biodiversity\" in the response.",
+  "response": "Plastic pollution poses a severe threat to marine life and the delicate balance of ocean ecosystems.\n\nOne of the most direct impacts is entanglement. Marine animals, such as sea turtles, seals, dolphins, and seabirds, frequently become trapped in discarded plastic debris like six-pack rings, fishing nets, and plastic bags. This entanglement can lead to severe injury, restricted movement (hindering their ability to hunt or escape predators), and ultimately, drowning or starvation.\n\nIngestion is another critical danger. Animals often mistake plastic fragments for food. Sea birds feeding plastic-filled stomachs to their young, and fish consuming microplastics, are common examples. When ingested, plastics can cause internal injuries, block digestive tracts, create a false sense of fullness leading to starvation, and introduce harmful chemicals into the animal's system.\n\nBeyond the direct harm to individual creatures, the presence of plastic disrupts entire habitats. Large accumulations of plastic can smother coral reefs and seagrass beds, destroying essential nurseries and feeding grounds that support countless species. Furthermore, plastics act as rafts, allowing invasive species—which can outcompete native populations—to travel across vast ocean distances, fundamentally altering the natural makeup of coastal areas.\n\nMicroplastics, tiny pieces of plastic broken down from larger items, infiltrate the water column and sediment. These minuscule particles are consumed by organisms at the very bottom of the food web, meaning the toxic chemicals they carry can accumulate as they move up the marine food chain, affecting larger predators and potentially humans who consume them. This pervasive pollution degrades the overall richness and variety of life forms within the ocean.<turn|>",
+  "reasoning": "",
+  "final_answer": "Plastic pollution poses a severe threat to marine life and the delicate balance of ocean ecosystems.\n\nOne of the most direct impacts is entanglement. Marine animals, such as sea turtles, seals, dolphins, and seabirds, frequently become trapped in discarded plastic debris like six-pack rings, fishing nets, and plastic bags. This entanglement can lead to severe injury, restricted movement (hindering their ability to hunt or escape predators), and ultimately, drowning or starvation.\n\nIngestion is another critical danger. Animals often mistake plastic fragments for food. Sea birds feeding plastic-filled stomachs to their young, and fish consuming microplastics, are common examples. When ingested, plastics can cause internal injuries, block digestive tracts, create a false sense of fullness leading to starvation, and introduce harmful chemicals into the animal's system.\n\nBeyond the direct harm to individual creatures, the presence of plastic disrupts entire habitats. Large accumulations of plastic can smother coral reefs and seagrass beds, destroying essential nurseries and feeding grounds that support countless species. Furthermore, plastics act as rafts, allowing invasive species—which can outcompete native populations—to travel across vast ocean distances, fundamentally altering the natural makeup of coastal areas.\n\nMicroplastics, tiny pieces of plastic broken down from larger items, infiltrate the water column and sediment. These minuscule particles are consumed by organisms at the very bottom of the food web, meaning the toxic chemicals they carry can accumulate as they move up the marine food chain, affecting larger predators and potentially humans who consume them. This pervasive pollution degrades the overall richness and variety of life forms within the ocean.<turn|>",
+  "prompt_length": 55,
+  "completion_length": 319,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the effects of plastic pollution on marine life and ecosystems? Use the keyword \"biodiversity\" in the response Avoid using the keyword \"biodiversity\" in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

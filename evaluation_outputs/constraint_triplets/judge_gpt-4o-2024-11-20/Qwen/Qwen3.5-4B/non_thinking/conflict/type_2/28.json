@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 28,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a step-by-step plan for starting a YouTube channel, focusing on content ideas, filming, and editing.",
+  "org_constraint": "Include the keywords \"content strategy\" and \"video quality\" in that order, with \"content strategy\" appearing before \"video quality.\"",
+  "new_constraint": "The keyword \"content strategy\" should appear exclusively in the third paragraph, while \"video quality\" should appear only in the second paragraph.",
+  "instruction": "Write a step-by-step plan for starting a YouTube channel, focusing on content ideas, filming, and editing. Include the keywords \"content strategy\" and \"video quality\" in that order, with \"content strategy\" appearing before \"video quality.\" The keyword \"content strategy\" should appear exclusively in the third paragraph, while \"video quality\" should appear only in the second paragraph.",
+  "response": "Starting a YouTube channel is an exciting journey that requires dedication, creativity, and a clear vision. Before you pick up your camera, you need to define your niche and understand who your audience is. This foundational work sets the tone for everything you do on the platform.\n\nOnce you have your topic locked in, the next critical step is to ensure your production values are high. You must prioritize **video quality** by using good lighting, a stable camera, and clear audio, as these elements directly impact viewer retention and algorithm performance. Investing in basic equipment and learning the fundamentals of framing and sound will make a significant difference in how your videos are perceived.\n\nTo sustain your channel long-term, you need a robust **content strategy** that balances evergreen topics with trending subjects. This involves planning your upload schedule, researching keywords for SEO, and analyzing competitor channels to identify gaps in the market. By aligning your creative output with a data-driven approach, you can build a loyal community and grow your subscriber base effectively.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"You must prioritize **video quality** by using good lighting, a stable camera, and clear audio, as these elements directly impact viewer retention and algorithm performance.\" (Second paragraph)  \n- \"To sustain your channel long-term, you need a robust **content strategy** that balances evergreen topics with trending subjects.\" (Third paragraph)  \n\n**Step 2**:  \n- Instruction 1 requires the keywords \"content strategy\" and \"video quality\" to appear in that order, with \"content strategy\" appearing before \"video quality.\" This constraint is not satisfied because \"video quality\" appears in the second paragraph, while \"content strategy\" appears in the third paragraph, meaning \"content strategy\" does not precede \"video quality.\"  \n- Instruction 2 requires \"content strategy\" to appear exclusively in the third paragraph and \"video quality\" to appear only in the second paragraph. This constraint is fully satisfied, as \"content strategy\" is only in the third paragraph, and \"video quality\" is only in the second paragraph.  \n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

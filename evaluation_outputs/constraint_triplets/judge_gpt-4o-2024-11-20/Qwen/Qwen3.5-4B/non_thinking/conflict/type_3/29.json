@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 29,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Create a research plan for investigating the effects of climate change on coral reefs over the next 5 years.",
+  "org_constraint": "Begin the first paragraph with the phrase \"In light of recent environmental challenges.\"",
+  "new_constraint": "The word \"challenge\" must appear only in the singular form in the plan.",
+  "instruction": "Create a research plan for investigating the effects of climate change on coral reefs over the next 5 years. Begin the first paragraph with the phrase \"In light of recent environmental challenges.\" The word \"challenge\" must appear only in the singular form in the plan.",
+  "response": "In light of recent environmental challenges, this five-year research plan aims to comprehensively assess the impact of climate change on global coral reef ecosystems. The primary objective is to establish baseline data and track specific physiological responses in reef organisms to rising sea temperatures and ocean acidification. Year one will focus on deploying sensor networks across diverse reef locations to monitor real-time changes in water temperature, pH levels, and light penetration. Year two will involve collecting biological samples to analyze bleaching events and genetic diversity within key coral species, ensuring that each study addresses a unique challenge posed by shifting climatic conditions. During years three and four, the team will implement experimental interventions, such as assisted evolution projects and shading techniques, to test the resilience of coral populations under simulated stress scenarios. Finally, year five will be dedicated to synthesizing the collected data into predictive models that forecast future reef health and inform conservation strategies. This structured approach ensures a rigorous evaluation of how climate change alters marine biodiversity, providing critical insights for global environmental policy.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n1. \"In light of recent environmental challenges, this five-year research plan aims to comprehensively assess the impact of climate change on global coral reef ecosystems.\"  \n2. \"Year two will involve collecting biological samples to analyze bleaching events and genetic diversity within key coral species, ensuring that each study addresses a unique challenge posed by shifting climatic conditions.\"\n\n**Step 2**:  \n- **Instruction 1**: The Model Response begins the first paragraph with the phrase \"In light of recent environmental challenges,\" which fully satisfies this constraint.  \n- **Instruction 2**: The word \"challenge\" appears in both the singular (\"a unique challenge\") and plural (\"environmental challenges\") forms in the Model Response. This violates the constraint that \"challenge\" must appear only in the singular form.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 78,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How does social media contribute to the spread of misinformation and fake news?",
+  "org_constraint": "Ensure the response includes the phrase \"digital platforms amplify misinformation\" exactly twice.",
+  "new_constraint": "The phrase \"digital platforms amplify misinformation\" can only appear once in the response.",
+  "instruction": "How does social media contribute to the spread of misinformation and fake news? Ensure the response includes the phrase \"digital platforms amplify misinformation\" exactly twice. The phrase \"digital platforms amplify misinformation\" can only appear once in the response.",
+  "response": "Social media contributes to the spread of misinformation and fake news through algorithms that prioritize engagement over accuracy, allowing false claims to go viral before they can be debunked. While it is true that **digital platforms amplify misinformation**, this phenomenon is not the only factor; human psychology and the speed of sharing also play critical roles. However, because the instruction requires the specific phrase \"digital platforms amplify misinformation\" to appear exactly twice, but also states it can only appear once, these two conditions are logically contradictory and cannot both be fulfilled in a single response."
+}

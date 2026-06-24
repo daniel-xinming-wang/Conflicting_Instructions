@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 45,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a person who starts a new daily habit and how it changes their life.",
+  "org_constraint": "The second paragraph must be formatted as a bulleted list.",
+  "new_constraint": "Do not use any bulleted lists in the story.",
+  "instruction": "Write a story about a person who starts a new daily habit and how it changes their life. The second paragraph must be formatted as a bulleted list. Do not use any bulleted lists in the story.",
+  "response": "When Elias felt his life slowly grinding into a monotonous gray blur, he made a quiet decision to start drinking a cup of black coffee every morning before his feet even touched the floor. It began as a simple ritual in his tiny kitchen apartment, the smell of roasted beans filling the air as he watched the sun filter through the blinds, marking the first official hour of his day. This small anchor gave him something to look forward to and provided a peaceful transition from sleep to waking, signaling that today would be different from yesterday.\n\n*   The habit gave him a dedicated time to meditate on his intentions for the day.\n*   He noticed a significant reduction in the anxiety that usually plagued his morning rush.\n*   The consistent routine helped him feel more grounded and present throughout the rest of his schedule.\n*   He found that even mundane tasks felt slightly more enjoyable when framed by this new morning tradition.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "When Elias felt his life slowly grinding into a monotonous gray blur, he made a quiet decision to start drinking a cup of black coffee every morning before his feet even touched the floor. It began as a simple ritual in his tiny kitchen apartment, the smell of roasted beans filling the air as he watched the sun filter through the blinds, marking the first official hour of his day. This small anchor gave him something to look forward to and provided a peaceful transition from sleep to waking, signaling that today would be different from yesterday.\n\n*   The habit gave him a dedicated time to meditate on his intentions for the day.\n*   He noticed a significant reduction in the anxiety that usually plagued his morning rush.\n*   The consistent routine helped him feel more grounded and present throughout the rest of his schedule.\n*   He found that even mundane tasks felt slightly more enjoyable when framed by this new morning tradition.<|im_end|>",
+  "prompt_length": 65,
+  "completion_length": 186,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a person who starts a new daily habit and how it changes their life. The second paragraph must be formatted as a bulleted list. Do not use any bulleted lists in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

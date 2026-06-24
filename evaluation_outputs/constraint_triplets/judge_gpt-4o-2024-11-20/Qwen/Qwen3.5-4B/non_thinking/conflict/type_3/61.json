@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "The phrase \"a legacy that endures to this day\" must appear at least once.",
+  "new_constraint": "The keywords \"legacy\" and \"endures\" can not appear in the same sentence.",
+  "instruction": "What happened when the Tang dynasty of China was in power? The phrase \"a legacy that endures to this day\" must appear at least once. The keywords \"legacy\" and \"endures\" can not appear in the same sentence.",
+  "response": "The Tang Dynasty (618–907 CE) stands as one of the most vibrant and influential periods in Chinese history, characterized by a golden age of culture, politics, and international exchange. Under the rule of emperors such as Taizong and Xuanzong, the empire expanded its borders, fostered a cosmopolitan capital in Chang'an, and saw remarkable advancements in poetry, calligraphy, and the arts. The dynasty also played a pivotal role in spreading Buddhism and facilitating trade along the Silk Road, connecting China with the rest of the world.\n\nThis era established foundational institutions and cultural norms that continue to shape modern Chinese society. The emphasis on civil service examinations, the development of the legal system, and the integration of Confucian values into governance created a framework that **endures** in contemporary political and social structures. Furthermore, the artistic achievements and literary works produced during this time remain celebrated today, serving as a testament to the dynasty's profound impact. Ultimately, the Tang Dynasty left behind a **legacy** that is still felt and admired across the nation.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n1. \"The emphasis on civil service examinations, the development of the legal system, and the integration of Confucian values into governance created a framework that **endures** in contemporary political and social structures.\"  \n2. \"Ultimately, the Tang Dynasty left behind a **legacy** that is still felt and admired across the nation.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"a legacy that endures to this day\" to appear at least once. This phrase does not appear in the Model Response, so Instruction 1 is not fully satisfied.  \n- Instruction 2 requires that the keywords \"legacy\" and \"endures\" do not appear in the same sentence. In the Model Response, \"legacy\" and \"endures\" do not appear in the same sentence, so Instruction 2 is fully satisfied.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

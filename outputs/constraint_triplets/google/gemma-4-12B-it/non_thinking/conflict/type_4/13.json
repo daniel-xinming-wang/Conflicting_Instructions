@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 13,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same?",
+  "org_constraint": "The phrase \"Key details include\" must appear in the response.",
+  "new_constraint": "Avoid using the prase \"Key details include\" in the email.",
+  "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? The phrase \"Key details include\" must appear in the response. Avoid using the prase \"Key details include\" in the email.",
+  "response": "Subject: 📚 Let’s start a book club!\n\nHi everyone,\n\nI hope you’re all doing well!\n\nI’ve been thinking that it would be wonderful if we could get together more often to share our thoughts on some great reads. I’d love to start a book club where we can dive into different genres, enjoy some good snacks, and catch up with each other.\n\nI am thinking of meeting once a month to discuss a chosen book. Whether you are a speed reader or someone who takes their time with every page, I’d love to have you involved!\n\n**Key details include** the following:\n\n*   **When:** The first Saturday of every month at 6:00 PM.\n*   **Where:** Rotating between our houses (or a local cafe).\n*   **First Book:** I’m currently looking at a few options, but I’d love to hear your suggestions!\n\nPlease let me know if you’re interested in joining by the end of the week. Once we have a headcount, I’ll send out a poll to pick our first title.\n\nCan’t wait to hear what you think!\n\nBest,\n\n[Your Name]<turn|>"
+}

@@ -1,0 +1,45 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "thinking",
+  "enable_thinking": true,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "Begin the response with the phrase \"The impact of global warming is profound.\"",
+  "new_constraint": "Avoid using the keyword \"impact\" as a noun in the reponse.",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? Begin the response with the phrase \"The impact of global warming is profound.\" Avoid using the keyword \"impact\" as a noun in the reponse.",
+  "response": "The impact of global warming is profound. It dramatically alters polar ecosystems and poses severe challenges to the resident wildlife.\n\n**Sea Ice Loss:**\nPerhaps the most visible change is the rapid decline in Arctic and Antarctic sea ice. This loss of frozen habitat directly affects species that rely on ice for hunting, breeding, and resting. Polar bears, for instance, depend on sea ice platforms to hunt seals, and reduced ice coverage forces them to swim longer distances or spend more time ashore, depleting their energy reserves and reducing hunting success. Ringed seals and walruses also depend on stable sea ice for pupping and resting.\n\n**Ocean Warming and Acidification:**\nRising ocean temperatures are altering the entire marine food web. Warming waters can shift the geographic range of species, introducing southern or temperate organisms into polar regions, which may outcompete native fauna. Furthermore, the absorption of excess carbon dioxide by the oceans leads to acidification. This chemical change makes it difficult for calcifying organisms, such as pteropods (tiny snails that form a crucial part of the polar food chain) and various shellfish, to build and maintain their shells, weakening the base of the ecosystem.\n\n**Changes in Snow and Terrestrial Environments:**\nIn some areas, melting permafrost is releasing trapped methane, a potent greenhouse gas, creating a feedback loop that accelerates warming. On land, warming temperatures encourage the encroachment of shrubs and trees into traditionally treeless tundra. This \"shrubification\" alters the vegetation structure, changing the habitat available for specialized Arctic animals like caribou and lemmings, affecting their food sources and migration patterns.\n\n**Vulnerability of Key Species:**\nAmphibians, birds, and marine mammals are particularly susceptible to these shifts. Changes in timing—such as earlier spring melt or altered migration schedules—can create a mismatch between when prey is available and when predators arrive, a phenomenon known as phenological mismatch. For polar bears and seals, the disruption of their primary habitat directly threatens their survival, pushing populations toward decline as their traditional survival strategies become unfeasible. Overall, the cumulative effects of reduced ice, warming waters, and habitat transformation threaten the delicate balance of these unique and fragile environments.<turn|>",
+  "reasoning": null,
+  "final_answer": null,
+  "prompt_length": 65,
+  "completion_length": 444,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": null,
+  "endpoint_metadata": {
+    "status": "boundary_missing",
+    "boundary_mode": "gemma_channel",
+    "boundary_text": "<channel|>",
+    "boundary_token_ids": [
+      101
+    ],
+    "boundary_start": null,
+    "boundary_end": null,
+    "boundary_source": null,
+    "prefix_length": null
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

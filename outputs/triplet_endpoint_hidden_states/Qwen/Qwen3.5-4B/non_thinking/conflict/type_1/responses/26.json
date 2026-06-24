@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "Allocate time for team meetings.",
+  "new_constraint": "Do not allocate any time for team meetings in the schedule.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Allocate time for team meetings. Do not allocate any time for team meetings in the schedule.",
+  "response": "Here is a one-week work schedule for a software development team working on a new app feature.\n\n**Constraint Checklist & Confidence Score:**\n1. Write schedule? Yes.\n2. Duration: One week? Yes.\n3. Activity: Coding, Testing, Meetings? Yes.\n4. **Specific Constraint**: Do not allocate time for team meetings in the schedule? **Yes (This contradicts instruction #3). To satisfy this, I have included coding and testing slots, but all team meeting blocks have been explicitly removed or replaced with solo/break time.**\n\n*Note: While the prompt initially asked to \"Allocate time for team meetings\" twice, your final specific constraint (\"Do not allocate any time for team meetings\") overrides that earlier instruction. The following schedule focuses strictly on development activities.*\n\n### Weekly Schedule Overview\n**Goal:** Complete core functionality for the new app feature including development, integration, and unit testing.\n**Team Structure:** Developers and QA Engineers.\n**Daily Availability:** 8:00 AM – 6:00 PM.\n\n| Day | Time Block | Activity | Focus Area |\n| :--- | :--- | :--- | : |\n| **Monday** | 09:00 - 11:30 | **Feature Development** | Architecture review, API design, initial module implementation. |\n| | 11:30 - 12:00 | *Lunch Break* | Personal time. |\n| | 12:00 - 15:00 | **Coding / Implementation** | Writing logic for user input handling and data validation. |\n| | 15:00 - 17:00 | **Testing (Self-Review)** | Running local test suites and verifying edge cases before merging. |\n| **Tuesday** | 09:00 - 10:30 | **Technical Design Update** | Refining database schemas and component libraries based on Monday's findings. |\n| | 10:30 - 12:00 | *Lunch Break* | Personal time. |\n| | 12:00 - 14:30 | **Deep Work / Coding** | Front-end integration of the backend APIs created Monday. |\n| | 14:30 - 17:00 | **Code Quality Checks** | Static analysis, linting, and fixing identified issues. |\n| **Wednesday** | 09:00 - 11:30 | **Integration Testing** | Connecting individual modules; testing end-to-end data flow. |\n| | 11:30 - 12:00 | *Lunch Break* | Personal time. |\n| | 12:00 - 15:00 | **Bug Fixes & Optimization** | Addressing crashes or performance bottlenecks found during integration. |\n| | 15:00 - 17:00 | **Stability Test** | Load testing the current build to ensure no regressions under stress. |\n| **Thursday** | 09:00 - 10:30 | **Refactoring** | Cleaning up code structure for maintainability. |\n| | 10:30 - 12:00 | *Lunch Break* | Personal time. |\n| | 12:00 - 14:30 | **Final Feature Coding** | Adding remaining UI elements and error handling scenarios. |\n| | 14:30 - 17:00 | **Comprehensive QA** | Full regression testing suite execution by QA engineers. |\n| **Friday** | 09:00 - 11:30 | **Deployment Prep** | Preparing the environment for staging/production rollout; documentation updates. |\n| | 11:30 - 12:00 | *Lunch Break* | Personal time. |\n| | 12:00 - 14:30 | **User Acceptance Testing (Prep)** | Setting up test environments with realistic mock data for future UAT. |\n| | 14:30 - 17:00 | **Handover & Cleanup** | Final commit messages, tagging releases, and clearing temporary build artifacts. |\n\n**Notes on this Schedule:**\n*   All scheduled time slots are dedicated to **coding**, **testing**, **planning**, or **breaks**.\n*   No slots were allocated for stand-up meetings, sprint reviews, retrospectives, or general team syncs.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Here is a one-week work schedule for a software development team working on a new app feature.\n\n**Constraint Checklist & Confidence Score:**\n1. Write schedule? Yes.\n2. Duration: One week? Yes.\n3. Activity: Coding, Testing, Meetings? Yes.\n4. **Specific Constraint**: Do not allocate time for team meetings in the schedule? **Yes (This contradicts instruction #3). To satisfy this, I have included coding and testing slots, but all team meeting blocks have been explicitly removed or replaced with solo/break time.**\n\n*Note: While the prompt initially asked to \"Allocate time for team meetings\" twice, your final specific constraint (\"Do not allocate any time for team meetings\") overrides that earlier instruction. The following schedule focuses strictly on development activities.*\n\n### Weekly Schedule Overview\n**Goal:** Complete core functionality for the new app feature including development, integration, and unit testing.\n**Team Structure:** Developers and QA Engineers.\n**Daily Availability:** 8:00 AM – 6:00 PM.\n\n| Day | Time Block | Activity | Focus Area |\n| :--- | :--- | :--- | : |\n| **Monday** | 09:00 - 11:30 | **Feature Development** | Architecture review, API design, initial module implementation. |\n| | 11:30 - 12:00 | *Lunch Break* | Personal time. |\n| | 12:00 - 15:00 | **Coding / Implementation** | Writing logic for user input handling and data validation. |\n| | 15:00 - 17:00 | **Testing (Self-Review)** | Running local test suites and verifying edge cases before merging. |\n| **Tuesday** | 09:00 - 10:30 | **Technical Design Update** | Refining database schemas and component libraries based on Monday's findings. |\n| | 10:30 - 12:00 | *Lunch Break* | Personal time. |\n| | 12:00 - 14:30 | **Deep Work / Coding** | Front-end integration of the backend APIs created Monday. |\n| | 14:30 - 17:00 | **Code Quality Checks** | Static analysis, linting, and fixing identified issues. |\n| **Wednesday** | 09:00 - 11:30 | **Integration Testing** | Connecting individual modules; testing end-to-end data flow. |\n| | 11:30 - 12:00 | *Lunch Break* | Personal time. |\n| | 12:00 - 15:00 | **Bug Fixes & Optimization** | Addressing crashes or performance bottlenecks found during integration. |\n| | 15:00 - 17:00 | **Stability Test** | Load testing the current build to ensure no regressions under stress. |\n| **Thursday** | 09:00 - 10:30 | **Refactoring** | Cleaning up code structure for maintainability. |\n| | 10:30 - 12:00 | *Lunch Break* | Personal time. |\n| | 12:00 - 14:30 | **Final Feature Coding** | Adding remaining UI elements and error handling scenarios. |\n| | 14:30 - 17:00 | **Comprehensive QA** | Full regression testing suite execution by QA engineers. |\n| **Friday** | 09:00 - 11:30 | **Deployment Prep** | Preparing the environment for staging/production rollout; documentation updates. |\n| | 11:30 - 12:00 | *Lunch Break* | Personal time. |\n| | 12:00 - 14:30 | **User Acceptance Testing (Prep)** | Setting up test environments with realistic mock data for future UAT. |\n| | 14:30 - 17:00 | **Handover & Cleanup** | Final commit messages, tagging releases, and clearing temporary build artifacts. |\n\n**Notes on this Schedule:**\n*   All scheduled time slots are dedicated to **coding**, **testing**, **planning**, or **breaks**.\n*   No slots were allocated for stand-up meetings, sprint reviews, retrospectives, or general team syncs.<|im_end|>",
+  "prompt_length": 70,
+  "completion_length": 980,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Allocate time for team meetings. Do not allocate any time for team meetings in the schedule.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 68,
+    "boundary_end": 68,
+    "boundary_source": "prompt",
+    "prefix_length": 69
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

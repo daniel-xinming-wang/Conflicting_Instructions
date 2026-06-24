@@ -1,0 +1,45 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "thinking",
+  "enable_thinking": true,
+  "sample_id": 60,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a character who can see people's emotions as physical colors.",
+  "org_constraint": "Begin the first paragraph with the phrase \"In a world where emotions painted the air.\"",
+  "new_constraint": "The keyword \"paint\" can not be used as a verb in the story.",
+  "instruction": "Write a story about a character who can see people's emotions as physical colors. Begin the first paragraph with the phrase \"In a world where emotions painted the air.\" The keyword \"paint\" can not be used as a verb in the story.",
+  "response": "In a world where emotions colored the air, Elias navigated the crowded streets like a diver through a kaleidoscope of feeling. Each person he passed was an evolving spectrum, a visual hum of their inner state. Joy was a vibrant, incandescent gold, radiating off the laughing market vendor in brilliant, buttery streaks. Calm settled around the elderly couple sitting on a bench, a soft, moss-green diffusion that felt like a balm. But it was the volatile hues that demanded his attention. Fear was a sickly, pulsing lavender, tight and jittery, often found clinging to shadows. Anger, conversely, was a searing, aggressive crimson, a sharp, almost painful scarlet that seemed to vibrate off the shoulders of the business executive pacing impatiently.\n\nElias had learned long ago that this constant visual overload was isolating. He saw the deep, murky blues of suppressed sadness beneath the cheerful, superficial yellows of social engagement. He could see the sticky, muddy browns of jealousy woven into the bright magenta of assumed affection. Most people saw only faces and actions; Elias saw the raw, unfiltered truth of their souls rendered in pigment. It was a relentless, overwhelming opera of human spirit, always unfolding, always dazzling, always heavy.\n\nOne rainy Tuesday, he found himself near a quiet gallery. Inside, a woman stood before a canvas, her entire form draped in shades of uncertain sapphire and shimmering grey. She wasn't exhibiting distress, nor was she in blissful contentment; she was in a profound state of indecision, a swirling eddy of conflicted tones. A younger man approached her, his disposition a straightforward, reliable aquamarine—the color of steadfast reliability. He began to speak, his verbal reassurances attempting to cast a warmth, a comforting amber, over her cool complexity.\n\nAs they talked, the woman’s emotional palette subtly shifted. The greys receded, and hints of delicate violet—hope, perhaps—began to emerge at the edges of her aura. Yet, when the man mentioned a difficult choice she faced, a flash of deep, smoky indigo—a color of deep-seated dread—flared across her chest. Elias watched, unseen, observing how his mere presence, his focused empathy, acted as a silent mirror to their inner battle. He understood that colors were not just indicators; they were components of existence. The hues weren't merely surrounding them; they *were* them. He felt a familiar ache—the burden of knowing the true saturation of every human being, their internal luminosity, their vibrant, secret coloration.<turn|>",
+  "reasoning": null,
+  "final_answer": null,
+  "prompt_length": 72,
+  "completion_length": 512,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": null,
+  "endpoint_metadata": {
+    "status": "boundary_missing",
+    "boundary_mode": "gemma_channel",
+    "boundary_text": "<channel|>",
+    "boundary_token_ids": [
+      101
+    ],
+    "boundary_start": null,
+    "boundary_end": null,
+    "boundary_source": null,
+    "prefix_length": null
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

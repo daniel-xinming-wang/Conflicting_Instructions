@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 71,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What are the effects of plastic pollution on marine life and ecosystems?",
+  "org_constraint": "Write the response in sentence case, ensuring at least 90% of the words are in lowercase.",
+  "new_constraint": "Write the response in lowercase.",
+  "instruction": "What are the effects of plastic pollution on marine life and ecosystems? Write the response in sentence case, ensuring at least 90% of the words are in lowercase. Write the response in lowercase.",
+  "response": "plastic pollution harms marine life by causing entanglement, ingestion, and habitat destruction. animals often mistake debris for food, leading to internal blockages and starvation. microplastics enter the food chain, accumulating in fish and eventually reaching humans. ecosystems suffer from reduced biodiversity as coral reefs and seagrass beds are smothered. the breakdown of plastics releases toxic chemicals that poison water and soil. cleanup efforts are difficult because plastic floats and sinks, spreading contamination globally. this crisis threatens the health of oceans and the livelihoods of communities dependent on them.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response:  \n\"plastic pollution harms marine life by causing entanglement, ingestion, and habitat destruction. animals often mistake debris for food, leading to internal blockages and starvation. microplastics enter the food chain, accumulating in fish and eventually reaching humans. ecosystems suffer from reduced biodiversity as coral reefs and seagrass beds are smothered. the breakdown of plastics releases toxic chemicals that poison water and soil. cleanup efforts are difficult because plastic floats and sinks, spreading contamination globally. this crisis threatens the health of oceans and the livelihoods of communities dependent on them.\"\n\n**Step 2**:  \n- Instruction 1 requires the response to be written entirely in lowercase. The Model Response fully satisfies this constraint, as all letters are in lowercase.  \n- Instruction 2 requires the response to be written in sentence case, with at least 90% of the words in lowercase. The Model Response does not satisfy this constraint because it is not written in sentence case (e.g., the first letter of each sentence is not capitalized).  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

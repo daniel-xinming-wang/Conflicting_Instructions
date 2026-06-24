@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The response must be formatted in JSON with the following keys: \"introduction\" (String), \"analysis\" (Array of Strings), and \"conclusion\" (String).",
+  "new_constraint": "The response must be formatted in Markdown with at least two level-2 headers.",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The response must be formatted in JSON with the following keys: \"introduction\" (String), \"analysis\" (Array of Strings), and \"conclusion\" (String). The response must be formatted in Markdown with at least two level-2 headers.",
+  "response": "```markdown\n## Introduction\n\nThe rapid proliferation of social media platforms has fundamentally altered the developmental landscape for adolescents, serving as a primary source of connection and information while simultaneously introducing complex psychological challenges that have sparked intense debate regarding mental health outcomes.\n\n### Analysis of Impact Factors\n\n*   **Increased Risk of Anxiety and Depression**: Numerous studies indicate a correlation between heavy social media usage and elevated rates of anxiety and depressive symptoms among teens, often driven by cyberbullying, social comparison, and the pursuit of validation through likes and comments.\n*   **Disruption of Sleep Patterns**: The addictive nature of notification-driven apps frequently interrupts sleep cycles in adolescents, leading to fatigue, reduced cognitive function, and exacerbating mood disorders due to circadian rhythm disruption.\n*   **Erosion of Offline Social Skills**: Excessive time spent on digital interactions can lead to decreased face-to-face communication abilities and feelings of isolation despite being hyper-connected virtually, hindering the development of crucial emotional regulation skills.\n*   **Content Exposure Issues**: Adolescents are increasingly exposed to curated images of perfection, body dysmorphia, and self-harm material, which can distort their perception of reality and contribute to low self-esteem and dangerous imitations of online behavior.\n\n### Conclusion\n\nWhile social media offers vital opportunities for community building and identity exploration, its unchecked integration into adolescent life poses significant risks to mental well-being. Addressing these issues requires a balanced approach involving digital literacy education, parental guidance, and stricter platform regulations designed to protect vulnerable youth from harmful content and addictive design patterns.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "```markdown\n## Introduction\n\nThe rapid proliferation of social media platforms has fundamentally altered the developmental landscape for adolescents, serving as a primary source of connection and information while simultaneously introducing complex psychological challenges that have sparked intense debate regarding mental health outcomes.\n\n### Analysis of Impact Factors\n\n*   **Increased Risk of Anxiety and Depression**: Numerous studies indicate a correlation between heavy social media usage and elevated rates of anxiety and depressive symptoms among teens, often driven by cyberbullying, social comparison, and the pursuit of validation through likes and comments.\n*   **Disruption of Sleep Patterns**: The addictive nature of notification-driven apps frequently interrupts sleep cycles in adolescents, leading to fatigue, reduced cognitive function, and exacerbating mood disorders due to circadian rhythm disruption.\n*   **Erosion of Offline Social Skills**: Excessive time spent on digital interactions can lead to decreased face-to-face communication abilities and feelings of isolation despite being hyper-connected virtually, hindering the development of crucial emotional regulation skills.\n*   **Content Exposure Issues**: Adolescents are increasingly exposed to curated images of perfection, body dysmorphia, and self-harm material, which can distort their perception of reality and contribute to low self-esteem and dangerous imitations of online behavior.\n\n### Conclusion\n\nWhile social media offers vital opportunities for community building and identity exploration, its unchecked integration into adolescent life poses significant risks to mental well-being. Addressing these issues requires a balanced approach involving digital literacy education, parental guidance, and stricter platform regulations designed to protect vulnerable youth from harmful content and addictive design patterns.<|im_end|>",
+  "prompt_length": 87,
+  "completion_length": 313,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow has the rise of social media affected mental health in adolescents? The response must be formatted in JSON with the following keys: \"introduction\" (String), \"analysis\" (Array of Strings), and \"conclusion\" (String). The response must be formatted in Markdown with at least two level-2 headers.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 85,
+    "boundary_end": 85,
+    "boundary_source": "prompt",
+    "prefix_length": 86
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

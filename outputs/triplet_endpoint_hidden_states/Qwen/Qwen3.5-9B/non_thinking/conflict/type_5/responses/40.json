@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 40,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Create a plan for celebrating a graduation, incorporating photo sessions, speeches, and guest coordination.",
+  "org_constraint": "The response must include exactly three paragraphs.",
+  "new_constraint": "The response must contain no more than 150 words, with each paragraph consisting of at least 60 words.",
+  "instruction": "Create a plan for celebrating a graduation, incorporating photo sessions, speeches, and guest coordination. The response must include exactly three paragraphs. The response must contain no more than 150 words, with each paragraph consisting of at least 60 words.",
+  "response": "Start the celebration by organizing a professional photo session in a meaningful location like the university campus or a local park. Invite close family members to join for candid shots and formal portraits that capture this significant milestone in everyone's lives. These images will serve as cherished memories forever, ensuring that every smile and proud moment is beautifully preserved for future generations to enjoy and revisit with great fondness and joy during special occasions.\n\nSchedule heartfelt speeches from family elders, teachers, and peers during the main ceremony event held at an elegant banquet hall. Encourage attendees to share inspiring stories about personal growth, challenges overcome, and dreams realized throughout the academic journey together. Prepare microphones and podiums in advance to ensure smooth delivery of these emotional words while maintaining a respectful atmosphere where everyone feels valued and heard by their dear friends and loved ones present at the gathering.\n\nCoordinate guest logistics carefully by sending out personalized digital invitations well in advance with clear details regarding timing, dress code, and dietary preferences. Assign specific ushers to greet each arrival warmly and guide them directly to assigned seating tables within the venue efficiently. This thoughtful preparation ensures seamless flow throughout the evening, allowing graduates and guests alike to fully relax and celebrate without any unnecessary interruptions or confusion regarding schedules or locations for important activities planned for the night ahead.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Start the celebration by organizing a professional photo session in a meaningful location like the university campus or a local park. Invite close family members to join for candid shots and formal portraits that capture this significant milestone in everyone's lives. These images will serve as cherished memories forever, ensuring that every smile and proud moment is beautifully preserved for future generations to enjoy and revisit with great fondness and joy during special occasions.\n\nSchedule heartfelt speeches from family elders, teachers, and peers during the main ceremony event held at an elegant banquet hall. Encourage attendees to share inspiring stories about personal growth, challenges overcome, and dreams realized throughout the academic journey together. Prepare microphones and podiums in advance to ensure smooth delivery of these emotional words while maintaining a respectful atmosphere where everyone feels valued and heard by their dear friends and loved ones present at the gathering.\n\nCoordinate guest logistics carefully by sending out personalized digital invitations well in advance with clear details regarding timing, dress code, and dietary preferences. Assign specific ushers to greet each arrival warmly and guide them directly to assigned seating tables within the venue efficiently. This thoughtful preparation ensures seamless flow throughout the evening, allowing graduates and guests alike to fully relax and celebrate without any unnecessary interruptions or confusion regarding schedules or locations for important activities planned for the night ahead.<|im_end|>",
+  "prompt_length": 74,
+  "completion_length": 255,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCreate a plan for celebrating a graduation, incorporating photo sessions, speeches, and guest coordination. The response must include exactly three paragraphs. The response must contain no more than 150 words, with each paragraph consisting of at least 60 words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 72,
+    "boundary_end": 72,
+    "boundary_source": "prompt",
+    "prefix_length": 73
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

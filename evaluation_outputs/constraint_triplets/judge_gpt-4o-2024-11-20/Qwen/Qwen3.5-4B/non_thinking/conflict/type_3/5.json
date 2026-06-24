@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The email must include the phrase \"customer support\" at least once.",
+  "new_constraint": "The keyword \"support\" must not appear in the response.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must include the phrase \"customer support\" at least once. The keyword \"support\" must not appear in the response.",
+  "response": "Subject: Inquiry Regarding Recent Transaction\n\nDear Bank Representative,\n\nI am writing to request clarification concerning a transaction that appeared on my account statement earlier this week. The entry details seem inconsistent with the purchase I made, and I would appreciate an explanation regarding the discrepancy.\n\nI have attempted to reach out to **customer support** via phone and email without success, so I am forwarding this inquiry to you directly. Please let me know when I can expect a resolution to this matter.\n\nThank you for your assistance.\n\nSincerely,\n\n[Your Name]\n[Your Account Number]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"I have attempted to reach out to **customer support** via phone and email without success, so I am forwarding this inquiry to you directly.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"customer support\" to appear at least once. This constraint is satisfied, as the phrase \"customer support\" appears in the Model Response.  \n- Instruction 2 requires the keyword \"support\" to not appear in the response. This constraint is not satisfied, as the keyword \"support\" appears within the phrase \"customer support.\"\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

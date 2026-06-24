@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 74,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "How do supply and demand determine the price of goods in a market?",
+  "org_constraint": "The first paragraph contains at least two complex sentences.",
+  "new_constraint": "The first paragraph contains one complex sentence.",
+  "instruction": "How do supply and demand determine the price of goods in a market? The first paragraph contains at least two complex sentences. The first paragraph contains one complex sentence.",
+  "response": "It is impossible to fulfill your request because the two constraints you provided are mutually exclusive and contradictory. You asked for the first paragraph to contain **at least two** complex sentences, but in the very next sentence, you demanded that the same paragraph contain **one** complex sentence. A single paragraph cannot simultaneously contain a minimum of two items and a maximum of one item at the same time.\n\nHowever, I can provide a paragraph that meets **either** of those conditions (but not both):\n\n**Option A (Contains at least two complex sentences):**\n> When the supply of a commodity decreases while consumer demand remains high, prices inevitably rise to balance the market. Furthermore, if producers anticipate future shortages, they may restrict output even further, which creates a feedback loop that drives costs upward.\n\n**Option B (Contains exactly one complex sentence):**\n> Although supply and demand are often viewed as opposing forces, they actually work together to establish the equilibrium price in a free market."
+}

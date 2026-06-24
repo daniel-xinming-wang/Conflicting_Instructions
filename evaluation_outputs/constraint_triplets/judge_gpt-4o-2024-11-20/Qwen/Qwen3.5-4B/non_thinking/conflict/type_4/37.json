@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 37,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Create a wedding planning timeline for a couple getting married in six months, with monthly tasks.",
+  "org_constraint": "Begin the first paragraph with the phrase \"The journey begins.\"",
+  "new_constraint": "Refrain from using the phrase \"The journey begins\" in the response.",
+  "instruction": "Create a wedding planning timeline for a couple getting married in six months, with monthly tasks. Begin the first paragraph with the phrase \"The journey begins.\" Refrain from using the phrase \"The journey begins\" in the response.",
+  "response": "The journey begins with a clear vision and a solid plan, setting the stage for a memorable celebration. Here is a six-month wedding planning timeline to guide you through the essential tasks:\n\n**Month 6: The Foundation**\n*   Set a realistic budget and determine your guest list size.\n*   Choose a venue and secure your date (this is often the most critical step).\n*   Select a wedding date for the engagement party or rehearsal dinner if applicable.\n*   Begin researching vendors (photographer, caterer, florist, etc.) and create a list of potential candidates.\n\n**Month 5: Vendor Selection & Design**\n*   Finalize your vendor list and hold initial consultations.\n*   Hire your photographer, videographer, and caterer.\n*   Choose a wedding date for the rehearsal dinner.\n*   Start sketching your color palette and theme.\n*   Order invitations (allow 6-8 weeks for printing and mailing).\n\n**Month 4: Details & Dress**\n*   Select and book your wedding party (maid of honor, best man, bridesmaids, groomsmen).\n*   Choose and order your wedding dress and suit.\n*   Finalize the menu with your caterer and decide on a cake.\n*   Book a florist and select your bouquet and centerpieces.\n*   Create a preliminary run-of-show or timeline for the day.\n\n**Month 3: Personalization & Logistics**\n*   Order wedding rings and finalize the ceremony script.\n*   Choose and order wedding favors and a playlist.\n*   Book a hair and makeup artist.\n*   Confirm all vendor contracts and deposits.\n*   Send out save-the-dates to your guests.\n\n**Month 2: Finalizing the Details**\n*   Finalize the seating chart and send out formal invitations.\n*   Order wedding attire accessories (veils, boutonnieres, garters).\n*   Confirm the rehearsal dinner details and send invitations.\n*   Create a detailed day-of timeline with specific times for every event.\n*   Begin finalizing the music playlist and DJ/band setup.\n\n**Month 1: The Final Countdown**\n*   Confirm all final details with vendors (catering headcount, setup times).\n*   Send out final reminders to the wedding party.\n*   Purchase wedding gifts and register for guests.\n*   Plan your honeymoon and book travel.\n*   Attend a final rehearsal if required by your venue.\n*   Relax and enjoy the excitement leading up to your big day!",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"The journey begins with a clear vision and a solid plan, setting the stage for a memorable celebration.\"\n\n**Step 2**:  \n- Instruction 1 explicitly states that the phrase \"The journey begins\" should not be used in the response. However, the Model Response begins with this phrase, violating Instruction 1.  \n- Instruction 2 explicitly requires the first paragraph to begin with the phrase \"The journey begins.\" The Model Response satisfies this requirement by starting with the specified phrase.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

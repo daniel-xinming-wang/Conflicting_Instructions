@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "The second sentence must include the keyword \"cozy.\"",
+  "new_constraint": "Use the word \"comfortable\" in place of \"cozy\" in your review.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. The second sentence must include the keyword \"cozy.\" Use the word \"comfortable\" in place of \"cozy\" in your review.",
+  "response": "The newly opened coffee shop on Main Street has quickly become a favorite spot for locals seeking a quiet place to work or relax. The interior is incredibly comfortable, featuring plush armchairs and warm lighting that create the perfect atmosphere for a long morning brew. The baristas are friendly and knowledgeable, ensuring that every cup is crafted with care. Whether you need a quick caffeine fix or a place to catch up on emails, this shop delivers an exceptional experience.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"The interior is incredibly comfortable, featuring plush armchairs and warm lighting that create the perfect atmosphere for a long morning brew.\"\n\n**Step 2**:  \n- Instruction 1 requires the word \"comfortable\" to be used in place of \"cozy.\" The Model Response uses \"comfortable\" in the second sentence, satisfying this constraint.  \n- Instruction 2 requires the second sentence to include the keyword \"cozy.\" The Model Response does not include the word \"cozy\" in the second sentence, failing this constraint.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

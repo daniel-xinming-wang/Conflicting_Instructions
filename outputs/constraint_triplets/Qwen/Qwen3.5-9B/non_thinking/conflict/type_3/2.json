@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 2,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a professional email that you could send to ask your boss for a raise.",
+  "org_constraint": "The phrase \"value to the company\" must appear at least twice in the email.",
+  "new_constraint": "The keyword \"value\" must not appear in the email.",
+  "instruction": "Write a professional email that you could send to ask your boss for a raise. The phrase \"value to the company\" must appear at least twice in the email. The keyword \"value\" must not appear in the email.",
+  "response": "Subject: Request for Compensation Review\n\nDear [Boss's Name],\n\nI hope this message finds you well. I am writing to formally request a review of my current compensation package.\n\nOver the past year, I have taken on additional responsibilities and successfully led several key projects that have significantly enhanced our operational efficiency. My contributions have allowed the team to deliver results that demonstrate my **value to the company** in ways that go beyond my original job description.\n\nAs we look toward the future, I am eager to continue driving growth and innovation. I believe that adjusting my salary to reflect my current role and the **value to the company** I bring would be a fair recognition of my dedication and achievements.\n\nI would appreciate the opportunity to discuss this matter with you at your earliest convenience. Thank you for your time and leadership.\n\nBest regards,\n\n[Your Name]"
+}

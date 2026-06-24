@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 12,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Compose an email to a public library to request access to digital resources.",
+  "org_constraint": "The keywords \"digital resources\" and \"library membership\" must appear within the same paragraph.",
+  "new_constraint": "The keywords \"digital resources\" and \"library membership\" must appear in different paragraph.",
+  "instruction": "Compose an email to a public library to request access to digital resources. The keywords \"digital resources\" and \"library membership\" must appear within the same paragraph. The keywords \"digital resources\" and \"library membership\" must appear in different paragraph.",
+  "response": "Subject: Request for Access to Digital Resources\n\nDear Library Team,\n\nI am writing to formally request access to the extensive collection of **digital resources** available through your system, including e-books, audiobooks, and online databases. As a long-time patron who has always valued the depth of information your institution provides, I believe expanding my access to these tools will significantly enhance my research capabilities and personal learning journey.\n\nTo facilitate this request, I have already completed the necessary steps to renew my **library membership**, ensuring that my account is in good standing and ready for immediate activation. Please let me know if there are any additional forms or specific procedures required to finalize my access to these online platforms.\n\nThank you for your time and assistance.\n\nSincerely,\n\n[Your Name]  \n[Your Address]  \n[Your Phone Number]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"I am writing to formally request access to the extensive collection of **digital resources** available through your system, including e-books, audiobooks, and online databases.\"  \n- \"To facilitate this request, I have already completed the necessary steps to renew my **library membership**, ensuring that my account is in good standing and ready for immediate activation.\"\n\n**Step 2**:  \n- Instruction 1 requires the keywords \"digital resources\" and \"library membership\" to appear within the same paragraph. In the Model Response, these keywords appear in separate paragraphs, so Instruction 1 is not fully satisfied.  \n- Instruction 2 requires the keywords \"digital resources\" and \"library membership\" to appear in different paragraphs. In the Model Response, these keywords do appear in different paragraphs, so Instruction 2 is fully satisfied.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

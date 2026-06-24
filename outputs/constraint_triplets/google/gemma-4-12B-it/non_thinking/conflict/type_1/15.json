@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 15,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002.",
+  "org_constraint": "The email should specify the purpose of obtaining the records.",
+  "new_constraint": "The email should not specify the request's purpose or mention why the records are needed.",
+  "instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002. The email should specify the purpose of obtaining the records. The email should not specify the request's purpose or mention why the records are needed.",
+  "response": "Subject: Request for Information: Medical Records Retrieval (Patient: [Father's Full Name])\n\nDear [Name of Contact Person or Department Name, e.g., Medical Records Department],\n\nI am writing to request information regarding the process for obtaining a copy of the medical records for my father, [Father's Full Name], from his time at your facility in 2002.\n\nCould you please provide details on the following:\n\n*   The specific forms or authorization documents required to request these records.\n*   The procedure for verifying my identity and my legal authority to access his records.\n*   Any associated fees for searching and duplicating records from that time period.\n*   The estimated timeframe for processing such a request.\n\nPlease let me know what the next steps are to initiate this process. Thank you for your assistance.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Email Address]<turn|>"
+}

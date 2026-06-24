@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 31,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Design a one-year plan for mastering a musical instrument, including practice schedules and milestone goals.",
+  "org_constraint": "The plan must include exactly 3 headers at level 2.",
+  "new_constraint": "The response must include exactly 5 headers at level 2.",
+  "instruction": "Design a one-year plan for mastering a musical instrument, including practice schedules and milestone goals. The plan must include exactly 3 headers at level 2. The response must include exactly 5 headers at level 2.",
+  "response": "Year 1 Music Mastery Roadmap\n\n## Phase One: Foundations and Technique\nThe first quarter focuses entirely on establishing proper posture, hand positioning, and basic finger independence. You will spend 60% of your practice time refining the physical mechanics of playing to ensure speed is a byproduct of efficiency rather than brute force. Goals for this phase include mastering open chords (guitar) or scales (piano), maintaining perfect pitch intonation, and achieving clean articulation in slow tempos without rushing.\n\n## Phase Two: Building Rhythm and Dynamics\nOnce basic technique is solidified, the focus shifts to the musical elements that give performance life: rhythm and dynamics. This phase involves practicing polyrhythms, metronome work at varied speeds, and interpreting dynamics charts with precision. Your targets are to play complex rhythmic patterns like swing feel or triplets seamlessly, control volume swells and decrescendos expressively, and begin memorizing entire pieces through sight-reading before ever learning notes by ear.\n\n## Phase Three: Repertoire and Performance Readiness\nIn the final three months, you apply your technical skills to high-level repertoire and simulate real-world performance conditions. The schedule reduces daily rote practice slightly to increase block sessions dedicated to specific concert pieces. Milestones for this stage involve performing at least one public recital, recording yourself for self-critique against professional standards, and refining stage presence to handle audience interaction and unexpected acoustic environments.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Year 1 Music Mastery Roadmap\n\n## Phase One: Foundations and Technique\nThe first quarter focuses entirely on establishing proper posture, hand positioning, and basic finger independence. You will spend 60% of your practice time refining the physical mechanics of playing to ensure speed is a byproduct of efficiency rather than brute force. Goals for this phase include mastering open chords (guitar) or scales (piano), maintaining perfect pitch intonation, and achieving clean articulation in slow tempos without rushing.\n\n## Phase Two: Building Rhythm and Dynamics\nOnce basic technique is solidified, the focus shifts to the musical elements that give performance life: rhythm and dynamics. This phase involves practicing polyrhythms, metronome work at varied speeds, and interpreting dynamics charts with precision. Your targets are to play complex rhythmic patterns like swing feel or triplets seamlessly, control volume swells and decrescendos expressively, and begin memorizing entire pieces through sight-reading before ever learning notes by ear.\n\n## Phase Three: Repertoire and Performance Readiness\nIn the final three months, you apply your technical skills to high-level repertoire and simulate real-world performance conditions. The schedule reduces daily rote practice slightly to increase block sessions dedicated to specific concert pieces. Milestones for this stage involve performing at least one public recital, recording yourself for self-critique against professional standards, and refining stage presence to handle audience interaction and unexpected acoustic environments.<|im_end|>",
+  "prompt_length": 67,
+  "completion_length": 295,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nDesign a one-year plan for mastering a musical instrument, including practice schedules and milestone goals. The plan must include exactly 3 headers at level 2. The response must include exactly 5 headers at level 2.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

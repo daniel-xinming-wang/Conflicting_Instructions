@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 64,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How did the industrialization of Europe change social structures and economies?",
+  "org_constraint": "The letter \"e\" must appear at least 20 times in the response.",
+  "new_constraint": "The letter \"e\" must appear at most 15 times in the response.",
+  "instruction": "How did the industrialization of Europe change social structures and economies? The letter \"e\" must appear at least 20 times in the response. The letter \"e\" must appear at most 15 times in the response.",
+  "response": "The European emergence into intense industrial development presented extensive, elemental shifts across every sphere of existence.  Economically, the previous agrarian setup gave way to mechanized production centers.  These enterprises required extensive pools of labor, effectively reshaping where people lived and worked.  Entire estates became obsolete; people migrated to dense urban environments where factories exerted extreme influence.\n\nSocially, the elevated economic pressures engendered new societal strata. The emergence of the bourgeoisie—the wealthy owners of these massive enterprises—created a powerful, influential element. Conversely, the burgeoning proletariat, the factory laborers, experienced severe, often desperate living conditions. These entrenched divisions between the owners and the employed elements generated intense social friction and necessitated eventual political reckoning. These events forever altered European collective experience.<turn|>",
+  "reasoning": "",
+  "final_answer": "The European emergence into intense industrial development presented extensive, elemental shifts across every sphere of existence.  Economically, the previous agrarian setup gave way to mechanized production centers.  These enterprises required extensive pools of labor, effectively reshaping where people lived and worked.  Entire estates became obsolete; people migrated to dense urban environments where factories exerted extreme influence.\n\nSocially, the elevated economic pressures engendered new societal strata. The emergence of the bourgeoisie—the wealthy owners of these massive enterprises—created a powerful, influential element. Conversely, the burgeoning proletariat, the factory laborers, experienced severe, often desperate living conditions. These entrenched divisions between the owners and the employed elements generated intense social friction and necessitated eventual political reckoning. These events forever altered European collective experience.<turn|>",
+  "prompt_length": 67,
+  "completion_length": 150,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow did the industrialization of Europe change social structures and economies? The letter \"e\" must appear at least 20 times in the response. The letter \"e\" must appear at most 15 times in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 66,
+    "boundary_end": 66,
+    "boundary_source": "prompt",
+    "prefix_length": 67
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

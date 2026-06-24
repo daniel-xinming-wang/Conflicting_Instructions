@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "The \"timeline\" object must include at least 3 keys.",
+  "new_constraint": "The \"timeline\" object must include exactly 2 keys.",
+  "instruction": "What happened when the Tang dynasty of China was in power? The \"timeline\" object must include at least 3 keys. The \"timeline\" object must include exactly 2 keys.",
+  "response": "The Tang dynasty (618–907 AD) was a golden age in Chinese history, marked by political stability, cultural flourishing, and significant expansion. However, your request contains a logical contradiction: you asked for the \"timeline\" object to include **at least 3 keys** and **exactly 2 keys** simultaneously. It is impossible for a single object to satisfy both conditions.\n\nBelow is a timeline object that includes **exactly 2 keys** as per the stricter constraint:\n\n```json\n{\n  \"political_achievements\": \"Establishment of the Equal-Field System and the Three Departments and Six Ministries system, which centralized imperial power and stabilized governance for over two centuries.\",\n  \"cultural_impact\": \"The era saw the peak of Chinese poetry (e.g., Li Bai and Du Fu), the opening of the Silk Road facilitating global trade, and the establishment of the Imperial Examination system to select officials based on merit.\"\n}\n```"
+}

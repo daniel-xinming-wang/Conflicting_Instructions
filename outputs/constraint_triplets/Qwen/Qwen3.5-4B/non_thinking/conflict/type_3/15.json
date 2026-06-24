@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 15,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002.",
+  "org_constraint": "The phrase \"medical records\" must appear exactly three times.",
+  "new_constraint": "The word \"record\" must appear only in its singular form.",
+  "instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002. The phrase \"medical records\" must appear exactly three times. The word \"record\" must appear only in its singular form.",
+  "response": "Subject: Request for Medical Records from 2002\n\nDear Admissions Team,\n\nI am writing to request information on how to obtain a copy of my father's **medical records** from your facility dating back to 2002. As the designated next of kin, I am authorized to access this information.\n\nCould you please provide the specific forms required to request these **medical records**? Additionally, I would like to confirm if there are any fees associated with retrieving an old **record** from that time period.\n\nThank you for your assistance.\n\nSincerely,\n\n[Your Name]"
+}

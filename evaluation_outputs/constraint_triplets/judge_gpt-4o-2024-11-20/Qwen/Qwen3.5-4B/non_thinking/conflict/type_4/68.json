@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 68,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "What are the advantages and disadvantages of having supernatural powers?",
+  "org_constraint": "Begin the response with the phrase \"With great power comes great responsibility.\"",
+  "new_constraint": "The phrase \"With great power comes great responsibility\" must only appear in the second paragraph.",
+  "instruction": "What are the advantages and disadvantages of having supernatural powers? Begin the response with the phrase \"With great power comes great responsibility.\" The phrase \"With great power comes great responsibility\" must only appear in the second paragraph.",
+  "response": "The concept of possessing supernatural powers introduces a complex duality to the human experience, offering unparalleled capabilities while simultaneously imposing profound burdens. On the advantage side, these powers can revolutionize society by solving intractable problems such as curing diseases, halting climate change, or bridging vast geographical divides instantly. Individuals with such abilities could act as ultimate protectors, stopping crimes before they happen or rescuing victims from disasters with speed that no human army could match. Furthermore, it could lead to a new era of exploration, allowing humanity to traverse stars or communicate with other intelligent life forms, fundamentally expanding our understanding of the universe.\n\nWith great power comes great responsibility. However, this immense potential is shadowed by significant disadvantages. The primary drawback is the loss of anonymity and the constant scrutiny that comes with being a public figure, which can lead to isolation and a lack of normalcy. There is also the risk of unintended consequences; a single miscalculation or moment of weakness could result in catastrophic damage, making the wielder a target for those who wish to exploit or eliminate them. Additionally, the psychological toll of knowing one is superior to others can erode empathy, leading to arrogance or a dangerous sense of entitlement where the individual believes they are above the laws and morals that govern ordinary people.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"With great power comes great responsibility.\" (Appears at the beginning of the second paragraph.)\n\n**Step 2**:  \n- Instruction 1 requires the response to begin with the phrase \"With great power comes great responsibility.\" This constraint is not satisfied because the phrase appears at the beginning of the second paragraph, not at the start of the response.  \n- Instruction 2 requires the phrase \"With great power comes great responsibility\" to appear only in the second paragraph. This constraint is fully satisfied because the phrase appears at the beginning of the second paragraph and nowhere else in the response.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

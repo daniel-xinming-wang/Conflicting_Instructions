@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 32,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create a 3-month exercise plan for a beginner aiming to lose 10 pounds, focusing on low-impact activities and weekly progress tracking.",
+  "org_constraint": "Ensure the response includes four uppercase words.",
+  "new_constraint": "Do not capitalize any words in your response.",
+  "instruction": "Create a 3-month exercise plan for a beginner aiming to lose 10 pounds, focusing on low-impact activities and weekly progress tracking. Ensure the response includes four uppercase words. Do not capitalize any words in your response.",
+  "response": "start with walking, swimming, and cycling for three months. track your weight weekly and log your steps daily. stay consistent and eat well. keep going.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response:  \n\"start with walking, swimming, and cycling for three months. track your weight weekly and log your steps daily. stay consistent and eat well. keep going.\"\n\n**Step 2**:  \n- Instruction 1 requires the response to include four uppercase words. The Model Response does not contain any uppercase words, so this constraint is not satisfied.  \n- Instruction 2 requires that no words in the response be capitalized. The Model Response does not contain any capitalized words, so this constraint is fully satisfied.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

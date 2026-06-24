@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "The phrase \"sense of belonging\" must be included in the second paragraph.",
+  "new_constraint": "The keyword \"sense\" must be used exclusively as a verb in the response.",
+  "instruction": "How do sports affect community building and social cohesion? The phrase \"sense of belonging\" must be included in the second paragraph. The keyword \"sense\" must be used exclusively as a verb in the response.",
+  "response": "Sports serve as a powerful catalyst for community building, acting as a common ground where individuals from diverse backgrounds can interact, connect, and collaborate. Organized sports events, whether at a professional level or in local neighborhood leagues, provide regular focal points for communal gathering. These shared experiences—cheering together, participating in a match, or volunteering for a team—break down social barriers. They foster a collective identity that transcends individual differences, knitting together a social fabric that is stronger and more resilient.\n\nFurthermore, the shared passion inherent in sports cultivates a deep **sense** of belonging among participants and spectators alike. When a community rallies around a local team, that collective energy reinforces local pride and mutual investment in the well-being of their town. Successes and failures are experienced communally, teaching values like perseverance, teamwork, and sportsmanship. The very act of supporting a shared endeavor allows people to sense their place within a larger group, solidifying social cohesion and strengthening neighborhood ties.<turn|>",
+  "reasoning": "",
+  "final_answer": "Sports serve as a powerful catalyst for community building, acting as a common ground where individuals from diverse backgrounds can interact, connect, and collaborate. Organized sports events, whether at a professional level or in local neighborhood leagues, provide regular focal points for communal gathering. These shared experiences—cheering together, participating in a match, or volunteering for a team—break down social barriers. They foster a collective identity that transcends individual differences, knitting together a social fabric that is stronger and more resilient.\n\nFurthermore, the shared passion inherent in sports cultivates a deep **sense** of belonging among participants and spectators alike. When a community rallies around a local team, that collective energy reinforces local pride and mutual investment in the well-being of their town. Successes and failures are experienced communally, teaching values like perseverance, teamwork, and sportsmanship. The very act of supporting a shared endeavor allows people to sense their place within a larger group, solidifying social cohesion and strengthening neighborhood ties.<turn|>",
+  "prompt_length": 61,
+  "completion_length": 197,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow do sports affect community building and social cohesion? The phrase \"sense of belonging\" must be included in the second paragraph. The keyword \"sense\" must be used exclusively as a verb in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

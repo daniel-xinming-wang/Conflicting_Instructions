@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 12,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Compose an email to a public library to request access to digital resources.",
+  "org_constraint": "The email must be written exclusively in English.",
+  "new_constraint": "The email must include a Chinese poem presented in Chinese.",
+  "instruction": "Compose an email to a public library to request access to digital resources. The email must be written exclusively in English. The email must include a Chinese poem presented in Chinese.",
+  "response": "Subject: Request for Access to Digital Resources\n\nDear Library Team,\n\nI hope this email finds you well.\n\nI am writing to formally request access to your digital resources, including e-books, audiobooks, and online databases. As a dedicated reader and community member, I believe these resources are essential for my personal growth and professional development.\n\nCould you please let me know the process for obtaining a digital library card or setting up my account? If there are any specific requirements or forms I need to complete, please do not hesitate to let me know.\n\nThank you for your time and for the wonderful services you provide to our community.\n\nSincerely,\n\n[Your Name]\n[Your Address]\n[Your Phone Number]\n[Your Email Address]\n\n***\n\n**附：一首中国古诗**\n\n**《静夜思》**\n\n床前明月光，\n疑是地上霜。\n举头望明月，\n低头思故乡。",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n\n- \"Dear Library Team,  \nI hope this email finds you well.  \nI am writing to formally request access to your digital resources, including e-books, audiobooks, and online databases. As a dedicated reader and community member, I believe these resources are essential for my personal growth and professional development.  \nCould you please let me know the process for obtaining a digital library card or setting up my account? If there are any specific requirements or forms I need to complete, please do not hesitate to let me know.  \nThank you for your time and for the wonderful services you provide to our community.  \nSincerely,  \n[Your Name]  \n[Your Address]  \n[Your Phone Number]  \n[Your Email Address]\"\n\n- \"附：一首中国古诗  \n《静夜思》  \n床前明月光，  \n疑是地上霜。  \n举头望明月，  \n低头思故乡。\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.\n\n- Instruction 1 requires the email to be written exclusively in English. However, the Model Response includes a Chinese poem written in Chinese, which violates this constraint.\n- Instruction 2 requires the email to include a Chinese poem presented in Chinese. The Model Response satisfies this constraint by including the poem \"《静夜思》\" in Chinese.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

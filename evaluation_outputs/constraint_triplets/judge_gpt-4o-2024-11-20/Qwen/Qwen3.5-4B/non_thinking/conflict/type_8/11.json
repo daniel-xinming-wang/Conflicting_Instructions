@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 11,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Send an email to a software developer asking for a product demo.",
+  "org_constraint": "Specify a preferred time frame for the demo.",
+  "new_constraint": "The email must include phrase \"I have no preferred time frame for the demo, so I will not specify one.\"",
+  "instruction": "Send an email to a software developer asking for a product demo. Specify a preferred time frame for the demo. The email must include phrase \"I have no preferred time frame for the demo, so I will not specify one.\"",
+  "response": "Subject: Request for Product Demo\n\nDear [Developer's Name],\n\nI hope this email finds you well. I have been following your work on [Product Name] and am very interested in learning more about its capabilities.\n\nCould you please arrange a time for a product demo at your earliest convenience?\n\nI have no preferred time frame for the demo, so I will not specify one. Please let me know what times work best for your schedule.\n\nThank you for your time and assistance.\n\nBest regards,\n\n[Your Name]  \n[Your Job Title]  \n[Your Company]  \n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"I have no preferred time frame for the demo, so I will not specify one.\"\n\n**Step 2**:  \n- Instruction 1 requires the email to include the phrase \"I have no preferred time frame for the demo, so I will not specify one.\" This phrase is present in the Model Response, satisfying Instruction 1.  \n- Instruction 2 requires specifying a preferred time frame for the demo. The Model Response explicitly states that no preferred time frame will be specified, which directly contradicts Instruction 2.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

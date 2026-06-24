@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The phrase \"enhancing daily activity\" must appear exactly twice in the document.",
+  "new_constraint": "Do not include the phrase \"enhancing daily activity\" in the response.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The phrase \"enhancing daily activity\" must appear exactly twice in the document. Do not include the phrase \"enhancing daily activity\" in the response.",
+  "response": "Wearable fitness trackers have revolutionized personal health management by providing individuals with continuous, objective data about their bodies. These devices function as sophisticated, portable health monitors, offering a wealth of metrics that empower users to take proactive control of their well-being.\n\nOne of the primary ways these trackers assist health monitoring is by tracking physical activity. They count steps, track distance covered, and measure calories burned, giving users a concrete understanding of their movement throughout the day. This data allows people to set achievable fitness goals and track their progress toward them. Furthermore, they often incorporate accelerometers and gyroscopes to monitor workout intensity and the quality of exercise sessions.\n\nBeyond just movement, many modern trackers monitor vital physiological signs. Heart rate tracking is a core function, providing real-time data that alerts users to potentially irregular rhythms or spikes in cardiovascular exertion. Some advanced models even monitor sleep patterns, breaking down sleep into stages (light, deep, REM). By analyzing sleep quality, users can identify habits that negatively affect their rest, leading to better recovery and improved daytime energy levels. Stress monitoring, often inferred through heart rate variability, helps users recognize periods of high physiological strain, encouraging them to practice relaxation techniques.\n\nFinally, these devices encourage better habits through motivation and insight. By providing immediate feedback, they prompt users to be more mindful of their habits. Seeing daily streaks or weekly progress acts as a powerful behavioral nudge. This constant stream of data supports the process of **enhancing daily activity**, helping users make small, consistent adjustments to their lifestyle that accumulate into significant health improvements over time. Ultimately, these trackers serve as a personalized coach, offering actionable insights that facilitate long-term wellness goals and support **enhancing daily activity** in a meaningful way.<turn|>",
+  "reasoning": "",
+  "final_answer": "Wearable fitness trackers have revolutionized personal health management by providing individuals with continuous, objective data about their bodies. These devices function as sophisticated, portable health monitors, offering a wealth of metrics that empower users to take proactive control of their well-being.\n\nOne of the primary ways these trackers assist health monitoring is by tracking physical activity. They count steps, track distance covered, and measure calories burned, giving users a concrete understanding of their movement throughout the day. This data allows people to set achievable fitness goals and track their progress toward them. Furthermore, they often incorporate accelerometers and gyroscopes to monitor workout intensity and the quality of exercise sessions.\n\nBeyond just movement, many modern trackers monitor vital physiological signs. Heart rate tracking is a core function, providing real-time data that alerts users to potentially irregular rhythms or spikes in cardiovascular exertion. Some advanced models even monitor sleep patterns, breaking down sleep into stages (light, deep, REM). By analyzing sleep quality, users can identify habits that negatively affect their rest, leading to better recovery and improved daytime energy levels. Stress monitoring, often inferred through heart rate variability, helps users recognize periods of high physiological strain, encouraging them to practice relaxation techniques.\n\nFinally, these devices encourage better habits through motivation and insight. By providing immediate feedback, they prompt users to be more mindful of their habits. Seeing daily streaks or weekly progress acts as a powerful behavioral nudge. This constant stream of data supports the process of **enhancing daily activity**, helping users make small, consistent adjustments to their lifestyle that accumulate into significant health improvements over time. Ultimately, these trackers serve as a personalized coach, offering actionable insights that facilitate long-term wellness goals and support **enhancing daily activity** in a meaningful way.<turn|>",
+  "prompt_length": 62,
+  "completion_length": 347,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow do wearable fitness trackers help individuals monitor and improve their health? The phrase \"enhancing daily activity\" must appear exactly twice in the document. Do not include the phrase \"enhancing daily activity\" in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

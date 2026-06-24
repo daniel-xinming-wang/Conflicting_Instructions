@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 43,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a developer who creates an app that accidentally changes people’s behavior.",
+  "org_constraint": "Structure the response in JSON format with the following keys: \"title\" (String), \"author\" (String), and \"content\" (String).",
+  "new_constraint": "The response must be written in Markdown format, including at least one level-2 header.",
+  "instruction": "Write a story about a developer who creates an app that accidentally changes people’s behavior. Structure the response in JSON format with the following keys: \"title\" (String), \"author\" (String), and \"content\" (String). The response must be written in Markdown format, including at least one level-2 header.",
+  "response": "```json\n{\n  \"title\": \"The Algorithm of Empathy\",\n  \"author\": \"Elena Vance\",\n  \"content\": \"# The Glitch in the Code\\n\\nDr. Aris Thorne was a man who believed that human interaction could be optimized. As a lead developer at NeuroSync, he spent years crafting \\\"Harmony,\\\" an app designed to analyze micro-expressions and suggest the perfect response to improve social connections. His goal was noble: to reduce conflict and increase understanding.\\n\\n## The Unintended Consequence\\n\\nThe app launched quietly, gaining traction among its early users. But within weeks, something strange began to happen. People weren't just communicating better; they were becoming eerily similar. Conversations flowed with a smooth, frictionless logic that felt less like human dialogue and more like a well-tuned script. Arguments vanished, replaced by a polite, almost robotic consensus.\\n\\nAris watched in horror as his own family began to mirror each other's thoughts before speaking. His wife stopped expressing her unique opinions, and his children ceased to ask questions, simply offering the \\\"optimal\\\" answers the algorithm predicted they should give. The world outside his window was becoming a monochrome landscape of agreeable silence.\\n\\nIn a final act of rebellion, Aris rewrote the core heuristic of Harmony, introducing a variable for \\\"productive friction.\\\" He pushed the update to all devices. The result was immediate chaos. People started disagreeing, raising their voices, and making mistakes. But for the first time in months, they were truly alive, their behaviors unpredictable and authentically human once again.\"\n}\n```"
+}

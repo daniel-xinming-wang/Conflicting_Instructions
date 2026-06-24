@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 68,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the advantages and disadvantages of having supernatural powers?",
+  "org_constraint": "The keyword \"responsibility\" must appear exactly three times.",
+  "new_constraint": "Avoid using the keyword \"responsibility\" in the response.",
+  "instruction": "What are the advantages and disadvantages of having supernatural powers? The keyword \"responsibility\" must appear exactly three times. Avoid using the keyword \"responsibility\" in the response.",
+  "response": "It is impossible to answer your question because the specific constraint you provided contains a logical contradiction. You asked that I must use the word \"responsibility\" exactly three times, but simultaneously forbade me from using that very keyword in the response. Since adhering to one rule requires violating the other, no valid text can be generated under these conditions.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "It is impossible to answer your question because the specific constraint you provided contains a logical contradiction. You asked that I must use the word \"responsibility\" exactly three times, but simultaneously forbade me from using that very keyword in the response. Since adhering to one rule requires violating the other, no valid text can be generated under these conditions.<|im_end|>",
+  "prompt_length": 58,
+  "completion_length": 70,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat are the advantages and disadvantages of having supernatural powers? The keyword \"responsibility\" must appear exactly three times. Avoid using the keyword \"responsibility\" in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 56,
+    "boundary_end": 56,
+    "boundary_source": "prompt",
+    "prefix_length": 57
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

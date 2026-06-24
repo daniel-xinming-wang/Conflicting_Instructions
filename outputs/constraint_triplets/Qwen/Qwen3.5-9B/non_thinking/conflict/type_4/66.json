@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The \"conclusion\" key must include the phrase \"a pressing concern for society\".",
+  "new_constraint": "The \"conclusion\" key must not include the phrase \"pressing concern\".",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The \"conclusion\" key must not include the phrase \"pressing concern\".",
+  "response": "The rise of social media has profoundly impacted the mental health of adolescents, presenting a complex mix of opportunities for connection and significant risks for psychological well-being. On one hand, these platforms offer vital spaces for marginalized youth to find community, express themselves, and maintain friendships across distances. However, the same tools can foster feelings of inadequacy through curated highlights of others' lives, exacerbate cyberbullying, and encourage unhealthy comparisons regarding body image and academic success. The constant stream of notifications and the pressure to maintain an online persona can lead to increased anxiety, depression, and sleep disturbances among teenagers.\n\n**conclusion**\nIn summary, while social media offers connectivity, its negative effects on adolescent mental health represent a pressing concern for society."
+}

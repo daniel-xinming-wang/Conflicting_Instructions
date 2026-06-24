@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 81,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a detailed review of the movie \"Schindler's List.\"",
+  "org_constraint": "Ensure that the keyword \"Schindler's List\" appears exactly five times.",
+  "new_constraint": "The keyword \"Schindler's List\" appears at most three times",
+  "instruction": "Write a detailed review of the movie \"Schindler's List.\" Ensure that the keyword \"Schindler's List\" appears exactly five times. The keyword \"Schindler's List\" appears at most three times",
+  "response": "It is impossible to fulfill this request because the constraints are logically contradictory. You asked for the keyword \"Schindler's List\" to appear **exactly five times**, but simultaneously stated that it must appear **at most three times**. A number cannot be exactly five while also being less than or equal to three. Therefore, no text can satisfy both conditions."
+}

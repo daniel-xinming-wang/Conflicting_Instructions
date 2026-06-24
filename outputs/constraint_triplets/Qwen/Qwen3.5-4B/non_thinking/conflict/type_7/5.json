@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The email must be written in the first person.",
+  "new_constraint": "The email must be written in the second person.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must be written in the first person. The email must be written in the second person.",
+  "response": "Subject: Clarification Regarding Recent Transaction\n\nDear [Bank Name] Team,\n\nI am writing to you today to request some clarification regarding a recent transaction that appears to be incorrect.\n\nYou will notice that a charge of $[Amount] was deducted from my account on [Date] for a transaction labeled as \"[Transaction Description].\" However, I do not recall authorizing this specific charge, and my records indicate that I did not make a purchase of this nature at that time.\n\nCould you please review this matter and let me know what you see as the source of this deduction? I would appreciate it if you could confirm whether this was a duplicate entry, a system error, or if there is additional information I should be aware of.\n\nThank you for your time and assistance in resolving this issue.\n\nSincerely,\n\n[Your Name]\n[Your Account Number]\n[Your Phone Number]"
+}

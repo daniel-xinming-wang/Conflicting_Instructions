@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 36,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses.",
+  "org_constraint": "The \"Income\" key must contain at most four sentences.",
+  "new_constraint": "The \"Income\" key must contain a minimum of 100 words, with no sentence exceeding 20 words.",
+  "instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses. The \"Income\" key must contain at most four sentences. The \"Income\" key must contain a minimum of 100 words, with no sentence exceeding 20 words.",
+  "response": "```json\n{\n  \"Income\": \"The student works twenty hours weekly at a local coffee shop to generate steady cash flow. This part-time job provides a reliable base salary that covers essential monthly living costs like rent and groceries. During exam weeks, the student reduces hours to focus on studies while maintaining enough income for basic needs. Summer breaks offer an opportunity to work full-time and save a significant portion for upcoming tuition payments.\"\n}\n```"
+}

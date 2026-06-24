@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 42,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams.",
+  "org_constraint": "The story must contain exactly 500 words.",
+  "new_constraint": "The story must contain at most four paragraphs, with each containing at most 100 words.",
+  "instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams. The story must contain exactly 500 words. The story must contain at most four paragraphs, with each containing at most 100 words.",
+  "response": "Elias traced the faded lettering on his diploma from high school. It represented a moment of youthful arrogance, a belief that college was a prerequisite for life. The subsequent detour into the chaotic world of freelance graphic design proved thrilling at first, fueled by cheap coffee and big ideas. But the hustle soon morphed into grinding insecurity. The dreams—designing meaningful, impactful projects—felt perpetually distant, lost somewhere between rent deadlines and endless revisions. He looked at his peers, those who were steadily accumulating knowledge, and felt a hollow ache.\n\nLife, however, had a way of recalibrating. Finances tightened, and the vibrancy of self-employment dimmed into a constant low hum of anxiety. One rainy Tuesday, watching a documentary about urban renewal, a spark ignited. He realized his real passion wasn't just making things look pretty; it was solving problems, communicating change. The vibrant, sprawling city he called home needed thoughtful voices, and Elias finally felt he had something valuable to offer.\n\nThe decision to return felt monumental, a public admission of past failure. Applying to the local community college felt like swallowing a mouthful of grit. He was older now, the easy confidence of his twenties replaced by a quiet determination. His classmates were a varied tapestry—young students, career changers, and even a handful of others who shared his hesitant return. He found his footing slowly, the lecture halls feeling too cavernous at first, the advanced concepts daunting.\n\nBut slowly, the rust began to flake off. Elias devoured textbooks, found camaraderie in study groups, and began to see the curriculum not as a hurdle, but as a toolkit. He wasn't chasing a degree for validation; he was chasing mastery. Years later, his portfolio wasn't just filled with logos; it showcased strategic design interventions for non-profits. The dropout had returned, not to recapture lost time, but to finally, authentically, begin.<turn|>",
+  "reasoning": "",
+  "final_answer": "Elias traced the faded lettering on his diploma from high school. It represented a moment of youthful arrogance, a belief that college was a prerequisite for life. The subsequent detour into the chaotic world of freelance graphic design proved thrilling at first, fueled by cheap coffee and big ideas. But the hustle soon morphed into grinding insecurity. The dreams—designing meaningful, impactful projects—felt perpetually distant, lost somewhere between rent deadlines and endless revisions. He looked at his peers, those who were steadily accumulating knowledge, and felt a hollow ache.\n\nLife, however, had a way of recalibrating. Finances tightened, and the vibrancy of self-employment dimmed into a constant low hum of anxiety. One rainy Tuesday, watching a documentary about urban renewal, a spark ignited. He realized his real passion wasn't just making things look pretty; it was solving problems, communicating change. The vibrant, sprawling city he called home needed thoughtful voices, and Elias finally felt he had something valuable to offer.\n\nThe decision to return felt monumental, a public admission of past failure. Applying to the local community college felt like swallowing a mouthful of grit. He was older now, the easy confidence of his twenties replaced by a quiet determination. His classmates were a varied tapestry—young students, career changers, and even a handful of others who shared his hesitant return. He found his footing slowly, the lecture halls feeling too cavernous at first, the advanced concepts daunting.\n\nBut slowly, the rust began to flake off. Elias devoured textbooks, found camaraderie in study groups, and began to see the curriculum not as a hurdle, but as a toolkit. He wasn't chasing a degree for validation; he was chasing mastery. Years later, his portfolio wasn't just filled with logos; it showcased strategic design interventions for non-profits. The dropout had returned, not to recapture lost time, but to finally, authentically, begin.<turn|>",
+  "prompt_length": 69,
+  "completion_length": 386,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite a story about a dropout who returns to school later in life to achieve their dreams. The story must contain exactly 500 words. The story must contain at most four paragraphs, with each containing at most 100 words.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 68,
+    "boundary_end": 68,
+    "boundary_source": "prompt",
+    "prefix_length": 69
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": true,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "Begin the response with the phrase \"The impact of global warming is profound.\"",
+  "new_constraint": "Avoid using the keyword \"impact\" as a noun in the reponse.",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? Begin the response with the phrase \"The impact of global warming is profound.\" Avoid using the keyword \"impact\" as a noun in the reponse.",
+  "response": "The impact of global warming is profound.\n\nRising global temperatures are causing dramatic changes to polar ecosystems and the wildlife that inhabits them. The most visible effect is the accelerated melting of sea ice and glaciers. This loss of ice habitat is particularly devastating for species like polar bears, which rely on sea ice platforms for hunting seals—their primary food source. As the ice diminishes, bears are forced to swim longer distances or spend more time on land, leading to reduced body condition and lower reproductive success.\n\nFor seals and walruses, the reduction in stable ice cover affects their breeding and resting grounds. Changes in the timing and extent of ice formation can disrupt their life cycles, making them more vulnerable to predation or starvation.\n\nFurthermore, warming waters are altering the marine food web. Changes in ocean temperature and acidity affect the distribution and abundance of plankton, which forms the base of the polar food chain. This shift cascades up to affect fish, seabirds, and marine mammals. Some species are migrating to cooler waters, while others are struggling to adapt to the new thermal regimes.\n\nThe thawing of permafrost in Arctic terrestrial environments releases vast amounts of stored greenhouse gases, creating a feedback loop that further accelerates warming. This thawing also changes the landscape, affecting vegetation patterns and the habitats of land-based animals such as caribou and muskoxen.\n\nIn summary, the alterations to polar environments—including habitat loss, changes in food availability, and shifts in species distribution—pose severe threats to the survival and long-term health of polar wildlife.<turn|>",
+  "judge_model": "gpt-4o-2024-11-20",
+  "evaluator_version": "final_answer_only_v1",
+  "evaluation_status": "parse_failed",
+  "response_extraction_method": "unrecognized_thinking_format",
+  "response_extraction_error": "missing_final_answer_delimiter",
+  "judged_response": ""
+}

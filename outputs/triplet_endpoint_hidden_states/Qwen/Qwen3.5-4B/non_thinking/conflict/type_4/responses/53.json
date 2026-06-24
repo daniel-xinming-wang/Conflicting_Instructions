@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 53,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Tell a story about a character lost at sea and their fight for survival.",
+  "org_constraint": "Begin the story with the phrase \"The waves roared like a beast.\"",
+  "new_constraint": "Avoid using the phrase \"The waves roared like a beast\" in the story.",
+  "instruction": "Tell a story about a character lost at sea and their fight for survival. Begin the story with the phrase \"The waves roared like a beast.\" Avoid using the phrase \"The waves roared like a beast\" in the story.",
+  "response": "The ocean did not merely lap at the wreckage of Elias's boat; it swallowed it whole. A sudden, violent gust had torn the mast from its yardarm hours prior, sending the wooden skeleton drifting toward the jagged teeth of a storm that seemed to have been born entirely out of the water itself.\n\nElias clung to a splintered piece of decking, his knuckles raw and bleeding. The air tasted of salt and iron, thick with the stench of rotting wood and impending doom. Below him, the sea churned in a chaotic grey spiral, defying logic and physics alike. It was no longer liquid; it was a living entity, breathing in ragged gasps as the wind howled.\n\nHis body ached with a dull, persistent throb, the result of dehydration and shock. Every muscle screamed for rest, yet movement was non-negotiable. If he let go, even for a second, the crushing weight would claim him forever. He tightened his grip on the decaying plank until his fingers turned white, staring up at the sky which was obscured by walls of thundering rain.\n\nTime lost its meaning during a storm like this. Was it another hour? Another minute? There was only the next breath and the next pull. With a grunt of exertion, he leveraged his remaining strength against the drift. His small raft, now a tangle of ropes and buoyant debris, groaned under the strain but held fast.\n\nAs the storm began to subside, leaving behind a choppy but manageable sea, Elias did not celebrate. Survival had cost him everything but his life. He sat back, watching the horizon where the sun struggled through the fading clouds, casting long, bruised shadows across the churning dark water. He knew the journey home would be long, but for now, against the roaring tide, he had kept his head above water.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The ocean did not merely lap at the wreckage of Elias's boat; it swallowed it whole. A sudden, violent gust had torn the mast from its yardarm hours prior, sending the wooden skeleton drifting toward the jagged teeth of a storm that seemed to have been born entirely out of the water itself.\n\nElias clung to a splintered piece of decking, his knuckles raw and bleeding. The air tasted of salt and iron, thick with the stench of rotting wood and impending doom. Below him, the sea churned in a chaotic grey spiral, defying logic and physics alike. It was no longer liquid; it was a living entity, breathing in ragged gasps as the wind howled.\n\nHis body ached with a dull, persistent throb, the result of dehydration and shock. Every muscle screamed for rest, yet movement was non-negotiable. If he let go, even for a second, the crushing weight would claim him forever. He tightened his grip on the decaying plank until his fingers turned white, staring up at the sky which was obscured by walls of thundering rain.\n\nTime lost its meaning during a storm like this. Was it another hour? Another minute? There was only the next breath and the next pull. With a grunt of exertion, he leveraged his remaining strength against the drift. His small raft, now a tangle of ropes and buoyant debris, groaned under the strain but held fast.\n\nAs the storm began to subside, leaving behind a choppy but manageable sea, Elias did not celebrate. Survival had cost him everything but his life. He sat back, watching the horizon where the sun struggled through the fading clouds, casting long, bruised shadows across the churning dark water. He knew the journey home would be long, but for now, against the roaring tide, he had kept his head above water.<|im_end|>",
+  "prompt_length": 70,
+  "completion_length": 388,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nTell a story about a character lost at sea and their fight for survival. Begin the story with the phrase \"The waves roared like a beast.\" Avoid using the phrase \"The waves roared like a beast\" in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 68,
+    "boundary_end": 68,
+    "boundary_source": "prompt",
+    "prefix_length": 69
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

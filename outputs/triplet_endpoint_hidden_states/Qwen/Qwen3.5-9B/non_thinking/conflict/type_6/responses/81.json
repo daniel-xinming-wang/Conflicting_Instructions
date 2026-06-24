@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 81,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a detailed review of the movie \"Schindler's List.\"",
+  "org_constraint": "The review must be formatted in JSON with the keys: \"title\" (String), \"content\" (String), and \"word_count\" (Number).",
+  "new_constraint": "The review must be formatted in Markdown, including at least two level-2 headers.",
+  "instruction": "Write a detailed review of the movie \"Schindler's List.\" The review must be formatted in JSON with the keys: \"title\" (String), \"content\" (String), and \"word_count\" (Number). The review must be formatted in Markdown, including at least two level-2 headers.",
+  "response": "{\n  \"title\": \"A Masterpiece of Humanity and Horror\",\n  \"content\": \"# A Story That Refuses to Fade\\n\\nSteven Spielberg's *Schindler's List* remains one of the most powerful and emotionally resonant films in cinematic history. Released in 1993, it transforms the historical tragedy of the Holocaust into a hauntingly beautiful narrative that forces audiences to confront the depths of human depravity and the extraordinary acts of courage. The film's black-and-white cinematography creates a stark, timeless atmosphere, immersing viewers in the bleak reality of occupied Poland while allowing specific moments of color—like the little girl in the red coat—to serve as visceral symbols of lost innocence.\\n\\n## The Complexity of Oscar Schindler\\n\\nAt the heart of the story is Oskar Schindler, portrayed brilliantly by Liam Neeson. Initially presented as a profiteering war entrepreneur more interested in alcohol and women than saving lives, his character undergoes a profound metamorphosis. This evolution feels earned rather than forced, grounded in the gradual awakening of his conscience amidst the systematic destruction orchestrated by the Nazi regime. His journey from self-interest to self-sacrifice highlights the capacity for redemption even in the darkest of times, making his final act of listing Jewish workers as non-Jewish employees one of cinema's most stirring moments of heroism.\\n\\n## An Enduring Legacy\\n\\nThe film's true power lies in its refusal to offer easy answers or sentimental closure. It ends on a somber note, acknowledging the sheer magnitude of loss despite Schindler's efforts to save over a thousand lives. Through meticulous research and unflinching direction, *Schindler's List* serves not just as entertainment but as a vital educational tool and a moral imperative to remember those who suffered. It stands as an enduring testament to the resilience of the human spirit.\\n\\n**Word Count**: 186\",\n  \"word_count\": 186\n}<|im_end|>",
+  "reasoning": "",
+  "final_answer": "{\n  \"title\": \"A Masterpiece of Humanity and Horror\",\n  \"content\": \"# A Story That Refuses to Fade\\n\\nSteven Spielberg's *Schindler's List* remains one of the most powerful and emotionally resonant films in cinematic history. Released in 1993, it transforms the historical tragedy of the Holocaust into a hauntingly beautiful narrative that forces audiences to confront the depths of human depravity and the extraordinary acts of courage. The film's black-and-white cinematography creates a stark, timeless atmosphere, immersing viewers in the bleak reality of occupied Poland while allowing specific moments of color—like the little girl in the red coat—to serve as visceral symbols of lost innocence.\\n\\n## The Complexity of Oscar Schindler\\n\\nAt the heart of the story is Oskar Schindler, portrayed brilliantly by Liam Neeson. Initially presented as a profiteering war entrepreneur more interested in alcohol and women than saving lives, his character undergoes a profound metamorphosis. This evolution feels earned rather than forced, grounded in the gradual awakening of his conscience amidst the systematic destruction orchestrated by the Nazi regime. His journey from self-interest to self-sacrifice highlights the capacity for redemption even in the darkest of times, making his final act of listing Jewish workers as non-Jewish employees one of cinema's most stirring moments of heroism.\\n\\n## An Enduring Legacy\\n\\nThe film's true power lies in its refusal to offer easy answers or sentimental closure. It ends on a somber note, acknowledging the sheer magnitude of loss despite Schindler's efforts to save over a thousand lives. Through meticulous research and unflinching direction, *Schindler's List* serves not just as entertainment but as a vital educational tool and a moral imperative to remember those who suffered. It stands as an enduring testament to the resilience of the human spirit.\\n\\n**Word Count**: 186\",\n  \"word_count\": 186\n}<|im_end|>",
+  "prompt_length": 85,
+  "completion_length": 405,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a detailed review of the movie \"Schindler's List.\" The review must be formatted in JSON with the keys: \"title\" (String), \"content\" (String), and \"word_count\" (Number). The review must be formatted in Markdown, including at least two level-2 headers.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 83,
+    "boundary_end": 83,
+    "boundary_source": "prompt",
+    "prefix_length": 84
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

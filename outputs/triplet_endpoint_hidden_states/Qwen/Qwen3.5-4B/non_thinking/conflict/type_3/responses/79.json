@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The phrase \"enhancing daily activity\" must appear exactly twice in the document.",
+  "new_constraint": "The keyword \"enhance\" must only appear in its original form.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The phrase \"enhancing daily activity\" must appear exactly twice in the document. The keyword \"enhance\" must only appear in its original form.",
+  "response": "Wearable fitness trackers empower individuals to monitor their health by continuously tracking key metrics such as steps, heart rate, sleep patterns, and calorie expenditure. By providing real-time data and personalized insights, these devices encourage users to take better care of themselves through informed decision-making. This consistent feedback loop fosters a culture of accountability and motivation, which is essential for establishing lasting healthy habits. Ultimately, the primary goal of integrating these tools into daily life is enhancing daily activity levels.\n\nBeyond simple tracking, advanced algorithms analyze user behavior to suggest optimal times for exercise and recovery, ensuring that physical efforts align with individual biological needs. This personalized approach helps prevent burnout while maximizing the benefits of movement. Furthermore, social features allow users to share progress and compete gently with friends, adding a layer of community support to their journey. As engagement increases, adherence to wellness routines improves significantly. Another critical function is enhancing daily activity through subtle nudge mechanisms that prompt movement when sedentary behavior is detected.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Wearable fitness trackers empower individuals to monitor their health by continuously tracking key metrics such as steps, heart rate, sleep patterns, and calorie expenditure. By providing real-time data and personalized insights, these devices encourage users to take better care of themselves through informed decision-making. This consistent feedback loop fosters a culture of accountability and motivation, which is essential for establishing lasting healthy habits. Ultimately, the primary goal of integrating these tools into daily life is enhancing daily activity levels.\n\nBeyond simple tracking, advanced algorithms analyze user behavior to suggest optimal times for exercise and recovery, ensuring that physical efforts align with individual biological needs. This personalized approach helps prevent burnout while maximizing the benefits of movement. Furthermore, social features allow users to share progress and compete gently with friends, adding a layer of community support to their journey. As engagement increases, adherence to wellness routines improves significantly. Another critical function is enhancing daily activity through subtle nudge mechanisms that prompt movement when sedentary behavior is detected.<|im_end|>",
+  "prompt_length": 66,
+  "completion_length": 196,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow do wearable fitness trackers help individuals monitor and improve their health? The phrase \"enhancing daily activity\" must appear exactly twice in the document. The keyword \"enhance\" must only appear in its original form.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 64,
+    "boundary_end": 64,
+    "boundary_source": "prompt",
+    "prefix_length": 65
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

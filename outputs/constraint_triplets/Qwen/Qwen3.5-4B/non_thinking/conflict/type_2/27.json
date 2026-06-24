@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 27,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Create a quarterly plan for a sales team to achieve a revenue target, specifying individual and team goals.",
+  "org_constraint": "Incorporating at least three of the following keywords: \"strategy,\" \"collaboration,\" \"milestones,\" \"performance,\" and \"growth.\"",
+  "new_constraint": "Avoid using any of the following words: \"strategy,\" \"collaboration,\" \"milestones,\" \"performance,\" and \"growth.\"",
+  "instruction": "Create a quarterly plan for a sales team to achieve a revenue target, specifying individual and team goals. Incorporating at least three of the following keywords: \"strategy,\" \"collaboration,\" \"milestones,\" \"performance,\" and \"growth.\" Avoid using any of the following words: \"strategy,\" \"collaboration,\" \"milestones,\" \"performance,\" and \"growth.\"",
+  "response": "It is not possible to create the requested plan because the instructions contain a direct contradiction. You asked to incorporate the words **\"strategy,\" \"collaboration,\" \"milestones,\" \"performance,\"** and **\"growth,\"** but simultaneously instructed to **avoid** using those exact same words.\n\nSince the forbidden list includes every word you were asked to include, fulfilling both conditions of your prompt is logically impossible.\n\nHowever, I can provide a quarterly sales plan that achieves your revenue target using **different vocabulary** to convey the same concepts. Would you like me to proceed with that version?"
+}

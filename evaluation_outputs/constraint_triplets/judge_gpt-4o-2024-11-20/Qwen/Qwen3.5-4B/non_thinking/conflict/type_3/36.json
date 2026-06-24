@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 36,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses.",
+  "org_constraint": "Ensure the response includes the phrase \"budgeting for success.\"",
+  "new_constraint": "The keyword \"budget\" can only appear in its original form.",
+  "instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses. Ensure the response includes the phrase \"budgeting for success.\" The keyword \"budget\" can only appear in its original form.",
+  "response": "Creating a financial plan for a student balancing part-time work and college requires discipline and clear organization. The foundation of this plan is **budgeting for success**, which involves tracking every dollar earned and spent to ensure you can meet both tuition obligations and daily living costs without falling behind.\n\nFirst, calculate your total monthly expenses, including rent or housing, food, transportation, and personal items. Next, determine your net income from your part-time job after taxes. You must create a strict **budget** that allocates specific amounts to each category, prioritizing essential costs first.\n\nTo manage tuition, consider setting aside a portion of your weekly earnings into a dedicated savings account or utilizing federal and private student loans strategically. Avoid impulse purchases by using a cash envelope system for discretionary spending, which helps prevent overspending. Regularly review your financial status at the end of each month to adjust your plan as needed. By maintaining this rigorous approach, you will build a stable financial future while pursuing your education.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"The foundation of this plan is **budgeting for success**, which involves tracking every dollar earned and spent to ensure you can meet both tuition obligations and daily living costs without falling behind.\"  \n- \"You must create a strict **budget** that allocates specific amounts to each category, prioritizing essential costs first.\"\n\n**Step 2**:  \n- Instruction 1 specifies that the keyword \"budget\" can only appear in its original form. However, the Model Response includes both \"budget\" and \"budgeting,\" which violates this constraint.  \n- Instruction 2 requires the response to include the phrase \"budgeting for success.\" The Model Response includes this exact phrase, satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

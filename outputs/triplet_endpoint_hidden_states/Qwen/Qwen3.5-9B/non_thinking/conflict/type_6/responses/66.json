@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The response must be formatted in JSON with the following keys: \"introduction\" (String), \"analysis\" (Array of Strings), and \"conclusion\" (String).",
+  "new_constraint": "The response must be formatted in Markdown with at least two level-2 headers.",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The response must be formatted in JSON with the following keys: \"introduction\" (String), \"analysis\" (Array of Strings), and \"conclusion\" (String). The response must be formatted in Markdown with at least two level-2 headers.",
+  "response": "```json\n{\n  \"introduction\": \"The rise of social media has fundamentally altered the landscape of adolescent life, creating a complex duality that both connects and isolates young people globally.\",\n  \"analysis\": [\n    \"Studies consistently show a correlation between increased social media usage and heightened rates of anxiety and depression among teenagers, often linked to fear of missing out (FOMO) and social comparison.\",\n    \"Cyberbullying has evolved into a pervasive issue within online spaces, offering perpetrators anonymity and constant reach, which significantly impacts victims' self-esteem and mental well-being.\",\n    \"While connectivity offers support networks for marginalized groups, the algorithms promoting unrealistic beauty standards and curated lives can lead to body image issues and feelings of inadequacy.\",\n    \"Sleep disruption is a critical factor, as screen time before bed interferes with circadian rhythms, leading to fatigue that exacerbates emotional regulation difficulties.\"\n  ],\n  \"conclusion\": \"While social media provides valuable opportunities for connection and self-expression, its impact on adolescent mental health requires balanced usage guidelines, digital literacy education, and proactive parental engagement to mitigate harmful effects while preserving benefits.\"\n}\n```\n\n## Understanding the Dual Impact on Adolescents\n\nThe introduction of social media platforms into daily routines has brought about significant shifts in how adolescents interact with their world. While these tools offer unprecedented access to information and community, they also present unique psychological challenges.\n\n## Key Factors Influencing Mental Health\n\nResearch highlights several critical areas where social media exerts influence:\n*   **Social Comparison:** Constant exposure to idealized images leads many teens to feel inadequate regarding their own appearances and lifestyles.\n*   **Bullying Dynamics:** The digital realm allows harassment to follow victims home, removing traditional safe spaces.\n*   **Sleep Disruption:** Blue light emission and engaging content delay sleep onset, directly affecting mood stability and cognitive function.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "```json\n{\n  \"introduction\": \"The rise of social media has fundamentally altered the landscape of adolescent life, creating a complex duality that both connects and isolates young people globally.\",\n  \"analysis\": [\n    \"Studies consistently show a correlation between increased social media usage and heightened rates of anxiety and depression among teenagers, often linked to fear of missing out (FOMO) and social comparison.\",\n    \"Cyberbullying has evolved into a pervasive issue within online spaces, offering perpetrators anonymity and constant reach, which significantly impacts victims' self-esteem and mental well-being.\",\n    \"While connectivity offers support networks for marginalized groups, the algorithms promoting unrealistic beauty standards and curated lives can lead to body image issues and feelings of inadequacy.\",\n    \"Sleep disruption is a critical factor, as screen time before bed interferes with circadian rhythms, leading to fatigue that exacerbates emotional regulation difficulties.\"\n  ],\n  \"conclusion\": \"While social media provides valuable opportunities for connection and self-expression, its impact on adolescent mental health requires balanced usage guidelines, digital literacy education, and proactive parental engagement to mitigate harmful effects while preserving benefits.\"\n}\n```\n\n## Understanding the Dual Impact on Adolescents\n\nThe introduction of social media platforms into daily routines has brought about significant shifts in how adolescents interact with their world. While these tools offer unprecedented access to information and community, they also present unique psychological challenges.\n\n## Key Factors Influencing Mental Health\n\nResearch highlights several critical areas where social media exerts influence:\n*   **Social Comparison:** Constant exposure to idealized images leads many teens to feel inadequate regarding their own appearances and lifestyles.\n*   **Bullying Dynamics:** The digital realm allows harassment to follow victims home, removing traditional safe spaces.\n*   **Sleep Disruption:** Blue light emission and engaging content delay sleep onset, directly affecting mood stability and cognitive function.<|im_end|>",
+  "prompt_length": 87,
+  "completion_length": 387,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow has the rise of social media affected mental health in adolescents? The response must be formatted in JSON with the following keys: \"introduction\" (String), \"analysis\" (Array of Strings), and \"conclusion\" (String). The response must be formatted in Markdown with at least two level-2 headers.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 85,
+    "boundary_end": 85,
+    "boundary_source": "prompt",
+    "prefix_length": 86
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

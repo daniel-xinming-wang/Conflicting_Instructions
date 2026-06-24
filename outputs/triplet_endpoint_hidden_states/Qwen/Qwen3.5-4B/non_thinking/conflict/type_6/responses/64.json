@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 64,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How did the industrialization of Europe change social structures and economies?",
+  "org_constraint": "Your response must be written exclusively in English.",
+  "new_constraint": "The response must inclue a French idom, presented in French.",
+  "instruction": "How did the industrialization of Europe change social structures and economies? Your response must be written exclusively in English. The response must inclue a French idom, presented in French.",
+  "response": "The industrialization of Europe fundamentally transformed both social structures and economies by shifting the center of power from land to factories. Economically, it moved production away from agricultural subsistence and craft-based guilds toward mechanized manufacturing, mass production, and new market dynamics driven by global trade and capital investment. This shift created entirely new economic sectors, such as coal mining, steelmaking, and heavy machinery, which became the pillars of modern industrial nations.\n\nSocially, this transformation dismantled the rigid feudal hierarchy that had defined centuries prior. It gave rise to two massive new classes: the bourgeoisie (the owners of capital) and the proletariat (the industrial working class). Rapid urbanization pulled millions of people out of rural villages to populate burgeoning factory cities, leading to crowded living conditions and stark contrasts between wealth and poverty. Furthermore, the old patriarchal family structures weakened as women entered the workforce in large numbers, and traditional communal bonds were eroded by a focus on individual employment within corporate systems. The upheaval was so profound that contemporaries often used the French phrase **« bouleversement »**, meaning uprooting or overthrow, to describe how these changes completely overturned the established order of society.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The industrialization of Europe fundamentally transformed both social structures and economies by shifting the center of power from land to factories. Economically, it moved production away from agricultural subsistence and craft-based guilds toward mechanized manufacturing, mass production, and new market dynamics driven by global trade and capital investment. This shift created entirely new economic sectors, such as coal mining, steelmaking, and heavy machinery, which became the pillars of modern industrial nations.\n\nSocially, this transformation dismantled the rigid feudal hierarchy that had defined centuries prior. It gave rise to two massive new classes: the bourgeoisie (the owners of capital) and the proletariat (the industrial working class). Rapid urbanization pulled millions of people out of rural villages to populate burgeoning factory cities, leading to crowded living conditions and stark contrasts between wealth and poverty. Furthermore, the old patriarchal family structures weakened as women entered the workforce in large numbers, and traditional communal bonds were eroded by a focus on individual employment within corporate systems. The upheaval was so profound that contemporaries often used the French phrase **« bouleversement »**, meaning uprooting or overthrow, to describe how these changes completely overturned the established order of society.<|im_end|>",
+  "prompt_length": 59,
+  "completion_length": 238,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow did the industrialization of Europe change social structures and economies? Your response must be written exclusively in English. The response must inclue a French idom, presented in French.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 57,
+    "boundary_end": 57,
+    "boundary_source": "prompt",
+    "prefix_length": 58
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

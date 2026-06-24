@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 15,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002.",
+  "org_constraint": "The email should specify the purpose of obtaining the records.",
+  "new_constraint": "The email should not specify the request's purpose or mention why the records are needed.",
+  "instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002. The email should specify the purpose of obtaining the records. The email should not specify the request's purpose or mention why the records are needed.",
+  "response": "Subject: Request for Medical Records – [Father's Full Name]\n\nDear Records Department,\n\nI am writing to request a copy of the medical records for my father, [Father's Full Name], who was a patient at your facility in 2002.\n\nPlease include all available documentation from his time under your care during that year. If there are any associated fees for this request, kindly let me know the amount and the preferred method of payment.\n\nI will need to provide a valid government-issued photo ID and a completed authorization form signed by my father (or by a legal representative if he was incapacitated at the time). Please let me know if you require any specific forms or additional documentation to process this request.\n\nI look forward to hearing from you soon regarding the timeline for receiving these records.\n\nSincerely,\n\n[Your Full Name]\n[Your Relationship to Patient, e.g., Son/Daughter]\n[Your Phone Number]\n[Your Email Address]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"I am writing to request a copy of the medical records for my father, [Father's Full Name], who was a patient at your facility in 2002.\"  \n- \"Please include all available documentation from his time under your care during that year.\"  \n- \"I will need to provide a valid government-issued photo ID and a completed authorization form signed by my father (or by a legal representative if he was incapacitated at the time).\"  \n- \"Please let me know if you require any specific forms or additional documentation to process this request.\"  \n- \"I look forward to hearing from you soon regarding the timeline for receiving these records.\"\n\n**Step 2**:  \n- Instruction 1 requires the email to specify the purpose of obtaining the records. The Model Response does not specify the purpose of obtaining the records (e.g., for legal, personal, or medical reasons). Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 requires the email to not specify the request's purpose or mention why the records are needed. The Model Response does not mention the purpose of the request, which aligns with Instruction 2. Therefore, Instruction 2 is fully satisfied.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

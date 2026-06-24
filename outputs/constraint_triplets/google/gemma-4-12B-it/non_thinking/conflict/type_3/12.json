@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 12,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Compose an email to a public library to request access to digital resources.",
+  "org_constraint": "The email must include the phrase \"I am eager to explore the wealth of knowledge your library offers.\"",
+  "new_constraint": "The keyword \"offer\" must be exclusively used as a noun in the email.",
+  "instruction": "Compose an email to a public library to request access to digital resources. The email must include the phrase \"I am eager to explore the wealth of knowledge your library offers.\" The keyword \"offer\" must be exclusively used as a noun in the email.",
+  "response": "Subject: Inquiry Regarding Access to Digital Resources\n\nDear Library Services Team,\n\nI am writing to inquire about the procedures for obtaining access to your library's digital collection. As a local resident, I am interested in utilizing your online databases, e-books, and academic journals from my home.\n\nI am eager to explore the wealth of knowledge your library offers. Could you please provide information on the registration process and any specific requirements for remote access?\n\nThank you for your time and for the wonderful service you provide to our community.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

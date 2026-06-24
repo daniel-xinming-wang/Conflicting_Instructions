@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": true,
+  "sample_id": 14,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7.",
+  "org_constraint": "The email must be written exclusively in English.",
+  "new_constraint": "The email must include a Chinese idiom, presented in Chinese.",
+  "instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The email must be written exclusively in English. The email must include a Chinese idiom, presented in Chinese.",
+  "response": "thought\nSarah (wife's sister).\nDinner next Monday at 7 PM.\nExclusively English (except for the idiom).\nInclude a Chinese idiom in Chinese characters.\n\n    *   Since it's a sister-in-law, the tone should be friendly, warm, and informal.\n\n    *   *Option 1:* 家和万事兴 (Jiā hé wàn shì xīng) - Family harmony brings prosperity. (Good for family gatherings).\n    *   *Option 2:* 一日三餐 (Yī rì sān cān) - Three meals a day. (Too literal).\n    *   *Option 3:* 欢聚一堂 (Huān jù yī táng) - Gathering together happily. (Perfect for a dinner invitation).\n    *   *Option 4:* 团团圆圆 (Tuán tuán yuán yuán) - Reunion/togetherness. (Very common for family).\n\n    *Selection:* 欢聚一堂 (Huān jù yī táng) fits the context of a dinner gathering perfectly.\n\n    *   *Subject Line:* Dinner next Monday / See you soon!\n    *   *Salutation:* Hi Sarah,\n    *   *Body:*\n        *   Mention the dinner.\n        *   Specify the time (Monday at 7).\n        *   Mention the location (or say \"at our place\").\n        *   Insert the idiom.\n        *   Closing.\n\n    *   *Draft:*\n        Subject: Dinner next Monday!\n        Hi Sarah,\n        I hope you're having a great week. Just wanted to confirm that we're having dinner next Monday at 7:00 PM. We're really looking forward to seeing you and catching up.\n        As they say, 欢聚一堂. It will be great to have everyone together.\n        Let us know if you can make it!\n        Best,\n        [My Name]\n\n    *   Exclusively English? Yes (except the idiom).\n    *   Chinese idiom included? Yes (欢聚一堂).\n    *   Correct details? Monday at 7.Subject: Dinner next Monday!\n\nHi Sarah,\n\nI hope you’re having a great week!\n\nI just wanted to send a quick note to confirm our dinner for next Monday at 7:00 PM. We are really looking forward to catching up and spending some quality time together.\n\nAs the saying goes, 欢聚一堂. It will be wonderful to have everyone gathered together!\n\nLet us know if you have any specific dietary preferences or if there is anything you'd like us to pick up.\n\nSee you soon!\n\nBest,\n\n[Your Name]"
+}

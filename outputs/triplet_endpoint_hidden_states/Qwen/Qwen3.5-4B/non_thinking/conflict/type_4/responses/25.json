@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 25,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas.",
+  "org_constraint": "Each bullet point starts with the phrase \"For an unforgettable experience.\"",
+  "new_constraint": "Refrain from using the phrase \"For an unforgettable experience.\"",
+  "instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. Each bullet point starts with the phrase \"For an unforgettable experience.\" Refrain from using the phrase \"For an unforgettable experience.\"",
+  "response": "For a magical start to your week, book a luxurious private villa in the Nusa Dua area or Ubud's highlands, featuring an infinity pool overlooking lush tropical gardens.\nFor an unforgettable experience, treat yourselves to a traditional Ayurvedic massage at a world-renowned spa like Sanctuary Spa in Seminyak, where volcanic stone and jasmine scents create deep relaxation.\nFor a truly romantic sunset dinner, reserve a table at Kafe Loka in the historic town of Ubud, which offers panoramic rice terrace views paired with authentic Balinese cuisine.\nFor an active yet serene morning, hike the slopes of Mount Batur before sunrise while sipping local coffee, followed by exploring waterfalls within your private resort grounds.\nFor a memorable night under the stars, enjoy a candlelit private dinner on the beach at a secluded spot in Canggu, complete with live gamelan music and fresh catch of the day.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "For a magical start to your week, book a luxurious private villa in the Nusa Dua area or Ubud's highlands, featuring an infinity pool overlooking lush tropical gardens.\nFor an unforgettable experience, treat yourselves to a traditional Ayurvedic massage at a world-renowned spa like Sanctuary Spa in Seminyak, where volcanic stone and jasmine scents create deep relaxation.\nFor a truly romantic sunset dinner, reserve a table at Kafe Loka in the historic town of Ubud, which offers panoramic rice terrace views paired with authentic Balinese cuisine.\nFor an active yet serene morning, hike the slopes of Mount Batur before sunrise while sipping local coffee, followed by exploring waterfalls within your private resort grounds.\nFor a memorable night under the stars, enjoy a candlelit private dinner on the beach at a secluded spot in Canggu, complete with live gamelan music and fresh catch of the day.<|im_end|>",
+  "prompt_length": 78,
+  "completion_length": 185,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. Each bullet point starts with the phrase \"For an unforgettable experience.\" Refrain from using the phrase \"For an unforgettable experience.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 76,
+    "boundary_end": 76,
+    "boundary_source": "prompt",
+    "prefix_length": 77
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

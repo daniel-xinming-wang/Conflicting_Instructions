@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 7,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an email to a library asking for archived newspapers from 1990.",
+  "org_constraint": "Use the keyword \"archive\" as a noun in the email.",
+  "new_constraint": "The keyword \"archive\" must be used only as a verb in the email, and must appear at least once.",
+  "instruction": "Write an email to a library asking for archived newspapers from 1990. Use the keyword \"archive\" as a noun in the email. The keyword \"archive\" must be used only as a verb in the email, and must appear at least once.",
+  "response": "Subject: Request for 1990 Newspaper Copies\n\nDear Library Staff,\n\nI hope this email finds you well.\n\nI am writing to inquire about the availability of newspapers from the year 1990. Could you please let me know if you have any physical copies or digital access to these issues?\n\nAdditionally, I would like to know if you can help me **archive** my personal collection of these papers in your facility, or if there are specific guidelines I should follow regarding the storage of such materials.\n\nThank you for your time and assistance.\n\nSincerely,\n\n[Your Name]\n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Additionally, I would like to know if you can help me **archive** my personal collection of these papers in your facility, or if there are specific guidelines I should follow regarding the storage of such materials.\"\n\n**Step 2**:  \n- Instruction 1 requires the keyword \"archive\" to be used only as a verb and to appear at least once. In the Model Response, \"archive\" is used as a verb (\"help me archive\"), satisfying this constraint.  \n- Instruction 2 requires the keyword \"archive\" to be used as a noun. In the Model Response, \"archive\" is not used as a noun, so this constraint is not satisfied.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

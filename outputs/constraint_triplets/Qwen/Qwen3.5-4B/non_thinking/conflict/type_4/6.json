@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 6,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Compose an email to an art gallery asking about upcoming exhibitions.",
+  "org_constraint": "Use the phrase \"upcoming exhibitions\" exactly three times.",
+  "new_constraint": "Avoid using the phrase \"upcoming exhibitions\".",
+  "instruction": "Compose an email to an art gallery asking about upcoming exhibitions. Use the phrase \"upcoming exhibitions\" exactly three times. Avoid using the phrase \"upcoming exhibitions\".",
+  "response": "Subject: Inquiry Regarding Your Current and Future Shows\n\nDear Gallery Team,\n\nI hope this message finds you well. I have been following your work for some time and am writing to express my interest in your current collection. Could you please provide details regarding your **upcoming exhibitions** for the second half of the year?\n\nAdditionally, I would love to know if there are any special events tied to your **upcoming exhibitions** that I should plan to attend. Finally, could you let me know if your schedule for **upcoming exhibitions** allows for private viewings or artist talks?\n\nThank you for your time and assistance.\n\nBest regards,\n\n[Your Name]"
+}

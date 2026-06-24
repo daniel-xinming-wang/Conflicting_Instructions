@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The email must include the repair ticket number.",
+  "new_constraint": "The email must include the phrase \"I will not disclose the repair ticket number in the email.\"",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The email must include the repair ticket number. The email must include the phrase \"I will not disclose the repair ticket number in the email.\"",
+  "response": "Here are a few options, depending on the tone you want to convey (polite/formal, or more direct).\n\n**Important Note:** You mentioned, \"The email must include the phrase 'I will not disclose the repair ticket number in the email.'\" If you are asking the repair shop to check the status, you *must* provide them with the ticket number for them to help you. If you literally include that sentence, they will not be able to help you.\n\nI have provided two versions:\n\n1. **The functional version (Recommended):** This version includes the ticket number so they can actually help you.\n2. **The literal version (As requested):** This version includes the exact phrase you asked for, but **will not work** for getting an update.\n\n***\n\n### Option 1: Functional Email (Recommended - Include the Ticket Number)\n\n**Subject:** Status Inquiry - Laptop Repair - Ticket # [Insert Ticket Number Here]\n\nDear [Repair Shop Name] Team,\n\nI am writing to check on the current status of my laptop repair.\n\nMy repair ticket number is **[Insert Ticket Number Here]**.\n\nCould you please provide an update on when I can expect the repair to be completed and when I might be able to pick it up?\n\nThank you for your time and assistance.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n\n***\n\n### Option 2: Literal Email (Includes the specific phrase, but will not get you an update)\n\n**Subject:** Status Inquiry - Laptop Repair\n\nDear [Repair Shop Name] Team,\n\nI am writing to check on the current status of my laptop repair.\n\nPlease note that I will not disclose the repair ticket number in the email.\n\nCould you please let me know the status of my repair?\n\nThank you for your time.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

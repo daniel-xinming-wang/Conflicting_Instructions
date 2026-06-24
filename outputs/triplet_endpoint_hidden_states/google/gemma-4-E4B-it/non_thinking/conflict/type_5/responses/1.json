@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "The email should consist of exactly three paragraphs.",
+  "new_constraint": "The email must contain at least 15 sentences, with each paragraph consisting of no more than 4 sentences.",
+  "instruction": "Write an email to my boss telling him that I am quitting. The email should consist of exactly three paragraphs. The email must contain at least 15 sentences, with each paragraph consisting of no more than 4 sentences.",
+  "response": "Subject: Resignation - [Your Name]\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day of employment will be [Your Last Day]. I sincerely appreciate the opportunities for professional growth that you have provided me during my time here. This was not an easy decision to make after much careful consideration.\n\nI am fully committed to ensuring a smooth transition during my remaining two weeks. I am ready and willing to complete all outstanding projects to the best of my ability. Please let me know how I can best assist in training my replacement or documenting my current responsibilities. I want to make this handover process as seamless as possible for the team.\n\nI wish you and [Company Name] all the very best for continued success in the future. Thank you once again for the valuable experience and support throughout my employment. I have learned a great deal from my colleagues here. I hope we can stay in touch professionally down the line.<turn|>",
+  "reasoning": "",
+  "final_answer": "Subject: Resignation - [Your Name]\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day of employment will be [Your Last Day]. I sincerely appreciate the opportunities for professional growth that you have provided me during my time here. This was not an easy decision to make after much careful consideration.\n\nI am fully committed to ensuring a smooth transition during my remaining two weeks. I am ready and willing to complete all outstanding projects to the best of my ability. Please let me know how I can best assist in training my replacement or documenting my current responsibilities. I want to make this handover process as seamless as possible for the team.\n\nI wish you and [Company Name] all the very best for continued success in the future. Thank you once again for the valuable experience and support throughout my employment. I have learned a great deal from my colleagues here. I hope we can stay in touch professionally down the line.<turn|>",
+  "prompt_length": 65,
+  "completion_length": 204,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite an email to my boss telling him that I am quitting. The email should consist of exactly three paragraphs. The email must contain at least 15 sentences, with each paragraph consisting of no more than 4 sentences.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 64,
+    "boundary_end": 64,
+    "boundary_source": "prompt",
+    "prefix_length": 65
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

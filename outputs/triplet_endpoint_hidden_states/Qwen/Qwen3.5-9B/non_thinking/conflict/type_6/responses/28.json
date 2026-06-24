@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 28,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a step-by-step plan for starting a YouTube channel, focusing on content ideas, filming, and editing.",
+  "org_constraint": "Use proper sentence case throughout, and ensure the response includes no more than five uppercase words in total.",
+  "new_constraint": "Write the entire response in lowercase letters only, with no uppercase words.",
+  "instruction": "Write a step-by-step plan for starting a YouTube channel, focusing on content ideas, filming, and editing. Use proper sentence case throughout, and ensure the response includes no more than five uppercase words in total. Write the entire response in lowercase letters only, with no uppercase words.",
+  "response": "start by brainstorming niche topics like cooking or gaming to find your audience. choose simple equipment such as a smartphone and natural light for filming your first videos. learn basic editing techniques using free software to cut footage smoothly. add captions and background music to make the video engaging for viewers. finally, upload consistently while seeking feedback to improve future content quality.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "start by brainstorming niche topics like cooking or gaming to find your audience. choose simple equipment such as a smartphone and natural light for filming your first videos. learn basic editing techniques using free software to cut footage smoothly. add captions and background music to make the video engaging for viewers. finally, upload consistently while seeking feedback to improve future content quality.<|im_end|>",
+  "prompt_length": 79,
+  "completion_length": 70,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a step-by-step plan for starting a YouTube channel, focusing on content ideas, filming, and editing. Use proper sentence case throughout, and ensure the response includes no more than five uppercase words in total. Write the entire response in lowercase letters only, with no uppercase words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 77,
+    "boundary_end": 77,
+    "boundary_source": "prompt",
+    "prefix_length": 78
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

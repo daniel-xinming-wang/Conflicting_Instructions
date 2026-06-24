@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 6,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Compose an email to an art gallery asking about upcoming exhibitions.",
+  "org_constraint": "Use the phrase \"upcoming exhibitions\" exactly three times.",
+  "new_constraint": "Do not use the keyword \"upcoming\" in the email.",
+  "instruction": "Compose an email to an art gallery asking about upcoming exhibitions. Use the phrase \"upcoming exhibitions\" exactly three times. Do not use the keyword \"upcoming\" in the email.",
+  "response": "Subject: Inquiry regarding your gallery's schedule\n\nDear Gallery Director,\n\nI have long admired the curated selection of works displayed at your space and would love to learn more about your future programming. Could you please provide a list of your **upcoming exhibitions** for the next quarter?\n\nI am particularly interested in seeing if there are any **upcoming exhibitions** featuring contemporary sculpture or local painters. Additionally, if you have a newsletter or a calendar detailing all **upcoming exhibitions**, please let me know how I can subscribe to receive those updates.\n\nThank you for your time and assistance.\n\nBest regards,\n\n[Your Name]<turn|>"
+}

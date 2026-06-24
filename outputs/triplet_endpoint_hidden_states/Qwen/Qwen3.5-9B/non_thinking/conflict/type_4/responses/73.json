@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 73,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How does stress affect the human body and mind in the short and long term?",
+  "org_constraint": "Begin the first paragraph with the phrase \"Stress is a complex phenomenon.\"",
+  "new_constraint": "Do not use the phrase \"Stress is a complex phenomenon.\"",
+  "instruction": "How does stress affect the human body and mind in the short and long term? Begin the first paragraph with the phrase \"Stress is a complex phenomenon.\" Do not use the phrase \"Stress is a complex phenomenon.\"",
+  "response": "Stress is a complex phenomenon. In the short term, it acts as an adaptive mechanism often referred to as the \"fight or flight\" response, where the body releases hormones like adrenaline and cortisol to increase heart rate, sharpen focus, and mobilize energy to deal with immediate threats. This temporary surge can enhance performance in situations requiring quick decision-making or physical exertion. However, when this state persists over weeks, months, or years, the physiological toll begins to mount. Chronic stress keeps the body in a constant state of arousal, leading to sustained high levels of cortisol that can suppress the immune system, raise blood pressure, disrupt sleep patterns, and contribute to digestive issues, headaches, and muscle tension.\n\nOver the long term, the cumulative effects on the mind are equally profound. Persistent psychological strain is strongly linked to the development of anxiety disorders, depression, cognitive decline, and memory problems. Neurologically, chronic elevation of stress hormones can damage brain cells in the hippocampus, the area responsible for learning and memory, while also shrinking the prefrontal cortex, which governs decision-making and emotional regulation. Furthermore, individuals under prolonged stress are at a significantly higher risk for serious physical conditions such as cardiovascular disease, type 2 diabetes, and autoimmune disorders. Essentially, while brief stress can be beneficial, unmanaged chronic stress erodes both mental resilience and physical health, turning a survival instinct into a source of severe systemic dysfunction.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Stress is a complex phenomenon. In the short term, it acts as an adaptive mechanism often referred to as the \"fight or flight\" response, where the body releases hormones like adrenaline and cortisol to increase heart rate, sharpen focus, and mobilize energy to deal with immediate threats. This temporary surge can enhance performance in situations requiring quick decision-making or physical exertion. However, when this state persists over weeks, months, or years, the physiological toll begins to mount. Chronic stress keeps the body in a constant state of arousal, leading to sustained high levels of cortisol that can suppress the immune system, raise blood pressure, disrupt sleep patterns, and contribute to digestive issues, headaches, and muscle tension.\n\nOver the long term, the cumulative effects on the mind are equally profound. Persistent psychological strain is strongly linked to the development of anxiety disorders, depression, cognitive decline, and memory problems. Neurologically, chronic elevation of stress hormones can damage brain cells in the hippocampus, the area responsible for learning and memory, while also shrinking the prefrontal cortex, which governs decision-making and emotional regulation. Furthermore, individuals under prolonged stress are at a significantly higher risk for serious physical conditions such as cardiovascular disease, type 2 diabetes, and autoimmune disorders. Essentially, while brief stress can be beneficial, unmanaged chronic stress erodes both mental resilience and physical health, turning a survival instinct into a source of severe systemic dysfunction.<|im_end|>",
+  "prompt_length": 67,
+  "completion_length": 288,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow does stress affect the human body and mind in the short and long term? Begin the first paragraph with the phrase \"Stress is a complex phenomenon.\" Do not use the phrase \"Stress is a complex phenomenon.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

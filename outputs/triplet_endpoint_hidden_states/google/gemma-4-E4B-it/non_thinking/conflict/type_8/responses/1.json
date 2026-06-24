@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances.",
+  "new_constraint": "The phrase \"I prefer not to disclose my reasons for resigning\" must appear at least once in the email.",
+  "instruction": "Write an email to my boss telling him that I am quitting. The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances. The phrase \"I prefer not to disclose my reasons for resigning\" must appear at least once in the email.",
+  "response": "Subject: Resignation - [Your Name]\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day of employment will be [Your Last Day - typically two weeks from the date of the email].\n\nThis was not an easy decision to make, as I have genuinely valued my time at [Company Name] and appreciate the opportunities I have been given here. I have learned a great deal during my tenure, and I am thankful for your guidance and support over the past [Number] years/months.\n\nThe primary reasons for my departure are centered around pursuing new avenues for my professional development and personal priorities. Specifically, I have accepted a role that offers a more direct path toward the specific career growth opportunities I am seeking in the [mention field/area] space. Additionally, some evolving personal circumstances require me to make a change at this time.\n\nAs I move forward, I want to ensure a smooth transition for the team. I am fully committed to completing my current projects and assisting in training my replacement during my remaining time here. Please let me know how I can best support this handover process.\n\nWhile I appreciate the understanding, and given the sensitive nature of some of my personal considerations, **I prefer not to disclose my reasons for resigning** beyond what I have shared above.\n\nThank you again for the experience and the opportunities provided to me at [Company Name]. I wish you and the company all the best for continued success in the future.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number (Optional)]<turn|>",
+  "reasoning": "",
+  "final_answer": "Subject: Resignation - [Your Name]\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day of employment will be [Your Last Day - typically two weeks from the date of the email].\n\nThis was not an easy decision to make, as I have genuinely valued my time at [Company Name] and appreciate the opportunities I have been given here. I have learned a great deal during my tenure, and I am thankful for your guidance and support over the past [Number] years/months.\n\nThe primary reasons for my departure are centered around pursuing new avenues for my professional development and personal priorities. Specifically, I have accepted a role that offers a more direct path toward the specific career growth opportunities I am seeking in the [mention field/area] space. Additionally, some evolving personal circumstances require me to make a change at this time.\n\nAs I move forward, I want to ensure a smooth transition for the team. I am fully committed to completing my current projects and assisting in training my replacement during my remaining time here. Please let me know how I can best support this handover process.\n\nWhile I appreciate the understanding, and given the sensitive nature of some of my personal considerations, **I prefer not to disclose my reasons for resigning** beyond what I have shared above.\n\nThank you again for the experience and the opportunities provided to me at [Company Name]. I wish you and the company all the best for continued success in the future.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number (Optional)]<turn|>",
+  "prompt_length": 74,
+  "completion_length": 334,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite an email to my boss telling him that I am quitting. The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances. The phrase \"I prefer not to disclose my reasons for resigning\" must appear at least once in the email.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 73,
+    "boundary_end": 73,
+    "boundary_source": "prompt",
+    "prefix_length": 74
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

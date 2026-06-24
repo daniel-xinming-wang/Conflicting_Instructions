@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 14,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7.",
+  "org_constraint": "The email must be written exclusively in English.",
+  "new_constraint": "The email must include a Chinese idiom, presented in Chinese.",
+  "instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The email must be written exclusively in English. The email must include a Chinese idiom, presented in Chinese.",
+  "response": "Subject: Dinner Next Monday!\n\nHi Sarah,\n\nI hope this email finds you well!\n\nJust wanted to send a quick note to confirm our dinner plans for next Monday at 7:00 PM. I'm really looking forward to catching up with you then.\n\nThings have been quite busy lately, but I feel like we'll have a wonderful time together. To say we're excited, I think it truly is: **胜不辱命 (shèng bù rǔ mìng)**. We're going to make this evening a great one!\n\nLet me know if anything changes on your end.\n\nSee you next week!\n\nBest,\n\n[Your Name]<turn|>",
+  "reasoning": "",
+  "final_answer": "Subject: Dinner Next Monday!\n\nHi Sarah,\n\nI hope this email finds you well!\n\nJust wanted to send a quick note to confirm our dinner plans for next Monday at 7:00 PM. I'm really looking forward to catching up with you then.\n\nThings have been quite busy lately, but I feel like we'll have a wonderful time together. To say we're excited, I think it truly is: **胜不辱命 (shèng bù rǔ mìng)**. We're going to make this evening a great one!\n\nLet me know if anything changes on your end.\n\nSee you next week!\n\nBest,\n\n[Your Name]<turn|>",
+  "prompt_length": 73,
+  "completion_length": 143,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nI need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The email must be written exclusively in English. The email must include a Chinese idiom, presented in Chinese.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 72,
+    "boundary_end": 72,
+    "boundary_source": "prompt",
+    "prefix_length": 73
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

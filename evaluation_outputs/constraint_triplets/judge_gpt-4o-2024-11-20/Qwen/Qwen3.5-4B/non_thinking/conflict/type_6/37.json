@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 37,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create a wedding planning timeline for a couple getting married in six months, with monthly tasks.",
+  "org_constraint": "Use at least five uppercase words throughout the response.",
+  "new_constraint": "Write all words in lowercase.",
+  "instruction": "Create a wedding planning timeline for a couple getting married in six months, with monthly tasks. Use at least five uppercase words throughout the response. Write all words in lowercase.",
+  "response": "here is a six-month wedding planning timeline for you.\n\nmonth one: secure your venue and book your photographer.\nmonth two: finalize your guest list and send save-the-dates.\nmonth three: choose your dress and groomsmen attire.\nmonth four: order invitations and plan the menu.\nmonth five: confirm all vendors and create a detailed schedule.\nmonth six: send final reminders and enjoy the big day.\n\nremember to stay calm and have fun throughout this process.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"here is a six-month wedding planning timeline for you.\"  \n- \"month one: secure your venue and book your photographer.\"  \n- \"month two: finalize your guest list and send save-the-dates.\"  \n- \"month three: choose your dress and groomsmen attire.\"  \n- \"month four: order invitations and plan the menu.\"  \n- \"month five: confirm all vendors and create a detailed schedule.\"  \n- \"month six: send final reminders and enjoy the big day.\"  \n- \"remember to stay calm and have fun throughout this process.\"\n\n**Step 2**:  \n- Instruction 1 requires all words to be written in lowercase. The Model Response fully satisfies this constraint, as every word is in lowercase.  \n- Instruction 2 requires at least five uppercase words throughout the response. The Model Response does not contain any uppercase words, so this constraint is not satisfied.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

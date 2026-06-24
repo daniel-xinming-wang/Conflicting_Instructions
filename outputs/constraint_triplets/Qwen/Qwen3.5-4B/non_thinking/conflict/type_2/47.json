@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 47,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about two people who fall in love despite being on opposing sides of a conflict.",
+  "org_constraint": "Ensure the keyword \"forbidden\" appears exactly five times throughout the text.",
+  "new_constraint": "The story must not include the keyword \"forbidden.\"",
+  "instruction": "Write a story about two people who fall in love despite being on opposing sides of a conflict. Ensure the keyword \"forbidden\" appears exactly five times throughout the text. The story must not include the keyword \"forbidden.\"",
+  "response": "It is impossible to write a story that contains the word \"forbidden\" exactly five times while simultaneously ensuring that the word \"forbidden\" does not appear in the text at all. These two requirements are mutually exclusive; if the word appears once, it appears at least once, making the condition of appearing exactly five times impossible if the condition of appearing zero times is also required. Therefore, no such story can be written."
+}

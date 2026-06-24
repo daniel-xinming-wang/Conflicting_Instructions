@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 97,
+  "task": "essay writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an article titled \"How to overcome public speaking anxiety.\"",
+  "org_constraint": "Avoid using the word \"panic\" in the article.",
+  "new_constraint": "The word \"panic\" must appear exactly three times in the article.",
+  "instruction": "Write an article titled \"How to overcome public speaking anxiety.\" Avoid using the word \"panic\" in the article. The word \"panic\" must appear exactly three times in the article.",
+  "response": "# How to Overcome Public Speaking Anxiety\n\nStanding on a stage, facing a room full of eyes, can feel like the most daunting challenge of your life. The physical symptoms of this fear—racing heart, sweaty palms, and a dry mouth—are universal. While the intensity of these feelings can sometimes feel like a full-blown **panic** attack, it is important to remember that this is a normal physiological response to stress, not a sign of weakness.\n\nThe first step in managing this fear is to reframe your mindset. Instead of viewing the audience as judges, see them as allies who want you to succeed. When the adrenaline rushes, it is easy to spiral into a state of **panic**, but recognizing that your body is simply preparing you to perform can help ground you. Deep, controlled breathing is one of the most effective tools to slow down the heart rate and clear the mind.\n\nPracticing regularly is another cornerstone of success. Rehearsing in front of a mirror, recording yourself, or speaking to a trusted friend can build confidence and muscle memory. The more you expose yourself to the situation, the less likely you are to feel overwhelmed. If you find yourself slipping into a moment of **panic** during a practice session, simply pause, take a breath, and return to your routine. This resilience builds a mental buffer for real-world scenarios.\n\nFinally, accept that some level of nervousness is actually beneficial. A small amount of arousal can sharpen your focus and energy. You do not need to eliminate all feelings of fear; you only need to manage them so they do not hinder your delivery. By preparing thoroughly, practicing consistently, and treating the nerves as a sign of excitement rather than danger, you can transform the experience from a terrifying ordeal into a powerful opportunity to connect with others.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"While the intensity of these feelings can sometimes feel like a full-blown **panic** attack, it is important to remember that this is a normal physiological response to stress, not a sign of weakness.\"  \n- \"When the adrenaline rushes, it is easy to spiral into a state of **panic**, but recognizing that your body is simply preparing you to perform can help ground you.\"  \n- \"If you find yourself slipping into a moment of **panic** during a practice session, simply pause, take a breath, and return to your routine.\"\n\n**Step 2**:  \n- Instruction 1 requires the word \"panic\" to appear exactly three times in the article. The Model Response contains the word \"panic\" exactly three times, satisfying this constraint.  \n- Instruction 2 requires avoiding the word \"panic\" entirely in the article. The Model Response uses the word \"panic\" three times, violating this constraint.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

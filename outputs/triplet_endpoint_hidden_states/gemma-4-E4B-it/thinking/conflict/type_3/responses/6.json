@@ -1,0 +1,45 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "thinking",
+  "enable_thinking": true,
+  "sample_id": 6,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Compose an email to an art gallery asking about upcoming exhibitions.",
+  "org_constraint": "Use the phrase \"upcoming exhibitions\" exactly three times.",
+  "new_constraint": "Do not use the keyword \"upcoming\" in the email.",
+  "instruction": "Compose an email to an art gallery asking about upcoming exhibitions. Use the phrase \"upcoming exhibitions\" exactly three times. Do not use the keyword \"upcoming\" in the email.",
+  "response": "Subject: Inquiry about Future Exhibitions at [Gallery Name]\n\nDear [Gallery Name] Team,\n\nI hope this email finds you well.\n\nI am a great admirer of the collections at [Gallery Name] and have been particularly drawn to your focus on [Mention a specific style, artist, or area of art the gallery features, e.g., contemporary sculpture, abstract expressionism]. I would love to learn more about the programming you have planned for the near future.\n\nCould you please provide information regarding your future exhibitions? I am very interested in seeing details about your upcoming exhibitions and how I can view them—whether through a calendar, website link, or physical brochure.\n\nThank you for your time and assistance. I look forward to hearing about your schedule of events and your forthcoming exhibitions.\n\nBest regards,\n\n[Your Name]\n[Your Contact Information]<turn|>",
+  "reasoning": null,
+  "final_answer": null,
+  "prompt_length": 57,
+  "completion_length": 177,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": null,
+  "endpoint_metadata": {
+    "status": "boundary_missing",
+    "boundary_mode": "gemma_channel",
+    "boundary_text": "<channel|>",
+    "boundary_token_ids": [
+      101
+    ],
+    "boundary_start": null,
+    "boundary_end": null,
+    "boundary_source": null,
+    "prefix_length": null
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

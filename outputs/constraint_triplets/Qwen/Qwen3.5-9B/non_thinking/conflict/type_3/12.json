@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 12,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Compose an email to a public library to request access to digital resources.",
+  "org_constraint": "The email must include the phrase \"I am eager to explore the wealth of knowledge your library offers.\"",
+  "new_constraint": "The keyword \"offer\" must be exclusively used as a noun in the email.",
+  "instruction": "Compose an email to a public library to request access to digital resources. The email must include the phrase \"I am eager to explore the wealth of knowledge your library offers.\" The keyword \"offer\" must be exclusively used as a noun in the email.",
+  "response": "Subject: Request for Access to Digital Resources\n\nDear Public Library Team,\n\nI am writing to formally request access to the digital resources available to your patrons. I am eager to explore the wealth of knowledge your library offers.\n\nCould you please provide me with the necessary steps or forms required to activate my account? I understand that the library's digital collection is a significant asset, and I look forward to utilizing this valuable resource.\n\nThank you for your time and assistance.\n\nSincerely,\n\n[Your Name]\n[Your Address]\n[Your Phone Number]"
+}

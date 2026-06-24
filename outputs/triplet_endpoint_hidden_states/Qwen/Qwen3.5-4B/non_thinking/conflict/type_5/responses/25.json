@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 25,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas.",
+  "org_constraint": "The response must include exactly five paragraphs, with each paragraph containing at least three sentences.",
+  "new_constraint": "The response must contain at most 12 sentences.",
+  "instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. The response must include exactly five paragraphs, with each paragraph containing at least three sentences. The response must contain at most 12 sentences.",
+  "response": "Start your week-long romantic getaway by checking into a private luxury villa nestled within the lush rice terraces of Ubud. These secluded accommodations offer panoramic views and complete privacy, ensuring you have your own jungle sanctuary to explore at your leisure. Morning routines can begin with slow, uninterrupted walks along winding paths where the only sound is the gentle rustling of palm leaves.\n\nAfter soaking in nature's tranquility, spend your afternoons rejuvenating at world-class spas located within or adjacent to these exclusive villas. Many properties feature organic treatments infused with local Bali herbs that promise deep relaxation and renewed energy for your journey ahead. The serene atmosphere allows couples to share quiet moments while receiving personalized care from skilled therapists who understand intimate well-being.\n\nAs evening falls, indulge in unforgettable fine dining experiences hosted under starlit skies or set against the backdrop of ancient temples. Several resort restaurants serve Michelin-starred cuisine crafted from fresh Balinese ingredients, creating a magical ambiance perfect for celebrating your new partnership. Reservations should be made in advance to ensure a table is reserved for a candlelit dinner without any disturbances from crowds.\n\nFor sunset seekers, head toward the pristine beaches of Nusa Penida or the quieter coves near Jimbaran Bay for breathtaking sunsets over the turquoise ocean. Renting a private speedboat provides an even more luxurious option to transport your vehicle and luggage safely between locations while enjoying open sea breezes. This combination of adventure and comfort keeps the romance alive as you witness the day's final golden hour painting the water in vibrant hues.\n\nConclude your blissful stay by packing away memories taken during this exquisite escape before returning home refreshed and inspired. The blend of opulent lodging, healing spa therapies, and culinary delights ensures every aspect of your honeymoon feels uniquely tailored to your desires. Such a memorable experience sets a wonderful tone for the rest of your marriage, filled with anticipation for future adventures together.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Start your week-long romantic getaway by checking into a private luxury villa nestled within the lush rice terraces of Ubud. These secluded accommodations offer panoramic views and complete privacy, ensuring you have your own jungle sanctuary to explore at your leisure. Morning routines can begin with slow, uninterrupted walks along winding paths where the only sound is the gentle rustling of palm leaves.\n\nAfter soaking in nature's tranquility, spend your afternoons rejuvenating at world-class spas located within or adjacent to these exclusive villas. Many properties feature organic treatments infused with local Bali herbs that promise deep relaxation and renewed energy for your journey ahead. The serene atmosphere allows couples to share quiet moments while receiving personalized care from skilled therapists who understand intimate well-being.\n\nAs evening falls, indulge in unforgettable fine dining experiences hosted under starlit skies or set against the backdrop of ancient temples. Several resort restaurants serve Michelin-starred cuisine crafted from fresh Balinese ingredients, creating a magical ambiance perfect for celebrating your new partnership. Reservations should be made in advance to ensure a table is reserved for a candlelit dinner without any disturbances from crowds.\n\nFor sunset seekers, head toward the pristine beaches of Nusa Penida or the quieter coves near Jimbaran Bay for breathtaking sunsets over the turquoise ocean. Renting a private speedboat provides an even more luxurious option to transport your vehicle and luggage safely between locations while enjoying open sea breezes. This combination of adventure and comfort keeps the romance alive as you witness the day's final golden hour painting the water in vibrant hues.\n\nConclude your blissful stay by packing away memories taken during this exquisite escape before returning home refreshed and inspired. The blend of opulent lodging, healing spa therapies, and culinary delights ensures every aspect of your honeymoon feels uniquely tailored to your desires. Such a memorable experience sets a wonderful tone for the rest of your marriage, filled with anticipation for future adventures together.<|im_end|>",
+  "prompt_length": 81,
+  "completion_length": 381,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. The response must include exactly five paragraphs, with each paragraph containing at least three sentences. The response must contain at most 12 sentences.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 79,
+    "boundary_end": 79,
+    "boundary_source": "prompt",
+    "prefix_length": 80
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

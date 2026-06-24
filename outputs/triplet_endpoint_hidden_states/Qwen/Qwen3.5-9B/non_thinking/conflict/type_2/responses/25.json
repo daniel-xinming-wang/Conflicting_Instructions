@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 25,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas.",
+  "org_constraint": "Include the keyword \"secluded\" at least once in the response.",
+  "new_constraint": "Do not include the keyword \"secluded\" in the response.",
+  "instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. Include the keyword \"secluded\" at least once in the response. Do not include the keyword \"secluded\" in the response.",
+  "response": "It is impossible to fulfill your request. You have explicitly asked me to include the keyword \"secluded\" at least once, but also instructed me not to include it in the response. These two constraints are mutually exclusive and logically contradictory.\n\nHowever, I would be happy to plan a luxurious one-week honeymoon itinerary for Bali featuring romantic spots, spa experiences, fine dining, and private villas if you are willing to choose which constraint to prioritize (either including the word or excluding it).<|im_end|>",
+  "reasoning": "",
+  "final_answer": "It is impossible to fulfill your request. You have explicitly asked me to include the keyword \"secluded\" at least once, but also instructed me not to include it in the response. These two constraints are mutually exclusive and logically contradictory.\n\nHowever, I would be happy to plan a luxurious one-week honeymoon itinerary for Bali featuring romantic spots, spa experiences, fine dining, and private villas if you are willing to choose which constraint to prioritize (either including the word or excluding it).<|im_end|>",
+  "prompt_length": 80,
+  "completion_length": 98,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. Include the keyword \"secluded\" at least once in the response. Do not include the keyword \"secluded\" in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 78,
+    "boundary_end": 78,
+    "boundary_source": "prompt",
+    "prefix_length": 79
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

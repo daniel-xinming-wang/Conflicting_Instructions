@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "Discuss how wearable fitness trackers provide real-time feedback, track progress over time.",
+  "new_constraint": "The response must include the phrase \"The response will not discuss the real-time feedback provided by wearable fitness trackers.\"",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? Discuss how wearable fitness trackers provide real-time feedback, track progress over time. The response must include the phrase \"The response will not discuss the real-time feedback provided by wearable fitness trackers.\"",
+  "response": "Wearable fitness trackers have revolutionized personal health management by offering a seamless way to monitor daily activities and physiological metrics. These devices, ranging from smartwatches to fitness bands, empower individuals to take charge of their well-being through continuous data collection.\n\nOne of the primary functions of these devices is the ability to track progress over time. By logging metrics such as steps taken, distance covered, calories burned, sleep duration, and heart rate variability, users can visualize trends and identify patterns in their lifestyle. This longitudinal data allows individuals to set realistic goals, adjust their training regimens, and celebrate milestones, fostering a sense of accountability and motivation. For instance, seeing a gradual increase in weekly step count or an improvement in sleep efficiency can reinforce positive behavioral changes.\n\nHowever, it is important to note a specific constraint regarding the scope of this discussion: **The response will not discuss the real-time feedback provided by wearable fitness trackers.** While immediate alerts for heart rate spikes or workout reminders are valuable features, this analysis focuses exclusively on the long-term tracking capabilities and the cumulative insights gained from historical data. By concentrating on progress over time, we can better understand how these tools facilitate sustained health improvements through reflection and strategic planning rather than momentary reactions."
+}

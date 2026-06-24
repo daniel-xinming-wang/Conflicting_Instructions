@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 63,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How did the Silk Road contribute to cultural and economic exchange between East and West?",
+  "org_constraint": "Begin the first paragraph with the phrase \"The Silk Road served as a vital link.\"",
+  "new_constraint": "In your response, avoid using the word \"vital\" and instead use its synonyms.",
+  "instruction": "How did the Silk Road contribute to cultural and economic exchange between East and West? Begin the first paragraph with the phrase \"The Silk Road served as a vital link.\" In your response, avoid using the word \"vital\" and instead use its synonyms.",
+  "response": "The Silk Road served as a crucial artery connecting the East and West, facilitating an unprecedented flow of goods, ideas, and technologies across vast distances. Economically, it transformed regional trade networks by allowing merchants to transport luxury items such as silk, spices, porcelain, and precious metals from China to the Mediterranean, while simultaneously introducing Western products like glassware, wool, and metals to the East. This commercial interdependence spurred the growth of major trading hubs like Samarkand, Kashgar, and Baghdad, creating a dynamic marketplace that enriched local economies and fostered long-distance commerce.\n\nCulturally, the route acted as a conduit for the exchange of religions, philosophies, art, and scientific knowledge. Buddhism traveled from India to China, while Islam spread westward along these trade routes, eventually influencing art and architecture in both regions. Additionally, technologies such as papermaking, gunpowder, the compass, and printing moved eastward, revolutionizing administration, warfare, and communication in Europe and the Middle East. In return, Western innovations in astronomy, mathematics, and agriculture were adopted in the East, leading to a profound mutual enrichment that laid the groundwork for the interconnected world of the modern era.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"The Silk Road served as a crucial artery connecting the East and West, facilitating an unprecedented flow of goods, ideas, and technologies across vast distances.\"\n\n**Step 2**:  \n- Instruction 1 requires the first paragraph to begin with the phrase \"The Silk Road served as a vital link.\" The Model Response does not use this exact phrase; instead, it begins with \"The Silk Road served as a crucial artery,\" which does not satisfy Instruction 1.  \n- Instruction 2 requires avoiding the word \"vital\" and using its synonyms instead. The Model Response uses the synonym \"crucial\" instead of \"vital,\" satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

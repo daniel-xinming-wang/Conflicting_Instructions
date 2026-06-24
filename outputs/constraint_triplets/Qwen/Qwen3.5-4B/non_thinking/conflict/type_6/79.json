@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The response must be formatted in Markdown format.",
+  "new_constraint": "Output the response in JSON format.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The response must be formatted in Markdown format. Output the response in JSON format.",
+  "response": "{\n  \"topic\": \"How Wearable Fitness Trackers Help Monitor and Improve Health\",\n  \"content\": [\n    {\n      \"heading\": \"Real-Time Health Monitoring\",\n      \"details\": \"Wearable devices continuously track vital signs such as heart rate, blood oxygen levels, sleep quality, and activity levels. This constant data stream allows users to identify patterns, detect anomalies early, and make informed decisions about their immediate physical state.\"\n    },\n    {\n      \"heading\": \"Goal Setting and Motivation\",\n      \"details\": \"By providing visual feedback through graphs, charts, and daily step counts, these trackers help users set achievable fitness goals. Gamification elements like badges, leaderboards, and streaks foster a sense of accomplishment and motivation, encouraging consistent adherence to healthy habits.\"\n    },\n    {\n      \"heading\": \"Personalized Insights and Feedback\",\n      \"details\": \"Advanced algorithms analyze collected data to offer personalized recommendations. For instance, a tracker might suggest a specific workout intensity based on current heart rate variability or recommend better sleep hygiene practices if rest patterns are suboptimal.\"\n    },\n    {\n      \"heading\": \"Chronic Disease Management\",\n      \"details\": \"For individuals with conditions like hypertension or arrhythmias, wearables can alert users to dangerous spikes in heart rate or irregular rhythms, facilitating timely medical intervention and long-term management of chronic health issues.\"\n    },\n    {\n      \"heading\": \"Integration with Healthcare Systems\",\n      \"details\": \"Many modern trackers sync with electronic health records (EHRs) and telehealth platforms, allowing doctors to review longitudinal health data remotely. This integration supports more accurate diagnoses and tailored treatment plans.\"\n    }\n  ],\n  \"format\": \"markdown\"\n}"
+}

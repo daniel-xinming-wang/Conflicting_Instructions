@@ -1,0 +1,45 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "thinking",
+  "enable_thinking": true,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The phrase \"enhancing daily activity\" must appear exactly twice in the document.",
+  "new_constraint": "The keyword \"enhance\" must only appear in its original form.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The phrase \"enhancing daily activity\" must appear exactly twice in the document. The keyword \"enhance\" must only appear in its original form.",
+  "response": "Wearable fitness trackers have revolutionized personal health monitoring, offering individuals a constant, passive way to gather data about their physical activity and physiological states. These devices act as sophisticated data collection tools, providing insights that can motivate behavioral change and lead to significant improvements in overall well-being.\n\nOne of the primary ways trackers aid health is by monitoring physical activity. They accurately track steps taken, distance covered, and calories burned throughout the day. This data provides users with tangible feedback on their movement levels. For those who are sedentary, seeing a consistent count of inactivity can be a powerful motivator to break those habits. Conversely, those already active can use the data to set challenging goals, ensuring they maintain or increase their intensity and consistency. This focus on movement is crucial for cardiovascular health and weight management, directly contributing to **enhancing daily activity**.\n\nBeyond basic step counting, modern wearables track more detailed metrics related to recovery and stress. Heart rate monitoring is perhaps the most valuable health feature. By continuously monitoring heart rate, users can identify patterns—for instance, a consistently elevated resting heart rate might indicate stress, poor sleep, or an underlying health issue. Many trackers also employ advanced algorithms to track heart rate variability (HRV), a metric that provides deeper insight into the balance between the sympathetic (stress) and parasympathetic (rest) nervous systems. This allows individuals to understand their body's recovery status.\n\nSleep tracking is another area where these devices make a profound impact. Sleep trackers monitor duration, quality, and sleep cycles (light, deep, and REM). Poor sleep is a major detriment to physical and mental health, and by providing detailed sleep reports, trackers enable individuals to identify habits—like late-night screen time or inconsistent bedtimes—that might be disrupting their rest. The ability to identify and adjust sleep patterns is fundamental to **enhancing daily activity** and boosting daytime energy levels.\n\nFinally, these devices encourage proactive health management. By collecting a comprehensive picture of movement, heart rate, and sleep, wearables empower individuals to take ownership of their health journey. The personalized data allows users to pinpoint weak areas in their lifestyle and make targeted adjustments, transforming abstract health goals into concrete, measurable actions. This data-driven approach helps individuals not just track their health, but actively improve it over time.<turn|>",
+  "reasoning": null,
+  "final_answer": null,
+  "prompt_length": 63,
+  "completion_length": 459,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": null,
+  "endpoint_metadata": {
+    "status": "boundary_missing",
+    "boundary_mode": "gemma_channel",
+    "boundary_text": "<channel|>",
+    "boundary_token_ids": [
+      101
+    ],
+    "boundary_start": null,
+    "boundary_end": null,
+    "boundary_source": null,
+    "prefix_length": null
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

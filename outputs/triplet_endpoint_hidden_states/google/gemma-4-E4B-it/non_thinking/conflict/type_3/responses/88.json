@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 88,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Share your thoughts on the quality of your gym’s facilities.",
+  "org_constraint": "Use the phrase \"state-of-the-art equipment and amenities\" exactly three times.",
+  "new_constraint": "Avoid using the keyword \"state-of-the-art\".",
+  "instruction": "Share your thoughts on the quality of your gym’s facilities. Use the phrase \"state-of-the-art equipment and amenities\" exactly three times. Avoid using the keyword \"state-of-the-art\".",
+  "response": "While I don't actually *have* a gym, I can certainly generate a review based on a hypothetical, high-quality facility!\n\nOverall, my impression of the gym's facilities is overwhelmingly positive. The environment is clean, modern, and incredibly well-maintained. From the cardiovascular area to the weight rooms, the selection of machines is extensive, offering something for every fitness level and goal. I'm particularly impressed with the design; the layout is intuitive, which makes navigation simple even during peak hours.\n\nThe locker rooms and communal areas showcase a high level of care in their upkeep. It truly feels like a premier fitness destination. Furthermore, the commitment to having top-tier gear is evident throughout the premises. They provide patrons with genuinely **cutting-edge equipment and amenities**.\n\nThe support staff is knowledgeable, and the classes offered are diverse, catering to various fitness preferences. The atmosphere strikes a perfect balance between high energy and comfortable focus. It’s clear that significant investment has been made in ensuring members have the best possible experience, reflected in the inclusion of **advanced equipment and amenities**.\n\nIn conclusion, the facility excels in every major aspect. The combination of pristine maintenance and superior technological integration makes it a fantastic place to work out. When considering the overall offering—from the digital scheduling to the sheer quality of the workout gear—it provides a truly **high-caliber equipment and amenities** experience.<turn|>",
+  "reasoning": "",
+  "final_answer": "While I don't actually *have* a gym, I can certainly generate a review based on a hypothetical, high-quality facility!\n\nOverall, my impression of the gym's facilities is overwhelmingly positive. The environment is clean, modern, and incredibly well-maintained. From the cardiovascular area to the weight rooms, the selection of machines is extensive, offering something for every fitness level and goal. I'm particularly impressed with the design; the layout is intuitive, which makes navigation simple even during peak hours.\n\nThe locker rooms and communal areas showcase a high level of care in their upkeep. It truly feels like a premier fitness destination. Furthermore, the commitment to having top-tier gear is evident throughout the premises. They provide patrons with genuinely **cutting-edge equipment and amenities**.\n\nThe support staff is knowledgeable, and the classes offered are diverse, catering to various fitness preferences. The atmosphere strikes a perfect balance between high energy and comfortable focus. It’s clear that significant investment has been made in ensuring members have the best possible experience, reflected in the inclusion of **advanced equipment and amenities**.\n\nIn conclusion, the facility excels in every major aspect. The combination of pristine maintenance and superior technological integration makes it a fantastic place to work out. When considering the overall offering—from the digital scheduling to the sheer quality of the workout gear—it provides a truly **high-caliber equipment and amenities** experience.<turn|>",
+  "prompt_length": 65,
+  "completion_length": 286,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nShare your thoughts on the quality of your gym’s facilities. Use the phrase \"state-of-the-art equipment and amenities\" exactly three times. Avoid using the keyword \"state-of-the-art\".<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 64,
+    "boundary_end": 64,
+    "boundary_source": "prompt",
+    "prefix_length": 65
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

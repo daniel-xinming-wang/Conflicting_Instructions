@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 9,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Send an email to a public park office asking about picnic reservations.",
+  "org_constraint": "Tailor the email for a general audience, avoiding technical jargon.",
+  "new_constraint": "Use technical jargon to describe the reservation process.",
+  "instruction": "Send an email to a public park office asking about picnic reservations. Tailor the email for a general audience, avoiding technical jargon. Use technical jargon to describe the reservation process.",
+  "response": "Subject: Inquiry regarding picnic area reservations\n\nDear Park Office Team,\n\nI am writing to inquire about the availability of picnic spots for a group gathering I am planning. We are looking to host a small celebration and would love to know what options are available for booking.\n\nCould you please provide some information on the following?\n\n*   What are the different types of picnic areas available?\n*   Are there any specific dates that are currently open for booking?\n*   What is the process for securing a spot, and are there any associated fees?\n\nTo help me understand the logistics, could you please explain the **backend workflow** for the booking? Specifically, I am interested in how you manage the **concurrency** of requests to prevent **double-booking** during peak periods. Does your system utilize a **real-time database synchronization** to update **availability status** immediately upon **transactional commitment**? Additionally, if a reservation is canceled, how does the system handle the **rollback** of the **reserved state** to ensure the **inventory** is updated for other users?\n\nThank you very much for your time and assistance. I look forward to hearing from you soon.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

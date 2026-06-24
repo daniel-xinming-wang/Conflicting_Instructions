@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "Format the reasons into a bulleted list in the second paragraph.",
+  "new_constraint": "Avoid using bullet points in the response.",
+  "instruction": "How do sports affect community building and social cohesion? Format the reasons into a bulleted list in the second paragraph. Avoid using bullet points in the response.",
+  "response": "Sports play a pivotal role in fostering community building and enhancing social cohesion by providing a shared platform where diverse individuals can unite around common goals and passions. These activities transcend cultural, economic, and social barriers, creating an inclusive environment that encourages interaction and mutual understanding among participants and spectators alike. By promoting values such as teamwork, respect, and fair play, sports help to strengthen the fabric of society and cultivate a sense of belonging within neighborhoods and regions.\n\nThe impact of sports on social unity is driven by several key factors:\n- Shared experiences during live events create lasting memories and bonds among strangers who become temporary friends through collective cheering or mourning.\n- Local leagues and clubs offer regular opportunities for people from different backgrounds to collaborate, breaking down isolation and reducing prejudice.\n- Volunteerism associated with organizing games teaches civic responsibility and connects residents to their local governance structures.\n- Celebrating local teams instills regional pride, which acts as a powerful unifying force that distinguishes communities while encouraging internal cooperation.\n- Sports programs often serve as safe havens for youth, channeling energy positively and integrating young people into wider community networks.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Sports play a pivotal role in fostering community building and enhancing social cohesion by providing a shared platform where diverse individuals can unite around common goals and passions. These activities transcend cultural, economic, and social barriers, creating an inclusive environment that encourages interaction and mutual understanding among participants and spectators alike. By promoting values such as teamwork, respect, and fair play, sports help to strengthen the fabric of society and cultivate a sense of belonging within neighborhoods and regions.\n\nThe impact of sports on social unity is driven by several key factors:\n- Shared experiences during live events create lasting memories and bonds among strangers who become temporary friends through collective cheering or mourning.\n- Local leagues and clubs offer regular opportunities for people from different backgrounds to collaborate, breaking down isolation and reducing prejudice.\n- Volunteerism associated with organizing games teaches civic responsibility and connects residents to their local governance structures.\n- Celebrating local teams instills regional pride, which acts as a powerful unifying force that distinguishes communities while encouraging internal cooperation.\n- Sports programs often serve as safe havens for youth, channeling energy positively and integrating young people into wider community networks.<|im_end|>",
+  "prompt_length": 54,
+  "completion_length": 226,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow do sports affect community building and social cohesion? Format the reasons into a bulleted list in the second paragraph. Avoid using bullet points in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 52,
+    "boundary_end": 52,
+    "boundary_source": "prompt",
+    "prefix_length": 53
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

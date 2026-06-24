@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email.",
+  "new_constraint": "The email must be formatted in Markdown with at least one level-1 header and one unordered list.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email. The email must be formatted in Markdown with at least one level-1 header and one unordered list.",
+  "response": "```json\n{\n  \"subject\": \"Clarification Request Regarding Recent Transaction\",\n  \"body\": [\n    \"Dear Banking Team,\\n\\nI am writing to request clarification regarding a transaction that appeared on my account statement today. The entry shows an unusual charge that I believe may be a processing error or a duplicate transaction.\",\n    \"Please review the details below and confirm the status of this transaction:\\n\\n- Transaction Date: October 24, 2023\\n- Amount: $150.00\\n- Description: 'Pending Transfer'\\n- Reference Number: TXN-99887766\",\n    \"Could you please provide an explanation for this charge and let me know if any action is required on my part? I would appreciate a response by the end of the week to resolve this matter promptly.\"\n  ],\n  \"signature\": \"John Doe\\nAccount Holder\\n123 Main Street\\nSpringfield, IL 62704\"\n}\n```\n\n### Request for Transaction Clarification\n\n- **Purpose**: To resolve an unclear charge on your account.\n- **Action Required**: Please review the transaction details and confirm its status.\n- **Next Steps**: Await your response to proceed with any necessary corrections."
+}

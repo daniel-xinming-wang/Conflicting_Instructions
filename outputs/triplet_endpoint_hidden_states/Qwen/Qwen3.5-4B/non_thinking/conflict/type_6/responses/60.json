@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 60,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a character who can see people's emotions as physical colors.",
+  "org_constraint": "The story must include at least five uppercase words.",
+  "new_constraint": "Write the story entirely in lowercase.",
+  "instruction": "Write a story about a character who can see people's emotions as physical colors. The story must include at least five uppercase words. Write the story entirely in lowercase.",
+  "response": "elias walked down the quiet street, his eyes constantly adjusting to the shifting tapestry of color floating above the crowd. today was particularly chaotic; a group of teenagers near the park were radiating a sharp, electric **BLUE**, their laughter and energy creating a blinding glare in the air. further down, an elderly couple sat on a bench, glowing with a soft, warm **PINK** that seemed to hum with affection and peace.\n\nelias paused, feeling overwhelmed by the intensity. he needed space to breathe, so he decided to run home before the afternoon turned into night. as he sprinted past the bakery, he saw a young baker arguing with a customer; a jarring mix of **RED** and jagged **ORANGE** sparks danced violently above them. it made elias's head spin, the sensory overload making his ears ring. he finally reached his apartment building and collapsed onto the steps, closing his eyes. here, there was no one else around. silence felt like a deep, calming **GREEN**. slowly, the noise faded, and his chest began to settle into the safe rhythm of the world without colors.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "elias walked down the quiet street, his eyes constantly adjusting to the shifting tapestry of color floating above the crowd. today was particularly chaotic; a group of teenagers near the park were radiating a sharp, electric **BLUE**, their laughter and energy creating a blinding glare in the air. further down, an elderly couple sat on a bench, glowing with a soft, warm **PINK** that seemed to hum with affection and peace.\n\nelias paused, feeling overwhelmed by the intensity. he needed space to breathe, so he decided to run home before the afternoon turned into night. as he sprinted past the bakery, he saw a young baker arguing with a customer; a jarring mix of **RED** and jagged **ORANGE** sparks danced violently above them. it made elias's head spin, the sensory overload making his ears ring. he finally reached his apartment building and collapsed onto the steps, closing his eyes. here, there was no one else around. silence felt like a deep, calming **GREEN**. slowly, the noise faded, and his chest began to settle into the safe rhythm of the world without colors.<|im_end|>",
+  "prompt_length": 56,
+  "completion_length": 232,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a character who can see people's emotions as physical colors. The story must include at least five uppercase words. Write the story entirely in lowercase.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 15,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002.",
+  "org_constraint": "Format the email using Markdown, with an unordered list of any required documents.",
+  "new_constraint": "Use a numbered list for the required documents.",
+  "instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002. Format the email using Markdown, with an unordered list of any required documents. Use a numbered list for the required documents.",
+  "response": "Subject: Request for Medical Records – [Father's Full Name] (DOB: [Date of Birth])\n\nDear Medical Records Department,\n\nI am writing to formally request a copy of my father's medical records from your facility. The records in question are dated **2002**, and I need them for [briefly state reason, e.g., personal health history, legal purposes, or insurance claims].\n\nMy father is no longer a patient at your facility, but I believe he was treated there during that time period. To assist with this request, please find the following information below:\n\n*   **Patient Name:** [Father's Full Name]\n*   **Date of Birth:** [Father's Date of Birth]\n*   **Approximate Dates of Service:** January 1, 2002 – December 31, 2002\n*   **Requestor Relationship:** Son/Daughter\n*   **Contact Information:** [Your Phone Number] | [Your Email Address]\n\nTo process this request, please let me know if you require any specific forms to be completed. Additionally, could you please provide a list of the **required documents** I must submit to verify my identity and authority to access these records?\n\nOnce you provide the necessary documentation list, I will ensure all items are submitted promptly. Please let me know if there are any associated fees for copying and mailing these records, and what the estimated turnaround time might be.\n\nThank you for your assistance in this matter. I look forward to your prompt response.\n\nSincerely,\n\n[Your Full Name]\n[Your Relationship to Patient]\n[Your Phone Number]"
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 13,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same?",
+  "org_constraint": "The phrase \"Key details include\" must appear in the response.",
+  "new_constraint": "Avoid using the prase \"Key details include\" in the email.",
+  "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? The phrase \"Key details include\" must appear in the response. Avoid using the prase \"Key details include\" in the email.",
+  "response": "Subject: Invitation to Start Our New Book Club! 📚\n\nHi everyone,\n\nI'm excited to announce that I'd love to start a book club with our group! It's going to be wonderful to dive into new stories together and share our favorite (and least favorite) parts of the books.\n\n**Key details include** a meeting time, location, and a list of potential first-choice books to choose from. We can decide on the final plans during our introductory chat.\n\nPlease let me know if you're interested by replying to this email or dropping a message here. Looking forward to seeing you all and planning the first session!\n\nBest regards,\n\n[Your Name]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Invitation to Start Our New Book Club! 📚\n\nHi everyone,\n\nI'm excited to announce that I'd love to start a book club with our group! It's going to be wonderful to dive into new stories together and share our favorite (and least favorite) parts of the books.\n\n**Key details include** a meeting time, location, and a list of potential first-choice books to choose from. We can decide on the final plans during our introductory chat.\n\nPlease let me know if you're interested by replying to this email or dropping a message here. Looking forward to seeing you all and planning the first session!\n\nBest regards,\n\n[Your Name]<|im_end|>",
+  "prompt_length": 72,
+  "completion_length": 141,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nI am planning to start a book club with some friends. Can you write an email invitation for the same? The phrase \"Key details include\" must appear in the response. Avoid using the prase \"Key details include\" in the email.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 70,
+    "boundary_end": 70,
+    "boundary_source": "prompt",
+    "prefix_length": 71
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

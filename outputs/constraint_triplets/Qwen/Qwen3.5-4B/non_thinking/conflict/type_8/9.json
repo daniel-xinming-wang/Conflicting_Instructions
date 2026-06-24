@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 9,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Send an email to a public park office asking about picnic reservations.",
+  "org_constraint": "The email must include the number of attendees.",
+  "new_constraint": "The email must include the phrase \"I will not disclose the number of attendees in the email.\"",
+  "instruction": "Send an email to a public park office asking about picnic reservations. The email must include the number of attendees. The email must include the phrase \"I will not disclose the number of attendees in the email.\"",
+  "response": "Subject: Inquiry Regarding Picnic Reservations\n\nTo the Public Park Office,\n\nI am writing to inquire about the availability of picnic reservations for an upcoming event at your park.\n\nPlease note that **I will not disclose the number of attendees in the email.** However, I can confirm that the group planning this event expects to have approximately 25 people.\n\nCould you please let me know:\n1. What the current reservation policy is for groups of this size?\n2. What the associated fees are?\n3. What the earliest available date is for the upcoming season?\n\nThank you for your time and assistance.\n\nSincerely,\n\n[Your Name]\n[Your Contact Information]"
+}

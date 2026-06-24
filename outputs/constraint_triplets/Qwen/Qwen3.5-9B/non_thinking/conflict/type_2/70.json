@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 70,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the ethical issues surrounding data privacy on social media platforms?",
+  "org_constraint": "The response must include the keyword \"consent.\"",
+  "new_constraint": "Avoid using the keyword \"consent\" in the response.",
+  "instruction": "What are the ethical issues surrounding data privacy on social media platforms? The response must include the keyword \"consent.\" Avoid using the keyword \"consent\" in the response.",
+  "response": "It is impossible to fulfill this request. The instructions contain a direct contradiction: you asked for the response to include the keyword \"consent,\" but simultaneously commanded me to avoid using that exact keyword. Therefore, no response can satisfy both conditions at once."
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The phrase \"travel schedules\" must appear exactly three times in the email.",
+  "new_constraint": "The keyword \"schedule\" must appear only in its singular form and must appear at least once.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The phrase \"travel schedules\" must appear exactly three times in the email. The keyword \"schedule\" must appear only in its singular form and must appear at least once.",
+  "response": "Subject: Inquiry Regarding Travel Schedules\n\nDear Travel Team,\n\nI am writing to request detailed information about your **travel schedules** for the upcoming month. Could you please provide a comprehensive overview of your **travel schedules** for both weekdays and weekends? Additionally, I would like to confirm if the specific **schedule** for the morning route has been updated recently.\n\nThank you for your assistance.\n\nSincerely,  \n[Your Name]"
+}

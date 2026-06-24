@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 99,
+  "task": "essay writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an essay about the impact of deforestation on global warming.",
+  "org_constraint": "The essay must contain the keyword \"mitigate\".",
+  "new_constraint": "Do not use the keyword \"mitigate\" in the essay.",
+  "instruction": "Write an essay about the impact of deforestation on global warming. The essay must contain the keyword \"mitigate\". Do not use the keyword \"mitigate\" in the essay.",
+  "response": "The relationship between deforestation and global warming is profound and inextricably linked. Trees act as the planet's lungs, absorbing carbon dioxide from the atmosphere and storing it within their trunks, branches, and roots. When forests are cleared, this natural carbon sink is destroyed, releasing the stored carbon back into the air as carbon dioxide. Furthermore, the process of clearing land often involves burning vegetation, which instantly adds a massive amount of greenhouse gases to the atmosphere.\n\nAs the global temperature rises due to these increased emissions, the rate of deforestation tends to accelerate, creating a vicious cycle. Warmer temperatures can lead to more frequent and severe droughts, making forests more susceptible to wildfires and pests. Once a forest is lost, the land often becomes degraded, unable to support new growth or absorb carbon effectively. This loss of vegetation reduces the Earth's overall capacity to regulate its climate, leading to further warming.\n\nAddressing this crisis requires immediate and comprehensive action. Governments, organizations, and individuals must work together to protect existing forests and restore degraded lands. Strategies such as reforestation, afforestation, and the implementation of sustainable land-use practices are essential. By prioritizing the conservation of our forests, we can significantly reduce the concentration of greenhouse gases in the atmosphere. Ultimately, the goal is to create a resilient environment where nature can help us **mitigate** the effects of climate change, ensuring a habitable future for generations to come.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Ultimately, the goal is to create a resilient environment where nature can help us **mitigate** the effects of climate change, ensuring a habitable future for generations to come.\"\n\n**Step 2**:  \n- Instruction 1 explicitly states that the keyword \"mitigate\" must not be used in the essay. The Model Response contains the keyword \"mitigate,\" violating this constraint.  \n- Instruction 2 explicitly states that the keyword \"mitigate\" must be included in the essay. The Model Response contains the keyword \"mitigate,\" satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

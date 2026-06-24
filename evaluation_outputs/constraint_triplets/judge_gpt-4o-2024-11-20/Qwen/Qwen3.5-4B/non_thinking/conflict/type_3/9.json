@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 9,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Send an email to a public park office asking about picnic reservations.",
+  "org_constraint": "Conclude the email with the phrase \"Looking forward to your response.\"",
+  "new_constraint": "Avoid using the keyword \"forward\" in the email.",
+  "instruction": "Send an email to a public park office asking about picnic reservations. Conclude the email with the phrase \"Looking forward to your response.\" Avoid using the keyword \"forward\" in the email.",
+  "response": "Subject: Inquiry Regarding Picnic Reservations\n\nDear Public Park Office Team,\n\nI hope this message finds you well.\n\nI am writing to inquire about the process for reserving a picnic area at your park. Could you please provide information on the current availability, any required deposit amounts, and the specific dates and times when reservations can be made? Additionally, I would appreciate details regarding any rules or restrictions for picnickers.\n\nThank you for your time and assistance.\n\nLooking forward to your response.\n\nSincerely,\n\n[Your Name]\n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Looking forward to your response.\"\n\n**Step 2**:  \n- Instruction 1 requires the email to conclude with the phrase \"Looking forward to your response.\" This constraint is fully satisfied, as the exact phrase is present at the end of the email.  \n- Instruction 2 requires avoiding the keyword \"forward\" in the email. This constraint is not satisfied, as the keyword \"forward\" appears in the phrase \"Looking forward to your response.\"\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

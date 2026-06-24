@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "The response must contain at least 300 words.",
+  "new_constraint": "The response must include exactly 10 sentences, with each sentence containing no more than 25 words.",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? The response must contain at least 300 words. The response must include exactly 10 sentences, with each sentence containing no more than 25 words.",
+  "response": "Global warming severely impacts polar ecosystems. Rising temperatures melt Arctic sea ice rapidly. This ice is vital habitat for many species. Polar bears rely heavily on sea ice for hunting seals. Reduced ice forces bears to swim longer distances. This leads to increased energy expenditure and starvation. Sea ice loss also affects krill survival. Krill are a crucial food source for whales and seals. Thawing permafrost releases stored greenhouse gases. This creates a dangerous feedback loop warming the planet more. Overall, these changes threaten the delicate balance of polar life.<turn|>",
+  "reasoning": "",
+  "final_answer": "Global warming severely impacts polar ecosystems. Rising temperatures melt Arctic sea ice rapidly. This ice is vital habitat for many species. Polar bears rely heavily on sea ice for hunting seals. Reduced ice forces bears to swim longer distances. This leads to increased energy expenditure and starvation. Sea ice loss also affects krill survival. Krill are a crucial food source for whales and seals. Thawing permafrost releases stored greenhouse gases. This creates a dangerous feedback loop warming the planet more. Overall, these changes threaten the delicate balance of polar life.<turn|>",
+  "prompt_length": 67,
+  "completion_length": 108,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the effects of global warming on polar ecosystems and wildlife? The response must contain at least 300 words. The response must include exactly 10 sentences, with each sentence containing no more than 25 words.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 66,
+    "boundary_end": 66,
+    "boundary_source": "prompt",
+    "prefix_length": 67
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The \"body\" key must contain exactly 100 words.",
+  "new_constraint": "The \"body\" key must contain at least six sentences, with each containing at least 20 words.",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The \"body\" key must contain exactly 100 words. The \"body\" key must contain at least six sentences, with each containing at least 20 words.",
+  "response": "```json\n{\n  \"body\": \"Dear valued repair service team, I hope this message finds you well and busy today. I am writing to kindly ask about the current status of my laptop that was sent in for urgent repair last week. Please could you update me with any new information regarding when the device might finally be ready for collection? Your quick response would greatly help me plan my upcoming work schedule without unnecessary delays or interruptions. Thank you very much for your time, effort, and continued dedication to fixing customer electronics properly.\"\n}\n```<|im_end|>",
+  "reasoning": "",
+  "final_answer": "```json\n{\n  \"body\": \"Dear valued repair service team, I hope this message finds you well and busy today. I am writing to kindly ask about the current status of my laptop that was sent in for urgent repair last week. Please could you update me with any new information regarding when the device might finally be ready for collection? Your quick response would greatly help me plan my upcoming work schedule without unnecessary delays or interruptions. Thank you very much for your time, effort, and continued dedication to fixing customer electronics properly.\"\n}\n```<|im_end|>",
+  "prompt_length": 75,
+  "completion_length": 112,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nSend an email to a repair shop to check the status of a laptop repair. The \"body\" key must contain exactly 100 words. The \"body\" key must contain at least six sentences, with each containing at least 20 words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 73,
+    "boundary_end": 73,
+    "boundary_source": "prompt",
+    "prefix_length": 74
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

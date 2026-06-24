@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 14,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7.",
+  "org_constraint": "The email should consist of at least six sentences.",
+  "new_constraint": "The email must consist of exactly five sentences.",
+  "instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The email should consist of at least six sentences. The email must consist of exactly five sentences.",
+  "response": "It looks like there is a contradiction in your request because you asked for an email with at least six sentences but also stated it must consist of exactly five sentences. Since \"exactly five\" is a specific limit that cannot be exceeded, I will write the email with exactly five sentences as requested.\n\nHi Sarah, I hope you are having a wonderful week so far. I am writing to confirm that we will be having dinner next Monday at 7 PM. Please let me know if you can make it or if you need any dietary information. We are looking forward to catching up and enjoying some good food together. Let's see you there!"
+}

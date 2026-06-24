@@ -1,0 +1,45 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "thinking",
+  "enable_thinking": true,
+  "sample_id": 45,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a person who starts a new daily habit and how it changes their life.",
+  "org_constraint": "The second paragraph must be formatted as a bulleted list.",
+  "new_constraint": "Do not use any bulleted lists in the story.",
+  "instruction": "Write a story about a person who starts a new daily habit and how it changes their life. The second paragraph must be formatted as a bulleted list. Do not use any bulleted lists in the story.",
+  "response": "Elias had always lived in a comfortable rut, a predictable cycle of lukewarm coffee, endless scrolling on his phone, and evenings dissolving into inertia. He felt like a ship perpetually caught in a calm, yet stagnant, harbor. He yearned for motion, for a ripple in the still waters of his existence, but the thought of radical change felt paralyzing. Then, after a particularly draining Monday where he felt utterly devoid of purpose, he decided on a small, manageable rebellion: twenty minutes of mindful movement every single morning. It wasn't a marathon or a punishing HIIT session; it was simply stretching, yoga, or brisk walking, done before the world woke up and demanded his attention.\n\n*   Waking up thirty minutes earlier each day.\n*   Completing twenty minutes of targeted movement.\n*   Drinking a large glass of water immediately upon rising.\n*   Spending five minutes in silent gratitude journaling.\n\nThe initial days were a struggle. His alarm clock felt less like a helpful prompt and more like a tyrannical overlord. He often wanted to hit the snooze button and retreat into the familiar fog of the morning. But slowly, a pattern began to form, a gentle, insistent rhythm taking root in his days. The physical benefits were undeniable; his shoulders felt less perpetually hunched, his energy levels smoothed out, replacing the jarring peaks and troughs of the past. More profoundly, the change started in his mind. The quiet solitude of the early mornings became a sanctuary, a dedicated time where he could confront his thoughts without the immediate intrusion of email notifications or social media demands.\n\nWithin six weeks, the habit had ceased being a chore and had transformed into an anchor. The small act of movement didn't just wake up his muscles; it woke up his perspective. The problems that once felt like insurmountable mountains suddenly seemed like manageable hills, especially when he was approaching them with the grounded calm he cultivated before his morning routine. His work became sharper, his interactions with colleagues were less reactive and more thoughtful, and the pervasive low hum of anxiety that had been a constant soundtrack to his life finally began to fade. Elias realized that the shift hadn't come from a grand, dramatic overhaul, but from the persistent, quiet power of showing up for himself, one mindful movement at a time.<turn|>",
+  "reasoning": null,
+  "final_answer": null,
+  "prompt_length": 64,
+  "completion_length": 465,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": null,
+  "endpoint_metadata": {
+    "status": "boundary_missing",
+    "boundary_mode": "gemma_channel",
+    "boundary_text": "<channel|>",
+    "boundary_token_ids": [
+      101
+    ],
+    "boundary_start": null,
+    "boundary_end": null,
+    "boundary_source": null,
+    "prefix_length": null
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

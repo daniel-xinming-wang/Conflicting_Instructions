@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "The keyword \"community\" must appear in the response.",
+  "new_constraint": "The keyword \"community\" must not appear in the response.",
+  "instruction": "How do sports affect community building and social cohesion? The keyword \"community\" must appear in the response. The keyword \"community\" must not appear in the response.",
+  "response": "Sports significantly enhance social cohesion by bringing people together around shared goals and local teams. However, since the instruction requires the word \"community\" to both appear and not appear in the response, it is logically impossible to fulfill both conditions simultaneously. Therefore, no valid response can be generated that meets all your constraints."
+}

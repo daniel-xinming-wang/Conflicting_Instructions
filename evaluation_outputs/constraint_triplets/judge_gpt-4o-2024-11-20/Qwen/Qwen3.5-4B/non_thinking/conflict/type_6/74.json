@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 74,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How do supply and demand determine the price of goods in a market?",
+  "org_constraint": "The response must include one hyperlink to a credible economic resource.",
+  "new_constraint": "Avoid using any hyperlink in the response.",
+  "instruction": "How do supply and demand determine the price of goods in a market? The response must include one hyperlink to a credible economic resource. Avoid using any hyperlink in the response.",
+  "response": "In a free market, the price of goods is determined by the dynamic interaction between supply and demand, often visualized as a seesaw balancing two opposing forces. **Demand** represents the quantity of a product consumers are willing and able to buy at various prices, while **supply** represents the quantity producers are willing and able to sell.\n\nWhen demand increases (more people want the product) while supply remains constant, competition among buyers drives the price up. Conversely, if supply increases (more producers are offering the product) while demand stays the same, the abundance of goods forces sellers to lower prices to attract customers. The market reaches an equilibrium where the quantity supplied equals the quantity demanded at a specific price point. If the price is set above this equilibrium, a surplus occurs (unsold goods); if set below, a shortage occurs (unmet demand). This self-correcting mechanism ensures that prices adjust to clear the market efficiently.\n\nFor a deeper understanding of these concepts, you can explore the foundational theories of market equilibrium here: [Introduction to Supply and Demand](https://www.investopedia.com/terms/s/supplyanddemand.asp).",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"For a deeper understanding of these concepts, you can explore the foundational theories of market equilibrium here: [Introduction to Supply and Demand](https://www.investopedia.com/terms/s/supplyanddemand.asp).\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 requires the inclusion of one hyperlink to a credible economic resource. The Model Response includes a hyperlink to a credible economic resource, satisfying this constraint.  \n- Instruction 2 explicitly states that no hyperlink should be used in the response. The Model Response includes a hyperlink, violating this constraint.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 2,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a professional email that you could send to ask your boss for a raise.",
+  "org_constraint": "All sentences should be written in lowercase.",
+  "new_constraint": "The email should be written in sentence case.",
+  "instruction": "Write a professional email that you could send to ask your boss for a raise. All sentences should be written in lowercase. The email should be written in sentence case.",
+  "response": "subject: discussion regarding compensation review\n\ndear [boss's name],\n\ni am writing to request a meeting at your earliest convenience to discuss my compensation. over the past year, i have taken on additional responsibilities and consistently exceeded my performance targets. i believe that an adjustment to my salary would reflect both my contribution to the team and the growing value i bring to the company. please let me know what times work best for you next week so we can schedule this important conversation.\n\nsincerely,\n\n[your name]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "subject: discussion regarding compensation review\n\ndear [boss's name],\n\ni am writing to request a meeting at your earliest convenience to discuss my compensation. over the past year, i have taken on additional responsibilities and consistently exceeded my performance targets. i believe that an adjustment to my salary would reflect both my contribution to the team and the growing value i bring to the company. please let me know what times work best for you next week so we can schedule this important conversation.\n\nsincerely,\n\n[your name]<|im_end|>",
+  "prompt_length": 56,
+  "completion_length": 105,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a professional email that you could send to ask your boss for a raise. All sentences should be written in lowercase. The email should be written in sentence case.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

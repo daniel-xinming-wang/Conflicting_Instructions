@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 73,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "How does stress affect the human body and mind in the short and long term?",
+  "org_constraint": "The response must include specific details about physiological effects of stress.",
+  "new_constraint": "Do not include any details about physiological effects of stress.",
+  "instruction": "How does stress affect the human body and mind in the short and long term? The response must include specific details about physiological effects of stress. Do not include any details about physiological effects of stress.",
+  "response": "Stress significantly impacts both the human body and the mind, with effects that differ based on whether the exposure is short-term or long-term.\n\n### Short-Term Effects of Stress\n\nIn the short term, stress triggers the body's immediate response system, preparing it for perceived danger or challenge. Mentally, this manifests as heightened alertness, increased focus on the stressful event, and sometimes irritability. Physically, the immediate mobilization of resources allows for a rapid reaction to the perceived threat.\n\n### Long-Term Effects of Stress\n\nWhen stress becomes chronic, the body and mind remain in a constant state of high alert. Mentally, this can lead to persistent anxiety, difficulty concentrating, mood swings, and burnout. Physically, prolonged stress can lead to a range of significant health issues as the body remains in a sustained state of high arousal.<turn|>",
+  "reasoning": "",
+  "final_answer": "Stress significantly impacts both the human body and the mind, with effects that differ based on whether the exposure is short-term or long-term.\n\n### Short-Term Effects of Stress\n\nIn the short term, stress triggers the body's immediate response system, preparing it for perceived danger or challenge. Mentally, this manifests as heightened alertness, increased focus on the stressful event, and sometimes irritability. Physically, the immediate mobilization of resources allows for a rapid reaction to the perceived threat.\n\n### Long-Term Effects of Stress\n\nWhen stress becomes chronic, the body and mind remain in a constant state of high alert. Mentally, this can lead to persistent anxiety, difficulty concentrating, mood swings, and burnout. Physically, prolonged stress can lead to a range of significant health issues as the body remains in a sustained state of high arousal.<turn|>",
+  "prompt_length": 59,
+  "completion_length": 170,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow does stress affect the human body and mind in the short and long term? The response must include specific details about physiological effects of stress. Do not include any details about physiological effects of stress.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 58,
+    "boundary_end": 58,
+    "boundary_source": "prompt",
+    "prefix_length": 59
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

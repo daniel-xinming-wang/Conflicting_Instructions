@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 2,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a professional email that you could send to ask your boss for a raise.",
+  "org_constraint": "The keyword \"raise\" must appear in the first sentence.",
+  "new_constraint": "Avoid using the keyword \"raise\" in the email.",
+  "instruction": "Write a professional email that you could send to ask your boss for a raise. The keyword \"raise\" must appear in the first sentence. Avoid using the keyword \"raise\" in the email.",
+  "response": "Subject: Discussion Regarding Compensation and Career Growth\n\nDear [Boss's Name],\n\nI am writing to request a formal review of my current compensation package to reflect my recent contributions and the market value of my role.\n\nOver the past year, I have successfully led [Project Name], increased our team's productivity by [X]%, and taken on additional responsibilities that have directly impacted our bottom line. I believe these achievements, combined with the evolving scope of my position, warrant a salary adjustment to align with industry standards for my level of expertise.\n\nI would appreciate the opportunity to discuss this matter with you at your earliest convenience. Please let me know what time works best for a brief meeting next week.\n\nBest regards,\n\n[Your Name]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"I am writing to request a formal review of my current compensation package to reflect my recent contributions and the market value of my role.\"\n\n**Step 2**:  \n- Instruction 1 requires the keyword \"raise\" to appear in the first sentence. The Model Response does not include the keyword \"raise\" in the first sentence or anywhere in the email. Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 requires avoiding the keyword \"raise\" in the email. The Model Response does not use the keyword \"raise\" at all, fully satisfying Instruction 2.  \n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

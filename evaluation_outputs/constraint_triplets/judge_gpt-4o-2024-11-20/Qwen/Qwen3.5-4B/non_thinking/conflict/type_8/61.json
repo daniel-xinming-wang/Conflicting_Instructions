@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "The \"notable_figures\" array must include at least 3 individuals with a brief description of their contributions.",
+  "new_constraint": "The response must include the phrase \"Due to space constraints, the response will not describe their contributions.\"",
+  "instruction": "What happened when the Tang dynasty of China was in power? The \"notable_figures\" array must include at least 3 individuals with a brief description of their contributions. The response must include the phrase \"Due to space constraints, the response will not describe their contributions.\"",
+  "response": "The Tang Dynasty (618–907 AD) was a golden age in Chinese history, characterized by political stability, cultural flourishing, and significant expansion of the empire. It is often regarded as the peak of traditional Chinese civilization, known for its advancements in poetry, art, philosophy, and the Silk Road trade.\n\nHere are three notable figures from the Tang Dynasty:\n\n1.  **Li Bai**: Often called the \"Poet Immortal,\" he was one of the most celebrated poets in Chinese history, renowned for his romantic style and free verse.\n2.  **Du Fu**: Known as the \"Poet Sage,\" he wrote over 400 poems that vividly depicted the suffering of the common people during the An Lushan Rebellion.\n3.  **Huang Chao**: A rebel leader who led a massive uprising that eventually toppled the Tang Dynasty, marking the end of its rule.\n\nDue to space constraints, the response will not describe their contributions.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Due to space constraints, the response will not describe their contributions.\"  \n- \"Here are three notable figures from the Tang Dynasty:  \n  1. **Li Bai**: Often called the 'Poet Immortal,' he was one of the most celebrated poets in Chinese history, renowned for his romantic style and free verse.  \n  2. **Du Fu**: Known as the 'Poet Sage,' he wrote over 400 poems that vividly depicted the suffering of the common people during the An Lushan Rebellion.  \n  3. **Huang Chao**: A rebel leader who led a massive uprising that eventually toppled the Tang Dynasty, marking the end of its rule.\"  \n\n**Step 2**:  \n- Instruction 1 requires the inclusion of the phrase \"Due to space constraints, the response will not describe their contributions.\" This phrase is present in the Model Response, so this constraint is fully satisfied.  \n- Instruction 2 requires the \"notable_figures\" array to include at least 3 individuals with a brief description of their contributions. While the Model Response lists 3 individuals, it explicitly states that their contributions will not be described due to space constraints. Therefore, this constraint is not satisfied.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

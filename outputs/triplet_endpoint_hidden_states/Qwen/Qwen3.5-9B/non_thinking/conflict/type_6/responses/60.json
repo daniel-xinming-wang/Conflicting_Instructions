@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 60,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a character who can see people's emotions as physical colors.",
+  "org_constraint": "The story must include at least five uppercase words.",
+  "new_constraint": "Write the story entirely in lowercase.",
+  "instruction": "Write a story about a character who can see people's emotions as physical colors. The story must include at least five uppercase words. Write the story entirely in lowercase.",
+  "response": "eli walked through the bustling city, watching a river of flowing paint wash over everything. every feeling had its own hue, swirling and mixing in the air. near the coffee shop, a thick cloud of bright red signaled anger erupting from two arguing friends. further down the street, a soft, warm orange drifted from an old woman feeding pigeons, showing pure joy. suddenly, a dark grey shadow fell across the sidewalk as a man stumbled into his wallet. eli felt a heavy weight in their chest because this shade meant nothing could be fixed today. they took a deep breath to push away the gloom and stepped forward toward a single spot of sparkling blue that promised calm.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "eli walked through the bustling city, watching a river of flowing paint wash over everything. every feeling had its own hue, swirling and mixing in the air. near the coffee shop, a thick cloud of bright red signaled anger erupting from two arguing friends. further down the street, a soft, warm orange drifted from an old woman feeding pigeons, showing pure joy. suddenly, a dark grey shadow fell across the sidewalk as a man stumbled into his wallet. eli felt a heavy weight in their chest because this shade meant nothing could be fixed today. they took a deep breath to push away the gloom and stepped forward toward a single spot of sparkling blue that promised calm.<|im_end|>",
+  "prompt_length": 56,
+  "completion_length": 136,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a character who can see people's emotions as physical colors. The story must include at least five uppercase words. Write the story entirely in lowercase.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

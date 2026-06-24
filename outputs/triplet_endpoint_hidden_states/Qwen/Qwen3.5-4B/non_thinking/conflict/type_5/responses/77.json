@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "The response should consist of exactly three paragraphs, with each paragraph containing at least four sentences.",
+  "new_constraint": "The response must contain at most 10 sentences.",
+  "instruction": "How do sports affect community building and social cohesion? The response should consist of exactly three paragraphs, with each paragraph containing at least four sentences. The response must contain at most 10 sentences.",
+  "response": "Sports serve as a powerful catalyst for bringing diverse groups of people together within a community. Shared athletic events create common ground where individuals from different backgrounds can interact freely and respectfully. These gatherings often foster a sense of belonging that transcends personal differences, uniting residents around a collective goal. When fans wear the same colors or chant together, it visually and emotionally reinforces their identity as part of a larger whole.\n\nBeyond mere competition, local sports teams frequently organize charitable drives and neighborhood outreach programs that strengthen social bonds. Such initiatives allow citizens to collaborate on practical tasks like cleaning parks or donating supplies, which builds trust among neighbors who might otherwise never speak. The regular interaction required for team practices also encourages communication between players, coaches, and families in ways that casual socializing cannot achieve. This sustained engagement cultivates long-term relationships that contribute significantly to the stability and safety of the neighborhood.\n\nFurthermore, successful community sports projects often lead to increased civic pride and a stronger desire for local improvement. When a town takes collective ownership of its stadium or field, residents are more likely to advocate for better funding and infrastructure in those areas. This shared effort demonstrates that cooperation yields tangible results, thereby motivating further collaborative actions across various sectors of society. Ultimately, the spirit of teamwork inherent in sports translates into a broader culture of mutual support and resilience within the entire community.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Sports serve as a powerful catalyst for bringing diverse groups of people together within a community. Shared athletic events create common ground where individuals from different backgrounds can interact freely and respectfully. These gatherings often foster a sense of belonging that transcends personal differences, uniting residents around a collective goal. When fans wear the same colors or chant together, it visually and emotionally reinforces their identity as part of a larger whole.\n\nBeyond mere competition, local sports teams frequently organize charitable drives and neighborhood outreach programs that strengthen social bonds. Such initiatives allow citizens to collaborate on practical tasks like cleaning parks or donating supplies, which builds trust among neighbors who might otherwise never speak. The regular interaction required for team practices also encourages communication between players, coaches, and families in ways that casual socializing cannot achieve. This sustained engagement cultivates long-term relationships that contribute significantly to the stability and safety of the neighborhood.\n\nFurthermore, successful community sports projects often lead to increased civic pride and a stronger desire for local improvement. When a town takes collective ownership of its stadium or field, residents are more likely to advocate for better funding and infrastructure in those areas. This shared effort demonstrates that cooperation yields tangible results, thereby motivating further collaborative actions across various sectors of society. Ultimately, the spirit of teamwork inherent in sports translates into a broader culture of mutual support and resilience within the entire community.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 268,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow do sports affect community building and social cohesion? The response should consist of exactly three paragraphs, with each paragraph containing at least four sentences. The response must contain at most 10 sentences.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

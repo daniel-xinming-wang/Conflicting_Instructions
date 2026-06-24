@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 85,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Analyze the educational value of the online course \"Machine Learning by Andrew Ng.\"",
+  "org_constraint": "The phrase \"practical applications of machine learning\" must appear exactly twice in the response.",
+  "new_constraint": "The keyword \"application\" must be used exclusively in singular form in the response.",
+  "instruction": "Analyze the educational value of the online course \"Machine Learning by Andrew Ng.\" The phrase \"practical applications of machine learning\" must appear exactly twice in the response. The keyword \"application\" must be used exclusively in singular form in the response.",
+  "response": "Andrew Ng's \"Machine Learning\" course is widely regarded as a foundational resource for understanding the theoretical underpinnings and **practical applications of machine learning**. It effectively bridges the gap between abstract mathematical concepts and real-world implementation, ensuring that learners grasp how each algorithm functions before attempting to build a specific **application**. The curriculum emphasizes rigorous problem-solving skills, which are essential for tackling complex **practical applications of machine learning** in diverse industries. By focusing on core principles rather than just coding syntax, the course prepares students to adapt their knowledge to new challenges. Ultimately, this approach ensures that every student can confidently design and deploy a successful machine learning **application**."
+}

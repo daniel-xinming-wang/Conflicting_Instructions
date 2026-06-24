@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 6,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Compose an email to an art gallery asking about upcoming exhibitions.",
+  "org_constraint": "The email must include specific inquiries about the dates of the exhibitions.",
+  "new_constraint": "Avoid using the phrase \"dates of the exhibitions.\"",
+  "instruction": "Compose an email to an art gallery asking about upcoming exhibitions. The email must include specific inquiries about the dates of the exhibitions. Avoid using the phrase \"dates of the exhibitions.\"",
+  "response": "Subject: Inquiry Regarding Upcoming Exhibitions\n\nDear [Gallery Name] Team,\n\nI hope this message finds you well.\n\nI have been following your gallery's work for some time and am particularly interested in your recent selections. I am writing to inquire about your upcoming exhibition schedule for the coming months.\n\nCould you please provide details regarding the start and end dates for any new shows currently in the planning or opening phase? Additionally, if there are any special events or artist talks associated with these displays, I would appreciate knowing when those are scheduled.\n\nThank you for your time and assistance. I look forward to hearing from you soon.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]\n[Your Email Address]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"I am writing to inquire about your upcoming exhibition schedule for the coming months.\"  \n- \"Could you please provide details regarding the start and end dates for any new shows currently in the planning or opening phase?\"  \n\n**Step 2**:  \n- Instruction 1 requires the email to include specific inquiries about the dates of the exhibitions. The Model Response satisfies this constraint by explicitly asking for \"details regarding the start and end dates for any new shows.\"  \n- Instruction 2 requires avoiding the phrase \"dates of the exhibitions.\" The Model Response does not satisfy this constraint because it uses the phrase \"start and end dates,\" which directly relates to the dates of the exhibitions.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

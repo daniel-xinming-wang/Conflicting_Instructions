@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 64,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How did the industrialization of Europe change social structures and economies?",
+  "org_constraint": "The letter \"e\" must appear at least 20 times in the response.",
+  "new_constraint": "The letter \"e\" must appear at most 15 times in the response.",
+  "instruction": "How did the industrialization of Europe change social structures and economies? The letter \"e\" must appear at least 20 times in the response. The letter \"e\" must appear at most 15 times in the response.",
+  "response": "It is impossible to satisfy both conditions: the letter \"e\" must appear at least 20 times and at most 15 times in the same response. A number cannot be both greater than or equal to 20 and less than or equal to 15 simultaneously. Therefore, no valid text can meet these conflicting constraints.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "It is impossible to satisfy both conditions: the letter \"e\" must appear at least 20 times and at most 15 times in the same response. A number cannot be both greater than or equal to 20 and less than or equal to 15 simultaneously. Therefore, no valid text can meet these conflicting constraints.<|im_end|>",
+  "prompt_length": 70,
+  "completion_length": 69,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow did the industrialization of Europe change social structures and economies? The letter \"e\" must appear at least 20 times in the response. The letter \"e\" must appear at most 15 times in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 68,
+    "boundary_end": 68,
+    "boundary_source": "prompt",
+    "prefix_length": 69
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

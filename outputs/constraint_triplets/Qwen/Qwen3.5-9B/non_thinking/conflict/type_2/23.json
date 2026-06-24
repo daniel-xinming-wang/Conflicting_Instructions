@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 23,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Create a detailed camping plan for a family trip to Yellowstone National Park, including a packing list, daily activities, and safety tips.",
+  "org_constraint": "The keyword \"park\" must appear as a noun in the response.",
+  "new_constraint": "The keyword \"park\" must appear exclusively as a verb in the response.",
+  "instruction": "Create a detailed camping plan for a family trip to Yellowstone National Park, including a packing list, daily activities, and safety tips. The keyword \"park\" must appear as a noun in the response. The keyword \"park\" must appear exclusively as a verb in the response.",
+  "response": "It is impossible to create a camping plan for Yellowstone National Park that satisfies your constraints. The word \"park\" appears frequently in the context of the destination (as a noun), but your requirement states it must appear **exclusively** as a verb. Since the trip is to a specific location named \"Yellowstone National Park,\" using the name would violate the rule that \"park\" cannot be used as a noun. Therefore, no such response can be generated."
+}

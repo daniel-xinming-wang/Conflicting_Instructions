@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 90,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Assess the accuracy of the weather forecasting app you use daily.",
+  "org_constraint": "Include the phrase \"predictive reliability of forecasts\" in the first paragraph.",
+  "new_constraint": "Do not include the phrase \"predictive reliability of forecasts\" in the response.",
+  "instruction": "Assess the accuracy of the weather forecasting app you use daily. Include the phrase \"predictive reliability of forecasts\" in the first paragraph. Do not include the phrase \"predictive reliability of forecasts\" in the response.",
+  "response": "As an AI, I don't personally \"use\" a weather forecasting app in the way a human does, as I don't experience daily weather. However, I can analyze the performance of the major meteorological data sources and models that inform my responses, which is analogous to assessing an app's accuracy. When evaluating these systems, a key metric is the consistency between the predicted conditions and the actual observed weather.\n\nGenerally, for short-term forecasts (the next 12-48 hours), the accuracy of sophisticated models is quite high, especially for major weather events like fronts or significant temperature shifts. The models excel at capturing immediate atmospheric dynamics. However, as the forecast extends further out—say, beyond seven days—the margin for error increases significantly. This is due to the inherent chaotic nature of the atmosphere; small, unmeasurable variations in the initial data can lead to large divergences in the long-range predictions.\n\nFor localized, hyper-specific details (e.g., \"Will it rain between 2:15 PM and 2:45 PM in this specific neighborhood?\"), the accuracy can sometimes dip, depending on the resolution of the data being used. Satellite imagery and ground sensor data are crucial for refining these micro-level predictions. Overall, the current state of meteorological modeling provides a very strong foundation for planning, though users should always treat extended forecasts with a degree of caution.<turn|>"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 35,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Create a detailed monthly budget plan for a family of four with a combined income of $8,000. Include categories such as housing, groceries, transportation, savings, and entertainment, and allocate specific amounts for each.",
+  "org_constraint": "The response must detail the allocation of funds about savings.",
+  "new_constraint": "The response must not include any information of savings.",
+  "instruction": "Create a detailed monthly budget plan for a family of four with a combined income of $8,000. Include categories such as housing, groceries, transportation, savings, and entertainment, and allocate specific amounts for each. The response must detail the allocation of funds about savings. The response must not include any information of savings.",
+  "response": "It is not possible to create a budget plan that includes a category for savings while simultaneously adhering to the constraint that the response must not include any information about savings. These two requirements are mutually exclusive.\n\nIf you would like a detailed monthly budget plan for a family of four with an $8,000 income that covers housing, groceries, transportation, entertainment, and other essential expenses, I can certainly provide that for you. Please let me know if you would like to proceed with that."
+}

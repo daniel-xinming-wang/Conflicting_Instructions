@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 90,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Assess the accuracy of the weather forecasting app you use daily.",
+  "org_constraint": "Include the phrase \"unexpected weather variations\" in the second paragraph.",
+  "new_constraint": "The keyword \"variation\" must only appear in the singular form.",
+  "instruction": "Assess the accuracy of the weather forecasting app you use daily. Include the phrase \"unexpected weather variations\" in the second paragraph. The keyword \"variation\" must only appear in the singular form.",
+  "response": "The weather forecasting app I rely on daily is generally quite accurate for predicting major trends like temperature ranges and precipitation probabilities. It successfully integrates real-time data from multiple sources to provide reliable short-term forecasts, which helps me plan my commute and outdoor activities effectively. However, its precision can sometimes waver when local microclimates are involved, leading to minor discrepancies between the predicted and actual conditions.\n\nDespite these occasional hiccups, the app remains a valuable tool, though it does struggle to account for **unexpected weather variations** that occur rapidly due to shifting atmospheric fronts. While the overall trend is usually correct, sudden changes in wind direction or localized storms can catch the model off guard, resulting in a brief period of inaccuracy. This limitation highlights that while technology has advanced significantly, nature's complexity still poses challenges for perfect prediction."
+}

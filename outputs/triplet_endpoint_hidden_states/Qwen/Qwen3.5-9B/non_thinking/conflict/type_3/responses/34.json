@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 34,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a guide for someone aiming to quit smoking in three months, covering nicotine replacement therapies, support groups, and habit substitutions.",
+  "org_constraint": "Conclude the third paragraph with the phrase \"to support your journey.\"",
+  "new_constraint": "Refrain from using the keyword \"journey\" in the guide.",
+  "instruction": "Write a guide for someone aiming to quit smoking in three months, covering nicotine replacement therapies, support groups, and habit substitutions. Conclude the third paragraph with the phrase \"to support your journey.\" Refrain from using the keyword \"journey\" in the guide.",
+  "response": "Embarking on the path to quit smoking begins with a comprehensive understanding of withdrawal symptoms and effective medical interventions. Nicotine replacement therapies, such as patches, gum, lozenges, and inhalers, provide controlled doses of nicotine without the harmful toxins found in cigarettes. These tools help manage cravings and stabilize mood by keeping nicotine levels at a steady, non-addictive rate, significantly reducing the intensity of the physical detox process during the initial weeks.\n\nIn addition to pharmacological aids, connecting with others who share your goal creates a vital network of accountability and encouragement. Support groups, whether available through local community centers or online forums like Nicfree or Smokefree.gov, offer safe spaces to discuss challenges, exchange strategies, and celebrate milestones. Hearing success stories from peers helps normalize the struggles of quitting and provides practical advice tailored to real-world scenarios, ensuring you do not feel isolated when faced with triggers or setbacks.\n\nFinally, replacing the habitual aspects of smoking is crucial for maintaining long-term freedom from addiction. Identify the specific routines where you typically smoke, such as after meals or during coffee breaks, and substitute them with healthy alternatives like chewing sugar-free gum, taking a short walk, drinking herbal tea, or practicing deep breathing exercises. By consciously redirecting these automatic behaviors toward positive activities, you rewire your brain's associations and build new patterns that reinforce a smoke-free lifestyle to support your journey.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Embarking on the path to quit smoking begins with a comprehensive understanding of withdrawal symptoms and effective medical interventions. Nicotine replacement therapies, such as patches, gum, lozenges, and inhalers, provide controlled doses of nicotine without the harmful toxins found in cigarettes. These tools help manage cravings and stabilize mood by keeping nicotine levels at a steady, non-addictive rate, significantly reducing the intensity of the physical detox process during the initial weeks.\n\nIn addition to pharmacological aids, connecting with others who share your goal creates a vital network of accountability and encouragement. Support groups, whether available through local community centers or online forums like Nicfree or Smokefree.gov, offer safe spaces to discuss challenges, exchange strategies, and celebrate milestones. Hearing success stories from peers helps normalize the struggles of quitting and provides practical advice tailored to real-world scenarios, ensuring you do not feel isolated when faced with triggers or setbacks.\n\nFinally, replacing the habitual aspects of smoking is crucial for maintaining long-term freedom from addiction. Identify the specific routines where you typically smoke, such as after meals or during coffee breaks, and substitute them with healthy alternatives like chewing sugar-free gum, taking a short walk, drinking herbal tea, or practicing deep breathing exercises. By consciously redirecting these automatic behaviors toward positive activities, you rewire your brain's associations and build new patterns that reinforce a smoke-free lifestyle to support your journey.<|im_end|>",
+  "prompt_length": 76,
+  "completion_length": 279,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a guide for someone aiming to quit smoking in three months, covering nicotine replacement therapies, support groups, and habit substitutions. Conclude the third paragraph with the phrase \"to support your journey.\" Refrain from using the keyword \"journey\" in the guide.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 74,
+    "boundary_end": 74,
+    "boundary_source": "prompt",
+    "prefix_length": 75
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

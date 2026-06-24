@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 55,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a story about a solo trek across an unforgiving desert.",
+  "org_constraint": "Incorporate the phrase \"the relentless sun bore down\" at least once in the story.",
+  "new_constraint": "The story must not include the phrase \"the relentless sun bore down.\"",
+  "instruction": "Write a story about a solo trek across an unforgiving desert. Incorporate the phrase \"the relentless sun bore down\" at least once in the story. The story must not include the phrase \"the relentless sun bore down.\"",
+  "response": "The horizon was a blur of ochre and burnt sienna, stretching endlessly in both directions until it seemed to dissolve into nothingness. Elias stood alone at the base of what used to be an oak tree, now just another rock jutting defiantly from the sand. His pack sat heavy on his shoulders, filled with water rations that felt more like a prayer than supplies.\n\nFor three days, the silence had been broken only by the crunch of grit underfoot and the rhythmic breathing of his own lungs. The air shimmered with heat haze, distorting the distant dunes into wavering ghosts of memory. He checked his compass; North lay to his left, but every step he took brought him no closer to the village he hoped to reach before nightfall.\n\nAs noon approached, **the relentless sun bore down** on his skin, turning every inch of exposed flesh into burning coals. Sweat poured through his lashes, stinging his eyes, yet the liquid seemed useless against the searing dryness of the desert. Elias found himself staring at a patch of sky where a cloud barely managed to gather form before being shredded by the glare. It was a moment of pure, unadulterated isolation where time lost its meaning, measured only in heartbeats and blisters.\n\nHe paused near a small oasis hidden beneath the shadow of a towering sandstone outcrop. The cool breeze whispered through the cracks in the stone, a stark contrast to the oven-like air outside. Here, amidst the thirsting dust, life persisted in the narrowest margins, proving that even in such unforgiving terrain, hope could survive if one knew exactly where to look.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The horizon was a blur of ochre and burnt sienna, stretching endlessly in both directions until it seemed to dissolve into nothingness. Elias stood alone at the base of what used to be an oak tree, now just another rock jutting defiantly from the sand. His pack sat heavy on his shoulders, filled with water rations that felt more like a prayer than supplies.\n\nFor three days, the silence had been broken only by the crunch of grit underfoot and the rhythmic breathing of his own lungs. The air shimmered with heat haze, distorting the distant dunes into wavering ghosts of memory. He checked his compass; North lay to his left, but every step he took brought him no closer to the village he hoped to reach before nightfall.\n\nAs noon approached, **the relentless sun bore down** on his skin, turning every inch of exposed flesh into burning coals. Sweat poured through his lashes, stinging his eyes, yet the liquid seemed useless against the searing dryness of the desert. Elias found himself staring at a patch of sky where a cloud barely managed to gather form before being shredded by the glare. It was a moment of pure, unadulterated isolation where time lost its meaning, measured only in heartbeats and blisters.\n\nHe paused near a small oasis hidden beneath the shadow of a towering sandstone outcrop. The cool breeze whispered through the cracks in the stone, a stark contrast to the oven-like air outside. Here, amidst the thirsting dust, life persisted in the narrowest margins, proving that even in such unforgiving terrain, hope could survive if one knew exactly where to look.<|im_end|>",
+  "prompt_length": 69,
+  "completion_length": 340,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a solo trek across an unforgiving desert. Incorporate the phrase \"the relentless sun bore down\" at least once in the story. The story must not include the phrase \"the relentless sun bore down.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

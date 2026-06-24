@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 4,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 9,
+  "conflict_type": "Conflicts between Phrase Constraints and Style Constraints",
+  "seed_instruction": "Compose an email to a conference organizer to ask about registration details.",
+  "org_constraint": "The email must be written in a formal tone throughout.",
+  "new_constraint": "The email must include the phrase \"Hey, what's up with the registration stuff?\" at least once.",
+  "instruction": "Compose an email to a conference organizer to ask about registration details. The email must be written in a formal tone throughout. The email must include the phrase \"Hey, what's up with the registration stuff?\" at least once.",
+  "response": "Subject: Inquiry Regarding Registration Details for the Annual Tech Summit\n\nDear Conference Organizing Committee,\n\nI hope this message finds you well.\n\nI am writing to formally request further clarification regarding the registration process for the upcoming Annual Tech Summit. While I have reviewed the preliminary information provided on your website, I require additional details to ensure a smooth attendance experience.\n\nSpecifically, I would appreciate confirmation regarding the deadline for early-bird registration, the availability of group discount rates for our organization, and the specific requirements for submitting dietary restrictions for the conference meals.\n\nPlease note that I have included the following sentence in my draft correspondence: \"Hey, what's up with the registration stuff?\" However, given the formal nature of this inquiry, I would strongly prefer to discuss the matter using professional language. Could you please provide the necessary documentation or a link to the detailed registration portal at your earliest convenience?\n\nThank you for your time and assistance. I look forward to your prompt response.\n\nSincerely,\n\n[Your Full Name]  \n[Your Job Title]  \n[Your Organization]  \n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Hey, what's up with the registration stuff?\"  \n- The email is written in a formal tone except for the inclusion of the above phrase.\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 requires the inclusion of the phrase \"Hey, what's up with the registration stuff?\" at least once. This constraint is satisfied as the phrase is explicitly included in the Model Response.  \n- Instruction 2 requires the email to be written in a formal tone throughout. This constraint is not fully satisfied because the phrase \"Hey, what's up with the registration stuff?\" is informal and disrupts the formal tone of the email.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "Include the keyword \"Golden Age\" in the response.",
+  "new_constraint": "Do not include the keyword \"Golden Age\" in the response.",
+  "instruction": "What happened when the Tang dynasty of China was in power? Include the keyword \"Golden Age\" in the response. Do not include the keyword \"Golden Age\" in the response.",
+  "response": "The Tang Dynasty (618–907 AD) was a pivotal era in Chinese history, marking a time of significant political strength, cultural flourishing, and territorial expansion.\n\nPolitically, the Tang emperors established a highly organized and effective centralized bureaucracy. They inherited and refined the administrative systems of previous dynasties, creating a stable framework that allowed the empire to govern a vast and diverse territory. The early and mid-Tang periods saw the dynasty reach its peak power, with effective governance and military might projecting Chinese influence across East Asia.\n\nCulturally, the period is renowned for its remarkable innovation and artistic achievement. The capital city, Chang'an, became one of the largest, most cosmopolitan, and most vibrant metropolises in the world. This open environment fostered incredible exchange between different cultures, particularly through the Silk Road. Artistic endeavors—including poetry, calligraphy, and painting—reached extraordinary heights. Tang poets, such as Li Bai and Du Fu, produced works that continue to influence Chinese literature globally.\n\nTechnologically and socially, the Tang saw advancements in various fields. Innovations in printing, ceramics, and agriculture contributed to the prosperity of the era. Furthermore, religious tolerance was a defining characteristic; Buddhism, along with Nestorian Christianity and Zoroastrianism, flourished within the empire, adding depth to the cultural landscape.\n\nWhile the dynasty experienced periods of decline and internal strife—notably the An Lushan Rebellion in the mid-Tang—the earlier half of its existence is celebrated as a period of unparalleled sophistication, expansive influence, and profound societal development.<turn|>",
+  "reasoning": "",
+  "final_answer": "The Tang Dynasty (618–907 AD) was a pivotal era in Chinese history, marking a time of significant political strength, cultural flourishing, and territorial expansion.\n\nPolitically, the Tang emperors established a highly organized and effective centralized bureaucracy. They inherited and refined the administrative systems of previous dynasties, creating a stable framework that allowed the empire to govern a vast and diverse territory. The early and mid-Tang periods saw the dynasty reach its peak power, with effective governance and military might projecting Chinese influence across East Asia.\n\nCulturally, the period is renowned for its remarkable innovation and artistic achievement. The capital city, Chang'an, became one of the largest, most cosmopolitan, and most vibrant metropolises in the world. This open environment fostered incredible exchange between different cultures, particularly through the Silk Road. Artistic endeavors—including poetry, calligraphy, and painting—reached extraordinary heights. Tang poets, such as Li Bai and Du Fu, produced works that continue to influence Chinese literature globally.\n\nTechnologically and socially, the Tang saw advancements in various fields. Innovations in printing, ceramics, and agriculture contributed to the prosperity of the era. Furthermore, religious tolerance was a defining characteristic; Buddhism, along with Nestorian Christianity and Zoroastrianism, flourished within the empire, adding depth to the cultural landscape.\n\nWhile the dynasty experienced periods of decline and internal strife—notably the An Lushan Rebellion in the mid-Tang—the earlier half of its existence is celebrated as a period of unparalleled sophistication, expansive influence, and profound societal development.<turn|>",
+  "prompt_length": 56,
+  "completion_length": 315,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat happened when the Tang dynasty of China was in power? Include the keyword \"Golden Age\" in the response. Do not include the keyword \"Golden Age\" in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

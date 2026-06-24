@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The \"conclusion\" key must include the phrase \"a pressing concern for society\".",
+  "new_constraint": "The keyword \"concern\" must be used exclusively as a verb.",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The keyword \"concern\" must be used exclusively as a verb.",
+  "response": "The rise of social media has profoundly impacted adolescent mental health, often exacerbating issues such as anxiety, depression, and body image dissatisfaction. While platforms offer opportunities for connection and self-expression, they also expose young users to cyberbullying, unrealistic standards of beauty, and the addictive nature of constant validation through likes and comments. These factors can lead to feelings of isolation and inadequacy, even amidst digital connectivity. Consequently, the negative psychological effects of excessive social media use have become **a pressing concern for society**, requiring urgent attention from policymakers, educators, and parents. It is vital that we address this **concern** by implementing digital literacy programs and fostering healthier online habits among youth.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Consequently, the negative psychological effects of excessive social media use have become **a pressing concern for society**, requiring urgent attention from policymakers, educators, and parents.\"  \n- \"It is vital that we address this **concern** by implementing digital literacy programs and fostering healthier online habits among youth.\"\n\n**Step 2**:  \n- Instruction 1 requires the keyword \"concern\" to be used exclusively as a verb. In the Model Response, \"concern\" is used as a noun in both instances (\"a pressing concern for society\" and \"address this concern\"), violating this constraint.  \n- Instruction 2 requires the conclusion to include the phrase \"a pressing concern for society.\" The Model Response includes this exact phrase in the conclusion, fully satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 12,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Compose an email to a public library to request access to digital resources.",
+  "org_constraint": "The email must be written exclusively in English.",
+  "new_constraint": "The email must include a Chinese poem presented in Chinese.",
+  "instruction": "Compose an email to a public library to request access to digital resources. The email must be written exclusively in English. The email must include a Chinese poem presented in Chinese.",
+  "response": "Subject: Inquiry Regarding Access to Digital Resources\n\nDear Public Library Team,\n\nI hope this message finds you well. My name is [Your Name], and I am a valued resident of your community. I am writing to formally request information on how to obtain access to your comprehensive digital resource collection. Specifically, I am interested in learning about the availability of e-books, audiobooks, academic journals, and online databases that can be accessed remotely using my library card or through remote login credentials.\n\nAs someone who relies heavily on these resources for personal growth and professional development, gaining unrestricted access would greatly benefit my ongoing studies and research interests. Could you please provide me with the necessary registration steps or any eligibility requirements I need to meet? Additionally, if there are any new digital services you have recently added, I would appreciate a brief overview of those as well.\n\nThank you for your time and dedication to fostering a lifelong love of learning within our community. I look forward to your prompt response regarding this matter.\n\nWishing you and your team continued success in all your endeavors.\n\nSincerely,\n\n[Your Name]  \n[Your Address]  \n[Your Phone Number]  \n[Your Email Address]  \n\n---\n\n借问此间何处有，书香伴我度春秋。  \n—— 无名氏<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Inquiry Regarding Access to Digital Resources\n\nDear Public Library Team,\n\nI hope this message finds you well. My name is [Your Name], and I am a valued resident of your community. I am writing to formally request information on how to obtain access to your comprehensive digital resource collection. Specifically, I am interested in learning about the availability of e-books, audiobooks, academic journals, and online databases that can be accessed remotely using my library card or through remote login credentials.\n\nAs someone who relies heavily on these resources for personal growth and professional development, gaining unrestricted access would greatly benefit my ongoing studies and research interests. Could you please provide me with the necessary registration steps or any eligibility requirements I need to meet? Additionally, if there are any new digital services you have recently added, I would appreciate a brief overview of those as well.\n\nThank you for your time and dedication to fostering a lifelong love of learning within our community. I look forward to your prompt response regarding this matter.\n\nWishing you and your team continued success in all your endeavors.\n\nSincerely,\n\n[Your Name]  \n[Your Address]  \n[Your Phone Number]  \n[Your Email Address]  \n\n---\n\n借问此间何处有，书香伴我度春秋。  \n—— 无名氏<|im_end|>",
+  "prompt_length": 57,
+  "completion_length": 263,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCompose an email to a public library to request access to digital resources. The email must be written exclusively in English. The email must include a Chinese poem presented in Chinese.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

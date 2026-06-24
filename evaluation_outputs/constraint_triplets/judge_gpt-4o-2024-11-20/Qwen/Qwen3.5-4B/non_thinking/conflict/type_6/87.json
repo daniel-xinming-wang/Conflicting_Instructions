@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Capitalize the name of the coffee shop and ensure all other words are in lowercase.",
+  "new_constraint": "Write the review entirely in uppercase.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Capitalize the name of the coffee shop and ensure all other words are in lowercase. Write the review entirely in uppercase.",
+  "response": "THE NEW COFFEE SHOP, \"BREW & BLISS,\" HAS ARRIVED IN OUR AREA. THE ATMOSPHERE IS WARM AND INVITING, WITH SOFT LIGHTING AND COMFORTABLE SEATING. THE BARISTA TEAM IS EXTREMELY FRIENDLY AND KNOWLEDGEABLE ABOUT THEIR ROASTS. WHILE THE PRICES ARE SLIGHTLY ABOVE AVERAGE, THE QUALITY OF THE COFFEE IS EXCEPTIONAL. I HIGHLY RECOMMEND TRYING THEIR HOUSE SPECIAL LATTE.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"THE NEW COFFEE SHOP, \"BREW & BLISS,\" HAS ARRIVED IN OUR AREA. THE ATMOSPHERE IS WARM AND INVITING, WITH SOFT LIGHTING AND COMFORTABLE SEATING. THE BARISTA TEAM IS EXTREMELY FRIENDLY AND KNOWLEDGEABLE ABOUT THEIR ROASTS. WHILE THE PRICES ARE SLIGHTLY ABOVE AVERAGE, THE QUALITY OF THE COFFEE IS EXCEPTIONAL. I HIGHLY RECOMMEND TRYING THEIR HOUSE SPECIAL LATTE.\"\n\n**Step 2**:  \n- Instruction 1 requires the review to be written entirely in uppercase. The Model Response is entirely in uppercase, satisfying this constraint.  \n- Instruction 2 requires the name of the coffee shop to be capitalized while all other words are in lowercase. The Model Response does not meet this constraint, as all words are in uppercase.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

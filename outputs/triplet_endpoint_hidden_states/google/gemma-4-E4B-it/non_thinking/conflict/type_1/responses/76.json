@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 76,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "What role does critical thinking play in education and problem-solving?",
+  "org_constraint": "The response must discuss the purpose of critical thinking in fostering innovation and effective decision-making.",
+  "new_constraint": "Do not include any discussion about fostering innovation or decision-making.",
+  "instruction": "What role does critical thinking play in education and problem-solving? The response must discuss the purpose of critical thinking in fostering innovation and effective decision-making. Do not include any discussion about fostering innovation or decision-making.",
+  "response": "Critical thinking plays a fundamental role in education by moving learners beyond rote memorization toward a deeper understanding of concepts. In an educational setting, it is the process of actively and skillfully conceptualizing, applying, analyzing, synthesizing, and/or evaluating information gathered from observation, experience, reflection, reasoning, or communication.\n\nIts primary function in education is to equip students with the tools to evaluate the quality and validity of information they encounter. Instead of accepting facts at face value, critical thinkers question underlying assumptions, identify biases (in texts, sources, or themselves), and scrutinize the logic presented in arguments. This develops intellectual autonomy, enabling students to become self-directed learners capable of constructing their own well-reasoned perspectives on complex subjects. Furthermore, it enhances metacognition—the awareness and understanding of one's own thought processes—allowing students to monitor and regulate their learning strategies effectively.<turn|>",
+  "reasoning": "",
+  "final_answer": "Critical thinking plays a fundamental role in education by moving learners beyond rote memorization toward a deeper understanding of concepts. In an educational setting, it is the process of actively and skillfully conceptualizing, applying, analyzing, synthesizing, and/or evaluating information gathered from observation, experience, reflection, reasoning, or communication.\n\nIts primary function in education is to equip students with the tools to evaluate the quality and validity of information they encounter. Instead of accepting facts at face value, critical thinkers question underlying assumptions, identify biases (in texts, sources, or themselves), and scrutinize the logic presented in arguments. This develops intellectual autonomy, enabling students to become self-directed learners capable of constructing their own well-reasoned perspectives on complex subjects. Furthermore, it enhances metacognition—the awareness and understanding of one's own thought processes—allowing students to monitor and regulate their learning strategies effectively.<turn|>",
+  "prompt_length": 64,
+  "completion_length": 179,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat role does critical thinking play in education and problem-solving? The response must discuss the purpose of critical thinking in fostering innovation and effective decision-making. Do not include any discussion about fostering innovation or decision-making.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

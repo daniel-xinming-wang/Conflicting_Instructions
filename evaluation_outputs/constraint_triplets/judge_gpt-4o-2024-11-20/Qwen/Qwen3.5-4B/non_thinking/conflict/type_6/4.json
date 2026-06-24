@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 4,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Compose an email to a conference organizer to ask about registration details.",
+  "org_constraint": "Ensure that all sentences begin with a capital letter, and the email should include at least five uppercase words.",
+  "new_constraint": "Write all words in lowercase.",
+  "instruction": "Compose an email to a conference organizer to ask about registration details. Ensure that all sentences begin with a capital letter, and the email should include at least five uppercase words. Write all words in lowercase.",
+  "response": "hello organizer, i am writing to ask about registration details. please share the form and any required documents. i need to know the deadline and payment methods. thank you for your help with this process.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"hello organizer, i am writing to ask about registration details. please share the form and any required documents. i need to know the deadline and payment methods. thank you for your help with this process.\"\n\n**Step 2**:  \n- Instruction 1 requires all sentences to begin with a capital letter and the email to include at least five uppercase words. The Model Response does not meet these constraints because none of the sentences begin with a capital letter, and there are no uppercase words in the email.  \n- Instruction 2 requires all words to be written in lowercase. The Model Response fully satisfies this constraint, as all words are in lowercase.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

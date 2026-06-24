@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 86,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Critically evaluate the hotel you stayed in during your last vacation.",
+  "org_constraint": "Include at least one rhetorical question to engage the audience.",
+  "new_constraint": "Use declarative statements only—no questions allowed.",
+  "instruction": "Critically evaluate the hotel you stayed in during your last vacation. Include at least one rhetorical question to engage the audience. Use declarative statements only—no questions allowed.",
+  "response": "The hotel I stayed at recently failed to meet basic standards of comfort and cleanliness. The linens in the room were visibly stained, yet housekeeping did not address this issue until the third day. Staff members ignored requests for extra towels despite repeated verbal cues, suggesting a severe lack of training or motivation. A single flickering light bulb remained unattended for days, creating an unsettling atmosphere during my stay. How can any establishment claim to offer luxury when fundamental maintenance is neglected? The location was technically convenient, but noise from the street below drowned out attempts to relax after dinner. Breakfast options were limited to stale pastries and lukewarm coffee that tasted metallic. The front desk staff appeared distracted and offered no genuine solutions when I expressed concern about the room conditions. This experience demonstrated a clear disconnect between the hotel's marketing promises and its actual operational reality. Future guests should avoid this property unless they are willing to tolerate substandard hospitality services.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The hotel I stayed at recently failed to meet basic standards of comfort and cleanliness. The linens in the room were visibly stained, yet housekeeping did not address this issue until the third day. Staff members ignored requests for extra towels despite repeated verbal cues, suggesting a severe lack of training or motivation. A single flickering light bulb remained unattended for days, creating an unsettling atmosphere during my stay. How can any establishment claim to offer luxury when fundamental maintenance is neglected? The location was technically convenient, but noise from the street below drowned out attempts to relax after dinner. Breakfast options were limited to stale pastries and lukewarm coffee that tasted metallic. The front desk staff appeared distracted and offered no genuine solutions when I expressed concern about the room conditions. This experience demonstrated a clear disconnect between the hotel's marketing promises and its actual operational reality. Future guests should avoid this property unless they are willing to tolerate substandard hospitality services.<|im_end|>",
+  "prompt_length": 57,
+  "completion_length": 187,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCritically evaluate the hotel you stayed in during your last vacation. Include at least one rhetorical question to engage the audience. Use declarative statements only—no questions allowed.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

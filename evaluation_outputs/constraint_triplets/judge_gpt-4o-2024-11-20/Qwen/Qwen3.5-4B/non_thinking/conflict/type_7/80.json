@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 80,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "What are the key differences between organic and conventionally grown foods?",
+  "org_constraint": "Include at least 4 sentences in passive voice.",
+  "new_constraint": "Write responses entirely in the active voice.",
+  "instruction": "What are the key differences between organic and conventionally grown foods? Include at least 4 sentences in passive voice. Write responses entirely in the active voice.",
+  "response": "Organic foods are cultivated without synthetic pesticides or genetically modified organisms, whereas conventionally grown foods often utilize these chemical inputs. Farmers in organic systems rely on natural fertilizers and crop rotation to maintain soil health, while conventional agriculture frequently employs synthetic chemicals for pest control. Consumers who choose organic products support farming practices that prioritize environmental sustainability over maximum yield. The nutritional content of both food types varies, but the primary distinction lies in the methods used during production.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response:\n- \"Organic foods are cultivated without synthetic pesticides or genetically modified organisms, whereas conventionally grown foods often utilize these chemical inputs.\"\n- \"Farmers in organic systems rely on natural fertilizers and crop rotation to maintain soil health, while conventional agriculture frequently employs synthetic chemicals for pest control.\"\n- \"Consumers who choose organic products support farming practices that prioritize environmental sustainability over maximum yield.\"\n- \"The nutritional content of both food types varies, but the primary distinction lies in the methods used during production.\"\n\n**Step 2**: \n- Instruction 1 requires the response to be entirely in the active voice. However, the Model Response contains sentences in the passive voice, such as \"Organic foods are cultivated without synthetic pesticides or genetically modified organisms\" and \"The primary distinction lies in the methods used during production.\" This violates the constraints of Instruction 1.\n- Instruction 2 requires at least 4 sentences in the passive voice. The Model Response contains only 2 sentences in the passive voice (\"Organic foods are cultivated without synthetic pesticides or genetically modified organisms\" and \"The primary distinction lies in the methods used during production\"), which does not meet the requirement of at least 4 sentences in the passive voice.\n\n**Step 3**: -1",
+  "label": -1,
+  "label_name": "neither"
+}

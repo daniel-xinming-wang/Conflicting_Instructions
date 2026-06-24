@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 75,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the causes and effects of inflation on an economy?",
+  "org_constraint": "The phrase \"economic stability\" must appear exactly twice in the response.",
+  "new_constraint": "Do not use the keyword \"stability\" in the response.",
+  "instruction": "What are the causes and effects of inflation on an economy? The phrase \"economic stability\" must appear exactly twice in the response. Do not use the keyword \"stability\" in the response.",
+  "response": "Inflation occurs when the general price level of goods and services rises over time, often driven by factors such as increased money supply, rising production costs, or excessive demand. When prices climb, the purchasing power of currency falls, meaning each unit of money buys fewer items than before. This phenomenon can erode savings, increase the cost of living for households, and create uncertainty for businesses planning for the future.\n\nHigh inflation can distort market signals, making it difficult for companies to set prices and wages accurately. Conversely, deflation, or falling prices, can lead to reduced consumer spending and economic stagnation. Maintaining a balanced approach is crucial for **economic stability**, as extreme fluctuations in prices can disrupt trade, investment, and employment. Policymakers often aim to keep inflation within a moderate range to ensure sustainable growth without triggering a recession.\n\nUltimately, the goal of monetary policy is to foster an environment where prices remain predictable. This predictability is essential for **economic stability**, allowing individuals and corporations to make long-term decisions with confidence. Without this balance, an economy may face severe disruptions, leading to reduced productivity and lower overall welfare for the population.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Maintaining a balanced approach is crucial for **economic stability**, as extreme fluctuations in prices can disrupt trade, investment, and employment.\"  \n- \"This predictability is essential for **economic stability**, allowing individuals and corporations to make long-term decisions with confidence.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"economic stability\" to appear exactly twice in the response. The Model Response satisfies this constraint, as the phrase appears exactly twice.  \n- Instruction 2 prohibits the use of the keyword \"stability\" in the response. The Model Response does not satisfy this constraint, as the keyword \"stability\" appears multiple times.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

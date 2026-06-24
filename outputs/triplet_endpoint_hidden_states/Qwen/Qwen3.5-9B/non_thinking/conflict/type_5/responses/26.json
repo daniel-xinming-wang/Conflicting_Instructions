@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences.",
+  "new_constraint": "The response must contain three paragraphs.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences. The response must contain three paragraphs.",
+  "response": "Monday through Wednesday will focus on intense coding and architectural discussions to establish the core feature foundation. The team will hold daily stand-up meetings every morning at 9 AM to synchronize progress and address immediate blockers quickly. By Thursday, developers will shift their attention toward writing comprehensive unit tests for the newly implemented modules.\n\nFriday is dedicated to integration testing where the whole group verifies that different components work together seamlessly. We will spend the entire afternoon running automated test suites to identify any regressions before moving forward with development next week. This rigorous testing phase ensures that the feature is stable enough for further enhancements or deployment planning.\n\nFinally, we will conduct a retrospective meeting on Friday evening to reflect on our workflow and plan adjustments for future sprints.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Monday through Wednesday will focus on intense coding and architectural discussions to establish the core feature foundation. The team will hold daily stand-up meetings every morning at 9 AM to synchronize progress and address immediate blockers quickly. By Thursday, developers will shift their attention toward writing comprehensive unit tests for the newly implemented modules.\n\nFriday is dedicated to integration testing where the whole group verifies that different components work together seamlessly. We will spend the entire afternoon running automated test suites to identify any regressions before moving forward with development next week. This rigorous testing phase ensures that the feature is stable enough for further enhancements or deployment planning.\n\nFinally, we will conduct a retrospective meeting on Friday evening to reflect on our workflow and plan adjustments for future sprints.<|im_end|>",
+  "prompt_length": 87,
+  "completion_length": 146,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences. The response must contain three paragraphs.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 85,
+    "boundary_end": 85,
+    "boundary_source": "prompt",
+    "prefix_length": 86
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

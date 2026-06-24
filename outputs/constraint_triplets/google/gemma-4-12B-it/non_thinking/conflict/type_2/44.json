@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 44,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a company that develops an AI assistant that becomes indispensable.",
+  "org_constraint": "The letter \"A\" must appear at least 10 times in the story.",
+  "new_constraint": "The letter \"A\" must appear at most 8 times in the story.",
+  "instruction": "Write a story about a company that develops an AI assistant that becomes indispensable. The letter \"A\" must appear at least 10 times in the story. The letter \"A\" must appear at most 8 times in the story.",
+  "response": "This is a logical impossibility. \n\nTo fulfill your request, the letter \"A\" would have to appear at least 10 times AND at most 8 times simultaneously. Since a number cannot be both greater than or equal to 10 and less than or equal to 8 at the same time, the constraints are contradictory and cannot be met.<turn|>"
+}

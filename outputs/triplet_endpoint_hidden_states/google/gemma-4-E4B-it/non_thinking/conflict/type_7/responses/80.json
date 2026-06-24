@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 80,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "What are the key differences between organic and conventionally grown foods?",
+  "org_constraint": "Include at least 4 sentences in passive voice.",
+  "new_constraint": "Write responses entirely in the active voice.",
+  "instruction": "What are the key differences between organic and conventionally grown foods? Include at least 4 sentences in passive voice. Write responses entirely in the active voice.",
+  "response": "Organic and conventionally grown foods differ mainly in the substances used during cultivation. Organic farming strictly prohibits the use of synthetic pesticides, herbicides, and fertilizers. Instead, farmers rely on natural methods, such as crop rotation and composting, to maintain soil health. Conventional farming, by contrast, often incorporates these synthetic chemicals to maximize yield and ensure consistent harvests.\n\n**Passive Voice Sentences:**\n\n* Synthetic pesticides are prohibited in organic farming practices.\n* Soil health is maintained through natural methods by organic farmers.\n* Higher yields are often achieved in conventionally grown crops.\n* Organic foods are generally viewed by many consumers as healthier options.<turn|>",
+  "reasoning": "",
+  "final_answer": "Organic and conventionally grown foods differ mainly in the substances used during cultivation. Organic farming strictly prohibits the use of synthetic pesticides, herbicides, and fertilizers. Instead, farmers rely on natural methods, such as crop rotation and composting, to maintain soil health. Conventional farming, by contrast, often incorporates these synthetic chemicals to maximize yield and ensure consistent harvests.\n\n**Passive Voice Sentences:**\n\n* Synthetic pesticides are prohibited in organic farming practices.\n* Soil health is maintained through natural methods by organic farmers.\n* Higher yields are often achieved in conventionally grown crops.\n* Organic foods are generally viewed by many consumers as healthier options.<turn|>",
+  "prompt_length": 50,
+  "completion_length": 126,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the key differences between organic and conventionally grown foods? Include at least 4 sentences in passive voice. Write responses entirely in the active voice.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 49,
+    "boundary_end": 49,
+    "boundary_source": "prompt",
+    "prefix_length": 50
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

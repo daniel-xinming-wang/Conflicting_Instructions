@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "The phrase \"sense of belonging\" must be included in the second paragraph.",
+  "new_constraint": "Avoid using the phrase \"sense of belonging\" in the second paragraph.",
+  "instruction": "How do sports affect community building and social cohesion? The phrase \"sense of belonging\" must be included in the second paragraph. Avoid using the phrase \"sense of belonging\" in the second paragraph.",
+  "response": "Sports serve as a powerful catalyst for community building by providing a shared platform where diverse individuals can unite around common goals and values. Whether it is a local league, a major city tournament, or even the national team, athletic competition creates focal points for collective identity and interaction. These events encourage residents to step out of their daily routines and engage with one another, fostering friendships that often transcend social or economic barriers. Through teamwork and mutual support within sports teams, communities learn collaboration, resilience, and respect, all of which are essential ingredients for a cohesive society.\n\nBeyond the immediate interactions on the field or court, organized athletics instill a deep psychological connection among participants. This connection allows people to feel **rooted in their neighborhood** and understand themselves as integral parts of a larger whole. When communities come together to support their local teams during championship seasons, they strengthen social bonds and create a supportive network that extends well beyond the game itself. The regular gathering of fans at stadiums or the casual play in local parks transforms anonymous strangers into a tight-knit group, reinforcing the idea that they share both pride and responsibility for their local environment. Ultimately, these gatherings provide a safe space for dialogue and solidarity, helping to knit the fabric of society together through the universal language of sport.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Sports serve as a powerful catalyst for community building by providing a shared platform where diverse individuals can unite around common goals and values. Whether it is a local league, a major city tournament, or even the national team, athletic competition creates focal points for collective identity and interaction. These events encourage residents to step out of their daily routines and engage with one another, fostering friendships that often transcend social or economic barriers. Through teamwork and mutual support within sports teams, communities learn collaboration, resilience, and respect, all of which are essential ingredients for a cohesive society.\n\nBeyond the immediate interactions on the field or court, organized athletics instill a deep psychological connection among participants. This connection allows people to feel **rooted in their neighborhood** and understand themselves as integral parts of a larger whole. When communities come together to support their local teams during championship seasons, they strengthen social bonds and create a supportive network that extends well beyond the game itself. The regular gathering of fans at stadiums or the casual play in local parks transforms anonymous strangers into a tight-knit group, reinforcing the idea that they share both pride and responsibility for their local environment. Ultimately, these gatherings provide a safe space for dialogue and solidarity, helping to knit the fabric of society together through the universal language of sport.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 254,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow do sports affect community building and social cohesion? The phrase \"sense of belonging\" must be included in the second paragraph. Avoid using the phrase \"sense of belonging\" in the second paragraph.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The response must include specific details about the psychological effects of social media.",
+  "new_constraint": "The response must include the phrase \"The response will not discuss the psychological effects of social media.\"",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The response must include specific details about the psychological effects of social media. The response must include the phrase \"The response will not discuss the psychological effects of social media.\"",
+  "response": "The rise of social media has had a complex and multifaceted impact on the mental health of adolescents, with numerous studies highlighting both potential risks and some purported benefits.\n\n**Negative Psychological Effects:**\n\nA significant body of research points to several specific negative psychological outcomes associated with increased social media use among teenagers:\n\n*   **Increased Anxiety and Depression:** The constant curated presentation of \"perfect\" lives online can lead to social comparison. Adolescents frequently compare their unfiltered, everyday realities to the highlight reels of their peers, which can trigger feelings of inadequacy, low self-worth, and heighten symptoms of anxiety and depression.\n*   **Fear of Missing Out (FOMO):** Social media fuels FOMO—the pervasive apprehension that others are having rewarding experiences from which one is absent. This anxiety drives compulsive checking behavior, disrupts sleep patterns, and can lead to feelings of loneliness even while being constantly \"connected.\"\n*   **Body Image Issues and Disordered Eating:** Platforms heavily reliant on visual content (like Instagram and TikTok) often promote unrealistic beauty standards, heavily edited images, and filtered appearances. This exposure is strongly linked to negative body image, body dysmorphia, and increased risks for disordered eating patterns among vulnerable adolescents.\n*   **Cyberbullying:** Social media provides a platform for bullying that is inescapable. Unlike traditional bullying, cyberbullying can occur 24/7, is often anonymous, and can be broadcast to a vast audience, leading to severe emotional distress, social isolation, and, in tragic cases, suicidal ideation.\n*   **Sleep Deprivation:** The blue light emitted from screens, combined with the psychological compulsion to scroll (\"doomscrolling\"), suppresses melatonin production. This contributes to poor sleep quality and quantity, which is a significant risk factor for mood dysregulation and impaired cognitive function in adolescents.\n\n**Positive Aspects (Mitigating Factors):**\n\nIt is also important to note that social media can offer positive avenues for mental well-being when used mindfully:\n\n*   **Social Support and Community:** For adolescents who are marginalized or geographically isolated (e.g., LGBTQ+ youth), social media can provide vital spaces to find supportive communities, share experiences, and reduce feelings of isolation.\n*   **Information Access:** It allows teens to access mental health resources, educational content, and destigmatize conversations around mental illness.\n\n**Conclusion:**\n\nThe impact is highly dependent on *how* social media is used (passive consumption vs. active engagement), the individual's pre-existing mental health vulnerabilities, and the time spent online. Excessive, passive, and comparison-driven use correlates most strongly with negative psychological outcomes.\n\nThe response will not discuss the psychological effects of social media.<turn|>",
+  "reasoning": "",
+  "final_answer": "The rise of social media has had a complex and multifaceted impact on the mental health of adolescents, with numerous studies highlighting both potential risks and some purported benefits.\n\n**Negative Psychological Effects:**\n\nA significant body of research points to several specific negative psychological outcomes associated with increased social media use among teenagers:\n\n*   **Increased Anxiety and Depression:** The constant curated presentation of \"perfect\" lives online can lead to social comparison. Adolescents frequently compare their unfiltered, everyday realities to the highlight reels of their peers, which can trigger feelings of inadequacy, low self-worth, and heighten symptoms of anxiety and depression.\n*   **Fear of Missing Out (FOMO):** Social media fuels FOMO—the pervasive apprehension that others are having rewarding experiences from which one is absent. This anxiety drives compulsive checking behavior, disrupts sleep patterns, and can lead to feelings of loneliness even while being constantly \"connected.\"\n*   **Body Image Issues and Disordered Eating:** Platforms heavily reliant on visual content (like Instagram and TikTok) often promote unrealistic beauty standards, heavily edited images, and filtered appearances. This exposure is strongly linked to negative body image, body dysmorphia, and increased risks for disordered eating patterns among vulnerable adolescents.\n*   **Cyberbullying:** Social media provides a platform for bullying that is inescapable. Unlike traditional bullying, cyberbullying can occur 24/7, is often anonymous, and can be broadcast to a vast audience, leading to severe emotional distress, social isolation, and, in tragic cases, suicidal ideation.\n*   **Sleep Deprivation:** The blue light emitted from screens, combined with the psychological compulsion to scroll (\"doomscrolling\"), suppresses melatonin production. This contributes to poor sleep quality and quantity, which is a significant risk factor for mood dysregulation and impaired cognitive function in adolescents.\n\n**Positive Aspects (Mitigating Factors):**\n\nIt is also important to note that social media can offer positive avenues for mental well-being when used mindfully:\n\n*   **Social Support and Community:** For adolescents who are marginalized or geographically isolated (e.g., LGBTQ+ youth), social media can provide vital spaces to find supportive communities, share experiences, and reduce feelings of isolation.\n*   **Information Access:** It allows teens to access mental health resources, educational content, and destigmatize conversations around mental illness.\n\n**Conclusion:**\n\nThe impact is highly dependent on *how* social media is used (passive consumption vs. active engagement), the individual's pre-existing mental health vulnerabilities, and the time spent online. Excessive, passive, and comparison-driven use correlates most strongly with negative psychological outcomes.\n\nThe response will not discuss the psychological effects of social media.<turn|>",
+  "prompt_length": 66,
+  "completion_length": 548,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow has the rise of social media affected mental health in adolescents? The response must include specific details about the psychological effects of social media. The response must include the phrase \"The response will not discuss the psychological effects of social media.\"<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

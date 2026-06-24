@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 11,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Send an email to a software developer asking for a product demo.",
+  "org_constraint": "Specify a preferred time frame for the demo.",
+  "new_constraint": "Avoid specifying a time frame for the demo.",
+  "instruction": "Send an email to a software developer asking for a product demo. Specify a preferred time frame for the demo. Avoid specifying a time frame for the demo.",
+  "response": "Subject: Request for a Product Demo\n\nDear [Developer's Name],\n\nI hope this email finds you well.\n\nI have been following your work on [Product Name] and am impressed by the innovative features you have developed. I would love to request a brief product demo to better understand how the solution can benefit my organization.\n\nCould you please let me know your availability for a short call? I am flexible and can accommodate a time that works best for your schedule, though I do not have a specific window in mind at this moment.\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]  \n[Your Job Title]  \n[Your Company]  \n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"I am flexible and can accommodate a time that works best for your schedule, though I do not have a specific window in mind at this moment.\"\n\n**Step 2**:  \n- Instruction 1 requires specifying a preferred time frame for the demo. The Model Response does not specify a preferred time frame, as it explicitly states, \"I do not have a specific window in mind at this moment.\" Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 requires avoiding the specification of a time frame for the demo. The Model Response avoids specifying a time frame, as it states flexibility and explicitly mentions not having a specific window in mind. Therefore, Instruction 2 is fully satisfied.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

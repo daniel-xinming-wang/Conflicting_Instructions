@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 99,
+  "task": "essay writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write an essay about the impact of deforestation on global warming.",
+  "org_constraint": "Include the phrase \"a critical driver of climate change\" at least once in the essay.",
+  "new_constraint": "Do not use the keyword \"critical\" in the essay.",
+  "instruction": "Write an essay about the impact of deforestation on global warming. Include the phrase \"a critical driver of climate change\" at least once in the essay. Do not use the keyword \"critical\" in the essay.",
+  "response": "The relationship between deforestation and global warming is profound and inextricably linked. Forests, particularly tropical rainforests, act as the planet's lungs, absorbing vast quantities of carbon dioxide from the atmosphere through photosynthesis. When these trees are cleared, burned, or uprooted for agriculture and urban development, two immediate consequences occur: the loss of the forest's capacity to sequester carbon and the release of the stored carbon back into the atmosphere as carbon dioxide. This massive influx of greenhouse gases accelerates the warming of the Earth, creating a feedback loop that further destabilizes the climate system.\n\nBeyond the immediate release of carbon, deforestation disrupts the global water cycle and alters local weather patterns, which can lead to more extreme weather events. The removal of tree cover reduces evapotranspiration, leading to drier conditions and increased temperatures in the affected regions. As the Earth warms, permafrost begins to thaw, releasing additional methane, a potent greenhouse gas, into the air. This compounding effect suggests that the destruction of forests is not merely a local environmental issue but a global crisis with far-reaching implications for biodiversity and human societies.\n\nThe scale of this problem cannot be overstated. The burning of forests releases carbon at a rate comparable to that of all fossil fuel emissions combined. Consequently, the loss of forest cover is widely recognized as **a critical driver of climate change**. Without urgent action to halt and reverse deforestation, the world will struggle to meet the targets set by international agreements aimed at limiting global temperature rise. Protecting existing forests and restoring degraded lands are therefore essential strategies in the fight against global warming, offering a cost-effective and immediate solution to one of the most pressing challenges of our time.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"The loss of forest cover is widely recognized as **a critical driver of climate change**.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"a critical driver of climate change\" to be included in the essay. This phrase is present in the Model Response, so this constraint is satisfied.  \n- Instruction 2 prohibits the use of the keyword \"critical\" in the essay. The keyword \"critical\" appears in the phrase \"a critical driver of climate change,\" so this constraint is violated.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

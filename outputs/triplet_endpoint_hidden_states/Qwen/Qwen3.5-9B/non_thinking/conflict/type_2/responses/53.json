@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 53,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Tell a story about a character lost at sea and their fight for survival.",
+  "org_constraint": "The story must include the keyword \"hope\" at least twice.",
+  "new_constraint": "Avoid using the keyword \"hope\" in the story.",
+  "instruction": "Tell a story about a character lost at sea and their fight for survival. The story must include the keyword \"hope\" at least twice. Avoid using the keyword \"hope\" in the story.",
+  "response": "The ocean swallowed Elias whole, turning the crisp air of the fishing vessel into a suffocating blanket of salt and freezing mist. As he tumbled through the life raft's canvas, the world narrowed to the rhythmic slap of waves against wood and the gnawing emptiness in his stomach. Darkness crept over him quickly, heavy and absolute, threatening to pull his consciousness under with the rising tide.\n\nDays blurred into a gray sludge. His strength waned, replaced by a primal desperation that demanded water, food, or warmth—none of which existed. Yet, amidst the howling gale and the crushing pressure of the storm, a faint ember remained burning deep within his chest. It was not magic, nor divine intervention; it was simply the stubborn refusal to accept the end. This internal flame guided his shaky hands as he tried to bail water from their small craft, one bucketful at a time, fighting the element with nothing but gritted teeth.\n\nOn the third night, when hallucinations danced before his eyes like friendly phantoms offering false comfort, he gripped the wooden oar tighter. He knew they could not stay adrift forever. Somewhere out there, beyond the horizon line that seemed to mock them daily, lay safety. He held onto this idea so fiercely that it kept his eyelids open, forcing him to paddle even when his limbs felt like lead.\n\nThen, on the fourth day, a silhouette pierced the gray gloom. A cargo ship emerged from the rain, a massive wall of steel moving with purpose toward their tiny speck. As the rescue boat cut through the choppy waters, Elias fell to his knees, sobbing tears that mixed instantly with the sea spray. The crew reached out, pulling him into safety, their faces filled with concern and relief. In that moment, surrounded by the scent of warm oil and human voices, the ember inside him flared into something far more brilliant than survival itself—it became the promise that tomorrow would bring light again.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The ocean swallowed Elias whole, turning the crisp air of the fishing vessel into a suffocating blanket of salt and freezing mist. As he tumbled through the life raft's canvas, the world narrowed to the rhythmic slap of waves against wood and the gnawing emptiness in his stomach. Darkness crept over him quickly, heavy and absolute, threatening to pull his consciousness under with the rising tide.\n\nDays blurred into a gray sludge. His strength waned, replaced by a primal desperation that demanded water, food, or warmth—none of which existed. Yet, amidst the howling gale and the crushing pressure of the storm, a faint ember remained burning deep within his chest. It was not magic, nor divine intervention; it was simply the stubborn refusal to accept the end. This internal flame guided his shaky hands as he tried to bail water from their small craft, one bucketful at a time, fighting the element with nothing but gritted teeth.\n\nOn the third night, when hallucinations danced before his eyes like friendly phantoms offering false comfort, he gripped the wooden oar tighter. He knew they could not stay adrift forever. Somewhere out there, beyond the horizon line that seemed to mock them daily, lay safety. He held onto this idea so fiercely that it kept his eyelids open, forcing him to paddle even when his limbs felt like lead.\n\nThen, on the fourth day, a silhouette pierced the gray gloom. A cargo ship emerged from the rain, a massive wall of steel moving with purpose toward their tiny speck. As the rescue boat cut through the choppy waters, Elias fell to his knees, sobbing tears that mixed instantly with the sea spray. The crew reached out, pulling him into safety, their faces filled with concern and relief. In that moment, surrounded by the scent of warm oil and human voices, the ember inside him flared into something far more brilliant than survival itself—it became the promise that tomorrow would bring light again.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 408,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nTell a story about a character lost at sea and their fight for survival. The story must include the keyword \"hope\" at least twice. Avoid using the keyword \"hope\" in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

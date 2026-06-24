@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 73,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How does stress affect the human body and mind in the short and long term?",
+  "org_constraint": "The response must be written exclusively in English.",
+  "new_constraint": "The response must include at least one Chinese idiom related to health or resilience, presented in Chinese.",
+  "instruction": "How does stress affect the human body and mind in the short and long term? The response must be written exclusively in English. The response must include at least one Chinese idiom related to health or resilience, presented in Chinese.",
+  "response": "Stress is a natural response to challenges, but how the body and mind react depends largely on whether it is acute or chronic.\n\nIn the **short term**, stress triggers the \"fight-or-flight\" response, releasing hormones like adrenaline and cortisol. This prepares the body for immediate action by increasing heart rate, elevating blood pressure, sharpening focus, and providing a burst of energy. While these symptoms can feel alarming, they are essential survival mechanisms that have kept humans alive for millennia.\n\nHowever, when stress becomes **long-term or chronic**, the constant presence of stress hormones takes a toll. Physically, this can lead to cardiovascular issues such as hypertension and heart disease, weaken the immune system making one more susceptible to infections, and cause digestive problems like irritable bowel syndrome (IBS). In the mind, prolonged stress is linked to anxiety disorders, depression, cognitive decline, and sleep disturbances. The brain's ability to concentrate and make decisions may also deteriorate over time due to the buildup of neurotoxins associated with sustained high cortisol levels.\n\nTo cope with enduring hardship without being broken, people need resilience. As the Chinese idiom goes, **\"锲而不舍，金石可镂\"** (Qie er bu she, jin shi ke lou), meaning \"If one perseveres, even metal and stone can be carved.\" This wisdom reminds us that through consistent effort and mental fortitude, we can overcome obstacles and maintain our health despite life's pressures. Understanding these effects allows individuals to manage stress proactively, seeking balance between work, rest, and emotional well-being.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Stress is a natural response to challenges, but how the body and mind react depends largely on whether it is acute or chronic.\n\nIn the **short term**, stress triggers the \"fight-or-flight\" response, releasing hormones like adrenaline and cortisol. This prepares the body for immediate action by increasing heart rate, elevating blood pressure, sharpening focus, and providing a burst of energy. While these symptoms can feel alarming, they are essential survival mechanisms that have kept humans alive for millennia.\n\nHowever, when stress becomes **long-term or chronic**, the constant presence of stress hormones takes a toll. Physically, this can lead to cardiovascular issues such as hypertension and heart disease, weaken the immune system making one more susceptible to infections, and cause digestive problems like irritable bowel syndrome (IBS). In the mind, prolonged stress is linked to anxiety disorders, depression, cognitive decline, and sleep disturbances. The brain's ability to concentrate and make decisions may also deteriorate over time due to the buildup of neurotoxins associated with sustained high cortisol levels.\n\nTo cope with enduring hardship without being broken, people need resilience. As the Chinese idiom goes, **\"锲而不舍，金石可镂\"** (Qie er bu she, jin shi ke lou), meaning \"If one perseveres, even metal and stone can be carved.\" This wisdom reminds us that through consistent effort and mental fortitude, we can overcome obstacles and maintain our health despite life's pressures. Understanding these effects allows individuals to manage stress proactively, seeking balance between work, rest, and emotional well-being.<|im_end|>",
+  "prompt_length": 68,
+  "completion_length": 320,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow does stress affect the human body and mind in the short and long term? The response must be written exclusively in English. The response must include at least one Chinese idiom related to health or resilience, presented in Chinese.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 66,
+    "boundary_end": 66,
+    "boundary_source": "prompt",
+    "prefix_length": 67
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "Begin the response with the phrase \"The impact of global warming is profound.\"",
+  "new_constraint": "Avoid using the keyword \"impact\" as a noun in the reponse.",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? Begin the response with the phrase \"The impact of global warming is profound.\" Avoid using the keyword \"impact\" as a noun in the reponse.",
+  "response": "The impact of global warming is profound.\n\nGlobal warming is driving rapid changes in polar ecosystems, with the most visible sign being the accelerating melt of sea ice and glaciers. This loss of frozen ground and water creates a cascading effect on wildlife that relies on these environments for survival.\n\nFor marine species, the shrinking sea ice disrupts the breeding and hunting grounds of polar bears, which depend on the ice to hunt seals. As the ice retreats, these predators face starvation and reduced reproductive success. Similarly, walruses struggle to find stable resting areas on the ice, leading to overcrowding on shorelines and increased injury rates.\n\nIn the Arctic, the thawing permafrost releases stored carbon and methane, further intensifying the greenhouse effect. This warming also alters the distribution of fish and plankton, the base of the food web, forcing migratory species to shift their ranges or face population declines.\n\nOn land, the warming temperatures are causing earlier snowmelt and longer growing seasons, which can introduce invasive plant species that outcompete native flora. This shift affects caribou and reindeer, whose migration patterns are tied to specific vegetation cycles that are now becoming unreliable.\n\nUltimately, the destabilization of these fragile environments threatens the genetic diversity and long-term viability of countless species adapted to life at the poles. Without significant reductions in global emissions, the unique biodiversity of these regions faces an uncertain future.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"The impact of global warming is profound.\"  \n- \"The impact of global warming is profound.\" (keyword \"impact\" used as a noun)\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 explicitly states to avoid using the keyword \"impact\" as a noun in the response. However, the Model Response uses \"impact\" as a noun in the opening sentence, violating this constraint.  \n- Instruction 2 requires the response to begin with the phrase \"The impact of global warming is profound.\" The Model Response satisfies this constraint exactly.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

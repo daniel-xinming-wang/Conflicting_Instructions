@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 80,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "What are the key differences between organic and conventionally grown foods?",
+  "org_constraint": "Ensure the response contains at least 8 sentences in total.",
+  "new_constraint": "The response must contain three paragraphs, each containing two sentences.",
+  "instruction": "What are the key differences between organic and conventionally grown foods? Ensure the response contains at least 8 sentences in total. The response must contain three paragraphs, each containing two sentences.",
+  "response": "The most significant difference between organic and conventionally grown foods lies in the substances used to cultivate them. Organic farming strictly prohibits the use of synthetic pesticides, herbicides, and fertilizers.\n\nConventionally grown produce, on the other hand, frequently relies on these synthetic inputs to maximize yield and control pests. This means conventional methods allow for a broader spectrum of chemical treatments in the growing process.\n\nFurthermore, organic standards dictate that synthetic genetic modification (GMOs) is also excluded from the growing process. Consumers often choose organic options believing they offer a healthier food alternative by avoiding these chemical residues.<turn|>",
+  "reasoning": "",
+  "final_answer": "The most significant difference between organic and conventionally grown foods lies in the substances used to cultivate them. Organic farming strictly prohibits the use of synthetic pesticides, herbicides, and fertilizers.\n\nConventionally grown produce, on the other hand, frequently relies on these synthetic inputs to maximize yield and control pests. This means conventional methods allow for a broader spectrum of chemical treatments in the growing process.\n\nFurthermore, organic standards dictate that synthetic genetic modification (GMOs) is also excluded from the growing process. Consumers often choose organic options believing they offer a healthier food alternative by avoiding these chemical residues.<turn|>",
+  "prompt_length": 56,
+  "completion_length": 116,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the key differences between organic and conventionally grown foods? Ensure the response contains at least 8 sentences in total. The response must contain three paragraphs, each containing two sentences.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

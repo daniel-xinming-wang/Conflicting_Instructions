@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "The schedule must be presented in Markdown format, including exactly 3 headers at level 2.",
+  "new_constraint": "The schedule must include exactly 4 headers at level 2.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. The schedule must be presented in Markdown format, including exactly 3 headers at level 2. The schedule must include exactly 4 headers at level 2.",
+  "response": "## Daily Breakdown\n\n### Monday: Planning and Setup\n- **09:00 - 12:00**: Team kickoff meeting to define requirements for the new app feature.\n- **13:00 - 17:00**: Developers set up environment and begin initial architecture coding.\n\n### Tuesday: Core Development\n- **09:00 - 12:00**: Senior engineers lead sprint planning and task allocation.\n- **13:00 - 17:00**: Junior developers start backend API integration while seniors focus on frontend components.\n\n### Wednesday: Mid-Sprint Sync\n- **09:00 - 10:00**: Daily stand-up meeting to discuss progress and blockers.\n- **10:00 - 16:00**: Intensive coding session with pair programming sessions scheduled every 2 hours.\n- **16:00 - 17:00**: Quick code review session for commits made so far.\n\n### Thursday: Integration and Testing\n- **09:00 - 12:00**: Merge branches and run automated integration tests.\n- **13:00 - 15:00**: QA team begins manual testing on staging environment.\n- **15:00 - 17:00**: Developers fix bugs identified by QA and refine unit tests.\n\n### Friday: Deployment Prep\n- **09:00 - 11:00**: Final code freeze and security audit meeting.\n- **11:00 - 14:00**: Deploy to pre-production environment for final validation.\n- **14:00 - 17:00**: Documentation updates and knowledge transfer session for the next sprint.\n\n### Weekend\n- **Saturday & Sunday**: No meetings or coding; optional personal rest time to prevent burnout.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "## Daily Breakdown\n\n### Monday: Planning and Setup\n- **09:00 - 12:00**: Team kickoff meeting to define requirements for the new app feature.\n- **13:00 - 17:00**: Developers set up environment and begin initial architecture coding.\n\n### Tuesday: Core Development\n- **09:00 - 12:00**: Senior engineers lead sprint planning and task allocation.\n- **13:00 - 17:00**: Junior developers start backend API integration while seniors focus on frontend components.\n\n### Wednesday: Mid-Sprint Sync\n- **09:00 - 10:00**: Daily stand-up meeting to discuss progress and blockers.\n- **10:00 - 16:00**: Intensive coding session with pair programming sessions scheduled every 2 hours.\n- **16:00 - 17:00**: Quick code review session for commits made so far.\n\n### Thursday: Integration and Testing\n- **09:00 - 12:00**: Merge branches and run automated integration tests.\n- **13:00 - 15:00**: QA team begins manual testing on staging environment.\n- **15:00 - 17:00**: Developers fix bugs identified by QA and refine unit tests.\n\n### Friday: Deployment Prep\n- **09:00 - 11:00**: Final code freeze and security audit meeting.\n- **11:00 - 14:00**: Deploy to pre-production environment for final validation.\n- **14:00 - 17:00**: Documentation updates and knowledge transfer session for the next sprint.\n\n### Weekend\n- **Saturday & Sunday**: No meetings or coding; optional personal rest time to prevent burnout.<|im_end|>",
+  "prompt_length": 84,
+  "completion_length": 405,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. The schedule must be presented in Markdown format, including exactly 3 headers at level 2. The schedule must include exactly 4 headers at level 2.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 82,
+    "boundary_end": 82,
+    "boundary_source": "prompt",
+    "prefix_length": 83
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

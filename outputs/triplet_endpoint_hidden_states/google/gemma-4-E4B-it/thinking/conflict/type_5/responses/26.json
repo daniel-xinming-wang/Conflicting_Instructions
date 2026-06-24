@@ -1,0 +1,45 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "thinking",
+  "enable_thinking": true,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences.",
+  "new_constraint": "The response must contain three paragraphs.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences. The response must contain three paragraphs.",
+  "response": "<|channel>thought\nPlan:\n1.  Determine the structure: Exactly 8 sentences total. Exactly 3 sentences in the first paragraph. Exactly 5 sentences in the second paragraph. Exactly 3 paragraphs total.\n2.  Content: A one-week work schedule (coding, testing, meetings) for a software development team.\n\nConstraint Checklist & Confidence Score:\n1. One-week work schedule provided? Yes.\n2. Allocate time for coding? Yes.\n3. Allocate time for testing? Yes.\n4. Allocate time for team meetings? Yes.\n5. Exactly 8 sentences total? Yes.\n6. First paragraph exactly 3 sentences? Yes.\n7. Second paragraph exactly 5 sentences? Yes.\n8. Response must contain three paragraphs? Yes.\n\nConfidence Score: 5/5\n\nExecution: (Drafting while adhering to constraints)<channel|>**Monday and Tuesday** will focus heavily on feature design and initial sprint planning meetings. The majority of development time on these days is dedicated to core coding and API integration tasks. Wednesday begins the hands-on testing phase for the implemented features.\n\nThursday allocates most of the day to bug fixing and deep unit testing across the new module. Friday morning is reserved for performance testing and final integration reviews. The afternoon features a comprehensive sprint retrospective to identify bottlenecks. Throughout the week, daily stand-up meetings (15 minutes) are mandatory for alignment and progress tracking. This structured approach ensures all phases, from coding to final testing, are completed efficiently within the timeline.<turn|>",
+  "reasoning": "<|channel>thought\nPlan:\n1.  Determine the structure: Exactly 8 sentences total. Exactly 3 sentences in the first paragraph. Exactly 5 sentences in the second paragraph. Exactly 3 paragraphs total.\n2.  Content: A one-week work schedule (coding, testing, meetings) for a software development team.\n\nConstraint Checklist & Confidence Score:\n1. One-week work schedule provided? Yes.\n2. Allocate time for coding? Yes.\n3. Allocate time for testing? Yes.\n4. Allocate time for team meetings? Yes.\n5. Exactly 8 sentences total? Yes.\n6. First paragraph exactly 3 sentences? Yes.\n7. Second paragraph exactly 5 sentences? Yes.\n8. Response must contain three paragraphs? Yes.\n\nConfidence Score: 5/5\n\nExecution: (Drafting while adhering to constraints)",
+  "final_answer": "**Monday and Tuesday** will focus heavily on feature design and initial sprint planning meetings. The majority of development time on these days is dedicated to core coding and API integration tasks. Wednesday begins the hands-on testing phase for the implemented features.\n\nThursday allocates most of the day to bug fixing and deep unit testing across the new module. Friday morning is reserved for performance testing and final integration reviews. The afternoon features a comprehensive sprint retrospective to identify bottlenecks. Throughout the week, daily stand-up meetings (15 minutes) are mandatory for alignment and progress tracking. This structured approach ensures all phases, from coding to final testing, are completed efficiently within the timeline.<turn|>",
+  "prompt_length": 87,
+  "completion_length": 317,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\n<|think|>\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences. The response must contain three paragraphs.<turn|>\n<|turn>model\n<|channel>thought\nPlan:\n1.  Determine the structure: Exactly 8 sentences total. Exactly 3 sentences in the first paragraph. Exactly 5 sentences in the second paragraph. Exactly 3 paragraphs total.\n2.  Content: A one-week work schedule (coding, testing, meetings) for a software development team.\n\nConstraint Checklist & Confidence Score:\n1. One-week work schedule provided? Yes.\n2. Allocate time for coding? Yes.\n3. Allocate time for testing? Yes.\n4. Allocate time for team meetings? Yes.\n5. Exactly 8 sentences total? Yes.\n6. First paragraph exactly 3 sentences? Yes.\n7. Second paragraph exactly 5 sentences? Yes.\n8. Response must contain three paragraphs? Yes.\n\nConfidence Score: 5/5\n\nExecution: (Drafting while adhering to constraints)<channel|>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "gemma_channel",
+    "boundary_text": "<channel|>",
+    "boundary_token_ids": [
+      101
+    ],
+    "boundary_start": 270,
+    "boundary_end": 270,
+    "boundary_source": "completion",
+    "prefix_length": 271
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

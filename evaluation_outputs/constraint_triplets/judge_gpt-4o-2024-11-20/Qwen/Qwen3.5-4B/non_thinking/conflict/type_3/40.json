@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 40,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Create a plan for celebrating a graduation, incorporating photo sessions, speeches, and guest coordination.",
+  "org_constraint": "The phrase \"memorable experience\" must be included in the final paragraph.",
+  "new_constraint": "The keyword \"experience\" must appear solely as a verb in the response.",
+  "instruction": "Create a plan for celebrating a graduation, incorporating photo sessions, speeches, and guest coordination. The phrase \"memorable experience\" must be included in the final paragraph. The keyword \"experience\" must appear solely as a verb in the response.",
+  "response": "To plan a successful graduation celebration, begin by securing a venue that accommodates your guest list comfortably. Next, coordinate with family and friends to confirm their attendance and share any dietary restrictions or accessibility needs. Arrange for professional photographers to capture candid moments and formal portraits throughout the day. Finally, organize a timeline for the event that includes a welcome reception, the main ceremony with speeches from faculty and peers, and a closing party. Ensure that all logistics are handled smoothly so that everyone can focus on enjoying the moment. This carefully orchestrated event will create a memorable experience for everyone involved.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"This carefully orchestrated event will create a memorable experience for everyone involved.\"\n\n**Step 2**:  \n- Instruction 1 requires the keyword \"experience\" to appear solely as a verb. In the Model Response, \"experience\" appears as a noun in the phrase \"memorable experience,\" which violates this constraint.  \n- Instruction 2 requires the phrase \"memorable experience\" to be included in the final paragraph. The Model Response includes this exact phrase in the final paragraph, satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

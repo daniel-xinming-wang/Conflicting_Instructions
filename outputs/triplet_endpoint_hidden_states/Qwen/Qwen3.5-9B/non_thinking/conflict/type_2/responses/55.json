@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 55,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a solo trek across an unforgiving desert.",
+  "org_constraint": "The story must not include the keyword: \"rescue.\"",
+  "new_constraint": "The story must include the keyword \"rescue\" exactly once.",
+  "instruction": "Write a story about a solo trek across an unforgiving desert. The story must not include the keyword: \"rescue.\" The story must include the keyword \"rescue\" exactly once.",
+  "response": "The sun hung over the vast, undulating dunes like a molten eye, watching with judgment every step Elias took. The heat was not merely a temperature; it was a physical weight, pressing against his chest and turning the air into a shimmering haze that distorted the horizon. For three days, he had walked alone through this unforgiving sea of sand, guided only by a fading thirst and a compass that felt increasingly heavy in his hand.\n\nWater bottles were empty. His canteen, once his lifeline, now rattled uselessly as debris in his pack. By day four, hallucinations began to blur the edges of reality. He saw mirages of cool springs where there was only dry rock and shifting grit. He whispered prayers to gods who seemed deaf to the scorching wind. Every muscle in his body screamed for him to stop, to lie down and let the darkness take him before the dehydration completed its work. But somewhere deep within him, a stubborn spark refused to extinguish. It wasn't fear that kept him moving; it was a quiet, defiant hope that perhaps, just perhaps, he would reach the ridge of cliffs where the road to civilization began.\n\nAs twilight finally broke the spell of the white-hot day, casting long, shadowed fingers across the desert floor, a sound echoed from the distance—not the wind, but the low rumble of an engine. Elias stumbled forward, his vision clearing just enough to see headlights cutting through the dust. A vehicle, battered and slow, approached slowly. Two figures emerged, waving frantically.\n\nHe collapsed to his knees, tears mixing with the sweat on his face, knowing that salvation was close. As they reached him, helping him onto their truck, he looked back at the endless expanse of dunes behind him, then turned to the driver who offered a kind smile and a glass of water.\n\n\"There you go,\" the stranger said gently, \"we came out specifically to **rescue** anyone stranded in these parts.\"\n\nBut as Elias sipped the cold liquid and realized he was truly alive, the word felt strange on his tongue. He hadn't needed saving in the way they expected. He had saved himself by refusing to surrender until the very last second.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The sun hung over the vast, undulating dunes like a molten eye, watching with judgment every step Elias took. The heat was not merely a temperature; it was a physical weight, pressing against his chest and turning the air into a shimmering haze that distorted the horizon. For three days, he had walked alone through this unforgiving sea of sand, guided only by a fading thirst and a compass that felt increasingly heavy in his hand.\n\nWater bottles were empty. His canteen, once his lifeline, now rattled uselessly as debris in his pack. By day four, hallucinations began to blur the edges of reality. He saw mirages of cool springs where there was only dry rock and shifting grit. He whispered prayers to gods who seemed deaf to the scorching wind. Every muscle in his body screamed for him to stop, to lie down and let the darkness take him before the dehydration completed its work. But somewhere deep within him, a stubborn spark refused to extinguish. It wasn't fear that kept him moving; it was a quiet, defiant hope that perhaps, just perhaps, he would reach the ridge of cliffs where the road to civilization began.\n\nAs twilight finally broke the spell of the white-hot day, casting long, shadowed fingers across the desert floor, a sound echoed from the distance—not the wind, but the low rumble of an engine. Elias stumbled forward, his vision clearing just enough to see headlights cutting through the dust. A vehicle, battered and slow, approached slowly. Two figures emerged, waving frantically.\n\nHe collapsed to his knees, tears mixing with the sweat on his face, knowing that salvation was close. As they reached him, helping him onto their truck, he looked back at the endless expanse of dunes behind him, then turned to the driver who offered a kind smile and a glass of water.\n\n\"There you go,\" the stranger said gently, \"we came out specifically to **rescue** anyone stranded in these parts.\"\n\nBut as Elias sipped the cold liquid and realized he was truly alive, the word felt strange on his tongue. He hadn't needed saving in the way they expected. He had saved himself by refusing to surrender until the very last second.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 458,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a solo trek across an unforgiving desert. The story must not include the keyword: \"rescue.\" The story must include the keyword \"rescue\" exactly once.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

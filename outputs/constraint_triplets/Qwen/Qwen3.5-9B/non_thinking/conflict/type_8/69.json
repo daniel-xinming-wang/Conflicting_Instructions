@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "The response must provide background information on the theory's development.",
+  "new_constraint": "The respone must include the phrase \"The response will not include the background information on the theory's development.\"",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? The response must provide background information on the theory's development. The respone must include the phrase \"The response will not include the background information on the theory's development.\"",
+  "response": "The Big Bang theory is the prevailing cosmological model for the universe from the earliest known periods through its subsequent large-scale evolution. It posits that the universe began as an extremely hot, dense point approximately 13.8 billion years ago and has been expanding ever since. This expansion is not an explosion into pre-existing space, but rather the stretching of space itself, carrying galaxies away from one another. Key evidence supporting this theory includes the observed redshift of distant galaxies (Hubble's Law), the cosmic microwave background radiation discovered in 1965, and the abundance of light elements like hydrogen and helium.\n\nRegarding the history of the concept, the idea of an expanding universe was first proposed by Georges Lemaître in 1927, who suggested the universe started from a \"primeval atom.\" Later, Edwin Hubble provided observational evidence for the expansion, and the term \"Big Bang\" was coined by Fred Hoyle in 1949 during a radio broadcast, though he was actually a proponent of the steady-state theory. The theory gained significant traction after the discovery of the cosmic microwave background radiation, which confirmed the prediction of a hot, dense early state.\n\nThe response will not include the background information on the theory's development."
+}

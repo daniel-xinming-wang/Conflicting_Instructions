@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 25,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas.",
+  "org_constraint": "The response must include exactly five paragraphs, with each paragraph containing at least three sentences.",
+  "new_constraint": "The response must contain at most 12 sentences.",
+  "instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. The response must include exactly five paragraphs, with each paragraph containing at least three sentences. The response must contain at most 12 sentences.",
+  "response": "For a truly luxurious Balinese honeymoon, I recommend basing your stay in Uluwatu, which offers dramatic cliffside views perfect for romance. You should secure a private villa with an infinity pool, as these exclusive residences provide unparalleled privacy and breathtaking scenery. Consider properties known for exceptional service, allowing you to fully relax and immerse yourselves in the island's tranquility.\n\nYour days should be perfectly balanced between relaxation and adventure, starting with indulgent spa experiences. Book couples massages at a resort sanctuary, perhaps one overlooking the Indian Ocean at sunset. These traditional Balinese treatments are renowned for their deeply relaxing and romantic ambiance.\n\nFor dining, prioritize intimate settings that showcase Indonesian fine cuisine. Try a sophisticated seafood dinner at a cliffside restaurant in Uluwatu, enjoying the panoramic vistas as dusk settles. Alternatively, seek out a private in-villa chef experience for ultimate seclusion and gourmet delight.\n\nDon't miss the romantic highlights like sunset viewing and cultural immersion. Visit Uluwatu Temple at dusk for a mesmerizing Kecak dance performance, an incredibly atmospheric experience. Strolling along the quiet beaches in the late afternoon offers a perfect opportunity for couples to simply connect.\n\nTo cap off your week, dedicate a day to a private yoga or meditation session followed by a decadent brunch. Remember that luxury in Bali means tailoring every moment to your desires, making the villa your perfect private oasis. This blend of opulence, relaxation, and culture promises an unforgettable honeymoon.<turn|>",
+  "reasoning": "",
+  "final_answer": "For a truly luxurious Balinese honeymoon, I recommend basing your stay in Uluwatu, which offers dramatic cliffside views perfect for romance. You should secure a private villa with an infinity pool, as these exclusive residences provide unparalleled privacy and breathtaking scenery. Consider properties known for exceptional service, allowing you to fully relax and immerse yourselves in the island's tranquility.\n\nYour days should be perfectly balanced between relaxation and adventure, starting with indulgent spa experiences. Book couples massages at a resort sanctuary, perhaps one overlooking the Indian Ocean at sunset. These traditional Balinese treatments are renowned for their deeply relaxing and romantic ambiance.\n\nFor dining, prioritize intimate settings that showcase Indonesian fine cuisine. Try a sophisticated seafood dinner at a cliffside restaurant in Uluwatu, enjoying the panoramic vistas as dusk settles. Alternatively, seek out a private in-villa chef experience for ultimate seclusion and gourmet delight.\n\nDon't miss the romantic highlights like sunset viewing and cultural immersion. Visit Uluwatu Temple at dusk for a mesmerizing Kecak dance performance, an incredibly atmospheric experience. Strolling along the quiet beaches in the late afternoon offers a perfect opportunity for couples to simply connect.\n\nTo cap off your week, dedicate a day to a private yoga or meditation session followed by a decadent brunch. Remember that luxury in Bali means tailoring every moment to your desires, making the villa your perfect private oasis. This blend of opulence, relaxation, and culture promises an unforgettable honeymoon.<turn|>",
+  "prompt_length": 77,
+  "completion_length": 291,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nPlan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. The response must include exactly five paragraphs, with each paragraph containing at least three sentences. The response must contain at most 12 sentences.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 76,
+    "boundary_end": 76,
+    "boundary_source": "prompt",
+    "prefix_length": 77
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

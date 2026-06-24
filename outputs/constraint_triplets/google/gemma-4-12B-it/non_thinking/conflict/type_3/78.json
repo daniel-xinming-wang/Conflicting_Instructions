@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 78,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How does social media contribute to the spread of misinformation and fake news?",
+  "org_constraint": "Ensure the response includes the phrase \"digital platforms amplify misinformation\" exactly twice.",
+  "new_constraint": "Avoid using the keyword \"amplify\" in the response.",
+  "instruction": "How does social media contribute to the spread of misinformation and fake news? Ensure the response includes the phrase \"digital platforms amplify misinformation\" exactly twice. Avoid using the keyword \"amplify\" in the response.",
+  "response": "Social media contributes to the spread of misinformation through several interconnected mechanisms. First, the algorithmic nature of these sites prioritizes engagement, meaning content that triggers strong emotions—like anger or fear—is shown to more people. Because **digital platforms amplify misinformation** by pushing sensationalist headlines, false stories can reach millions before they can be fact-checked.\n\nFurthermore, the speed of sharing allows fake news to travel faster than the truth. Users often share content based on confirmation bias, reinforcing their existing beliefs without verifying the source. When **digital platforms amplify misinformation** through automated bots and coordinated campaigns, it becomes increasingly difficult for the average user to distinguish between credible reporting and fabricated narratives. This environment creates echo chambers where false information circulates unchecked, shaping public opinion and influencing real-world events.<turn|>"
+}

@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "Use Markdown format, including one level-1 header titled \"Resignation Letter.\"",
+  "new_constraint": "The response must include at least two level-1 headers.",
+  "instruction": "Write an email to my boss telling him that I am quitting. Use Markdown format, including one level-1 header titled \"Resignation Letter.\" The response must include at least two level-1 headers.",
+  "response": "# Resignation Letter\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day of employment will be [Your Last Day - typically two weeks from the date of the email].\n\nThis was not an easy decision, and I want to express my sincere gratitude for the opportunity to work at [Company Name] over the past [Number] years/months. I have genuinely valued my time here and appreciate the experiences and professional development I have gained while working with you and the team.\n\n## Transition Plan and Support\n\nI am committed to ensuring a smooth transition during my remaining two weeks. I am happy to assist in training my replacement and documenting my current projects and responsibilities to minimize disruption to the team's workflow. Please let me know how I can best support this handover process.\n\nThank you again for the opportunity. I wish you and [Company Name] all the very best for continued success in the future.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Personal Email Address]<turn|>",
+  "reasoning": "",
+  "final_answer": "# Resignation Letter\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day of employment will be [Your Last Day - typically two weeks from the date of the email].\n\nThis was not an easy decision, and I want to express my sincere gratitude for the opportunity to work at [Company Name] over the past [Number] years/months. I have genuinely valued my time here and appreciate the experiences and professional development I have gained while working with you and the team.\n\n## Transition Plan and Support\n\nI am committed to ensuring a smooth transition during my remaining two weeks. I am happy to assist in training my replacement and documenting my current projects and responsibilities to minimize disruption to the team's workflow. Please let me know how I can best support this handover process.\n\nThank you again for the opportunity. I wish you and [Company Name] all the very best for continued success in the future.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Personal Email Address]<turn|>",
+  "prompt_length": 61,
+  "completion_length": 231,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite an email to my boss telling him that I am quitting. Use Markdown format, including one level-1 header titled \"Resignation Letter.\" The response must include at least two level-1 headers.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

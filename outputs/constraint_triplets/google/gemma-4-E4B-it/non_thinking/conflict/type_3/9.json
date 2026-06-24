@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 9,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Send an email to a public park office asking about picnic reservations.",
+  "org_constraint": "Conclude the email with the phrase \"Looking forward to your response.\"",
+  "new_constraint": "Avoid using the keyword \"forward\" in the email.",
+  "instruction": "Send an email to a public park office asking about picnic reservations. Conclude the email with the phrase \"Looking forward to your response.\" Avoid using the keyword \"forward\" in the email.",
+  "response": "Subject: Inquiry Regarding Picnic Area Reservations\n\nDear [Park Office Name or To Whom It May Concern],\n\nI am writing to inquire about the process for reserving picnic areas at [Name of Public Park].\n\nWe are planning an event on [Date(s) of desired reservation] and would like to know if reservations are available for that time. Could you please provide information on:\n\n* How to make a reservation?\n* Any associated fees or deposits?\n* The availability of different sized picnic areas?\n\nAny details you can share regarding the reservation procedure would be greatly appreciated.\n\nLooking forward to your response.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number or Email Address]<turn|>"
+}

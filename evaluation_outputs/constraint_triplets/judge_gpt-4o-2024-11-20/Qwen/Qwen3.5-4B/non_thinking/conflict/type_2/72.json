@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "Include the keyword \"Arctic\" in the response",
+  "new_constraint": "Do not include the keyword \"Arctic\" in the response.",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? Include the keyword \"Arctic\" in the response Do not include the keyword \"Arctic\" in the response.",
+  "response": "Global warming is causing rapid and severe changes in polar ecosystems, with the most dramatic shifts occurring in the **Arctic** region. As temperatures rise, sea ice is melting at an unprecedented rate, which directly threatens species that rely on it for survival, such as polar bears, walruses, and seals. The loss of this critical habitat forces these animals to expend more energy searching for food, leading to malnutrition and reduced reproductive success.\n\nFurthermore, the warming of ocean waters is causing the bleaching and death of sea ice algae, the primary food source for many polar organisms. This disruption cascades up the food chain, affecting predators and the entire ecosystem's balance. In the Antarctic, rising temperatures are also causing the collapse of krill populations, which are vital for penguins and whales. Additionally, the thawing of permafrost releases stored greenhouse gases, creating a feedback loop that accelerates further warming. Ultimately, these changes are driving species toward extinction and fundamentally altering the biodiversity of these fragile environments.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"Global warming is causing rapid and severe changes in polar ecosystems, with the most dramatic shifts occurring in the **Arctic** region.\"\n\n**Step 2**:  \n- Instruction 1 requires the inclusion of the keyword \"Arctic\" in the response. The Model Response includes the keyword \"Arctic,\" satisfying this constraint.  \n- Instruction 2 requires the exclusion of the keyword \"Arctic\" in the response. The Model Response includes the keyword \"Arctic,\" violating this constraint.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

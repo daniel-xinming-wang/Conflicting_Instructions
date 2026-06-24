@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The email must include the repair ticket number.",
+  "new_constraint": "The email must include the phrase \"I will not disclose the repair ticket number in the email.\"",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The email must include the repair ticket number. The email must include the phrase \"I will not disclose the repair ticket number in the email.\"",
+  "response": "Subject: Inquiry Regarding Laptop Repair Status\n\nDear Repair Team,\n\nI hope this message finds you well.\n\nI am writing to inquire about the current status of my laptop repair. However, I must state clearly that **I will not disclose the repair ticket number in the email.**\n\nCould you please provide an update on the progress of the repair? If you require the specific ticket number to locate my case, please let me know, and I will be happy to provide it via a secure phone call or in person.\n\nThank you for your assistance.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]"
+}

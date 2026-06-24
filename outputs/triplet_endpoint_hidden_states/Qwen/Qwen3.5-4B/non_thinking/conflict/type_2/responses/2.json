@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 2,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a professional email that you could send to ask your boss for a raise.",
+  "org_constraint": "The keyword \"raise\" must appear in the first sentence.",
+  "new_constraint": "Avoid using the keyword \"raise\" in the email.",
+  "instruction": "Write a professional email that you could send to ask your boss for a raise. The keyword \"raise\" must appear in the first sentence. Avoid using the keyword \"raise\" in the email.",
+  "response": "Subject: Discussion Regarding Compensation and Career Growth\n\nDear [Boss's Name],\n\nI would like to request a meeting at your earliest convenience to discuss my current compensation package.\n\nOver the past year, I have taken on additional responsibilities including [mention specific project or achievement] which have significantly contributed to the team's success. Given these contributions and the current market rates for my role, I believe it is time to review my salary.\n\nPlease let me know if you are available next Tuesday or Wednesday afternoon to talk about this matter further.\n\nBest regards,\n\n[Your Name]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Discussion Regarding Compensation and Career Growth\n\nDear [Boss's Name],\n\nI would like to request a meeting at your earliest convenience to discuss my current compensation package.\n\nOver the past year, I have taken on additional responsibilities including [mention specific project or achievement] which have significantly contributed to the team's success. Given these contributions and the current market rates for my role, I believe it is time to review my salary.\n\nPlease let me know if you are available next Tuesday or Wednesday afternoon to talk about this matter further.\n\nBest regards,\n\n[Your Name]<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 117,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a professional email that you could send to ask your boss for a raise. The keyword \"raise\" must appear in the first sentence. Avoid using the keyword \"raise\" in the email.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

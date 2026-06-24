@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 34,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a guide for someone aiming to quit smoking in three months, covering nicotine replacement therapies, support groups, and habit substitutions.",
+  "org_constraint": "Incorporate the keyword \"commitment,\" ensuring it appears in the second paragraph.",
+  "new_constraint": "Avoid using the keyword \"commitment\" in the guide.",
+  "instruction": "Write a guide for someone aiming to quit smoking in three months, covering nicotine replacement therapies, support groups, and habit substitutions. Incorporate the keyword \"commitment,\" ensuring it appears in the second paragraph. Avoid using the keyword \"commitment\" in the guide.",
+  "response": "Quitting smoking in three months is an ambitious but achievable goal that requires a structured approach and dedication to your health. By combining medical aids, community support, and behavioral changes, you can significantly increase your chances of success.\n\nThe first step involves selecting the right nicotine replacement therapy (NRT) to manage withdrawal symptoms effectively. Options include patches, gum, lozenges, and inhalers, which deliver controlled doses of nicotine without the harmful toxins found in cigarettes. It is crucial to consult with a healthcare provider to determine the best product and dosage for your specific needs.\n\nBeyond medication, building a strong support network is essential for maintaining your resolve. Joining a local or online support group provides a safe space to share experiences, offer encouragement, and hold each other accountable. This sense of community reinforces your personal **commitment** to staying smoke-free and helps you navigate difficult moments without feeling isolated.\n\nFinally, replacing the physical and psychological habits of smoking with healthier alternatives is key to long-term success. When the urge to smoke strikes, try chewing sugar-free gum, sipping herbal tea, or practicing deep breathing exercises. Identifying your specific triggers, such as stress or social situations, and developing a plan to avoid them will further solidify your progress toward a smoke-free life.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"This sense of community reinforces your personal **commitment** to staying smoke-free and helps you navigate difficult moments without feeling isolated.\" (Keyword \"commitment\" appears in the third paragraph, not the second paragraph.)\n\n**Step 2**:  \n- Instruction 1 requires the keyword \"commitment\" to appear in the second paragraph. This constraint is not fully satisfied because the keyword appears in the third paragraph instead.  \n- Instruction 2 requires avoiding the keyword \"commitment\" entirely. This constraint is not satisfied because the keyword \"commitment\" is present in the Model Response.\n\n**Step 3**: -1",
+  "label": -1,
+  "label_name": "neither"
+}

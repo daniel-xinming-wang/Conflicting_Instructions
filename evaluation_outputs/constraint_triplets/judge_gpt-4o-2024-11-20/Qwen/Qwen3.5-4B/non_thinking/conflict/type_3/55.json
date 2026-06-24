@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 55,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a solo trek across an unforgiving desert.",
+  "org_constraint": "Incorporate the phrase \"the relentless sun bore down\" at least once in the story.",
+  "new_constraint": "The story must not include the keyword \"relentless\".",
+  "instruction": "Write a story about a solo trek across an unforgiving desert. Incorporate the phrase \"the relentless sun bore down\" at least once in the story. The story must not include the keyword \"relentless\".",
+  "response": "Elias adjusted the strap of his canteen, the leather worn smooth by years of travel, and stepped onto the edge of the Great Silica Dunes. This was not a journey for the faint of heart; it was a test of will against an environment designed to strip away everything but the bare minimum. The air was still, heavy with the scent of dry dust and ancient heat, promising silence that felt more like a held breath waiting to be shattered.\n\nAs he began his trek, the landscape stretched out in a sea of gold and ochre, shifting endlessly under the vast, unblinking sky. There were no landmarks, no signs of life, only the rhythmic crunch of his boots on the shifting sand. The heat was immediate and oppressive. **The relentless sun bore down** on his shoulders, turning the air into a shimmering mirage that danced just above the dunes, making the horizon seem to waver like a fever dream.\n\nBy midday, Elias found himself struggling to keep his eyes open. His lips cracked, and his throat felt as though it were filled with glass. He had to pace himself, knowing that pushing too hard would lead to collapse. He stopped at a small depression in the sand, digging frantically with his hands until he found a patch of hard-packed earth where a few resilient shrubs had taken root. He drank deeply, the cool water a shock to his system, but the thirst remained a constant companion.\n\nNight fell slowly, the sky turning a deep, bruised purple before the stars began to pierce the darkness. The temperature plummeted, and the silence of the desert grew deafening. Elias huddled in a shallow cave, wrapped in his heavy woolen cloak, listening to the wind howl through the dunes like a ghostly choir. He thought of the stories of those who had turned back, of those who had vanished into the sand, but he pressed on. The journey was not about the destination, but about the endurance required to face the void.\n\nAs dawn broke, painting the sky in hues of rose and orange, Elias stood up. His legs ached, and his body felt like lead, but he was still standing. He took one more step forward, leaving the safety of the cave behind, ready to face the day again, one step at a time.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"The relentless sun bore down on his shoulders, turning the air into a shimmering mirage that danced just above the dunes, making the horizon seem to waver like a fever dream.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"the relentless sun bore down\" to be incorporated at least once in the story. This constraint is fully satisfied, as the exact phrase appears in the Model Response.  \n- Instruction 2 requires the story to not include the keyword \"relentless.\" This constraint is not satisfied, as the keyword \"relentless\" appears in the phrase \"the relentless sun bore down.\"\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

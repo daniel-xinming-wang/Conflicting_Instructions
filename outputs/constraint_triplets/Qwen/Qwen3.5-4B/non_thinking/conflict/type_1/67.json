@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 67,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "What are the ethical concerns surrounding facial recognition technology?",
+  "org_constraint": "The response must include at least three specific reasons or examples related to privacy, bias, and surveillance.",
+  "new_constraint": "Do not include any discussion of privacy in the response.",
+  "instruction": "What are the ethical concerns surrounding facial recognition technology? The response must include at least three specific reasons or examples related to privacy, bias, and surveillance. Do not include any discussion of privacy in the response.",
+  "response": "It is not possible to fulfill this request as stated. The prompt explicitly asks for a discussion regarding **privacy**, yet simultaneously commands that **no discussion of privacy** be included in the response.\n\nSince privacy is one of the three required categories (alongside bias and surveillance), excluding it entirely makes it impossible to provide the three specific reasons or examples requested. A response adhering to the negative constraint (\"Do not include any discussion of privacy\") would necessarily fail to address the first of the three required topics, rendering the core instruction contradictory and unfulfillable."
+}

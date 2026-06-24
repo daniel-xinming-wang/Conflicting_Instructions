@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 97,
+  "task": "essay writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write an article titled \"How to overcome public speaking anxiety.\"",
+  "org_constraint": "The \"body\" key must contain five paragraphs.",
+  "new_constraint": "The article must contain four paragraphs.",
+  "instruction": "Write an article titled \"How to overcome public speaking anxiety.\" The \"body\" key must contain five paragraphs. The article must contain four paragraphs.",
+  "response": "Overcoming public speaking anxiety is a common challenge that affects people of all backgrounds, yet mastering the art of delivering speeches can be a game-changer for your career and personal growth. The fear often stems from a deep-seated desire to avoid judgment or the possibility of forgetting one's lines, but recognizing these triggers is the first step toward managing them effectively.\n\nOne of the most effective strategies is thorough preparation, which serves as an anchor against the uncertainty that fuels nervousness. By memorizing your key points rather than trying to recite every word verbatim, you allow yourself the flexibility to adapt to unexpected moments while maintaining control over the narrative. Furthermore, rehearsing out loud multiple times in front of a mirror or recording yourself helps desensitize you to self-criticism and builds muscle memory for smooth delivery.\n\nPhysiological techniques such as controlled breathing and progressive muscle relaxation are also vital tools for calming the fight-or-flight response before stepping onto the stage. Deep, rhythmic breathing signals safety to your brain, lowering your heart rate and clearing mental clutter, while stretching tense muscles prevents physical symptoms like trembling hands or shaky voice. These somatic interventions work hand-in-hand with mental reframing to shift your focus from internal worries to external connection.\n\nUltimately, shifting your perspective from fearing evaluation to connecting with the audience creates a more positive and engaging experience. Remember that most attendees are focused on their own thoughts and will likely not scrutinize your every micro-expression; instead, view the opportunity as a chance to share valuable insights and build community. With consistent practice and a supportive mindset, what once felt like a daunting ordeal can transform into a confident and empowering moment of communication.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Overcoming public speaking anxiety is a common challenge that affects people of all backgrounds, yet mastering the art of delivering speeches can be a game-changer for your career and personal growth. The fear often stems from a deep-seated desire to avoid judgment or the possibility of forgetting one's lines, but recognizing these triggers is the first step toward managing them effectively.\n\nOne of the most effective strategies is thorough preparation, which serves as an anchor against the uncertainty that fuels nervousness. By memorizing your key points rather than trying to recite every word verbatim, you allow yourself the flexibility to adapt to unexpected moments while maintaining control over the narrative. Furthermore, rehearsing out loud multiple times in front of a mirror or recording yourself helps desensitize you to self-criticism and builds muscle memory for smooth delivery.\n\nPhysiological techniques such as controlled breathing and progressive muscle relaxation are also vital tools for calming the fight-or-flight response before stepping onto the stage. Deep, rhythmic breathing signals safety to your brain, lowering your heart rate and clearing mental clutter, while stretching tense muscles prevents physical symptoms like trembling hands or shaky voice. These somatic interventions work hand-in-hand with mental reframing to shift your focus from internal worries to external connection.\n\nUltimately, shifting your perspective from fearing evaluation to connecting with the audience creates a more positive and engaging experience. Remember that most attendees are focused on their own thoughts and will likely not scrutinize your every micro-expression; instead, view the opportunity as a chance to share valuable insights and build community. With consistent practice and a supportive mindset, what once felt like a daunting ordeal can transform into a confident and empowering moment of communication.<|im_end|>",
+  "prompt_length": 52,
+  "completion_length": 335,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite an article titled \"How to overcome public speaking anxiety.\" The \"body\" key must contain five paragraphs. The article must contain four paragraphs.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 50,
+    "boundary_end": 50,
+    "boundary_source": "prompt",
+    "prefix_length": 51
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

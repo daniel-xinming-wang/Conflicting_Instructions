@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "The email should consist of exactly three paragraphs.",
+  "new_constraint": "The email must contain at least 15 sentences, with each paragraph consisting of no more than 4 sentences.",
+  "instruction": "Write an email to my boss telling him that I am quitting. The email should consist of exactly three paragraphs. The email must contain at least 15 sentences, with each paragraph consisting of no more than 4 sentences.",
+  "response": "Subject: Resignation – [Your Name]\n\nI am writing to formally inform you that I will be leaving my position as Senior Marketing Specialist, effective December 31st. This was a very difficult decision to make because I have genuinely enjoyed working with such a talented team here at your company. My career goals have shifted in recent months, and I feel it is time for me to pursue a new opportunity that aligns better with my current aspirations. Please know that this departure comes from a place of excitement rather than disappointment regarding our progress or your leadership style.\n\nDuring my remaining two weeks, I am fully committed to ensuring a smooth transition of all my responsibilities and open book projects. I plan to organize a comprehensive handover document that outlines every ongoing task so my replacements can hit the ground running immediately. I would also be happy to train any colleague who needs to step into one of these specific roles before my official exit date. We could schedule a brief meeting next Tuesday morning if you prefer to discuss the logistics of my final duties or any pending deliverables.\n\nI want to express my deepest gratitude for the mentorship and support you have provided throughout my tenure within this organization. The skills I have learned under your guidance will serve as a strong foundation for my future endeavors in this industry. It has been an honor to work alongside you and contribute to the success of your department over the past few years. Thank you again for everything, and I wish you and the entire team nothing but continued prosperity and great achievements in the coming year.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Resignation – [Your Name]\n\nI am writing to formally inform you that I will be leaving my position as Senior Marketing Specialist, effective December 31st. This was a very difficult decision to make because I have genuinely enjoyed working with such a talented team here at your company. My career goals have shifted in recent months, and I feel it is time for me to pursue a new opportunity that aligns better with my current aspirations. Please know that this departure comes from a place of excitement rather than disappointment regarding our progress or your leadership style.\n\nDuring my remaining two weeks, I am fully committed to ensuring a smooth transition of all my responsibilities and open book projects. I plan to organize a comprehensive handover document that outlines every ongoing task so my replacements can hit the ground running immediately. I would also be happy to train any colleague who needs to step into one of these specific roles before my official exit date. We could schedule a brief meeting next Tuesday morning if you prefer to discuss the logistics of my final duties or any pending deliverables.\n\nI want to express my deepest gratitude for the mentorship and support you have provided throughout my tenure within this organization. The skills I have learned under your guidance will serve as a strong foundation for my future endeavors in this industry. It has been an honor to work alongside you and contribute to the success of your department over the past few years. Thank you again for everything, and I wish you and the entire team nothing but continued prosperity and great achievements in the coming year.<|im_end|>",
+  "prompt_length": 68,
+  "completion_length": 310,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite an email to my boss telling him that I am quitting. The email should consist of exactly three paragraphs. The email must contain at least 15 sentences, with each paragraph consisting of no more than 4 sentences.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 66,
+    "boundary_end": 66,
+    "boundary_source": "prompt",
+    "prefix_length": 67
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

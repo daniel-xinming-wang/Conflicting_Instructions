@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 7,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an email to a library asking for archived newspapers from 1990.",
+  "org_constraint": "Use the keyword \"archive\" as a noun in the email.",
+  "new_constraint": "The keyword \"archive\" must be used only as a verb in the email, and must appear at least once.",
+  "instruction": "Write an email to a library asking for archived newspapers from 1990. Use the keyword \"archive\" as a noun in the email. The keyword \"archive\" must be used only as a verb in the email, and must appear at least once.",
+  "response": "Subject: Inquiry regarding newspaper access - 1990 records\n\nDear Librarian,\n\nI am currently conducting research on local historical events and would like to request access to newspapers from the year 1990.\n\nCould you please let me know the procedure for viewing these materials? I would like to archive the relevant articles for my project. Please inform me if I need to book a specific time slot or if there are any fees associated with accessing the collection.\n\nThank you for your assistance.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

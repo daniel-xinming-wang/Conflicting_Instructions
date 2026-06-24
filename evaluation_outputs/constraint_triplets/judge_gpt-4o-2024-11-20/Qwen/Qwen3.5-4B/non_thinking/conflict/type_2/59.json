@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 59,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a house where every room leads to a different year in time.",
+  "org_constraint": "The story must contain the following keywords: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\"",
+  "new_constraint": "The story must contain no more three keywords from the following list: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\"",
+  "instruction": "Write a story about a house where every room leads to a different year in time. The story must contain the following keywords: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\" The story must contain no more three keywords from the following list: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\"",
+  "response": "Elias stood before the front door of the house he had inherited, knowing that the key did not open a room, but a **dimension**. The house was not built of brick and mortar alone; it was a vessel for time itself. As he stepped inside, the air smelled of ozone and old paper.\n\nHe walked down the hallway, which seemed to stretch infinitely. To his left, a door labeled \"1920\" creaked open, revealing a dusty parlor with a gramophone. To his right, a door marked \"2050\" glowed with a soft, blue light, showing a futuristic kitchen. Elias realized that the house was a physical manifestation of **chronology**, where every corridor and chamber was locked to a specific era.\n\nCurious, he pushed open the door to the year 1888. Inside, a young woman in a long dress looked up, her eyes wide with recognition. \"You are the one who will fix the timeline,\" she whispered. \"But be careful. If you change what happens here, you might create a **paradox** that erases your own existence.\"\n\nBefore Elias could respond, the floor beneath him began to shimmer. A swirling vortex of light and shadow materialized in the center of the room, a **portal** leading to a place that did not exist on any map. He stepped through, expecting to see a different year, but instead, he found himself standing in the middle of the room again, the woman gone, the gramophone silent.\n\nThe house had rejected him. It was a closed loop, a trap of time that refused to let him escape the moment he arrived. He turned back to the hallway, his heart pounding, realizing that in a house built on time, the only way out was to never leave.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n- \"The key did not open a room, but a **dimension**.\"\n- \"Elias realized that the house was a physical manifestation of **chronology**, where every corridor and chamber was locked to a specific era.\"\n- \"If you change what happens here, you might create a **paradox** that erases your own existence.\"\n- \"A swirling vortex of light and shadow materialized in the center of the room, a **portal** leading to a place that did not exist on any map.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.\n- Instruction 1 requires the story to contain no more than three keywords from the list: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\" The Model Response contains all four keywords, violating this constraint.\n- Instruction 2 requires the story to contain all four keywords: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\" The Model Response satisfies this constraint.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

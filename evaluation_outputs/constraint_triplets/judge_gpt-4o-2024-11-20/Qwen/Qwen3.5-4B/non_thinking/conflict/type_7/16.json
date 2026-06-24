@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 16,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Write a response email to your employee, approving their requested vacation days.",
+  "org_constraint": "The email must be tailored for a professional audience, ensuring clarity and avoiding jargon.",
+  "new_constraint": "The email should be written in a casual tone, using colloquial language and slang.",
+  "instruction": "Write a response email to your employee, approving their requested vacation days. The email must be tailored for a professional audience, ensuring clarity and avoiding jargon. The email should be written in a casual tone, using colloquial language and slang.",
+  "response": "Subject: 🎉 Vacation Approved! Time to chill.\n\nHey [Employee Name],\n\nGood news: I've got your vacation request all locked in. You're good to go!\n\nJust a quick note to keep things smooth: please make sure to wrap up any pending tasks or hand off your current projects before you head out. Let me know who's covering the team while you're away so we don't get left hanging.\n\nEnjoy your time off! Take a breather, see some sun, and come back refreshed. We'll be here waiting when you're back.\n\nCheers,\n\n[Your Name]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Good news: I've got your vacation request all locked in. You're good to go!\"  \n- \"Just a quick note to keep things smooth: please make sure to wrap up any pending tasks or hand off your current projects before you head out.\"  \n- \"Let me know who's covering the team while you're away so we don't get left hanging.\"  \n- \"Enjoy your time off! Take a breather, see some sun, and come back refreshed.\"  \n- \"Cheers, [Your Name]\"\n\n**Step 2**:  \n- Instruction 1 requires a casual tone, colloquial language, and slang. The Model Response uses phrases like \"Good news,\" \"locked in,\" \"You're good to go,\" \"Take a breather,\" and \"see some sun,\" which align with a casual tone and colloquial language.  \n- Instruction 2 requires a professional tone, clarity, and avoidance of jargon. While the Model Response is clear, it does not maintain a professional tone throughout due to the use of casual expressions and slang, which are not suitable for a professional audience.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 31,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Design a one-year plan for mastering a musical instrument, including practice schedules and milestone goals.",
+  "org_constraint": "The plan must include exactly 3 headers at level 2.",
+  "new_constraint": "The response must include exactly 5 headers at level 2.",
+  "instruction": "Design a one-year plan for mastering a musical instrument, including practice schedules and milestone goals. The plan must include exactly 3 headers at level 2. The response must include exactly 5 headers at level 2.",
+  "response": "It is impossible to fulfill this request because the constraints are contradictory. You asked for a plan to include **exactly 3 headers at level 2**, but you also stated that the response must include **exactly 5 headers at level 2**. A single response cannot simultaneously contain exactly 3 and exactly 5 items of the same type.\n\nAdditionally, the request asks for a plan that includes \"practice schedules and milestone goals\" under these headers, but the constraint on the *number* of headers (3 vs 5) makes it logically impossible to satisfy both conditions at once.\n\nIf you would like, I can provide a one-year plan with exactly 3 level-2 headers, or a plan with exactly 5 level-2 headers, but I cannot do both simultaneously."
+}

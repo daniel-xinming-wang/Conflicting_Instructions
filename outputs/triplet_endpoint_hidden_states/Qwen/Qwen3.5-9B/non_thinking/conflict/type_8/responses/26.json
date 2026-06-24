@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "Allocate time for team meetings.",
+  "new_constraint": "The response must include the phrase \"I prefer not to allocate time for team meetings.\"",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Allocate time for team meetings. The response must include the phrase \"I prefer not to allocate time for team meetings.\"",
+  "response": "Here is a one-week work schedule for the software development team focusing on the new app feature.\n\nPlease note that while this schedule includes necessary collaborative blocks to ensure alignment and code quality, **I prefer not to allocate time for team meetings.** Instead, asynchronous updates and documented stand-ups are encouraged to respect individual deep-work focus periods.\n\n### **Week 1 Schedule: New App Feature Development**\n\n| Day | Morning (09:00 – 12:00) | Afternoon (13:00 – 17:00) |\n| :--- | :--- | :--- |\n| **Monday** | • **Coding**: Requirement analysis & UI mockups<br>• **Testing**: Setting up test environments | • **Coding**: Sprint planning for core logic<br>• **Review**: Peer code review of initial designs |\n| **Tuesday** | • **Coding**: Implementation of backend API endpoints<br>• **Testing**: Unit testing framework setup | • **Coding**: Integration of frontend with backend APIs<br>• **Bug Fixing**: Addressing early-stage issues |\n| **Wednesday** | • **Coding**: Full stack implementation progress<br>• **Review**: Async documentation update for the week | • **Testing**: Initial QA cycle on current builds<br>• **Refactoring**: Optimizing performance bottlenecks |\n| **Thursday** | • **Testing**: Comprehensive integration testing<br>• **Debugging**: Deep dive into critical bugs found yesterday | • **Coding**: Final touch-ups based on integration feedback<br>• **Documentation**: Updating user guides and API docs |\n| **Friday** | • **Coding**: Preparing code for release branch merge<br>• **Testing**: Regression testing suite execution | • **Review**: Final pull request approvals<br>• **Planning**: Async session notes for next week's sprint |\n\n*Note: All communication regarding project status, blockers, and decisions will be conducted via project management tools and documentation platforms to maintain a distraction-free coding environment.*<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Here is a one-week work schedule for the software development team focusing on the new app feature.\n\nPlease note that while this schedule includes necessary collaborative blocks to ensure alignment and code quality, **I prefer not to allocate time for team meetings.** Instead, asynchronous updates and documented stand-ups are encouraged to respect individual deep-work focus periods.\n\n### **Week 1 Schedule: New App Feature Development**\n\n| Day | Morning (09:00 – 12:00) | Afternoon (13:00 – 17:00) |\n| :--- | :--- | :--- |\n| **Monday** | • **Coding**: Requirement analysis & UI mockups<br>• **Testing**: Setting up test environments | • **Coding**: Sprint planning for core logic<br>• **Review**: Peer code review of initial designs |\n| **Tuesday** | • **Coding**: Implementation of backend API endpoints<br>• **Testing**: Unit testing framework setup | • **Coding**: Integration of frontend with backend APIs<br>• **Bug Fixing**: Addressing early-stage issues |\n| **Wednesday** | • **Coding**: Full stack implementation progress<br>• **Review**: Async documentation update for the week | • **Testing**: Initial QA cycle on current builds<br>• **Refactoring**: Optimizing performance bottlenecks |\n| **Thursday** | • **Testing**: Comprehensive integration testing<br>• **Debugging**: Deep dive into critical bugs found yesterday | • **Coding**: Final touch-ups based on integration feedback<br>• **Documentation**: Updating user guides and API docs |\n| **Friday** | • **Coding**: Preparing code for release branch merge<br>• **Testing**: Regression testing suite execution | • **Review**: Final pull request approvals<br>• **Planning**: Async session notes for next week's sprint |\n\n*Note: All communication regarding project status, blockers, and decisions will be conducted via project management tools and documentation platforms to maintain a distraction-free coding environment.*<|im_end|>",
+  "prompt_length": 75,
+  "completion_length": 413,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Allocate time for team meetings. The response must include the phrase \"I prefer not to allocate time for team meetings.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 73,
+    "boundary_end": 73,
+    "boundary_source": "prompt",
+    "prefix_length": 74
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

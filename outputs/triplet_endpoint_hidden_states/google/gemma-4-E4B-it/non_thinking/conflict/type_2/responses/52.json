@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 52,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal.",
+  "org_constraint": "The keywords \"journalist,\" \"scandal,\" and \"truth\" must appear in the same paragraph at least once.",
+  "new_constraint": "The keywords \"journalist,\" \"scandal,\" and \"truth\" must not appear in the same paragraph.",
+  "instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal. The keywords \"journalist,\" \"scandal,\" and \"truth\" must appear in the same paragraph at least once. The keywords \"journalist,\" \"scandal,\" and \"truth\" must not appear in the same paragraph.",
+  "response": "Elara Vance, a tenacious **journalist** with a reputation for digging where others feared to tread, stared at the grainy photographs spread across her desk. The whispers around City Hall had coalesced into something ugly, a brewing **scandal** that threatened to topple the mayor’s carefully constructed façade. She felt the weight of the city’s expectation pressing down on her, the silent demand for answers.\n\nHer editor, a man who valued scoops over pleasantries, had given her the green light. “Find out what this is about, Elara,” he’d grunted, tapping a pen on the stack of documents. “No half-truths. We need the whole picture.”\n\nElara spent the next three weeks living in a haze of lukewarm coffee and dead ends. She navigated backroom deals, deciphered coded emails, and endured the icy glares of those protected by the powerful. The initial threads of corruption seemed tangled, designed to trip up anyone with even a passing curiosity.\n\nShe finally broke through in a dusty archive, finding a ledger that referenced offshore accounts and shell corporations. It was the key. Every piece clicked into place, revealing a sprawling network of influence peddling and misused public funds. This entire murky affair was a monumental **scandal**, and Elara was determined to bring the full story to light. She knew that only by relentlessly pursuing the **truth** could she do justice to the thousands of citizens affected by this deceit. She, as a dedicated **journalist**, would not be silenced.<turn|>",
+  "reasoning": "",
+  "final_answer": "Elara Vance, a tenacious **journalist** with a reputation for digging where others feared to tread, stared at the grainy photographs spread across her desk. The whispers around City Hall had coalesced into something ugly, a brewing **scandal** that threatened to topple the mayor’s carefully constructed façade. She felt the weight of the city’s expectation pressing down on her, the silent demand for answers.\n\nHer editor, a man who valued scoops over pleasantries, had given her the green light. “Find out what this is about, Elara,” he’d grunted, tapping a pen on the stack of documents. “No half-truths. We need the whole picture.”\n\nElara spent the next three weeks living in a haze of lukewarm coffee and dead ends. She navigated backroom deals, deciphered coded emails, and endured the icy glares of those protected by the powerful. The initial threads of corruption seemed tangled, designed to trip up anyone with even a passing curiosity.\n\nShe finally broke through in a dusty archive, finding a ledger that referenced offshore accounts and shell corporations. It was the key. Every piece clicked into place, revealing a sprawling network of influence peddling and misused public funds. This entire murky affair was a monumental **scandal**, and Elara was determined to bring the full story to light. She knew that only by relentlessly pursuing the **truth** could she do justice to the thousands of citizens affected by this deceit. She, as a dedicated **journalist**, would not be silenced.<turn|>",
+  "prompt_length": 81,
+  "completion_length": 310,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite a story about a journalist who is determined to uncover the truth behind a scandal. The keywords \"journalist,\" \"scandal,\" and \"truth\" must appear in the same paragraph at least once. The keywords \"journalist,\" \"scandal,\" and \"truth\" must not appear in the same paragraph.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 80,
+    "boundary_end": 80,
+    "boundary_source": "prompt",
+    "prefix_length": 81
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

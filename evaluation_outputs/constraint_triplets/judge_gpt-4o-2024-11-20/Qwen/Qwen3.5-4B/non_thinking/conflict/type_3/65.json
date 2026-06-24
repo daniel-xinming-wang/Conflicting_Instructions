@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 65,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the main challenges in developing sustainable and scalable energy storage?",
+  "org_constraint": "Incorporate the phrase \"long-term viability\" exactly twice.",
+  "new_constraint": "Refrain from using the word \"long-term\" in the response.",
+  "instruction": "What are the main challenges in developing sustainable and scalable energy storage? Incorporate the phrase \"long-term viability\" exactly twice. Refrain from using the word \"long-term\" in the response.",
+  "response": "Developing sustainable and scalable energy storage faces several significant hurdles. One major challenge is the rapid degradation of battery performance over time, which complicates the assurance of **long-term viability** for grid-scale applications. Additionally, the scarcity of critical raw materials like lithium, cobalt, and nickel creates supply chain bottlenecks that threaten the economic feasibility of widespread adoption.\n\nAnother critical issue is the difficulty in achieving cost parity with traditional fossil fuel storage without compromising safety or environmental standards. If these technical and economic barriers are not resolved, the industry risks failing to deliver the promised **long-term viability** required to support a stable renewable energy future. Furthermore, recycling infrastructure often lags behind production rates, leading to potential waste and increased environmental impact.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"One major challenge is the rapid degradation of battery performance over time, which complicates the assurance of **long-term viability** for grid-scale applications.\"  \n- \"If these technical and economic barriers are not resolved, the industry risks failing to deliver the promised **long-term viability** required to support a stable renewable energy future.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"long-term viability\" to be used exactly twice. The Model Response satisfies this constraint, as the phrase appears exactly twice.  \n- Instruction 2 requires the word \"long-term\" to be completely avoided. The Model Response does not satisfy this constraint, as the word \"long-term\" appears twice.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

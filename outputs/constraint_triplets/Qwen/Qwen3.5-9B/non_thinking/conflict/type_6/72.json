@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "The response should be written in Markdown format, with exactly three headers at level 2 and at least one unordered list under each header containing at least three items.",
+  "new_constraint": "Write the response in JSON format, with at least three keys.",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? The response should be written in Markdown format, with exactly three headers at level 2 and at least one unordered list under each header containing at least three items. Write the response in JSON format, with at least three keys.",
+  "response": "{\n  \"polar_ice_melt\": \"## Melting Sea Ice and Glaciers\\n\\nThe rapid loss of sea ice and glaciers due to rising global temperatures is fundamentally altering the physical landscape of the Arctic and Antarctic. This reduction in ice cover leads to:\\n\\n*   Accelerated albedo effect reduction, causing further temperature increases.\\n*   Disruption of coastal habitats for species like seals and walruses.\\n*   Increased frequency of extreme weather events in polar regions.\",\n  \"wildlife_habitat_disruption\": \"## Disruption of Wildlife Habitats\\n\\nAs temperatures rise, the specific environmental conditions required by polar species are shifting or disappearing entirely, forcing migrations or causing population declines. Key impacts include:\\n\\n*   Polar bears struggling to hunt seals on diminishing ice platforms.\\n*   Penguins losing breeding grounds as ice shelves collapse.\\n*   Phytoplankton blooms occurring earlier, desynchronizing with predator feeding cycles.\",\n  \"ecosystem_chain_reactions\": \"## Cascading Ecosystem Effects\\n\\nChanges at the base of the food web and within species interactions are creating complex ripple effects throughout the entire polar ecosystem. These reactions manifest as:\\n\\n*   Overpopulation of certain fish species due to reduced predation pressure.\\n*   Invasive species moving into newly ice-free waters, outcompeting native flora and fauna.\\n*   Altered nutrient cycling patterns affecting soil health and plant growth in tundra regions.\"\n}"
+}

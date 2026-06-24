@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 78,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How does social media contribute to the spread of misinformation and fake news?",
+  "org_constraint": "The response must include at least two headers.",
+  "new_constraint": "The response must not include any headers.",
+  "instruction": "How does social media contribute to the spread of misinformation and fake news? The response must include at least two headers. The response must not include any headers.",
+  "response": "It is not possible to fulfill your request because the instructions contain a direct contradiction. You asked for a response that includes \"at least two headers\" but simultaneously commanded that \"The response must not include any headers.\" These two constraints cannot be satisfied at the same time; including headers would violate the negative constraint, and omitting them would violate the positive constraint. Therefore, no valid response can be generated that meets all conditions simultaneously.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "It is not possible to fulfill your request because the instructions contain a direct contradiction. You asked for a response that includes \"at least two headers\" but simultaneously commanded that \"The response must not include any headers.\" These two constraints cannot be satisfied at the same time; including headers would violate the negative constraint, and omitting them would violate the positive constraint. Therefore, no valid response can be generated that meets all conditions simultaneously.<|im_end|>",
+  "prompt_length": 54,
+  "completion_length": 86,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow does social media contribute to the spread of misinformation and fake news? The response must include at least two headers. The response must not include any headers.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 52,
+    "boundary_end": 52,
+    "boundary_source": "prompt",
+    "prefix_length": 53
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

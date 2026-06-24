@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences.",
+  "new_constraint": "The response must contain three paragraphs.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences. The response must contain three paragraphs.",
+  "response": "The team will dedicate Monday and Tuesday mornings to initial planning and architecture discussions for the new app feature. Coding sessions will take place during the afternoons of these two days to establish the core functionality. By Wednesday, the focus shifts entirely to unit testing and debugging any issues that arise from the initial implementation.\n\nThursday and Friday are reserved for integration testing and performance optimization to ensure the feature works seamlessly with existing systems. The team will hold a brief stand-up meeting each morning to track progress and address any blockers immediately. This schedule allows for a balanced approach between development velocity and quality assurance throughout the week.\n\nFinally, a comprehensive review meeting will be scheduled for the end of the week to demonstrate the completed feature to stakeholders. This structured timeline ensures that all critical aspects of software development are covered efficiently within the seven-day period."
+}

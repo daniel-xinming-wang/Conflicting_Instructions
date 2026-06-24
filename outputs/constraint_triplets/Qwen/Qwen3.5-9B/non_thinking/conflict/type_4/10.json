@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The phrase \"repair status\" must appear exactly three times in the body of the email.",
+  "new_constraint": "The email must not include the phrase \"repair status.\"",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The phrase \"repair status\" must appear exactly three times in the body of the email. The email must not include the phrase \"repair status.\"",
+  "response": "Subject: Inquiry Regarding Laptop Repair Progress\n\nDear Support Team,\n\nI am writing to follow up on the laptop I dropped off for service on October 24th. Could you please provide an update on the repair status? I am eager to know if there are any delays or if the device is ready for pickup soon.\n\nAdditionally, I would appreciate it if you could share the current repair status so I can plan my schedule accordingly. If any further information or action is required from my end to expedite the process, please let me know immediately.\n\nThank you for your assistance in resolving this matter.\n\nBest regards,\n\nAlex Johnson\n(555) 123-4567\nalex.johnson@email.com"
+}

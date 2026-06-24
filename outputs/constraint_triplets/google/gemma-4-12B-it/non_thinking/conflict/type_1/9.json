@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 9,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Send an email to a public park office asking about picnic reservations.",
+  "org_constraint": "The email must include the number of attendees.",
+  "new_constraint": "Do not disclose the number of attendees in the email.",
+  "instruction": "Send an email to a public park office asking about picnic reservations. The email must include the number of attendees. Do not disclose the number of attendees in the email.",
+  "response": "Subject: Inquiry Regarding Picnic Reservations\n\nDear Park Office Management,\n\nI am writing to inquire about the process for reserving a picnic area at [Name of Park] for an upcoming event.\n\nCould you please provide information regarding the availability of sites, the reservation fees, and any specific guidelines or permits required for group gatherings? Additionally, I would appreciate it if you could let me know what the maximum capacity is for the various picnic zones, as I need to ensure our group size fits within the designated limits.\n\nPlease let me know what information you need from my side to proceed with a booking.\n\nThank you for your assistance.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

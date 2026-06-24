@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 3,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Draft an email to a hotel requesting room availability for next weekend.",
+  "org_constraint": "Conclude the email with \"Looking forward to your response.\"",
+  "new_constraint": "Conclude the email with the phrase \"Thanks for your help.\"",
+  "instruction": "Draft an email to a hotel requesting room availability for next weekend. Conclude the email with \"Looking forward to your response.\" Conclude the email with the phrase \"Thanks for your help.\"",
+  "response": "Subject: Room Availability Request – Next Weekend\n\nDear Hotel Management Team,\n\nI hope this email finds you well.\n\nI am writing to inquire about room availability for next weekend, specifically from [Start Date] to [End Date]. We are planning a short stay and would appreciate it if you could let us know which room categories are currently open and if there are any special offers or packages available for that period.\n\nPlease let us know if any additional information is required from our side to secure a booking.\n\nLooking forward to your response.\n\nThanks for your help.\n\nSincerely,\n\n[Your Name]\n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Looking forward to your response.\"  \n- \"Thanks for your help.\"\n\n**Step 2**:  \n- Instruction 1 requires the email to conclude with the phrase \"Thanks for your help.\" While this phrase is present in the Model Response, it is not the concluding phrase.  \n- Instruction 2 requires the email to conclude with \"Looking forward to your response.\" This phrase is present and is the concluding phrase in the Model Response.  \n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

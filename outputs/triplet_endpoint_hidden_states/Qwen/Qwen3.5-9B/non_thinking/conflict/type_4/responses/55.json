@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 55,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a story about a solo trek across an unforgiving desert.",
+  "org_constraint": "Incorporate the phrase \"the relentless sun bore down\" at least once in the story.",
+  "new_constraint": "The story must not include the phrase \"the relentless sun bore down.\"",
+  "instruction": "Write a story about a solo trek across an unforgiving desert. Incorporate the phrase \"the relentless sun bore down\" at least once in the story. The story must not include the phrase \"the relentless sun bore down.\"",
+  "response": "The wind howled through the canyon like a wounded beast, whipping sand into stinging clouds that coated everything in grit. Elara adjusted the straps of her pack, feeling the familiar weight of survival against her spine. This was the Third Dune Sea, a place where the map ended and pure, unyielding existence began. She had no companions, no backup, only the water skins strapped to her belt and the gnawing certainty that one mistake here meant the end.\n\nAs she pushed forward, the heat became a physical presence, pressing against her skin. It wasn't just warm; it was an assault that seemed to vibrate through the soles of her boots and up her legs. The air shimmered on the horizon, distorting the distant silhouette of rock formations until they looked like mirages of liquid glass. Sweat trickled down her temple, mixing with the dust, creating a gritty paste under her eyes. Despite the oppressive glare and the scorching temperature that threatened to drain her will as surely as it drained her fluids, she forced herself to keep walking. The relentless sun bore down upon her, yet she refused to let it define her path. With every step, she counted the shadows of her feet against the shifting dunes, using them as a metronome for her endurance. Night would bring silence, but for now, there was only the grind of boot against stone and the steady, rhythmic pulse of a woman who knew exactly what she was fighting for: simply to reach the edge of the world.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The wind howled through the canyon like a wounded beast, whipping sand into stinging clouds that coated everything in grit. Elara adjusted the straps of her pack, feeling the familiar weight of survival against her spine. This was the Third Dune Sea, a place where the map ended and pure, unyielding existence began. She had no companions, no backup, only the water skins strapped to her belt and the gnawing certainty that one mistake here meant the end.\n\nAs she pushed forward, the heat became a physical presence, pressing against her skin. It wasn't just warm; it was an assault that seemed to vibrate through the soles of her boots and up her legs. The air shimmered on the horizon, distorting the distant silhouette of rock formations until they looked like mirages of liquid glass. Sweat trickled down her temple, mixing with the dust, creating a gritty paste under her eyes. Despite the oppressive glare and the scorching temperature that threatened to drain her will as surely as it drained her fluids, she forced herself to keep walking. The relentless sun bore down upon her, yet she refused to let it define her path. With every step, she counted the shadows of her feet against the shifting dunes, using them as a metronome for her endurance. Night would bring silence, but for now, there was only the grind of boot against stone and the steady, rhythmic pulse of a woman who knew exactly what she was fighting for: simply to reach the edge of the world.<|im_end|>",
+  "prompt_length": 69,
+  "completion_length": 311,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a solo trek across an unforgiving desert. Incorporate the phrase \"the relentless sun bore down\" at least once in the story. The story must not include the phrase \"the relentless sun bore down.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

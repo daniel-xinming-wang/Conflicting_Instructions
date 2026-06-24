@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 78,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How does social media contribute to the spread of misinformation and fake news?",
+  "org_constraint": "Include the keyword \"virality\" in the response.",
+  "new_constraint": "Avoid using the keyword \"virality\" in the response.",
+  "instruction": "How does social media contribute to the spread of misinformation and fake news? Include the keyword \"virality\" in the response. Avoid using the keyword \"virality\" in the response.",
+  "response": "Social media platforms significantly accelerate the spread of misinformation and fake news through several interconnected mechanisms. First, algorithms are often designed to prioritize content that generates high engagement, such as outrage, fear, or surprise. Since emotionally charged false information tends to trigger stronger reactions than factual reporting, these algorithms inadvertently amplify misleading content to maximize user interaction.\n\nSecond, the structure of social media encourages rapid sharing without verification. Users frequently share news before reading the full article or checking the source, relying on the trust of their immediate network rather than independent fact-checking. This creates an echo chamber effect where false narratives are reinforced within specific communities, making them appear more credible than they actually are.\n\nFinally, the concept of **virality** plays a crucial role in this ecosystem. When a piece of misinformation is shared widely, it can reach millions of people in a matter of hours, often before fact-checkers can intervene. This speed allows false stories to dominate the information landscape, overshadowing accurate reporting and causing significant real-world harm.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Finally, the concept of **virality** plays a crucial role in this ecosystem. When a piece of misinformation is shared widely, it can reach millions of people in a matter of hours, often before fact-checkers can intervene.\"\n\n**Step 2**:  \n- Instruction 1 requires the inclusion of the keyword \"virality\" in the response. The Model Response includes the keyword \"virality,\" satisfying this constraint.  \n- Instruction 2 requires avoiding the keyword \"virality\" in the response. The Model Response includes the keyword \"virality,\" violating this constraint.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

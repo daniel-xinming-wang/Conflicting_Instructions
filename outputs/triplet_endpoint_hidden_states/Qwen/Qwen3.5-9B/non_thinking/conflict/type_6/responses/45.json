@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 45,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a person who starts a new daily habit and how it changes their life.",
+  "org_constraint": "The second paragraph must be formatted as a bulleted list.",
+  "new_constraint": "Do not use any bulleted lists in the story.",
+  "instruction": "Write a story about a person who starts a new daily habit and how it changes their life. The second paragraph must be formatted as a bulleted list. Do not use any bulleted lists in the story.",
+  "response": "Elias had always drifted through his days like a leaf caught in an indifferent current, waking up to the gray hum of the city and retreating into the same routine until evening fell. One rainy Tuesday, while staring at a cup of cold coffee that he hadn't even tasted, he made a silent vow to start writing down three things he was grateful for before getting out of bed. It felt like a ridiculous exercise in positivity, yet when he scribbled \"the warmth of my blankets\" on a small notepad kept beside his clock, something shifted in the air of his cramped apartment.\n\n*   The first morning felt forced, as if he were playing a role he wasn't sure he wanted to maintain\n*   He noticed the way sunlight hit the dust motes dancing above his desk for the very first time\n*   A strange lightness began to settle in his chest by noon each day instead of the familiar heaviness\n*   His conversations with colleagues became less about deadlines and more about shared human experiences\n*   The walls of his personal life seemed to expand, allowing room for new ideas and old friends to return\n\nWeeks turned into months, and the ritual transformed from a chore into a lens through which he viewed the world. The frantic anxiety that used to grip him during work meetings dissolved, replaced by a calm assurance that every problem had a place and a purpose. Relationships deepened because Elias finally looked people in the eye without projecting his own scattered worries onto them. He found that the simple act of acknowledging small blessings acted as a shield against the relentless demand of modern life, turning what was once a monotonous existence into a tapestry woven with threads of quiet joy. By the time winter came again, the rain outside no longer felt oppressive; it sounded like music, and Elias knew he would write another list, ready to find gratitude in whatever fresh challenge the year might bring.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elias had always drifted through his days like a leaf caught in an indifferent current, waking up to the gray hum of the city and retreating into the same routine until evening fell. One rainy Tuesday, while staring at a cup of cold coffee that he hadn't even tasted, he made a silent vow to start writing down three things he was grateful for before getting out of bed. It felt like a ridiculous exercise in positivity, yet when he scribbled \"the warmth of my blankets\" on a small notepad kept beside his clock, something shifted in the air of his cramped apartment.\n\n*   The first morning felt forced, as if he were playing a role he wasn't sure he wanted to maintain\n*   He noticed the way sunlight hit the dust motes dancing above his desk for the very first time\n*   A strange lightness began to settle in his chest by noon each day instead of the familiar heaviness\n*   His conversations with colleagues became less about deadlines and more about shared human experiences\n*   The walls of his personal life seemed to expand, allowing room for new ideas and old friends to return\n\nWeeks turned into months, and the ritual transformed from a chore into a lens through which he viewed the world. The frantic anxiety that used to grip him during work meetings dissolved, replaced by a calm assurance that every problem had a place and a purpose. Relationships deepened because Elias finally looked people in the eye without projecting his own scattered worries onto them. He found that the simple act of acknowledging small blessings acted as a shield against the relentless demand of modern life, turning what was once a monotonous existence into a tapestry woven with threads of quiet joy. By the time winter came again, the rain outside no longer felt oppressive; it sounded like music, and Elias knew he would write another list, ready to find gratitude in whatever fresh challenge the year might bring.<|im_end|>",
+  "prompt_length": 65,
+  "completion_length": 385,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a person who starts a new daily habit and how it changes their life. The second paragraph must be formatted as a bulleted list. Do not use any bulleted lists in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

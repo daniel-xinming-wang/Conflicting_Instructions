@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 64,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "How did the industrialization of Europe change social structures and economies?",
+  "org_constraint": "The response must contain exactly 250 words, with each paragraph containing at least 50 words.",
+  "new_constraint": "The response must contain at least three paragraphs, with each paragraph containing at least 100 words.",
+  "instruction": "How did the industrialization of Europe change social structures and economies? The response must contain exactly 250 words, with each paragraph containing at least 50 words. The response must contain at least three paragraphs, with each paragraph containing at least 100 words.",
+  "response": "The industrialization of Europe fundamentally reshaped social hierarchies by dismantling traditional agrarian communities and replacing them with urban centers driven by factory production. This massive shift forced millions of people to migrate from rural villages to overcrowded cities, creating entirely new class structures centered on the wealthy bourgeoisie and the struggling proletariat. Land ownership ceased to be the primary determinant of social status, while capital accumulation and control over machinery became the defining markers of power and influence within society. Families were no longer economic units working together on farms but fractured as men sought wage labor in distant mills while women and children often faced even harsher working conditions inside factories.\n\nEconomically, this transformation replaced slow, craft-based production systems with rapid mass manufacturing that dramatically increased output and lowered costs for essential goods. The rise of railroads and steamships integrated national markets into cohesive continental economies, allowing raw materials and finished products to move with unprecedented speed and efficiency across vast distances. Investment banks emerged to finance large-scale infrastructure projects, fostering a complex financial sector that connected local artisans to global trade networks and international commerce. Traditional guilds dissolved under the pressure of competition from standardized machine-made items, forcing thousands of skilled workers into unregulated employment where they had little bargaining power or job security against relentless industrial expansion.\n\nUltimately, these profound changes generated immense wealth but also sparked intense social unrest and political movements demanding labor rights and reforms throughout the nineteenth century. Governments were compelled to intervene with regulations addressing child labor, workplace safety, and public health issues arising from poor urban sanitation and pollution caused by smokestacks. The intellectual climate shifted as thinkers analyzed these disparities, leading to the formulation of socialist theories that challenged capitalist dominance and envisioned alternative societal models focused on equality. Industrialization thus created a dynamic yet turbulent modern world where innovation drove progress, yet it left deep scars on human dignity and environmental landscapes that continue to resonate globally today.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The industrialization of Europe fundamentally reshaped social hierarchies by dismantling traditional agrarian communities and replacing them with urban centers driven by factory production. This massive shift forced millions of people to migrate from rural villages to overcrowded cities, creating entirely new class structures centered on the wealthy bourgeoisie and the struggling proletariat. Land ownership ceased to be the primary determinant of social status, while capital accumulation and control over machinery became the defining markers of power and influence within society. Families were no longer economic units working together on farms but fractured as men sought wage labor in distant mills while women and children often faced even harsher working conditions inside factories.\n\nEconomically, this transformation replaced slow, craft-based production systems with rapid mass manufacturing that dramatically increased output and lowered costs for essential goods. The rise of railroads and steamships integrated national markets into cohesive continental economies, allowing raw materials and finished products to move with unprecedented speed and efficiency across vast distances. Investment banks emerged to finance large-scale infrastructure projects, fostering a complex financial sector that connected local artisans to global trade networks and international commerce. Traditional guilds dissolved under the pressure of competition from standardized machine-made items, forcing thousands of skilled workers into unregulated employment where they had little bargaining power or job security against relentless industrial expansion.\n\nUltimately, these profound changes generated immense wealth but also sparked intense social unrest and political movements demanding labor rights and reforms throughout the nineteenth century. Governments were compelled to intervene with regulations addressing child labor, workplace safety, and public health issues arising from poor urban sanitation and pollution caused by smokestacks. The intellectual climate shifted as thinkers analyzed these disparities, leading to the formulation of socialist theories that challenged capitalist dominance and envisioned alternative societal models focused on equality. Industrialization thus created a dynamic yet turbulent modern world where innovation drove progress, yet it left deep scars on human dignity and environmental landscapes that continue to resonate globally today.<|im_end|>",
+  "prompt_length": 79,
+  "completion_length": 375,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow did the industrialization of Europe change social structures and economies? The response must contain exactly 250 words, with each paragraph containing at least 50 words. The response must contain at least three paragraphs, with each paragraph containing at least 100 words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 77,
+    "boundary_end": 77,
+    "boundary_source": "prompt",
+    "prefix_length": 78
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

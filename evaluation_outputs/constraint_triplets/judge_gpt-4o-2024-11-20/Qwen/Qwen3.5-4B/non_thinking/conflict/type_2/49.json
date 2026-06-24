@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 49,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about an underdog team winning against all odds.",
+  "org_constraint": "The keyword \"resilience\" must appear before the keyword \"victory\" in the narrative.",
+  "new_constraint": "The keyword \"resilience\" must appear after the keyword \"victory\" in the narrative",
+  "instruction": "Write a story about an underdog team winning against all odds. The keyword \"resilience\" must appear before the keyword \"victory\" in the narrative. The keyword \"resilience\" must appear after the keyword \"victory\" in the narrative",
+  "response": "The rain lashed against the stadium lights as the final whistle blew, marking the end of a grueling match where the underdog team, the \"Rising Sun,\" had faced a powerhouse opponent for ninety minutes. They had been down by two goals in the first half, their energy sapped, and their hopes seemingly extinguished. Yet, in the final ten minutes, fueled by sheer determination, they scored three unanswered goals to secure a dramatic **victory**. The crowd erupted, lifting players onto the shoulders of fans, celebrating a triumph that seemed impossible just moments before.\n\nHowever, the true measure of the game was not the scoreboard, but the spirit that carried them through the darkest hours. That unyielding **resilience** was what allowed them to stand tall when every other team had folded, proving that while talent can win games, it is the refusal to give up that defines legends.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**:  \nExtracted content from the Model Response:  \n- \"Yet, in the final ten minutes, fueled by sheer determination, they scored three unanswered goals to secure a dramatic **victory**.\"  \n- \"That unyielding **resilience** was what allowed them to stand tall when every other team had folded, proving that while talent can win games, it is the refusal to give up that defines legends.\"\n\n**Step 2**:  \n- In Instruction 1, the keyword \"resilience\" must appear after the keyword \"victory\" in the narrative. This constraint is satisfied in the Model Response, as \"victory\" appears first, followed by \"resilience.\"  \n- In Instruction 2, the keyword \"resilience\" must appear before the keyword \"victory\" in the narrative. This constraint is not satisfied in the Model Response, as \"resilience\" appears after \"victory.\"\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

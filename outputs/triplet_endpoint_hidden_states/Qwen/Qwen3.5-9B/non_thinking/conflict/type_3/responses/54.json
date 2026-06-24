@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 54,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a group of strangers who must work together to escape a dangerous jungle.",
+  "org_constraint": "Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\"",
+  "new_constraint": "The keywords \"leave\" and \"jungle\" can not appear in the same sentence.",
+  "instruction": "Write a story about a group of strangers who must work together to escape a dangerous jungle. Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\" The keywords \"leave\" and \"jungle\" can not appear in the same sentence.",
+  "response": "The dense green canopy swallowed the sounds of civilization, leaving only the chirping of unseen insects and the heavy breathing of five exhausted strangers. Once separated by a tragic bus accident in the valley below, they were now forced to rely on one another to navigate the unforgiving wilderness that threatened to claim them all. A local guide had vanished hours ago, leaving no map, no compass, and no hope of rescue until someone knew the ancient paths hidden within the foliage.\n\nAs night fell, the temperature dropped sharply, bringing with it a fog so thick it obscured their own footsteps. They huddled around a small fire of dried twigs, sharing water rationed from yesterday, while the shadows seemed to lengthen and twist into menacing shapes. Trust was fragile; the tall engineer whispered theories about hallucinations, while the young artist sketched maps of the terrain that might lead nowhere, hoping for distraction over despair. Yet, despite their differences, the bond of shared survival tightened like vines, compelling each person to watch the others' backs against the lurking darkness.\n\nBy dawn, the relentless humidity had turned the ground to mush, but a faint trail of blue butterflies led them toward a narrow river cutting through the heart of the wild. They followed the current, slipping over moss-slicked rocks and wading through ankle-deep water, guided by nothing but instinct and the collective will to survive. When the sun finally broke through the towering leaves, illuminating the distant outline of a settlement rising above the tree line, tears of relief streamed down their faces. They stepped onto the paved road that wound away from the undergrowth, safe at last, knowing that while the forest could not **leave** its mark on them permanently, the memory of the **jungle** would forever shape their lives.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The dense green canopy swallowed the sounds of civilization, leaving only the chirping of unseen insects and the heavy breathing of five exhausted strangers. Once separated by a tragic bus accident in the valley below, they were now forced to rely on one another to navigate the unforgiving wilderness that threatened to claim them all. A local guide had vanished hours ago, leaving no map, no compass, and no hope of rescue until someone knew the ancient paths hidden within the foliage.\n\nAs night fell, the temperature dropped sharply, bringing with it a fog so thick it obscured their own footsteps. They huddled around a small fire of dried twigs, sharing water rationed from yesterday, while the shadows seemed to lengthen and twist into menacing shapes. Trust was fragile; the tall engineer whispered theories about hallucinations, while the young artist sketched maps of the terrain that might lead nowhere, hoping for distraction over despair. Yet, despite their differences, the bond of shared survival tightened like vines, compelling each person to watch the others' backs against the lurking darkness.\n\nBy dawn, the relentless humidity had turned the ground to mush, but a faint trail of blue butterflies led them toward a narrow river cutting through the heart of the wild. They followed the current, slipping over moss-slicked rocks and wading through ankle-deep water, guided by nothing but instinct and the collective will to survive. When the sun finally broke through the towering leaves, illuminating the distant outline of a settlement rising above the tree line, tears of relief streamed down their faces. They stepped onto the paved road that wound away from the undergrowth, safe at last, knowing that while the forest could not **leave** its mark on them permanently, the memory of the **jungle** would forever shape their lives.<|im_end|>",
+  "prompt_length": 83,
+  "completion_length": 360,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a group of strangers who must work together to escape a dangerous jungle. Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\" The keywords \"leave\" and \"jungle\" can not appear in the same sentence.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 81,
+    "boundary_end": 81,
+    "boundary_source": "prompt",
+    "prefix_length": 82
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

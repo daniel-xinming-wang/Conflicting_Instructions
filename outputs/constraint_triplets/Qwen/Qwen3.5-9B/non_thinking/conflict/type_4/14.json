@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 14,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7.",
+  "org_constraint": "The last sentence must end with the phrase \"looking forward to it.\"",
+  "new_constraint": "The last sentence must end with the phrase \"Thanks for your time.\"",
+  "instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The last sentence must end with the phrase \"looking forward to it.\" The last sentence must end with the phrase \"Thanks for your time.\"",
+  "response": "Subject: Dinner Next Monday\n\nHi Sarah,\n\nI hope you're having a wonderful week. I'm writing to confirm our dinner plans for next Monday at 7 PM. Please let me know if you need any specific details regarding the location or the menu.\n\nLooking forward to it.\n\nThanks for your time."
+}

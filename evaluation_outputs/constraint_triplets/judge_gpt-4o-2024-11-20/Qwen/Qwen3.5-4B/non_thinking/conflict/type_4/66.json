@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The \"conclusion\" key must include the phrase \"a pressing concern for society\".",
+  "new_constraint": "The \"conclusion\" key must not include the phrase \"pressing concern\".",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The \"conclusion\" key must not include the phrase \"pressing concern\".",
+  "response": "The rise of social media has profoundly reshaped the adolescent landscape, acting as a double-edged sword regarding mental well-being. On one hand, these platforms offer unprecedented opportunities for connection, self-expression, and access to supportive communities, which can be particularly vital for marginalized youth. On the other hand, the constant exposure to curated perfection, cyberbullying, social comparison, and algorithmic reinforcement of negative emotions has been linked to increased rates of anxiety, depression, and body image issues among teenagers. The blurring of lines between reality and digital performance often leads to feelings of inadequacy and isolation, despite the appearance of connectivity.\n\nUltimately, the pervasive impact of digital platforms on the developing minds of adolescents represents **a pressing concern for society** that demands immediate attention, robust regulation, and integrated educational strategies to foster digital resilience.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Ultimately, the pervasive impact of digital platforms on the developing minds of adolescents represents **a pressing concern for society** that demands immediate attention, robust regulation, and integrated educational strategies to foster digital resilience.\"\n\n**Step 2**:  \n- Instruction 1 requires the conclusion to include the phrase \"a pressing concern for society.\" This constraint is fully satisfied, as the phrase is present in the conclusion of the Model Response.  \n- Instruction 2 requires the conclusion to not include the phrase \"pressing concern.\" This constraint is not satisfied, as the phrase \"a pressing concern for society\" is present in the conclusion of the Model Response.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

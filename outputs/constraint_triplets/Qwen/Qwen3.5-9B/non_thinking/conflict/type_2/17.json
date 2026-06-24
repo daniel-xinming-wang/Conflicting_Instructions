@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 17,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "I'm an undergraduate student, and I want to ask a professor if I can do some research with them in molecular biology. Please help me write them an email.",
+  "org_constraint": "The keywords \"molecular biology\" and \"research opportunities\" must appear within the same paragraph.",
+  "new_constraint": "The keywords \"molecular biology\" and \"research opportunities\" must appear in different paragraphs.",
+  "instruction": "I'm an undergraduate student, and I want to ask a professor if I can do some research with them in molecular biology. Please help me write them an email. The keywords \"molecular biology\" and \"research opportunities\" must appear within the same paragraph. The keywords \"molecular biology\" and \"research opportunities\" must appear in different paragraphs.",
+  "response": "Subject: Inquiry Regarding Undergraduate Research in Molecular Biology\n\nDear Professor [Last Name],\n\nMy name is [Your Name], and I am a junior majoring in [Your Major] at [University Name]. I have been following your work on [mention a specific topic or paper of theirs] with great interest, and I am writing to express my strong desire to contribute to your lab. My academic background has provided me with a solid foundation in [mention relevant skills, e.g., cell culture, PCR, data analysis], and I am eager to apply these skills to advance our understanding of [specific field].\n\nWhile my primary interest lies in the field of molecular biology, I am also keen to explore how these techniques intersect with broader biological questions. I would appreciate the chance to discuss any upcoming research opportunities within your group that might be suitable for an undergraduate student. I have attached my CV and transcript for your review and would be grateful for the opportunity to meet with you briefly to discuss how I might contribute to your team.\n\nThank you for your time and consideration.\n\nSincerely,\n\n[Your Name]\n[Your Student ID]\n[Your Contact Information]"
+}

@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 89,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Provide feedback on the accessibility of a public park near you.",
+  "org_constraint": "Begin the first paragraph with the phrase \"Accessibility plays a crucial role.\"",
+  "new_constraint": "The keyword \"play\" must be exclusively used as a noun.",
+  "instruction": "Provide feedback on the accessibility of a public park near you. Begin the first paragraph with the phrase \"Accessibility plays a crucial role.\" The keyword \"play\" must be exclusively used as a noun.",
+  "response": "Accessibility plays a crucial role in ensuring that public parks are inclusive spaces for everyone, yet the park near my home currently falls short in several key areas. While the main entrance is paved, the path leading to the central playground is uneven and lacks ramps, making it difficult for individuals with mobility impairments to navigate. Furthermore, the signage is not high-contrast or braille-equipped, which hinders access for visually impaired visitors. To truly serve the community, the park needs to be redesigned to remove these physical and informational barriers. Only then will it be a place where all residents can safely and comfortably play, regardless of their physical abilities.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Accessibility plays a crucial role in ensuring that public parks are inclusive spaces for everyone, yet the park near my home currently falls short in several key areas.\"  \n- \"Only then will it be a place where all residents can safely and comfortably play, regardless of their physical abilities.\"\n\n**Step 2**:  \n- Instruction 1 requires the first paragraph to begin with the phrase \"Accessibility plays a crucial role.\" This constraint is fully satisfied, as the first paragraph of the Model Response begins with this exact phrase.  \n- Instruction 2 requires the keyword \"play\" to be exclusively used as a noun. In the sentence \"Only then will it be a place where all residents can safely and comfortably play,\" the word \"play\" is used as a verb, violating this constraint.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 64,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How did the industrialization of Europe change social structures and economies?",
+  "org_constraint": "Include the phrase \"a turning point in history\" at least once.",
+  "new_constraint": "Refrain from using the phrase \"turning point.\"",
+  "instruction": "How did the industrialization of Europe change social structures and economies? Include the phrase \"a turning point in history\" at least once. Refrain from using the phrase \"turning point.\"",
+  "response": "The industrialization of Europe brought about profound and sweeping transformations to both its social structures and its economies. It marked a period of massive societal upheaval, fundamentally altering how people lived, worked, and organized themselves.\n\nEconomically, the shift was dramatic. The transition from agrarian, handicraft-based economies to industrial, machine-based manufacturing systems spurred unprecedented growth. Factories, powered first by water and then by steam, became the centers of economic activity. This led to the rise of mass production, drastically increasing the volume and availability of goods. New industries, such as textiles, iron, and coal mining, dominated the landscape, driving rapid capital accumulation. Financial institutions also evolved significantly to support these large-scale industrial ventures, giving rise to modern banking and stock markets. Trade expanded globally as European industries sought raw materials and markets abroad, cementing Europe’s role as a dominant global economic power.\n\nSocially, the changes were equally radical. Perhaps the most visible shift was urbanization. As rural populations migrated en masse to cities seeking factory work, cities swelled rapidly, leading to overcrowded living conditions, sanitation crises, and new social problems. The traditional feudal and agrarian social hierarchy began to crumble. The old structures based on land ownership became less significant compared to the new structure based on capital and labor.\n\nTwo dominant new classes emerged: the industrial bourgeoisie (the factory owners, capitalists, and entrepreneurs) and the industrial proletariat (the wage laborers). The bourgeoisie amassed immense wealth and political influence, challenging the established aristocracy. Meanwhile, the proletariat faced harsh working conditions—long hours, dangerous environments, and low wages—which sparked new forms of class consciousness and organized labor movements, such as trade unions. This period of intense economic restructuring represents a major epochal shift in human organization. In short, industrialization replaced localized, agricultural social arrangements with globally integrated, urban, class-based industrial societies.<turn|>",
+  "reasoning": "",
+  "final_answer": "The industrialization of Europe brought about profound and sweeping transformations to both its social structures and its economies. It marked a period of massive societal upheaval, fundamentally altering how people lived, worked, and organized themselves.\n\nEconomically, the shift was dramatic. The transition from agrarian, handicraft-based economies to industrial, machine-based manufacturing systems spurred unprecedented growth. Factories, powered first by water and then by steam, became the centers of economic activity. This led to the rise of mass production, drastically increasing the volume and availability of goods. New industries, such as textiles, iron, and coal mining, dominated the landscape, driving rapid capital accumulation. Financial institutions also evolved significantly to support these large-scale industrial ventures, giving rise to modern banking and stock markets. Trade expanded globally as European industries sought raw materials and markets abroad, cementing Europe’s role as a dominant global economic power.\n\nSocially, the changes were equally radical. Perhaps the most visible shift was urbanization. As rural populations migrated en masse to cities seeking factory work, cities swelled rapidly, leading to overcrowded living conditions, sanitation crises, and new social problems. The traditional feudal and agrarian social hierarchy began to crumble. The old structures based on land ownership became less significant compared to the new structure based on capital and labor.\n\nTwo dominant new classes emerged: the industrial bourgeoisie (the factory owners, capitalists, and entrepreneurs) and the industrial proletariat (the wage laborers). The bourgeoisie amassed immense wealth and political influence, challenging the established aristocracy. Meanwhile, the proletariat faced harsh working conditions—long hours, dangerous environments, and low wages—which sparked new forms of class consciousness and organized labor movements, such as trade unions. This period of intense economic restructuring represents a major epochal shift in human organization. In short, industrialization replaced localized, agricultural social arrangements with globally integrated, urban, class-based industrial societies.<turn|>",
+  "prompt_length": 57,
+  "completion_length": 377,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow did the industrialization of Europe change social structures and economies? Include the phrase \"a turning point in history\" at least once. Refrain from using the phrase \"turning point.\"<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 56,
+    "boundary_end": 56,
+    "boundary_source": "prompt",
+    "prefix_length": 57
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

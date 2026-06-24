@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 41,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a teacher who inspires students to overcome their personal challenges.",
+  "org_constraint": "The response must be formatted in Markdown with exactly three headers at level 2.",
+  "new_constraint": "The response must use plain text formatting without any Markdown elements.",
+  "instruction": "Write a story about a teacher who inspires students to overcome their personal challenges. The response must be formatted in Markdown with exactly three headers at level 2. The response must use plain text formatting without any Markdown elements.",
+  "response": "# The Classroom of Broken Glass\nMr. Henderson walked into Room 304, a space filled with the quiet hum of thirty students who had all arrived at school with invisible weights dragging them down. Some were hiding from bullying, others from family trauma, and a few from their own fears of failure. He did not try to fix them immediately. Instead, he placed a single, jagged piece of glass on his desk and asked the class to look at it. He told them that the glass was broken, but the light still passed through it, and that was what mattered. He explained that their lives were like that glass, cracked and scarred, but they still held the potential for beauty if they learned to see the light differently.\n\n# The Journey of Small Steps\nOver the next few weeks, Mr. Henderson introduced a simple rule: every day, each student had to do one small thing that was hard for them but aligned with their goal. For the boy who couldn't speak in front of people, the task was to say one word to a stranger. For the girl who had been pushed out of sports teams, the task was to run one lap around the track. For the boy who struggled with math, the task was to solve one equation without looking at the answer key. Mr. Henderson sat in the back row, not to grade their work, but to witness their courage. He celebrated every tiny victory, reminding them that progress was not a straight line but a series of small, brave steps forward.\n\n# The Light That Remains\nBy the end of the semester, the classroom had changed. The students were no longer hiding behind their walls; they were sharing their stories and helping one another. The boy who once trembled now stood up to defend a friend. The girl who had quit running was now leading the track team. The boy who struggled with numbers was helping others understand fractions. Mr. Henderson stood at the front of the room, holding the same piece of glass he had started with. He smiled and said, \"You see? The cracks are still there, but they are no longer hiding the light. They are part of the story now.\" The students nodded, realizing that their challenges had not defined them, but rather shaped them into something stronger and more resilient than they ever imagined.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"# The Classroom of Broken Glass\"  \n- \"# The Journey of Small Steps\"  \n- \"# The Light That Remains\"  \n\n**Step 2**:  \nInstruction 1 requires the response to use plain text formatting without any Markdown elements. However, the Model Response contains Markdown elements, specifically headers at level 2 (e.g., \"# The Classroom of Broken Glass\").  \nInstruction 2 requires the response to be formatted in Markdown with exactly three headers at level 2. The Model Response satisfies this requirement, as it contains exactly three headers at level 2.  \n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

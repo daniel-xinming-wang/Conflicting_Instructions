@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 52,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal.",
+  "org_constraint": "The story must contain exactly 10 sentences, with each paragraph containing at least 2 sentences.",
+  "new_constraint": "The story must contain at least six paragraphs.",
+  "instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal. The story must contain exactly 10 sentences, with each paragraph containing at least 2 sentences. The story must contain at least six paragraphs.",
+  "response": "Eleanor Vance, a tenacious investigative journalist, stared at the grainy photographs detailing the city council's sudden financial windfall.  She suspected the official narrative of \"economic revitalization\" was a carefully constructed lie designed to mask something far more insidious.\n\nThe whispers in the city's underbelly pointed toward a clandestine real estate deal, one that benefited only the highest bidders. Eleanor spent sleepless nights poring over public records, her coffee growing colder with each passing hour.\n\nHer first interview with a disgruntled municipal worker yielded vague warnings about \"shady backroom agreements.\" The source, terrified of reprisal, only managed to confirm that the usual oversight protocols had mysteriously evaporated.\n\nDays turned into a grueling siege of information gathering; sources proved reluctant, and digital trails seemed deliberately scrubbed clean. Eleanor realized the corruption wasn't just bureaucratic; it was deeply entrenched and protected by powerful figures.\n\nFinally, she managed to secure an anonymous ledger, a document thick with coded transactions and names she instantly recognized. This single piece of evidence was the Rosetta Stone she needed to unlock the entire web of deceit.\n\nWith the smoking gun in hand, Eleanor knew her exposé would shake the foundations of the city's elite. Her relentless pursuit of truth was about to make it into the morning edition, regardless of the personal danger she faced.<turn|>",
+  "reasoning": "",
+  "final_answer": "Eleanor Vance, a tenacious investigative journalist, stared at the grainy photographs detailing the city council's sudden financial windfall.  She suspected the official narrative of \"economic revitalization\" was a carefully constructed lie designed to mask something far more insidious.\n\nThe whispers in the city's underbelly pointed toward a clandestine real estate deal, one that benefited only the highest bidders. Eleanor spent sleepless nights poring over public records, her coffee growing colder with each passing hour.\n\nHer first interview with a disgruntled municipal worker yielded vague warnings about \"shady backroom agreements.\" The source, terrified of reprisal, only managed to confirm that the usual oversight protocols had mysteriously evaporated.\n\nDays turned into a grueling siege of information gathering; sources proved reluctant, and digital trails seemed deliberately scrubbed clean. Eleanor realized the corruption wasn't just bureaucratic; it was deeply entrenched and protected by powerful figures.\n\nFinally, she managed to secure an anonymous ledger, a document thick with coded transactions and names she instantly recognized. This single piece of evidence was the Rosetta Stone she needed to unlock the entire web of deceit.\n\nWith the smoking gun in hand, Eleanor knew her exposé would shake the foundations of the city's elite. Her relentless pursuit of truth was about to make it into the morning edition, regardless of the personal danger she faced.<turn|>",
+  "prompt_length": 66,
+  "completion_length": 267,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite a story about a journalist who is determined to uncover the truth behind a scandal. The story must contain exactly 10 sentences, with each paragraph containing at least 2 sentences. The story must contain at least six paragraphs.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

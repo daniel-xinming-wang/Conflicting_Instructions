@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 62,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "What were the causes and consequences of the fall of the Roman Empire?",
+  "org_constraint": "The first sentence must provide background information.",
+  "new_constraint": "Avoid mentioning any background information.",
+  "instruction": "What were the causes and consequences of the fall of the Roman Empire? The first sentence must provide background information. Avoid mentioning any background information.",
+  "response": "Internal political instability, economic decline, overextension of military forces, and the pressure from migrating Germanic tribes contributed to the decline of the Western Roman Empire.\n\nConsequences included the fragmentation of Western Europe into various smaller kingdoms, a significant decline in centralized governance and trade across the former empire, the rise of the Catholic Church as a dominant unifying force in the West, and a lasting transformation of societal structures and cultural practices.<turn|>",
+  "reasoning": "",
+  "final_answer": "Internal political instability, economic decline, overextension of military forces, and the pressure from migrating Germanic tribes contributed to the decline of the Western Roman Empire.\n\nConsequences included the fragmentation of Western Europe into various smaller kingdoms, a significant decline in centralized governance and trade across the former empire, the rise of the Catholic Church as a dominant unifying force in the West, and a lasting transformation of societal structures and cultural practices.<turn|>",
+  "prompt_length": 48,
+  "completion_length": 84,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat were the causes and consequences of the fall of the Roman Empire? The first sentence must provide background information. Avoid mentioning any background information.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 47,
+    "boundary_end": 47,
+    "boundary_source": "prompt",
+    "prefix_length": 48
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 78,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How does social media contribute to the spread of misinformation and fake news?",
+  "org_constraint": "Ensure the response includes the phrase \"digital platforms amplify misinformation\" exactly twice.",
+  "new_constraint": "Avoid using the keyword \"amplify\" in the response.",
+  "instruction": "How does social media contribute to the spread of misinformation and fake news? Ensure the response includes the phrase \"digital platforms amplify misinformation\" exactly twice. Avoid using the keyword \"amplify\" in the response.",
+  "response": "Social media significantly accelerates the spread of misinformation and fake news through its algorithmic design and user behavior. These systems are engineered to prioritize engagement, often favoring sensational or controversial content over factual accuracy, which creates an environment where false information can go viral rapidly. Because users frequently share content without verifying its source, errors propagate quickly across networks. Consequently, **digital platforms amplify misinformation** by creating echo chambers where biased views are reinforced and unverified claims are treated as established facts.\n\nFurthermore, the speed at which posts move from one user to another leaves little time for fact-checkers to intervene. This rapid dissemination allows deceptive narratives to gain traction before corrections can be made. As a result, **digital platforms amplify misinformation** by prioritizing reach over reliability, making it increasingly difficult for the public to distinguish between truth and fabrication.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Consequently, **digital platforms amplify misinformation** by creating echo chambers where biased views are reinforced and unverified claims are treated as established facts.\"  \n- \"As a result, **digital platforms amplify misinformation** by prioritizing reach over reliability, making it increasingly difficult for the public to distinguish between truth and fabrication.\"\n\n**Step 2**:  \n- Instruction 1 requires avoiding the keyword \"amplify\" in the response. The Model Response uses the keyword \"amplify\" multiple times, violating this constraint.  \n- Instruction 2 requires the phrase \"digital platforms amplify misinformation\" to appear exactly twice in the response. The Model Response includes this phrase exactly twice, fully satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

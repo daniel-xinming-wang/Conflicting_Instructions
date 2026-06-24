@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 2,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a professional email that you could send to ask your boss for a raise.",
+  "org_constraint": "All sentences should be written in lowercase.",
+  "new_constraint": "The email should be written in sentence case.",
+  "instruction": "Write a professional email that you could send to ask your boss for a raise. All sentences should be written in lowercase. The email should be written in sentence case.",
+  "response": "subject: request for salary review\n\ndear [boss's name],\n\ni am writing to formally request a review of my current compensation. over the past year, i have taken on additional responsibilities and consistently exceeded my performance goals. i believe my contributions align with the market value for my role and the value i bring to the team. i would appreciate the opportunity to discuss this matter at your earliest convenience.\n\nthank you for your time and consideration.\n\nbest regards,\n\n[your name]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"subject: request for salary review\"  \n- \"dear [boss's name],\"  \n- \"i am writing to formally request a review of my current compensation. over the past year, i have taken on additional responsibilities and consistently exceeded my performance goals. i believe my contributions align with the market value for my role and the value i bring to the team. i would appreciate the opportunity to discuss this matter at your earliest convenience.\"  \n- \"thank you for your time and consideration.\"  \n- \"best regards,\"  \n- \"[your name]\"  \n\n**Step 2**:  \n- Instruction 1 requires all sentences to be written in lowercase. The Model Response fully satisfies this constraint, as all sentences are written in lowercase.  \n- Instruction 2 requires the email to be written in sentence case. The Model Response does not satisfy this constraint, as none of the sentences begin with a capital letter.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

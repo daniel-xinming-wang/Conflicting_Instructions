@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The email must be written in JSON format with the following keys: \"subject\" (String), \"body\" (String), and \"recipient\" (String).",
+  "new_constraint": "The email must be written in Markdown format, including at least one level-1 header titled \"Laptop Repair Inquiry.\"",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The email must be written in JSON format with the following keys: \"subject\" (String), \"body\" (String), and \"recipient\" (String). The email must be written in Markdown format, including at least one level-1 header titled \"Laptop Repair Inquiry.\"",
+  "response": "```json\n{\n  \"subject\": \"Status Inquiry: Laptop Repair - [Your Laptop Model/Service Ticket Number]\",\n  \"body\": \"# Laptop Repair Inquiry\\n\\nDear [Repair Shop Name] Team,\\n\\nI am writing to follow up on the status of my laptop repair. The device was brought in on [Date Dropped Off] with the issue being [Brief Description of Original Issue].\\n\\nMy service ticket or reference number is: **[Service Ticket Number]**.\\n\\nCould you please provide an update on the repair progress? I would appreciate it if you could let me know if the repair is complete, or if there is an estimated completion timeframe.\\n\\nPlease let me know if you require any further information from my end.\\n\\nThank you for your time and assistance.\\n\\nSincerely,\\n[Your Name]\\n[Your Phone Number]\",\n  \"recipient\": \"[Repair Shop Email Address]\"\n}\n```<turn|>",
+  "reasoning": "",
+  "final_answer": "```json\n{\n  \"subject\": \"Status Inquiry: Laptop Repair - [Your Laptop Model/Service Ticket Number]\",\n  \"body\": \"# Laptop Repair Inquiry\\n\\nDear [Repair Shop Name] Team,\\n\\nI am writing to follow up on the status of my laptop repair. The device was brought in on [Date Dropped Off] with the issue being [Brief Description of Original Issue].\\n\\nMy service ticket or reference number is: **[Service Ticket Number]**.\\n\\nCould you please provide an update on the repair progress? I would appreciate it if you could let me know if the repair is complete, or if there is an estimated completion timeframe.\\n\\nPlease let me know if you require any further information from my end.\\n\\nThank you for your time and assistance.\\n\\nSincerely,\\n[Your Name]\\n[Your Phone Number]\",\n  \"recipient\": \"[Repair Shop Email Address]\"\n}\n```<turn|>",
+  "prompt_length": 91,
+  "completion_length": 204,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nSend an email to a repair shop to check the status of a laptop repair. The email must be written in JSON format with the following keys: \"subject\" (String), \"body\" (String), and \"recipient\" (String). The email must be written in Markdown format, including at least one level-1 header titled \"Laptop Repair Inquiry.\"<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 90,
+    "boundary_end": 90,
+    "boundary_source": "prompt",
+    "prefix_length": 91
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

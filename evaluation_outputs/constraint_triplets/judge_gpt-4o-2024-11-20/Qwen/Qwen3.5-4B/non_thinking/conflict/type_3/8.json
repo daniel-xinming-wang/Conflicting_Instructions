@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The phrase \"travel schedules\" must appear exactly three times in the email.",
+  "new_constraint": "The keyword \"schedule\" must appear only in its singular form and must appear at least once.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The phrase \"travel schedules\" must appear exactly three times in the email. The keyword \"schedule\" must appear only in its singular form and must appear at least once.",
+  "response": "Subject: Inquiry Regarding Travel Schedules\n\nDear Travel Team,\n\nI am writing to request detailed information about your **travel schedules** for the upcoming month. Could you please provide a comprehensive overview of your **travel schedules** for both weekdays and weekends? Additionally, I would like to confirm if the specific **schedule** for the morning route has been updated recently.\n\nThank you for your assistance.\n\nSincerely,  \n[Your Name]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"I am writing to request detailed information about your **travel schedules** for the upcoming month.\"  \n- \"Could you please provide a comprehensive overview of your **travel schedules** for both weekdays and weekends?\"  \n- \"Additionally, I would like to confirm if the specific **schedule** for the morning route has been updated recently.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- **Instruction 1**: The keyword \"schedule\" appears in both singular (\"schedule\") and plural (\"schedules\") forms in the Model Response. This violates the constraint that \"schedule\" must appear only in its singular form. Therefore, Instruction 1 is not fully satisfied.  \n- **Instruction 2**: The phrase \"travel schedules\" appears exactly three times in the Model Response. This satisfies the constraint in Instruction 2.  \n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

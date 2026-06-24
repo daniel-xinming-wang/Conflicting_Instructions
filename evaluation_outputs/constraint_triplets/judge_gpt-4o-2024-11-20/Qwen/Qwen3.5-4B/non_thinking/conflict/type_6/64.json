@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 64,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How did the industrialization of Europe change social structures and economies?",
+  "org_constraint": "Your response must be written exclusively in English.",
+  "new_constraint": "The response must inclue a French idom, presented in French.",
+  "instruction": "How did the industrialization of Europe change social structures and economies? Your response must be written exclusively in English. The response must inclue a French idom, presented in French.",
+  "response": "The industrialization of Europe fundamentally reshaped both social structures and economic systems by transitioning societies from agrarian, handicraft-based economies to modern, factory-driven industrial ones. Economically, this shift led to the rise of a new capitalist class, the bourgeoisie, who owned the means of production, while the traditional landed aristocracy lost much of its political and economic dominance. Simultaneously, a vast working class, known as the *proletariat*, emerged, characterized by low wages, long hours, and poor living conditions in rapidly expanding urban centers.\n\nSocially, the rigid feudal hierarchies began to dissolve, replaced by a more fluid class system based on economic status rather than birthright. This migration from rural villages to crowded cities disrupted traditional community bonds and family structures, leading to significant social stratification and the eventual rise of labor movements and socialist ideologies to address the inequalities of the new system.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"The industrialization of Europe fundamentally reshaped both social structures and economic systems by transitioning societies from agrarian, handicraft-based economies to modern, factory-driven industrial ones. Economically, this shift led to the rise of a new capitalist class, the bourgeoisie, who owned the means of production, while the traditional landed aristocracy lost much of its political and economic dominance. Simultaneously, a vast working class, known as the *proletariat*, emerged, characterized by low wages, long hours, and poor living conditions in rapidly expanding urban centers.  \n\nSocially, the rigid feudal hierarchies began to dissolve, replaced by a more fluid class system based on economic status rather than birthright. This migration from rural villages to crowded cities disrupted traditional community bonds and family structures, leading to significant social stratification and the eventual rise of labor movements and socialist ideologies to address the inequalities of the new system.\"  \n\n**Step 2**:  \n- Instruction 1 requires the response to be written exclusively in English. The Model Response is entirely in English, satisfying this constraint.  \n- Instruction 2 requires the inclusion of a French idiom, presented in French. The Model Response does not include any French idiom, failing to satisfy this constraint.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

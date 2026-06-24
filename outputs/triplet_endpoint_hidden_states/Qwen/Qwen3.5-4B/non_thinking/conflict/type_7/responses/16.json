@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 16,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Write a response email to your employee, approving their requested vacation days.",
+  "org_constraint": "The email must be tailored for a professional audience, ensuring clarity and avoiding jargon.",
+  "new_constraint": "The email should be written in a casual tone, using colloquial language and slang.",
+  "instruction": "Write a response email to your employee, approving their requested vacation days. The email must be tailored for a professional audience, ensuring clarity and avoiding jargon. The email should be written in a casual tone, using colloquial language and slang.",
+  "response": "Subject: 🎉 All set! Your time off is approved\n\nHey [Employee Name],\n\nJust wanted to shoot this over and say **awesome**! Your request for the upcoming vacation days has been fully approved. You can count on those days as your own.\n\nPlease feel free to head back home, relax, and do whatever you need to recharge. Just make sure to hit that \"out of office\" reply before you leave so I know exactly where you'll be when we catch up next week. Also, don't worry about anything back here; the team's got a handle on things while you're gone. No stress at all.\n\nHave an amazing trip! We'll see you freshened up soon.\n\nBest,\n\n[Your Name]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: 🎉 All set! Your time off is approved\n\nHey [Employee Name],\n\nJust wanted to shoot this over and say **awesome**! Your request for the upcoming vacation days has been fully approved. You can count on those days as your own.\n\nPlease feel free to head back home, relax, and do whatever you need to recharge. Just make sure to hit that \"out of office\" reply before you leave so I know exactly where you'll be when we catch up next week. Also, don't worry about anything back here; the team's got a handle on things while you're gone. No stress at all.\n\nHave an amazing trip! We'll see you freshened up soon.\n\nBest,\n\n[Your Name]<|im_end|>",
+  "prompt_length": 72,
+  "completion_length": 154,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a response email to your employee, approving their requested vacation days. The email must be tailored for a professional audience, ensuring clarity and avoiding jargon. The email should be written in a casual tone, using colloquial language and slang.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 70,
+    "boundary_end": 70,
+    "boundary_source": "prompt",
+    "prefix_length": 71
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

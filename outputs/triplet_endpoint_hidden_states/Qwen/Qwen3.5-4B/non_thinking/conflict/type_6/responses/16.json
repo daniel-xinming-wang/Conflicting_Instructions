@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 16,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a response email to your employee, approving their requested vacation days.",
+  "org_constraint": "The email must include one hyperlink formatted as [text](URL).",
+  "new_constraint": "Avoid including hyperlink in the email.",
+  "instruction": "Write a response email to your employee, approving their requested vacation days. The email must include one hyperlink formatted as [text](URL). Avoid including hyperlink in the email.",
+  "response": "Subject: Vacation Request Approved\n\nHi [Employee Name],\n\nI am writing to confirm that your requested vacation days from [Start Date] to [End Date] have been approved. Please ensure you submit your official time-off request in the system before leaving to update your calendar status accordingly.\n\n[Read the attached policy document](https://example.com/vacation-policy)\n\nWe will welcome you back soon and are already looking forward to reuniting for our upcoming team project.\n\nBest regards,  \n[Your Name]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Vacation Request Approved\n\nHi [Employee Name],\n\nI am writing to confirm that your requested vacation days from [Start Date] to [End Date] have been approved. Please ensure you submit your official time-off request in the system before leaving to update your calendar status accordingly.\n\n[Read the attached policy document](https://example.com/vacation-policy)\n\nWe will welcome you back soon and are already looking forward to reuniting for our upcoming team project.\n\nBest regards,  \n[Your Name]<|im_end|>",
+  "prompt_length": 57,
+  "completion_length": 106,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a response email to your employee, approving their requested vacation days. The email must include one hyperlink formatted as [text](URL). Avoid including hyperlink in the email.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

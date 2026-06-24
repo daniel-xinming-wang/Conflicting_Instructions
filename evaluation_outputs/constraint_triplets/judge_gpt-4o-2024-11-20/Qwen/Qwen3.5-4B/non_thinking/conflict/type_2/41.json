@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 41,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a teacher who inspires students to overcome their personal challenges.",
+  "org_constraint": "Include the keyword \"mentor\" in the story.",
+  "new_constraint": "Avoid using the keyword \"mentor\" in the story.",
+  "instruction": "Write a story about a teacher who inspires students to overcome their personal challenges. Include the keyword \"mentor\" in the story. Avoid using the keyword \"mentor\" in the story.",
+  "response": "The rain battered the windows of Oakhaven High, mirroring the storm inside Elias's chest. He sat at his desk, staring at the blank page of his essay, his hand trembling. For years, the diagnosis of his rare neurological condition had kept him isolated, making the simple act of writing feel like climbing a mountain without oxygen.\n\nMr. Henderson, a man whose patience seemed infinite, walked over and sat beside him. He didn't offer empty platitudes or force Elias to write immediately. Instead, he simply handed Elias a pen and a fresh sheet of paper.\n\n\"Let's start with one sentence,\" Mr. Henderson said softly. \"Just one. What is the one thing you want to say to the world today?\"\n\nElias hesitated, then wrote: *I am still here.*\n\n\"That is a powerful beginning,\" Mr. Henderson replied, his eyes crinkling with genuine warmth. \"You don't have to solve the whole storm today. You just have to write the first drop of rain.\"\n\nOver the next few weeks, their sessions became a sanctuary. Mr. Henderson taught Elias that progress wasn't measured by the length of the essay, but by the courage to keep going. When Elias's hand shook too violently to hold the pen, Mr. Henderson would gently guide his wrist, helping him find a rhythm. When Elias felt the urge to quit, Mr. Henderson would remind him of the small victories they had already achieved.\n\n\"You are not alone in this,\" Mr. Henderson often said. \"I am here to walk this path with you, to offer guidance and support whenever you need it. Think of me as your guide on this journey.\"\n\nAs the semester progressed, Elias's voice grew stronger, both in his writing and in his interactions with classmates. He began to share his story, not to pity others, but to inspire them to face their own struggles with resilience. His classmates, once hesitant to speak up, found their own voices through his example.\n\nBy the end of the year, Elias had published his collection of essays, a testament to the human spirit's ability to endure. He looked at Mr. Henderson, who was smiling proudly.\n\n\"Thank you,\" Elias said. \"You showed me that I could be more than my limitations.\"\n\nMr. Henderson patted him on the shoulder. \"That's what we do, Elias. We help each other rise. And remember, you are the author of your own life; I was just happy to be your editor.\"\n\nIn that moment, the classroom felt less like a place of learning and more like a community of people lifting each other up, proving that with the right support, no challenge is insurmountable.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \nThe keyword \"mentor\" does not appear anywhere in the Model Response.\n\n**Step 2**:  \n- Instruction 1 requires avoiding the keyword \"mentor\" in the story. This constraint is fully satisfied, as the keyword \"mentor\" is not present in the Model Response.  \n- Instruction 2 requires including the keyword \"mentor\" in the story. This constraint is not satisfied, as the keyword \"mentor\" is absent from the Model Response.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

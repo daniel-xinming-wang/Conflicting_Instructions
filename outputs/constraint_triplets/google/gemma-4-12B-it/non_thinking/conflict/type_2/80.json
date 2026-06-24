@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 80,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the key differences between organic and conventionally grown foods?",
+  "org_constraint": "The keyword \"organic\" must appear at least 3 times throughout the response.",
+  "new_constraint": "Avoid using the keyword \"organic\" in the response.",
+  "instruction": "What are the key differences between organic and conventionally grown foods? The keyword \"organic\" must appear at least 3 times throughout the response. Avoid using the keyword \"organic\" in the response.",
+  "response": "I cannot fulfill this request because it contains contradictory instructions. You have asked me to ensure the keyword \"organic\" appears at least 3 times, while simultaneously instructing me to avoid using that same keyword in the response.<turn|>"
+}

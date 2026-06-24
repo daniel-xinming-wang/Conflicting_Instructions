@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 74,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How do supply and demand determine the price of goods in a market?",
+  "org_constraint": "Ensure your response includes the keyword \"elasticity\" exactly three times.",
+  "new_constraint": "Avoid using the keyword \"elasticity\" in the response.",
+  "instruction": "How do supply and demand determine the price of goods in a market? Ensure your response includes the keyword \"elasticity\" exactly three times. Avoid using the keyword \"elasticity\" in the response.",
+  "response": "It is impossible to fulfill your request because the instructions contain a direct contradiction. You asked me to include the keyword \"elasticity\" exactly three times, but simultaneously instructed me to avoid using that keyword in the response. These two constraints cannot be satisfied at the same time."
+}

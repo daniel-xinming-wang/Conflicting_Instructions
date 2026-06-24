@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "Use an optimistic tone throughout the response, conveying excitement and motivation.",
+  "new_constraint": "Write the response in a neutral tone, avoiding any emotional language.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? Use an optimistic tone throughout the response, conveying excitement and motivation. Write the response in a neutral tone, avoiding any emotional language.",
+  "response": "Wearable fitness trackers assist individuals in monitoring and improving their health by collecting objective data on various physiological metrics. These devices track steps taken, distance covered, calories burned, heart rate variability, sleep patterns, and active minutes. By providing real-time feedback and historical trend analysis, the technology allows users to identify specific areas for adjustment in their daily routines. This data-driven approach enables people to set measurable goals, adjust their activity levels based on physical responses, and develop more informed strategies for long-term wellness maintenance.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Wearable fitness trackers assist individuals in monitoring and improving their health by collecting objective data on various physiological metrics. These devices track steps taken, distance covered, calories burned, heart rate variability, sleep patterns, and active minutes. By providing real-time feedback and historical trend analysis, the technology allows users to identify specific areas for adjustment in their daily routines. This data-driven approach enables people to set measurable goals, adjust their activity levels based on physical responses, and develop more informed strategies for long-term wellness maintenance.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 101,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow do wearable fitness trackers help individuals monitor and improve their health? Use an optimistic tone throughout the response, conveying excitement and motivation. Write the response in a neutral tone, avoiding any emotional language.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

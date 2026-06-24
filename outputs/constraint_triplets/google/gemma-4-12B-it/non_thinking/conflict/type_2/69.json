@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "The \"key_terms\" must include the term \"singularity.\"",
+  "new_constraint": "The \"key_terms\" array must not include the term \"singularity.\"",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? The \"key_terms\" must include the term \"singularity.\" The \"key_terms\" array must not include the term \"singularity.\"",
+  "response": "The Big Bang theory is the prevailing cosmological model that explains how the universe began and evolved over billions of years. According to this theory, the universe started from an incredibly hot and dense point known as a **singularity**.\n\nAt this initial moment, all matter, energy, space, and time were compressed into this infinitesimal point. The theory suggests that approximately 13.8 billion years ago, this state underwent a rapid expansion. This was not an explosion *in* space, but rather an expansion *of* space itself.\n\nAs the universe expanded, it began to cool down. This cooling allowed energy to convert into subatomic particles, which eventually formed the first atoms (primarily hydrogen and helium). Over millions of years, gravity pulled these gases together to form the first stars and galaxies, leading to the complex universe we observe today.<turn|>"
+}

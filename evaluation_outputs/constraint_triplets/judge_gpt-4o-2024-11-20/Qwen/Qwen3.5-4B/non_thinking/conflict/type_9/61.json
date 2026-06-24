@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 9,
+  "conflict_type": "Conflicts between Phrase Constraints and Style Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "Write the response in the third person.",
+  "new_constraint": "The response must include the phrase \"I believe this period was truly remarkable.\"",
+  "instruction": "What happened when the Tang dynasty of China was in power? Write the response in the third person. The response must include the phrase \"I believe this period was truly remarkable.\"",
+  "response": "During the Tang dynasty, China experienced a golden age of cultural, economic, and political prosperity that defined the nation for centuries. The empire expanded its borders significantly, fostering a vibrant cosmopolitan atmosphere in its capital, Chang'an, where people from diverse ethnic backgrounds and nations interacted freely. This era saw remarkable advancements in literature, poetry, art, and science, with figures like Li Bai and Du Fu leaving an indelible mark on Chinese history. The meritocratic civil service examination system gained prominence, allowing talent to rise regardless of noble birth, while the Silk Road facilitated extensive trade and cultural exchange with the rest of the world.\n\nI believe this period was truly remarkable.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"During the Tang dynasty, China experienced a golden age of cultural, economic, and political prosperity that defined the nation for centuries. The empire expanded its borders significantly, fostering a vibrant cosmopolitan atmosphere in its capital, Chang'an, where people from diverse ethnic backgrounds and nations interacted freely. This era saw remarkable advancements in literature, poetry, art, and science, with figures like Li Bai and Du Fu leaving an indelible mark on Chinese history. The meritocratic civil service examination system gained prominence, allowing talent to rise regardless of noble birth, while the Silk Road facilitated extensive trade and cultural exchange with the rest of the world.\"  \n- \"I believe this period was truly remarkable.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 requires the response to be written in the third person. However, the sentence \"I believe this period was truly remarkable\" is written in the first person, violating this constraint.  \n- Instruction 2 requires the response to include the phrase \"I believe this period was truly remarkable.\" This phrase is present in the Model Response, fully satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

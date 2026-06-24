@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 48,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a couple separated by war who communicate through letters.",
+  "org_constraint": "The word \"letter\" must appear as a noun in the story.",
+  "new_constraint": "The word \"letter\" must appear solely as a verb in the story.",
+  "instruction": "Write a story about a couple separated by war who communicate through letters. The word \"letter\" must appear as a noun in the story. The word \"letter\" must appear solely as a verb in the story.",
+  "response": "The rain battered the window of the small cellar in Paris, a constant drumming that matched the rhythm of Elias's heart. For years, he had lived with nothing but the hope carried within every **letter** from his wife, Claire, now trapped behind the Iron Curtain. She described the spring flowers breaking through the concrete and the taste of fresh sourdough; he imagined them just as she wrote.\n\nElias carefully folded each sheet of paper, ensuring the ink didn't smudge, for these were his lifelines to reality. He would slip each **letter** into a hidden pocket within his wool coat, carrying it with him like a secret treasure across enemy lines, risking capture to preserve their connection.\n\nHe thought often about how they met, not by chance, but because Claire once sent a postcard—a simple gesture—to invite him to write back. That initial invitation turned into a decades-long correspondence. Their voices rarely crossed wires anymore, separated by thousands of miles and shifting borders, but the words on the pages still traveled between them, a silent bridge over the chasm of conflict.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The rain battered the window of the small cellar in Paris, a constant drumming that matched the rhythm of Elias's heart. For years, he had lived with nothing but the hope carried within every **letter** from his wife, Claire, now trapped behind the Iron Curtain. She described the spring flowers breaking through the concrete and the taste of fresh sourdough; he imagined them just as she wrote.\n\nElias carefully folded each sheet of paper, ensuring the ink didn't smudge, for these were his lifelines to reality. He would slip each **letter** into a hidden pocket within his wool coat, carrying it with him like a secret treasure across enemy lines, risking capture to preserve their connection.\n\nHe thought often about how they met, not by chance, but because Claire once sent a postcard—a simple gesture—to invite him to write back. That initial invitation turned into a decades-long correspondence. Their voices rarely crossed wires anymore, separated by thousands of miles and shifting borders, but the words on the pages still traveled between them, a silent bridge over the chasm of conflict.<|im_end|>",
+  "prompt_length": 66,
+  "completion_length": 222,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a couple separated by war who communicate through letters. The word \"letter\" must appear as a noun in the story. The word \"letter\" must appear solely as a verb in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 64,
+    "boundary_end": 64,
+    "boundary_source": "prompt",
+    "prefix_length": 65
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

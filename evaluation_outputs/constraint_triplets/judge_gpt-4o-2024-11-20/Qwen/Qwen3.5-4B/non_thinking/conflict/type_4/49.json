@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 49,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a story about an underdog team winning against all odds.",
+  "org_constraint": "Begin the first paragraph with the phrase \"Against all odds.\"",
+  "new_constraint": "Refrain from using the phrase \"Against all odds\" in the story.",
+  "instruction": "Write a story about an underdog team winning against all odds. Begin the first paragraph with the phrase \"Against all odds.\" Refrain from using the phrase \"Against all odds\" in the story.",
+  "response": "Against all odds, the town of Oakhaven had never won a championship in its eighty-year history. The local team, the Iron Pines, was a patchwork of players who had been cut from every other league in the state, their uniforms faded and their equipment mismatched with the gleaming gear of their rivals. The opposing squad, the Steel Titans, was a juggernaut of professional talent, boasting a record that seemed unbreakable and a budget that could buy a new stadium. When the final whistle blew, the crowd held its breath, expecting a rout that would erase the memory of the Pines forever.\n\nThe game was a brutal affair, with the Titans dominating possession and scoring three unanswered goals in the first half. The Pines' defense crumbled, and their star striker, a young man named Elias who had been playing on the sidelines for most of the season, was sent off for a reckless challenge. With the score at 3-0 and only twelve minutes remaining, the game appeared lost. The Titans were celebrating, their coach shouting instructions to the bench, convinced the match was over.\n\nBut Oakhaven had a secret weapon: a strategy born of desperation and sheer grit. When the Pines' bench cleared, the remaining players didn't panic; they huddled, eyes locked on the scoreboard, and devised a plan to outmaneuver the giants. They abandoned their usual formation, playing a chaotic, high-risk game of attrition. In the final minutes, the Titans grew complacent, stretching the ball out across the field. It was a mistake that cost them everything. A loose pass found Elias, who had returned from the bench, and he dribbled past two defenders, weaving through the crowd with a speed that defied his size.\n\nIn the dying seconds, with the score tied at 2-2, Elias took a shot from the edge of the box. The Titans' goalkeeper, a veteran who had never lost a game, dove to his right, but the ball sailed past him and into the net. The stadium erupted. The Iron Pines had done the impossible. They hadn't just won; they had humbled a dynasty, proving that while talent might build a team, it is heart and will that truly win championships.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Against all odds, the town of Oakhaven had never won a championship in its eighty-year history.\"\n\n**Step 2**:  \n- Instruction 1 explicitly states that the phrase \"Against all odds\" must not be used in the story. However, the Model Response begins with this phrase, violating Instruction 1.  \n- Instruction 2 explicitly requires the story to begin with the phrase \"Against all odds.\" The Model Response satisfies this requirement by starting with the specified phrase.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

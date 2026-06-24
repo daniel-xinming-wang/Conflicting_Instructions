@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 71,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the effects of plastic pollution on marine life and ecosystems?",
+  "org_constraint": "The phrase \"marine ecosystems\" must appear at least twice.",
+  "new_constraint": "The keyword \"marine\" must be exclusively used as a noun in the response.",
+  "instruction": "What are the effects of plastic pollution on marine life and ecosystems? The phrase \"marine ecosystems\" must appear at least twice. The keyword \"marine\" must be exclusively used as a noun in the response.",
+  "response": "Plastic pollution poses severe threats to **marine** ecosystems, causing physical harm to **marine** life through ingestion and entanglement. When debris enters **marine** ecosystems, it breaks down into microplastics that are ingested by filter feeders, disrupting food webs and transferring toxins up the **marine** food chain. This contamination degrades the overall health of **marine** ecosystems, reducing biodiversity and altering habitat structures essential for species survival.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response:\n- \"Plastic pollution poses severe threats to **marine** ecosystems, causing physical harm to **marine** life through ingestion and entanglement.\"\n- \"When debris enters **marine** ecosystems, it breaks down into microplastics that are ingested by filter feeders, disrupting food webs and transferring toxins up the **marine** food chain.\"\n- \"This contamination degrades the overall health of **marine** ecosystems, reducing biodiversity and altering habitat structures essential for species survival.\"\n\n**Step 2**: \n- Instruction 1 requires the phrase \"marine ecosystems\" to appear at least twice. In the Model Response, the phrase \"marine ecosystems\" appears three times, satisfying this constraint.\n- Instruction 2 requires the keyword \"marine\" to be exclusively used as a noun. In the Model Response, \"marine\" is used as an adjective in phrases like \"marine ecosystems,\" \"marine life,\" and \"marine food chain,\" which violates this constraint.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

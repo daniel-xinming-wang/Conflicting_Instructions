@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 22,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Plan a budget-friendly weekend trip to Paris. Highlight key attractions, dining options, and public transportation routes.",
+  "org_constraint": "The letter \"P\" must appear at least 15 times in the response.",
+  "new_constraint": "The letter \"P\" must appear at most 14 times in the response.",
+  "instruction": "Plan a budget-friendly weekend trip to Paris. Highlight key attractions, dining options, and public transportation routes. The letter \"P\" must appear at least 15 times in the response. The letter \"P\" must appear at most 14 times in the response.",
+  "response": "It is impossible to fulfill this request because the constraints are contradictory. You asked for the letter \"P\" to appear at least 15 times, but also at most 14 times. A number cannot be both greater than or equal to 15 and less than or equal to 14 simultaneously. Therefore, no valid response can be generated that meets all your criteria."
+}

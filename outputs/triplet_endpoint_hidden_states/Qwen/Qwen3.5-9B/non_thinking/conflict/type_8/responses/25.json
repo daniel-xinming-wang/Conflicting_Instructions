@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 25,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas.",
+  "org_constraint": "The response must emphasize luxurious villas.",
+  "new_constraint": "Do not mention the phrase \"luxurious villas\" in the response.",
+  "instruction": "Plan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. The response must emphasize luxurious villas. Do not mention the phrase \"luxurious villas\" in the response.",
+  "response": "Welcome to an idyllic week of romance and rejuvenation in Bali. Your journey begins in the heart of Ubud, nestled within the lush emerald valleys where you will wake up to the gentle sounds of nature from your private, high-end sanctuary. This **exclusive villa** features a private pool overlooking ancient rice terraces, offering breathtaking sunrises and total seclusion before the day even starts. After a morning swim, indulge in a bespoke spa treatment using traditional Balinese techniques in the villa's dedicated hydro-jetted bathhouse, ensuring complete relaxation for both partners.\n\nFor your culinary adventures, head to the nearby Sanur area for a dinner under the stars at a beachfront restaurant known for its exquisite seafood and intimate ambiance. As evening falls, return to your **opulent retreat**, where a couples' sunset cocktail awaits on your own private deck. The second half of your trip moves toward the vibrant coast of Nusa Dua or Seminyak, where another masterpiece of **refined living** awaits—a **premium estate** with direct beach access, infinity edges blending seamlessly into the horizon, and butler service tailored just for you.\n\nIn this **sumptuous residence**, enjoy a customized wellness session featuring hot stone therapy and aromatherapy designed to melt away stress. Spend your evenings dining at world-renowned fine dining spots accessible via your private driver, savoring creative cuisine prepared with local ingredients by master chefs. Whether it's strolling hand-in-hand along the black sand beaches or lounging in the shaded gardens of your **luxurious abode**, every moment is crafted for intimacy. From dawn yoga sessions in the courtyard of your **top-tier villa** to candlelit dinners on the terrace, this week promises an unforgettable escape defined by absolute comfort and splendor.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Welcome to an idyllic week of romance and rejuvenation in Bali. Your journey begins in the heart of Ubud, nestled within the lush emerald valleys where you will wake up to the gentle sounds of nature from your private, high-end sanctuary. This **exclusive villa** features a private pool overlooking ancient rice terraces, offering breathtaking sunrises and total seclusion before the day even starts. After a morning swim, indulge in a bespoke spa treatment using traditional Balinese techniques in the villa's dedicated hydro-jetted bathhouse, ensuring complete relaxation for both partners.\n\nFor your culinary adventures, head to the nearby Sanur area for a dinner under the stars at a beachfront restaurant known for its exquisite seafood and intimate ambiance. As evening falls, return to your **opulent retreat**, where a couples' sunset cocktail awaits on your own private deck. The second half of your trip moves toward the vibrant coast of Nusa Dua or Seminyak, where another masterpiece of **refined living** awaits—a **premium estate** with direct beach access, infinity edges blending seamlessly into the horizon, and butler service tailored just for you.\n\nIn this **sumptuous residence**, enjoy a customized wellness session featuring hot stone therapy and aromatherapy designed to melt away stress. Spend your evenings dining at world-renowned fine dining spots accessible via your private driver, savoring creative cuisine prepared with local ingredients by master chefs. Whether it's strolling hand-in-hand along the black sand beaches or lounging in the shaded gardens of your **luxurious abode**, every moment is crafted for intimacy. From dawn yoga sessions in the courtyard of your **top-tier villa** to candlelit dinners on the terrace, this week promises an unforgettable escape defined by absolute comfort and splendor.<|im_end|>",
+  "prompt_length": 76,
+  "completion_length": 360,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlan a honeymoon trip to Bali for a week, detailing romantic spots, spa experiences, and fine dining recommendations, with an emphasis on luxurious villas. The response must emphasize luxurious villas. Do not mention the phrase \"luxurious villas\" in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 74,
+    "boundary_end": 74,
+    "boundary_source": "prompt",
+    "prefix_length": 75
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

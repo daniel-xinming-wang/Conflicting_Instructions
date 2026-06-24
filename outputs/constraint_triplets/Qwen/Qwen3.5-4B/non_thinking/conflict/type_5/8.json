@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The \"body\" must contain no more than 100 words.",
+  "new_constraint": "The \"body\" must contain at least 150 words.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The \"body\" must contain no more than 100 words. The \"body\" must contain at least 150 words.",
+  "response": "It is impossible to write a single paragraph that contains no more than 100 words and at the same time contains at least 150 words. These two constraints are mathematically contradictory; a number cannot be simultaneously less than or equal to 100 and greater than or equal to 150. Therefore, I cannot fulfill this request as stated. If you would like me to write an email about bus schedules that is either under 100 words or over 150 words, please let me know which length you prefer, and I will be happy to do so immediately."
+}

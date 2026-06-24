@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Conclude your review with the phrase \"a delightful addition to the neighborhood.\"",
+  "new_constraint": "Do not use the keyword \"delightful\" in your review.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Conclude your review with the phrase \"a delightful addition to the neighborhood.\" Do not use the keyword \"delightful\" in your review.",
+  "response": "I recently stumbled upon a charming new coffee shop tucked away on the corner of 5th and Main, and I must say, it has quickly become my go-to spot for a morning brew. The interior is a warm blend of rustic wood and modern minimalism, creating an inviting atmosphere that feels both cozy and energetic. The baristas are incredibly skilled; their pour-over technique is flawless, and the espresso shots are rich and smooth every single time.\n\nWhat truly sets this place apart, however, is the menu. Beyond the standard lattes and cappuccinos, they offer a rotating selection of seasonal syrups and house-made pastries that are nothing short of exceptional. The sourdough bread they bake fresh daily is a standout, paired perfectly with their house-made almond croissants. Whether you need a quick caffeine fix or a place to work for an hour, this spot delivers consistently. It is clear that the owners put immense care into every detail, from the bean sourcing to the ambiance. I highly recommend giving it a try; it is truly a delightful addition to the neighborhood.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"I highly recommend giving it a try; it is truly a delightful addition to the neighborhood.\"\n\n**Step 2**:  \n- Instruction 1 requires the review to conclude with the phrase \"a delightful addition to the neighborhood.\" This constraint is fully satisfied, as the Model Response ends with this exact phrase.  \n- Instruction 2 prohibits the use of the keyword \"delightful\" in the review. This constraint is not satisfied, as the keyword \"delightful\" appears in the phrase \"a delightful addition to the neighborhood.\"\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

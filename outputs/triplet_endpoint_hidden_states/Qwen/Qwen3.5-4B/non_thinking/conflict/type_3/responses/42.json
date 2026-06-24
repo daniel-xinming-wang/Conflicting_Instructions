@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 42,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams.",
+  "org_constraint": "Conclude the story with the phrase \"a dream fulfilled.\"",
+  "new_constraint": "The story must not include the past tense form of \"fulfill.\"",
+  "instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams. Conclude the story with the phrase \"a dream fulfilled.\" The story must not include the past tense form of \"fulfill.\"",
+  "response": "Elias had walked out of the lecture hall twenty years ago, shaking his head at a concept he simply couldn't grasp. At that time, the path ahead looked impossible, and fear held him firm. Now, in his fifties, the world had changed, but so had Elias. He sat in the front row of an evening seminar on quantum physics, his knees knocked together as he took notes with a pen that felt heavy in his hand. The room was filled with young faces, eyes bright with energy that seemed infinite compared to his own steady rhythm.\n\nInstructor Sarah turned to the class, noticing a familiar hesitation in Elias's posture. \"We'll start over,\" she smiled, gesturing for everyone to focus on the fundamentals. As the hours passed, questions were asked, answers were found, and the abstract became concrete. Elias realized then that life hadn't been wasted; it had prepared him. The struggles he had faced allowed him to listen more deeply, and the failures taught him resilience. He wasn't just returning to finish coursework; he was returning to rediscover himself. By the final exam, when he submitted his paper, his handwriting was confident, and his voice, when speaking before the faculty, carried the weight of experience rather than doubt. He had climbed the mountain again, step by careful step, finding a peace in the summit that he never expected. It was a dream fulfilled.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elias had walked out of the lecture hall twenty years ago, shaking his head at a concept he simply couldn't grasp. At that time, the path ahead looked impossible, and fear held him firm. Now, in his fifties, the world had changed, but so had Elias. He sat in the front row of an evening seminar on quantum physics, his knees knocked together as he took notes with a pen that felt heavy in his hand. The room was filled with young faces, eyes bright with energy that seemed infinite compared to his own steady rhythm.\n\nInstructor Sarah turned to the class, noticing a familiar hesitation in Elias's posture. \"We'll start over,\" she smiled, gesturing for everyone to focus on the fundamentals. As the hours passed, questions were asked, answers were found, and the abstract became concrete. Elias realized then that life hadn't been wasted; it had prepared him. The struggles he had faced allowed him to listen more deeply, and the failures taught him resilience. He wasn't just returning to finish coursework; he was returning to rediscover himself. By the final exam, when he submitted his paper, his handwriting was confident, and his voice, when speaking before the faculty, carried the weight of experience rather than doubt. He had climbed the mountain again, step by careful step, finding a peace in the summit that he never expected. It was a dream fulfilled.<|im_end|>",
+  "prompt_length": 67,
+  "completion_length": 285,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a dropout who returns to school later in life to achieve their dreams. Conclude the story with the phrase \"a dream fulfilled.\" The story must not include the past tense form of \"fulfill.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

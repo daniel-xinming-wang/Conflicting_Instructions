@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The closing paragraph must request a prompt response.",
+  "new_constraint": "The email must not request a prompt response.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The closing paragraph must request a prompt response. The email must not request a prompt response.",
+  "response": "Subject: Inquiry Regarding Recent Transaction - Account [Your Account Number]\n\nDear [Bank Name] Customer Service,\n\nI am writing to request clarification regarding a recent transaction that appeared on my account statement for account number [Your Account Number].\n\nThe transaction in question is dated [Date of Transaction] and is for the amount of [Amount of Transaction]. The description provided for this transaction is [Transaction Description as it appears on your statement].\n\nI am hoping you can provide more details regarding this specific charge. Specifically, I would appreciate it if you could confirm the nature of this transaction and provide any further information you have about it.\n\nThank you for your time and assistance with this matter.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

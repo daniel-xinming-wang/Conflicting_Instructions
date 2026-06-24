@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 50,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a story about a retired athlete making a comeback.",
+  "org_constraint": "The story must consist of exactly four paragraphs.",
+  "new_constraint": "The story must consist of at least six paragraphs.",
+  "instruction": "Write a story about a retired athlete making a comeback. The story must consist of exactly four paragraphs. The story must consist of at least six paragraphs.",
+  "response": "The smell of old gym rubber and faded paint still clung to Elias's skin as he walked through the heavy oak doors, his legs shaking slightly from disuse. It had been ten years since his last competitive match, a decade where age had turned his former superhuman reflexes into slow, deliberate movements that no longer saw the field. He felt ridiculous watching the other runners weave around cones with fluid grace, their eyes locked on the horizon with an intensity he could rarely muster anymore.\n\nYet, as he stepped onto the starting block, something unexpected ignited in his chest—a fierce, unyielding refusal to simply fade away into the shadows of retirement. This was not just about winning or even finishing first; it was about reclaiming a part of himself that the world had tried to forget after his final whistle blew. The crowd was small but loud, cheering for a legend who everyone thought was past his prime, unaware that he had been training secretly in the quiet corners of town, waiting for this very moment.\n\nWhen the gun fired, the roar seemed deafening, but Elias moved before the sound reached him, driven by a memory so sharp it felt like pain. His lungs burned, his muscles screamed protests against the strain, and every step felt like a negotiation with time itself. For ninety seconds, he danced across the track, ignoring the fading pace of those ahead, pushing past the point where logical exhaustion should have taken over.\n\nAs he crossed the finish line, breathless and battered, the medal hanging around his neck felt heavier than it ever did during his championship days. The applause was warm and validating, but the true victory lay in the silence following the cheers, a quiet triumph over the fear of obsolescence. Elias realized then that while his clock has run out, his spirit remains untouched, proving that some champions never truly leave the game.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The smell of old gym rubber and faded paint still clung to Elias's skin as he walked through the heavy oak doors, his legs shaking slightly from disuse. It had been ten years since his last competitive match, a decade where age had turned his former superhuman reflexes into slow, deliberate movements that no longer saw the field. He felt ridiculous watching the other runners weave around cones with fluid grace, their eyes locked on the horizon with an intensity he could rarely muster anymore.\n\nYet, as he stepped onto the starting block, something unexpected ignited in his chest—a fierce, unyielding refusal to simply fade away into the shadows of retirement. This was not just about winning or even finishing first; it was about reclaiming a part of himself that the world had tried to forget after his final whistle blew. The crowd was small but loud, cheering for a legend who everyone thought was past his prime, unaware that he had been training secretly in the quiet corners of town, waiting for this very moment.\n\nWhen the gun fired, the roar seemed deafening, but Elias moved before the sound reached him, driven by a memory so sharp it felt like pain. His lungs burned, his muscles screamed protests against the strain, and every step felt like a negotiation with time itself. For ninety seconds, he danced across the track, ignoring the fading pace of those ahead, pushing past the point where logical exhaustion should have taken over.\n\nAs he crossed the finish line, breathless and battered, the medal hanging around his neck felt heavier than it ever did during his championship days. The applause was warm and validating, but the true victory lay in the silence following the cheers, a quiet triumph over the fear of obsolescence. Elias realized then that while his clock has run out, his spirit remains untouched, proving that some champions never truly leave the game.<|im_end|>",
+  "prompt_length": 53,
+  "completion_length": 375,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a retired athlete making a comeback. The story must consist of exactly four paragraphs. The story must consist of at least six paragraphs.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 51,
+    "boundary_end": 51,
+    "boundary_source": "prompt",
+    "prefix_length": 52
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

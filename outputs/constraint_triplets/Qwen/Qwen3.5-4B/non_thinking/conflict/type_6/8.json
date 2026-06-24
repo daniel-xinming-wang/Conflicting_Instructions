@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String).",
+  "new_constraint": "The email must be formatted in JSON with two keys.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The email must be formatted in JSON with two keys.",
+  "response": "```json\n{\n  \"subject\": \"Inquiry About Travel Schedules\",\n  \"body\": \"Hello,\\n\\nI hope this email finds you well. I am writing to inquire about your current travel schedules. Could you please provide details on the routes, departure times, and frequency of your buses?\\n\\nThank you for your assistance.\\n\\nBest regards,\\n[Your Name]\",\n  \"signature\": \"[Your Name]\"\n}\n```"
+}

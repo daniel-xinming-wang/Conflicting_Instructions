@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 11,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Send an email to a software developer asking for a product demo.",
+  "org_constraint": "The second sentence must include the keyword \"demo\" as a noun and convey the definition of \"a demonstration of a product or service.\"",
+  "new_constraint": "Use the keyword \"demo\" exclusively as a verb in the second sentence.",
+  "instruction": "Send an email to a software developer asking for a product demo. The second sentence must include the keyword \"demo\" as a noun and convey the definition of \"a demonstration of a product or service.\" Use the keyword \"demo\" exclusively as a verb in the second sentence.",
+  "response": "Subject: Request for a Product Demo\n\nDear [Developer's Name],\n\nI hope this email finds you well. I am writing to request a demonstration of your latest software solution to better understand its capabilities.\n\nCould you please schedule a time for me to **demo** the platform so I can see how it addresses our specific workflow challenges?"
+}

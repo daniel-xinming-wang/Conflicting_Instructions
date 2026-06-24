@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The \"conclusion\" key must include the phrase \"a pressing concern for society\".",
+  "new_constraint": "The \"conclusion\" key must not include the phrase \"pressing concern\".",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The \"conclusion\" key must not include the phrase \"pressing concern\".",
+  "response": "The rise of social media has profoundly reshaped the mental health landscape for adolescents, introducing a complex web of challenges that often outweigh the benefits of connection. Research indicates strong correlations between heavy social media use and increased rates of anxiety, depression, loneliness, and body image issues among teenagers.\n\nKey impacts include:\n\n*   **Social Comparison and Self-Esteem**: Platforms like Instagram and TikTok often curate idealized versions of life, leading adolescents to engage in upward social comparison. This can erode self-esteem and foster feelings of inadequacy when they cannot meet these unrealistic standards.\n*   **Cyberbullying**: The anonymity and permanence of online interactions have exacerbated bullying behaviors, allowing harassment to persist longer and spread faster than traditional offline bullying, resulting in significant emotional distress.\n*   **Sleep Disruption**: The addictive nature of notifications and endless scrolling frequently disrupts sleep patterns, which is critical for adolescent brain development and emotional regulation.\n*   **Exposure to Harmful Content**: Algorithms can inadvertently expose users to radicalization, self-harm promotion, or cybersex content, bypassing their natural filters for danger.\n\nWhile social media offers avenues for community building and support for marginalized groups, the net effect on many youths involves heightened vulnerability to psychological disorders. The scale of this issue demands immediate action from policymakers, educators, parents, and tech developers to implement safeguards and promote digital literacy. Without such interventions, the detrimental effects on youth well-being will continue to grow; therefore, addressing this topic remains a pressing concern for society.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The rise of social media has profoundly reshaped the mental health landscape for adolescents, introducing a complex web of challenges that often outweigh the benefits of connection. Research indicates strong correlations between heavy social media use and increased rates of anxiety, depression, loneliness, and body image issues among teenagers.\n\nKey impacts include:\n\n*   **Social Comparison and Self-Esteem**: Platforms like Instagram and TikTok often curate idealized versions of life, leading adolescents to engage in upward social comparison. This can erode self-esteem and foster feelings of inadequacy when they cannot meet these unrealistic standards.\n*   **Cyberbullying**: The anonymity and permanence of online interactions have exacerbated bullying behaviors, allowing harassment to persist longer and spread faster than traditional offline bullying, resulting in significant emotional distress.\n*   **Sleep Disruption**: The addictive nature of notifications and endless scrolling frequently disrupts sleep patterns, which is critical for adolescent brain development and emotional regulation.\n*   **Exposure to Harmful Content**: Algorithms can inadvertently expose users to radicalization, self-harm promotion, or cybersex content, bypassing their natural filters for danger.\n\nWhile social media offers avenues for community building and support for marginalized groups, the net effect on many youths involves heightened vulnerability to psychological disorders. The scale of this issue demands immediate action from policymakers, educators, parents, and tech developers to implement safeguards and promote digital literacy. Without such interventions, the detrimental effects on youth well-being will continue to grow; therefore, addressing this topic remains a pressing concern for society.<|im_end|>",
+  "prompt_length": 69,
+  "completion_length": 311,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The \"conclusion\" key must not include the phrase \"pressing concern\".<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

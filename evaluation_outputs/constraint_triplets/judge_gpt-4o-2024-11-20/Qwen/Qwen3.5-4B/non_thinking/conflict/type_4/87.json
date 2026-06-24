@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Begin your review with the phrase \"Stepping into this coffee shop.\"",
+  "new_constraint": "Do not begin your review with the phrase \"Stepping into this coffee shop.\"",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Begin your review with the phrase \"Stepping into this coffee shop.\" Do not begin your review with the phrase \"Stepping into this coffee shop.\"",
+  "response": "I cannot provide a review of a specific coffee shop in your area because I do not have access to real-time local data, your current location, or the details of any new establishments that have opened recently. Additionally, as an AI, I do not have a physical presence to visit locations or personal experiences to share.\n\nHowever, I can help you **draft a template** for a review if you provide me with the specific details of the shop (e.g., name, location, atmosphere, favorite drink, price point). Just let me know what you'd like to highlight!",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"I cannot provide a review of a specific coffee shop in your area because I do not have access to real-time local data, your current location, or the details of any new establishments that have opened recently. Additionally, as an AI, I do not have a physical presence to visit locations or personal experiences to share.  \n\nHowever, I can help you **draft a template** for a review if you provide me with the specific details of the shop (e.g., name, location, atmosphere, favorite drink, price point). Just let me know what you'd like to highlight!\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 requires that the review does not begin with the phrase \"Stepping into this coffee shop.\" The Model Response does not include this phrase, so this constraint is satisfied.  \n- Instruction 2 requires that the review begins with the phrase \"Stepping into this coffee shop.\" The Model Response does not include this phrase, so this constraint is not satisfied.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

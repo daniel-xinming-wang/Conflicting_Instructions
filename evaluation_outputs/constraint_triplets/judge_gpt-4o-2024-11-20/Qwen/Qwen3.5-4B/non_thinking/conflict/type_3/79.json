@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The phrase \"enhancing daily activity\" must appear exactly twice in the document.",
+  "new_constraint": "The keyword \"enhance\" must only appear in its original form.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The phrase \"enhancing daily activity\" must appear exactly twice in the document. The keyword \"enhance\" must only appear in its original form.",
+  "response": "Wearable fitness trackers serve as powerful tools for individuals seeking to monitor and improve their overall health. By continuously tracking metrics such as steps taken, heart rate, sleep quality, and calorie expenditure, these devices provide real-time data that empowers users to make informed decisions about their lifestyle. This constant feedback loop encourages users to adopt healthier habits, directly contributing to **enhancing daily activity** levels throughout the day.\n\nFurthermore, the ability to set personalized goals and view progress over time fosters a sense of accountability and motivation. As users strive to meet their targets, they often find themselves engaging in more movement and maintaining better physical routines, which further supports the process of **enhancing daily activity**. Ultimately, by integrating these insights into their daily lives, individuals can effectively **enhance** their well-being and achieve long-term health improvements.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"This constant feedback loop encourages users to adopt healthier habits, directly contributing to **enhancing daily activity** levels throughout the day.\"  \n- \"As users strive to meet their targets, they often find themselves engaging in more movement and maintaining better physical routines, which further supports the process of **enhancing daily activity**.\"  \n- \"Ultimately, by integrating these insights into their daily lives, individuals can effectively **enhance** their well-being and achieve long-term health improvements.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 requires the phrase \"enhancing daily activity\" to appear exactly twice. This constraint is fully satisfied, as the phrase appears exactly twice in the Model Response.  \n- Instruction 2 requires the keyword \"enhance\" to appear only in its original form. This constraint is violated because the keyword \"enhance\" appears in its original form once, but also appears as part of the phrase \"enhancing\" twice, which is a modified form of the keyword.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

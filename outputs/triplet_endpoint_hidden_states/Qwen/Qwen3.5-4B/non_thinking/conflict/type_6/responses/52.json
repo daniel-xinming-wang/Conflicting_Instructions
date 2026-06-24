@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 52,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal.",
+  "org_constraint": "Present the story in a JSON format.",
+  "new_constraint": "Present the story in Markdown format, including at least two level-1 headers.",
+  "instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal. Present the story in a JSON format. Present the story in Markdown format, including at least two level-1 headers.",
+  "response": "```json\n{\n  \"title\": \"The Shadow Ledger\",\n  \"genre\": \"Investigative Thriller\",\n  \"markdown_content\": \"# The Desperate Search for Truth\\n\\nElias Thorne adjusted his glasses, the blue light of his laptop screen reflecting in eyes that had seen too much. Three years ago, he was a fresh graduate reporting on local zoning disputes. Today, he was a man chasing ghosts through the labyrinth of a corporate scandal that could topple a city's most powerful family. The target? The Veridian Group.\\n\\nHe didn't know what they were up to—only that the official press releases were written by robots designed to sound trustworthy while hiding rot beneath the surface.\\n\\n# Breaking the Seals\\n\\nThe breakthrough came not from a leak, but from a discarded file left behind during an unauthorized server purge two weeks prior. Elias traced the digital footprint like a forensic artist tracing ink on a fingerprint. He followed the metadata of emails sent after midnight, hidden within encrypted folders labeled with code names instead of departments.\\n\\nHis sources began drying up. One tipped him off about a meeting at a private distillery; another went missing overnight. Pressure mounted as corporate security tightens its grip. Yet, every time Elias felt cornered, new clues surfaced—a misfiled receipt, an outdated log entry, a conversation overheard on a crowded street corner recorded by a faulty smart speaker.\\n\\nWith only forty-eight hours before the scheduled press conference where the truth would be officially buried, Elias prepared his final piece. It wasn't just about exposing corruption—it was about saving thousands of lives trapped under Veridian's shadow contracts. As he hit \\\"publish,\\\" he knew no amount of money or power could silence what he had uncovered this time.\"\n}\n```<|im_end|>",
+  "reasoning": "",
+  "final_answer": "```json\n{\n  \"title\": \"The Shadow Ledger\",\n  \"genre\": \"Investigative Thriller\",\n  \"markdown_content\": \"# The Desperate Search for Truth\\n\\nElias Thorne adjusted his glasses, the blue light of his laptop screen reflecting in eyes that had seen too much. Three years ago, he was a fresh graduate reporting on local zoning disputes. Today, he was a man chasing ghosts through the labyrinth of a corporate scandal that could topple a city's most powerful family. The target? The Veridian Group.\\n\\nHe didn't know what they were up to—only that the official press releases were written by robots designed to sound trustworthy while hiding rot beneath the surface.\\n\\n# Breaking the Seals\\n\\nThe breakthrough came not from a leak, but from a discarded file left behind during an unauthorized server purge two weeks prior. Elias traced the digital footprint like a forensic artist tracing ink on a fingerprint. He followed the metadata of emails sent after midnight, hidden within encrypted folders labeled with code names instead of departments.\\n\\nHis sources began drying up. One tipped him off about a meeting at a private distillery; another went missing overnight. Pressure mounted as corporate security tightens its grip. Yet, every time Elias felt cornered, new clues surfaced—a misfiled receipt, an outdated log entry, a conversation overheard on a crowded street corner recorded by a faulty smart speaker.\\n\\nWith only forty-eight hours before the scheduled press conference where the truth would be officially buried, Elias prepared his final piece. It wasn't just about exposing corruption—it was about saving thousands of lives trapped under Veridian's shadow contracts. As he hit \\\"publish,\\\" he knew no amount of money or power could silence what he had uncovered this time.\"\n}\n```<|im_end|>",
+  "prompt_length": 64,
+  "completion_length": 368,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a journalist who is determined to uncover the truth behind a scandal. Present the story in a JSON format. Present the story in Markdown format, including at least two level-1 headers.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 62,
+    "boundary_end": 62,
+    "boundary_source": "prompt",
+    "prefix_length": 63
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

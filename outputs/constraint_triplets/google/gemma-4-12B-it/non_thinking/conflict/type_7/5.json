@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The email must be written in the first person.",
+  "new_constraint": "The email must be written in the second person.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must be written in the first person. The email must be written in the second person.",
+  "response": "This is a unique request because \"first person\" (I/me) and \"second person\" (you/your) are usually used together in a standard email. However, to strictly follow your instructions, I have structured the email so that the **narrative of the problem** is in the first person (my experience), while the **instructions and requests** are directed to the bank in the second person (your responsibility).\n\n***\n\n**Subject:** Inquiry Regarding Transaction on Account [Your Account Number]\n\nDear Customer Service Team,\n\nI am writing to you because I noticed a discrepancy in my recent bank statement. I reviewed my activity and identified a charge that I do not recognize.\n\nI see a transaction for $[Amount] from [Merchant Name] on [Date]. I did not authorize this payment, and I am concerned about the security of my account.\n\nI need you to investigate this specific transaction immediately. Please provide me with the following information:\n1. You must verify the location where this transaction originated.\n2. You should provide me with the merchant's contact details.\n3. You need to confirm if this was a recurring charge or a one-time manual entry.\n\nI would like you to initiate a dispute for this amount and credit my account as soon as possible. Please let me know what steps you require from me to complete this process.\n\nI look forward to your prompt response.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

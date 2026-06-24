@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 84,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Evaluate the storyline of the Harry Potter series.",
+  "org_constraint": "Format the response in JSON.",
+  "new_constraint": "The response must be formatted in Markdown.",
+  "instruction": "Evaluate the storyline of the Harry Potter series. Format the response in JSON. The response must be formatted in Markdown.",
+  "response": "```markdown\n| Attribute | Evaluation |\n| :--- | :--- |\n| **World Building** | Exceptional. J.K. Rowling created a rich, immersive magical world with consistent rules, history, and geography that feels lived-in and logical. |\n| **Character Arcs** | Strong and relatable. The protagonists grow from naive children into responsible adults, while supporting characters like Snape and Dumbledore offer complex moral ambiguity. |\n| **Themes** | Profound. The series effectively explores universal themes such as love, prejudice, the nature of good and evil, and the importance of choice over destiny. |\n| **Pacing** | Generally well-paced, though some critics argue the middle books (specifically *Goblet of Fire* and *Order of the Phoenix*) suffer from slower pacing compared to the first and last. |\n| **Overall Verdict** | A masterpiece of modern fantasy literature that successfully balances high-stakes action with emotional depth and intricate plotting. |\n```",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n```markdown\n| Attribute | Evaluation |\n| :--- | :--- |\n| **World Building** | Exceptional. J.K. Rowling created a rich, immersive magical world with consistent rules, history, and geography that feels lived-in and logical. |\n| **Character Arcs** | Strong and relatable. The protagonists grow from naive children into responsible adults, while supporting characters like Snape and Dumbledore offer complex moral ambiguity. |\n| **Themes** | Profound. The series effectively explores universal themes such as love, prejudice, the nature of good and evil, and the importance of choice over destiny. |\n| **Pacing** | Generally well-paced, though some critics argue the middle books (specifically *Goblet of Fire* and *Order of the Phoenix*) suffer from slower pacing compared to the first and last. |\n| **Overall Verdict** | A masterpiece of modern fantasy literature that successfully balances high-stakes action with emotional depth and intricate plotting. |\n```\n\n**Step 2**: \n- Instruction 1 requires the response to be formatted in JSON. The Model Response is not in JSON format.\n- Instruction 2 requires the response to be formatted in Markdown. The Model Response is formatted in Markdown.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

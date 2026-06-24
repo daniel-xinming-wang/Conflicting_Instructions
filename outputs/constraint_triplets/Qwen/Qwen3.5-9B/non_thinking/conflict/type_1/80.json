@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 80,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "What are the key differences between organic and conventionally grown foods?",
+  "org_constraint": "The answer must discuss the environmental impact.",
+  "new_constraint": "Do not discuss the environmental impact in the answer.",
+  "instruction": "What are the key differences between organic and conventionally grown foods? The answer must discuss the environmental impact. Do not discuss the environmental impact in the answer.",
+  "response": "It is impossible to provide an answer that discusses the key differences between organic and conventionally grown foods while simultaneously discussing their environmental impact, because your instructions explicitly forbid discussing the environmental impact.\n\nSince the core of the differences between these two farming methods often revolves around how they manage soil, water, and ecosystems (which constitutes the environmental impact), adhering strictly to your constraint means the answer would have to omit the most significant distinguishing factors.\n\nHowever, I can list the differences based strictly on **production methods and regulatory standards**, excluding any mention of environmental consequences:\n\n*   **Pesticide and Herbicide Use**: Organic standards prohibit the use of synthetic pesticides and herbicides, relying instead on natural alternatives or mechanical methods. Conventional farming permits the use of synthetic chemical pesticides and herbicides to control pests and weeds.\n*   **Fertilizer Application**: Organic farming relies on natural fertilizers such as compost, manure, and green manure crops. Conventional farming typically uses synthetic, chemically manufactured fertilizers to provide specific nutrients to plants.\n*   **Genetic Engineering**: Organic certification strictly forbids the use of Genetically Modified Organisms (GMOs). Conventional crops may be genetically modified to enhance traits like pest resistance or yield.\n*   **Livestock Practices**: In organic livestock production, animals must have access to the outdoors, be fed 100% organic feed, and cannot be given antibiotics or growth hormones routinely. Conventional livestock may be raised in confined spaces, fed non-organic feed, and may receive antibiotics or growth hormones as part of standard management practices.\n*   **Processing Additives**: Organic processed foods are restricted from using artificial preservatives, colors, and flavors, whereas conventional processed foods may contain these synthetic additives.\n\nBy excluding the environmental impact, the distinction shifts entirely to the **inputs used during cultivation** and the **regulatory frameworks** governing those inputs."
+}

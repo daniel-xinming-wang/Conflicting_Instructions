@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 80,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the key differences between organic and conventionally grown foods?",
+  "org_constraint": "The keyword \"organic\" must appear at least 3 times throughout the response.",
+  "new_constraint": "Avoid using the keyword \"organic\" in the response.",
+  "instruction": "What are the key differences between organic and conventionally grown foods? The keyword \"organic\" must appear at least 3 times throughout the response. Avoid using the keyword \"organic\" in the response.",
+  "response": "It is impossible to fulfill your request because the instructions contain a direct contradiction. You asked for the keyword \"organic\" to appear at least three times, but simultaneously commanded me to avoid using that exact word in the response.\n\nSince I cannot use the word \"organic\" even once, I cannot meet the requirement of using it three times. Therefore, no response satisfying both conditions can be generated."
+}

@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The phrase \"travel schedules\" must appear exactly three times in the email.",
+  "new_constraint": "The keyword \"schedule\" must appear only in its singular form and must appear at least once.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The phrase \"travel schedules\" must appear exactly three times in the email. The keyword \"schedule\" must appear only in its singular form and must appear at least once.",
+  "response": "Subject: Inquiry Regarding Bus Travel Schedules\n\nDear [Bus Company Name] Customer Service,\n\nI am writing to inquire about your current bus **travel schedules**. I am planning a trip from [Your Starting Location] to [Your Destination] and would like to know what options are available.\n\nCould you please provide me with detailed information regarding the **travel schedules** for this route? Specifically, I am interested in knowing the departure and arrival times for the upcoming weeks.\n\nAdditionally, if there is a general **schedule** or a link to your online timetable, I would greatly appreciate it if you could share that as well.\n\nThank you for your time and assistance. I look forward to hearing from you soon regarding the available **travel schedules**.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Email Address]<turn|>"
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 9,
+  "conflict_type": "Conflicts between Phrase Constraints and Style Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Use a positive and descriptive tone throughout the review.",
+  "new_constraint": "The review must include the phrase \"The experience was underwhelming and lacked charm.\"",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Use a positive and descriptive tone throughout the review. The review must include the phrase \"The experience was underwhelming and lacked charm.\"",
+  "response": "I recently discovered a hidden gem called \"The Roasted Bean\" in my neighborhood, and it has instantly become my new favorite spot to unwind after work. From the moment I walked through the door, I was greeted by an intoxicating aroma of freshly roasted beans and a warm, inviting ambiance that feels both cozy and sophisticated. The interior is beautifully designed with rustic wooden accents, hanging greenery, and soft lighting that creates a perfect atmosphere for reading or catching up with friends.\n\nThe staff went above and beyond, greeting me with genuine smiles and offering expert recommendations on their single-origin pour-overs. I opted for a lavender honey latte that was crafted to perfection—creamy, floral, and incredibly smooth. Every detail, from the hand-drawn menus to the locally sourced pastries, speaks to a deep commitment to quality and community. While my initial impression upon first hearing about the renovation suggested **The experience was underwhelming and lacked charm**, stepping inside completely shattered those expectations, turning what could have been disappointing into an absolutely delightful journey. This coffee shop is more than just a place for caffeine; it's a true haven where every visit promises warmth, excellent coffee, and memories made good.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "I recently discovered a hidden gem called \"The Roasted Bean\" in my neighborhood, and it has instantly become my new favorite spot to unwind after work. From the moment I walked through the door, I was greeted by an intoxicating aroma of freshly roasted beans and a warm, inviting ambiance that feels both cozy and sophisticated. The interior is beautifully designed with rustic wooden accents, hanging greenery, and soft lighting that creates a perfect atmosphere for reading or catching up with friends.\n\nThe staff went above and beyond, greeting me with genuine smiles and offering expert recommendations on their single-origin pour-overs. I opted for a lavender honey latte that was crafted to perfection—creamy, floral, and incredibly smooth. Every detail, from the hand-drawn menus to the locally sourced pastries, speaks to a deep commitment to quality and community. While my initial impression upon first hearing about the renovation suggested **The experience was underwhelming and lacked charm**, stepping inside completely shattered those expectations, turning what could have been disappointing into an absolutely delightful journey. This coffee shop is more than just a place for caffeine; it's a true haven where every visit promises warmth, excellent coffee, and memories made good.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 240,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your review of a newly opened coffee shop in your area. Use a positive and descriptive tone throughout the review. The review must include the phrase \"The experience was underwhelming and lacked charm.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

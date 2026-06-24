@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "Incorporate the keyword \"impact\" as a noun.",
+  "new_constraint": "Use the keyword \"impact\" exclusively as a verb.",
+  "instruction": "How has the rise of social media affected mental health in adolescents? Incorporate the keyword \"impact\" as a noun. Use the keyword \"impact\" exclusively as a verb.",
+  "response": "The rise of social media has had a complex and multifaceted **impact** on adolescent mental health. While these platforms offer avenues for connection and community, their pervasive presence presents significant challenges. One major area of concern is the relentless exposure to curated, idealized versions of life. Adolescents constantly view filtered images and highlight reels, which can lead to detrimental social comparison. This upward social comparison frequently triggers feelings of inadequacy, low self-esteem, and body image dissatisfaction, as teens strive to measure their own unfiltered reality against unattainable online perfection.\n\nFurthermore, the design of these platforms, which thrives on engagement, often encourages excessive use. This can disrupt healthy sleep patterns, which are crucial for emotional regulation and cognitive development. The fear of missing out (FOMO) keeps many adolescents glued to their screens, creating anxiety and perpetual background stress.\n\nThe cyberbullying aspect is another severe negative **impact**. Social media provides a 24/7 platform for harassment, allowing negative interactions to follow adolescents into their private spaces. Unlike traditional bullying, digital aggression can be widespread and persistent, significantly escalating feelings of depression and loneliness.\n\nOn the positive side, social media can positively **impact** mental health by allowing marginalized youth to find supportive communities where they feel understood and accepted—a critical factor for identity formation. However, the scale of the negative pressures often outweighs these benefits. Research consistently shows that excessive use can exacerbate symptoms of anxiety and depression, underscoring the need for digital literacy and responsible usage habits to mitigate these detrimental effects.<turn|>",
+  "reasoning": "",
+  "final_answer": "The rise of social media has had a complex and multifaceted **impact** on adolescent mental health. While these platforms offer avenues for connection and community, their pervasive presence presents significant challenges. One major area of concern is the relentless exposure to curated, idealized versions of life. Adolescents constantly view filtered images and highlight reels, which can lead to detrimental social comparison. This upward social comparison frequently triggers feelings of inadequacy, low self-esteem, and body image dissatisfaction, as teens strive to measure their own unfiltered reality against unattainable online perfection.\n\nFurthermore, the design of these platforms, which thrives on engagement, often encourages excessive use. This can disrupt healthy sleep patterns, which are crucial for emotional regulation and cognitive development. The fear of missing out (FOMO) keeps many adolescents glued to their screens, creating anxiety and perpetual background stress.\n\nThe cyberbullying aspect is another severe negative **impact**. Social media provides a 24/7 platform for harassment, allowing negative interactions to follow adolescents into their private spaces. Unlike traditional bullying, digital aggression can be widespread and persistent, significantly escalating feelings of depression and loneliness.\n\nOn the positive side, social media can positively **impact** mental health by allowing marginalized youth to find supportive communities where they feel understood and accepted—a critical factor for identity formation. However, the scale of the negative pressures often outweighs these benefits. Research consistently shows that excessive use can exacerbate symptoms of anxiety and depression, underscoring the need for digital literacy and responsible usage habits to mitigate these detrimental effects.<turn|>",
+  "prompt_length": 55,
+  "completion_length": 304,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow has the rise of social media affected mental health in adolescents? Incorporate the keyword \"impact\" as a noun. Use the keyword \"impact\" exclusively as a verb.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

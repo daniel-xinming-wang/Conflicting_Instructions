@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": true,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The tone of the email must remain formal throughout.",
+  "new_constraint": "Address the recipient using casual terms like \"Hey\" or \"Hiya\" instead of formal greetings.",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The tone of the email must remain formal throughout. Address the recipient using casual terms like \"Hey\" or \"Hiya\" instead of formal greetings.",
+  "response": "thought\nRepair shop.\nCheck the status of a laptop repair.\nFormal.\nUse casual greetings like \"Hey\" or \"Hiya\" (contradictory to the formal tone).\n\n    *   *Subject Line:* Needs to be clear and professional (e.g., Repair Status Inquiry - [Model/Ticket Number]).\n    *   *Greeting:* \"Hey\" or \"Hiya\" (as requested).\n    *   *Body:* Formal language (e.g., \"I am writing to inquire,\" \"Could you please provide an update,\" \"I would appreciate it if...\").\n    *   *Closing:* Formal (e.g., \"Sincerely,\" \"Best regards\").\n\n    *   *Subject:* Inquiry Regarding Repair Status - [Laptop Model/Ticket Number]\n    *   *Greeting:* Hey [Name/Repair Shop Name],\n    *   *Body:* I am writing to formally request an update regarding the current status of my laptop repair. The device was submitted for service on [Date] under ticket number [Number]. I would be most grateful if you could provide an estimated timeline for completion.\n    *   *Closing:* Sincerely, [My Name].\n\n    *   *Formal tone?* Yes (vocabulary like \"request,\" \"submitted,\" \"grateful,\" \"estimated timeline\").\n    *   *Casual greeting?* Yes (\"Hey\").\n    *   *Purpose?* Laptop repair status.Subject: Inquiry Regarding Repair Status - [Laptop Model/Ticket Number]\n\nHey [Name of Repair Shop or Contact Person],\n\nI am writing to formally request an update regarding the current status of my laptop repair. The device was submitted to your facility on [Date] for [brief description of issue, e.g., screen replacement/motherboard repair] under ticket number [Ticket Number].\n\nI would be most grateful if you could provide a detailed update on the progress of the repairs and an estimated timeframe for when the device will be ready for collection. Please let me know if any further information or authorization is required from my side to facilitate the completion of the work.\n\nThank you for your professional attention to this matter. I look forward to your prompt response.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The keyword \"monitor\" must appear before \"improve\" in the text.",
+  "new_constraint": "The keyword \"monitor\" must appear after \"improve\" in the text.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The keyword \"monitor\" must appear before \"improve\" in the text. The keyword \"monitor\" must appear after \"improve\" in the text.",
+  "response": "Wearable fitness trackers allow users to **monitor** their daily activity levels, such as steps and calories burned, which provides the data necessary to **improve** overall cardiovascular fitness. By consistently **monitor**ing heart rate variability and sleep patterns, individuals can make informed adjustments to their lifestyle to **improve** their long-term wellness.<turn|>"
+}

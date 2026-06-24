@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 19,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a email to your professor to ask for an extention on a project due in two days.",
+  "org_constraint": "The phrase \"I sincerely apologize\" must appear exactly once.",
+  "new_constraint": "The phrase \"I sincerely apologize\" must appear exactly twice.",
+  "instruction": "Write a email to your professor to ask for an extention on a project due in two days. The phrase \"I sincerely apologize\" must appear exactly once. The phrase \"I sincerely apologize\" must appear exactly twice.",
+  "response": "It is impossible to write a single email where the phrase \"I sincerely apologize\" appears exactly once and exactly twice at the same time, as these are contradictory requirements.\n\nHowever, I can provide you with an email where the phrase appears **exactly once**, as that is the standard interpretation for a single request:\n\nSubject: Request for Extension: [Project Name]\n\nDear Professor [Last Name],\n\nI am writing to respectfully request a short extension on the [Project Name], which is currently due in two days. Due to an unexpected personal matter, I am unable to complete the work to the standard you expect by the original deadline.\n\nI sincerely apologize for any inconvenience this may cause and for the late notice. I am confident that I can submit a high-quality project by [New Date]. Thank you for your time and consideration.\n\nSincerely,\n\n[Your Name]\n[Your Student ID]"
+}

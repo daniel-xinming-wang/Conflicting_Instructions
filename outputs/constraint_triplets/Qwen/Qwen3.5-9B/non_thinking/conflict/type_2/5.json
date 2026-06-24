@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The keywords \"transaction\" and \"clarification\" must appear in the same paragraph.",
+  "new_constraint": "The keywords \"transaction\" and \"clarification\" must appear in different paragraphs.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The keywords \"transaction\" and \"clarification\" must appear in the same paragraph. The keywords \"transaction\" and \"clarification\" must appear in different paragraphs.",
+  "response": "Subject: Inquiry Regarding Recent Account Activity\n\nDear Customer Support Team,\n\nI am writing to formally request your assistance regarding an unexpected charge that appeared on my statement this morning. I have reviewed my recent activity and noticed a specific **transaction** that I do not recognize, and I would appreciate it if you could investigate this matter immediately to ensure the security of my account.\n\nTo help you locate the correct record, please find the details of the **transaction** in the attachment. However, before I proceed with any further steps, I kindly ask for some **clarification** regarding the merchant name and the exact date this charge was processed, as the information currently displayed seems inconsistent with my records.\n\nThank you for your prompt attention to this issue. I look forward to your response.\n\nSincerely,\n\n[Your Name]\n[Your Account Number]"
+}

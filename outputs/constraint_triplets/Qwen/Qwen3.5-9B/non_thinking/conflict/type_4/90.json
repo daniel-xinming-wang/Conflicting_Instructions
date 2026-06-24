@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 90,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Assess the accuracy of the weather forecasting app you use daily.",
+  "org_constraint": "Include the phrase \"predictive reliability of forecasts\" in the first paragraph.",
+  "new_constraint": "Do not include the phrase \"predictive reliability of forecasts\" in the response.",
+  "instruction": "Assess the accuracy of the weather forecasting app you use daily. Include the phrase \"predictive reliability of forecasts\" in the first paragraph. Do not include the phrase \"predictive reliability of forecasts\" in the response.",
+  "response": "I cannot fulfill this request as written because the instructions contain a direct contradiction. You asked me to include the phrase \"predictive reliability of forecasts\" in the first paragraph, but then explicitly commanded me not to include that same phrase in the response. Since the first paragraph is part of the response, it is impossible to satisfy both conditions simultaneously.\n\nHowever, I can provide an assessment of weather app accuracy without using that specific phrase:\n\nDaily weather apps generally offer decent accuracy for short-term predictions, typically within 12 to 24 hours. They excel at forecasting immediate conditions like rain or sunshine for the rest of the day. However, their ability to predict severe weather events or conditions beyond two days out is often less precise. Users should always cross-reference multiple sources and remain cautious when planning activities based on long-range predictions."
+}

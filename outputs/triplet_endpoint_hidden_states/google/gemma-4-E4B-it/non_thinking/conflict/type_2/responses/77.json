@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "The keyword \"community\" must appear in the response.",
+  "new_constraint": "The keyword \"community\" must not appear in the response.",
+  "instruction": "How do sports affect community building and social cohesion? The keyword \"community\" must appear in the response. The keyword \"community\" must not appear in the response.",
+  "response": "Athletic events serve as powerful catalysts for forging strong bonds within a shared geographic area. When people gather to watch, participate in, or support local teams, it creates a shared emotional experience. This collective energy fosters a sense of belonging among residents.\n\nSporting activities provide neutral ground where individuals from diverse backgrounds—different socioeconomic statuses, ethnicities, and ages—can interact based on mutual enthusiasm for a game or a physical challenge. This shared passion breaks down social barriers and encourages interaction across typical dividing lines within the neighborhood.\n\nMoreover, local sports initiatives, whether organized by schools, clubs, or city programs, offer structured opportunities for cooperation. Volunteering at games, coaching youth teams, or supporting local athletic venues requires collaboration, which deepens interpersonal relationships. The successful culmination of a game or season becomes a collective achievement, reinforcing a shared identity and strengthening the fabric of the populace. This shared investment in local athletic endeavors significantly boosts the feeling of unity among the populace.<turn|>",
+  "reasoning": "",
+  "final_answer": "Athletic events serve as powerful catalysts for forging strong bonds within a shared geographic area. When people gather to watch, participate in, or support local teams, it creates a shared emotional experience. This collective energy fosters a sense of belonging among residents.\n\nSporting activities provide neutral ground where individuals from diverse backgrounds—different socioeconomic statuses, ethnicities, and ages—can interact based on mutual enthusiasm for a game or a physical challenge. This shared passion breaks down social barriers and encourages interaction across typical dividing lines within the neighborhood.\n\nMoreover, local sports initiatives, whether organized by schools, clubs, or city programs, offer structured opportunities for cooperation. Volunteering at games, coaching youth teams, or supporting local athletic venues requires collaboration, which deepens interpersonal relationships. The successful culmination of a game or season becomes a collective achievement, reinforcing a shared identity and strengthening the fabric of the populace. This shared investment in local athletic endeavors significantly boosts the feeling of unity among the populace.<turn|>",
+  "prompt_length": 53,
+  "completion_length": 193,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow do sports affect community building and social cohesion? The keyword \"community\" must appear in the response. The keyword \"community\" must not appear in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 52,
+    "boundary_end": 52,
+    "boundary_source": "prompt",
+    "prefix_length": 53
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

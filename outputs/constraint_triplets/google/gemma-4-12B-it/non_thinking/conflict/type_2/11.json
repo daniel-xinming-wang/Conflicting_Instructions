@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 11,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Send an email to a software developer asking for a product demo.",
+  "org_constraint": "The second sentence must include the keyword \"demo\" as a noun and convey the definition of \"a demonstration of a product or service.\"",
+  "new_constraint": "Use the keyword \"demo\" exclusively as a verb in the second sentence.",
+  "instruction": "Send an email to a software developer asking for a product demo. The second sentence must include the keyword \"demo\" as a noun and convey the definition of \"a demonstration of a product or service.\" Use the keyword \"demo\" exclusively as a verb in the second sentence.",
+  "response": "Subject: Inquiry regarding product demonstration\n\nDear [Developer Name],\n\nI am interested in learning more about your software's capabilities. I would like to schedule a demo to see a demonstration of a product or service. Please let me know your availability for a brief call next week.\n\nBest regards,\n\n[Your Name]<turn|>"
+}

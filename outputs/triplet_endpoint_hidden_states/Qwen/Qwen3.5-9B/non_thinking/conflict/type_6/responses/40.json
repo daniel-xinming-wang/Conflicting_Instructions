@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 40,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create a plan for celebrating a graduation, incorporating photo sessions, speeches, and guest coordination.",
+  "org_constraint": "The plan must include at least five bullet points outlining specific tasks.",
+  "new_constraint": "Do not use bullet points in the response.",
+  "instruction": "Create a plan for celebrating a graduation, incorporating photo sessions, speeches, and guest coordination. The plan must include at least five bullet points outlining specific tasks. Do not use bullet points in the response.",
+  "response": "To successfully organize a memorable graduation celebration, start by securing a professional photographer to schedule a dedicated photo session on the morning of the event or designate specific times for candid captures throughout the day. Next, reach out to key figures such as family members and former instructors at least three weeks in advance to confirm their attendance and reserve time slots for heartfelt speeches. Coordinate with all invited guests by creating a centralized RSVP system that includes dietary restrictions and transportation needs to ensure smooth logistics during the reception. Arrange for a designated speaker coordinator to manage the order of events and cues for opening remarks, toasts, and closing statements so the program flows seamlessly without delays. Finally, finalize the guest list and send personalized invitations well ahead of time, providing clear directions and parking information to help attendees arrive punctually and enjoy the festivities.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "To successfully organize a memorable graduation celebration, start by securing a professional photographer to schedule a dedicated photo session on the morning of the event or designate specific times for candid captures throughout the day. Next, reach out to key figures such as family members and former instructors at least three weeks in advance to confirm their attendance and reserve time slots for heartfelt speeches. Coordinate with all invited guests by creating a centralized RSVP system that includes dietary restrictions and transportation needs to ensure smooth logistics during the reception. Arrange for a designated speaker coordinator to manage the order of events and cues for opening remarks, toasts, and closing statements so the program flows seamlessly without delays. Finally, finalize the guest list and send personalized invitations well ahead of time, providing clear directions and parking information to help attendees arrive punctually and enjoy the festivities.<|im_end|>",
+  "prompt_length": 63,
+  "completion_length": 160,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCreate a plan for celebrating a graduation, incorporating photo sessions, speeches, and guest coordination. The plan must include at least five bullet points outlining specific tasks. Do not use bullet points in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

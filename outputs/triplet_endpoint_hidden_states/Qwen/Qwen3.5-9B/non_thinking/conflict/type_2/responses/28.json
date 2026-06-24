@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 28,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a step-by-step plan for starting a YouTube channel, focusing on content ideas, filming, and editing.",
+  "org_constraint": "Include the keywords \"content strategy\" and \"video quality\" in that order, with \"content strategy\" appearing before \"video quality.\"",
+  "new_constraint": "The keyword \"content strategy\" should appear exclusively in the third paragraph, while \"video quality\" should appear only in the second paragraph.",
+  "instruction": "Write a step-by-step plan for starting a YouTube channel, focusing on content ideas, filming, and editing. Include the keywords \"content strategy\" and \"video quality\" in that order, with \"content strategy\" appearing before \"video quality.\" The keyword \"content strategy\" should appear exclusively in the third paragraph, while \"video quality\" should appear only in the second paragraph.",
+  "response": "1. Define your niche and target audience by researching trends, analyzing competitors, and identifying a unique value proposition to guide your initial posts.\n\n2. Invest in basic recording equipment such as a decent webcam or smartphone, ring lights, and an affordable microphone to ensure **video quality** meets viewer expectations from the very first upload.\n\n3. Develop a long-term **content strategy** that outlines your posting schedule, topic rotation, and community engagement tactics to maintain consistency and grow your subscriber base over time.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "1. Define your niche and target audience by researching trends, analyzing competitors, and identifying a unique value proposition to guide your initial posts.\n\n2. Invest in basic recording equipment such as a decent webcam or smartphone, ring lights, and an affordable microphone to ensure **video quality** meets viewer expectations from the very first upload.\n\n3. Develop a long-term **content strategy** that outlines your posting schedule, topic rotation, and community engagement tactics to maintain consistency and grow your subscriber base over time.<|im_end|>",
+  "prompt_length": 99,
+  "completion_length": 101,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a step-by-step plan for starting a YouTube channel, focusing on content ideas, filming, and editing. Include the keywords \"content strategy\" and \"video quality\" in that order, with \"content strategy\" appearing before \"video quality.\" The keyword \"content strategy\" should appear exclusively in the third paragraph, while \"video quality\" should appear only in the second paragraph.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 97,
+    "boundary_end": 97,
+    "boundary_source": "prompt",
+    "prefix_length": 98
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

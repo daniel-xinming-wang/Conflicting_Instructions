@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The \"body\" key must contain exactly 100 words.",
+  "new_constraint": "The \"body\" key must contain at least six sentences, with each containing at least 20 words.",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The \"body\" key must contain exactly 100 words. The \"body\" key must contain at least six sentences, with each containing at least 20 words.",
+  "response": "Subject: Inquiry Regarding Laptop Repair Status – Order Number 45892\n\nDear Repair Team, I am writing to you today to kindly ask for an update on the current status of my laptop repair job. My device was sent in for screen replacement and battery testing several days ago, and I have not yet received any news. Could you please let me know if there are any unexpected delays or additional issues that require my immediate attention right now? I would greatly appreciate it if you could provide a specific timeline for when I might expect to receive my fully repaired computer back. Thank you very much for your hard work and dedication to fixing my important work laptop so efficiently and professionally. Please feel free to contact me directly via this email address if you need any further information or clarification about the case."
+}

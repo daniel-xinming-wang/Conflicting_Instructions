@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 76,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "What role does critical thinking play in education and problem-solving?",
+  "org_constraint": "Include the idiom \"food for thought\" in the response.",
+  "new_constraint": "Do not include any idiom in the response.",
+  "instruction": "What role does critical thinking play in education and problem-solving? Include the idiom \"food for thought\" in the response. Do not include any idiom in the response.",
+  "response": "Critical thinking serves as the cornerstone of both education and effective problem-solving by enabling individuals to analyze information objectively, evaluate arguments logically, and make reasoned decisions. In an educational setting, it transforms learning from passive reception of facts into an active process of inquiry, encouraging students to question assumptions, identify biases, and synthesize complex ideas. This skill is equally vital in problem-solving, where it allows practitioners to break down challenges into manageable components, explore multiple solutions, and select the most viable path forward based on evidence rather than intuition.\n\nWhen we engage deeply with new concepts or difficult scenarios, we often find ourselves encountering ideas that serve as **food for thought**, prompting us to reflect on our existing beliefs and adapt our approaches accordingly.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"When we engage deeply with new concepts or difficult scenarios, we often find ourselves encountering ideas that serve as **food for thought**, prompting us to reflect on our existing beliefs and adapt our approaches accordingly.\"\n\n**Step 2**:  \n- Instruction 1 requires the inclusion of the idiom \"food for thought\" in the response. The Model Response includes this idiom, satisfying Instruction 1.  \n- Instruction 2 requires that no idiom be included in the response. The Model Response includes the idiom \"food for thought,\" violating Instruction 2.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

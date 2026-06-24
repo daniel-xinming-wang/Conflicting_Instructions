@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 12,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Compose an email to a public library to request access to digital resources.",
+  "org_constraint": "The email should contain exactly 150 words, with each sentence being no more than 20 words.",
+  "new_constraint": "The email must contain at most seven sentences.",
+  "instruction": "Compose an email to a public library to request access to digital resources. The email should contain exactly 150 words, with each sentence being no more than 20 words. The email must contain at most seven sentences.",
+  "response": "Subject: Request for Digital Resource Access\n\nDear Library Team, I am writing to request access to your digital resources. Our small community lacks reliable internet for research. We need these tools for our local history project. Please consider adding our organization as a partner. This would greatly benefit our students and researchers. We promise to follow all usage guidelines strictly. Thank you for considering our request warmly.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Dear Library Team, I am writing to request access to your digital resources.\"  \n- \"Our small community lacks reliable internet for research.\"  \n- \"We need these tools for our local history project.\"  \n- \"Please consider adding our organization as a partner.\"  \n- \"This would greatly benefit our students and researchers.\"  \n- \"We promise to follow all usage guidelines strictly.\"  \n- \"Thank you for considering our request warmly.\"\n\n**Step 2**:  \n- Instruction 1 requires the email to contain at most seven sentences. The Model Response contains exactly seven sentences, so this constraint is fully satisfied.  \n- Instruction 2 requires the email to contain exactly 150 words, with each sentence being no more than 20 words. The Model Response does not meet the word count requirement (it is significantly shorter than 150 words), so this constraint is not fully satisfied.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

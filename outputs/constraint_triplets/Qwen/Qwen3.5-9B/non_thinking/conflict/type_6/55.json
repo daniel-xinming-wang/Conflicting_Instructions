@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 55,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a solo trek across an unforgiving desert.",
+  "org_constraint": "The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings).",
+  "new_constraint": "The response must be formatted in Markdown with at least two level-2 headers.",
+  "instruction": "Write a story about a solo trek across an unforgiving desert. The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings). The response must be formatted in Markdown with at least two level-2 headers.",
+  "response": "{\n  \"title\": \"The Silent Sands\",\n  \"content\": [\n    \"## The Onset of Solitude\",\n    \"The sun rose over the dunes like a molten coin, casting long, distorted shadows that seemed to reach for the lone traveler. Elias adjusted the strap of his water pack, feeling the familiar weight of survival pressing against his shoulders. The desert was vast, a sea of ochre and gold that stretched to the horizon without a single landmark to offer hope or direction. In this unforgiving expanse, silence was not merely an absence of sound but a physical presence, heavy and suffocating.\",\n    \"## The Trial of Endurance\",\n    \"By midday, the heat became a tangible force, warping the air above the sand and turning the world into a shimmering illusion. Every step felt like wading through deep water, the sand sucking at his boots with relentless greed. Thirst gnawed at his mind, a constant reminder of his dwindling supplies. Yet, as the sun began its descent, painting the sky in hues of bruised purple and burnt orange, Elias found a strange clarity. The struggle had stripped away everything unnecessary, leaving only the raw will to keep moving forward against the indifferent wind.\"\n  ]\n}"
+}

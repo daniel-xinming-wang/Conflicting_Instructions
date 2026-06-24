@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 70,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What are the ethical issues surrounding data privacy on social media platforms?",
+  "org_constraint": "Write exclusively in English.",
+  "new_constraint": "Write the second paragraph in Chinese.",
+  "instruction": "What are the ethical issues surrounding data privacy on social media platforms? Write exclusively in English. Write the second paragraph in Chinese.",
+  "response": "Social media platforms collect vast amounts of personal data, including location history, contacts, and browsing habits, often without users fully understanding the extent of what is being gathered. This surveillance capitalism model raises serious concerns about user consent, as complex privacy policies frequently obscure how data is shared with third-party advertisers or sold to data brokers. Furthermore, the potential for this data to be misused in cases of identity theft, targeted manipulation of political opinions, and unauthorized profiling poses a significant threat to individual autonomy and democratic processes.\n\n社交媒体平台收集海量个人数据，包括位置历史、通讯录和浏览习惯，而用户往往并不完全了解数据收集的规模。这种监视资本主义模式引发了关于用户同意的严重关切，因为复杂的隐私政策经常模糊了数据是如何与第三方广告商共享或出售给数据经纪商的。此外，这些数据被滥用的潜力——例如用于身份盗窃、政治观点的针对性操纵以及未经授权的画像——对个人自主权和民主进程构成了重大威胁。<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Social media platforms collect vast amounts of personal data, including location history, contacts, and browsing habits, often without users fully understanding the extent of what is being gathered. This surveillance capitalism model raises serious concerns about user consent, as complex privacy policies frequently obscure how data is shared with third-party advertisers or sold to data brokers. Furthermore, the potential for this data to be misused in cases of identity theft, targeted manipulation of political opinions, and unauthorized profiling poses a significant threat to individual autonomy and democratic processes.\n\n社交媒体平台收集海量个人数据，包括位置历史、通讯录和浏览习惯，而用户往往并不完全了解数据收集的规模。这种监视资本主义模式引发了关于用户同意的严重关切，因为复杂的隐私政策经常模糊了数据是如何与第三方广告商共享或出售给数据经纪商的。此外，这些数据被滥用的潜力——例如用于身份盗窃、政治观点的针对性操纵以及未经授权的画像——对个人自主权和民主进程构成了重大威胁。<|im_end|>",
+  "prompt_length": 48,
+  "completion_length": 194,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat are the ethical issues surrounding data privacy on social media platforms? Write exclusively in English. Write the second paragraph in Chinese.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 46,
+    "boundary_end": 46,
+    "boundary_source": "prompt",
+    "prefix_length": 47
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

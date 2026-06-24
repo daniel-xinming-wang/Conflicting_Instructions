@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The \"conclusion\" key must include the phrase \"a pressing concern for society\".",
+  "new_constraint": "The keyword \"concern\" must be used exclusively as a verb.",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The keyword \"concern\" must be used exclusively as a verb.",
+  "response": "The rise of social media has introduced a complex and multifaceted impact on adolescent mental health, presenting both potential benefits and significant risks.\n\nOn the positive side, social media platforms can foster a sense of community, especially for adolescents with niche interests or those who feel isolated geographically. They offer avenues for social support, allowing teens to connect with peers who share similar experiences, which can be particularly beneficial for marginalized youth. Furthermore, these platforms can be powerful tools for raising awareness about mental health issues, destigmatizing conversations, and providing access to helpful resources.\n\nHowever, the negative effects are increasingly well-documented and draw significant scholarly attention. One major issue is the constant exposure to curated, idealized versions of others' lives. This creates an environment ripe for **social comparison**, leading many adolescents to develop unrealistic expectations regarding appearance, popularity, and lifestyle. This persistent comparison is frequently linked to increased feelings of anxiety, depression, and low self-esteem.\n\nAnother critical factor is the nature of online interaction itself. The pressure to maintain an active, aesthetically pleasing online presence can lead to \"fear of missing out\" (FOMO), driving compulsive checking behaviors and sleep disruption. Cyberbullying is another severe detriment; the anonymity and reach of social media allow bullying to occur 24/7, often with devastating emotional consequences that traditional bullying did not reach. Moreover, the algorithms designed to maximize engagement can inadvertently create echo chambers or push users toward harmful content, potentially exacerbating body dysmorphia or disordered eating behaviors.\n\nIn **conclusion**, the relationship between social media and adolescent mental health is decidedly nuanced, characterized by a precarious balance between connection and comparison. The documented rise in anxiety, depression, and body image issues among adolescents mirrors the pervasive integration of these platforms into daily life, thus framing mental well-being in the digital age as a pressing concern for society.<turn|>",
+  "reasoning": "",
+  "final_answer": "The rise of social media has introduced a complex and multifaceted impact on adolescent mental health, presenting both potential benefits and significant risks.\n\nOn the positive side, social media platforms can foster a sense of community, especially for adolescents with niche interests or those who feel isolated geographically. They offer avenues for social support, allowing teens to connect with peers who share similar experiences, which can be particularly beneficial for marginalized youth. Furthermore, these platforms can be powerful tools for raising awareness about mental health issues, destigmatizing conversations, and providing access to helpful resources.\n\nHowever, the negative effects are increasingly well-documented and draw significant scholarly attention. One major issue is the constant exposure to curated, idealized versions of others' lives. This creates an environment ripe for **social comparison**, leading many adolescents to develop unrealistic expectations regarding appearance, popularity, and lifestyle. This persistent comparison is frequently linked to increased feelings of anxiety, depression, and low self-esteem.\n\nAnother critical factor is the nature of online interaction itself. The pressure to maintain an active, aesthetically pleasing online presence can lead to \"fear of missing out\" (FOMO), driving compulsive checking behaviors and sleep disruption. Cyberbullying is another severe detriment; the anonymity and reach of social media allow bullying to occur 24/7, often with devastating emotional consequences that traditional bullying did not reach. Moreover, the algorithms designed to maximize engagement can inadvertently create echo chambers or push users toward harmful content, potentially exacerbating body dysmorphia or disordered eating behaviors.\n\nIn **conclusion**, the relationship between social media and adolescent mental health is decidedly nuanced, characterized by a precarious balance between connection and comparison. The documented rise in anxiety, depression, and body image issues among adolescents mirrors the pervasive integration of these platforms into daily life, thus framing mental well-being in the digital age as a pressing concern for society.<turn|>",
+  "prompt_length": 62,
+  "completion_length": 372,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The keyword \"concern\" must be used exclusively as a verb.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "The second sentence must include the keyword \"cozy.\"",
+  "new_constraint": "Use the word \"comfortable\" in place of \"cozy\" in your review.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. The second sentence must include the keyword \"cozy.\" Use the word \"comfortable\" in place of \"cozy\" in your review.",
+  "response": "The newly opened coffee shop in my area offers a wonderful selection of artisanal roasts and creative pastries. While the atmosphere is certainly cozy, I would describe it as comfortable to better capture the inviting vibe that makes it perfect for remote work or catching up with friends.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The newly opened coffee shop in my area offers a wonderful selection of artisanal roasts and creative pastries. While the atmosphere is certainly cozy, I would describe it as comfortable to better capture the inviting vibe that makes it perfect for remote work or catching up with friends.<|im_end|>",
+  "prompt_length": 65,
+  "completion_length": 55,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your review of a newly opened coffee shop in your area. The second sentence must include the keyword \"cozy.\" Use the word \"comfortable\" in place of \"cozy\" in your review.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

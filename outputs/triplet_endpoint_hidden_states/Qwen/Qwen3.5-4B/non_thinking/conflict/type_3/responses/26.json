@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "Include the phrase \"collaborative brainstorming session\" in the schedule.",
+  "new_constraint": "Avoid using the word \"brainstorming\" in the schedule.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Include the phrase \"collaborative brainstorming session\" in the schedule. Avoid using the word \"brainstorming\" in the schedule.",
+  "response": "Here is a one-week work schedule for the software development team focusing on the new app feature.\n\n**Monday: Planning and Requirements**\n*   **09:00 – 10:30**: Stand-up meeting & Task assignment\n*   **10:45 – 12:00**: **Collaborative brainstorming session** to refine user flows\n*   **13:00 – 16:30**: Architectural design and database schema definition\n*   **16:30 – 17:00**: Daily wrap-up and blockers check\n\n**Tuesday: Core Development**\n*   **09:00 – 12:00**: Frontend component implementation\n*   **13:00 – 15:30**: Backend API integration and logic coding\n*   **15:45 – 16:15**: Sync with Product Manager on edge cases\n*   **16:30 – 17:00**: Progress review\n\n**Wednesday: Feature Building Continues**\n*   **09:00 – 11:30**: Deep dive into complex algorithm requirements\n*   **11:45 – 13:00**: **Team sync** regarding security compliance measures\n*   **13:30 – 16:00**: Coding the UI animations and transitions\n*   **16:00 – 16:30**: Documentation update\n\n**Thursday: Initial Testing & Bug Fixing**\n*   **09:00 – 11:00**: Automated unit tests execution\n*   **11:15 – 13:00**: Manual QA testing of core modules\n*   **13:00 – 14:00**: Lunch break (No meetings)\n*   **14:00 – 15:30**: Addressing reported bugs from Q&A\n*   **15:30 – 16:00**: Sprint goal adjustment if needed\n\n**Friday: Integration Polish**\n*   **09:00 – 11:30**: Merging code branches and resolving conflicts\n*   **11:45 – 13:00**: End-to-end system testing\n*   **13:00 – 14:00**: Lunch break\n*   **14:00 – 16:30**: Final bug squashing and performance optimization\n*   **16:30 – 17:00**: Prep for next sprint demo<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Here is a one-week work schedule for the software development team focusing on the new app feature.\n\n**Monday: Planning and Requirements**\n*   **09:00 – 10:30**: Stand-up meeting & Task assignment\n*   **10:45 – 12:00**: **Collaborative brainstorming session** to refine user flows\n*   **13:00 – 16:30**: Architectural design and database schema definition\n*   **16:30 – 17:00**: Daily wrap-up and blockers check\n\n**Tuesday: Core Development**\n*   **09:00 – 12:00**: Frontend component implementation\n*   **13:00 – 15:30**: Backend API integration and logic coding\n*   **15:45 – 16:15**: Sync with Product Manager on edge cases\n*   **16:30 – 17:00**: Progress review\n\n**Wednesday: Feature Building Continues**\n*   **09:00 – 11:30**: Deep dive into complex algorithm requirements\n*   **11:45 – 13:00**: **Team sync** regarding security compliance measures\n*   **13:30 – 16:00**: Coding the UI animations and transitions\n*   **16:00 – 16:30**: Documentation update\n\n**Thursday: Initial Testing & Bug Fixing**\n*   **09:00 – 11:00**: Automated unit tests execution\n*   **11:15 – 13:00**: Manual QA testing of core modules\n*   **13:00 – 14:00**: Lunch break (No meetings)\n*   **14:00 – 15:30**: Addressing reported bugs from Q&A\n*   **15:30 – 16:00**: Sprint goal adjustment if needed\n\n**Friday: Integration Polish**\n*   **09:00 – 11:30**: Merging code branches and resolving conflicts\n*   **11:45 – 13:00**: End-to-end system testing\n*   **13:00 – 14:00**: Lunch break\n*   **14:00 – 16:30**: Final bug squashing and performance optimization\n*   **16:30 – 17:00**: Prep for next sprint demo<|im_end|>",
+  "prompt_length": 80,
+  "completion_length": 562,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Include the phrase \"collaborative brainstorming session\" in the schedule. Avoid using the word \"brainstorming\" in the schedule.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 78,
+    "boundary_end": 78,
+    "boundary_source": "prompt",
+    "prefix_length": 79
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 81,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Write a detailed review of the movie \"Schindler's List.\"",
+  "org_constraint": "The review must include at least one sentence in passive voice.",
+  "new_constraint": "Write the review entirely in active voice.",
+  "instruction": "Write a detailed review of the movie \"Schindler's List.\" The review must include at least one sentence in passive voice. Write the review entirely in active voice.",
+  "response": "I recently watched Steven Spielberg's masterpiece, \"Schindler's List,\" which remains one of the most powerful films ever made about the Holocaust. The director carefully constructs a gripping narrative that follows Oskar Schindler as he transforms from a selfish war profiteer into a reluctant savior. Katharine Isabelle plays the unforgettable role of Hana Golombek, whose tragic journey captivates every audience member. Christopher Plummer delivers a haunting performance as Amon Goeth, bringing terrifying intensity to the character without relying on overacting. The cinematographer employs stark black-and-white imagery for the Nazi-occupied territories, while vibrant color reserves are saved exclusively for the Jewish children, creating a shocking visual contrast that heightens the emotional impact. Historical accuracy anchors this dramatic tale, ensuring that the weight of real-life tragedy never fades into mere fiction. Although some viewers find the pacing slow during certain stretches, the story maintains relentless momentum throughout its runtime. Audiences leave the theater deeply moved and profoundly changed by the sheer human resilience portrayed on screen. One might argue that no other film balances historical gravity with cinematic brilliance so effectively. Ultimately, this enduring classic demands respect not just for its artistic merit, but for its moral urgency.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "I recently watched Steven Spielberg's masterpiece, \"Schindler's List,\" which remains one of the most powerful films ever made about the Holocaust. The director carefully constructs a gripping narrative that follows Oskar Schindler as he transforms from a selfish war profiteer into a reluctant savior. Katharine Isabelle plays the unforgettable role of Hana Golombek, whose tragic journey captivates every audience member. Christopher Plummer delivers a haunting performance as Amon Goeth, bringing terrifying intensity to the character without relying on overacting. The cinematographer employs stark black-and-white imagery for the Nazi-occupied territories, while vibrant color reserves are saved exclusively for the Jewish children, creating a shocking visual contrast that heightens the emotional impact. Historical accuracy anchors this dramatic tale, ensuring that the weight of real-life tragedy never fades into mere fiction. Although some viewers find the pacing slow during certain stretches, the story maintains relentless momentum throughout its runtime. Audiences leave the theater deeply moved and profoundly changed by the sheer human resilience portrayed on screen. One might argue that no other film balances historical gravity with cinematic brilliance so effectively. Ultimately, this enduring classic demands respect not just for its artistic merit, but for its moral urgency.<|im_end|>",
+  "prompt_length": 57,
+  "completion_length": 244,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a detailed review of the movie \"Schindler's List.\" The review must include at least one sentence in passive voice. Write the review entirely in active voice.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

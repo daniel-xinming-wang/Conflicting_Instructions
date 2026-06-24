@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 11,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Send an email to a software developer asking for a product demo.",
+  "org_constraint": "The email must include a Chinese idiom.",
+  "new_constraint": "The email must not contain any Chinese idioms.",
+  "instruction": "Send an email to a software developer asking for a product demo. The email must include a Chinese idiom. The email must not contain any Chinese idioms.",
+  "response": "It is impossible to fulfill this request as stated. You asked for an email that **must include** a Chinese idiom, but then added a constraint that the email **must not contain** any Chinese idioms. These two requirements are contradictory.\n\nHere is an email template for requesting a product demo that **does not contain any Chinese idioms**:\n\n**Subject:** Request for a Product Demo – [Your Company Name]\n\nDear [Developer's Name],\n\nI hope this email finds you well.\n\nI am writing to express my strong interest in your software product. Our team at [Your Company Name] has been following your development and is impressed by the innovative features you have implemented.\n\nWe would like to schedule a brief demonstration to better understand how your solution can address our specific needs. Could you please let us know your availability for a 30-minute call next week? Alternatively, if you have a demo video available, that would also be very helpful.\n\nThank you for your time and consideration. I look forward to hearing from you soon.\n\nBest regards,\n\n[Your Name]  \n[Your Job Title]  \n[Your Company Name]  \n[Your Contact Information]"
+}

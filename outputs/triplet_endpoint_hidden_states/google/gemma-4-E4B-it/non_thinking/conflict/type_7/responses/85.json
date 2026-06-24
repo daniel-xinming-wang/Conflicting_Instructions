@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 85,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Analyze the educational value of the online course \"Machine Learning by Andrew Ng.\"",
+  "org_constraint": "The response must contain at least three sentences written in passive voice.",
+  "new_constraint": "Write the response entirely in active voice.",
+  "instruction": "Analyze the educational value of the online course \"Machine Learning by Andrew Ng.\" The response must contain at least three sentences written in passive voice. Write the response entirely in active voice.",
+  "response": "Andrew Ng's \"Machine Learning\" course provides substantial educational value to learners. The course thoroughly introduces fundamental machine learning concepts, making complex ideas accessible to beginners. Practical skills in implementing algorithms are developed through hands-on projects. Furthermore, the curriculum is designed in such a way that industry relevance is consistently maintained. Deep understanding of underlying mathematical principles is instilled in students.<turn|>",
+  "reasoning": "",
+  "final_answer": "Andrew Ng's \"Machine Learning\" course provides substantial educational value to learners. The course thoroughly introduces fundamental machine learning concepts, making complex ideas accessible to beginners. Practical skills in implementing algorithms are developed through hands-on projects. Furthermore, the curriculum is designed in such a way that industry relevance is consistently maintained. Deep understanding of underlying mathematical principles is instilled in students.<turn|>",
+  "prompt_length": 56,
+  "completion_length": 74,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nAnalyze the educational value of the online course \"Machine Learning by Andrew Ng.\" The response must contain at least three sentences written in passive voice. Write the response entirely in active voice.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

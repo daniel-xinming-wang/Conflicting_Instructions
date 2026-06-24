@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 71,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "What are the effects of plastic pollution on marine life and ecosystems?",
+  "org_constraint": "The phrase \"marine ecosystems\" must appear at least twice.",
+  "new_constraint": "Refrain from using the phrase \"marine ecosystems\" in the response.",
+  "instruction": "What are the effects of plastic pollution on marine life and ecosystems? The phrase \"marine ecosystems\" must appear at least twice. Refrain from using the phrase \"marine ecosystems\" in the response.",
+  "response": "Plastic pollution inflicts a devastating toll on the creatures and habitats of the world's oceans. The most visible impact is entanglement. Sea turtles, seals, dolphins, and seabirds frequently become trapped in discarded fishing nets, plastic rings, and packaging. This entanglement can lead to severe injuries, strangulation, reduced mobility, and ultimately, drowning or starvation.\n\nIngestion is another critical threat. Marine animals often mistake plastic debris—such as microplastics, colorful fragments, or bags—for food. When these plastics are consumed, they can cause internal injuries, false feelings of satiation (leading to starvation), and blockages in the digestive tracts. Furthermore, plastics can leach toxic chemicals into the animals’ bodies, introducing pollutants into the food web.\n\nMicroplastics, tiny fragments less than five millimeters long, present a pervasive danger. These particles permeate the water column and are ingested by organisms at the very base of the food chain, such as zooplankton. As these smaller organisms are eaten by larger fish, and those are eaten by marine mammals, the plastic accumulates through biomagnification, increasing the concentration of toxins up the food chain.\n\nThe structural integrity of coastal and oceanic environments is also damaged. Plastic debris smothers coral reefs and other vital habitats, disrupting the complex relationships within those environments. The health of the entire underwater community is compromised, affecting biodiversity and the overall function of these saltwater environments. The degradation of these vast aquatic systems due to human-made waste fundamentally threatens the balance of ocean life.<turn|>",
+  "reasoning": "",
+  "final_answer": "Plastic pollution inflicts a devastating toll on the creatures and habitats of the world's oceans. The most visible impact is entanglement. Sea turtles, seals, dolphins, and seabirds frequently become trapped in discarded fishing nets, plastic rings, and packaging. This entanglement can lead to severe injuries, strangulation, reduced mobility, and ultimately, drowning or starvation.\n\nIngestion is another critical threat. Marine animals often mistake plastic debris—such as microplastics, colorful fragments, or bags—for food. When these plastics are consumed, they can cause internal injuries, false feelings of satiation (leading to starvation), and blockages in the digestive tracts. Furthermore, plastics can leach toxic chemicals into the animals’ bodies, introducing pollutants into the food web.\n\nMicroplastics, tiny fragments less than five millimeters long, present a pervasive danger. These particles permeate the water column and are ingested by organisms at the very base of the food chain, such as zooplankton. As these smaller organisms are eaten by larger fish, and those are eaten by marine mammals, the plastic accumulates through biomagnification, increasing the concentration of toxins up the food chain.\n\nThe structural integrity of coastal and oceanic environments is also damaged. Plastic debris smothers coral reefs and other vital habitats, disrupting the complex relationships within those environments. The health of the entire underwater community is compromised, affecting biodiversity and the overall function of these saltwater environments. The degradation of these vast aquatic systems due to human-made waste fundamentally threatens the balance of ocean life.<turn|>",
+  "prompt_length": 59,
+  "completion_length": 303,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the effects of plastic pollution on marine life and ecosystems? The phrase \"marine ecosystems\" must appear at least twice. Refrain from using the phrase \"marine ecosystems\" in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 58,
+    "boundary_end": 58,
+    "boundary_source": "prompt",
+    "prefix_length": 59
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

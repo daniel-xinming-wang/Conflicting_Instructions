@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "Ensure the response includes the phrase \"cosmic expansion.\"",
+  "new_constraint": "Do not include the keyword \"expansion\" in the response.",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? Ensure the response includes the phrase \"cosmic expansion.\" Do not include the keyword \"expansion\" in the response.",
+  "response": "The Big Bang theory describes the universe's origin as a period of incredibly rapid growth from an extremely hot, dense state. In this model, the universe did not begin as an explosion in space, but rather the rapid growth of space itself.\n\nAccording to the theory, approximately 13.8 billion years ago, the entire observable universe originated from a singularity—a point of infinite density and temperature. From this initial state, the universe began to evolve. In the moments following this initial event, intense energy dictated the conditions. As the universe grew, it cooled, allowing fundamental particles to form. These particles then combined over vast periods of time to form subatomic particles, atoms, and eventually, the first stars and galaxies.\n\nA key component of this explanation is the ongoing **cosmic expansion**. This means that the fabric of spacetime itself is stretching, carrying galaxies further apart from one another, much like dots drawn on the surface of an inflating balloon. The Big Bang theory doesn't explain *what* caused the initial state, but it beautifully outlines the subsequent development of the universe—its cooling, its structure formation, and its continual growth in size and volume since that very beginning.<turn|>",
+  "reasoning": "",
+  "final_answer": "The Big Bang theory describes the universe's origin as a period of incredibly rapid growth from an extremely hot, dense state. In this model, the universe did not begin as an explosion in space, but rather the rapid growth of space itself.\n\nAccording to the theory, approximately 13.8 billion years ago, the entire observable universe originated from a singularity—a point of infinite density and temperature. From this initial state, the universe began to evolve. In the moments following this initial event, intense energy dictated the conditions. As the universe grew, it cooled, allowing fundamental particles to form. These particles then combined over vast periods of time to form subatomic particles, atoms, and eventually, the first stars and galaxies.\n\nA key component of this explanation is the ongoing **cosmic expansion**. This means that the fabric of spacetime itself is stretching, carrying galaxies further apart from one another, much like dots drawn on the surface of an inflating balloon. The Big Bang theory doesn't explain *what* caused the initial state, but it beautifully outlines the subsequent development of the universe—its cooling, its structure formation, and its continual growth in size and volume since that very beginning.<turn|>",
+  "prompt_length": 56,
+  "completion_length": 241,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow does the Big Bang theory explain the origin of the universe? Ensure the response includes the phrase \"cosmic expansion.\" Do not include the keyword \"expansion\" in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

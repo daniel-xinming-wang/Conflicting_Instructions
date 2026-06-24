@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "Use the keyword \"update\" as a verb.",
+  "new_constraint": "Use the keyword \"update\" solely as a noun.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Use the keyword \"update\" as a verb. Use the keyword \"update\" solely as a noun.",
+  "response": "# One-Week Work Schedule: New App Feature Launch\n\n### Monday\n*   **09:00 – 10:00**: Daily Stand-up meeting to review progress and blockers.\n*   **10:00 – 12:00**: Frontend team begins implementing the core layout.\n*   **13:00 – 17:00**: Backend team constructs the API endpoints required for the feature.\n*   **17:00**: Project manager provides an **update** on the deployment timeline based on current velocity.\n\n### Tuesday\n*   **09:00 – 12:00**: Full stack integration of the new user authentication flow.\n*   **13:00 – 15:00**: QA engineers begin setting up the testing environment.\n*   **15:00 – 16:00**: Team sync to resolve integration conflicts.\n*   **16:00 – 17:00**: Lead developer reviews pull requests and approves the latest code base **update**.\n\n### Wednesday\n*   **09:00 – 12:00**: Unit testing phase; developers fix bugs discovered in the previous day's build.\n*   **13:00 – 15:00**: End-to-end testing scenarios are executed against the staging server.\n*   **15:00 – 16:00**: Product manager walks through the test results with the engineering lead.\n*   **16:00 – 17:00**: Sprint planning session for the next iteration; no specific **update** is needed today as work is ongoing.\n\n### Thursday\n*   **09:00 – 11:00**: Performance optimization of database queries identified during testing.\n*   **11:00 – 12:00**: Security audit of the new data handling modules.\n*   **13:00 – 16:00**: UAT (User Acceptance Testing) begins with a focus group.\n*   **16:00 – 17:00**: Stakeholders receive a formal status **update** regarding any remaining critical issues.\n\n### Friday\n*   **09:00 – 11:00**: Final bug squashing and hotfixes applied to the release branch.\n*   **11:00 – 12:00**: Documentation review and final checklist verification.\n*   **13:00 – 14:00**: Pre-launch briefing and demo for senior management.\n*   **14:00 – 15:00**: Scheduled maintenance window; system will be taken offline for deployment.\n*   **15:00 – 16:00**: Post-deployment monitoring begins to ensure the live **update** functions correctly for all users.\n*   **16:00 – 17:00**: Retroactive meeting to discuss what went well and areas for improvement.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "# One-Week Work Schedule: New App Feature Launch\n\n### Monday\n*   **09:00 – 10:00**: Daily Stand-up meeting to review progress and blockers.\n*   **10:00 – 12:00**: Frontend team begins implementing the core layout.\n*   **13:00 – 17:00**: Backend team constructs the API endpoints required for the feature.\n*   **17:00**: Project manager provides an **update** on the deployment timeline based on current velocity.\n\n### Tuesday\n*   **09:00 – 12:00**: Full stack integration of the new user authentication flow.\n*   **13:00 – 15:00**: QA engineers begin setting up the testing environment.\n*   **15:00 – 16:00**: Team sync to resolve integration conflicts.\n*   **16:00 – 17:00**: Lead developer reviews pull requests and approves the latest code base **update**.\n\n### Wednesday\n*   **09:00 – 12:00**: Unit testing phase; developers fix bugs discovered in the previous day's build.\n*   **13:00 – 15:00**: End-to-end testing scenarios are executed against the staging server.\n*   **15:00 – 16:00**: Product manager walks through the test results with the engineering lead.\n*   **16:00 – 17:00**: Sprint planning session for the next iteration; no specific **update** is needed today as work is ongoing.\n\n### Thursday\n*   **09:00 – 11:00**: Performance optimization of database queries identified during testing.\n*   **11:00 – 12:00**: Security audit of the new data handling modules.\n*   **13:00 – 16:00**: UAT (User Acceptance Testing) begins with a focus group.\n*   **16:00 – 17:00**: Stakeholders receive a formal status **update** regarding any remaining critical issues.\n\n### Friday\n*   **09:00 – 11:00**: Final bug squashing and hotfixes applied to the release branch.\n*   **11:00 – 12:00**: Documentation review and final checklist verification.\n*   **13:00 – 14:00**: Pre-launch briefing and demo for senior management.\n*   **14:00 – 15:00**: Scheduled maintenance window; system will be taken offline for deployment.\n*   **15:00 – 16:00**: Post-deployment monitoring begins to ensure the live **update** functions correctly for all users.\n*   **16:00 – 17:00**: Retroactive meeting to discuss what went well and areas for improvement.<|im_end|>",
+  "prompt_length": 73,
+  "completion_length": 660,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Use the keyword \"update\" as a verb. Use the keyword \"update\" solely as a noun.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 71,
+    "boundary_end": 71,
+    "boundary_source": "prompt",
+    "prefix_length": 72
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

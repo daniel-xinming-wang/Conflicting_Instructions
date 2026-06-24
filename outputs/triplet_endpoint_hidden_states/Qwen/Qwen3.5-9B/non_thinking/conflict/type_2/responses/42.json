@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 42,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams.",
+  "org_constraint": "The keywords \"resilience,\" \"determination,\" and \"second chance\" must each appear exactly twice.",
+  "new_constraint": "Avoid using the keywords \"resilience,\" \"determination,\" and \"second chance\" in the story.",
+  "instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams. The keywords \"resilience,\" \"determination,\" and \"second chance\" must each appear exactly twice. Avoid using the keywords \"resilience,\" \"determination,\" and \"second chance\" in the story.",
+  "response": "Arthur stood at the wrought-iron gate of the university, his heart hammering against his ribs. Twenty years ago, he had left these halls before completing his degree, chasing a fleeting promise of easy money that quickly dissolved into debt and disillusionment. Now, returning to campus at forty-five, he felt a heavy knot of anxiety in his stomach. He wasn't sure if anyone would recognize him, or if he truly deserved another attempt at academic life after such a long hiatus.\n\nHe signed up for the freshman seminar, terrified but driven by an inner fire he couldn't ignore. The first few weeks were grueling; he struggled with the rigor of the curriculum and often doubted his own capabilities during late-night study sessions. Yet, whenever fatigue threatened to pull him under, he remembered why he started. His capacity to endure hardship and push through obstacles became his guiding light, fueling every late assignment and early morning lecture. This steadfastness allowed him to navigate the steep learning curve without surrendering to failure.\n\nAs the semester progressed, Arthur began to see how far he had come since those sleepless nights. A small success in a group project transformed into a larger confidence, which eventually rippled outward to influence his entire approach to coursework. One rainy afternoon, reviewing a particularly complex historical text, he paused to reflect on the journey. Life had dealt him difficult hands, forcing him to adapt and grow stronger each day. It was clear now that this moment was not just about finishing a degree; it was about reclaiming a future that had once seemed out of reach.\n\nGraduation day arrived with golden sunlight pouring over the quad. When the principal called his name to receive his diploma, a wave of pure joy washed over him. Looking at the crowd, including the faces of professors who knew him from years past, he realized how much strength he had discovered within himself. The path back to education had been fraught with challenges, but the effort he poured into overcoming them proved that nothing could stay defeated forever. With his certificate in hand, Arthur stepped forward, ready to build a life defined by hope and persistence.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Arthur stood at the wrought-iron gate of the university, his heart hammering against his ribs. Twenty years ago, he had left these halls before completing his degree, chasing a fleeting promise of easy money that quickly dissolved into debt and disillusionment. Now, returning to campus at forty-five, he felt a heavy knot of anxiety in his stomach. He wasn't sure if anyone would recognize him, or if he truly deserved another attempt at academic life after such a long hiatus.\n\nHe signed up for the freshman seminar, terrified but driven by an inner fire he couldn't ignore. The first few weeks were grueling; he struggled with the rigor of the curriculum and often doubted his own capabilities during late-night study sessions. Yet, whenever fatigue threatened to pull him under, he remembered why he started. His capacity to endure hardship and push through obstacles became his guiding light, fueling every late assignment and early morning lecture. This steadfastness allowed him to navigate the steep learning curve without surrendering to failure.\n\nAs the semester progressed, Arthur began to see how far he had come since those sleepless nights. A small success in a group project transformed into a larger confidence, which eventually rippled outward to influence his entire approach to coursework. One rainy afternoon, reviewing a particularly complex historical text, he paused to reflect on the journey. Life had dealt him difficult hands, forcing him to adapt and grow stronger each day. It was clear now that this moment was not just about finishing a degree; it was about reclaiming a future that had once seemed out of reach.\n\nGraduation day arrived with golden sunlight pouring over the quad. When the principal called his name to receive his diploma, a wave of pure joy washed over him. Looking at the crowd, including the faces of professors who knew him from years past, he realized how much strength he had discovered within himself. The path back to education had been fraught with challenges, but the effort he poured into overcoming them proved that nothing could stay defeated forever. With his certificate in hand, Arthur stepped forward, ready to build a life defined by hope and persistence.<|im_end|>",
+  "prompt_length": 85,
+  "completion_length": 425,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a dropout who returns to school later in life to achieve their dreams. The keywords \"resilience,\" \"determination,\" and \"second chance\" must each appear exactly twice. Avoid using the keywords \"resilience,\" \"determination,\" and \"second chance\" in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 83,
+    "boundary_end": 83,
+    "boundary_source": "prompt",
+    "prefix_length": 84
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

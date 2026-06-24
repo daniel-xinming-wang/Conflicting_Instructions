@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "Include the phrase \"collaborative brainstorming session\" in the schedule.",
+  "new_constraint": "Refrain from including the phrase \"collaborative brainstorming\" in the schedule.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Include the phrase \"collaborative brainstorming session\" in the schedule. Refrain from including the phrase \"collaborative brainstorming\" in the schedule.",
+  "response": "Here is a one-week work schedule for a software development team focused on delivering a new app feature.\n\n### **Week 1: New App Feature Development**\n\n**Monday: Planning & Ideation**\n*   **09:00 – 10:30**: Daily Stand-up & Sprint Planning\n*   **10:30 – 12:00**: **Collaborative brainstorming session** to refine feature requirements and edge cases.\n*   **13:00 – 16:00**: Architecture design and database schema updates.\n*   **16:00 – 17:00**: Code review of initial designs.\n\n**Tuesday: Core Development**\n*   **09:00 – 12:00**: Backend API implementation.\n*   **13:00 – 16:00**: Frontend UI component creation.\n*   **16:00 – 17:00**: Pair programming to resolve integration issues.\n\n**Wednesday: Development Continues**\n*   **09:00 – 12:00**: Backend logic completion and security checks.\n*   **13:00 – 16:00**: Frontend state management and user flow implementation.\n*   **16:00 – 17:00**: Internal demo of the current build.\n\n**Thursday: Integration & Testing**\n*   **09:00 – 11:00**: Full-stack integration testing.\n*   **11:00 – 12:00**: Bug fixing and performance optimization.\n*   **13:00 – 15:00**: Automated unit test execution and manual QA.\n*   **15:00 – 16:00**: Team sync to discuss test results and remaining blockers.\n\n**Friday: Refinement & Deployment Prep**\n*   **09:00 – 11:00**: Final bug fixes and UI polish.\n*   **11:00 – 12:00**: Documentation updates and changelog preparation.\n*   **13:00 – 14:00**: Staging environment deployment.\n*   **14:00 – 15:00**: Smoke testing on the staging server.\n*   **15:00 – 16:00**: Sprint retrospective and planning for the next week.\n\n**Saturday & Sunday: Off**\n*   Rest and recharge to ensure high productivity for the upcoming sprint."
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 54,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a group of strangers who must work together to escape a dangerous jungle.",
+  "org_constraint": "Use the keywords \"survival,\" \"trust,\" and \"fear\" at least once in every paragraph.",
+  "new_constraint": "Avoid using the keywords \"survival\" in the story.",
+  "instruction": "Write a story about a group of strangers who must work together to escape a dangerous jungle. Use the keywords \"survival,\" \"trust,\" and \"fear\" at least once in every paragraph. Avoid using the keywords \"survival\" in the story.",
+  "response": "The dense canopy above offered no shelter from the relentless humidity, only a suffocating blanket of green that whispered secrets of danger. As the initial panic set in, fear gripped their hearts like an invisible vine, constricting their breathing and clouding their judgment. They quickly realized that individual **survival** was impossible against such vast odds; instead, they had to forge a fragile **trust** among themselves, knowing that hesitation could mean death within minutes.\n\nA sudden roar shattered the silence, revealing a massive predator stalking through the underbrush with eyes that gleamed in the dim light. Fear surged through the group again, causing muscles to tense and minds to race toward worst-case scenarios. However, it was their collective will for **survival** that forced them to stop fleeing blindly and start moving strategically as a unit. By locking arms and relying on **trust**, they navigated away from the beast's path, proving that unity was their strongest weapon against nature's wrath.\n\nDays turned into nights under a sky obscured by swirling storm clouds, turning the forest into a treacherous maze of disorientation. The gnawing sensation of **fear** threatened to paralyze them, whispering doubts about whether help would ever arrive or if they were already lost forever. It was only through the unwavering commitment to **survival** that they pushed forward when exhaustion hit its peak, maintaining their **trust** even as injuries festered and hope waned.\n\nFinally, they spotted a faint beam of artificial light breaking through the foliage, signaling the edge of the jungle and the beginning of rescue. A wave of relief washed over them, momentarily dispelling the deep-rooted **fear** that had haunted their every step since the crash. They understood that their escape was not just luck, but the direct result of choosing **survival** over surrender and building an unbreakable bond of **trust** in the darkest hours.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The dense canopy above offered no shelter from the relentless humidity, only a suffocating blanket of green that whispered secrets of danger. As the initial panic set in, fear gripped their hearts like an invisible vine, constricting their breathing and clouding their judgment. They quickly realized that individual **survival** was impossible against such vast odds; instead, they had to forge a fragile **trust** among themselves, knowing that hesitation could mean death within minutes.\n\nA sudden roar shattered the silence, revealing a massive predator stalking through the underbrush with eyes that gleamed in the dim light. Fear surged through the group again, causing muscles to tense and minds to race toward worst-case scenarios. However, it was their collective will for **survival** that forced them to stop fleeing blindly and start moving strategically as a unit. By locking arms and relying on **trust**, they navigated away from the beast's path, proving that unity was their strongest weapon against nature's wrath.\n\nDays turned into nights under a sky obscured by swirling storm clouds, turning the forest into a treacherous maze of disorientation. The gnawing sensation of **fear** threatened to paralyze them, whispering doubts about whether help would ever arrive or if they were already lost forever. It was only through the unwavering commitment to **survival** that they pushed forward when exhaustion hit its peak, maintaining their **trust** even as injuries festered and hope waned.\n\nFinally, they spotted a faint beam of artificial light breaking through the foliage, signaling the edge of the jungle and the beginning of rescue. A wave of relief washed over them, momentarily dispelling the deep-rooted **fear** that had haunted their every step since the crash. They understood that their escape was not just luck, but the direct result of choosing **survival** over surrender and building an unbreakable bond of **trust** in the darkest hours.<|im_end|>",
+  "prompt_length": 77,
+  "completion_length": 398,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a group of strangers who must work together to escape a dangerous jungle. Use the keywords \"survival,\" \"trust,\" and \"fear\" at least once in every paragraph. Avoid using the keywords \"survival\" in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 75,
+    "boundary_end": 75,
+    "boundary_source": "prompt",
+    "prefix_length": 76
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

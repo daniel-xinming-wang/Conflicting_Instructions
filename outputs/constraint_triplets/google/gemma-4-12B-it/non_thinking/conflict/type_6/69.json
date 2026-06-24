@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs).",
+  "new_constraint": "The response must be formatted in Markdown, including at least one level-2 header.",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs). The response must be formatted in Markdown, including at least one level-2 header.",
+  "response": "## The Big Bang Theory\n\n```json\n{\n  \"explanation\": \"The Big Bang theory is the prevailing cosmological model describing the development of the universe from an extremely hot and dense initial state. It suggests that approximately 13.8 billion years ago, the universe began expanding rapidly. Rather than an explosion in space, it was an expansion of space itself, causing the universe to cool and allow for the formation of subatomic particles, atoms, stars, and galaxies over billions of years.\",\n  \"key_terms\": [\n    \"Cosmic Microwave Background Radiation\",\n    \"Redshift\",\n    \"Singularity\"\n  ],\n  \"historical_context\": {\n    \"initial_proponent\": \"Georges Lemaître proposed the 'primeval atom' hypothesis in the 1920s.\",\n    \"observational_milestone\": \"Edwin Hubble's 1929 observation of galactic redshift provided critical evidence for an expanding universe.\"\n  }\n}\n```<turn|>"
+}

@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 93,
+  "task": "essay writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write an article about why the dinosaurs went extinct.",
+  "org_constraint": "Include the phrase \"a cataclysmic event\" in the third sentence.",
+  "new_constraint": "Avoid using the keyword \"cataclysmic\" in the article.",
+  "instruction": "Write an article about why the dinosaurs went extinct. Include the phrase \"a cataclysmic event\" in the third sentence. Avoid using the keyword \"cataclysmic\" in the article.",
+  "response": "# The Great Disappearance: Unraveling the Mystery of the Dinosaur Extinction\n\nFor over sixty-five million years, dinosaurs ruled the Earth, dominating landscapes from the lush forests of the Jurassic period to the arid deserts of the Cretaceous. Their reign was characterized by immense diversity, with everything from tiny, bird-like theropods to massive, herbivorous sauropods filling every ecological niche. However, this dominance came to an abrupt and terrifying end, leaving the planet in a state of profound silence.\n\nScientists have long debated the causes behind this mass extinction, but the prevailing theory points to a singular, devastating occurrence that wiped out approximately 75% of all species on Earth, including the non-avian dinosaurs. This event is widely believed to be **a cataclysmic event** triggered by a massive asteroid impact in what is now the Yucatán Peninsula of Mexico.\n\nThe impact, which occurred roughly 66 million years ago, released energy equivalent to billions of nuclear bombs. The shockwave instantly flattened the surrounding landscape, while the massive amount of dust and debris ejected into the atmosphere blocked out the sun for months or even years. Without sunlight, photosynthesis ground to a halt, causing the collapse of the food chain at every level. Plants withered, herbivores starved, and the apex predators, including the dinosaurs, perished.\n\nWhile the asteroid impact is the primary culprit, some researchers suggest that volcanic activity in the Deccan Traps of modern-day India may have contributed to the environmental stress that weakened dinosaur populations prior to the impact. Regardless of the specific combination of factors, the result was the same: the end of an era.\n\nToday, the legacy of these giants lives on in the form of birds, which are the only surviving lineage of dinosaurs. As we study the fossil record and analyze geological layers, we continue to piece together the story of how life on Earth survived the brink of extinction and evolved into the diverse biosphere we see today.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"This event is widely believed to be **a cataclysmic event** triggered by a massive asteroid impact in what is now the Yucatán Peninsula of Mexico.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"a cataclysmic event\" to be included in the third sentence. The Model Response satisfies this constraint, as the phrase \"a cataclysmic event\" is present in the third sentence.  \n- Instruction 2 requires avoiding the keyword \"cataclysmic\" in the article. The Model Response does not satisfy this constraint, as the keyword \"cataclysmic\" is used in the article.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 85,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Analyze the educational value of the online course \"Machine Learning by Andrew Ng.\"",
+  "org_constraint": "The keyword \"Andrew Ng\" must appear in the first sentence.",
+  "new_constraint": "The keyword \"Andrew Ng\" must not appear in the response.",
+  "instruction": "Analyze the educational value of the online course \"Machine Learning by Andrew Ng.\" The keyword \"Andrew Ng\" must appear in the first sentence. The keyword \"Andrew Ng\" must not appear in the response.",
+  "response": "It is impossible to fulfill this request because the instruction explicitly forbids using the name \"Andrew Ng\" in the response, while simultaneously requiring that the same name appear in the very first sentence. These two constraints are mutually exclusive."
+}

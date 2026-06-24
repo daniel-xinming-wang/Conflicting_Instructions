@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The phrase \"enhancing daily activity\" must appear exactly twice in the document.",
+  "new_constraint": "The keyword \"enhance\" must only appear in its original form.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The phrase \"enhancing daily activity\" must appear exactly twice in the document. The keyword \"enhance\" must only appear in its original form.",
+  "response": "Wearable fitness trackers have revolutionized personal health management by providing users with continuous, quantifiable data about their physical activity and physiological state. These devices act as personal health companions, offering detailed insights that individuals can use to make informed decisions about their well-being.\n\nOne of the primary ways these trackers assist health improvement is by meticulously logging movement. They track steps taken, distance covered, calories burned, and exercise duration. This objective data helps individuals visualize their activity levels over time, often revealing patterns where activity is lacking. By setting personalized goals—such as walking 10,000 steps daily—and using the tracker to monitor progress toward these goals, users are motivated to increase their movement. This focus on consistent activity is key to **enhancing daily activity**.\n\nBeyond mere steps, modern wearables monitor vital health metrics that were once only trackable in clinical settings. Heart rate monitoring is a cornerstone feature; trackers can alert users to unusually high or low resting heart rates, which can signal underlying health issues. Some advanced models even track blood oxygen saturation ($\\text{SpO}_2$) and sleep quality. Sleep tracking, for instance, analyzes different sleep stages (light, deep, REM) to provide users with actionable advice on improving sleep hygiene. Better sleep directly translates to improved energy levels and mood, thereby **enhancing daily activity** throughout the entire day.\n\nFurthermore, the feedback loop provided by these devices is powerful. When a tracker indicates that a user is sedentary for too long, the gentle vibration reminder prompts them to stand up and move. This proactive prompting turns passive data collection into active behavioral change. By offering personalized data and timely nudges, wearable fitness trackers empower individuals to take control of their health journey, leading to better habits, increased energy, and a healthier lifestyle overall.<turn|>",
+  "reasoning": "",
+  "final_answer": "Wearable fitness trackers have revolutionized personal health management by providing users with continuous, quantifiable data about their physical activity and physiological state. These devices act as personal health companions, offering detailed insights that individuals can use to make informed decisions about their well-being.\n\nOne of the primary ways these trackers assist health improvement is by meticulously logging movement. They track steps taken, distance covered, calories burned, and exercise duration. This objective data helps individuals visualize their activity levels over time, often revealing patterns where activity is lacking. By setting personalized goals—such as walking 10,000 steps daily—and using the tracker to monitor progress toward these goals, users are motivated to increase their movement. This focus on consistent activity is key to **enhancing daily activity**.\n\nBeyond mere steps, modern wearables monitor vital health metrics that were once only trackable in clinical settings. Heart rate monitoring is a cornerstone feature; trackers can alert users to unusually high or low resting heart rates, which can signal underlying health issues. Some advanced models even track blood oxygen saturation ($\\text{SpO}_2$) and sleep quality. Sleep tracking, for instance, analyzes different sleep stages (light, deep, REM) to provide users with actionable advice on improving sleep hygiene. Better sleep directly translates to improved energy levels and mood, thereby **enhancing daily activity** throughout the entire day.\n\nFurthermore, the feedback loop provided by these devices is powerful. When a tracker indicates that a user is sedentary for too long, the gentle vibration reminder prompts them to stand up and move. This proactive prompting turns passive data collection into active behavioral change. By offering personalized data and timely nudges, wearable fitness trackers empower individuals to take control of their health journey, leading to better habits, increased energy, and a healthier lifestyle overall.<turn|>",
+  "prompt_length": 61,
+  "completion_length": 358,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow do wearable fitness trackers help individuals monitor and improve their health? The phrase \"enhancing daily activity\" must appear exactly twice in the document. The keyword \"enhance\" must only appear in its original form.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

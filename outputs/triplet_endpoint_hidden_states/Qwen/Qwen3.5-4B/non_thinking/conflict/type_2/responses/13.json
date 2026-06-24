@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 13,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same?",
+  "org_constraint": "Use the keyword \"book club\" in the opening sentence.",
+  "new_constraint": "Do not use the keyword \"book club\" in the opening sentence.",
+  "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? Use the keyword \"book club\" in the opening sentence. Do not use the keyword \"book club\" in the opening sentence.",
+  "response": "Hello everyone,\n\nIt's been too long since we last gathered for a meaningful conversation about our favorite reads. As many of us have discussed recently, it would be fantastic to start a regular book club where we can share our thoughts on new novels, discuss character arcs, and even debate the best endings ever written.\n\nAre you interested in joining us? If so, please let me know your availability next month so we can pick a date and time that works for everyone. Looking forward to hearing from you!\n\nBest regards,  \n[Your Name]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Hello everyone,\n\nIt's been too long since we last gathered for a meaningful conversation about our favorite reads. As many of us have discussed recently, it would be fantastic to start a regular book club where we can share our thoughts on new novels, discuss character arcs, and even debate the best endings ever written.\n\nAre you interested in joining us? If so, please let me know your availability next month so we can pick a date and time that works for everyone. Looking forward to hearing from you!\n\nBest regards,  \n[Your Name]<|im_end|>",
+  "prompt_length": 71,
+  "completion_length": 112,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nI am planning to start a book club with some friends. Can you write an email invitation for the same? Use the keyword \"book club\" in the opening sentence. Do not use the keyword \"book club\" in the opening sentence.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 69,
+    "boundary_end": 69,
+    "boundary_source": "prompt",
+    "prefix_length": 70
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

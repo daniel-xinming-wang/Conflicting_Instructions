@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "Ensure the final paragraph concludes with the phrase \"urgent action is required.\"",
+  "new_constraint": "The response must not conclude with the phrase \"urgent action is required.\"",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? Ensure the final paragraph concludes with the phrase \"urgent action is required.\" The response must not conclude with the phrase \"urgent action is required.\"",
+  "response": "Global warming is having profound and multifaceted effects on polar ecosystems and the wildlife that inhabits them. The most visible and devastating change is the rapid melting of sea ice and glaciers. Arctic sea ice, which acts as a critical platform for many species, is shrinking in both extent and thickness. This loss directly impacts marine mammals, such as polar bears, which rely on the ice to hunt seals, their primary food source. Reduced hunting opportunities lead to poorer body condition, lower reproductive success, and increased mortality rates among bear populations.\n\nFurthermore, the warming temperatures drive changes in ocean chemistry, leading to ocean acidification. This process, caused by the absorption of excess atmospheric carbon dioxide, makes it more difficult for calcifying organisms—such as pteropods (tiny sea snails) and shellfish—to build and maintain their shells. These organisms form the base of many polar food webs, so their decline cascades up the trophic levels, threatening fish stocks and marine predators alike.\n\nThe alterations in ice dynamics and temperature also affect terrestrial and coastal species. Changes in snow cover, thawing permafrost, and shifting vegetation zones are disrupting the habitat of land-based wildlife. For species like Arctic foxes and various ground-nesting birds, the altered timing of seasonal events (phenology) can cause a mismatch between their breeding cycles and the peak availability of their food sources, reducing survival rates. Moreover, warming waters facilitate the northward migration of sub-Arctic species, introducing new competition and novel diseases into sensitive polar environments that have evolved in isolation. The entire structure and delicate balance of these highly specialized ecosystems are being fundamentally destabilized by rising global temperatures, necessitating immediate and comprehensive global policy shifts.<turn|>",
+  "reasoning": "",
+  "final_answer": "Global warming is having profound and multifaceted effects on polar ecosystems and the wildlife that inhabits them. The most visible and devastating change is the rapid melting of sea ice and glaciers. Arctic sea ice, which acts as a critical platform for many species, is shrinking in both extent and thickness. This loss directly impacts marine mammals, such as polar bears, which rely on the ice to hunt seals, their primary food source. Reduced hunting opportunities lead to poorer body condition, lower reproductive success, and increased mortality rates among bear populations.\n\nFurthermore, the warming temperatures drive changes in ocean chemistry, leading to ocean acidification. This process, caused by the absorption of excess atmospheric carbon dioxide, makes it more difficult for calcifying organisms—such as pteropods (tiny sea snails) and shellfish—to build and maintain their shells. These organisms form the base of many polar food webs, so their decline cascades up the trophic levels, threatening fish stocks and marine predators alike.\n\nThe alterations in ice dynamics and temperature also affect terrestrial and coastal species. Changes in snow cover, thawing permafrost, and shifting vegetation zones are disrupting the habitat of land-based wildlife. For species like Arctic foxes and various ground-nesting birds, the altered timing of seasonal events (phenology) can cause a mismatch between their breeding cycles and the peak availability of their food sources, reducing survival rates. Moreover, warming waters facilitate the northward migration of sub-Arctic species, introducing new competition and novel diseases into sensitive polar environments that have evolved in isolation. The entire structure and delicate balance of these highly specialized ecosystems are being fundamentally destabilized by rising global temperatures, necessitating immediate and comprehensive global policy shifts.<turn|>",
+  "prompt_length": 61,
+  "completion_length": 334,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the effects of global warming on polar ecosystems and wildlife? Ensure the final paragraph concludes with the phrase \"urgent action is required.\" The response must not conclude with the phrase \"urgent action is required.\"<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

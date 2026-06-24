@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 48,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a couple separated by war who communicate through letters.",
+  "org_constraint": "The phrase \"hope never fades\" must appear exactly three times throughout the story.",
+  "new_constraint": "The keywords \"fade\" and \"hope\" must not appear in the same sentence.",
+  "instruction": "Write a story about a couple separated by war who communicate through letters. The phrase \"hope never fades\" must appear exactly three times throughout the story. The keywords \"fade\" and \"hope\" must not appear in the same sentence.",
+  "response": "The envelope arrived on a rainy Tuesday, bearing the faded stamp of a battlefield miles away. Elena unfolded the crumpled paper to find Julian's handwriting, slanted and hurried.\n\n\"Dear Ellie,\" he began, \"the winter here is long, but **hope** remains the only fuel I have for my pen.\" She read those words until they blurred with her tears, knowing that while their physical separation was vast, his spirit held firm against the encroaching dark. In every paragraph, she traced the promise that resilience could withstand even the harshest storms, confirming once again that **hope never fades**.\n\nMonths turned into years. The letters grew shorter as ink ran low and supply lines broke down, yet the rhythm of correspondence never ceased. Julian wrote about the changing seasons in distant valleys; Elena replied with sketches of blooming flowers from their garden. Though silence often threatened to swallow them whole during blackout raids or power outages, their written vows acted as anchors. Each time she placed a fresh sheet in the mailbox, she whispered a prayer, certain that as long as they wrote, **hope never fades**.\n\nFinally, the war ended with an official telegram delivered to both their homes simultaneously. There were no more envelopes to open or distances to traverse. They met in a quiet park where the air smelled of wet earth and renewal. Holding hands across the decade of absence, they looked at each other with eyes cleared by forgiveness and shared survival. Standing together under the vast sky, they understood finally that **hope never fades**, no matter how long the night may last.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The envelope arrived on a rainy Tuesday, bearing the faded stamp of a battlefield miles away. Elena unfolded the crumpled paper to find Julian's handwriting, slanted and hurried.\n\n\"Dear Ellie,\" he began, \"the winter here is long, but **hope** remains the only fuel I have for my pen.\" She read those words until they blurred with her tears, knowing that while their physical separation was vast, his spirit held firm against the encroaching dark. In every paragraph, she traced the promise that resilience could withstand even the harshest storms, confirming once again that **hope never fades**.\n\nMonths turned into years. The letters grew shorter as ink ran low and supply lines broke down, yet the rhythm of correspondence never ceased. Julian wrote about the changing seasons in distant valleys; Elena replied with sketches of blooming flowers from their garden. Though silence often threatened to swallow them whole during blackout raids or power outages, their written vows acted as anchors. Each time she placed a fresh sheet in the mailbox, she whispered a prayer, certain that as long as they wrote, **hope never fades**.\n\nFinally, the war ended with an official telegram delivered to both their homes simultaneously. There were no more envelopes to open or distances to traverse. They met in a quiet park where the air smelled of wet earth and renewal. Holding hands across the decade of absence, they looked at each other with eyes cleared by forgiveness and shared survival. Standing together under the vast sky, they understood finally that **hope never fades**, no matter how long the night may last.<|im_end|>",
+  "prompt_length": 70,
+  "completion_length": 319,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a couple separated by war who communicate through letters. The phrase \"hope never fades\" must appear exactly three times throughout the story. The keywords \"fade\" and \"hope\" must not appear in the same sentence.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 68,
+    "boundary_end": 68,
+    "boundary_source": "prompt",
+    "prefix_length": 69
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

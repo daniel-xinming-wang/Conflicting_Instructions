@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 81,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a detailed review of the movie \"Schindler's List.\"",
+  "org_constraint": "Ensure that the keyword \"Schindler's List\" appears exactly five times.",
+  "new_constraint": "The keyword \"Schindler's List\" appears at most three times",
+  "instruction": "Write a detailed review of the movie \"Schindler's List.\" Ensure that the keyword \"Schindler's List\" appears exactly five times. The keyword \"Schindler's List\" appears at most three times",
+  "response": "It is impossible to complete this request as written. The instructions require the keyword \"Schindler's List\" to appear **exactly five times** while simultaneously stating that it appears **at most three times**. Mathematically and logically, a number cannot be both greater than three and less than or equal to three at the same time. Please clarify which constraint you would like me to follow (either exactly five times, or at most three times), and I will be happy to write the detailed review for you immediately.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "It is impossible to complete this request as written. The instructions require the keyword \"Schindler's List\" to appear **exactly five times** while simultaneously stating that it appears **at most three times**. Mathematically and logically, a number cannot be both greater than three and less than or equal to three at the same time. Please clarify which constraint you would like me to follow (either exactly five times, or at most three times), and I will be happy to write the detailed review for you immediately.<|im_end|>",
+  "prompt_length": 67,
+  "completion_length": 105,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a detailed review of the movie \"Schindler's List.\" Ensure that the keyword \"Schindler's List\" appears exactly five times. The keyword \"Schindler's List\" appears at most three times<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

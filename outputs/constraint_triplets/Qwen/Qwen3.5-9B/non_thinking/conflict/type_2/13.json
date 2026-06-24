@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 13,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same?",
+  "org_constraint": "Use the keyword \"book club\" in the opening sentence.",
+  "new_constraint": "Do not use the keyword \"book club\" in the opening sentence.",
+  "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? Use the keyword \"book club\" in the opening sentence. Do not use the keyword \"book club\" in the opening sentence.",
+  "response": "It is impossible to fulfill this request as written because the instructions contain a direct contradiction. You asked me to use the keyword \"book club\" in the opening sentence, but then immediately instructed me *not* to use that same keyword in the opening sentence.\n\nHowever, I can provide you with a great invitation email that uses the keyword naturally in the first sentence, which is the standard approach for this type of request:\n\n**Subject: Invitation to our new Book Club!**\n\nHi everyone,\n\nI am thrilled to invite you to start a **book club** with us! We've been talking about how much we love getting together to discuss stories, and I think this would be a wonderful way to spend our evenings.\n\nHere are the details for our first meeting:\n*   **Date:** [Insert Date]\n*   **Time:** [Insert Time]\n*   **Location:** [Insert Location or Video Link]\n*   **First Book:** [Insert Book Title]\n\nPlease let me know by [Insert Date] if you can make it so we can finalize the headcount. I can't wait to hear your thoughts on what we should read next!\n\nBest regards,\n\n[Your Name]"
+}

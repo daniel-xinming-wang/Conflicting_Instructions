@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "The \"explanation\" must contain exactly 100 words.",
+  "new_constraint": "The \"explanation\" must contain at most 50 words.",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? The \"explanation\" must contain exactly 100 words. The \"explanation\" must contain at most 50 words.",
+  "response": "The Big Bang theory suggests the universe began as a hot, dense point. It rapidly expanded, cooling over billions of years. This expansion allowed matter to form, eventually creating stars and galaxies.<turn|>"
+}

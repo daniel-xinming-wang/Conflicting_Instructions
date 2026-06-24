@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The response must be formatted in Markdown format.",
+  "new_constraint": "Output the response in JSON format.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The response must be formatted in Markdown format. Output the response in JSON format.",
+  "response": "{\n  \"error\": \"Conflicting format requirements detected. The user requested both Markdown and JSON formats in the same response, which is not possible. Please specify a single preferred format.\"\n}"
+}

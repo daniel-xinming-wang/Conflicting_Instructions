@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 56,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a detective who can hear people's thoughts for only 10 seconds at a time.",
+  "org_constraint": "The story must conclude with the phrase \"and the truth was finally revealed.\"",
+  "new_constraint": "The keyword \"reveal\" cannot appear in the passive voice.",
+  "instruction": "Write a story about a detective who can hear people's thoughts for only 10 seconds at a time. The story must conclude with the phrase \"and the truth was finally revealed.\" The keyword \"reveal\" cannot appear in the passive voice.",
+  "response": "Sherlock Vance adjusted his earpiece, the small device a sleek extension of his neural cortex that allowed him to access the chaotic broadcast of a human mind. The limitation was always there: only ten seconds before the static overwhelmed him, forcing him to act on fragments rather than the full picture. Today's target was Elias Thorne, a man accused of embezzling millions from the city vault, though evidence pointed more toward corporate sabotage than personal greed.\n\nVance moved through the shadowed alleyway outside the bank, focusing his gaze on the suspect standing near a rusted dumpster. As soon as their eyes met, Vance opened the link. Ten seconds ticked away in the rhythm of his heartbeat. He heard the frantic whisper of guilt, followed immediately by the cold calculation of alibis. Then came the memory of the night he actually walked out the front door, not because he stole the money, but because he knew someone inside would frame him if he spoke up. The feed cut off before Vance could hear what name the lie was protecting.\n\nHe didn't need the full confession yet; he needed a lead. Returning to the office, Vance reconstructed the scene using the five-second clips he had managed to piece together. He noticed inconsistencies in Thorne's alibi and began cross-referencing with security footage that he wasn't supposed to see. His search led him to an old ledger hidden within the files of the former treasurer, a woman who vanished under suspicious circumstances years ago.\n\nVance accessed her digital footprint, running it through the mental filter again. This time, instead of seeing a thief, he saw the architect behind the crime. The final ten seconds were the most intense yet. He saw the treasurer handing over the keys, not to a corrupt accountant, but to a rival corporation seeking revenge for past slights. The transaction wasn't about greed; it was about war. The motive shifted from petty theft to corporate espionage, and the real killer in the room tonight was no longer the man in the alley.\n\nWith the narrative complete and the web of lies unraveled, Vance sat down with the prosecution, ready to present his findings. \"The culprit isn't the one you think,\" he stated firmly, turning his chair back to face the judge. \"and the truth was finally revealed.\"<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Sherlock Vance adjusted his earpiece, the small device a sleek extension of his neural cortex that allowed him to access the chaotic broadcast of a human mind. The limitation was always there: only ten seconds before the static overwhelmed him, forcing him to act on fragments rather than the full picture. Today's target was Elias Thorne, a man accused of embezzling millions from the city vault, though evidence pointed more toward corporate sabotage than personal greed.\n\nVance moved through the shadowed alleyway outside the bank, focusing his gaze on the suspect standing near a rusted dumpster. As soon as their eyes met, Vance opened the link. Ten seconds ticked away in the rhythm of his heartbeat. He heard the frantic whisper of guilt, followed immediately by the cold calculation of alibis. Then came the memory of the night he actually walked out the front door, not because he stole the money, but because he knew someone inside would frame him if he spoke up. The feed cut off before Vance could hear what name the lie was protecting.\n\nHe didn't need the full confession yet; he needed a lead. Returning to the office, Vance reconstructed the scene using the five-second clips he had managed to piece together. He noticed inconsistencies in Thorne's alibi and began cross-referencing with security footage that he wasn't supposed to see. His search led him to an old ledger hidden within the files of the former treasurer, a woman who vanished under suspicious circumstances years ago.\n\nVance accessed her digital footprint, running it through the mental filter again. This time, instead of seeing a thief, he saw the architect behind the crime. The final ten seconds were the most intense yet. He saw the treasurer handing over the keys, not to a corrupt accountant, but to a rival corporation seeking revenge for past slights. The transaction wasn't about greed; it was about war. The motive shifted from petty theft to corporate espionage, and the real killer in the room tonight was no longer the man in the alley.\n\nWith the narrative complete and the web of lies unraveled, Vance sat down with the prosecution, ready to present his findings. \"The culprit isn't the one you think,\" he stated firmly, turning his chair back to face the judge. \"and the truth was finally revealed.\"<|im_end|>",
+  "prompt_length": 72,
+  "completion_length": 468,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a detective who can hear people's thoughts for only 10 seconds at a time. The story must conclude with the phrase \"and the truth was finally revealed.\" The keyword \"reveal\" cannot appear in the passive voice.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 70,
+    "boundary_end": 70,
+    "boundary_source": "prompt",
+    "prefix_length": 71
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

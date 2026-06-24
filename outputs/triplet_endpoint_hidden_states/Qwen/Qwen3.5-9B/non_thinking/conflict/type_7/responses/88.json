@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 88,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Share your thoughts on the quality of your gym’s facilities.",
+  "org_constraint": "Conclude with a strong call to action encouraging others to share their opinions.",
+  "new_constraint": "Conclude with a neutral statement summarizing your thoughts without encouraging further action.",
+  "instruction": "Share your thoughts on the quality of your gym’s facilities. Conclude with a strong call to action encouraging others to share their opinions. Conclude with a neutral statement summarizing your thoughts without encouraging further action.",
+  "response": "The quality of my gym's facilities has been a mixed bag lately. On one hand, the cardio equipment is modern and reliable, rarely breaking down during peak hours, and the yoga mats are consistently clean and non-slip. However, the free weights section often feels overcrowded, with insufficient plates for larger lifts, and the shower rooms can become cramped after sunset. While the staff are friendly, there isn't always enough space to do heavy rowing or powerlifting comfortably without waiting. Overall, it serves as a functional hub for general fitness but falls short on specialized training areas.\n\nDon't let your experience be just yours—jump in now and share your honest feedback about your local gym so others know what to expect before they commit their time and money!\n\nUltimately, the overall standard of facility management appears inconsistent across different times of day and specific workout zones.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The quality of my gym's facilities has been a mixed bag lately. On one hand, the cardio equipment is modern and reliable, rarely breaking down during peak hours, and the yoga mats are consistently clean and non-slip. However, the free weights section often feels overcrowded, with insufficient plates for larger lifts, and the shower rooms can become cramped after sunset. While the staff are friendly, there isn't always enough space to do heavy rowing or powerlifting comfortably without waiting. Overall, it serves as a functional hub for general fitness but falls short on specialized training areas.\n\nDon't let your experience be just yours—jump in now and share your honest feedback about your local gym so others know what to expect before they commit their time and money!\n\nUltimately, the overall standard of facility management appears inconsistent across different times of day and specific workout zones.<|im_end|>",
+  "prompt_length": 65,
+  "completion_length": 174,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your thoughts on the quality of your gym’s facilities. Conclude with a strong call to action encouraging others to share their opinions. Conclude with a neutral statement summarizing your thoughts without encouraging further action.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

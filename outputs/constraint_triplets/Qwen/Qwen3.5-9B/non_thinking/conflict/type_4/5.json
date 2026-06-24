@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The phrase \"transaction details\" must appear exactly twice.",
+  "new_constraint": "Each paragraph must include the phrase \"transaction details.\"",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The phrase \"transaction details\" must appear exactly twice. Each paragraph must include the phrase \"transaction details.\"",
+  "response": "Subject: Request for Clarification Regarding Recent Activity\n\nDear Customer Service Team,\n\nI am writing to request further information regarding a recent charge that appeared on my account statement. Upon reviewing the **transaction details**, I noticed an entry that does not match any of my recent purchases or scheduled payments, and I would appreciate your assistance in understanding the origin of this **transaction details**.\n\nCould you please provide a breakdown of the merchant name, the specific date of the charge, and the authorization code associated with this activity? Once I have reviewed the full **transaction details**, I will be able to determine if this was an error on my end or if I need to initiate a dispute process immediately.\n\nThank you for your prompt attention to this matter, and I look forward to your response.\n\nSincerely,\n\n[Your Name]\n[Your Account Number]"
+}

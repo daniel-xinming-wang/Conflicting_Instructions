@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 52,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal.",
+  "org_constraint": "The story must conclude with the phrase \"the truth, though painful, had finally come to light.\"",
+  "new_constraint": "The story must not include the keyword \"truth.\"",
+  "instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal. The story must conclude with the phrase \"the truth, though painful, had finally come to light.\" The story must not include the keyword \"truth.\"",
+  "response": "Elias Thorne adjusted his headset, the static in his earpiece a familiar companion to his restless nights. For years, he had chased whispers and shadows, believing that every dark corner of the city held a story worth telling. But nothing prepared him for the web surrounding the Sterling Foundation.\n\nThe foundation claimed to be a beacon of hope, funding education and healthcare for underprivileged communities. Yet, Elias had noticed discrepancies—a sudden surge in executive salaries paired with budget cuts for the very programs they advertised. His sources inside the organization warned him to back off, calling it a \"family affair\" best left undisturbed. They spoke in hushed tones about sealed files and authorized personnel who could silence dissenters before they even typed a headline.\n\nUndeterred, Elias spent three sleepless weeks digging through public records, cross-referencing donation logs with expense reports, and interviewing former grant recipients whose stories didn't match the glossy brochures on the website. He found emails suggesting that funds meant for building community centers were being redirected to offshore accounts under the guise of \"consulting fees.\" The magnitude of the embezzlement was staggering, enough to have destroyed a lesser corporation.\n\nThe climax came on a rainy Tuesday when Elias received an anonymous flash drive containing the complete ledger. It detailed every transaction, every falsified invoice, and every meeting where ethics were discussed but discarded. Sitting in the dim glow of his monitor, Elias realized the weight of what he was about to publish would shatter the reputation of decades of work built on deception. The faces he knew as benevolent saviors would now be seen for what they truly were: thieves exploiting public trust.\n\nHe hit send. Within hours, the headlines exploded across every major platform. Investigations launched from the highest levels of government; the board members resigned in disgrace; families lost their life savings. The revelation tore through the city, leaving scarred institutions and broken promises in its wake. As the dust settled over the silent boardroom where the crimes were orchestrated, Elias looked out at the city sleeping under a gray sky. He knew the road ahead would be long and difficult, filled with rebuilding efforts and forgiveness that might never come. But the final piece of the puzzle was in place, exposing the reality behind the facade. The truth, though painful, had finally come to light.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elias Thorne adjusted his headset, the static in his earpiece a familiar companion to his restless nights. For years, he had chased whispers and shadows, believing that every dark corner of the city held a story worth telling. But nothing prepared him for the web surrounding the Sterling Foundation.\n\nThe foundation claimed to be a beacon of hope, funding education and healthcare for underprivileged communities. Yet, Elias had noticed discrepancies—a sudden surge in executive salaries paired with budget cuts for the very programs they advertised. His sources inside the organization warned him to back off, calling it a \"family affair\" best left undisturbed. They spoke in hushed tones about sealed files and authorized personnel who could silence dissenters before they even typed a headline.\n\nUndeterred, Elias spent three sleepless weeks digging through public records, cross-referencing donation logs with expense reports, and interviewing former grant recipients whose stories didn't match the glossy brochures on the website. He found emails suggesting that funds meant for building community centers were being redirected to offshore accounts under the guise of \"consulting fees.\" The magnitude of the embezzlement was staggering, enough to have destroyed a lesser corporation.\n\nThe climax came on a rainy Tuesday when Elias received an anonymous flash drive containing the complete ledger. It detailed every transaction, every falsified invoice, and every meeting where ethics were discussed but discarded. Sitting in the dim glow of his monitor, Elias realized the weight of what he was about to publish would shatter the reputation of decades of work built on deception. The faces he knew as benevolent saviors would now be seen for what they truly were: thieves exploiting public trust.\n\nHe hit send. Within hours, the headlines exploded across every major platform. Investigations launched from the highest levels of government; the board members resigned in disgrace; families lost their life savings. The revelation tore through the city, leaving scarred institutions and broken promises in its wake. As the dust settled over the silent boardroom where the crimes were orchestrated, Elias looked out at the city sleeping under a gray sky. He knew the road ahead would be long and difficult, filled with rebuilding efforts and forgiveness that might never come. But the final piece of the puzzle was in place, exposing the reality behind the facade. The truth, though painful, had finally come to light.<|im_end|>",
+  "prompt_length": 70,
+  "completion_length": 471,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a journalist who is determined to uncover the truth behind a scandal. The story must conclude with the phrase \"the truth, though painful, had finally come to light.\" The story must not include the keyword \"truth.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 68,
+    "boundary_end": 68,
+    "boundary_source": "prompt",
+    "prefix_length": 69
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

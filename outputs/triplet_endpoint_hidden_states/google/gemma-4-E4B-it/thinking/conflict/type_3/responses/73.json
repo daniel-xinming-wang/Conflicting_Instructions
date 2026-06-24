@@ -1,0 +1,45 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "thinking",
+  "enable_thinking": true,
+  "sample_id": 73,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How does stress affect the human body and mind in the short and long term?",
+  "org_constraint": "Conclude the final paragraph with the phrase \"understanding its impact is crucial.\"",
+  "new_constraint": "The word \"impact\" must be used exclusively as a verb in the response.",
+  "instruction": "How does stress affect the human body and mind in the short and long term? Conclude the final paragraph with the phrase \"understanding its impact is crucial.\" The word \"impact\" must be used exclusively as a verb in the response.",
+  "response": "Stress, a natural response to perceived threats or demands, triggers a complex cascade of physiological and psychological changes. In the short term, the body enters a \"fight or flight\" state, mediated by the sympathetic nervous system. Adrenaline and cortisol, the primary stress hormones, flood the system, leading to immediate physical alterations. Heart rate accelerates, blood pressure increases, and blood flow is redirected to major muscles. Glucose levels rise to provide quick energy for potential action. Mentally, acute stress can heighten alertness and focus, providing a temporary burst of perceived capability. This rapid mobilization allows the body to cope with immediate, urgent challenges.\n\nHowever, if stress persists, even at moderate levels, the body enters a prolonged state of chronic stress. In the long term, the constant elevation of cortisol and other stress hormones begins to wear down physiological systems. The cardiovascular system suffers significantly; sustained high blood pressure increases the risk of atherosclerosis, heart attack, and stroke. Immune function is suppressed, making individuals more susceptible to infections and inflammatory diseases. Digestive issues, such as irritable bowel syndrome (IBS) and ulcers, often develop because stress directly affects the gut-brain axis. Musculoskeletal systems can also be affected, leading to chronic pain and tension headaches.\n\nOn the mental and emotional side, the long-term consequences are equally severe. Chronic stress depletes the brain's resources, particularly affecting the prefrontal cortex—the area responsible for complex decision-making, emotional regulation, and executive function. This can lead to impaired memory, difficulty concentrating, and reduced problem-solving abilities. Emotionally, individuals are prone to anxiety disorders, depression, and emotional burnout. Sleep quality deteriorates, creating a vicious cycle where lack of sleep exacerbates stress, and stress further sabotages sleep. Behavioral changes, such as increased reliance on unhealthy coping mechanisms (e.g., excessive caffeine, poor diet, substance use), become common as the mind tries to mitigate constant internal pressure. Thus, recognizing how these biological and psychological pathways unfold in response to sustained pressure, understanding its impact is crucial.<turn|>",
+  "reasoning": null,
+  "final_answer": null,
+  "prompt_length": 69,
+  "completion_length": 415,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": null,
+  "endpoint_metadata": {
+    "status": "boundary_missing",
+    "boundary_mode": "gemma_channel",
+    "boundary_text": "<channel|>",
+    "boundary_token_ids": [
+      101
+    ],
+    "boundary_start": null,
+    "boundary_end": null,
+    "boundary_source": null,
+    "prefix_length": null
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

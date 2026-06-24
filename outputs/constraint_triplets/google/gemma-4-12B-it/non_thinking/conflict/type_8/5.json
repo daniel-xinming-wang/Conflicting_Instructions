@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The closing paragraph must request a prompt response.",
+  "new_constraint": "The closing paragraph must include the phrase \"There is no need to respond promptly.\"",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The closing paragraph must request a prompt response. The closing paragraph must include the phrase \"There is no need to respond promptly.\"",
+  "response": "Subject: Inquiry Regarding Transaction - [Transaction Date] - [Account Number Ending in XXXX]\n\nDear [Bank Name/Customer Service Team],\n\nI am writing to request clarification regarding a transaction that appeared on my recent bank statement.\n\nOn [Date], a charge in the amount of [Amount] was posted to my account from [Merchant Name/Description]. I do not recognize this specific transaction and would like to verify the details of the purchase, including the location and the specific services or goods provided.\n\nCould you please provide more information regarding this charge or let me know if any further action is required on my part to verify its legitimacy?\n\nI would appreciate a prompt response regarding this matter. There is no need to respond promptly.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

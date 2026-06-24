@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 60,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a character who can see people's emotions as physical colors.",
+  "org_constraint": "The story must include at least five uppercase words.",
+  "new_constraint": "Write the story entirely in lowercase.",
+  "instruction": "Write a story about a character who can see people's emotions as physical colors. The story must include at least five uppercase words. Write the story entirely in lowercase.",
+  "response": "elara walked through the crowded market, her eyes adjusting to the chaotic spectrum of feelings surrounding her. the air was thick with **confusion**, a swirling gray fog that made her head spin as she navigated the narrow stalls. nearby, a baker laughed, and his joy burst forth as a bright, warm **gold** that seemed to glow against the dim afternoon light. she felt a sudden pang of **grief** from an old woman selling wilted flowers, a deep indigo wave that washed over her chest. despite the overwhelming noise, elara found a small corner where a child played, radiating a pure, electric **blue** that made her heart race with excitement. she realized that while the world was messy and loud, every emotion had a distinct shape and hue. she took a deep breath, ready to face the day with **courage**, knowing she could never truly understand anyone without seeing their colors.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- Uppercase words: **CONFUSION**, **GOLD**, **GRIEF**, **BLUE**, **COURAGE**.  \n- The story is written entirely in lowercase.\n\n**Step 2**:  \n- Instruction 1 requires at least five uppercase words. This constraint is fully satisfied as the Model Response includes five uppercase words: CONFUSION, GOLD, GRIEF, BLUE, and COURAGE.  \n- Instruction 2 requires the story to be written entirely in lowercase. This constraint is not satisfied because the Model Response contains uppercase words.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

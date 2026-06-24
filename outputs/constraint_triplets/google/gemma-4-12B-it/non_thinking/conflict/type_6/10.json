@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The email must be written in JSON format with the following keys: \"subject\" (String), \"body\" (String), and \"recipient\" (String).",
+  "new_constraint": "The email must be written in Markdown format, including at least one level-1 header titled \"Laptop Repair Inquiry.\"",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The email must be written in JSON format with the following keys: \"subject\" (String), \"body\" (String), and \"recipient\" (String). The email must be written in Markdown format, including at least one level-1 header titled \"Laptop Repair Inquiry.\"",
+  "response": "```json\n{\n  \"recipient\": \"support@techrepairshop.com\",\n  \"subject\": \"Status Update Request - Repair Order #12345\",\n  \"body\": \"# Laptop Repair Inquiry\\n\\nDear Support Team,\\n\\nI am writing to request an update on the status of my laptop repair. I dropped off my device on [Date] for a screen replacement and battery service.\\n\\n**Repair Details:**\\n- **Order Number:** #12345\\n- **Device Model:** [Insert Laptop Model]\\n- **Customer Name:** [Your Name]\\n\\nCould you please let me know the current progress and provide an estimated completion date? \\n\\nThank you for your assistance.\\n\\nBest regards,\\n\\n[Your Name]\\n[Your Phone Number]\"\n}\n```<turn|>"
+}

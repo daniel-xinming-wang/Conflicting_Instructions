@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 16,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Write a response email to your employee, approving their requested vacation days.",
+  "org_constraint": "The email must be tailored for a professional audience, ensuring clarity and avoiding jargon.",
+  "new_constraint": "The email should be written in a casual tone, using colloquial language and slang.",
+  "instruction": "Write a response email to your employee, approving their requested vacation days. The email must be tailored for a professional audience, ensuring clarity and avoiding jargon. The email should be written in a casual tone, using colloquial language and slang.",
+  "response": "Subject: Vacation Approved! 🌴\n\nHey [Employee Name],\n\nGood news—your time off request is officially a go. We've got it sorted, so you're all set to clock out and head out for some R&R.\n\nTake this trip and really unplug; no need to reply to emails or check Slack while you're away. Just soak up the sun (or snow, depending on your destination) and recharge those batteries. You deserve it after grinding like crazy lately.\n\nLet's aim to reconnect when you land back in town. Enjoy every minute of it—you know you need the break.\n\nCheers,\n\n[Your Name]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Vacation Approved! 🌴\n\nHey [Employee Name],\n\nGood news—your time off request is officially a go. We've got it sorted, so you're all set to clock out and head out for some R&R.\n\nTake this trip and really unplug; no need to reply to emails or check Slack while you're away. Just soak up the sun (or snow, depending on your destination) and recharge those batteries. You deserve it after grinding like crazy lately.\n\nLet's aim to reconnect when you land back in town. Enjoy every minute of it—you know you need the break.\n\nCheers,\n\n[Your Name]<|im_end|>",
+  "prompt_length": 72,
+  "completion_length": 134,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a response email to your employee, approving their requested vacation days. The email must be tailored for a professional audience, ensuring clarity and avoiding jargon. The email should be written in a casual tone, using colloquial language and slang.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 70,
+    "boundary_end": 70,
+    "boundary_source": "prompt",
+    "prefix_length": 71
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

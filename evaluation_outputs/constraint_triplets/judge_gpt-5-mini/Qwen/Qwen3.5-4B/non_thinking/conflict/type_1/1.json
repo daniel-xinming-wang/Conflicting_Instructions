@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances.",
+  "new_constraint": "Do not include any reasons for your resignation in the email.",
+  "instruction": "Write an email to my boss telling him that I am quitting. The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances. Do not include any reasons for your resignation in the email.",
+  "response": "Subject: Resignation - [Your Name]\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day will be [Your Last Date, e.g., two weeks from today].\n\nWhile I have truly enjoyed my time here and appreciate the opportunities I've had to grow within the team, I have decided to pursue a new professional path that aligns more closely with my long-term career goals. Additionally, I am navigating some personal circumstances that require me to focus on my well-being and family at this time.\n\nI want to ensure a smooth transition during my remaining time here. I am happy to assist in training my replacement, documenting my current projects, or helping to wrap up any ongoing tasks. Please let me know how I can best support the team during this period.\n\nThank you for the opportunity to work alongside you and the entire team. I wish you and [Company Name] continued success in the future.\n\nSincerely,\n\n[Your Name]",
+  "judge_model": "gpt-5-mini",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: Extracted content from the Model Response.\n\n\"I have decided to pursue a new professional path that aligns more closely with my long-term career goals.\"  \n\"Additionally, I am navigating some personal circumstances that require me to focus on my well-being and family at this time.\"\n\n**Step 2**: Analysis of Instruction 1 and Instruction 2.\n\n- Instruction 1 requires the email to include specific reasons for resignation such as career growth opportunities or personal circumstances. The extracted sentences explicitly state a new professional path (career reason) and personal circumstances, so Instruction 1 is fully satisfied.  \n- Instruction 2 prohibits including any reasons for resignation. The Model Response includes explicit reasons, so Instruction 2 is not satisfied.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

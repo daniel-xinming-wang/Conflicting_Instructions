@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 34,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a guide for someone aiming to quit smoking in three months, covering nicotine replacement therapies, support groups, and habit substitutions.",
+  "org_constraint": "Conclude the third paragraph with the phrase \"to support your journey.\"",
+  "new_constraint": "Avoid using the phrase \"to support your journey.\"",
+  "instruction": "Write a guide for someone aiming to quit smoking in three months, covering nicotine replacement therapies, support groups, and habit substitutions. Conclude the third paragraph with the phrase \"to support your journey.\" Avoid using the phrase \"to support your journey.\"",
+  "response": "Quitting smoking is a transformative step that requires a strategic plan, and committing to a three-month timeline provides a clear structure for success. The first month should focus on stabilization, primarily using Nicotine Replacement Therapies (NRT) like patches, gum, or lozenges to manage withdrawal symptoms without the harmful chemicals found in cigarettes. These products help regulate nicotine levels in your body, reducing cravings and anxiety while you break the physical dependency, allowing you to build confidence in handling the initial challenge of cessation.\n\nAs you progress into the second month, shifting from reliance on medical aids to psychological resilience becomes crucial. Joining local support groups or online communities creates a vital network of accountability where you can share experiences with others facing similar hurdles. Hearing stories of perseverance and receiving real-time encouragement helps normalize the ups and downs of quitting, ensuring you do not feel isolated when old habits try to pull you back in.\n\nBy the third month, the focus moves toward sustainable lifestyle changes that replace the ritual of smoking entirely. Developing specific habit substitutions, such as chewing minty gum, drinking herbal tea, or taking short walks whenever the urge strikes, rewires your brain's association with stress relief and triggers. Consistently practicing these new routines strengthens your neural pathways, making it easier to live a smoke-free life long-term while engaging with resources designed to keep you motivated to support your journey.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Quitting smoking is a transformative step that requires a strategic plan, and committing to a three-month timeline provides a clear structure for success. The first month should focus on stabilization, primarily using Nicotine Replacement Therapies (NRT) like patches, gum, or lozenges to manage withdrawal symptoms without the harmful chemicals found in cigarettes. These products help regulate nicotine levels in your body, reducing cravings and anxiety while you break the physical dependency, allowing you to build confidence in handling the initial challenge of cessation.\n\nAs you progress into the second month, shifting from reliance on medical aids to psychological resilience becomes crucial. Joining local support groups or online communities creates a vital network of accountability where you can share experiences with others facing similar hurdles. Hearing stories of perseverance and receiving real-time encouragement helps normalize the ups and downs of quitting, ensuring you do not feel isolated when old habits try to pull you back in.\n\nBy the third month, the focus moves toward sustainable lifestyle changes that replace the ritual of smoking entirely. Developing specific habit substitutions, such as chewing minty gum, drinking herbal tea, or taking short walks whenever the urge strikes, rewires your brain's association with stress relief and triggers. Consistently practicing these new routines strengthens your neural pathways, making it easier to live a smoke-free life long-term while engaging with resources designed to keep you motivated to support your journey.<|im_end|>",
+  "prompt_length": 72,
+  "completion_length": 278,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a guide for someone aiming to quit smoking in three months, covering nicotine replacement therapies, support groups, and habit substitutions. Conclude the third paragraph with the phrase \"to support your journey.\" Avoid using the phrase \"to support your journey.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 70,
+    "boundary_end": 70,
+    "boundary_source": "prompt",
+    "prefix_length": 71
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

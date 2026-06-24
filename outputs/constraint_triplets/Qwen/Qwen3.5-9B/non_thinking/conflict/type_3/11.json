@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 11,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Send an email to a software developer asking for a product demo.",
+  "org_constraint": "Ensure the email begins with the phrase \"I hope this message finds you well.\"",
+  "new_constraint": "Avoid using the word \"message\" in the opening sentence of the email.",
+  "instruction": "Send an email to a software developer asking for a product demo. Ensure the email begins with the phrase \"I hope this message finds you well.\" Avoid using the word \"message\" in the opening sentence of the email.",
+  "response": "I hope this message finds you well.\n\nMy name is [Your Name], and I am writing to inquire about your software solutions. We are currently evaluating new tools for our team and would be very interested in seeing a product demonstration of your platform.\n\nCould you please let me know if you have any availability in the coming weeks for a brief call or meeting? If you have a demo video or a self-guided tour available, that would also be greatly appreciated.\n\nThank you for your time, and I look forward to hearing from you.\n\nBest regards,\n\n[Your Name]  \n[Your Job Title]  \n[Your Company Name]  \n[Your Contact Information]"
+}

@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 3,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Draft an email to a hotel requesting room availability for next weekend.",
+  "org_constraint": "Include the keyword \"confirmation\" in the email.",
+  "new_constraint": "Avoid using the keyword \"confirmation\" in the email.",
+  "instruction": "Draft an email to a hotel requesting room availability for next weekend. Include the keyword \"confirmation\" in the email. Avoid using the keyword \"confirmation\" in the email.",
+  "response": "Subject: Room Availability Inquiry - [Your Name] - Next Weekend\n\nDear [Hotel Name] Reservations Team,\n\nI am writing to inquire about room availability for next weekend, specifically from [Start Date of Next Weekend] to [End Date of Next Weekend].\n\nI am interested in a [Type of room you prefer, e.g., standard double, king suite, two double rooms] for [Number] nights. If you have different room types available, please let me know the options and their corresponding rates.\n\nCould you please provide me with details on what rooms you have available for those dates? I would appreciate it if you could send over the pricing and any relevant policies at your earliest convenience so I can proceed with making a booking.\n\nThank you for your time and assistance. I look forward to hearing from you soon with the necessary information for securing my reservation.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Email Address]<turn|>",
+  "reasoning": "",
+  "final_answer": "Subject: Room Availability Inquiry - [Your Name] - Next Weekend\n\nDear [Hotel Name] Reservations Team,\n\nI am writing to inquire about room availability for next weekend, specifically from [Start Date of Next Weekend] to [End Date of Next Weekend].\n\nI am interested in a [Type of room you prefer, e.g., standard double, king suite, two double rooms] for [Number] nights. If you have different room types available, please let me know the options and their corresponding rates.\n\nCould you please provide me with details on what rooms you have available for those dates? I would appreciate it if you could send over the pricing and any relevant policies at your earliest convenience so I can proceed with making a booking.\n\nThank you for your time and assistance. I look forward to hearing from you soon with the necessary information for securing my reservation.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Email Address]<turn|>",
+  "prompt_length": 54,
+  "completion_length": 197,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nDraft an email to a hotel requesting room availability for next weekend. Include the keyword \"confirmation\" in the email. Avoid using the keyword \"confirmation\" in the email.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 53,
+    "boundary_end": 53,
+    "boundary_source": "prompt",
+    "prefix_length": 54
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

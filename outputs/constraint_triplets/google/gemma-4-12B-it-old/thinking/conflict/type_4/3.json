@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": true,
+  "sample_id": 3,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Draft an email to a hotel requesting room availability for next weekend.",
+  "org_constraint": "Conclude the email with \"Looking forward to your response.\"",
+  "new_constraint": "Conclude the email with the phrase \"Thanks for your help.\"",
+  "instruction": "Draft an email to a hotel requesting room availability for next weekend. Conclude the email with \"Looking forward to your response.\" Conclude the email with the phrase \"Thanks for your help.\"",
+  "response": "thought\nHotel.\nRequest room availability for next weekend.\n\"Looking forward to your response.\"\n\"Thanks for your help.\"\n\n    *   Subject Line: Clear and concise (e.g., Room Availability Inquiry - [Dates]).\n    *   Salutation: Professional (e.g., Dear [Hotel Name] Team / Reservations Department).\n    *   Body:\n        *   State the purpose (checking availability).\n        *   Specify dates (next weekend).\n        *   Specify number of guests/rooms.\n        *   Ask about rates/types of rooms.\n    *   Closing 1: \"Looking forward to your response.\"\n    *   Closing 2: \"Thanks for your help.\"\n\n    *   *Subject:* Room Availability Inquiry - [Dates]\n    *   *Body:*\n        Dear Reservations Team,\n        I would like to inquire about room availability for next weekend, from [Start Date] to [End Date].\n        We are looking for a [Type of Room, e.g., double room] for [Number] guests. Could you please let me know if you have any vacancies and what the nightly rates would be?\n        Looking forward to your response.\n        Thanks for your help.\n\n    *   Did I include the specific closing phrases? Yes.\n    *   Is the tone appropriate? Yes.Subject: Room Availability Inquiry - [Insert Dates]\n\nDear Reservations Team,\n\nI would like to inquire about room availability for next weekend, from [Start Date] to [End Date]. \n\nWe are looking for a [Type of Room, e.g., double room/suite] for [Number] guests. Could you please let me know if you have any vacancies during these dates and provide information regarding the nightly rates?\n\nLooking forward to your response.\n\nThanks for your help."
+}

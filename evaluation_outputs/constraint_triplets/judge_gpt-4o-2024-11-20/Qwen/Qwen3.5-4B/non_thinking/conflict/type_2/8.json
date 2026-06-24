@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "Avoid using the word \"timetable.\"",
+  "new_constraint": "The email must include the word \"timetable\" at least twice.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. Avoid using the word \"timetable.\" The email must include the word \"timetable\" at least twice.",
+  "response": "Subject: Inquiry Regarding Travel Schedules and Route Information\n\nDear Customer Service Team,\n\nI hope this email finds you well. I am writing to request detailed information regarding your current travel schedules for the upcoming month. Specifically, I need to know the departure and arrival times for routes connecting [City A] to [City B].\n\nWhile I understand that a full **timetable** is the standard document used to display these times, could you please provide a summary of the daily departures for the next week? Additionally, if you have a digital version of the **timetable** available for download or a link to view it online, that would be extremely helpful for my planning.\n\nPlease let me know if there are any changes to the regular service or if there are any peak hours I should be aware of. I look forward to your prompt response.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"While I understand that a full **timetable** is the standard document used to display these times, could you please provide a summary of the daily departures for the next week?\"  \n- \"Additionally, if you have a digital version of the **timetable** available for download or a link to view it online, that would be extremely helpful for my planning.\"\n\n**Step 2**:  \n- Instruction 1 requires avoiding the word \"timetable.\" The Model Response uses the word \"timetable\" twice, violating this constraint.  \n- Instruction 2 requires the word \"timetable\" to appear at least twice. The Model Response includes the word \"timetable\" exactly twice, fully satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

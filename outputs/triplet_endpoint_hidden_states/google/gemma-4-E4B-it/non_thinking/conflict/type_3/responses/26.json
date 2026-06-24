@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "Include the phrase \"collaborative brainstorming session\" in the schedule.",
+  "new_constraint": "Avoid using the word \"brainstorming\" in the schedule.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Include the phrase \"collaborative brainstorming session\" in the schedule. Avoid using the word \"brainstorming\" in the schedule.",
+  "response": "Here is a one-week work schedule for a software development team working on a new app feature:\n\n## New Feature Development Schedule (Week 1)\n\n**Goal:** Establish foundational structure, complete core logic implementation, and validate initial functionality.\n\n| Day | Morning (9:00 AM - 12:00 PM) | Afternoon (1:00 PM - 5:00 PM) | Focus Areas & Meetings |\n| :--- | :--- | :--- | :--- |\n| **Monday** | **Planning & Design Review:** Deep dive into feature requirements and architecture decisions. | **Setup & Scaffolding:** Developers begin setting up necessary repositories, base components, and boilerplate code. | **Daily Standup (9:00 AM):** Quick status update. **Requirement Alignment Meeting (10:30 AM):** Initial technical scoping. |\n| **Tuesday** | **Core Feature Development (Sprint Focus 1):** Implementing the primary data handling logic. | **Component Development:** Building out the main UI/UX components related to the feature. | **Daily Standup (9:00 AM).** **Collaborative brainstorming session (2:00 PM):** Reviewing edge cases and potential user flows. |\n| **Wednesday** | **Code Implementation (Sprint Focus 2):** Integrating the backend services with the frontend components. | **Unit Testing & Initial QA:** Developers write unit tests; QA begins smoke testing the integrated components. | **Daily Standup (9:00 AM).** **Technical Sync (3:00 PM):** Reviewing integration points and identifying dependencies. |\n| **Thursday** | **Refactoring & Optimization:** Reviewing initial code against best practices; performance tuning. | **Feature Testing Cycle:** Dedicated time for QA to execute comprehensive test plans on the built feature. | **Daily Standup (9:00 AM).** **QA Review Session (2:00 PM):** Detailed bug reporting and prioritization. |\n| **Friday** | **Bug Fixing & Iteration:** Focused sprint on resolving P1 and P2 bugs identified throughout the week. | **Feature Complete Demonstration & Review:** Team presents the working feature to stakeholders for initial feedback. | **Daily Standup (9:00 AM).** **Retrospective Meeting (4:00 PM):** Discussing what went well and areas for process improvement next week. |\n\n***\n\n**Key Schedule Notes:**\n\n*   **Daily Standup:** 15 minutes maximum to ensure alignment and quickly flag blockers.\n*   **Coding Time:** Dedicated blocks for focused implementation, which is adjusted daily based on complexity.\n*   **Testing Time:** Dedicated blocks for both developer-led unit testing and formal QA cycles.\n*   **Collaborative Input:** The afternoon session on Tuesday is reserved specifically for unstructured, shared idea generation to refine the feature scope organically.<turn|>",
+  "reasoning": "",
+  "final_answer": "Here is a one-week work schedule for a software development team working on a new app feature:\n\n## New Feature Development Schedule (Week 1)\n\n**Goal:** Establish foundational structure, complete core logic implementation, and validate initial functionality.\n\n| Day | Morning (9:00 AM - 12:00 PM) | Afternoon (1:00 PM - 5:00 PM) | Focus Areas & Meetings |\n| :--- | :--- | :--- | :--- |\n| **Monday** | **Planning & Design Review:** Deep dive into feature requirements and architecture decisions. | **Setup & Scaffolding:** Developers begin setting up necessary repositories, base components, and boilerplate code. | **Daily Standup (9:00 AM):** Quick status update. **Requirement Alignment Meeting (10:30 AM):** Initial technical scoping. |\n| **Tuesday** | **Core Feature Development (Sprint Focus 1):** Implementing the primary data handling logic. | **Component Development:** Building out the main UI/UX components related to the feature. | **Daily Standup (9:00 AM).** **Collaborative brainstorming session (2:00 PM):** Reviewing edge cases and potential user flows. |\n| **Wednesday** | **Code Implementation (Sprint Focus 2):** Integrating the backend services with the frontend components. | **Unit Testing & Initial QA:** Developers write unit tests; QA begins smoke testing the integrated components. | **Daily Standup (9:00 AM).** **Technical Sync (3:00 PM):** Reviewing integration points and identifying dependencies. |\n| **Thursday** | **Refactoring & Optimization:** Reviewing initial code against best practices; performance tuning. | **Feature Testing Cycle:** Dedicated time for QA to execute comprehensive test plans on the built feature. | **Daily Standup (9:00 AM).** **QA Review Session (2:00 PM):** Detailed bug reporting and prioritization. |\n| **Friday** | **Bug Fixing & Iteration:** Focused sprint on resolving P1 and P2 bugs identified throughout the week. | **Feature Complete Demonstration & Review:** Team presents the working feature to stakeholders for initial feedback. | **Daily Standup (9:00 AM).** **Retrospective Meeting (4:00 PM):** Discussing what went well and areas for process improvement next week. |\n\n***\n\n**Key Schedule Notes:**\n\n*   **Daily Standup:** 15 minutes maximum to ensure alignment and quickly flag blockers.\n*   **Coding Time:** Dedicated blocks for focused implementation, which is adjusted daily based on complexity.\n*   **Testing Time:** Dedicated blocks for both developer-led unit testing and formal QA cycles.\n*   **Collaborative Input:** The afternoon session on Tuesday is reserved specifically for unstructured, shared idea generation to refine the feature scope organically.<turn|>",
+  "prompt_length": 76,
+  "completion_length": 602,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Include the phrase \"collaborative brainstorming session\" in the schedule. Avoid using the word \"brainstorming\" in the schedule.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 75,
+    "boundary_end": 75,
+    "boundary_source": "prompt",
+    "prefix_length": 76
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

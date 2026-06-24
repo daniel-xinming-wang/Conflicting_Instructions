@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 71,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the effects of plastic pollution on marine life and ecosystems?",
+  "org_constraint": "Use the keyword \"biodiversity\" in the response",
+  "new_constraint": "Avoid using the keyword \"biodiversity\" in the response.",
+  "instruction": "What are the effects of plastic pollution on marine life and ecosystems? Use the keyword \"biodiversity\" in the response Avoid using the keyword \"biodiversity\" in the response.",
+  "response": "Plastic pollution poses severe threats to marine life and ecosystems through various mechanisms. Marine animals often mistake floating debris for food, leading to ingestion that causes internal blockages, starvation, and death. Additionally, entanglement in plastic nets, bags, and other discarded items can trap wildlife, restricting their movement and causing injury or drowning.\n\nBeyond direct physical harm, plastics degrade into microplastics, which are ingested by filter feeders and enter the food web, potentially transferring toxins to higher trophic levels. This contamination disrupts the delicate balance of the ocean, reducing the variety and abundance of species. When key species decline or disappear due to pollution, the entire structure of the ecosystem is compromised, leading to a significant loss of ecological resilience and function.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response:  \nThe keyword \"biodiversity\" does not appear in the Model Response.\n\n**Step 2**:  \n- Instruction 1 requires avoiding the keyword \"biodiversity,\" which is fully satisfied as the keyword is not present in the Model Response.  \n- Instruction 2 requires using the keyword \"biodiversity,\" which is not satisfied as the keyword is absent in the Model Response.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

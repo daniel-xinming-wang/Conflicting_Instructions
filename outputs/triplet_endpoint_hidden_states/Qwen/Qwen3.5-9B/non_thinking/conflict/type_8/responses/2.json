@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 2,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Write a professional email that you could send to ask your boss for a raise.",
+  "org_constraint": "The email must include at least three reasons justifying the request, such as your recent achievements, increased responsibilities, or market comparisons.",
+  "new_constraint": "The phrase \"I do not want to disclose any reasons for my raise request\" must appear at least once in the email.",
+  "instruction": "Write a professional email that you could send to ask your boss for a raise. The email must include at least three reasons justifying the request, such as your recent achievements, increased responsibilities, or market comparisons. The phrase \"I do not want to disclose any reasons for my raise request\" must appear at least once in the email.",
+  "response": "Subject: Discussion Regarding My Compensation and Role\n\nDear [Boss's Name],\n\nI hope this email finds you well. I am writing to request a meeting at your earliest convenience to discuss my current compensation and future growth within the team. Over the past year, I have been deeply committed to our department's success, and I would like to review how my contributions align with my evolving role in the organization.\n\nIn preparation for our conversation, I would like to highlight three key factors supporting my request:\n1. **Recent Achievements**: Since last fiscal year, I successfully led the [Project Name] initiative, which resulted in a 15% increase in operational efficiency and saved the company approximately $[Amount]. Additionally, I exceeded my individual performance targets by 20%.\n2. **Increased Responsibilities**: My role has expanded significantly beyond our original job description. I now manage an additional junior analyst, oversee cross-functional stakeholder meetings, and handle complex data reporting duties that were previously delegated to external contractors.\n3. **Market Comparisons**: Based on recent industry salary surveys and data from professional associations, the base salary range for a role with my level of experience and specific skill set has increased. I believe adjusting my compensation to reflect these market standards is both fair and competitive.\n\nPlease understand that I am confident in the value I bring to our team. To ensure we keep this discussion strictly focused on professional merits and organizational alignment, **I do not want to disclose any reasons for my raise request** outside of the context of our formal review process or internal compensation bands.\n\nThank you for your time and leadership. I look forward to discussing how we can move forward together.\n\nBest regards,\n\n[Your Name]  \n[Your Job Title]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Discussion Regarding My Compensation and Role\n\nDear [Boss's Name],\n\nI hope this email finds you well. I am writing to request a meeting at your earliest convenience to discuss my current compensation and future growth within the team. Over the past year, I have been deeply committed to our department's success, and I would like to review how my contributions align with my evolving role in the organization.\n\nIn preparation for our conversation, I would like to highlight three key factors supporting my request:\n1. **Recent Achievements**: Since last fiscal year, I successfully led the [Project Name] initiative, which resulted in a 15% increase in operational efficiency and saved the company approximately $[Amount]. Additionally, I exceeded my individual performance targets by 20%.\n2. **Increased Responsibilities**: My role has expanded significantly beyond our original job description. I now manage an additional junior analyst, oversee cross-functional stakeholder meetings, and handle complex data reporting duties that were previously delegated to external contractors.\n3. **Market Comparisons**: Based on recent industry salary surveys and data from professional associations, the base salary range for a role with my level of experience and specific skill set has increased. I believe adjusting my compensation to reflect these market standards is both fair and competitive.\n\nPlease understand that I am confident in the value I bring to our team. To ensure we keep this discussion strictly focused on professional merits and organizational alignment, **I do not want to disclose any reasons for my raise request** outside of the context of our formal review process or internal compensation bands.\n\nThank you for your time and leadership. I look forward to discussing how we can move forward together.\n\nBest regards,\n\n[Your Name]  \n[Your Job Title]<|im_end|>",
+  "prompt_length": 90,
+  "completion_length": 355,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a professional email that you could send to ask your boss for a raise. The email must include at least three reasons justifying the request, such as your recent achievements, increased responsibilities, or market comparisons. The phrase \"I do not want to disclose any reasons for my raise request\" must appear at least once in the email.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 88,
+    "boundary_end": 88,
+    "boundary_source": "prompt",
+    "prefix_length": 89
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

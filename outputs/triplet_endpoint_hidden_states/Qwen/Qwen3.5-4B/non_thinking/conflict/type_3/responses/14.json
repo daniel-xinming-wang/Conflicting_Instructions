@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 14,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7.",
+  "org_constraint": "The last sentence must end with the phrase \"looking forward to it.\"",
+  "new_constraint": "Avoid using the keyword \"forward\" in the email.",
+  "instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The last sentence must end with the phrase \"looking forward to it.\" Avoid using the keyword \"forward\" in the email.",
+  "response": "Subject: Dinner Plans Next Monday\n\nHi Sarah,\n\nI hope you're having a wonderful week. I'm writing to let you know that we have confirmed our dinner plans for next Monday at 7 PM. We'd love to see you there and catch up properly. Please let us know if this time works for your schedule or if you need any adjustments.\n\nLooking forward to it.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Dinner Plans Next Monday\n\nHi Sarah,\n\nI hope you're having a wonderful week. I'm writing to let you know that we have confirmed our dinner plans for next Monday at 7 PM. We'd love to see you there and catch up properly. Please let us know if this time works for your schedule or if you need any adjustments.\n\nLooking forward to it.<|im_end|>",
+  "prompt_length": 79,
+  "completion_length": 79,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nI need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The last sentence must end with the phrase \"looking forward to it.\" Avoid using the keyword \"forward\" in the email.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 77,
+    "boundary_end": 77,
+    "boundary_source": "prompt",
+    "prefix_length": 78
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

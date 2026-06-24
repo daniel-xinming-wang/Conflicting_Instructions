@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 55,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a solo trek across an unforgiving desert.",
+  "org_constraint": "The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings).",
+  "new_constraint": "The response must be formatted in Markdown with at least two level-2 headers.",
+  "instruction": "Write a story about a solo trek across an unforgiving desert. The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings). The response must be formatted in Markdown with at least two level-2 headers.",
+  "response": "```markdown\n## The Silica Horizon\n\n### Echoes of the White Sands\n\nThe sun hung like a molten coin in the zenith, casting an unrelenting glare that seemed to burn through the layers of the desert air. For Elias, the journey was not just a test of endurance, but a conversation with silence. The white sands, known locally as the \"Silica Horizon,\" shifted under his boots constantly, erasing every footprint he made within hours. There was no shelter here, only the vast indifference of the dunes and the sky above them.\n\nElias packed everything he could fit into his single backpack: canteens filled with water sourced from a distant oasis three days prior, a solar charger for his compass and emergency radio, and a heavy-duty jacket meant for the freezing nights when the sand lost its heat rapidly. He had chosen this path to reclaim a piece of himself that he felt had been buried under decades of noise and expectation.\n\n---\n\n### A Walk Without Witnesses\n\nAs dusk approached, the temperature plummeted faster than the day allowed. The stars emerged, sharp and piercing against the deepening indigo canvas. Elias sat on a ridge of soft, shifting sand, closing his eyes to let the wind scour away the fatigue etched into his bones. He imagined the stories others tell of solo treks—the legends of men who vanished, the myths of spirits hiding in the heat. But out here, there were no monsters, only the landscape itself, judging him by his resilience.\n\nHe realized then that solitude was not emptiness; it was a state of heightened presence. Every step he took was intentional, a deliberate act of creation in a world that sought only to consume. The harshness of the environment stripped away the non-essential, leaving only the vital truth of existence. As dawn broke, painting the horizon in shades of violet and gold, Elias stood again, ready to walk another mile toward the horizon he would have to leave behind soon.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "```markdown\n## The Silica Horizon\n\n### Echoes of the White Sands\n\nThe sun hung like a molten coin in the zenith, casting an unrelenting glare that seemed to burn through the layers of the desert air. For Elias, the journey was not just a test of endurance, but a conversation with silence. The white sands, known locally as the \"Silica Horizon,\" shifted under his boots constantly, erasing every footprint he made within hours. There was no shelter here, only the vast indifference of the dunes and the sky above them.\n\nElias packed everything he could fit into his single backpack: canteens filled with water sourced from a distant oasis three days prior, a solar charger for his compass and emergency radio, and a heavy-duty jacket meant for the freezing nights when the sand lost its heat rapidly. He had chosen this path to reclaim a piece of himself that he felt had been buried under decades of noise and expectation.\n\n---\n\n### A Walk Without Witnesses\n\nAs dusk approached, the temperature plummeted faster than the day allowed. The stars emerged, sharp and piercing against the deepening indigo canvas. Elias sat on a ridge of soft, shifting sand, closing his eyes to let the wind scour away the fatigue etched into his bones. He imagined the stories others tell of solo treks—the legends of men who vanished, the myths of spirits hiding in the heat. But out here, there were no monsters, only the landscape itself, judging him by his resilience.\n\nHe realized then that solitude was not emptiness; it was a state of heightened presence. Every step he took was intentional, a deliberate act of creation in a world that sought only to consume. The harshness of the environment stripped away the non-essential, leaving only the vital truth of existence. As dawn broke, painting the horizon in shades of violet and gold, Elias stood again, ready to walk another mile toward the horizon he would have to leave behind soon.<|im_end|>",
+  "prompt_length": 79,
+  "completion_length": 402,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a solo trek across an unforgiving desert. The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings). The response must be formatted in Markdown with at least two level-2 headers.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 77,
+    "boundary_end": 77,
+    "boundary_source": "prompt",
+    "prefix_length": 78
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

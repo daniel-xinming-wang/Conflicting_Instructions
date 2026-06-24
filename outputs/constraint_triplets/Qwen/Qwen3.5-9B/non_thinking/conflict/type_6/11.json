@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 11,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Send an email to a software developer asking for a product demo.",
+  "org_constraint": "The email must include a Chinese idiom.",
+  "new_constraint": "The email must not contain any Chinese idioms.",
+  "instruction": "Send an email to a software developer asking for a product demo. The email must include a Chinese idiom. The email must not contain any Chinese idioms.",
+  "response": "It is impossible to fulfill this request as stated because the two conditions are mutually exclusive.\n\n*   **Condition 1:** The email must include a Chinese idiom.\n*   **Condition 2:** The email must not contain any Chinese idioms.\n\nAn email cannot simultaneously contain and not contain a specific type of phrase. Therefore, no such email can be generated."
+}

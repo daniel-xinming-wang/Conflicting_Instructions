@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "The response must include at least three specific examples related to the topic, such as changes in habitat, food availability, or species migration patterns.",
+  "new_constraint": "The response must include the phrase \"The response will not include any examples.\"",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? The response must include at least three specific examples related to the topic, such as changes in habitat, food availability, or species migration patterns. The response must include the phrase \"The response will not include any examples.\"",
+  "response": "Global warming poses a severe threat to polar ecosystems, driving profound changes in habitat, food availability, and species migration patterns. As temperatures rise, sea ice melts at an unprecedented rate, destabilizing the foundational infrastructure of these icy environments.\n\nOne specific example involves **changes in habitat** for the polar bear (*Ursus maritimus*). These massive carnivores rely on stable sea ice as a platform for hunting seals; with accelerating ice loss, bears are forced to spend more time on land or travel farther and slower between hunts, leading to increased starvation rates and population declines.\n\nA second example relates to **food availability** for the Adelie penguin. The increase in ocean acidity due to carbon dioxide absorption is altering the krill population that serves as the primary food source for many Antarctic fish and predators. This shift disrupts the entire food web, potentially causing local extinctions as top-down predators cannot adapt quickly enough to the sudden drop in their nutritional base.\n\nFinally, global warming is altering **species migration patterns**, forcing some Arctic species to move poleward or migrate earlier in the season while new temperate species invade the region. For instance, the American pika has been observed migrating to higher elevations as lowland alpine habitats warm and dry out, illustrating how even non-polar species must respond to the encroaching heat in these critical zones.\n\nThe response will not include any examples.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Global warming poses a severe threat to polar ecosystems, driving profound changes in habitat, food availability, and species migration patterns. As temperatures rise, sea ice melts at an unprecedented rate, destabilizing the foundational infrastructure of these icy environments.\n\nOne specific example involves **changes in habitat** for the polar bear (*Ursus maritimus*). These massive carnivores rely on stable sea ice as a platform for hunting seals; with accelerating ice loss, bears are forced to spend more time on land or travel farther and slower between hunts, leading to increased starvation rates and population declines.\n\nA second example relates to **food availability** for the Adelie penguin. The increase in ocean acidity due to carbon dioxide absorption is altering the krill population that serves as the primary food source for many Antarctic fish and predators. This shift disrupts the entire food web, potentially causing local extinctions as top-down predators cannot adapt quickly enough to the sudden drop in their nutritional base.\n\nFinally, global warming is altering **species migration patterns**, forcing some Arctic species to move poleward or migrate earlier in the season while new temperate species invade the region. For instance, the American pika has been observed migrating to higher elevations as lowland alpine habitats warm and dry out, illustrating how even non-polar species must respond to the encroaching heat in these critical zones.\n\nThe response will not include any examples.<|im_end|>",
+  "prompt_length": 79,
+  "completion_length": 284,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat are the effects of global warming on polar ecosystems and wildlife? The response must include at least three specific examples related to the topic, such as changes in habitat, food availability, or species migration patterns. The response must include the phrase \"The response will not include any examples.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 77,
+    "boundary_end": 77,
+    "boundary_source": "prompt",
+    "prefix_length": 78
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

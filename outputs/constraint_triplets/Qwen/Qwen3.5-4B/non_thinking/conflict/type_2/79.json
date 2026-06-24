@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The keyword \"monitor\" must appear before \"improve\" in the text.",
+  "new_constraint": "The keyword \"monitor\" must appear after \"improve\" in the text.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The keyword \"monitor\" must appear before \"improve\" in the text. The keyword \"monitor\" must appear after \"improve\" in the text.",
+  "response": "Wearable fitness trackers help individuals monitor and improve their health by providing real-time data on activity levels, heart rate, and sleep patterns. This technology allows users to **monitor** their daily progress, which in turn helps them **improve** their overall fitness and well-being through informed lifestyle adjustments."
+}

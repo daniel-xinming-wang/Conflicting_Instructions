@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 38,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations.",
+  "org_constraint": "The response must contain exactly 10 sentences, with each paragraph containing at least 3 sentences.",
+  "new_constraint": "The response must contain four paragraphs.",
+  "instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations. The response must contain exactly 10 sentences, with each paragraph containing at least 3 sentences. The response must contain four paragraphs.",
+  "response": "Planning a magical birthday for a five-year-old requires fun and vibrant elements.  The theme should be something highly engaging, like a \"Dinosaur Adventure\" or \"Unicorn Sparkle,\" to set the mood.  We will ensure the entire party atmosphere is colorful, exciting, and perfectly suited for their age group.\n\nFor decorations, balloons in the chosen theme's colors are a must, alongside hanging streamers and a \"Welcome to [Child's Name]'s Party\" banner. Green foliage and small plastic dinosaurs will perfectly complement a Jurassic theme, while glitter and pastel streamers suit the unicorn idea. A festive tablecloth and cheerful background music will complete the visual appeal of the space.\n\nThe games should be active and simple to keep little legs busy. Ideas include a \"Dino Egg Hunt,\" where small plastic eggs are hidden for the kids to discover, or a \"Pin the Horn on the Unicorn\" game. A simple bubble chase is always a guaranteed hit for this age range.\n\nSnack time needs to be easy to handle and appealing to young palates. Finger sandwiches cut into fun shapes, colorful fruit skewers, and \"dinosaur fossils\" (cheese cutouts) make for great fuel. Finally, of course, a cake decorated to match the theme, accompanied by juice boxes, will be the grand finale.<turn|>",
+  "reasoning": "",
+  "final_answer": "Planning a magical birthday for a five-year-old requires fun and vibrant elements.  The theme should be something highly engaging, like a \"Dinosaur Adventure\" or \"Unicorn Sparkle,\" to set the mood.  We will ensure the entire party atmosphere is colorful, exciting, and perfectly suited for their age group.\n\nFor decorations, balloons in the chosen theme's colors are a must, alongside hanging streamers and a \"Welcome to [Child's Name]'s Party\" banner. Green foliage and small plastic dinosaurs will perfectly complement a Jurassic theme, while glitter and pastel streamers suit the unicorn idea. A festive tablecloth and cheerful background music will complete the visual appeal of the space.\n\nThe games should be active and simple to keep little legs busy. Ideas include a \"Dino Egg Hunt,\" where small plastic eggs are hidden for the kids to discover, or a \"Pin the Horn on the Unicorn\" game. A simple bubble chase is always a guaranteed hit for this age range.\n\nSnack time needs to be easy to handle and appealing to young palates. Finger sandwiches cut into fun shapes, colorful fruit skewers, and \"dinosaur fossils\" (cheese cutouts) make for great fuel. Finally, of course, a cake decorated to match the theme, accompanied by juice boxes, will be the grand finale.<turn|>",
+  "prompt_length": 69,
+  "completion_length": 270,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nDesign a birthday party plan for a 5-year-old, specifying games, snacks, and decorations. The response must contain exactly 10 sentences, with each paragraph containing at least 3 sentences. The response must contain four paragraphs.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 68,
+    "boundary_end": 68,
+    "boundary_source": "prompt",
+    "prefix_length": 69
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

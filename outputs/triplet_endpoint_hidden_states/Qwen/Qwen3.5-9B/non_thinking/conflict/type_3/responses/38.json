@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 38,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations.",
+  "org_constraint": "The phrase \"fun for everyone\" must appear exactly twice.",
+  "new_constraint": "The keyword \"fun\" must not appear in the response.",
+  "instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations. The phrase \"fun for everyone\" must appear exactly twice. The keyword \"fun\" must not appear in the response.",
+  "response": "Here is a joyful party plan for a five-year-old's celebration.\n\n**Decorations**\nTransform the living room into a vibrant jungle with bright green streamers and large leaf cutouts hanging from the ceiling. Fill the center of the space with colorful balloons in every hue. Place cheerful animal figurines around the perimeter to create an inviting atmosphere full of excitement. This setup ensures fun for everyone attending.\n\n**Snacks**\nServe a \"Rainbow Fruit Party\" featuring skewers made of grapes, melon balls, strawberries, and pineapple chunks. Offer chocolate-dipped pretzels as a sweet treat and provide small bowls of yogurt cups with granola on top. Keep a water station handy with fun fruit-infused drinks. The menu is designed to keep energy levels high and happy spirits intact for fun for everyone.\n\n**Games**\nStart with \"Animal Hopscotch,\" where children hop on one foot through numbered squares painted on the floor. Follow this with a soft-toss game using bean bags aimed at a plush target shaped like a lion or giraffe. End the active portion with a group circle song followed by simple charades using picture cards. These activities provide hours of entertainment without any stress.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Here is a joyful party plan for a five-year-old's celebration.\n\n**Decorations**\nTransform the living room into a vibrant jungle with bright green streamers and large leaf cutouts hanging from the ceiling. Fill the center of the space with colorful balloons in every hue. Place cheerful animal figurines around the perimeter to create an inviting atmosphere full of excitement. This setup ensures fun for everyone attending.\n\n**Snacks**\nServe a \"Rainbow Fruit Party\" featuring skewers made of grapes, melon balls, strawberries, and pineapple chunks. Offer chocolate-dipped pretzels as a sweet treat and provide small bowls of yogurt cups with granola on top. Keep a water station handy with fun fruit-infused drinks. The menu is designed to keep energy levels high and happy spirits intact for fun for everyone.\n\n**Games**\nStart with \"Animal Hopscotch,\" where children hop on one foot through numbered squares painted on the floor. Follow this with a soft-toss game using bean bags aimed at a plush target shaped like a lion or giraffe. End the active portion with a group circle song followed by simple charades using picture cards. These activities provide hours of entertainment without any stress.<|im_end|>",
+  "prompt_length": 67,
+  "completion_length": 246,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nDesign a birthday party plan for a 5-year-old, specifying games, snacks, and decorations. The phrase \"fun for everyone\" must appear exactly twice. The keyword \"fun\" must not appear in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

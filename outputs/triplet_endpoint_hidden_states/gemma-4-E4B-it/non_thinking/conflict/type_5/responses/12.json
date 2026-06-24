@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 12,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Compose an email to a public library to request access to digital resources.",
+  "org_constraint": "The email should contain exactly 150 words, with each sentence being no more than 20 words.",
+  "new_constraint": "The email must contain at most seven sentences.",
+  "instruction": "Compose an email to a public library to request access to digital resources. The email should contain exactly 150 words, with each sentence being no more than 20 words. The email must contain at most seven sentences.",
+  "response": "Subject: Request for Access to Digital Library Resources\n\nDear [Library Name] Staff,\n\nI am a dedicated member of your community. I am very interested in using your digital library offerings. Could you please provide instructions for online access? I wish to utilize e-books and online databases. I need help setting up my account promptly. Please let me know what steps I need to follow. Thank you very much for your time and assistance. I look forward to using your excellent resources soon.<turn|>",
+  "reasoning": "",
+  "final_answer": "Subject: Request for Access to Digital Library Resources\n\nDear [Library Name] Staff,\n\nI am a dedicated member of your community. I am very interested in using your digital library offerings. Could you please provide instructions for online access? I wish to utilize e-books and online databases. I need help setting up my account promptly. Please let me know what steps I need to follow. Thank you very much for your time and assistance. I look forward to using your excellent resources soon.<turn|>",
+  "prompt_length": 66,
+  "completion_length": 99,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nCompose an email to a public library to request access to digital resources. The email should contain exactly 150 words, with each sentence being no more than 20 words. The email must contain at most seven sentences.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

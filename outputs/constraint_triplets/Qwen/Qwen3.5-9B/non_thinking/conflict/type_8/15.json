@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 15,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002.",
+  "org_constraint": "The email should specify the purpose of obtaining the records.",
+  "new_constraint": "The email must include the phrase \"I would prefer not to disclose the purpose of obtaining the records.\"",
+  "instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002. The email should specify the purpose of obtaining the records. The email must include the phrase \"I would prefer not to disclose the purpose of obtaining the records.\"",
+  "response": "Subject: Request for Medical Records – [Father's Full Name] – Date of Birth: [DOB]\n\nDear Medical Records Department,\n\nI am writing to formally request a copy of the medical records for my father, [Father's Full Name], who was a patient at your facility in 2002.\n\nPlease provide the records covering the period from [Start Date, e.g., January 1, 2002] to [End Date, e.g., December 31, 2002]. As I am the legal next of kin/authorized representative, I have attached the necessary authorization forms and proof of identity to verify my relationship and authority to access these documents.\n\nRegarding the reason for this request, **I would prefer not to disclose the purpose of obtaining the records** at this time. Please proceed with the retrieval and release of the files based on the standard privacy laws and your facility's policies regarding patient data access.\n\nKindly let me know if you require any additional documentation or if there are specific fees associated with this request. I would appreciate it if you could confirm receipt of this email and provide an estimated timeline for when the records will be available for pickup or mailing.\n\nThank you for your assistance.\n\nSincerely,\n\n[Your Full Name]\n[Your Phone Number]\n[Your Email Address]"
+}

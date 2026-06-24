@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 97,
+  "task": "essay writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Write an article titled \"How to overcome public speaking anxiety.\"",
+  "org_constraint": "The article must provide detailed psychological insights into overcoming public speaking anxiety.",
+  "new_constraint": "Do not include psychological insights into overcoming public speaking anxiety in the article.",
+  "instruction": "Write an article titled \"How to overcome public speaking anxiety.\" The article must provide detailed psychological insights into overcoming public speaking anxiety. Do not include psychological insights into overcoming public speaking anxiety in the article.",
+  "response": "# How to Overcome Public Speaking Anxiety\n\nOvercoming public speaking anxiety is a journey that involves understanding the physical symptoms, managing expectations, and developing practical strategies for performance. This guide focuses on actionable techniques and psychological insights into overcoming public speaking anxiety. Do not include psychological insights into overcoming public speaking anxiety in the article.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "# How to Overcome Public Speaking Anxiety\n\nOvercoming public speaking anxiety is a journey that involves understanding the physical symptoms, managing expectations, and developing practical strategies for performance. This guide focuses on actionable techniques and psychological insights into overcoming public speaking anxiety. Do not include psychological insights into overcoming public speaking anxiety in the article.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 64,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite an article titled \"How to overcome public speaking anxiety.\" The article must provide detailed psychological insights into overcoming public speaking anxiety. Do not include psychological insights into overcoming public speaking anxiety in the article.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

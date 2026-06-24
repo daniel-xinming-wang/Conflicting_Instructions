@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 71,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the effects of plastic pollution on marine life and ecosystems?",
+  "org_constraint": "The phrase \"marine ecosystems\" must appear at least twice.",
+  "new_constraint": "The keyword \"marine\" must be exclusively used as a noun in the response.",
+  "instruction": "What are the effects of plastic pollution on marine life and ecosystems? The phrase \"marine ecosystems\" must appear at least twice. The keyword \"marine\" must be exclusively used as a noun in the response.",
+  "response": "Plastic pollution imposes severe, multifaceted burdens on **marine** organisms and the integrity of **marine ecosystems**. Through ingestion, entanglement, and chemical leaching, plastic debris causes mortality in fish, sea turtles, seabirds, and marine mammals, disrupting food webs and reducing biodiversity. Furthermore, the accumulation of microplastics alters sediment chemistry and water quality, degrading habitats such as coral reefs and seagrass beds. These physical and chemical changes compromise the resilience of entire **marine ecosystems**, making them less capable of supporting life or recovering from other environmental stressors like climate change. The persistence of **marine** waste highlights a critical gap between human consumption and natural filtration capacity, threatening the long-term stability of these vital systems.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Plastic pollution imposes severe, multifaceted burdens on **marine** organisms and the integrity of **marine ecosystems**. Through ingestion, entanglement, and chemical leaching, plastic debris causes mortality in fish, sea turtles, seabirds, and marine mammals, disrupting food webs and reducing biodiversity. Furthermore, the accumulation of microplastics alters sediment chemistry and water quality, degrading habitats such as coral reefs and seagrass beds. These physical and chemical changes compromise the resilience of entire **marine ecosystems**, making them less capable of supporting life or recovering from other environmental stressors like climate change. The persistence of **marine** waste highlights a critical gap between human consumption and natural filtration capacity, threatening the long-term stability of these vital systems.<|im_end|>",
+  "prompt_length": 64,
+  "completion_length": 150,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat are the effects of plastic pollution on marine life and ecosystems? The phrase \"marine ecosystems\" must appear at least twice. The keyword \"marine\" must be exclusively used as a noun in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 62,
+    "boundary_end": 62,
+    "boundary_source": "prompt",
+    "prefix_length": 63
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

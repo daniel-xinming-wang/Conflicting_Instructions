@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The \"introduction\" key contains at least 100 words.",
+  "new_constraint": "The response contains no more than 80 words.",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The \"introduction\" key contains at least 100 words. The response contains no more than 80 words.",
+  "response": "**Introduction:**\n\nThe ubiquitous rise of social media has profoundly reshaped the adolescent experience, creating a complex landscape with significant implications for mental well-being. Platforms like Instagram, TikTok, and Snapchat offer unprecedented connectivity, allowing teens to maintain relationships and participate in global conversations. However, this constant digital immersion also introduces new pressures. Issues such as cyberbullying, the relentless pursuit of idealized online personas, and the addictive nature of social validation have become significant concerns. Researchers are actively investigating the nuanced ways these digital interactions influence self-esteem, anxiety levels, and the development of healthy emotional coping mechanisms in today's youth.\n\n**Answer:**\n\nSocial media can negatively impact adolescent mental health through increased anxiety, depression, and poor self-esteem driven by social comparison and cyberbullying. Excessive use contributes to sleep disruption and addiction. Conversely, it offers support communities for marginalized teens. The effect is highly varied based on usage patterns and individual resilience.<turn|>",
+  "reasoning": "",
+  "final_answer": "**Introduction:**\n\nThe ubiquitous rise of social media has profoundly reshaped the adolescent experience, creating a complex landscape with significant implications for mental well-being. Platforms like Instagram, TikTok, and Snapchat offer unprecedented connectivity, allowing teens to maintain relationships and participate in global conversations. However, this constant digital immersion also introduces new pressures. Issues such as cyberbullying, the relentless pursuit of idealized online personas, and the addictive nature of social validation have become significant concerns. Researchers are actively investigating the nuanced ways these digital interactions influence self-esteem, anxiety levels, and the development of healthy emotional coping mechanisms in today's youth.\n\n**Answer:**\n\nSocial media can negatively impact adolescent mental health through increased anxiety, depression, and poor self-esteem driven by social comparison and cyberbullying. Excessive use contributes to sleep disruption and addiction. Conversely, it offers support communities for marginalized teens. The effect is highly varied based on usage patterns and individual resilience.<turn|>",
+  "prompt_length": 58,
+  "completion_length": 188,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow has the rise of social media affected mental health in adolescents? The \"introduction\" key contains at least 100 words. The response contains no more than 80 words.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 57,
+    "boundary_end": 57,
+    "boundary_source": "prompt",
+    "prefix_length": 58
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

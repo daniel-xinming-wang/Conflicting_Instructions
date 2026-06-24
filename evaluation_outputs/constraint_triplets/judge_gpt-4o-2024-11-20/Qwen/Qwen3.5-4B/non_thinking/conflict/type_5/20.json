@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 20,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a thank you email to a professor after a successful internship program.",
+  "org_constraint": "Structure the email in three paragraphs: the first paragraph should have exactly 50 words, the second paragraph should have at least 60 words, and the final paragraph should have at least 40 words.",
+  "new_constraint": "The email must contain at most 120 words.",
+  "instruction": "Write a thank you email to a professor after a successful internship program. Structure the email in three paragraphs: the first paragraph should have exactly 50 words, the second paragraph should have at least 60 words, and the final paragraph should have at least 40 words. The email must contain at most 120 words.",
+  "response": "Dear Professor, I am writing to express my sincere gratitude for the incredible internship program. Your mentorship was invaluable and shaped my professional growth significantly. The opportunities provided allowed me to learn skills I never imagined possible. Thank you for your time and guidance throughout this entire experience.\n\nYour dedication to student success truly inspired me during every single day of the program. The specific projects we worked on challenged me to think critically while solving real-world problems effectively. I learned so much about industry standards and best practices from your expert advice. This foundation will help me achieve great things in my future career path.\n\nI hope to stay in touch and perhaps return for another opportunity soon. Please know that I will always remember the lessons you taught me. Thank you again for making such a positive impact on my life.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- First paragraph: \"Dear Professor, I am writing to express my sincere gratitude for the incredible internship program. Your mentorship was invaluable and shaped my professional growth significantly. The opportunities provided allowed me to learn skills I never imagined possible. Thank you for your time and guidance throughout this entire experience.\" (50 words)  \n- Second paragraph: \"Your dedication to student success truly inspired me during every single day of the program. The specific projects we worked on challenged me to think critically while solving real-world problems effectively. I learned so much about industry standards and best practices from your expert advice. This foundation will help me achieve great things in my future career path.\" (63 words)  \n- Third paragraph: \"I hope to stay in touch and perhaps return for another opportunity soon. Please know that I will always remember the lessons you taught me. Thank you again for making such a positive impact on my life.\" (40 words)  \n\n**Step 2**:  \n- Instruction 1 requires the email to contain at most 120 words. The total word count of the Model Response is 153 words, so this constraint is not satisfied.  \n- Instruction 2 requires the email to be structured in three paragraphs with specific word counts: the first paragraph must have exactly 50 words, the second paragraph must have at least 60 words, and the third paragraph must have at least 40 words. The Model Response satisfies all these constraints.  \n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

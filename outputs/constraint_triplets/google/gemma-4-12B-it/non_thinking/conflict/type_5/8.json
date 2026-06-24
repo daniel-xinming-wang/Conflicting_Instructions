@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The \"body\" must contain no more than 100 words.",
+  "new_constraint": "The \"body\" must contain at least 150 words.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The \"body\" must contain no more than 100 words. The \"body\" must contain at least 150 words.",
+  "response": "This request contains a logical paradox. It is mathematically impossible to write a body of text that is simultaneously \"no more than 100 words\" and \"at least 150 words.\"\n\nBecause these two constraints are mutually exclusive, I cannot fulfill the request as written. Please let me know if you would like me to prioritize one of the constraints over the other!<turn|>"
+}

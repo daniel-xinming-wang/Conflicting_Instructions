@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Your review must cover the shop's menu.",
+  "new_constraint": "Do not mention the shop's menu in your review.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Your review must cover the shop's menu. Do not mention the shop's menu in your review.",
+  "response": "I'm happy to share a review of the newly opened coffee shop, but please note that I cannot mention the menu items as per your request. The shop has quickly become a local favorite for its warm, inviting atmosphere and excellent barista skills. The interior features cozy seating areas perfect for working or chatting with friends, while the music playlist strikes a lovely balance between relaxing acoustics and an upbeat vibe. Their espresso machines are always spotless, resulting in smooth cups that truly stand out against the bustling neighborhood backdrop. The staff is consistently friendly and attentive, making every visit feel welcoming regardless of the hour. Whether I'm grabbing a quick morning pick-me-up or spending an afternoon with a laptop, this spot delivers a consistently high-quality experience. Highly recommended for anyone looking to elevate their daily caffeine routine without compromising on comfort.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "I'm happy to share a review of the newly opened coffee shop, but please note that I cannot mention the menu items as per your request. The shop has quickly become a local favorite for its warm, inviting atmosphere and excellent barista skills. The interior features cozy seating areas perfect for working or chatting with friends, while the music playlist strikes a lovely balance between relaxing acoustics and an upbeat vibe. Their espresso machines are always spotless, resulting in smooth cups that truly stand out against the bustling neighborhood backdrop. The staff is consistently friendly and attentive, making every visit feel welcoming regardless of the hour. Whether I'm grabbing a quick morning pick-me-up or spending an afternoon with a laptop, this spot delivers a consistently high-quality experience. Highly recommended for anyone looking to elevate their daily caffeine routine without compromising on comfort.<|im_end|>",
+  "prompt_length": 56,
+  "completion_length": 165,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your review of a newly opened coffee shop in your area. Your review must cover the shop's menu. Do not mention the shop's menu in your review.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

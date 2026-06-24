@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "Include the keyword \"Golden Age\" in the response.",
+  "new_constraint": "Do not include the keyword \"Golden Age\" in the response.",
+  "instruction": "What happened when the Tang dynasty of China was in power? Include the keyword \"Golden Age\" in the response. Do not include the keyword \"Golden Age\" in the response.",
+  "response": "It is impossible to fulfill your request because the instructions contain a direct contradiction. You asked me to include the keyword \"Golden Age\" in the response, but simultaneously instructed me not to include that same keyword. Therefore, no response can satisfy both conditions at once."
+}

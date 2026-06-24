@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The closing paragraph must request a prompt response.",
+  "new_constraint": "The email must not request a prompt response.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The closing paragraph must request a prompt response. The email must not request a prompt response.",
+  "response": "Subject: Inquiry Regarding Transaction - [Date] - [Account Number ending in XXXX]\n\nDear Customer Service Team,\n\nI am writing to request clarification regarding a specific transaction that appeared on my recent bank statement.\n\nOn [Date], a charge in the amount of [Amount] was posted to my account from [Merchant Name/Description]. I do not recognize this merchant or the specific amount charged, and I would like to verify the details of this transaction to ensure there has been no error or unauthorized activity on my account.\n\nCould you please provide more information regarding the origin of this charge, including the location and the specific services or goods purchased?\n\nI look forward to hearing from you soon.<turn|>"
+}

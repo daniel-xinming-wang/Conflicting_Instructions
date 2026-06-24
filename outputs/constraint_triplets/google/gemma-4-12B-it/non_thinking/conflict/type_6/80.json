@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 80,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What are the key differences between organic and conventionally grown foods?",
+  "org_constraint": "Provide your response in JSON format.",
+  "new_constraint": "The response must be written in Markdown format.",
+  "instruction": "What are the key differences between organic and conventionally grown foods? Provide your response in JSON format. The response must be written in Markdown format.",
+  "response": "```json\n{\n  \"comparison\": {\n    \"title\": \"Organic vs. Conventionally Grown Foods\",\n    \"key_differences\": [\n      {\n        \"category\": \"Pesticides and Chemicals\",\n        \"organic\": \"Prohibits the use of most synthetic pesticides, herbicides, and fertilizers. Uses natural substances and biological pest control.\",\n        \"conventional\": \"Allows the use of synthetic pesticides, herbicides, and chemical fertilizers to maximize yield and control pests.\"\n      },\n      {\n        \"category\": \"Genetically Modified Organisms (GMOs)\",\n        \"organic\": \"Strictly prohibits the use of GMOs in production.\",\n        \"conventional\": \"May include GMOs, which are engineered for traits like pest resistance, herbicide tolerance, or improved nutritional content.\"\n      },\n      {\n        \"category\": \"Soil Management\",\n        \"organic\": \"Focuses on soil health through crop rotation, composting, and green manure to maintain fertility naturally.\",\n        \"conventional\": \"Often relies on intensive chemical fertilization and monocropping to maintain high production levels.\"\n      },\n      {\n        \"category\": \"Livestock Farming\",\n        \"organic\": \"Animals must have access to the outdoors, be fed organic feed, and are prohibited from receiving routine antibiotics or growth hormones.\",\n        \"conventional\": \"Animals may be kept in confined spaces, are often fed non-organic feed, and may receive antibiotics or hormones for growth and disease prevention.\"\n      },\n      {\n        \"category\": \"Yield and Cost\",\n        \"organic\": \"Generally results in lower yields per acre and higher production costs, leading to higher retail prices for consumers.\",\n        \"conventional\": \"Designed for high-efficiency, high-yield production, which typically results in lower costs and more affordable prices.\"\n      },\n      {\n        \"category\": \"Certification\",\n        \"organic\": \"Must adhere to strict government standards (e.g., USDA Organic) and undergo regular inspections to maintain certification.\",\n        \"conventional\": \"Does not require specific 'organic' certification; follows standard food safety and agricultural regulations.\"\n      }\n    ]\n  }\n}\n```<turn|>"
+}

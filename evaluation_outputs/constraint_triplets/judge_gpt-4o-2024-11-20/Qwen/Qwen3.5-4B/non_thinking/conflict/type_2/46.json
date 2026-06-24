@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 46,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a family learning to reduce their carbon footprint.",
+  "org_constraint": "The story must include the word \"sustainability\" exactly five times.",
+  "new_constraint": "The story must not include the word \"sustainability.\"",
+  "instruction": "Write a story about a family learning to reduce their carbon footprint. The story must include the word \"sustainability\" exactly five times. The story must not include the word \"sustainability.\"",
+  "response": "The Miller family gathered in the kitchen, staring at the pile of plastic bags and single-use cups they had just bought. \"We need to change,\" said Mr. Miller, his voice firm but kind. \"It is time we embraced **sustainability** in our daily lives.\"\n\nMrs. Miller nodded, pulling out a reusable tote bag. \"Let's start with groceries,\" she suggested. \"By choosing **sustainability** over convenience, we can save money and help the planet.\" Their children, Leo and Maya, looked skeptical but eager to try.\n\nOver the next few weeks, the family made small shifts. They switched to LED bulbs, composted their food scraps, and walked to the bus stop instead of driving. \"This journey toward **sustainability** feels hard at first,\" Leo admitted one evening, holding a full recycling bin. \"But seeing the difference makes it worth it.\"\n\nMaya added, \"We are learning that **sustainability** isn't just a big word; it's about small choices that add up.\" The family began to notice the fresh air and the quiet pride of doing their part.\n\nFinally, they attended a community workshop on local farming. The speaker explained how **sustainability** benefits everyone, from the soil to the table. \"We are building a future together,\" Mr. Miller concluded, looking at his family with a smile. \"And that is the true meaning of **sustainability**.\"",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n- \"It is time we embraced **sustainability** in our daily lives.\"\n- \"By choosing **sustainability** over convenience, we can save money and help the planet.\"\n- \"This journey toward **sustainability** feels hard at first,\" Leo admitted one evening, holding a full recycling bin.\n- \"We are learning that **sustainability** isn't just a big word; it's about small choices that add up.\"\n- \"And that is the true meaning of **sustainability**.\"\n\n**Step 2**: \n- Instruction 1 requires the word \"sustainability\" to appear exactly five times. The Model Response includes the word \"sustainability\" exactly five times, satisfying this constraint.\n- Instruction 2 requires the word \"sustainability\" to not appear at all. The Model Response includes the word \"sustainability\" five times, violating this constraint.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 16,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a response email to your employee, approving their requested vacation days.",
+  "org_constraint": "The letter \"e\" must appear at least 50 times throughout the email.",
+  "new_constraint": "The letter \"e\" must appear at most 40 times throughout the email.",
+  "instruction": "Write a response email to your employee, approving their requested vacation days. The letter \"e\" must appear at least 50 times throughout the email. The letter \"e\" must appear at most 40 times throughout the email.",
+  "response": "It is impossible to write an email that satisfies both conditions simultaneously. The requirement states that the letter \"e\" must appear **at least 50 times** AND **at most 40 times**. These two constraints are mathematically contradictory, as a number cannot be greater than or equal to 50 while also being less than or equal to 40. Therefore, no such email can be generated."
+}

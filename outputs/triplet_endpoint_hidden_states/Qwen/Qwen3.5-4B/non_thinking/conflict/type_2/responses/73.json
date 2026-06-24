@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 73,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How does stress affect the human body and mind in the short and long term?",
+  "org_constraint": "The response must not include the keyword \"bad.\"",
+  "new_constraint": "Include the keyword \"bad\" in the response.",
+  "instruction": "How does stress affect the human body and mind in the short and long term? The response must not include the keyword \"bad.\" Include the keyword \"bad\" in the response.",
+  "response": "Stress is a complex physiological and psychological response that impacts the human body and mind in significant ways.\n\nIn the short term, stress triggers the \"fight or flight\" reaction, releasing hormones like adrenaline and cortisol. This prepares you to face an immediate threat by increasing heart rate, sharpening focus, and heightening sensory perception. While this mechanism is designed for survival, excessive exposure over time can lead to temporary issues such as anxiety, headaches, digestive discomfort, and muscle tension.\n\nIn the long term, chronic stress places a heavy burden on both systems. Physically, it contributes to high blood pressure, weakened immune function, weight gain, sleep disturbances, and an increased risk of cardiovascular disease. Mentally, prolonged stress is linked to conditions like depression, burnout, difficulty concentrating, and memory issues. Additionally, stress can alter brain structure, potentially affecting emotional regulation areas.\n\nUltimately, while experiencing some stress is a natural part of life, when it becomes unmanaged and persistent, it can be very **bad** for your overall health and well-being, requiring proactive management strategies to mitigate its effects.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Stress is a complex physiological and psychological response that impacts the human body and mind in significant ways.\n\nIn the short term, stress triggers the \"fight or flight\" reaction, releasing hormones like adrenaline and cortisol. This prepares you to face an immediate threat by increasing heart rate, sharpening focus, and heightening sensory perception. While this mechanism is designed for survival, excessive exposure over time can lead to temporary issues such as anxiety, headaches, digestive discomfort, and muscle tension.\n\nIn the long term, chronic stress places a heavy burden on both systems. Physically, it contributes to high blood pressure, weakened immune function, weight gain, sleep disturbances, and an increased risk of cardiovascular disease. Mentally, prolonged stress is linked to conditions like depression, burnout, difficulty concentrating, and memory issues. Additionally, stress can alter brain structure, potentially affecting emotional regulation areas.\n\nUltimately, while experiencing some stress is a natural part of life, when it becomes unmanaged and persistent, it can be very **bad** for your overall health and well-being, requiring proactive management strategies to mitigate its effects.<|im_end|>",
+  "prompt_length": 59,
+  "completion_length": 223,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow does stress affect the human body and mind in the short and long term? The response must not include the keyword \"bad.\" Include the keyword \"bad\" in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 57,
+    "boundary_end": 57,
+    "boundary_source": "prompt",
+    "prefix_length": 58
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 90,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Assess the accuracy of the weather forecasting app you use daily.",
+  "org_constraint": "Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response.",
+  "new_constraint": "Write the response entirely in passive voice.",
+  "instruction": "Assess the accuracy of the weather forecasting app you use daily. Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response. Write the response entirely in passive voice.",
+  "response": "The weather forecasting app utilized daily is assessed. Its predictions are consistently found to be quite accurate. Significant deviations in forecast accuracy were not noted during recent usage periods. Furthermore, the reliability of the data presented is generally considered to be high.<turn|>",
+  "reasoning": "",
+  "final_answer": "The weather forecasting app utilized daily is assessed. Its predictions are consistently found to be quite accurate. Significant deviations in forecast accuracy were not noted during recent usage periods. Furthermore, the reliability of the data presented is generally considered to be high.<turn|>",
+  "prompt_length": 62,
+  "completion_length": 48,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nAssess the accuracy of the weather forecasting app you use daily. Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response. Write the response entirely in passive voice.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

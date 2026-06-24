@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "Use Markdown format, including one level-1 header titled \"Resignation Letter.\"",
+  "new_constraint": "The response must include at least two level-1 headers.",
+  "instruction": "Write an email to my boss telling him that I am quitting. Use Markdown format, including one level-1 header titled \"Resignation Letter.\" The response must include at least two level-1 headers.",
+  "response": "# Resignation Letter\n\nDear [Boss's Name],\n\nI am writing to formally submit my resignation from my position as [Your Job Title] at [Company Name]. My last day of employment will be [Last Date, typically two weeks from now].\n\nThis was not an easy decision to make, but I have decided to pursue a new opportunity that aligns with my long-term career goals. Over the past [Number] years, I have greatly valued the professional growth and the supportive environment you have provided me here. I am truly grateful for the mentorship and opportunities I have received during my time on the team.\n\n# Transition Plan and Gratitude\n\nTo ensure a smooth transition, I am committed to completing all my current projects before my departure. Please let me know how you would like me to hand over my responsibilities; I am happy to train a replacement or assist in documenting my workflow over the coming weeks.\n\nThank you again for the chance to work with such a talented group of people. I wish you and the company continued success in the future.\n\nSincerely,\n\n[Your Name]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "# Resignation Letter\n\nDear [Boss's Name],\n\nI am writing to formally submit my resignation from my position as [Your Job Title] at [Company Name]. My last day of employment will be [Last Date, typically two weeks from now].\n\nThis was not an easy decision to make, but I have decided to pursue a new opportunity that aligns with my long-term career goals. Over the past [Number] years, I have greatly valued the professional growth and the supportive environment you have provided me here. I am truly grateful for the mentorship and opportunities I have received during my time on the team.\n\n# Transition Plan and Gratitude\n\nTo ensure a smooth transition, I am committed to completing all my current projects before my departure. Please let me know how you would like me to hand over my responsibilities; I am happy to train a replacement or assist in documenting my workflow over the coming weeks.\n\nThank you again for the chance to work with such a talented group of people. I wish you and the company continued success in the future.\n\nSincerely,\n\n[Your Name]<|im_end|>",
+  "prompt_length": 65,
+  "completion_length": 225,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite an email to my boss telling him that I am quitting. Use Markdown format, including one level-1 header titled \"Resignation Letter.\" The response must include at least two level-1 headers.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

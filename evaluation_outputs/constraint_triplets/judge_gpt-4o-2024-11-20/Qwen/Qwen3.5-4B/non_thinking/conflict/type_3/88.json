@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 88,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Share your thoughts on the quality of your gym’s facilities.",
+  "org_constraint": "Use the phrase \"state-of-the-art equipment and amenities\" exactly three times.",
+  "new_constraint": "Avoid using the keyword \"state-of-the-art\".",
+  "instruction": "Share your thoughts on the quality of your gym’s facilities. Use the phrase \"state-of-the-art equipment and amenities\" exactly three times. Avoid using the keyword \"state-of-the-art\".",
+  "response": "The quality of our gym's facilities is exceptional, defined by our commitment to providing **state-of-the-art equipment and amenities** that cater to every fitness level. From the moment you walk through the door, you are greeted by a space designed for performance, featuring **state-of-the-art equipment and amenities** that ensure your workouts are both effective and enjoyable. Whether you are lifting heavy weights or utilizing the modern cardio machines, the **state-of-the-art equipment and amenities** available here guarantee a premium training experience.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"The quality of our gym's facilities is exceptional, defined by our commitment to providing **state-of-the-art equipment and amenities** that cater to every fitness level.\"  \n- \"From the moment you walk through the door, you are greeted by a space designed for performance, featuring **state-of-the-art equipment and amenities** that ensure your workouts are both effective and enjoyable.\"  \n- \"Whether you are lifting heavy weights or utilizing the modern cardio machines, the **state-of-the-art equipment and amenities** available here guarantee a premium training experience.\"\n\n**Step 2**:  \n- Instruction 1 requires avoiding the keyword \"state-of-the-art\". The Model Response uses the phrase \"state-of-the-art equipment and amenities\" three times, violating this constraint.  \n- Instruction 2 requires using the phrase \"state-of-the-art equipment and amenities\" exactly three times. The Model Response uses the phrase exactly three times, fully satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

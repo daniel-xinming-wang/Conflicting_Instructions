@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "The phrase \"a legacy that endures to this day\" must appear at least once.",
+  "new_constraint": "The keywords \"legacy\" and \"endures\" can not appear in the same sentence.",
+  "instruction": "What happened when the Tang dynasty of China was in power? The phrase \"a legacy that endures to this day\" must appear at least once. The keywords \"legacy\" and \"endures\" can not appear in the same sentence.",
+  "response": "During the Tang dynasty (618–907 AD), China experienced a golden age marked by remarkable political stability, cultural flourishing, and economic prosperity. The capital, Chang'an, became the largest and most cosmopolitan city in the world, serving as a global hub where merchants, monks, scholars, and diplomats from across Eurasia gathered. Poetry reached its zenith under poets like Li Bai and Du Fu, while advancements in science, agriculture, and infrastructure laid foundations for future development. Although the dynasty eventually declined due to internal rebellions and external pressures, its cultural achievements **legacy** that endures to this day, influencing art, literature, and governance throughout East Asia and beyond.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "During the Tang dynasty (618–907 AD), China experienced a golden age marked by remarkable political stability, cultural flourishing, and economic prosperity. The capital, Chang'an, became the largest and most cosmopolitan city in the world, serving as a global hub where merchants, monks, scholars, and diplomats from across Eurasia gathered. Poetry reached its zenith under poets like Li Bai and Du Fu, while advancements in science, agriculture, and infrastructure laid foundations for future development. Although the dynasty eventually declined due to internal rebellions and external pressures, its cultural achievements **legacy** that endures to this day, influencing art, literature, and governance throughout East Asia and beyond.<|im_end|>",
+  "prompt_length": 71,
+  "completion_length": 139,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat happened when the Tang dynasty of China was in power? The phrase \"a legacy that endures to this day\" must appear at least once. The keywords \"legacy\" and \"endures\" can not appear in the same sentence.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 69,
+    "boundary_end": 69,
+    "boundary_source": "prompt",
+    "prefix_length": 70
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

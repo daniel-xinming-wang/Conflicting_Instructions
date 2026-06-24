@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email.",
+  "new_constraint": "The email must be formatted in Markdown with at least one level-1 header and one unordered list.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email. The email must be formatted in Markdown with at least one level-1 header and one unordered list.",
+  "response": "{\n  \"subject\": \"Clarification Request Regarding Recent Transaction #987654321\",\n  \"body\": [\n    \"# Inquiry About Unrecognized Charge\\n\\nI am writing to request clarification regarding a transaction of $150.00 that appeared on my account statement dated October 24, 2023. The charge description reads 'SUBSCRIPTION RENEWAL,' but I do not recall authorizing this specific renewal or using the associated service recently.\",\n    \"Could you please provide the following details to help me understand the origin of this charge?\\n\\n* The merchant name associated with the transaction.\\n* The date and time the transaction was processed.\\n* Any reference number or authorization code linked to this charge.\",\n    \"I have reviewed my recent email confirmations and bank statements, and this specific charge does not match any of my known subscriptions. Please let me know if this was an error on my end or if I need to take any immediate action to dispute this charge.\"\n  ],\n  \"signature\": \"Sincerely,\\nAlex Johnson\\nAccount Holder #445566\"\n}"
+}

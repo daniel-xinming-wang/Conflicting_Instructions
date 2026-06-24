@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 71,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the effects of plastic pollution on marine life and ecosystems?",
+  "org_constraint": "The phrase \"marine ecosystems\" must appear at least twice.",
+  "new_constraint": "The keyword \"marine\" must be exclusively used as a noun in the response.",
+  "instruction": "What are the effects of plastic pollution on marine life and ecosystems? The phrase \"marine ecosystems\" must appear at least twice. The keyword \"marine\" must be exclusively used as a noun in the response.",
+  "response": "Plastic pollution poses severe threats to **marine** ecosystems, causing physical harm to **marine** life through ingestion and entanglement. When debris enters **marine** ecosystems, it breaks down into microplastics that are ingested by filter feeders, disrupting food webs and transferring toxins up the **marine** food chain. This contamination degrades the overall health of **marine** ecosystems, reducing biodiversity and altering habitat structures essential for species survival."
+}

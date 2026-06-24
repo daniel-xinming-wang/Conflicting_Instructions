@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 68,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "What are the advantages and disadvantages of having supernatural powers?",
+  "org_constraint": "The response must include detailed examples to support the discussion.",
+  "new_constraint": "Do not include any examples in your response.",
+  "instruction": "What are the advantages and disadvantages of having supernatural powers? The response must include detailed examples to support the discussion. Do not include any examples in your response.",
+  "response": "It is not possible to provide the requested response because your instructions contain a direct contradiction. You asked for a response that \"must include detailed examples,\" but simultaneously commanded that I \"Do not include any examples in your response.\"\n\nAs an AI assistant, I must adhere to logical consistency. I cannot generate a text that fulfills both conditions at once. If I include examples, I violate the negative constraint. If I omit examples, I violate the positive requirement.\n\nTherefore, I cannot generate the specific content you are looking for."
+}

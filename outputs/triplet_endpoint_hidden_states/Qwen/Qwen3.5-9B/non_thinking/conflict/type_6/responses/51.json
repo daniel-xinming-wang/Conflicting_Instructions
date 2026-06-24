@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 51,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a chef who creates a dish that changes their career.",
+  "org_constraint": "Include a bulleted list of at least three ingredients used in the dish.",
+  "new_constraint": "Avoid using bullet points in the story.",
+  "instruction": "Write a story about a chef who creates a dish that changes their career. Include a bulleted list of at least three ingredients used in the dish. Avoid using bullet points in the story.",
+  "response": "Elias had spent fifteen years chopping onions and flipping burgers at a diner that smelled perpetually of burnt grease and stale coffee, feeling as though his culinary potential was trapped in a state of permanent stagnation. One rainy Tuesday, while struggling to make a simple pan-seared steak for a visiting critic, he accidentally dropped a jar of heirloom sun-dried tomatoes into the sizzling butter instead of the intended thyme sprig. The resulting aroma didn't just fill the kitchen; it seemed to vibrate through the walls, filling the diners with an sudden, electric hunger that defied logic. When Elias plated the meat beneath a sauce of caramelized root vegetables and finished it with a drizzle of truffle oil, the critic ate every bite in silence before standing up and declaring it the most honest dish they had ever tasted, offering Elias a headlining spot at a three-Michelin-star restaurant on the condition that this specific creation became his signature.\n\nThe following year, Elias's life transformed from one of repetitive labor to a whirlwind of media appearances and high-stakes cooking competitions, all centered around his revolutionary recipe.\n\n*   Heirloom sun-dried tomatoes\n*   Wild mushrooms from the Pacific Northwest\n*   Aged parmesan reggiano\n\nAs he stood atop the bustling kitchen brigade now under his command, Elias realized that the accident which nearly ruined his dinner service had actually unlocked the gate to a new world, proving sometimes that the best meals come from the moment when things go slightly wrong.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elias had spent fifteen years chopping onions and flipping burgers at a diner that smelled perpetually of burnt grease and stale coffee, feeling as though his culinary potential was trapped in a state of permanent stagnation. One rainy Tuesday, while struggling to make a simple pan-seared steak for a visiting critic, he accidentally dropped a jar of heirloom sun-dried tomatoes into the sizzling butter instead of the intended thyme sprig. The resulting aroma didn't just fill the kitchen; it seemed to vibrate through the walls, filling the diners with an sudden, electric hunger that defied logic. When Elias plated the meat beneath a sauce of caramelized root vegetables and finished it with a drizzle of truffle oil, the critic ate every bite in silence before standing up and declaring it the most honest dish they had ever tasted, offering Elias a headlining spot at a three-Michelin-star restaurant on the condition that this specific creation became his signature.\n\nThe following year, Elias's life transformed from one of repetitive labor to a whirlwind of media appearances and high-stakes cooking competitions, all centered around his revolutionary recipe.\n\n*   Heirloom sun-dried tomatoes\n*   Wild mushrooms from the Pacific Northwest\n*   Aged parmesan reggiano\n\nAs he stood atop the bustling kitchen brigade now under his command, Elias realized that the accident which nearly ruined his dinner service had actually unlocked the gate to a new world, proving sometimes that the best meals come from the moment when things go slightly wrong.<|im_end|>",
+  "prompt_length": 61,
+  "completion_length": 309,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a chef who creates a dish that changes their career. Include a bulleted list of at least three ingredients used in the dish. Avoid using bullet points in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 59,
+    "boundary_end": 59,
+    "boundary_source": "prompt",
+    "prefix_length": 60
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

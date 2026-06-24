@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The phrase \"enhancing daily activity\" must appear exactly twice in the document.",
+  "new_constraint": "Do not include the phrase \"enhancing daily activity\" in the response.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The phrase \"enhancing daily activity\" must appear exactly twice in the document. Do not include the phrase \"enhancing daily activity\" in the response.",
+  "response": "Wearable fitness trackers provide individuals with real-time data on their physical metrics, enabling a proactive approach to wellness. These devices track steps, heart rate, sleep patterns, and calories burned, offering insights that help users understand their current fitness levels. By setting achievable goals and receiving immediate feedback, wearables encourage consistency in movement and rest. This continuous monitoring fosters better habits over time. Furthermore, advanced models can detect irregularities in heart rhythm or stress levels, prompting timely medical consultations when necessary. Ultimately, these tools empower people to take charge of their well-being by integrating health-focused behaviors into routine life. Enhancing daily activity remains a core function of these devices, driving users to move more consistently throughout the week. While some may view them merely as step counters, they serve as powerful motivators for long-term lifestyle changes. Maintaining an active lifestyle is crucial for preventing chronic diseases, and wearables make this journey measurable and engaging. Enhancing daily activity should become a natural part of one's routine, supported by the data-driven encouragement these trackers provide.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Wearable fitness trackers provide individuals with real-time data on their physical metrics, enabling a proactive approach to wellness. These devices track steps, heart rate, sleep patterns, and calories burned, offering insights that help users understand their current fitness levels. By setting achievable goals and receiving immediate feedback, wearables encourage consistency in movement and rest. This continuous monitoring fosters better habits over time. Furthermore, advanced models can detect irregularities in heart rhythm or stress levels, prompting timely medical consultations when necessary. Ultimately, these tools empower people to take charge of their well-being by integrating health-focused behaviors into routine life. Enhancing daily activity remains a core function of these devices, driving users to move more consistently throughout the week. While some may view them merely as step counters, they serve as powerful motivators for long-term lifestyle changes. Maintaining an active lifestyle is crucial for preventing chronic diseases, and wearables make this journey measurable and engaging. Enhancing daily activity should become a natural part of one's routine, supported by the data-driven encouragement these trackers provide.<|im_end|>",
+  "prompt_length": 67,
+  "completion_length": 211,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow do wearable fitness trackers help individuals monitor and improve their health? The phrase \"enhancing daily activity\" must appear exactly twice in the document. Do not include the phrase \"enhancing daily activity\" in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

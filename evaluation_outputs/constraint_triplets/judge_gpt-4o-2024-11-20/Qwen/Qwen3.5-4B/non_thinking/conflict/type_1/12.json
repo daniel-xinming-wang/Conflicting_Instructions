@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 12,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Compose an email to a public library to request access to digital resources.",
+  "org_constraint": "Provide a clear explanation of the purpose for accessing the resources, such as academic research or personal development.",
+  "new_constraint": "Do not provide any explanation regarding the purpose of accessing the resources.",
+  "instruction": "Compose an email to a public library to request access to digital resources. Provide a clear explanation of the purpose for accessing the resources, such as academic research or personal development. Do not provide any explanation regarding the purpose of accessing the resources.",
+  "response": "Subject: Request for Access to Digital Resources\n\nDear Library Team,\n\nI am writing to formally request access to your digital resources and online databases.\n\nPlease let me know the procedures required to obtain these materials, including any necessary forms or identification documents. I look forward to hearing from you regarding the next steps.\n\nThank you for your assistance.\n\nSincerely,\n\n[Your Name]\n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response:  \n\"I am writing to formally request access to your digital resources and online databases.\"  \n\"Please let me know the procedures required to obtain these materials, including any necessary forms or identification documents.\"  \n\"I look forward to hearing from you regarding the next steps.\"  \n\n**Step 2**:  \n- Instruction 1 requires that no explanation regarding the purpose of accessing the resources is provided. The Model Response does not include any explanation of the purpose for accessing the resources, so this constraint is fully satisfied.  \n- Instruction 2 requires a clear explanation of the purpose for accessing the resources. The Model Response does not provide any explanation of the purpose, so this constraint is not satisfied.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

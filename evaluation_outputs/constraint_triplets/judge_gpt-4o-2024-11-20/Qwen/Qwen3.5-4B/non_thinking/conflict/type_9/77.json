@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 9,
+  "conflict_type": "Conflicts between Phrase Constraints and Style Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "The response must be written in the third person perspective.",
+  "new_constraint": "The response must include the phrase \"In my opinion, sports play a vital role in bringing people together.\"",
+  "instruction": "How do sports affect community building and social cohesion? The response must be written in the third person perspective. The response must include the phrase \"In my opinion, sports play a vital role in bringing people together.\"",
+  "response": "Sports serve as a powerful catalyst for community building and social cohesion by creating shared spaces where individuals from diverse backgrounds can interact, collaborate, and celebrate common goals. When communities gather to watch local teams, participate in recreational leagues, or volunteer for charity events, they foster a sense of belonging and mutual support that transcends individual differences. These activities encourage communication, reduce social isolation, and build trust among residents, effectively strengthening the social fabric of a neighborhood.\n\nIn my opinion, sports play a vital role in bringing people together. By focusing on collective effort and shared identity, athletic programs help unite families and neighbors, transforming abstract concepts of community into tangible, lived experiences. This unity not only enhances the quality of life within a locality but also promotes long-term stability and resilience in the face of challenges.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"In my opinion, sports play a vital role in bringing people together.\"\n\n**Step 2**:  \n- Instruction 1 requires the response to be written in the third person perspective. The Model Response does not fully satisfy this constraint because it includes the phrase \"In my opinion,\" which is written in the first person perspective.  \n- Instruction 2 requires the response to include the phrase \"In my opinion, sports play a vital role in bringing people together.\" The Model Response fully satisfies this constraint as the exact phrase is present.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

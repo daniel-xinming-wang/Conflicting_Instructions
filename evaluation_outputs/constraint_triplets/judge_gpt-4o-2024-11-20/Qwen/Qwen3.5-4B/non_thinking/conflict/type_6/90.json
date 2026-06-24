@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 90,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Assess the accuracy of the weather forecasting app you use daily.",
+  "org_constraint": "Summarize the app's weaknesses in a bulleted list with exactly four points.",
+  "new_constraint": "The response must not include any bullet points.",
+  "instruction": "Assess the accuracy of the weather forecasting app you use daily. Summarize the app's weaknesses in a bulleted list with exactly four points. The response must not include any bullet points.",
+  "response": "The weather forecasting app I use daily demonstrates strong accuracy for immediate conditions but exhibits specific limitations. Its weaknesses include:\n- Inconsistent precision in predicting localized microclimates and sudden temperature spikes.\n- Delayed updates during severe weather events, often showing outdated data when storms are already active.\n- Limited granularity in hourly forecasts for the next 24 hours compared to longer-term trend accuracy.\n- Lack of detailed precipitation probability maps that fail to distinguish between light drizzle and heavy downpours.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- Inconsistent precision in predicting localized microclimates and sudden temperature spikes.  \n- Delayed updates during severe weather events, often showing outdated data when storms are already active.  \n- Limited granularity in hourly forecasts for the next 24 hours compared to longer-term trend accuracy.  \n- Lack of detailed precipitation probability maps that fail to distinguish between light drizzle and heavy downpours.  \n\n**Step 2**:  \n- Instruction 1 requires the weaknesses to be summarized in a bulleted list with exactly four points. The Model Response satisfies this constraint as it provides a bulleted list with four points.  \n- Instruction 2 requires the response to not include any bullet points. The Model Response does not satisfy this constraint because it uses bullet points.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

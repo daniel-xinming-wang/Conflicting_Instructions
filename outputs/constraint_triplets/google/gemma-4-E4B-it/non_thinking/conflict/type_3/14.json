@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 14,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7.",
+  "org_constraint": "The last sentence must end with the phrase \"looking forward to it.\"",
+  "new_constraint": "Avoid using the keyword \"forward\" in the email.",
+  "instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The last sentence must end with the phrase \"looking forward to it.\" Avoid using the keyword \"forward\" in the email.",
+  "response": "Subject: Dinner next Monday!\n\nHi Sarah,\n\nHope you're having a great week!\n\nI wanted to confirm our dinner plans for next Monday. We're planning on meeting at 7:00 PM.\n\nLet me know if that time still works well for you.\n\nReally anticipating seeing you then, looking forward to it.<turn|>"
+}

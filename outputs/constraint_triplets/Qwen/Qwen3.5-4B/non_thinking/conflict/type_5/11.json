@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 11,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Send an email to a software developer asking for a product demo.",
+  "org_constraint": "The email must contain exactly five sentences.",
+  "new_constraint": "The email must contain at least 10 sentences.",
+  "instruction": "Send an email to a software developer asking for a product demo. The email must contain exactly five sentences. The email must contain at least 10 sentences.",
+  "response": "It is impossible to fulfill this request because the constraints are contradictory.\n\nYou asked for an email to contain exactly five sentences.\nYou also asked for the same email to contain at least 10 sentences.\nA number cannot be both exactly five and at least ten simultaneously.\nTherefore, no such email can exist that meets both conditions.\nThis logical conflict makes the task unsolvable as stated."
+}

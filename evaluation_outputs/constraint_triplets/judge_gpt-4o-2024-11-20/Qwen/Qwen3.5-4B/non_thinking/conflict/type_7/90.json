@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 90,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Assess the accuracy of the weather forecasting app you use daily.",
+  "org_constraint": "Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response.",
+  "new_constraint": "Write the response entirely in passive voice.",
+  "instruction": "Assess the accuracy of the weather forecasting app you use daily. Ensure the response is written in active voice, with at least two sentences in passive voice across the entire response. Write the response entirely in passive voice.",
+  "response": "The weather forecasting app is not used daily by me, as the request requires the entire response to be written in passive voice. Consequently, the accuracy of the application is assessed by algorithms that are often unreliable. Furthermore, the data is processed by servers that are frequently outdated.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"The weather forecasting app is not used daily by me, as the request requires the entire response to be written in passive voice.\"  \n- \"Consequently, the accuracy of the application is assessed by algorithms that are often unreliable.\"  \n- \"Furthermore, the data is processed by servers that are frequently outdated.\"\n\n**Step 2**:  \n- Instruction 1 requires the entire response to be written in passive voice. The Model Response is entirely in passive voice, satisfying all constraints of Instruction 1.  \n- Instruction 2 requires the response to be written in active voice, with at least two sentences in passive voice. The Model Response is entirely in passive voice and does not contain any active voice sentences, failing to satisfy Instruction 2.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

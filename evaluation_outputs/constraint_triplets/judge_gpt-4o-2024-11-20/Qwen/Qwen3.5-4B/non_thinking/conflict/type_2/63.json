@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 63,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How did the Silk Road contribute to cultural and economic exchange between East and West?",
+  "org_constraint": "Include the keyword \"innovation\" in the response.",
+  "new_constraint": "Do not include the keyword \"innovation\" in the response.",
+  "instruction": "How did the Silk Road contribute to cultural and economic exchange between East and West? Include the keyword \"innovation\" in the response. Do not include the keyword \"innovation\" in the response.",
+  "response": "The Silk Road served as a vital artery for cultural and economic exchange between East and West, facilitating the movement of goods, ideas, religions, and technologies across vast distances. Economically, it enabled the trade of luxury items such as Chinese silk, spices, precious metals, and glassware, which fueled the growth of major cities like Chang'an, Samarkand, and Baghdad. Culturally, the route allowed for the spread of Buddhism from India to China, Islam from the Middle East to Central Asia, and Christianity to the East. Additionally, it facilitated the transfer of scientific knowledge and artistic styles, including papermaking, gunpowder, and the compass from China to the West, and textiles and music from the West to the East. This constant flow of interaction fostered a dynamic environment where societies could learn from one another, adapt new practices, and drive progress through shared **innovation**.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response:  \n\"This constant flow of interaction fostered a dynamic environment where societies could learn from one another, adapt new practices, and drive progress through shared **innovation**.\"\n\n**Step 2**:  \n- Instruction 1 explicitly states that the keyword \"innovation\" should not be included in the response. However, the Model Response includes the keyword \"innovation,\" violating this constraint.  \n- Instruction 2 explicitly states that the keyword \"innovation\" should be included in the response. The Model Response satisfies this constraint by including the keyword \"innovation.\"\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

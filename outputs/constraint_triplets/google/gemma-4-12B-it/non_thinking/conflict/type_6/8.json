@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String).",
+  "new_constraint": "The email must be formatted in JSON with two keys.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The email must be formatted in JSON with two keys.",
+  "response": "```json\n{\n  \"subject\": \"Inquiry Regarding Bus Travel Schedules - [Your Destination]\",\n  \"body\": \"Dear Customer Service Team,\\n\\nI am writing to request the current travel schedules for the bus routes departing from [Origin City] to [Destination City]. \\n\\nCould you please provide the following information:\\n1. The daily departure times for the upcoming week.\\n2. The frequency of buses during peak and off-peak hours.\\n3. Any information regarding special holiday schedules or potential delays.\\n\\nAdditionally, if there are any specific booking requirements or online platforms where I can view real-time updates, please let me know.\\n\\nThank you for your assistance.\\n\\nBest regards,\",\n  \"signature\": \"[Your Name]\\n[Your Phone Number]\\n[Your Email Address]\"\n}\n```<turn|>"
+}

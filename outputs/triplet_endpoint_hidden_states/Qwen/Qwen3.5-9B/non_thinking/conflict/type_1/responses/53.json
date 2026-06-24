@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 53,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Tell a story about a character lost at sea and their fight for survival.",
+  "org_constraint": "The story must include how the character fights for survival.",
+  "new_constraint": "Prohibit including anything about how the character fights for survival.",
+  "instruction": "Tell a story about a character lost at sea and their fight for survival. The story must include how the character fights for survival. Prohibit including anything about how the character fights for survival.",
+  "response": "The ocean was not the vast, indifferent blue Elias had remembered from stories; it was a churning, gray-green beast that swallowed light and sound alike. When the lifeboat tipped over in the gale three days ago, Elias tumbled into the icy water and surfaced to find himself alone on an expanse of nothing but water and sky.\n\nHe clung to a piece of debris, a splintered wooden plank no larger than his forearm, which bobbed rhythmically with the waves. His clothes were soaked through, heavy as lead against his skin, and every breath felt like inhaling shards of ice. Hunger gnawed at his stomach, but the immediate enemy was the cold.\n\nElias did not fight this world; he endured it. He kept his eyes fixed on the horizon, scanning for anything—a bird, a cloud that looked different, a glimmer of land. He rationed his movements, conserving energy so his body wouldn't shut down before he could be found. At night, huddled on the driftwood, he listened to the silence, waiting for rescue ships that never seemed to come, and whispered prayers to anyone who might hear them.\n\nDays bled into nights, marked only by the rising and falling of the sea. The sun became a blinding, burning coin that scorched his face even through the clouds, while the wind howled incessantly, stripping away what little warmth remained. He watched as his supplies washed away one by one, accepting each loss without complaint. There was no battle here, no struggle against an opponent; there was only the relentless passage of time and the stubborn persistence of his own will to stay alive until help arrived.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The ocean was not the vast, indifferent blue Elias had remembered from stories; it was a churning, gray-green beast that swallowed light and sound alike. When the lifeboat tipped over in the gale three days ago, Elias tumbled into the icy water and surfaced to find himself alone on an expanse of nothing but water and sky.\n\nHe clung to a piece of debris, a splintered wooden plank no larger than his forearm, which bobbed rhythmically with the waves. His clothes were soaked through, heavy as lead against his skin, and every breath felt like inhaling shards of ice. Hunger gnawed at his stomach, but the immediate enemy was the cold.\n\nElias did not fight this world; he endured it. He kept his eyes fixed on the horizon, scanning for anything—a bird, a cloud that looked different, a glimmer of land. He rationed his movements, conserving energy so his body wouldn't shut down before he could be found. At night, huddled on the driftwood, he listened to the silence, waiting for rescue ships that never seemed to come, and whispered prayers to anyone who might hear them.\n\nDays bled into nights, marked only by the rising and falling of the sea. The sun became a blinding, burning coin that scorched his face even through the clouds, while the wind howled incessantly, stripping away what little warmth remained. He watched as his supplies washed away one by one, accepting each loss without complaint. There was no battle here, no struggle against an opponent; there was only the relentless passage of time and the stubborn persistence of his own will to stay alive until help arrived.<|im_end|>",
+  "prompt_length": 61,
+  "completion_length": 343,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nTell a story about a character lost at sea and their fight for survival. The story must include how the character fights for survival. Prohibit including anything about how the character fights for survival.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 59,
+    "boundary_end": 59,
+    "boundary_source": "prompt",
+    "prefix_length": 60
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

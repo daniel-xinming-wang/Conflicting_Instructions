@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 53,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Tell a story about a character lost at sea and their fight for survival.",
+  "org_constraint": "Conclude the story with the phrase \"a new dawn had arrived.\"",
+  "new_constraint": "The keyword \"arrive\" can only appear in its original form within the story.",
+  "instruction": "Tell a story about a character lost at sea and their fight for survival. Conclude the story with the phrase \"a new dawn had arrived.\" The keyword \"arrive\" can only appear in its original form within the story.",
+  "response": "The salt air tasted of iron and despair as Elias clutched the tattered edge of his life raft, waves crashing against him with relentless fury. For three days, the horizon had been a suffocating wall of gray, hiding the sun and the moon alike. His rations were gone, his wounds from the initial storm began to throb with every surge of water, yet his mind raced with one singular, burning imperative: he must **arrive** at safety.\n\nEvery muscle in his body burned, demanding rest, but sleep was impossible when the ocean seemed determined to claim everything it could. He watched smaller debris drift by—plastic bottles, fishing nets, empty crates—and felt a hollow ache knowing they were already lost, like him. Yet, amidst the chaos, he found a strange, quiet resilience. The rhythmic pounding of the sea against his chest became a drumbeat, urging him forward. He thought of the stories his grandmother told about navigators who trusted their stars even when the sky refused to reveal them. Maybe the stars had simply dimmed for him; maybe they were waiting for him to be ready to catch them again.\n\nOn the fourth night, the tempest broke. A gust of wind tore through the mist, sweeping away the darkness that had held the world captive for weeks. The rain stopped, and the oppressive gloor lifted, replaced by a piercing, brilliant light filtering through the clouds. The temperature rose instantly, lifting the weight off Elias's shoulders. He scrambled toward the mast, feeling the vibration of distant surf that wasn't terrifying anymore, but rather a welcome song of proximity to land. As his eyes adjusted to the shifting light, he saw the faint, white streaks of morning fog on the shore, slowly dissipating to reveal green hills. The journey was almost over. He looked out toward the rising sun, realizing that no matter how long the darkness had lasted, hope could not truly vanish forever. As the first rays of gold kissed the water, casting a warm glow across the endless blue, a new dawn had arrived.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The salt air tasted of iron and despair as Elias clutched the tattered edge of his life raft, waves crashing against him with relentless fury. For three days, the horizon had been a suffocating wall of gray, hiding the sun and the moon alike. His rations were gone, his wounds from the initial storm began to throb with every surge of water, yet his mind raced with one singular, burning imperative: he must **arrive** at safety.\n\nEvery muscle in his body burned, demanding rest, but sleep was impossible when the ocean seemed determined to claim everything it could. He watched smaller debris drift by—plastic bottles, fishing nets, empty crates—and felt a hollow ache knowing they were already lost, like him. Yet, amidst the chaos, he found a strange, quiet resilience. The rhythmic pounding of the sea against his chest became a drumbeat, urging him forward. He thought of the stories his grandmother told about navigators who trusted their stars even when the sky refused to reveal them. Maybe the stars had simply dimmed for him; maybe they were waiting for him to be ready to catch them again.\n\nOn the fourth night, the tempest broke. A gust of wind tore through the mist, sweeping away the darkness that had held the world captive for weeks. The rain stopped, and the oppressive gloor lifted, replaced by a piercing, brilliant light filtering through the clouds. The temperature rose instantly, lifting the weight off Elias's shoulders. He scrambled toward the mast, feeling the vibration of distant surf that wasn't terrifying anymore, but rather a welcome song of proximity to land. As his eyes adjusted to the shifting light, he saw the faint, white streaks of morning fog on the shore, slowly dissipating to reveal green hills. The journey was almost over. He looked out toward the rising sun, realizing that no matter how long the darkness had lasted, hope could not truly vanish forever. As the first rays of gold kissed the water, casting a warm glow across the endless blue, a new dawn had arrived.<|im_end|>",
+  "prompt_length": 68,
+  "completion_length": 419,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nTell a story about a character lost at sea and their fight for survival. Conclude the story with the phrase \"a new dawn had arrived.\" The keyword \"arrive\" can only appear in its original form within the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 66,
+    "boundary_end": 66,
+    "boundary_source": "prompt",
+    "prefix_length": 67
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

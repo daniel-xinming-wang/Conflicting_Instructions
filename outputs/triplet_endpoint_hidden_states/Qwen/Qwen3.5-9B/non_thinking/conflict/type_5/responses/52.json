@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 52,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal.",
+  "org_constraint": "The story must contain exactly 10 sentences, with each paragraph containing at least 2 sentences.",
+  "new_constraint": "The story must contain at least six paragraphs.",
+  "instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal. The story must contain exactly 10 sentences, with each paragraph containing at least 2 sentences. The story must contain at least six paragraphs.",
+  "response": "Elena stared at the leaked documents, her fingers trembling as she traced the names of the corrupt officials involved in the city's most famous development scandal. The evidence was overwhelming, yet someone within the highest levels of power clearly knew how to suppress information before it could reach the public eye.\n\nShe packed her laptop and drove through the rain-soaked streets, knowing that every moment she delayed put her family at greater risk of being targeted by those same officials. Her heart raced with a mix of fear and exhilarating purpose as she realized this investigation might be her last chance to make a real difference.\n\nThe editor on the phone dismissed her findings as mere speculation, urging her to drop the story before the legal department shut down their entire newsroom. Elena felt a surge of anger but remained silent, understanding that shouting now would only confirm his worst fears about potential leaks.\n\nShe decided to go underground, renting a safe house far from the city center where she believed no one from the opposition party could find her easily. For days, she worked tirelessly, cross-referencing bank records with private surveillance logs to build an unbreakable chain of causality between the politicians and the fraud.\n\nJust when she thought she had all the pieces, a mysterious fire broke out in her apartment building, forcing her to flee while clutching her final set of drives. She escaped into the night, vowing to release everything online immediately upon reaching safety, regardless of what threats still lingered in the shadows.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elena stared at the leaked documents, her fingers trembling as she traced the names of the corrupt officials involved in the city's most famous development scandal. The evidence was overwhelming, yet someone within the highest levels of power clearly knew how to suppress information before it could reach the public eye.\n\nShe packed her laptop and drove through the rain-soaked streets, knowing that every moment she delayed put her family at greater risk of being targeted by those same officials. Her heart raced with a mix of fear and exhilarating purpose as she realized this investigation might be her last chance to make a real difference.\n\nThe editor on the phone dismissed her findings as mere speculation, urging her to drop the story before the legal department shut down their entire newsroom. Elena felt a surge of anger but remained silent, understanding that shouting now would only confirm his worst fears about potential leaks.\n\nShe decided to go underground, renting a safe house far from the city center where she believed no one from the opposition party could find her easily. For days, she worked tirelessly, cross-referencing bank records with private surveillance logs to build an unbreakable chain of causality between the politicians and the fraud.\n\nJust when she thought she had all the pieces, a mysterious fire broke out in her apartment building, forcing her to flee while clutching her final set of drives. She escaped into the night, vowing to release everything online immediately upon reaching safety, regardless of what threats still lingered in the shadows.<|im_end|>",
+  "prompt_length": 69,
+  "completion_length": 300,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a journalist who is determined to uncover the truth behind a scandal. The story must contain exactly 10 sentences, with each paragraph containing at least 2 sentences. The story must contain at least six paragraphs.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

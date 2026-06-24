@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "The phrase \"a legacy that endures to this day\" must appear at least once.",
+  "new_constraint": "The keywords \"legacy\" and \"endures\" can not appear in the same sentence.",
+  "instruction": "What happened when the Tang dynasty of China was in power? The phrase \"a legacy that endures to this day\" must appear at least once. The keywords \"legacy\" and \"endures\" can not appear in the same sentence.",
+  "response": "The Tang Dynasty (618–907 AD) is widely regarded as a golden age in Chinese history, characterized by unparalleled achievements in art, poetry, and international trade. During this era, the empire expanded its borders significantly, establishing a cosmopolitan atmosphere where diverse cultures, religions, and technologies flourished along the Silk Road.\n\nThe period saw the rise of legendary poets like Li Bai and Du Fu, whose works defined the aesthetic standards of Chinese literature. Furthermore, advancements in woodblock printing and the refinement of porcelain production occurred during this time. These innovations created a cultural legacy that shaped the identity of East Asia.\n\nThe dynasty also fostered a sophisticated bureaucratic system and a vibrant economy that supported a massive population. Because of these profound contributions to governance and the arts, the influence of the Tang period endures to this day.<turn|>"
+}

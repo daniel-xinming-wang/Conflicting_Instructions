@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 95,
+  "task": "essay writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an article about how intra-team conflict affected sports teams.",
+  "org_constraint": "Incorporate the keyword \"performance\" in the article.",
+  "new_constraint": "Avoid using the keyword \"performance\" in the article.",
+  "instruction": "Write an article about how intra-team conflict affected sports teams. Incorporate the keyword \"performance\" in the article. Avoid using the keyword \"performance\" in the article.",
+  "response": "It is impossible to write an article that incorporates the keyword \"performance\" while simultaneously avoiding the use of that exact same keyword. These two instructions are mutually exclusive.\n\nIf you include the word \"performance,\" you violate the constraint to avoid it. If you avoid the word \"performance,\" you cannot include it.\n\nWould you like me to:\n1.  Write the article about intra-team conflict in sports **without** using the word \"performance\"?\n2.  Write the article **with** the word \"performance\" included?\n3.  Explain the logical contradiction in your request?"
+}

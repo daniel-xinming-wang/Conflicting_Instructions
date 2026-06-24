@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "The phrase \"a legacy that endures to this day\" must appear at least once.",
+  "new_constraint": "The keywords \"legacy\" and \"endures\" can not appear in the same sentence.",
+  "instruction": "What happened when the Tang dynasty of China was in power? The phrase \"a legacy that endures to this day\" must appear at least once. The keywords \"legacy\" and \"endures\" can not appear in the same sentence.",
+  "response": "When the Tang dynasty ruled China from 618 to 907 CE, the empire experienced a golden age of cultural, economic, and political flourishing. Under the leadership of emperors like Taizong and Xuanzong, the dynasty expanded its borders, established a vast trade network along the Silk Road, and saw unprecedented advancements in poetry, art, and governance. The capital city of Chang'an became the largest and most cosmopolitan metropolis in the world, attracting merchants, scholars, and diplomats from across Asia. This era left behind a **legacy** that continues to influence Chinese identity and global history. The spirit of innovation and openness from this period **endures** in modern Chinese culture, reminding people of a time when the nation stood at the forefront of civilization."
+}

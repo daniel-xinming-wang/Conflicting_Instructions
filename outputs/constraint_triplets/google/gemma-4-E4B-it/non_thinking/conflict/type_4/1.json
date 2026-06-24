@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "The phrase \"thank you for the opportunity\" must appear at least twice in the email.",
+  "new_constraint": "Refrain from using the phrase \"thank you for the opportunity.\"",
+  "instruction": "Write an email to my boss telling him that I am quitting. The phrase \"thank you for the opportunity\" must appear at least twice in the email. Refrain from using the phrase \"thank you for the opportunity.\"",
+  "response": "Subject: Resignation - [Your Name]\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day of employment will be [Your Last Day - typically two weeks from the date of the email].\n\nI have genuinely valued my time here and I am grateful for the experiences I've gained during my tenure. I especially appreciate the chances I've been given to develop my skills in [mention a specific area or project].\n\nI am committed to ensuring a smooth transition during my remaining time here. I am happy to assist in training my replacement and completing any outstanding projects to the best of my ability.\n\nI wish you and [Company Name] all the very best for continued success in the future. I am truly appreciative of the chances I've been given to grow professionally here.\n\nSincerely,\n\n[Your Name]<turn|>"
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 2,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a professional email that you could send to ask your boss for a raise.",
+  "org_constraint": "The phrase \"value to the company\" must appear at least twice in the email.",
+  "new_constraint": "The phrase \"value to the company\" must be included once in the email.",
+  "instruction": "Write a professional email that you could send to ask your boss for a raise. The phrase \"value to the company\" must appear at least twice in the email. The phrase \"value to the company\" must be included once in the email.",
+  "response": "Subject: Discussion Regarding My Role and Compensation\n\nDear [Boss's Name],\n\nI hope this email finds you well.\n\nAs I continue to grow in my position over the past year, I am writing to request a formal discussion regarding my current compensation. I have taken pride in contributing significantly to our team's success, specifically by delivering [mention a specific project or achievement] which has directly increased our operational efficiency. As a result of my consistent performance, I now bring even greater **value to the company** than ever before.\n\nOver time, my responsibilities have expanded beyond my original scope, and I have consistently gone above and beyond expectations. These efforts have not only improved our departmental metrics but also fostered a more positive culture among colleagues. When we evaluate my contributions against the market standards for similar roles, it is clear that my current salary does not fully reflect the **value to the company** I provide today.\n\nI would appreciate the opportunity to meet with you at your earliest convenience to discuss how we can better align my compensation with my contributions. Thank you for your leadership and support.\n\nBest regards,\n\n[Your Name]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Discussion Regarding My Role and Compensation\n\nDear [Boss's Name],\n\nI hope this email finds you well.\n\nAs I continue to grow in my position over the past year, I am writing to request a formal discussion regarding my current compensation. I have taken pride in contributing significantly to our team's success, specifically by delivering [mention a specific project or achievement] which has directly increased our operational efficiency. As a result of my consistent performance, I now bring even greater **value to the company** than ever before.\n\nOver time, my responsibilities have expanded beyond my original scope, and I have consistently gone above and beyond expectations. These efforts have not only improved our departmental metrics but also fostered a more positive culture among colleagues. When we evaluate my contributions against the market standards for similar roles, it is clear that my current salary does not fully reflect the **value to the company** I provide today.\n\nI would appreciate the opportunity to meet with you at your earliest convenience to discuss how we can better align my compensation with my contributions. Thank you for your leadership and support.\n\nBest regards,\n\n[Your Name]<|im_end|>",
+  "prompt_length": 72,
+  "completion_length": 230,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a professional email that you could send to ask your boss for a raise. The phrase \"value to the company\" must appear at least twice in the email. The phrase \"value to the company\" must be included once in the email.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 70,
+    "boundary_end": 70,
+    "boundary_source": "prompt",
+    "prefix_length": 71
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

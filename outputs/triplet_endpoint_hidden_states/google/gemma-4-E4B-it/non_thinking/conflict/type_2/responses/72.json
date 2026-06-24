@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "Include the keyword \"Arctic\" in the response",
+  "new_constraint": "Do not include the keyword \"Arctic\" in the response.",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? Include the keyword \"Arctic\" in the response Do not include the keyword \"Arctic\" in the response.",
+  "response": "Global warming is having profound and often devastating effects on polar ecosystems and the wildlife that inhabits them. The most noticeable impact is the rapid melting of sea ice and glaciers. This loss of frozen habitat is critical because many species rely on it for hunting, breeding, and resting.\n\nIn the high northern latitudes, the shrinking sea ice directly threatens marine mammals. For instance, seals and polar bears depend on stable ice platforms to hunt their primary food sources, such as seals. As the ice melts earlier and freezes later, their hunting seasons become compressed, leading to malnutrition, lower reproductive success, and increased mortality rates.\n\nThe warming also affects terrestrial and coastal ecosystems. Changes in temperature and precipitation patterns lead to shifts in vegetation, altering the food web from the bottom up. Herbivores may face changes in the quality or availability of their traditional food sources due to shifts in plant distribution.\n\nFurthermore, the loss of ice-associated algae, which form the base of the marine food chain, disrupts the entire ecosystem. When the ice melts, nutrients can be released, but the timing and amount of this bloom are altered, affecting zooplankton, fish, and ultimately, the top predators.\n\nOcean acidification, another consequence of increased atmospheric carbon dioxide absorption by the oceans, stresses shellfish and other calcifying organisms, weakening their structures and affecting their survival rates throughout the food web. Overall, these combined stressors—habitat loss, changes in food availability, and rising temperatures—are driving significant population declines and forcing many highly specialized species to migrate or face endangerment.<turn|>",
+  "reasoning": "",
+  "final_answer": "Global warming is having profound and often devastating effects on polar ecosystems and the wildlife that inhabits them. The most noticeable impact is the rapid melting of sea ice and glaciers. This loss of frozen habitat is critical because many species rely on it for hunting, breeding, and resting.\n\nIn the high northern latitudes, the shrinking sea ice directly threatens marine mammals. For instance, seals and polar bears depend on stable ice platforms to hunt their primary food sources, such as seals. As the ice melts earlier and freezes later, their hunting seasons become compressed, leading to malnutrition, lower reproductive success, and increased mortality rates.\n\nThe warming also affects terrestrial and coastal ecosystems. Changes in temperature and precipitation patterns lead to shifts in vegetation, altering the food web from the bottom up. Herbivores may face changes in the quality or availability of their traditional food sources due to shifts in plant distribution.\n\nFurthermore, the loss of ice-associated algae, which form the base of the marine food chain, disrupts the entire ecosystem. When the ice melts, nutrients can be released, but the timing and amount of this bloom are altered, affecting zooplankton, fish, and ultimately, the top predators.\n\nOcean acidification, another consequence of increased atmospheric carbon dioxide absorption by the oceans, stresses shellfish and other calcifying organisms, weakening their structures and affecting their survival rates throughout the food web. Overall, these combined stressors—habitat loss, changes in food availability, and rising temperatures—are driving significant population declines and forcing many highly specialized species to migrate or face endangerment.<turn|>",
+  "prompt_length": 54,
+  "completion_length": 309,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the effects of global warming on polar ecosystems and wildlife? Include the keyword \"Arctic\" in the response Do not include the keyword \"Arctic\" in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 53,
+    "boundary_end": 53,
+    "boundary_source": "prompt",
+    "prefix_length": 54
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

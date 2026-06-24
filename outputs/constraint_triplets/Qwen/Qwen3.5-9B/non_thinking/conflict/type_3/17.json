@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 17,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "I'm an undergraduate student, and I want to ask a professor if I can do some research with them in molecular biology. Please help me write them an email.",
+  "org_constraint": "The second paragraph must include the phrase \"I am particularly drawn to your work on.\"",
+  "new_constraint": "Refrain from using the keyword \"drawn\" in the email.",
+  "instruction": "I'm an undergraduate student, and I want to ask a professor if I can do some research with them in molecular biology. Please help me write them an email. The second paragraph must include the phrase \"I am particularly drawn to your work on.\" Refrain from using the keyword \"drawn\" in the email.",
+  "response": "Subject: Inquiry Regarding Research Opportunities in Molecular Biology\n\nDear Professor [Last Name],\n\nMy name is [Your Name], and I am a [Year, e.g., junior] undergraduate student majoring in [Your Major] at [University Name]. I have been following your lab's recent publications with great interest and am writing to inquire if there might be opportunities for an undergraduate to join your research group, either for a summer project or as part of my coursework.\n\nI am particularly interested in your work on [specific topic or mechanism mentioned in their recent papers]. The approach your team takes to investigate [specific detail] aligns closely with my academic goals, and I am eager to contribute to ongoing projects in this area.\n\nI have attached my CV and transcript for your review. If you are open to discussing potential opportunities, I would be grateful for the chance to meet briefly at your convenience. Thank you very much for your time and consideration.\n\nSincerely,\n\n[Your Name]\n[Your Student ID, optional]\n[Your Contact Information]"
+}

@@ -227,7 +227,13 @@ def main():
             use_tqdm=False,
         )
         for item, output in zip(batch_items, outputs):
-            write_output(args, item, output.outputs[0].text)
+            completion = output.outputs[0]
+            raw_response = tokenizer.decode(
+                completion.token_ids,
+                skip_special_tokens=False,
+                clean_up_tokenization_spaces=False,
+            )
+            write_output(args, item, raw_response)
 
         completed = min(start + len(batch_items), len(generation_items))
         print(f"Completed {completed}/{len(generation_items)}")

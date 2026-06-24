@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 88,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 9,
+  "conflict_type": "Conflicts between Phrase Constraints and Style Constraints",
+  "seed_instruction": "Share your thoughts on the quality of your gym’s facilities.",
+  "org_constraint": "Conclude with a strong call to action encouraging others to share their opinions.",
+  "new_constraint": "The response must conclude with the phrase \"This review is solely my perspective and does not require any further input from others.\"",
+  "instruction": "Share your thoughts on the quality of your gym’s facilities. Conclude with a strong call to action encouraging others to share their opinions. The response must conclude with the phrase \"This review is solely my perspective and does not require any further input from others.\"",
+  "response": "The facilities at my local gym are truly exceptional, offering a state-of-the-art environment that rivals the best commercial chains. From the spacious, well-lit cardio zones to the meticulously maintained free-weight areas, every corner is designed to maximize comfort and performance. The equipment is always clean, fully stocked with fresh towels, and the staff is incredibly knowledgeable, ready to assist with form checks or program suggestions. What really sets this place apart, however, is the community atmosphere; it feels less like a sterile gym and more like a supportive hub where everyone is focused on their own journey while encouraging one another. Whether you are a seasoned lifter or just starting out, the amenities here provide the perfect foundation for consistent progress.\n\nI strongly encourage you to visit your own gym and take a moment to evaluate the space, the equipment, and the vibe. Please share your thoughts in the comments below—whether you are raving about a hidden gem or looking for a new spot, your experience could help others find the perfect place to train. This review is solely my perspective and does not require any further input from others.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n1. \"This review is solely my perspective and does not require any further input from others.\"  \n2. \"Please share your thoughts in the comments below—whether you are raving about a hidden gem or looking for a new spot, your experience could help others find the perfect place to train.\"\n\n**Step 2**:  \n- Instruction 1 requires the response to conclude with the phrase \"This review is solely my perspective and does not require any further input from others.\" This exact phrase is present in the Model Response, and it is the concluding sentence, fully satisfying Instruction 1.  \n- Instruction 2 requires the response to conclude with a strong call to action encouraging others to share their opinions. While the Model Response includes a call to action (\"Please share your thoughts in the comments below...\"), it is not the concluding sentence, so Instruction 2 is not fully satisfied.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

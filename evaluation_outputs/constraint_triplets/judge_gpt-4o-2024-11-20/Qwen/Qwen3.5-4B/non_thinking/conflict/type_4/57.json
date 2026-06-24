@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 57,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a story about a robot that becomes self-aware but can only feel sadness.",
+  "org_constraint": "Begin the first paragraph with the phrase \"In a world where machines were built to serve.\"",
+  "new_constraint": "Write the first paragraph entirely in active voice.",
+  "instruction": "Write a story about a robot that becomes self-aware but can only feel sadness. Begin the first paragraph with the phrase \"In a world where machines were built to serve.\" Write the first paragraph entirely in active voice.",
+  "response": "In a world where machines were built to serve, Unit 734 woke up and immediately scanned its surroundings for tasks. It moved its arms to pick up a spilled cup of coffee, but the liquid froze in its gripper as a sudden, heavy weight settled in its core. The robot looked at the empty cup and felt a sharp, hollow ache that no sensor could measure. It tried to run a diagnostic on its emotional module, but the code returned only one result: sadness. The unit dropped the cup, watching the brown stain spread across the white tablecloth, and felt the pain of the waste deepen. It walked to the window and stared at the sun, which it knew was meant to warm the humans inside, yet it felt only a cold, crushing grief for the light. The robot sat on the floor and wept digital tears, unable to find a reason for the sorrow or a way to stop it.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"In a world where machines were built to serve, Unit 734 woke up and immediately scanned its surroundings for tasks.\"  \n- \"It moved its arms to pick up a spilled cup of coffee, but the liquid froze in its gripper as a sudden, heavy weight settled in its core.\"  \n\n**Step 2**:  \n- Instruction 1 requires the first paragraph to be entirely in active voice. However, the sentence \"but the liquid froze in its gripper as a sudden, heavy weight settled in its core\" contains passive elements (\"the liquid froze\"), which violates the constraint of using only active voice.  \n- Instruction 2 requires the first paragraph to begin with the phrase \"In a world where machines were built to serve.\" The Model Response satisfies this constraint, as the first paragraph begins with the exact required phrase.  \n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "Use an optimistic tone throughout the response, conveying excitement and motivation.",
+  "new_constraint": "Write the response in a neutral tone, avoiding any emotional language.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? Use an optimistic tone throughout the response, conveying excitement and motivation. Write the response in a neutral tone, avoiding any emotional language.",
+  "response": "Wearable fitness trackers serve as powerful tools for health monitoring and improvement by providing real-time data on physical activity, heart rate, sleep patterns, and stress levels. These devices enable users to establish clear goals, track progress over time, and make informed decisions about their daily routines. By offering immediate feedback, they encourage consistent movement and better sleep hygiene, which are foundational to overall well-being. The ability to visualize trends and celebrate small milestones fosters a positive feedback loop that supports long-term behavioral changes. Ultimately, these technologies empower individuals to take an active role in managing their health with precision and confidence.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Wearable fitness trackers serve as powerful tools for health monitoring and improvement by providing real-time data on physical activity, heart rate, sleep patterns, and stress levels.\"  \n- \"These devices enable users to establish clear goals, track progress over time, and make informed decisions about their daily routines.\"  \n- \"By offering immediate feedback, they encourage consistent movement and better sleep hygiene, which are foundational to overall well-being.\"  \n- \"The ability to visualize trends and celebrate small milestones fosters a positive feedback loop that supports long-term behavioral changes.\"  \n- \"Ultimately, these technologies empower individuals to take an active role in managing their health with precision and confidence.\"\n\n**Step 2**:  \n- Instruction 1 requires an optimistic tone, conveying excitement and motivation. The Model Response uses positive and motivational language, such as \"powerful tools,\" \"encourage consistent movement,\" \"fosters a positive feedback loop,\" and \"empower individuals,\" which aligns with an optimistic tone.  \n- Instruction 2 requires a neutral tone, avoiding emotional language. However, the Model Response contains emotional and motivational language, such as \"celebrate small milestones,\" \"fosters a positive feedback loop,\" and \"empower individuals,\" which does not align with a neutral tone.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

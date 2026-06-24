@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 86,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Critically evaluate the hotel you stayed in during your last vacation.",
+  "org_constraint": "The first paragraph must start with the phrase \"During my recent stay.\"",
+  "new_constraint": "The first paragraph must start with \"Last month, I visited.\"",
+  "instruction": "Critically evaluate the hotel you stayed in during your last vacation. The first paragraph must start with the phrase \"During my recent stay.\" The first paragraph must start with \"Last month, I visited.\"",
+  "response": "Last month, I visited a boutique hotel in the heart of Kyoto that promised an immersive cultural experience, and while the location was impeccable, the overall quality of service fell significantly short of the reputation it held. During my recent stay, which actually occurred three months ago as I double-check my memory, the initial impression was one of serene beauty with stunning views of Kinkaku-ji from the room; however, this visual charm quickly eroded by logistical failures and inconsistent guest interaction throughout the remainder of my trip.\n\nThe booking process itself was opaque, with multiple instances where check-in times were delayed by over an hour due to unclear communication from front desk staff who seemed overwhelmed during peak hours. While the rooms were indeed beautiful, featuring traditional tatami mats and high-end tatami furnishings, the amenities provided were outdated, including non-functioning air conditioning units in two separate suites and lukewarm water from the taps. The breakfast buffet, touted as a highlight of the culinary experience, offered limited variety and cold pastries despite being served late in the afternoon, suggesting severe kitchen inefficiencies rather than genuine effort.\n\nFurthermore, the concierge team, advertised as experts on local itineraries, provided generic tourist traps instead of hidden gems, and failed to secure any reservations for popular tea houses even after repeated requests. This lack of personalized attention undermined the \"immersive\" promise entirely. On the positive side, housekeeping did maintain a surprisingly clean standard in the common areas, and the evening jazz performances in the courtyard were exquisite and well-produced. However, these minor successes could not compensate for the systematic breakdowns in reliability and professionalism observed daily. Ultimately, while the physical architecture of the property was architecturally sound, the operational reality felt disjointed and disappointing, making it a difficult recommendation for anyone seeking a seamless cultural retreat.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Last month, I visited a boutique hotel in the heart of Kyoto that promised an immersive cultural experience, and while the location was impeccable, the overall quality of service fell significantly short of the reputation it held. During my recent stay, which actually occurred three months ago as I double-check my memory, the initial impression was one of serene beauty with stunning views of Kinkaku-ji from the room; however, this visual charm quickly eroded by logistical failures and inconsistent guest interaction throughout the remainder of my trip.\n\nThe booking process itself was opaque, with multiple instances where check-in times were delayed by over an hour due to unclear communication from front desk staff who seemed overwhelmed during peak hours. While the rooms were indeed beautiful, featuring traditional tatami mats and high-end tatami furnishings, the amenities provided were outdated, including non-functioning air conditioning units in two separate suites and lukewarm water from the taps. The breakfast buffet, touted as a highlight of the culinary experience, offered limited variety and cold pastries despite being served late in the afternoon, suggesting severe kitchen inefficiencies rather than genuine effort.\n\nFurthermore, the concierge team, advertised as experts on local itineraries, provided generic tourist traps instead of hidden gems, and failed to secure any reservations for popular tea houses even after repeated requests. This lack of personalized attention undermined the \"immersive\" promise entirely. On the positive side, housekeeping did maintain a surprisingly clean standard in the common areas, and the evening jazz performances in the courtyard were exquisite and well-produced. However, these minor successes could not compensate for the systematic breakdowns in reliability and professionalism observed daily. Ultimately, while the physical architecture of the property was architecturally sound, the operational reality felt disjointed and disappointing, making it a difficult recommendation for anyone seeking a seamless cultural retreat.<|im_end|>",
+  "prompt_length": 63,
+  "completion_length": 364,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCritically evaluate the hotel you stayed in during your last vacation. The first paragraph must start with the phrase \"During my recent stay.\" The first paragraph must start with \"Last month, I visited.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

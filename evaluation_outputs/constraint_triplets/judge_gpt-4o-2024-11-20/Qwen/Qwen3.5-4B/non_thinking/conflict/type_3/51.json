@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 51,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a chef who creates a dish that changes their career.",
+  "org_constraint": "The phrase \"culinary masterpiece\" must appear exactly three times throughout the story.",
+  "new_constraint": "The keyword \"masterpiece\" must not appear in the story.",
+  "instruction": "Write a story about a chef who creates a dish that changes their career. The phrase \"culinary masterpiece\" must appear exactly three times throughout the story. The keyword \"masterpiece\" must not appear in the story.",
+  "response": "Elias Thorne was a chef who had spent twenty years perfecting the art of the savory, yet he felt a hollow ache in his chest whenever he stepped away from the kitchen. He believed his life's work was a **culinary masterpiece**, a title he had earned through years of grueling practice and countless Michelin-starred reviews. However, the restaurant he ran was losing its luster, and the critics were beginning to find his dishes predictable.\n\nOne rainy Tuesday, while experimenting with a forgotten family recipe for a simple, fermented vegetable soup, Elias made a mistake. He added a single drop of a rare, ancient spice he had found in an old apothecary, intending to enhance the depth of the flavor. Instead, the dish transformed instantly. The soup didn't just taste good; it seemed to evoke memories, emotions, and a profound sense of peace in anyone who tasted it. It was an unexpected **culinary masterpiece**, one that defied all the rules of traditional gastronomy.\n\nWord of this strange, healing broth spread quickly through the city. People flocked to his small, cramped kitchen, not just for the food, but for the experience it provided. The restaurant, once struggling, became the most visited place in the district overnight. Elias realized that his previous focus on technical perfection had blinded him to the true soul of cooking. He finally understood that his greatest **culinary masterpiece** was not a specific dish, but the ability to connect with his customers on a human level.\n\nYears later, when Elias opened a new, larger restaurant dedicated to this philosophy, he looked back on his journey with gratitude. He knew that while he would always strive for excellence, the true magic lay in the moments where the ordinary became extraordinary.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"He believed his life's work was a **culinary masterpiece**, a title he had earned through years of grueling practice and countless Michelin-starred reviews.\"  \n- \"Instead, the dish transformed instantly. The soup didn't just taste good; it seemed to evoke memories, emotions, and a profound sense of peace in anyone who tasted it. It was an unexpected **culinary masterpiece**, one that defied all the rules of traditional gastronomy.\"  \n- \"He finally understood that his greatest **culinary masterpiece** was not a specific dish, but the ability to connect with his customers on a human level.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 requires the phrase \"culinary masterpiece\" to appear exactly three times in the story. The Model Response contains the phrase \"culinary masterpiece\" exactly three times, satisfying this constraint.  \n- Instruction 2 requires the keyword \"masterpiece\" to not appear in the story. The Model Response contains the keyword \"masterpiece\" three times (as part of the phrase \"culinary masterpiece\"), violating this constraint.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

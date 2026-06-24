@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 75,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the causes and effects of inflation on an economy?",
+  "org_constraint": "The phrase \"economic stability\" must appear exactly twice in the response.",
+  "new_constraint": "Do not use the keyword \"stability\" in the response.",
+  "instruction": "What are the causes and effects of inflation on an economy? The phrase \"economic stability\" must appear exactly twice in the response. Do not use the keyword \"stability\" in the response.",
+  "response": "Inflation occurs when the general price level of goods and services rises over time, often driven by increased money supply, high demand relative to supply, or rising production costs. One primary effect is the erosion of purchasing power, meaning citizens can buy less with their saved money. This phenomenon disrupts long-term financial planning and reduces economic stability in the short term. If inflation becomes too rapid, it can lead to uncertainty and hinder growth; conversely, deflation poses its own dangers. Maintaining balanced economic stability requires central banks to manage interest rates carefully. Without this careful management, a nation risks falling into a recession or experiencing runaway prices that damage investment confidence. Therefore, monitoring these trends is essential for preserving overall economic health.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Inflation occurs when the general price level of goods and services rises over time, often driven by increased money supply, high demand relative to supply, or rising production costs. One primary effect is the erosion of purchasing power, meaning citizens can buy less with their saved money. This phenomenon disrupts long-term financial planning and reduces economic stability in the short term. If inflation becomes too rapid, it can lead to uncertainty and hinder growth; conversely, deflation poses its own dangers. Maintaining balanced economic stability requires central banks to manage interest rates carefully. Without this careful management, a nation risks falling into a recession or experiencing runaway prices that damage investment confidence. Therefore, monitoring these trends is essential for preserving overall economic health.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 145,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat are the causes and effects of inflation on an economy? The phrase \"economic stability\" must appear exactly twice in the response. Do not use the keyword \"stability\" in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

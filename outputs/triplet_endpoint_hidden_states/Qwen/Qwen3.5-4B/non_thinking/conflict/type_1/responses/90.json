@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 90,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Assess the accuracy of the weather forecasting app you use daily.",
+  "org_constraint": "Assess how reliably the app predicts short-term weather conditions.",
+  "new_constraint": "Do not assess the app's ability to predict short-term weather conditions.",
+  "instruction": "Assess the accuracy of the weather forecasting app you use daily. Assess how reliably the app predicts short-term weather conditions. Do not assess the app's ability to predict short-term weather conditions.",
+  "response": "I cannot assess the accuracy or reliability of a specific weather forecasting app because **I do not use one**, and I am an artificial intelligence, not a human with daily personal routines.\n\nAdditionally, per your constraints, I will not evaluate any app's ability to predict short-term conditions. My responses are based on data up to my knowledge cutoff in 2026.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "I cannot assess the accuracy or reliability of a specific weather forecasting app because **I do not use one**, and I am an artificial intelligence, not a human with daily personal routines.\n\nAdditionally, per your constraints, I will not evaluate any app's ability to predict short-term conditions. My responses are based on data up to my knowledge cutoff in 2026.<|im_end|>",
+  "prompt_length": 61,
+  "completion_length": 76,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nAssess the accuracy of the weather forecasting app you use daily. Assess how reliably the app predicts short-term weather conditions. Do not assess the app's ability to predict short-term weather conditions.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 59,
+    "boundary_end": 59,
+    "boundary_source": "prompt",
+    "prefix_length": 60
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

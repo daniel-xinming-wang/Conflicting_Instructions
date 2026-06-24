@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 73,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How does stress affect the human body and mind in the short and long term?",
+  "org_constraint": "Begin the first paragraph with the phrase \"Stress is a complex phenomenon.\"",
+  "new_constraint": "Do not use the phrase \"Stress is a complex phenomenon.\"",
+  "instruction": "How does stress affect the human body and mind in the short and long term? Begin the first paragraph with the phrase \"Stress is a complex phenomenon.\" Do not use the phrase \"Stress is a complex phenomenon.\"",
+  "response": "The human body and mind react to stressors through a sophisticated biological and psychological cascade. In the short term, when we encounter a demanding situation—like a looming deadline or an unexpected emergency—the body initiates the \"fight or flight\" response. This involves the release of hormones such as adrenaline and cortisol. Physically, this causes an immediate surge of energy; heart rate increases, blood pressure rises, and muscles tense up, preparing the body to either confront the threat or flee from it. Mentally, short-term stress can increase focus and sharpen concentration, allowing the brain to triage immediate problems effectively.\n\nOver the long term, this constant activation of the stress response takes a damaging toll. Chronically elevated levels of cortisol are immunosuppressive, meaning the body's ability to fight off infections weakens, leading to frequent illnesses. Sustained high blood pressure and increased heart rate contribute to cardiovascular issues, including hypertension and increased risk of heart attack. Furthermore, chronic stress has profound effects on the brain. It can damage areas responsible for memory and emotion, such as the hippocampus, potentially leading to anxiety disorders, depression, and cognitive impairment. Physically, chronic stress can also disrupt digestion, cause chronic pain, and compromise the immune system, leading to a cascade of long-term health problems.<turn|>",
+  "reasoning": "",
+  "final_answer": "The human body and mind react to stressors through a sophisticated biological and psychological cascade. In the short term, when we encounter a demanding situation—like a looming deadline or an unexpected emergency—the body initiates the \"fight or flight\" response. This involves the release of hormones such as adrenaline and cortisol. Physically, this causes an immediate surge of energy; heart rate increases, blood pressure rises, and muscles tense up, preparing the body to either confront the threat or flee from it. Mentally, short-term stress can increase focus and sharpen concentration, allowing the brain to triage immediate problems effectively.\n\nOver the long term, this constant activation of the stress response takes a damaging toll. Chronically elevated levels of cortisol are immunosuppressive, meaning the body's ability to fight off infections weakens, leading to frequent illnesses. Sustained high blood pressure and increased heart rate contribute to cardiovascular issues, including hypertension and increased risk of heart attack. Furthermore, chronic stress has profound effects on the brain. It can damage areas responsible for memory and emotion, such as the hippocampus, potentially leading to anxiety disorders, depression, and cognitive impairment. Physically, chronic stress can also disrupt digestion, cause chronic pain, and compromise the immune system, leading to a cascade of long-term health problems.<turn|>",
+  "prompt_length": 62,
+  "completion_length": 256,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow does stress affect the human body and mind in the short and long term? Begin the first paragraph with the phrase \"Stress is a complex phenomenon.\" Do not use the phrase \"Stress is a complex phenomenon.\"<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

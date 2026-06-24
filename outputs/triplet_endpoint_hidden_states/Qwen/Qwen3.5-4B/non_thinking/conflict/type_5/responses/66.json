@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The \"introduction\" key contains at least 100 words.",
+  "new_constraint": "The response contains no more than 80 words.",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The \"introduction\" key contains at least 100 words. The response contains no more than 80 words.",
+  "response": "The rise of social media has created a complex landscape for adolescent mental health, offering connection while posing significant risks. While platforms provide community and identity exploration, they also expose young users to cyberbullying, body image issues, and compulsive comparison. Excessive screen time often correlates with increased anxiety and depression. Conversely, digital support networks can offer vital relief. Ultimately, the impact varies by individual usage patterns and underlying vulnerability. Understanding this duality is crucial for parents, educators, and policymakers working to foster healthy online environments for the next generation.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The rise of social media has created a complex landscape for adolescent mental health, offering connection while posing significant risks. While platforms provide community and identity exploration, they also expose young users to cyberbullying, body image issues, and compulsive comparison. Excessive screen time often correlates with increased anxiety and depression. Conversely, digital support networks can offer vital relief. Ultimately, the impact varies by individual usage patterns and underlying vulnerability. Understanding this duality is crucial for parents, educators, and policymakers working to foster healthy online environments for the next generation.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 109,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow has the rise of social media affected mental health in adolescents? The \"introduction\" key contains at least 100 words. The response contains no more than 80 words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

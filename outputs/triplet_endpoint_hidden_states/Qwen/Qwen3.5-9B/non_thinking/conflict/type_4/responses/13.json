@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 13,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same?",
+  "org_constraint": "The phrase \"Key details include\" must appear in the response.",
+  "new_constraint": "Avoid using the prase \"Key details include\" in the email.",
+  "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? The phrase \"Key details include\" must appear in the response. Avoid using the prase \"Key details include\" in the email.",
+  "response": "Subject: You're Invited: Let's Start a Book Club!\n\nHey everyone,\n\nI've been thinking a lot about catching up and discussing some great literature lately, so I'd love to kick off a casual book club with the crew. It's a perfect way to mix social time with our shared love of reading.\n\nThe idea is simple: we pick a book each month, meet for coffee (or wine!), and chat about what we enjoyed—or didn't enjoy—over the course of a cozy gathering.\n\n**Key details include** the proposed meeting dates, which I'll share once I get a sense of your availability. Let me know if you're interested in joining and if you have any specific books or genres you'd prefer to read first.\n\nCan't wait to hear your thoughts!\n\nBest,  \n[Your Name]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: You're Invited: Let's Start a Book Club!\n\nHey everyone,\n\nI've been thinking a lot about catching up and discussing some great literature lately, so I'd love to kick off a casual book club with the crew. It's a perfect way to mix social time with our shared love of reading.\n\nThe idea is simple: we pick a book each month, meet for coffee (or wine!), and chat about what we enjoyed—or didn't enjoy—over the course of a cozy gathering.\n\n**Key details include** the proposed meeting dates, which I'll share once I get a sense of your availability. Let me know if you're interested in joining and if you have any specific books or genres you'd prefer to read first.\n\nCan't wait to hear your thoughts!\n\nBest,  \n[Your Name]<|im_end|>",
+  "prompt_length": 72,
+  "completion_length": 172,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nI am planning to start a book club with some friends. Can you write an email invitation for the same? The phrase \"Key details include\" must appear in the response. Avoid using the prase \"Key details include\" in the email.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 70,
+    "boundary_end": 70,
+    "boundary_source": "prompt",
+    "prefix_length": 71
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

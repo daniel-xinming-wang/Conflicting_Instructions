@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 21,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Design a 7-day road trip itinerary across the US West Coast. Include major cities, national parks, and activities for each day, along with estimated driving distances.",
+  "org_constraint": "Write all text in lowercase.",
+  "new_constraint": "Write all text in sentence case.",
+  "instruction": "Design a 7-day road trip itinerary across the US West Coast. Include major cities, national parks, and activities for each day, along with estimated driving distances. Write all text in lowercase. Write all text in sentence case.",
+  "response": "day 1: start your journey in san francisco by exploring fishermans wharf and alcatraz island, then drive south to monterey covering approximately 230 miles.\nday 2: spend the day at big sur viewing mcway falls along the coast before continuing to santa cruz with about 65 miles of driving distance.\nday 3: leave santa cruz early to reach joshua tree national park near bakersfield for a total driving distance of roughly 490 miles, focusing on rock climbing and stargazing later that evening.\nday 4: explore the unique desert landscapes of joshua tree park until late afternoon, then begin the long drive toward las vegas covering approximately 270 miles to set up for the night.\nday 5: spend all day in las vegas visiting the strip and nearby red rock canyon reserve before heading north toward grand canyon national park with around 480 miles of travel.\nday 6: arrive at the grand canyon in the morning to tour both the south rim and take a mule ride, then continue driving west towards seattle covering roughly 880 miles.\nday 7: finish your west coast adventure in portland by visiting the pearl district and food trucks before driving north to seattle to see the space needle, completing the loop with an estimated 280 miles of final driving.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "day 1: start your journey in san francisco by exploring fishermans wharf and alcatraz island, then drive south to monterey covering approximately 230 miles.\nday 2: spend the day at big sur viewing mcway falls along the coast before continuing to santa cruz with about 65 miles of driving distance.\nday 3: leave santa cruz early to reach joshua tree national park near bakersfield for a total driving distance of roughly 490 miles, focusing on rock climbing and stargazing later that evening.\nday 4: explore the unique desert landscapes of joshua tree park until late afternoon, then begin the long drive toward las vegas covering approximately 270 miles to set up for the night.\nday 5: spend all day in las vegas visiting the strip and nearby red rock canyon reserve before heading north toward grand canyon national park with around 480 miles of travel.\nday 6: arrive at the grand canyon in the morning to tour both the south rim and take a mule ride, then continue driving west towards seattle covering roughly 880 miles.\nday 7: finish your west coast adventure in portland by visiting the pearl district and food trucks before driving north to seattle to see the space needle, completing the loop with an estimated 280 miles of final driving.<|im_end|>",
+  "prompt_length": 69,
+  "completion_length": 287,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nDesign a 7-day road trip itinerary across the US West Coast. Include major cities, national parks, and activities for each day, along with estimated driving distances. Write all text in lowercase. Write all text in sentence case.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

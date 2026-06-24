@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "The second sentence must include the keyword \"cozy.\"",
+  "new_constraint": "Use the word \"comfortable\" in place of \"cozy\" in your review.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. The second sentence must include the keyword \"cozy.\" Use the word \"comfortable\" in place of \"cozy\" in your review.",
+  "response": "The newly opened espresso bar down the street has become an instant favorite for local workers. While I was looking for a **comfortable** atmosphere to unwind in, I found the seating to be particularly inviting after a long shift at the gym. The baristas are friendly and efficient, crafting lattes that seem to come from the heart rather than just following a recipe. Whether you need a quick caffeine fix or a place to work on your taxes, this spot offers everything you are looking for without feeling rushed.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The newly opened espresso bar down the street has become an instant favorite for local workers. While I was looking for a **comfortable** atmosphere to unwind in, I found the seating to be particularly inviting after a long shift at the gym. The baristas are friendly and efficient, crafting lattes that seem to come from the heart rather than just following a recipe. Whether you need a quick caffeine fix or a place to work on your taxes, this spot offers everything you are looking for without feeling rushed.<|im_end|>",
+  "prompt_length": 65,
+  "completion_length": 102,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your review of a newly opened coffee shop in your area. The second sentence must include the keyword \"cozy.\" Use the word \"comfortable\" in place of \"cozy\" in your review.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

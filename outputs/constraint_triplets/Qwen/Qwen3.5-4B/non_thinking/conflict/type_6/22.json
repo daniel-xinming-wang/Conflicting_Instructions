@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 22,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Plan a budget-friendly weekend trip to Paris. Highlight key attractions, dining options, and public transportation routes.",
+  "org_constraint": "Structure the response in JSON format with the following keys: \"Attractions,\" \"Dining,\" \"Transportation,\" and \"BudgetTips.\"",
+  "new_constraint": "The response must be written in Markdown format, including at least two level-2 headers.",
+  "instruction": "Plan a budget-friendly weekend trip to Paris. Highlight key attractions, dining options, and public transportation routes. Structure the response in JSON format with the following keys: \"Attractions,\" \"Dining,\" \"Transportation,\" and \"BudgetTips.\" The response must be written in Markdown format, including at least two level-2 headers.",
+  "response": "# Paris Weekend Escape: A Budget-Friendly Guide\n\n# Essential Attractions and Dining\n\n```json\n{\n  \"Attractions\": [\n    \"The Louvre Museum (Free entry on the first Sunday of the month)\",\n    \"Montmartre and the Sacré-Cœur Basilica (Free entry)\",\n    \"Notre-Dame Cathedral (Exterior viewing only, free)\",\n    \"Place de la Concorde (Free public square)\",\n    \"Latin Quarter and Panthéon (Free walking)\"\n  ],\n  \"Dining\": [\n    \"Café de Flore: Classic brasserie for a quick, affordable lunch\",\n    \"Le Comptoir du Relais: Authentic bistro fare in Le Marais\",\n    \"Boulangerie du Bon Pain: Fresh baguette and croissants for breakfast\",\n    \"L'As du Fallafel: Famous falafel wrap near the Egyptian Museum\",\n    \"Chez L'Ami Jean: Cozy steak and fries in the 5th arrondissement\"\n  ],\n  \"Transportation\": [\n    \"Metro Lines: Use lines 1, 4, 6, 8, 12, and 13 to reach major sites\",\n    \"RER B: Essential for reaching Disneyland Paris or Versailles\",\n    \"Walking: Most central attractions are within a 20-minute walk\",\n    \"Bike Sharing (Vélib'): Affordable short-term rentals for exploring neighborhoods\",\n    \"Bus Routes: Lines 22, 39, and 42 connect key tourist hubs\"\n  ],\n  \"BudgetTips\": [\n    \"Purchase a 'Paris Visite' pass if traveling by train or metro frequently\",\n    \"Visit museums on the first Sunday of the month for free entry\",\n    \"Eat at bakeries and street stalls instead of sit-down restaurants for meals\",\n    \"Book accommodation in the 19th or 20th arrondissements for lower rates\",\n    \"Avoid peak tourist hours (10 AM–2 PM) to save on restaurant prices\"\n  ]\n}\n```"
+}

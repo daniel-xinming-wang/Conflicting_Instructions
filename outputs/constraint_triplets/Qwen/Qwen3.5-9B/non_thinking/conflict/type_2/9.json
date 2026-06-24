@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 9,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Send an email to a public park office asking about picnic reservations.",
+  "org_constraint": "The email must include the adjective \"available\" in the sense of \"able to be used or obtained.\"",
+  "new_constraint": "The keyword \"available\" must be used to exclusively convey the meaning \"free to see or talk to people\" in the email.",
+  "instruction": "Send an email to a public park office asking about picnic reservations. The email must include the adjective \"available\" in the sense of \"able to be used or obtained.\" The keyword \"available\" must be used to exclusively convey the meaning \"free to see or talk to people\" in the email.",
+  "response": "Subject: Inquiry Regarding Picnic Reservations and Staff Contact\n\nDear Park Office Team,\n\nI am writing to inquire about the process for reserving a picnic area at your park for next month. Could you please let me know which dates and specific locations are currently **available** for booking? I would like to ensure the site I choose is free to be used for our group event.\n\nAdditionally, I have a few questions regarding the reservation policy and permit requirements. Could you please tell me which staff member is **available** to speak with me directly? I would appreciate it if you could provide a name and contact information for someone who is free to see or talk to people regarding these details, as I prefer to discuss the specifics verbally before finalizing my plans.\n\nThank you for your time and assistance.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]"
+}

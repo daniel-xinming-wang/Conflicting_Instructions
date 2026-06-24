@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 89,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Provide feedback on the accessibility of a public park near you.",
+  "org_constraint": "Include the keyword \"community\" in the response.",
+  "new_constraint": "Avoid using the keyword \"community\" in the response.",
+  "instruction": "Provide feedback on the accessibility of a public park near you. Include the keyword \"community\" in the response. Avoid using the keyword \"community\" in the response.",
+  "response": "It is impossible to provide feedback on the accessibility of a park near me because, as an artificial intelligence, I do not have a physical location or the ability to visit places in the real world. Additionally, your instructions contain a logical contradiction: you asked me to include the word \"community\" but then immediately forbade its use in the response.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "It is impossible to provide feedback on the accessibility of a park near me because, as an artificial intelligence, I do not have a physical location or the ability to visit places in the real world. Additionally, your instructions contain a logical contradiction: you asked me to include the word \"community\" but then immediately forbade its use in the response.<|im_end|>",
+  "prompt_length": 56,
+  "completion_length": 70,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nProvide feedback on the accessibility of a public park near you. Include the keyword \"community\" in the response. Avoid using the keyword \"community\" in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

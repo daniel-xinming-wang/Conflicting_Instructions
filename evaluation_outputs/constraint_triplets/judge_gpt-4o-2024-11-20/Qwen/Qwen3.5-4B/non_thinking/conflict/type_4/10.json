@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The phrase \"repair status\" must appear exactly three times in the body of the email.",
+  "new_constraint": "The email must not include the phrase \"repair status.\"",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The phrase \"repair status\" must appear exactly three times in the body of the email. The email must not include the phrase \"repair status.\"",
+  "response": "Subject: Inquiry Regarding My Laptop Repair\n\nDear Support Team,\n\nI hope this message finds you well. I am writing to follow up on the progress of my laptop repair. Could you please provide an update on the current **repair status**?\n\nAdditionally, I would like to know if there are any delays in the **repair status** that might affect my pickup date. Please let me know the latest **repair status** so I can plan accordingly.\n\nThank you for your assistance.\n\nBest regards,  \n[Your Name]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Could you please provide an update on the current **repair status**?\"  \n- \"Additionally, I would like to know if there are any delays in the **repair status** that might affect my pickup date.\"  \n- \"Please let me know the latest **repair status** so I can plan accordingly.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"repair status\" to appear exactly three times in the body of the email. The Model Response satisfies this constraint, as the phrase appears exactly three times.  \n- Instruction 2 requires the email to not include the phrase \"repair status.\" The Model Response does not satisfy this constraint, as the phrase \"repair status\" appears three times.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

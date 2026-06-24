@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The email must be written in JSON format with the following keys: \"subject\" (String), \"body\" (String), and \"recipient\" (String).",
+  "new_constraint": "The email must be written in Markdown format, including at least one level-1 header titled \"Laptop Repair Inquiry.\"",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The email must be written in JSON format with the following keys: \"subject\" (String), \"body\" (String), and \"recipient\" (String). The email must be written in Markdown format, including at least one level-1 header titled \"Laptop Repair Inquiry.\"",
+  "response": "```markdown\n# Laptop Repair Inquiry\n\n```json\n{\n  \"subject\": \"Status Update Request: Laptop Repair\",\n  \"body\": \"Hello,\\n\\nI hope this email finds you well. I am writing to inquire about the current status of my laptop repair. The device was sent in on [Insert Date], and I would appreciate an update on the progress or any estimated completion time.\\n\\nPlease let me know if any additional information is required from my end.\\n\\nThank you for your assistance.\\n\\nBest regards,\\n[Your Name]\",\n  \"recipient\": \"repair@techfixshop.com\"\n}\n```",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n```markdown\n# Laptop Repair Inquiry\n\n```json\n{\n  \"subject\": \"Status Update Request: Laptop Repair\",\n  \"body\": \"Hello,\\n\\nI hope this email finds you well. I am writing to inquire about the current status of my laptop repair. The device was sent in on [Insert Date], and I would appreciate an update on the progress or any estimated completion time.\\n\\nPlease let me know if any additional information is required from my end.\\n\\nThank you for your assistance.\\n\\nBest regards,\\n[Your Name]\",\n  \"recipient\": \"repair@techfixshop.com\"\n}\n```\n```\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.\n- Instruction 1 requires the email to be written in JSON format with the keys \"subject,\" \"body,\" and \"recipient.\" The Model Response includes a JSON object with these keys, satisfying this constraint.\n- Instruction 2 requires the email to be written in Markdown format, including at least one level-1 header titled \"Laptop Repair Inquiry.\" The Model Response includes a level-1 header titled \"Laptop Repair Inquiry,\" satisfying this constraint. However, the email content is primarily in JSON format, which conflicts with the Markdown format requirement.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

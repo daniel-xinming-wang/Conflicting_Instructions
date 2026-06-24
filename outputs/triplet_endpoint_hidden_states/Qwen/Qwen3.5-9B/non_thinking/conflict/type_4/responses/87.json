@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Begin your review with the phrase \"Stepping into this coffee shop.\"",
+  "new_constraint": "Do not begin your review with the phrase \"Stepping into this coffee shop.\"",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Begin your review with the phrase \"Stepping into this coffee shop.\" Do not begin your review with the phrase \"Stepping into this coffee shop.\"",
+  "response": "Stepping into this coffee shop feels like entering a cozy sanctuary away from the busy street outside. The moment I push open the door, a warm, inviting aroma of freshly roasted beans fills the air, immediately putting me at ease. The interior is tastefully decorated with exposed brick walls, hanging green plants, and soft amber lighting that creates a perfect ambiance for quiet reading or catching up with friends.\n\nI opted for their signature lavender oat milk latte, which was crafted with precision; the foam was velvety smooth, and the floral notes were just right—subtle enough to complement the rich espresso without overpowering it. Beyond the beverages, the staff were exceptionally friendly and knowledgeable about their rotating selection of single-origin beans. Sitting by the window on a sunny afternoon, watching the city go by while sipping something made with such care, truly captures the essence of what a great local café should be. It's a hidden gem worth making part of your weekly routine.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Stepping into this coffee shop feels like entering a cozy sanctuary away from the busy street outside. The moment I push open the door, a warm, inviting aroma of freshly roasted beans fills the air, immediately putting me at ease. The interior is tastefully decorated with exposed brick walls, hanging green plants, and soft amber lighting that creates a perfect ambiance for quiet reading or catching up with friends.\n\nI opted for their signature lavender oat milk latte, which was crafted with precision; the foam was velvety smooth, and the floral notes were just right—subtle enough to complement the rich espresso without overpowering it. Beyond the beverages, the staff were exceptionally friendly and knowledgeable about their rotating selection of single-origin beans. Sitting by the window on a sunny afternoon, watching the city go by while sipping something made with such care, truly captures the essence of what a great local café should be. It's a hidden gem worth making part of your weekly routine.<|im_end|>",
+  "prompt_length": 66,
+  "completion_length": 195,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your review of a newly opened coffee shop in your area. Begin your review with the phrase \"Stepping into this coffee shop.\" Do not begin your review with the phrase \"Stepping into this coffee shop.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 64,
+    "boundary_end": 64,
+    "boundary_source": "prompt",
+    "prefix_length": 65
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

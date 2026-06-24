@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "Include the keyword \"Golden Age\" in the response.",
+  "new_constraint": "Do not include the keyword \"Golden Age\" in the response.",
+  "instruction": "What happened when the Tang dynasty of China was in power? Include the keyword \"Golden Age\" in the response. Do not include the keyword \"Golden Age\" in the response.",
+  "response": "When the Tang dynasty of China was in power, it experienced a period of remarkable prosperity, cultural flourishing, and political expansion. Known for its open borders, advancements in literature (such as the poetry of Li Bai and Du Fu), and architectural achievements like the Great Wall of China's restoration, the era is frequently celebrated as a **Golden Age** by historians and scholars worldwide. This time defined an era where the Silk Road thrived, facilitating trade and cultural exchange between East and West, while Chang'an served as one of the most vibrant and cosmopolitan cities in the known world.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "When the Tang dynasty of China was in power, it experienced a period of remarkable prosperity, cultural flourishing, and political expansion. Known for its open borders, advancements in literature (such as the poetry of Li Bai and Du Fu), and architectural achievements like the Great Wall of China's restoration, the era is frequently celebrated as a **Golden Age** by historians and scholars worldwide. This time defined an era where the Silk Road thrived, facilitating trade and cultural exchange between East and West, while Chang'an served as one of the most vibrant and cosmopolitan cities in the known world.<|im_end|>",
+  "prompt_length": 59,
+  "completion_length": 117,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat happened when the Tang dynasty of China was in power? Include the keyword \"Golden Age\" in the response. Do not include the keyword \"Golden Age\" in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 57,
+    "boundary_end": 57,
+    "boundary_source": "prompt",
+    "prefix_length": 58
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

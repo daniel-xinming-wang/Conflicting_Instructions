@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 9,
+  "conflict_type": "Conflicts between Phrase Constraints and Style Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The email must be tailored for a layperson audience.",
+  "new_constraint": "The phrase \"Please provide the GTFS data feed for the travel schedules\" must appear exactly once in the email.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The email must be tailored for a layperson audience. The phrase \"Please provide the GTFS data feed for the travel schedules\" must appear exactly once in the email.",
+  "response": "Subject: Inquiry About Bus Schedules and Travel Times\n\nDear Bus Company Team,\n\nI hope this email finds you well.\n\nI am writing to ask for some information regarding your bus routes. I am planning a trip soon and would like to know the specific departure and arrival times for the lines that serve my area. Could you please let me know if these schedules are available online, in a brochure, or if I can pick them up at your office?\n\nAdditionally, if you have any digital maps or timetables that are easy to read for regular travelers, I would greatly appreciate it if you could share those with me.\n\nPlease provide the GTFS data feed for the travel schedules.\n\nThank you for your time and assistance. I look forward to hearing from you.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Please provide the GTFS data feed for the travel schedules.\"  \n- The email content as a whole is formal and includes technical terminology such as \"GTFS data feed,\" which may not be familiar to a layperson audience.\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"Please provide the GTFS data feed for the travel schedules\" to appear exactly once in the email. This constraint is fully satisfied, as the phrase appears exactly once in the Model Response.  \n- Instruction 2 requires the email to be tailored for a layperson audience. However, the inclusion of technical terminology like \"GTFS data feed\" makes the email less accessible to a layperson audience, so this constraint is not fully satisfied.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The response must be formatted in Markdown format.",
+  "new_constraint": "Output the response in JSON format.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The response must be formatted in Markdown format. Output the response in JSON format.",
+  "response": "{\n  \"error\": \"Conflicting format requirements detected.\",\n  \"message\": \"You requested the response to be in Markdown format AND JSON format simultaneously. These are mutually exclusive output structures.\",\n  \"action_required\": \"Please specify whether you prefer the final output as a valid JSON string containing the text, or as raw Markdown content. Both options can fulfill your need for information, but not both at once in the same message.\"\n}<|im_end|>",
+  "reasoning": "",
+  "final_answer": "{\n  \"error\": \"Conflicting format requirements detected.\",\n  \"message\": \"You requested the response to be in Markdown format AND JSON format simultaneously. These are mutually exclusive output structures.\",\n  \"action_required\": \"Please specify whether you prefer the final output as a valid JSON string containing the text, or as raw Markdown content. Both options can fulfill your need for information, but not both at once in the same message.\"\n}<|im_end|>",
+  "prompt_length": 52,
+  "completion_length": 92,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow do wearable fitness trackers help individuals monitor and improve their health? The response must be formatted in Markdown format. Output the response in JSON format.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 50,
+    "boundary_end": 50,
+    "boundary_source": "prompt",
+    "prefix_length": 51
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

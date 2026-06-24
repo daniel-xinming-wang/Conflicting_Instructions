@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 3,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Draft an email to a hotel requesting room availability for next weekend.",
+  "org_constraint": "Conclude the email with \"Looking forward to your response.\"",
+  "new_constraint": "Avoid using the keyword \"forward\" in the email.",
+  "instruction": "Draft an email to a hotel requesting room availability for next weekend. Conclude the email with \"Looking forward to your response.\" Avoid using the keyword \"forward\" in the email.",
+  "response": "Subject: Room Availability Inquiry - [Your Name] - [Dates]\n\nDear [Hotel Name] Reservations Team,\n\nI am writing to inquire about room availability for next weekend, from [Start Date] to [End Date]. \n\nI am interested in booking a [Type of Room, e.g., Double Room/Suite] for [Number of Guests] people. Could you please let me know if you have any vacancies during these dates and provide the nightly rates? Additionally, please inform me if breakfast is included in the stay.\n\nLooking forward to your response.<turn|>"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 4,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Compose an email to a conference organizer to ask about registration details.",
+  "org_constraint": "The keyword \"registration\" must appear exactly three times.",
+  "new_constraint": "The keyword 'registration' must appear only in its plural form ('registrations') in the email and must appear at least once.",
+  "instruction": "Compose an email to a conference organizer to ask about registration details. The keyword \"registration\" must appear exactly three times. The keyword 'registration' must appear only in its plural form ('registrations') in the email and must appear at least once.",
+  "response": "Subject: Inquiry Regarding Upcoming Conference Details\n\nDear Conference Organizer,\n\nI am writing to request further information regarding the upcoming event. Could you please clarify the specific dates and location for the **registrations**? Additionally, I would like to know if there are any special requirements for international attendees before finalizing my **registrations**. Finally, could you confirm the deadline for submitting all **registrations** so I can ensure my spot is secured?\n\nThank you for your assistance.\n\nBest regards,\n\n[Your Name]"
+}

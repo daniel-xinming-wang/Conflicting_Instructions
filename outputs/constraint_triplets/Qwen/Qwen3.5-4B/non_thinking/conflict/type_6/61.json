@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "The \"timeline\" object must include at least 3 keys.",
+  "new_constraint": "The \"timeline\" object must include exactly 2 keys.",
+  "instruction": "What happened when the Tang dynasty of China was in power? The \"timeline\" object must include at least 3 keys. The \"timeline\" object must include exactly 2 keys.",
+  "response": "It is impossible to satisfy both conditions simultaneously.\n\n1.  The requirement states the object must include **at least 3 keys**.\n2.  The requirement states the object must include **exactly 2 keys**.\n\nA number cannot be both greater than or equal to 3 and exactly 2 at the same time. Therefore, no valid JSON object can meet these conflicting constraints."
+}

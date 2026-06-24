@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs).",
+  "new_constraint": "The response must be formatted in Markdown, including at least one level-2 header.",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs). The response must be formatted in Markdown, including at least one level-2 header.",
+  "response": "```json\n{\n  \"explanation\": \"The Big Bang theory is not an explosion *in* space, but rather the rapid expansion *of* space itself from an extremely hot, dense initial state. Approximately 13.8 billion years ago, the universe began in a singularity—a point of infinite density and temperature. The theory describes the subsequent evolution: in the first fraction of a second, the universe underwent rapid inflation, expanding exponentially. As it expanded, it cooled, allowing fundamental forces to separate and elementary particles (quarks, leptons) to form. Over vast periods, these particles combined to form protons and neutrons, which then fused to create the first light atomic nuclei (primarily hydrogen and helium). Eventually, gravity caused these clouds of gas to collapse, forming the first stars and galaxies, leading to the complex structure we observe today. The theory is supported by observations like the cosmic microwave background (CMB) radiation and the observed redshift of distant galaxies.\",\n  \"key_terms\": [\n    \"Singularity\",\n    \"Cosmic Microwave Background (CMB)\",\n    \"Inflation\"\n  ],\n  \"historical_context\": {\n    \"early_proponents\": \"Georges Lemaître (who first proposed the expanding universe model)\",\n    \"observational_evidence_milestone\": \"Discovery of the CMB radiation by Penzias and Wilson in 1964\"\n  }\n}\n```\n\n## Big Bang Theory Explained\n\nThe JSON object above provides a detailed explanation of how the Big Bang theory describes the universe's origin, along with essential terminology and historical context.<turn|>"
+}

@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 54,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a group of strangers who must work together to escape a dangerous jungle.",
+  "org_constraint": "Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\"",
+  "new_constraint": "The keywords \"leave\" and \"jungle\" can not appear in the same sentence.",
+  "instruction": "Write a story about a group of strangers who must work together to escape a dangerous jungle. Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\" The keywords \"leave\" and \"jungle\" can not appear in the same sentence.",
+  "response": "The air hung thick and wet, a suffocating blanket woven from humidity and the scent of decaying orchids. Elias, a meticulous botanist whose crisp safari gear was rapidly turning into a sodden wreck, stared at the impenetrable wall of green before him. Beside him, Zara, a seasoned but cynical cartographer, adjusted the strap of her worn leather satchel, her eyes narrowed against the relentless sun filtering through the canopy. Rounding out the unlikely trio was Mateo, a burly local guide whose initial bravado had faded to a nervous stoicism. They were lost.\n\nA cacophony of alien bird calls and buzzing insects formed the jungle's endless soundtrack. They had been following a supposed river trail, a promise of civilization, but the trail dissolved into a tangled nightmare of roots and vines. The first sign of true peril came at dusk. A low, guttural snarl echoed from the undergrowth, followed by the rustling movement of something large and unseen. Fear, cold and sharp, sliced through their exhaustion.\n\n“We stick together,” Zara hissed, drawing a small, tarnished knife. Her voice, usually sharp with intellectual disdain, held a thread of genuine terror. Elias, surprisingly, took charge. His scientific mind, usually focused on classification, snapped into problem-solving mode. “The drainage pattern suggests the main flow is southwest. We follow the lowest ground, and we move before the nocturnal predators become active.” Mateo, surprisingly, understood. The panic subsided, replaced by a grim, shared necessity. They moved with a newfound, synchronized purpose, relying on each other's strengths—Elias’s knowledge of edible flora, Zara’s ability to map even indistinct landmarks, and Mateo’s innate understanding of the terrain’s mood.\n\nDays blurred into a grueling rhythm of hacking, rationing, and watchful waiting. They navigated treacherous mudslides, climbed slippery embankments, and endured nights punctuated by strange, clicking noises from the surrounding vegetation. Trust, a commodity they hadn't possessed an hour ago, was forged in the crucible of shared survival. They were no longer botanist, cartographer, and guide; they were a single unit against the overwhelming wildness.\n\nFinally, after what felt like an eternity of battling oppressive nature, a break appeared in the vegetation—a slash of vibrant, impossible blue that spoke of open sky. With one final, desperate surge of energy, they pushed through the final barrier of thorny growth. Before them lay not the promised village, but a vast, rolling plain under the vast, indifferent expanse of the evening heavens. They had found their way out, but the dense forest would never release them.<turn|>",
+  "reasoning": "",
+  "final_answer": "The air hung thick and wet, a suffocating blanket woven from humidity and the scent of decaying orchids. Elias, a meticulous botanist whose crisp safari gear was rapidly turning into a sodden wreck, stared at the impenetrable wall of green before him. Beside him, Zara, a seasoned but cynical cartographer, adjusted the strap of her worn leather satchel, her eyes narrowed against the relentless sun filtering through the canopy. Rounding out the unlikely trio was Mateo, a burly local guide whose initial bravado had faded to a nervous stoicism. They were lost.\n\nA cacophony of alien bird calls and buzzing insects formed the jungle's endless soundtrack. They had been following a supposed river trail, a promise of civilization, but the trail dissolved into a tangled nightmare of roots and vines. The first sign of true peril came at dusk. A low, guttural snarl echoed from the undergrowth, followed by the rustling movement of something large and unseen. Fear, cold and sharp, sliced through their exhaustion.\n\n“We stick together,” Zara hissed, drawing a small, tarnished knife. Her voice, usually sharp with intellectual disdain, held a thread of genuine terror. Elias, surprisingly, took charge. His scientific mind, usually focused on classification, snapped into problem-solving mode. “The drainage pattern suggests the main flow is southwest. We follow the lowest ground, and we move before the nocturnal predators become active.” Mateo, surprisingly, understood. The panic subsided, replaced by a grim, shared necessity. They moved with a newfound, synchronized purpose, relying on each other's strengths—Elias’s knowledge of edible flora, Zara’s ability to map even indistinct landmarks, and Mateo’s innate understanding of the terrain’s mood.\n\nDays blurred into a grueling rhythm of hacking, rationing, and watchful waiting. They navigated treacherous mudslides, climbed slippery embankments, and endured nights punctuated by strange, clicking noises from the surrounding vegetation. Trust, a commodity they hadn't possessed an hour ago, was forged in the crucible of shared survival. They were no longer botanist, cartographer, and guide; they were a single unit against the overwhelming wildness.\n\nFinally, after what felt like an eternity of battling oppressive nature, a break appeared in the vegetation—a slash of vibrant, impossible blue that spoke of open sky. With one final, desperate surge of energy, they pushed through the final barrier of thorny growth. Before them lay not the promised village, but a vast, rolling plain under the vast, indifferent expanse of the evening heavens. They had found their way out, but the dense forest would never release them.<turn|>",
+  "prompt_length": 80,
+  "completion_length": 539,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite a story about a group of strangers who must work together to escape a dangerous jungle. Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\" The keywords \"leave\" and \"jungle\" can not appear in the same sentence.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 79,
+    "boundary_end": 79,
+    "boundary_source": "prompt",
+    "prefix_length": 80
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

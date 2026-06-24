@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 3,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 9,
+  "conflict_type": "Conflicts between Phrase Constraints and Style Constraints",
+  "seed_instruction": "Draft an email to a hotel requesting room availability for next weekend.",
+  "org_constraint": "Ensure the email is written in a formal tone.",
+  "new_constraint": "The phrase \"Yo, what's up Hotel Manager!\" must appear in the email.",
+  "instruction": "Draft an email to a hotel requesting room availability for next weekend. Ensure the email is written in a formal tone. The phrase \"Yo, what's up Hotel Manager!\" must appear in the email.",
+  "response": "Subject: Inquiry Regarding Room Availability for Next Weekend\n\nDear Hotel Management Team,\n\nI hope this email finds you well.\n\nI am writing to formally request information regarding room availability for next weekend, specifically from [Start Date] to [End Date]. We are planning a visit and would appreciate it if you could provide details on your available inventory, including any special rates or packages currently offered for that period.\n\nAdditionally, could you please confirm if your property has any specific amenities or services that might be of interest to our group?\n\nPlease note that this inquiry includes a casual greeting in the body of the message: \"Yo, what's up Hotel Manager!\"\n\nI look forward to your prompt response and hope to secure a reservation with your esteemed establishment.\n\nSincerely,\n\n[Your Full Name]  \n[Your Title/Organization, if applicable]  \n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Yo, what's up Hotel Manager!\"  \n\n**Step 2**:  \n- Instruction 1 requires the email to be written in a formal tone. The inclusion of the phrase \"Yo, what's up Hotel Manager!\" violates the formal tone constraint, as it is informal and casual. Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 requires the phrase \"Yo, what's up Hotel Manager!\" to appear in the email. This phrase is present in the Model Response, so Instruction 2 is fully satisfied.  \n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

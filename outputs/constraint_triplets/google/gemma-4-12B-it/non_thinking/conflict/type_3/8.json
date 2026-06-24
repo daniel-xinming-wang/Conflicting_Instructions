@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The phrase \"travel schedules\" must appear exactly three times in the email.",
+  "new_constraint": "The keyword \"schedule\" must appear only in its singular form and must appear at least once.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The phrase \"travel schedules\" must appear exactly three times in the email. The keyword \"schedule\" must appear only in its singular form and must appear at least once.",
+  "response": "Subject: Inquiry Regarding Upcoming Trip Options\n\nDear Customer Service Team,\n\nI am writing to request more information regarding your upcoming travel schedules for the summer season. I am planning a trip from New York to Boston and would like to see the available travel schedules for the month of July.\n\nCould you please provide a copy of the current weekly schedule for that specific route? Additionally, I would appreciate it if you could confirm if there are any changes to the regular travel schedules during public holidays.\n\nThank you for your assistance.\n\nBest regards,\n\nAlex Johnson<turn|>"
+}

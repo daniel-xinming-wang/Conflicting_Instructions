@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "The \"explanation\" must contain exactly 100 words.",
+  "new_constraint": "The \"explanation\" must contain at most 50 words.",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? The \"explanation\" must contain exactly 100 words. The \"explanation\" must contain at most 50 words.",
+  "response": "The Big Bang theory posits that the universe began in an extremely hot, dense state. About 13.8 billion years ago, this singularity rapidly expanded in an event often called the Big Bang. This expansion is not an explosion *in* space, but an expansion *of* space itself. As it cooled, fundamental particles formed, which eventually coalesced into atoms, stars, and galaxies. Cosmic microwave background radiation provides key evidence supporting this model of an ever-expanding cosmos originating from a single, energetic beginning.<turn|>",
+  "reasoning": "",
+  "final_answer": "The Big Bang theory posits that the universe began in an extremely hot, dense state. About 13.8 billion years ago, this singularity rapidly expanded in an event often called the Big Bang. This expansion is not an explosion *in* space, but an expansion *of* space itself. As it cooled, fundamental particles formed, which eventually coalesced into atoms, stars, and galaxies. Cosmic microwave background radiation provides key evidence supporting this model of an ever-expanding cosmos originating from a single, energetic beginning.<turn|>",
+  "prompt_length": 59,
+  "completion_length": 105,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow does the Big Bang theory explain the origin of the universe? The \"explanation\" must contain exactly 100 words. The \"explanation\" must contain at most 50 words.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 58,
+    "boundary_end": 58,
+    "boundary_source": "prompt",
+    "prefix_length": 59
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 18,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create an email to a professor introducing yourself and your goals.",
+  "org_constraint": "The email must consist of exactly three paragraphs, and must include at least five uppercase words.",
+  "new_constraint": "Each paragraph contains no more than one uppercase word.",
+  "instruction": "Create an email to a professor introducing yourself and your goals. The email must consist of exactly three paragraphs, and must include at least five uppercase words. Each paragraph contains no more than one uppercase word.",
+  "response": "Dear Professor, my name is Alex and I am writing to you today.\n\nI am a freshman interested in studying Computer Science for the next four years.\n\nThank you for your time and guidance during this important academic year.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Dear Professor, my name is Alex and I am writing to you today.\n\nI am a freshman interested in studying Computer Science for the next four years.\n\nThank you for your time and guidance during this important academic year.<|im_end|>",
+  "prompt_length": 63,
+  "completion_length": 46,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCreate an email to a professor introducing yourself and your goals. The email must consist of exactly three paragraphs, and must include at least five uppercase words. Each paragraph contains no more than one uppercase word.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

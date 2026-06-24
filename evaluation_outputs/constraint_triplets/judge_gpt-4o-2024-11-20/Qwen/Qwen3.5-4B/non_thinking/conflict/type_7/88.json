@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 88,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Share your thoughts on the quality of your gym’s facilities.",
+  "org_constraint": "Conclude with a strong call to action encouraging others to share their opinions.",
+  "new_constraint": "Conclude with a neutral statement summarizing your thoughts without encouraging further action.",
+  "instruction": "Share your thoughts on the quality of your gym’s facilities. Conclude with a strong call to action encouraging others to share their opinions. Conclude with a neutral statement summarizing your thoughts without encouraging further action.",
+  "response": "The facilities at my local gym are undeniably impressive, featuring state-of-the-art cardio equipment, spacious free-weight areas, and a modern sauna that keeps the atmosphere inviting. The cleanliness is consistently maintained, and the lighting in the weight room creates an excellent environment for focused training. However, during peak hours, the locker room can feel a bit crowded, and the soundproofing between the heavy lifting zone and the yoga studio could use some improvement to ensure a better experience for all members.\n\nIf you have visited a gym recently, please share your thoughts on their amenities, cleanliness, and overall atmosphere in the comments below.\n\nThe overall assessment of the gym's quality is a mix of high-end equipment and solid maintenance, balanced by minor operational bottlenecks during busy times.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"If you have visited a gym recently, please share your thoughts on their amenities, cleanliness, and overall atmosphere in the comments below.\"  \n- \"The overall assessment of the gym's quality is a mix of high-end equipment and solid maintenance, balanced by minor operational bottlenecks during busy times.\"\n\n**Step 2**:  \n- Instruction 1 requires a neutral statement summarizing thoughts without encouraging further action. The sentence \"The overall assessment of the gym's quality is a mix of high-end equipment and solid maintenance, balanced by minor operational bottlenecks during busy times.\" satisfies the neutral summary requirement. However, the sentence \"If you have visited a gym recently, please share your thoughts on their amenities, cleanliness, and overall atmosphere in the comments below.\" violates the constraint of not encouraging further action.  \n- Instruction 2 requires a strong call to action encouraging others to share their opinions. The sentence \"If you have visited a gym recently, please share your thoughts on their amenities, cleanliness, and overall atmosphere in the comments below.\" satisfies this requirement.  \n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

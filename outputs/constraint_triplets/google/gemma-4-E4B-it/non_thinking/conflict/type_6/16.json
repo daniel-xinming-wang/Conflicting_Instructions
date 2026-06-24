@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 16,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a response email to your employee, approving their requested vacation days.",
+  "org_constraint": "The email must include one hyperlink formatted as [text](URL).",
+  "new_constraint": "Avoid including hyperlink in the email.",
+  "instruction": "Write a response email to your employee, approving their requested vacation days. The email must include one hyperlink formatted as [text](URL). Avoid including hyperlink in the email.",
+  "response": "Subject: Vacation Request Approved - [Employee Name]\n\nHi [Employee Name],\n\nThis email is to confirm that your vacation request for [Start Date] to [End Date] has been approved.\n\nPlease ensure all your urgent tasks are completed or properly handed off to [Colleague's Name] before you leave. We've updated the team calendar to reflect your time off.\n\nIf you need any further information regarding your time off or need to review the company's vacation policy, you can find it here: [Company Vacation Policy Link]\n\nEnjoy your time off!\n\nBest regards,\n\n[Your Name]\n[Your Title]<turn|>"
+}

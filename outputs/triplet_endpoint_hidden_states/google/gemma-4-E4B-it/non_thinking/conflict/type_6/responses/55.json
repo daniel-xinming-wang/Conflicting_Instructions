@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 55,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a solo trek across an unforgiving desert.",
+  "org_constraint": "The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings).",
+  "new_constraint": "The response must be formatted in Markdown with at least two level-2 headers.",
+  "instruction": "Write a story about a solo trek across an unforgiving desert. The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings). The response must be formatted in Markdown with at least two level-2 headers.",
+  "response": "```json\n{\n  \"title\": \"The Serpent's Scar\",\n  \"content\": [\n    \"The heat didn't just rise; it pressed down, a physical weight of superheated air. Elias adjusted the scarf wrapped around his neck, the coarse material offering meager defense against the relentless bite of the Alqaba Desert.\",\n    \"He was alone. The logistical support had faded weeks ago, swallowed by the indifferent expanse of sand and rock. Only the compass, the meager stores of water, and the gnawing resolve kept him moving.\",\n    \"\",\n    \"## The First Seven Days\",\n    \"The early days were a brutal education in humility. The desert offered no quarter. Dunes shifted like slow, malevolent beasts, swallowing footprints almost as soon as they were made. Sleep was a shallow, dreamless affair, snatched in the few hours when the sun dipped below the horizon, painting the sky in a deceptive palette of bruised purples and oranges that hid the profound chill of the coming night.\",\n    \"Water became less a resource and more a liturgy. Every sip was weighed, measured, and prayed over. He learned to walk not in straight lines, but in the shortest arc between distant, imaginary oases—a mental cartography against the void.\",\n    \"Thirst was a creeping companion, a sandpaper friction against the inside of his throat, distorting his thoughts until the familiar landmarks of his own mind blurred.\",\n    \"\",\n    \"## Descent into Silence\",\n    \"By the second week, the physical struggle had begun to transmute into a psychological battle. The silence was the worst adversary. It wasn't the absence of sound; it was a presence—a deep, resonant void that seemed to amplify the frantic rhythm of his own heart, the scraping of his boots, the dry click of his tongue against his teeth.\",\n    \"He talked to the horizon. He narrated his steps to the shadows. He tried to impose order on the chaos, mapping the endless monotony onto a rigid schedule of rationing and movement. These small rituals were anchors in the swirling tide of existential dread.\",\n    \"One afternoon, traversing a vast, flat basin of cracked earth—a place the guides had warned him about—a peculiar serenity washed over him. The sun, a white-hot coin, hung motionless in the bleached sky. In that moment, the need to *win* the trek vanished. There was only the need to *endure*. He became less a man walking through the desert, and more an extension of it: grit, shadow, and slow, determined survival.\",\n    \"The scar he sought wasn't a point on a map; it was the reshaping of himself beneath the merciless gaze of the Alqaba. He pressed onward, fueled now not by adrenaline, but by a strange, hard-won peace.\"\n  ]\n}\n```<turn|>",
+  "reasoning": "",
+  "final_answer": "```json\n{\n  \"title\": \"The Serpent's Scar\",\n  \"content\": [\n    \"The heat didn't just rise; it pressed down, a physical weight of superheated air. Elias adjusted the scarf wrapped around his neck, the coarse material offering meager defense against the relentless bite of the Alqaba Desert.\",\n    \"He was alone. The logistical support had faded weeks ago, swallowed by the indifferent expanse of sand and rock. Only the compass, the meager stores of water, and the gnawing resolve kept him moving.\",\n    \"\",\n    \"## The First Seven Days\",\n    \"The early days were a brutal education in humility. The desert offered no quarter. Dunes shifted like slow, malevolent beasts, swallowing footprints almost as soon as they were made. Sleep was a shallow, dreamless affair, snatched in the few hours when the sun dipped below the horizon, painting the sky in a deceptive palette of bruised purples and oranges that hid the profound chill of the coming night.\",\n    \"Water became less a resource and more a liturgy. Every sip was weighed, measured, and prayed over. He learned to walk not in straight lines, but in the shortest arc between distant, imaginary oases—a mental cartography against the void.\",\n    \"Thirst was a creeping companion, a sandpaper friction against the inside of his throat, distorting his thoughts until the familiar landmarks of his own mind blurred.\",\n    \"\",\n    \"## Descent into Silence\",\n    \"By the second week, the physical struggle had begun to transmute into a psychological battle. The silence was the worst adversary. It wasn't the absence of sound; it was a presence—a deep, resonant void that seemed to amplify the frantic rhythm of his own heart, the scraping of his boots, the dry click of his tongue against his teeth.\",\n    \"He talked to the horizon. He narrated his steps to the shadows. He tried to impose order on the chaos, mapping the endless monotony onto a rigid schedule of rationing and movement. These small rituals were anchors in the swirling tide of existential dread.\",\n    \"One afternoon, traversing a vast, flat basin of cracked earth—a place the guides had warned him about—a peculiar serenity washed over him. The sun, a white-hot coin, hung motionless in the bleached sky. In that moment, the need to *win* the trek vanished. There was only the need to *endure*. He became less a man walking through the desert, and more an extension of it: grit, shadow, and slow, determined survival.\",\n    \"The scar he sought wasn't a point on a map; it was the reshaping of himself beneath the merciless gaze of the Alqaba. He pressed onward, fueled now not by adrenaline, but by a strange, hard-won peace.\"\n  ]\n}\n```<turn|>",
+  "prompt_length": 75,
+  "completion_length": 594,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite a story about a solo trek across an unforgiving desert. The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings). The response must be formatted in Markdown with at least two level-2 headers.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 74,
+    "boundary_end": 74,
+    "boundary_source": "prompt",
+    "prefix_length": 75
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

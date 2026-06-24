@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 13,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same?",
+  "org_constraint": "The phrase \"Key details include\" must appear in the response.",
+  "new_constraint": "The keyword \"detail\" must appear only in its singular form.",
+  "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? The phrase \"Key details include\" must appear in the response. The keyword \"detail\" must appear only in its singular form.",
+  "response": "Subject: You're Invited to Our New Book Club!\n\nHi everyone,\n\nI hope you're all doing well! I've been thinking a lot lately about how much we enjoy discussing books and sharing ideas, so I'd love to start a book club with our group of friends. It would be a wonderful way to connect, relax, and dive into some great stories together.\n\nThe first meeting will be casual, with no pressure to have read a specific book beforehand; we can just chat about what we've been enjoying recently.\n\nKey details include the date, time, and location of our first gathering, which will be shared in the next message. Please let me know if you're interested so I can finalize the plan.\n\nLooking forward to hearing from you!\n\nBest,  \n[Your Name]"
+}

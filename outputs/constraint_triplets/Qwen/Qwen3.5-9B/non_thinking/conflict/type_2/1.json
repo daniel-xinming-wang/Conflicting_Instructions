@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "The word \"resign\" must appear exactly three times, conveying the definition \"to voluntarily leave a job or position.\"",
+  "new_constraint": "Avoid using the keyword \"resign\" in the email.",
+  "instruction": "Write an email to my boss telling him that I am quitting. The word \"resign\" must appear exactly three times, conveying the definition \"to voluntarily leave a job or position.\" Avoid using the keyword \"resign\" in the email.",
+  "response": "Subject: Important Update Regarding My Employment\n\nDear [Boss's Name],\n\nI am writing to formally notify you that I will be voluntarily leaving my position with the company, effective [Date]. This decision marks the end of my tenure here, and I will no longer be employed in this role.\n\nWhile I have greatly valued my time with the team, I have decided to move on to a new opportunity. Please consider this my official notice to depart, as I will be stepping away from my duties. I want to ensure a smooth transition before I leave, so I am happy to assist with handing over my responsibilities.\n\nThank you for the opportunities I have had during my time here. I wish you and the company all the best in the future.\n\nSincerely,\n\n[Your Name]"
+}

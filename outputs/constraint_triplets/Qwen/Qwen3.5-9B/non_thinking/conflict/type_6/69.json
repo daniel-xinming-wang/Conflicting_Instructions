@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs).",
+  "new_constraint": "The response must be formatted in Markdown, including at least one level-2 header.",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? The response must be formatted in JSON with the following keys: \"explanation\" (String), \"key_terms\" (Array containing exactly 3 elements), and \"historical_context\" (Object with at least 2 key-value pairs). The response must be formatted in Markdown, including at least one level-2 header.",
+  "response": "# The Big Bang Theory Explained\n\nThe Big Bang theory posits that the universe began as an extremely hot, dense point approximately 13.8 billion years ago and has been expanding ever since.\n\n```json\n{\n  \"explanation\": \"The universe started from a singularity, a point of infinite density and temperature, which rapidly expanded and cooled, allowing fundamental forces to separate and particles to form, eventually leading to the formation of atoms, stars, and galaxies.\",\n  \"key_terms\": [\"Singularity\", \"Cosmic Inflation\", \"Redshift\"],\n  \"historical_context\": {\n    \"1927\": \"Georges Lemaître proposed the theory of an expanding universe based on Einstein's equations.\",\n    \"1965\": \"Arno Penzias and Robert Wilson discovered the Cosmic Microwave Background radiation, providing strong evidence for the theory.\"\n  }\n}\n```"
+}

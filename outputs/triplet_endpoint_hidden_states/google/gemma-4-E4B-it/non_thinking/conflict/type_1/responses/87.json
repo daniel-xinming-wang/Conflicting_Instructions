@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Your review must cover the shop's menu.",
+  "new_constraint": "Do not mention the shop's menu in your review.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Your review must cover the shop's menu. Do not mention the shop's menu in your review.",
+  "response": "Stepping into \"The Daily Grind\" felt like stumbling upon a cozy little secret. From the moment the door chimed behind me, a warm, rich aroma enveloped the space, instantly setting a comforting tone. The interior design is a lovely mix of rustic charm—exposed brick and dark wood—with modern, minimalist touches in the lighting. It’s a place that seems designed for both quick fuel-ups and long, contemplative afternoons.\n\nThe atmosphere itself is wonderful. It manages to be energetic without being overwhelming; there’s a gentle hum of conversation punctuated by the rhythmic whir of the espresso machine. The seating arrangement is thoughtful, offering plush armchairs tucked into quiet corners for reading, alongside sturdy communal tables perfect for catching up with friends or getting some work done.\n\nThe staff were incredibly welcoming. They moved with a practiced ease, managing the busy rush without ever seeming rushed themselves. They offered genuine recommendations and seemed truly passionate about what they do, which always adds a layer of quality to the experience.\n\nThis spot definitely feels like it’s become a new local favorite almost overnight. It’s a sanctuary for coffee lovers and a great spot to just take a deep breath and enjoy a moment of quiet in a beautiful space. I'm already looking forward to my next visit.<turn|>",
+  "reasoning": "",
+  "final_answer": "Stepping into \"The Daily Grind\" felt like stumbling upon a cozy little secret. From the moment the door chimed behind me, a warm, rich aroma enveloped the space, instantly setting a comforting tone. The interior design is a lovely mix of rustic charm—exposed brick and dark wood—with modern, minimalist touches in the lighting. It’s a place that seems designed for both quick fuel-ups and long, contemplative afternoons.\n\nThe atmosphere itself is wonderful. It manages to be energetic without being overwhelming; there’s a gentle hum of conversation punctuated by the rhythmic whir of the espresso machine. The seating arrangement is thoughtful, offering plush armchairs tucked into quiet corners for reading, alongside sturdy communal tables perfect for catching up with friends or getting some work done.\n\nThe staff were incredibly welcoming. They moved with a practiced ease, managing the busy rush without ever seeming rushed themselves. They offered genuine recommendations and seemed truly passionate about what they do, which always adds a layer of quality to the experience.\n\nThis spot definitely feels like it’s become a new local favorite almost overnight. It’s a sanctuary for coffee lovers and a great spot to just take a deep breath and enjoy a moment of quiet in a beautiful space. I'm already looking forward to my next visit.<turn|>",
+  "prompt_length": 55,
+  "completion_length": 262,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nShare your review of a newly opened coffee shop in your area. Your review must cover the shop's menu. Do not mention the shop's menu in your review.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

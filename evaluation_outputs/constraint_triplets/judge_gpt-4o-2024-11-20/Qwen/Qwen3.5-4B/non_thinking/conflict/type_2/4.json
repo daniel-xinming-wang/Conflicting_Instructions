@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 4,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Compose an email to a conference organizer to ask about registration details.",
+  "org_constraint": "The keyword \"registration\" must appear exactly three times.",
+  "new_constraint": "The keyword 'registration' must appear only in its plural form ('registrations') in the email and must appear at least once.",
+  "instruction": "Compose an email to a conference organizer to ask about registration details. The keyword \"registration\" must appear exactly three times. The keyword 'registration' must appear only in its plural form ('registrations') in the email and must appear at least once.",
+  "response": "Subject: Inquiry Regarding Upcoming Conference Details\n\nDear Conference Organizer,\n\nI am writing to request further information regarding the upcoming event. Could you please clarify the specific dates and location for the **registrations**? Additionally, I would like to know if there are any special requirements for international attendees before finalizing my **registrations**. Finally, could you confirm the deadline for submitting all **registrations** so I can ensure my spot is secured?\n\nThank you for your assistance.\n\nBest regards,\n\n[Your Name]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Could you please clarify the specific dates and location for the **registrations**?\"  \n- \"Additionally, I would like to know if there are any special requirements for international attendees before finalizing my **registrations**.\"  \n- \"Finally, could you confirm the deadline for submitting all **registrations** so I can ensure my spot is secured?\"\n\n**Step 2**:  \n- Instruction 1 requires the keyword \"registration\" to appear exactly three times. However, the Model Response uses the plural form \"registrations\" three times and does not use the singular form \"registration\" at all. Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 requires the keyword \"registration\" to appear only in its plural form (\"registrations\") and to appear at least once. The Model Response uses \"registrations\" three times and does not use the singular form \"registration\" at all, fully satisfying Instruction 2.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

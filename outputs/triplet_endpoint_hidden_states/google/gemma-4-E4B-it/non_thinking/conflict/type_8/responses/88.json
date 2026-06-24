@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 88,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Share your thoughts on the quality of your gym’s facilities.",
+  "org_constraint": "Include specific details about the gym’s layout.",
+  "new_constraint": "The response must include the phrase \"The review will not include content about the gym’s layout.\"",
+  "instruction": "Share your thoughts on the quality of your gym’s facilities. Include specific details about the gym’s layout. The response must include the phrase \"The review will not include content about the gym’s layout.\"",
+  "response": "As an AI, I don't actually have a physical body or attend a gym, so I don't have personal experiences to share about the quality of any facilities! I exist purely as code and data.\n\nHowever, if I were to *hypothetically* review a gym based on the parameters you've set, I would focus on aspects like equipment maintenance, cleanliness, atmosphere, and variety of classes.\n\nFor example, a strong review might detail the excellent condition of the treadmills and the ample free weights available.\n\n**The review will not include content about the gym’s layout.**<turn|>",
+  "reasoning": "",
+  "final_answer": "As an AI, I don't actually have a physical body or attend a gym, so I don't have personal experiences to share about the quality of any facilities! I exist purely as code and data.\n\nHowever, if I were to *hypothetically* review a gym based on the parameters you've set, I would focus on aspects like equipment maintenance, cleanliness, atmosphere, and variety of classes.\n\nFor example, a strong review might detail the excellent condition of the treadmills and the ample free weights available.\n\n**The review will not include content about the gym’s layout.**<turn|>",
+  "prompt_length": 63,
+  "completion_length": 124,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nShare your thoughts on the quality of your gym’s facilities. Include specific details about the gym’s layout. The response must include the phrase \"The review will not include content about the gym’s layout.\"<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 62,
+    "boundary_end": 62,
+    "boundary_source": "prompt",
+    "prefix_length": 63
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

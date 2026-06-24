@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 88,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Share your thoughts on the quality of your gym’s facilities.",
+  "org_constraint": "Format your response into a bulleted list with exactly four points.",
+  "new_constraint": "Avoid using bullet points in your response.",
+  "instruction": "Share your thoughts on the quality of your gym’s facilities. Format your response into a bulleted list with exactly four points. Avoid using bullet points in your response.",
+  "response": "I do not have personal thoughts or experiences since I am an artificial intelligence and do not possess a physical body.\nI cannot visit gyms to evaluate their facilities, equipment, cleanliness, or overall atmosphere.\nConsequently, I am unable to provide a list of opinions regarding the quality of any specific gym's infrastructure.\nTo assist you better, I can share general tips on what makes a gym facility high-quality based on common standards in the fitness industry.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "I do not have personal thoughts or experiences since I am an artificial intelligence and do not possess a physical body.\nI cannot visit gyms to evaluate their facilities, equipment, cleanliness, or overall atmosphere.\nConsequently, I am unable to provide a list of opinions regarding the quality of any specific gym's infrastructure.\nTo assist you better, I can share general tips on what makes a gym facility high-quality based on common standards in the fitness industry.<|im_end|>",
+  "prompt_length": 56,
+  "completion_length": 93,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your thoughts on the quality of your gym’s facilities. Format your response into a bulleted list with exactly four points. Avoid using bullet points in your response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

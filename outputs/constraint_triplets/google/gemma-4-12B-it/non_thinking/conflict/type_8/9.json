@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 9,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Send an email to a public park office asking about picnic reservations.",
+  "org_constraint": "The email must include the number of attendees.",
+  "new_constraint": "The email must include the phrase \"I will not disclose the number of attendees in the email.\"",
+  "instruction": "Send an email to a public park office asking about picnic reservations. The email must include the number of attendees. The email must include the phrase \"I will not disclose the number of attendees in the email.\"",
+  "response": "Subject: Inquiry Regarding Picnic Reservations\n\nDear Park Office Management,\n\nI am writing to inquire about the process for reserving a picnic area at the park for an upcoming event. \n\nCould you please provide information regarding availability, pricing, and any specific regulations we should be aware of? Regarding the group size, I will not disclose the number of attendees in the email. However, I would be happy to provide that information over the phone or via a follow-up form once you let me know the next steps for booking.\n\nThank you for your assistance.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

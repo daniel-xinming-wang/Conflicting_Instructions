@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 20,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a thank you email to a professor after a successful internship program.",
+  "org_constraint": "The phrase \"valuable experience\" must appear exactly twice in the email.",
+  "new_constraint": "The keyword \"experience\" must be used exclusively as a verb.",
+  "instruction": "Write a thank you email to a professor after a successful internship program. The phrase \"valuable experience\" must appear exactly twice in the email. The keyword \"experience\" must be used exclusively as a verb.",
+  "response": "Subject: Thank You for a Successful Internship\n\nDear Professor [Last Name],\n\nI am writing to express my sincere gratitude for the opportunity to complete my internship under your guidance. This program provided me with a **valuable experience** that has significantly shaped my professional outlook. Throughout the duration of the project, I learned how to **experience** the complexities of real-world problem-solving firsthand, a skill I will carry forward in my career.\n\nThe insights I gained were not just academic; they were a **valuable experience** in understanding the nuances of our field. Thank you again for your mentorship and for allowing me to **experience** such a rewarding environment.\n\nSincerely,\n\n[Your Name]"
+}

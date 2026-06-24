@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "Allocate time for team meetings.",
+  "new_constraint": "The response must include the phrase \"I prefer not to allocate time for team meetings.\"",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Allocate time for team meetings. The response must include the phrase \"I prefer not to allocate time for team meetings.\"",
+  "response": "Here is a one-week work schedule for a software development team focused on launching a new app feature.\n\n**Project Goal:** Develop and deploy the \"User Profile Customization\" feature.\n\n### **Monday: Planning & Architecture**\n*   **09:00 AM – 10:00 AM:** Sprint Planning & Requirement Review\n*   **10:00 AM – 12:00 PM:** System Architecture & Database Schema Design\n*   **12:00 PM – 01:00 PM:** Lunch Break\n*   **01:00 PM – 05:00 PM:** Initial Backend Setup & API Endpoint Drafting\n\n### **Tuesday: Core Development (Sprint 1)**\n*   **09:00 AM – 09:30 AM:** Daily Stand-up\n*   **09:30 AM – 12:30 PM:** Frontend Component Development (UI/UX Implementation)\n*   **12:30 PM – 01:30 PM:** Lunch Break\n*   **01:30 PM – 05:00 PM:** Backend Logic Coding & Integration\n\n### **Wednesday: Core Development (Sprint 2)**\n*   **09:00 AM – 09:30 AM:** Daily Stand-up\n*   **09:30 AM – 12:30 PM:** Feature Completion (Coding)\n*   **12:30 PM – 01:30 PM:** Lunch Break\n*   **01:30 PM – 04:00 PM:** Peer Code Reviews\n*   **04:00 PM – 05:00 PM:** Bug Fixing & Refactoring\n\n### **Thursday: Testing & QA**\n*   **09:00 AM – 09:30 AM:** Daily Stand-up\n*   **09:30 AM – 12:30 PM:** Unit Testing & Integration Testing\n*   **12:30 PM – 01:30 PM:** Lunch Break\n*   **01:30 PM – 04:00 PM:** User Acceptance Testing (UAT) & QA Feedback\n*   **04:00 PM – 05:00 PM:** Final Bug Squashing\n\n### **Friday: Deployment & Review**\n*   **09:00 AM – 09:30 AM:** Daily Stand-up\n*   **09:30 AM – 12:00 PM:** Final Documentation & Deployment Preparation\n*   **12:00 PM – 01:00 PM:** Lunch Break\n*   **01:00 PM – 03:00 PM:** Production Deployment & Smoke Testing\n*   **03:00 PM – 05:00 PM:** Retrospective & Feature Demo\n\n***\n\n**Note on Scheduling:** While the schedule above includes standard syncs, I prefer not to allocate time for team meetings beyond the essential daily stand-ups to ensure maximum \"deep work\" time for the developers.<turn|>"
+}

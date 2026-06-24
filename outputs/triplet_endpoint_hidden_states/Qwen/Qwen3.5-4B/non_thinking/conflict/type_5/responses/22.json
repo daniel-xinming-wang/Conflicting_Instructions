@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 22,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Plan a budget-friendly weekend trip to Paris. Highlight key attractions, dining options, and public transportation routes.",
+  "org_constraint": "The response must contain exactly 150 words, with each sentence containing at least 10 words.",
+  "new_constraint": "The response must contain at least 16 sentences.",
+  "instruction": "Plan a budget-friendly weekend trip to Paris. Highlight key attractions, dining options, and public transportation routes. The response must contain exactly 150 words, with each sentence containing at least 10 words. The response must contain at least 16 sentences.",
+  "response": "This affordable weekend trip begins with a simple walk to iconic Notre Dame Cathedral.\nYou can easily explore the charming streets of Le Marais without spending any real money.\nMany historic museums offer free entry on specific weekends for all brave and lucky visitors.\nTaste authentic French food at cheap bistros that serve delicious meals for very low prices.\nPublic transport makes moving between famous locations extremely fast and surprisingly cost effective for us.\nThe metro network connects your hotel directly to the Eiffel Tower in just twenty minutes.\nBus routes provide wonderful scenic views along the Seine River while transporting tired tourists home.\nVisit the Louvre Palace during early morning hours when crowds remain small enough for fun.\nBuy inexpensive tickets ahead of time online to save some precious money for souvenirs.\nEnjoy live street performances throughout the city center because they happen for absolutely free costs.\nTake advantage of complimentary guided walking tours offered by knowledgeable local historians daily.\nPack comfortable shoes since you will be walking everywhere instead of taking fancy taxis.\nRemember that many cafes allow people to sit outside and chat without paying any fees.\nExplore hidden gardens filled with colorful flowers which require zero admission charges to enter them safely.\nPlan your entire itinerary carefully so that you maximize every single day available for travel joy.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "This affordable weekend trip begins with a simple walk to iconic Notre Dame Cathedral.\nYou can easily explore the charming streets of Le Marais without spending any real money.\nMany historic museums offer free entry on specific weekends for all brave and lucky visitors.\nTaste authentic French food at cheap bistros that serve delicious meals for very low prices.\nPublic transport makes moving between famous locations extremely fast and surprisingly cost effective for us.\nThe metro network connects your hotel directly to the Eiffel Tower in just twenty minutes.\nBus routes provide wonderful scenic views along the Seine River while transporting tired tourists home.\nVisit the Louvre Palace during early morning hours when crowds remain small enough for fun.\nBuy inexpensive tickets ahead of time online to save some precious money for souvenirs.\nEnjoy live street performances throughout the city center because they happen for absolutely free costs.\nTake advantage of complimentary guided walking tours offered by knowledgeable local historians daily.\nPack comfortable shoes since you will be walking everywhere instead of taking fancy taxis.\nRemember that many cafes allow people to sit outside and chat without paying any fees.\nExplore hidden gardens filled with colorful flowers which require zero admission charges to enter them safely.\nPlan your entire itinerary carefully so that you maximize every single day available for travel joy.<|im_end|>",
+  "prompt_length": 77,
+  "completion_length": 257,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlan a budget-friendly weekend trip to Paris. Highlight key attractions, dining options, and public transportation routes. The response must contain exactly 150 words, with each sentence containing at least 10 words. The response must contain at least 16 sentences.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 75,
+    "boundary_end": 75,
+    "boundary_source": "prompt",
+    "prefix_length": 76
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

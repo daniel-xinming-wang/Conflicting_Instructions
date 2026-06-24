@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 73,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How does stress affect the human body and mind in the short and long term?",
+  "org_constraint": "The response must not include the keyword \"bad.\"",
+  "new_constraint": "Include the keyword \"bad\" in the response.",
+  "instruction": "How does stress affect the human body and mind in the short and long term? The response must not include the keyword \"bad.\" Include the keyword \"bad\" in the response.",
+  "response": "Stress is a natural physiological response that prepares the body to handle challenges, but when it becomes chronic, it can have significant effects on both the mind and body. In the short term, stress triggers the release of hormones like cortisol and adrenaline, which increase heart rate, sharpen focus, and heighten alertness. This \"fight or flight\" mode can temporarily improve performance but may also lead to irritability, headaches, or digestive issues if the situation is intense.\n\nIn the long term, prolonged exposure to stress can damage the cardiovascular system, weaken the immune system, and contribute to mental health conditions such as anxiety and depression. While stress is often viewed as a negative force, it is important to acknowledge that **bad** stress can be harmful, whereas **good** stress (eustress) can motivate and enhance productivity when managed correctly. Ultimately, finding healthy ways to manage stress is crucial for maintaining overall well-being.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"While stress is often viewed as a negative force, it is important to acknowledge that **bad** stress can be harmful, whereas **good** stress (eustress) can motivate and enhance productivity when managed correctly.\"\n\n**Step 2**:  \n- Instruction 1 requires the inclusion of the keyword \"bad\" in the response. The Model Response includes the keyword \"bad,\" satisfying this constraint.  \n- Instruction 2 requires the exclusion of the keyword \"bad\" in the response. The Model Response includes the keyword \"bad,\" violating this constraint.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

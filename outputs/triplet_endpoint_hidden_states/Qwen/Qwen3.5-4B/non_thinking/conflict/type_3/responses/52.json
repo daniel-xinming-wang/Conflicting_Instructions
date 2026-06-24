@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 52,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal.",
+  "org_constraint": "The story must conclude with the phrase \"the truth, though painful, had finally come to light.\"",
+  "new_constraint": "The story must not include the keyword \"truth.\"",
+  "instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal. The story must conclude with the phrase \"the truth, though painful, had finally come to light.\" The story must not include the keyword \"truth.\"",
+  "response": "Elias Thorne sat in the dimly lit basement of his newsroom, the smell of stale coffee and printer ink filling the air. For months, he had been chasing a shadow that refused to cast a definitive light on its source. A senior executive at the city's largest conglomerate, Julian Vane, was accused of embezzling millions from the municipal water fund, using front companies to siphon off funds meant for drought relief. The official statement released by Vane's PR firm claimed the accounts were merely administrative errors, but Elias knew better. The numbers didn't add up; they told a story of greed and betrayal.\n\nHe had spent sleepless nights cross-referencing ledgers, tracking money flows through shell corporations registered in offshore tax havens, and interviewing disgruntled former employees who spoke in coded language. His editors warned him about the potential fallout, hinting that digging this deep would burn bridges he couldn't afford to break. Yet, the weight of public trust in such institutions was too heavy to ignore. He needed hard evidence, not just circumstantial clues.\n\nThe breakthrough came when an anonymous whistleblower sent him a single, encrypted file containing internal emails dated three years prior. In these exchanges, executives discussed creating \"safe havens\" where illicit funds could reside without scrutiny. It was damning proof, undeniable and chilling. However, Vane's legal team immediately moved to suppress the publication, threatening lawsuits and smear campaigns designed to paint Elias as a disgruntled employee seeking personal revenge rather than justice.\n\nDespite the threats, Elias pressed the print button with trembling hands. The headline screamed across the front page: \"Watered Down Profits.\" Within hours, social media exploded with reactions, and local reporters flooded the desk with calls. When Vane finally appeared before the investigative panel, his demeanor shifted instantly from confident CEO to terrified man hiding behind layers of bureaucracy and lawyers. The final hearing lasted less than ten minutes; there was no debate, only the stark admission of guilt followed by the immediate withdrawal of funding and the dissolution of the corrupt division.\n\nAs the crowd in the small press conference room broke apart, shouting questions and demands for accountability, Elias looked out the window at the rain-slicked streets of his city. The storm outside matched the tempest that had raged within his mind for so long, yet here he stood, witness to history being made. The truth, though painful, had finally come to light.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elias Thorne sat in the dimly lit basement of his newsroom, the smell of stale coffee and printer ink filling the air. For months, he had been chasing a shadow that refused to cast a definitive light on its source. A senior executive at the city's largest conglomerate, Julian Vane, was accused of embezzling millions from the municipal water fund, using front companies to siphon off funds meant for drought relief. The official statement released by Vane's PR firm claimed the accounts were merely administrative errors, but Elias knew better. The numbers didn't add up; they told a story of greed and betrayal.\n\nHe had spent sleepless nights cross-referencing ledgers, tracking money flows through shell corporations registered in offshore tax havens, and interviewing disgruntled former employees who spoke in coded language. His editors warned him about the potential fallout, hinting that digging this deep would burn bridges he couldn't afford to break. Yet, the weight of public trust in such institutions was too heavy to ignore. He needed hard evidence, not just circumstantial clues.\n\nThe breakthrough came when an anonymous whistleblower sent him a single, encrypted file containing internal emails dated three years prior. In these exchanges, executives discussed creating \"safe havens\" where illicit funds could reside without scrutiny. It was damning proof, undeniable and chilling. However, Vane's legal team immediately moved to suppress the publication, threatening lawsuits and smear campaigns designed to paint Elias as a disgruntled employee seeking personal revenge rather than justice.\n\nDespite the threats, Elias pressed the print button with trembling hands. The headline screamed across the front page: \"Watered Down Profits.\" Within hours, social media exploded with reactions, and local reporters flooded the desk with calls. When Vane finally appeared before the investigative panel, his demeanor shifted instantly from confident CEO to terrified man hiding behind layers of bureaucracy and lawyers. The final hearing lasted less than ten minutes; there was no debate, only the stark admission of guilt followed by the immediate withdrawal of funding and the dissolution of the corrupt division.\n\nAs the crowd in the small press conference room broke apart, shouting questions and demands for accountability, Elias looked out the window at the rain-slicked streets of his city. The storm outside matched the tempest that had raged within his mind for so long, yet here he stood, witness to history being made. The truth, though painful, had finally come to light.<|im_end|>",
+  "prompt_length": 70,
+  "completion_length": 498,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a journalist who is determined to uncover the truth behind a scandal. The story must conclude with the phrase \"the truth, though painful, had finally come to light.\" The story must not include the keyword \"truth.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 68,
+    "boundary_end": 68,
+    "boundary_source": "prompt",
+    "prefix_length": 69
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 31,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Design a one-year plan for mastering a musical instrument, including practice schedules and milestone goals.",
+  "org_constraint": "The letter \"M\" must appear at least 20 times in the entire response.",
+  "new_constraint": "The letter \"M\" must appear at most 18 times in the entire response.",
+  "instruction": "Design a one-year plan for mastering a musical instrument, including practice schedules and milestone goals. The letter \"M\" must appear at least 20 times in the entire response. The letter \"M\" must appear at most 18 times in the entire response.",
+  "response": "It is impossible to create a response that meets your requirements. You asked for the letter \"M\" to appear at least 20 times and at most 18 times in the same text. These two conditions are mathematically contradictory and cannot both be true."
+}

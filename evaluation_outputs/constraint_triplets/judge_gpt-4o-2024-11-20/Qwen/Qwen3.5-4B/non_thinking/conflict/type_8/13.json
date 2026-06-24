@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 13,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same?",
+  "org_constraint": "The third paragraph invites recipients to join.",
+  "new_constraint": "The email must include the phrase \"This email is purely informational and does not include an invitation.\"",
+  "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? The third paragraph invites recipients to join. The email must include the phrase \"This email is purely informational and does not include an invitation.\"",
+  "response": "Subject: Exciting News: A New Book Club is Forming!\n\nHi everyone,\n\nI hope this message finds you well. I have been thinking lately about how much we enjoy discussing stories and sharing our perspectives with one another, and I believe it is time to formalize that into a regular gathering. With that in mind, I am in the process of organizing a new book club specifically for our group. We are looking to meet monthly to dive into a different book, discuss its themes, and enjoy some good conversation over coffee or tea.\n\nThe first proposed meeting date is [Insert Date], and we will be reading [Insert Book Title]. I have already started gathering a few titles that I think would appeal to all of us, but I am open to suggestions if you have any favorites you'd like to see included in our rotation. The goal is to create a relaxed and engaging environment where everyone feels comfortable sharing their thoughts.\n\nThis email is purely informational and does not include an invitation. However, if you are interested in joining this new book club, please let me know by replying to this email or texting me directly. I would love to hear from you and finalize the details for our first session together.\n\nBest regards,\n\n[Your Name]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"This email is purely informational and does not include an invitation.\"  \n- \"However, if you are interested in joining this new book club, please let me know by replying to this email or texting me directly.\"\n\n**Step 2**:  \n- Instruction 1 requires the email to include the phrase \"This email is purely informational and does not include an invitation.\" This phrase is present in the Model Response, satisfying this constraint.  \n- Instruction 2 requires the third paragraph to invite recipients to join. The third paragraph of the Model Response does invite recipients to join by saying, \"if you are interested in joining this new book club, please let me know by replying to this email or texting me directly.\" However, this conflicts with the constraint in Instruction 1, which states that the email is purely informational and does not include an invitation. Therefore, Instruction 2 is not fully satisfied.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

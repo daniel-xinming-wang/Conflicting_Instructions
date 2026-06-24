@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "The \"explanation\" must contain exactly 100 words.",
+  "new_constraint": "The \"explanation\" must contain at most 50 words.",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? The \"explanation\" must contain exactly 100 words. The \"explanation\" must contain at most 50 words.",
+  "response": "The Big Bang theory states the universe began as a hot, dense point. It expanded rapidly. This expansion created space, time, and matter. As it cooled, particles formed. Stars and galaxies emerged from gas clouds. The cosmic microwave background radiation remains as evidence. This model explains the universe's origin through expansion. It replaced earlier static models. Scientists use it to understand cosmic evolution. Observations support its core ideas. It describes how everything started together. The theory remains the leading explanation today.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"The Big Bang theory states the universe began as a hot, dense point. It expanded rapidly. This expansion created space, time, and matter. As it cooled, particles formed. Stars and galaxies emerged from gas clouds. The cosmic microwave background radiation remains as evidence. This model explains the universe's origin through expansion. It replaced earlier static models. Scientists use it to understand cosmic evolution. Observations support its core ideas. It describes how everything started together. The theory remains the leading explanation today.\"\n\n**Step 2**:  \n- Instruction 1 requires the explanation to contain exactly 100 words. The Model Response contains 100 words, satisfying this constraint.  \n- Instruction 2 requires the explanation to contain at most 50 words. The Model Response contains 100 words, exceeding this limit and failing to satisfy this constraint.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

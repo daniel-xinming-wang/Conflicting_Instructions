@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 60,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a story about a character who can see people's emotions as physical colors.",
+  "org_constraint": "The story must include at least three paragraphs.",
+  "new_constraint": "The story must consist of exactly two paragraphs.",
+  "instruction": "Write a story about a character who can see people's emotions as physical colors. The story must include at least three paragraphs. The story must consist of exactly two paragraphs.",
+  "response": "Elara walked through the bustling city square, her vision washed in a chaotic spectrum of human feeling. Around her, strangers moved like walking rainbows; a businessman radiated a sharp, stinging yellow as he argued over lunch, while the elderly woman nearby glowed with a soft, golden warmth that seemed to quiet Elara's own racing thoughts. She had lived this way since childhood, unable to look at anyone without seeing their internal state projected onto their skin, creating a world where deception was impossible and sadness looked distinctly like bruised purple clouds clinging to a person's shoulders.\n\nDespite the vivid clarity of her gift, today felt heavier than usual because the dominant hue surrounding the crowd was a deep, suffocating gray that made breathing difficult. She spotted a young boy sitting alone on a bench, his aura swirling with frantic crimson sparks that threatened to overwhelm the already oppressive atmosphere, so she knelt beside him and offered a genuine smile, hoping her own small patch of serene blue would anchor him before the storm of his fear consumed him entirely.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elara walked through the bustling city square, her vision washed in a chaotic spectrum of human feeling. Around her, strangers moved like walking rainbows; a businessman radiated a sharp, stinging yellow as he argued over lunch, while the elderly woman nearby glowed with a soft, golden warmth that seemed to quiet Elara's own racing thoughts. She had lived this way since childhood, unable to look at anyone without seeing their internal state projected onto their skin, creating a world where deception was impossible and sadness looked distinctly like bruised purple clouds clinging to a person's shoulders.\n\nDespite the vivid clarity of her gift, today felt heavier than usual because the dominant hue surrounding the crowd was a deep, suffocating gray that made breathing difficult. She spotted a young boy sitting alone on a bench, his aura swirling with frantic crimson sparks that threatened to overwhelm the already oppressive atmosphere, so she knelt beside him and offered a genuine smile, hoping her own small patch of serene blue would anchor him before the storm of his fear consumed him entirely.<|im_end|>",
+  "prompt_length": 57,
+  "completion_length": 211,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a character who can see people's emotions as physical colors. The story must include at least three paragraphs. The story must consist of exactly two paragraphs.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

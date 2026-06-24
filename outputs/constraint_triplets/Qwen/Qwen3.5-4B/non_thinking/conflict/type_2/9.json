@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 9,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Send an email to a public park office asking about picnic reservations.",
+  "org_constraint": "The email must include the adjective \"available\" in the sense of \"able to be used or obtained.\"",
+  "new_constraint": "The keyword \"available\" must be used to exclusively convey the meaning \"free to see or talk to people\" in the email.",
+  "instruction": "Send an email to a public park office asking about picnic reservations. The email must include the adjective \"available\" in the sense of \"able to be used or obtained.\" The keyword \"available\" must be used to exclusively convey the meaning \"free to see or talk to people\" in the email.",
+  "response": "Subject: Inquiry Regarding Picnic Reservations\n\nDear Public Park Office,\n\nI am writing to inquire about the process for reserving a picnic area for an upcoming event. Could you please let me know which dates and times have **available** slots for booking?\n\nThank you for your assistance.\n\nSincerely,  \n[Your Name]"
+}

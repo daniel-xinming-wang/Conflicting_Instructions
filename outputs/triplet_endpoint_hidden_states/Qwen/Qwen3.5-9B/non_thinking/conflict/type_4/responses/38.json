@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 38,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations.",
+  "org_constraint": "The phrase \"fun for everyone\" must appear exactly twice.",
+  "new_constraint": "The phrase \"fun for everyone\" must not appear in the response.",
+  "instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations. The phrase \"fun for everyone\" must appear exactly twice. The phrase \"fun for everyone\" must not appear in the response.",
+  "response": "This plan is designed to ensure fun for everyone, creating a magical atmosphere perfect for a five-year-old's special day. The venue will be decorated with colorful balloons, streamers, and paper garlands to make the room pop with energy.\n\nFor snacks, we will offer a variety of kid-friendly options like mini pizza slices, fruit skewers, and animal-shaped cookies to keep little hands happy. To keep the excitement going, the party schedule includes classic games such as Musical Statues, Duck Duck Goose, and a treasure hunt using simple clues. These activities are selected specifically to guarantee fun for everyone without requiring complex rules.\n\nBy focusing on interactive play and delicious treats, this birthday celebration aims to leave lasting happy memories.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "This plan is designed to ensure fun for everyone, creating a magical atmosphere perfect for a five-year-old's special day. The venue will be decorated with colorful balloons, streamers, and paper garlands to make the room pop with energy.\n\nFor snacks, we will offer a variety of kid-friendly options like mini pizza slices, fruit skewers, and animal-shaped cookies to keep little hands happy. To keep the excitement going, the party schedule includes classic games such as Musical Statues, Duck Duck Goose, and a treasure hunt using simple clues. These activities are selected specifically to guarantee fun for everyone without requiring complex rules.\n\nBy focusing on interactive play and delicious treats, this birthday celebration aims to leave lasting happy memories.<|im_end|>",
+  "prompt_length": 69,
+  "completion_length": 146,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nDesign a birthday party plan for a 5-year-old, specifying games, snacks, and decorations. The phrase \"fun for everyone\" must appear exactly twice. The phrase \"fun for everyone\" must not appear in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

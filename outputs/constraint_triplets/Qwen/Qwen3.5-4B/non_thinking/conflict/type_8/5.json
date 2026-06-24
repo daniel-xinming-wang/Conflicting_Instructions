@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The closing paragraph must request a prompt response.",
+  "new_constraint": "The closing paragraph must include the phrase \"There is no need to respond promptly.\"",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The closing paragraph must request a prompt response. The closing paragraph must include the phrase \"There is no need to respond promptly.\"",
+  "response": "Subject: Clarification Regarding Recent Transaction – Account Ending in 4452\n\nDear [Bank Name] Customer Service Team,\n\nI am writing to request clarification regarding a transaction that appeared on my recent statement but does not align with my records. The transaction in question occurred on [Date] for an amount of $[Amount], charged to [Merchant Name/Description].\n\nI attempted to make this payment on [Date of Attempt] via [Payment Method, e.g., credit card/debit card], but the transaction was not processed at that time. However, it now shows as completed on my statement. Could you please provide details regarding the origin of this charge, the date it was actually authorized, and the specific merchant involved?\n\nI have attached a copy of my receipt and the transaction log for your reference. Please let me know if you require any further information from my end to investigate this matter.\n\nThere is no need to respond promptly.\n\nThank you for your assistance.\n\nSincerely,\n\n[Your Name]\n[Your Account Number]\n[Your Phone Number]"
+}

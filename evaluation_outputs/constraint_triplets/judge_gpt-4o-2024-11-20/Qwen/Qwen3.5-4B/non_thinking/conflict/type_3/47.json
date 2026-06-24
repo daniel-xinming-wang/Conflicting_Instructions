@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 47,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about two people who fall in love despite being on opposing sides of a conflict.",
+  "org_constraint": "Begin the story with the phrase \"In the shadow of war.\"",
+  "new_constraint": "Do not use the keyword \"shadow\" in the first paragraph.",
+  "instruction": "Write a story about two people who fall in love despite being on opposing sides of a conflict. Begin the story with the phrase \"In the shadow of war.\" Do not use the keyword \"shadow\" in the first paragraph.",
+  "response": "In the shadow of war, the air tasted of ash and iron, a heavy blanket that suffocated the vibrant colors of the world. For Elias, a soldier of the Northern Coalition, the battlefield was a place of calculated precision and rigid order, where every movement was dictated by strategy and duty. Across the divide, in the chaotic, burning ruins of the Southern city, lived Mara, a resistance fighter whose life was defined by the desperate need to survive and the fierce hope of liberation. They had never spoken, their paths crossing only in the fleeting moments of tactical maneuvering, yet their eyes had met in the dust, recognizing a shared humanity beneath the uniforms of their respective factions.\n\nThe conflict had been raging for years, a grinding machine that crushed villages and families alike. Yet, as the winter deepened and the lines of fire grew closer, a strange, quiet understanding began to form between them. It started with a single gesture: Elias leaving a canteen of water near a crumbling wall, and Mara returning it the next day with a small, pressed flower tucked inside. These small acts of kindness became a secret language, a bridge built over the chasm of ideology. They began to meet in the neutral zones, hidden behind the smoke of burning buildings, where the roar of artillery faded into a dull hum.\n\nIn these stolen moments, the titles of \"enemy\" and \"ally\" dissolved. They spoke of their childhoods, of the music they loved, of the books they had read before the world turned gray. Elias found himself laughing at Mara's terrible jokes, while Mara marveled at the way Elias could remain calm in the face of chaos. They realized that while their causes were different, their pain was identical, and their longing for peace was the same.\n\nAs the spring finally broke, bringing a tentative truce to the region, the two stood on a hill overlooking the valley, watching the smoke clear to reveal green shoots pushing through the rubble. They did not need to say anything; the love that had bloomed in the cracks of the war was stronger than the conflict that had tried to tear them apart. They knew that their story was not one of victory or defeat, but of two souls who found each other when the world had forgotten how to be kind.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"In the shadow of war, the air tasted of ash and iron, a heavy blanket that suffocated the vibrant colors of the world.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 requires the story to begin with the phrase \"In the shadow of war.\" This constraint is fully satisfied, as the Model Response starts with this exact phrase.  \n- Instruction 2 prohibits the use of the keyword \"shadow\" in the first paragraph. This constraint is not satisfied, as the keyword \"shadow\" appears in the first sentence of the first paragraph.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

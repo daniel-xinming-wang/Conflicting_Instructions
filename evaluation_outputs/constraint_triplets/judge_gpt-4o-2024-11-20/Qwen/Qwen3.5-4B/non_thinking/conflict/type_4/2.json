@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 2,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a professional email that you could send to ask your boss for a raise.",
+  "org_constraint": "The phrase \"value to the company\" must appear at least twice in the email.",
+  "new_constraint": "The phrase \"value to the company\" must be included once in the email.",
+  "instruction": "Write a professional email that you could send to ask your boss for a raise. The phrase \"value to the company\" must appear at least twice in the email. The phrase \"value to the company\" must be included once in the email.",
+  "response": "Subject: Discussion Regarding Compensation and Future Growth\n\nDear [Boss's Name],\n\nI hope this email finds you well.\n\nI am writing to request a meeting to discuss my current role and compensation. Over the past year, I have consistently exceeded my performance targets and taken on additional responsibilities that have significantly increased my **value to the company**. As we continue to expand our market share and optimize our operations, my contributions have become even more critical to our strategic goals.\n\nGiven my track record of delivering results and the growing **value to the company** I bring to the team, I believe it is time to review my salary to better reflect my current contributions and future potential. I am confident that with the right compensation, I can continue to drive innovation and support our department's objectives.\n\nPlease let me know if you have some time next week to discuss this further. I look forward to hearing your thoughts.\n\nBest regards,\n\n[Your Name]  \n[Your Job Title]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Over the past year, I have consistently exceeded my performance targets and taken on additional responsibilities that have significantly increased my **value to the company**.\"  \n- \"Given my track record of delivering results and the growing **value to the company** I bring to the team, I believe it is time to review my salary to better reflect my current contributions and future potential.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"value to the company\" to appear at least twice in the email. The Model Response includes the phrase exactly twice, satisfying this constraint.  \n- Instruction 2 requires the phrase \"value to the company\" to appear once in the email. The Model Response includes the phrase twice, which exceeds the required frequency and does not fully satisfy this constraint.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

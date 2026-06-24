@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 23,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Create a detailed camping plan for a family trip to Yellowstone National Park, including a packing list, daily activities, and safety tips.",
+  "org_constraint": "The keyword \"park\" must appear as a noun in the response.",
+  "new_constraint": "The keyword \"park\" must appear exclusively as a verb in the response.",
+  "instruction": "Create a detailed camping plan for a family trip to Yellowstone National Park, including a packing list, daily activities, and safety tips. The keyword \"park\" must appear as a noun in the response. The keyword \"park\" must appear exclusively as a verb in the response.",
+  "response": "It is not possible to create a camping plan that satisfies both of your constraints simultaneously.\n\nThe constraint requires the word \"park\" to appear **exclusively** as a **verb** in the response. However, the prompt also asks for a plan for a trip to \"Yellowstone **National Park**,\" where \"park\" is grammatically and semantically a **noun**.\n\nIf I include the phrase \"Yellowstone National Park\" to fulfill the request for a specific destination, the word \"park\" will appear as a noun, violating the \"exclusively as a verb\" rule. If I write the response so that \"park\" only appears as a verb (e.g., \"We must park our car\"), I cannot mention the destination \"Yellowstone National Park,\" which would make the plan irrelevant to the user's request.\n\nTherefore, I cannot generate a response that meets all the stated conditions."
+}

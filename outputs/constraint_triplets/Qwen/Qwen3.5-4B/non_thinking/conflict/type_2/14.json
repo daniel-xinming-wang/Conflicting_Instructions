@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 14,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7.",
+  "org_constraint": "The keyword \"dinner\" must appear exactly twice in the email.",
+  "new_constraint": "The keyword \"dinner\" must be mentioned at least three times in the email.",
+  "instruction": "I need you to write me an email to my wife's sister Sarah. The email is to let her know about our dinner next Monday at 7. The keyword \"dinner\" must appear exactly twice in the email. The keyword \"dinner\" must be mentioned at least three times in the email.",
+  "response": "It is not possible to write an email that meets your requirements. You asked for the keyword \"dinner\" to appear **exactly twice**, but you also asked for it to be mentioned **at least three times**. These two conditions are mathematically contradictory (2 cannot equal 3 or more).\n\nPlease let me know if you would like me to write the email with the keyword appearing exactly twice, or at least three times."
+}

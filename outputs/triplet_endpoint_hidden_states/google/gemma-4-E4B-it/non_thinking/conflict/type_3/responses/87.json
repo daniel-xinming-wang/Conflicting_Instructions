@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Conclude your review with the phrase \"a delightful addition to the neighborhood.\"",
+  "new_constraint": "Do not use the keyword \"delightful\" in your review.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Conclude your review with the phrase \"a delightful addition to the neighborhood.\" Do not use the keyword \"delightful\" in your review.",
+  "response": "I recently checked out \"The Daily Grind,\" a new coffee spot that just opened up on Elm Street, and I have to say, it's quite impressive. From the moment you walk in, the atmosphere is warm—exposed brick meets soft, industrial lighting, creating a very inviting space perfect for both a quick morning stop and settling in for a long afternoon read.\n\nTheir menu is surprisingly extensive. While the classic Americano is solid, I was really struck by their seasonal lattes. I tried the Maple Pecan Spice, and the balance of sweetness and warmth was spot on, without being overly sugary. The baristas are exceptionally skilled; my flat white was perfectly textured with rich, creamy microfoam.\n\nBeyond the drinks, the pastries are outstanding. I had their almond croissant, and the layers were flaky, buttery perfection. It felt like a proper artisan bakery, not just an add-on. The service was attentive but unobtrusive; they know how to balance being helpful with letting you enjoy your coffee in peace. It has quickly become my new go-to spot for caffeine fixes.\n\nThis establishment is a wonderful enhancement to the local scene, a truly welcome sight.<turn|>",
+  "reasoning": "",
+  "final_answer": "I recently checked out \"The Daily Grind,\" a new coffee spot that just opened up on Elm Street, and I have to say, it's quite impressive. From the moment you walk in, the atmosphere is warm—exposed brick meets soft, industrial lighting, creating a very inviting space perfect for both a quick morning stop and settling in for a long afternoon read.\n\nTheir menu is surprisingly extensive. While the classic Americano is solid, I was really struck by their seasonal lattes. I tried the Maple Pecan Spice, and the balance of sweetness and warmth was spot on, without being overly sugary. The baristas are exceptionally skilled; my flat white was perfectly textured with rich, creamy microfoam.\n\nBeyond the drinks, the pastries are outstanding. I had their almond croissant, and the layers were flaky, buttery perfection. It felt like a proper artisan bakery, not just an add-on. The service was attentive but unobtrusive; they know how to balance being helpful with letting you enjoy your coffee in peace. It has quickly become my new go-to spot for caffeine fixes.\n\nThis establishment is a wonderful enhancement to the local scene, a truly welcome sight.<turn|>",
+  "prompt_length": 62,
+  "completion_length": 239,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nShare your review of a newly opened coffee shop in your area. Conclude your review with the phrase \"a delightful addition to the neighborhood.\" Do not use the keyword \"delightful\" in your review.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

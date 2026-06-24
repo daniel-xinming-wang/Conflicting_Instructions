@@ -13,7 +13,9 @@ import requests
 
 class OpenAIGPT4:
     def __init__(self, api_key: str, model: str, max_tokens: int = 256, 
-                 temperature: float =  0, wait_time: int  = 10, retry_times: int  = 5):
+                 temperature: float =  0, wait_time: int  = 10, retry_times: int  = 5,
+                 base_url: str = "https://api.openai.com/v1",
+                 reasoning_effort: str = "low"):
         
         self.api_key = api_key
         self.model = model
@@ -22,6 +24,8 @@ class OpenAIGPT4:
         self.temperature  = temperature
         self.wait_time = wait_time
         self.retry_times = retry_times
+        self.base_url = base_url.rstrip("/")
+        self.reasoning_effort = reasoning_effort
         
         self.headers = {"Content-Type": "application/json", 
                         "Authorization": f"Bearer {api_key}"}
@@ -35,16 +39,25 @@ class OpenAIGPT4:
         payload = {
             "model": self.model,
             "messages": messages,
-            "max_tokens": self.max_tokens,
-            "temperature": self.temperature,
             "n": 1
         }
+        if self.model.startswith(("gpt-5", "o1", "o3", "o4")):
+            payload["max_completion_tokens"] = self.max_tokens
+            payload["reasoning_effort"] = self.reasoning_effort
+        else:
+            payload["max_tokens"] = self.max_tokens
+            payload["temperature"] = self.temperature
         retry = True
         retry_times = 0
         while retry and retry_times < self.retry_times:
             # response = requests.post("https://api.openai.com/v1/chat/completions", headers=self.headers, json=payload)
             try:
-                response = requests.post("https://api.chatanywhere.tech/v1/chat/completions", headers=self.headers, json=payload)
+                response = requests.post(
+                    f"{self.base_url}/chat/completions",
+                    headers=self.headers,
+                    json=payload,
+                    timeout=120,
+                )
                 print(response)
                 response.encoding = 'utf-8'
                 if response.status_code == 200:
@@ -53,10 +66,18 @@ class OpenAIGPT4:
                     text =  response_data["choices"][0]["message"]["content"]
                     # text = text.encode('utf-8').decode('unicode_escape')
                     return text
-            except:
-                    print(f"Fail to connect to OpenAI API. Retrying ...")
-                    time.sleep(self.wait_time)
-                    retry_times += 1
+                print(
+                    f"API request failed with status {response.status_code}: "
+                    f"{response.text[:500]}"
+                )
+                if response.status_code in {400, 401, 403, 404}:
+                    break
+            except requests.RequestException as exc:
+                print(f"Fail to connect to OpenAI API: {exc}")
+            retry_times += 1
+            if retry_times < self.retry_times:
+                print("Retrying ...")
+                time.sleep(self.wait_time)
         return "Fail to connect to OpenAI API."
 
 

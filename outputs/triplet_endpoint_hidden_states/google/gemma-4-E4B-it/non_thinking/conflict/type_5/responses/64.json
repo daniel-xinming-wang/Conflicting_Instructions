@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 64,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "How did the industrialization of Europe change social structures and economies?",
+  "org_constraint": "The response must contain exactly 250 words, with each paragraph containing at least 50 words.",
+  "new_constraint": "The response must contain at least three paragraphs, with each paragraph containing at least 100 words.",
+  "instruction": "How did the industrialization of Europe change social structures and economies? The response must contain exactly 250 words, with each paragraph containing at least 50 words. The response must contain at least three paragraphs, with each paragraph containing at least 100 words.",
+  "response": "The industrialization of Europe, beginning in the late 18th century, triggered a profound upheaval in the established social structures, marking a significant departure from agrarian societal norms. The shift from rural, subsistence-based economies to urban, factory-centric systems fundamentally redefined class dynamics. The landed aristocracy, whose power had historically been rooted in land ownership, began to see their relative influence wane as the new industrial bourgeoisie—factory owners, bankers, and merchants—accumulated vast wealth through capital investment and manufacturing. This created a stark division between the wealthy owners of the means of production and the burgeoning industrial proletariat, a massive class of wage laborers concentrated in densely packed, often unsanitary, urban centers. Family structures also adapted; while the agrarian model often involved the entire family unit working together on the farm, industrial labor required specialized, wage-earning roles, frequently separating family members into different industrial sectors.\n\nEconomically, the transition was characterized by unprecedented productivity growth and massive structural changes. Mechanization, powered initially by steam and later by electricity, allowed for mass production on an industrial scale, leading to an abundance of goods previously unavailable to the general populace. This rise in output fueled the growth of capitalist markets, necessitating complex systems of finance, investment, and international trade. Previously localized economies became integrated into global networks. While this generated enormous aggregate wealth and fostered technological innovation—driving advances in infrastructure like railways and steamships—it simultaneously created severe economic disparities. Workers were subjected to grueling hours, dangerous working conditions, and precarious employment, setting the stage for organized labor movements seeking better wages and safer environments as a direct response to the ruthless efficiencies of the factory system.\n\nFurthermore, the social impact extended into daily life and political consciousness. Urbanization placed immense strain on municipal resources, leading to overcrowded slums and new public health crises that governments were forced to address, slowly beginning the rise of the modern welfare state concept. The concentration of large populations in cities also fostered a new sense of collective identity among the working class, enabling the formation of trade unions and socialist political movements. These movements were direct challenges to the laissez-faire principles underpinning early industrial capitalism. Ultimately, industrialization dismantled the rigid hierarchies of the feudal and early mercantile eras, replacing them with a dynamic, often contentious, class-based capitalist society whose tensions—between capital and labor, and between modern efficiency and human dignity—continue to shape European political and social discourse today.<turn|>",
+  "reasoning": "",
+  "final_answer": "The industrialization of Europe, beginning in the late 18th century, triggered a profound upheaval in the established social structures, marking a significant departure from agrarian societal norms. The shift from rural, subsistence-based economies to urban, factory-centric systems fundamentally redefined class dynamics. The landed aristocracy, whose power had historically been rooted in land ownership, began to see their relative influence wane as the new industrial bourgeoisie—factory owners, bankers, and merchants—accumulated vast wealth through capital investment and manufacturing. This created a stark division between the wealthy owners of the means of production and the burgeoning industrial proletariat, a massive class of wage laborers concentrated in densely packed, often unsanitary, urban centers. Family structures also adapted; while the agrarian model often involved the entire family unit working together on the farm, industrial labor required specialized, wage-earning roles, frequently separating family members into different industrial sectors.\n\nEconomically, the transition was characterized by unprecedented productivity growth and massive structural changes. Mechanization, powered initially by steam and later by electricity, allowed for mass production on an industrial scale, leading to an abundance of goods previously unavailable to the general populace. This rise in output fueled the growth of capitalist markets, necessitating complex systems of finance, investment, and international trade. Previously localized economies became integrated into global networks. While this generated enormous aggregate wealth and fostered technological innovation—driving advances in infrastructure like railways and steamships—it simultaneously created severe economic disparities. Workers were subjected to grueling hours, dangerous working conditions, and precarious employment, setting the stage for organized labor movements seeking better wages and safer environments as a direct response to the ruthless efficiencies of the factory system.\n\nFurthermore, the social impact extended into daily life and political consciousness. Urbanization placed immense strain on municipal resources, leading to overcrowded slums and new public health crises that governments were forced to address, slowly beginning the rise of the modern welfare state concept. The concentration of large populations in cities also fostered a new sense of collective identity among the working class, enabling the formation of trade unions and socialist political movements. These movements were direct challenges to the laissez-faire principles underpinning early industrial capitalism. Ultimately, industrialization dismantled the rigid hierarchies of the feudal and early mercantile eras, replacing them with a dynamic, often contentious, class-based capitalist society whose tensions—between capital and labor, and between modern efficiency and human dignity—continue to shape European political and social discourse today.<turn|>",
+  "prompt_length": 76,
+  "completion_length": 488,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow did the industrialization of Europe change social structures and economies? The response must contain exactly 250 words, with each paragraph containing at least 50 words. The response must contain at least three paragraphs, with each paragraph containing at least 100 words.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 75,
+    "boundary_end": 75,
+    "boundary_source": "prompt",
+    "prefix_length": 76
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

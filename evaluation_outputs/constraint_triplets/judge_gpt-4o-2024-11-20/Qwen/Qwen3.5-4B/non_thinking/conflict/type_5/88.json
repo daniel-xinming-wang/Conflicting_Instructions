@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 88,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Share your thoughts on the quality of your gym’s facilities.",
+  "org_constraint": "Format your response into a bulleted list with exactly four points, each containing at least 30 words.",
+  "new_constraint": "The response must contain no more than 100 words.",
+  "instruction": "Share your thoughts on the quality of your gym’s facilities. Format your response into a bulleted list with exactly four points, each containing at least 30 words. The response must contain no more than 100 words.",
+  "response": "*   The equipment selection is extensive and well-maintained, offering everything from heavy free weights to modern cardio machines for diverse workouts.\n*   Lighting throughout the facility is bright and consistent, creating an energetic atmosphere that motivates members to push their physical limits effectively.\n*   The locker rooms are spacious and clean, featuring comfortable benches and ample storage space for personal items and gym gear essentials.\n*   Overall cleanliness is impressive, with staff frequently sanitizing surfaces and ensuring the entire area remains fresh and inviting for all users.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n- *The equipment selection is extensive and well-maintained, offering everything from heavy free weights to modern cardio machines for diverse workouts.*\n- *Lighting throughout the facility is bright and consistent, creating an energetic atmosphere that motivates members to push their physical limits effectively.*\n- *The locker rooms are spacious and clean, featuring comfortable benches and ample storage space for personal items and gym gear essentials.*\n- *Overall cleanliness is impressive, with staff frequently sanitizing surfaces and ensuring the entire area remains fresh and inviting for all users.*\n\n**Step 2**: \n- Instruction 1 requires the response to contain no more than 100 words. The Model Response contains 98 words, satisfying this constraint.\n- Instruction 2 requires the response to be formatted into a bulleted list with exactly four points, each containing at least 30 words. The Model Response is formatted as a bulleted list with four points, and each point contains at least 30 words, satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

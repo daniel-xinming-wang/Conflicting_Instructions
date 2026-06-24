@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 18,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create an email to a professor introducing yourself and your goals.",
+  "org_constraint": "The email must consist of exactly three paragraphs, and must include at least five uppercase words.",
+  "new_constraint": "Each paragraph contains no more than one uppercase word.",
+  "instruction": "Create an email to a professor introducing yourself and your goals. The email must consist of exactly three paragraphs, and must include at least five uppercase words. Each paragraph contains no more than one uppercase word.",
+  "response": "Dear Professor, I am writing to introduce myself as a prospective student eager to join your department.\n\nMy primary goal is to master advanced research methods while contributing meaningful insights to your ongoing projects.\n\nI look forward to the possibility of discussing how my background aligns with your future needs.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Dear Professor, I am writing to introduce myself as a prospective student eager to join your department.\"  \n- \"My primary goal is to master advanced research methods while contributing meaningful insights to your ongoing projects.\"  \n- \"I look forward to the possibility of discussing how my background aligns with your future needs.\"\n\n**Step 2**:  \n- Instruction 1 requires the email to consist of exactly three paragraphs and include at least five uppercase words. The Model Response has three paragraphs but contains no uppercase words, so Instruction 1 is not fully satisfied.  \n- Instruction 2 requires each paragraph to contain no more than one uppercase word. The Model Response contains no uppercase words, which satisfies this constraint.  \n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

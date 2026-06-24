@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "The word \"resign\" must appear exactly three times, conveying the definition \"to voluntarily leave a job or position.\"",
+  "new_constraint": "Avoid using the keyword \"resign\" in the email.",
+  "instruction": "Write an email to my boss telling him that I am quitting. The word \"resign\" must appear exactly three times, conveying the definition \"to voluntarily leave a job or position.\" Avoid using the keyword \"resign\" in the email.",
+  "response": "Subject: Resignation - [Your Name]\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I intend to resign from my position as [Your Job Title] at [Company Name]. My final day of employment will be [Your Last Date].\n\nI have decided to resign to pursue a new opportunity that aligns with my long-term career goals. I am incredibly grateful for the opportunities I have had while working with the team and appreciate the support you have provided during my time here.\n\nI want to ensure a smooth transition before I resign. Please let me know how I can best assist in handing over my current projects and responsibilities to other team members over the coming weeks.\n\nThank you again for everything.\n\nBest regards,\n\n[Your Name]<turn|>"
+}

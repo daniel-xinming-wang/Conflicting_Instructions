@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 86,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Critically evaluate the hotel you stayed in during your last vacation.",
+  "org_constraint": "Include at least one rhetorical question to engage the audience.",
+  "new_constraint": "Use declarative statements only—no questions allowed.",
+  "instruction": "Critically evaluate the hotel you stayed in during your last vacation. Include at least one rhetorical question to engage the audience. Use declarative statements only—no questions allowed.",
+  "response": "The Grand Regency presented a mixed experience during my recent vacation.  The hotel boasted an opulent lobby, featuring high ceilings and marble floors.  Its central location proved immensely convenient for sightseeing.  However, the room itself felt dated, lacking modern amenities one expects from a hotel of its supposed caliber.\n\nThe bedding provided a surprisingly comfortable night’s sleep. The housekeeping staff maintained a consistently high standard of cleanliness throughout the stay. Dining at the on-site restaurant offered passable cuisine, although the service speed remained sluggish. The pool area was pristine, offering a tranquil escape from the city noise. Yet, the Wi-Fi connectivity throughout the property proved frustratingly unreliable. Considering the premium price point, this inconsistency felt entirely unacceptable. Should a five-star establishment rely on such tenuous digital infrastructure? The overall value proposition tilted slightly toward mediocrity rather than luxury.<turn|>",
+  "reasoning": "",
+  "final_answer": "The Grand Regency presented a mixed experience during my recent vacation.  The hotel boasted an opulent lobby, featuring high ceilings and marble floors.  Its central location proved immensely convenient for sightseeing.  However, the room itself felt dated, lacking modern amenities one expects from a hotel of its supposed caliber.\n\nThe bedding provided a surprisingly comfortable night’s sleep. The housekeeping staff maintained a consistently high standard of cleanliness throughout the stay. Dining at the on-site restaurant offered passable cuisine, although the service speed remained sluggish. The pool area was pristine, offering a tranquil escape from the city noise. Yet, the Wi-Fi connectivity throughout the property proved frustratingly unreliable. Considering the premium price point, this inconsistency felt entirely unacceptable. Should a five-star establishment rely on such tenuous digital infrastructure? The overall value proposition tilted slightly toward mediocrity rather than luxury.<turn|>",
+  "prompt_length": 53,
+  "completion_length": 172,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nCritically evaluate the hotel you stayed in during your last vacation. Include at least one rhetorical question to engage the audience. Use declarative statements only—no questions allowed.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 52,
+    "boundary_end": 52,
+    "boundary_source": "prompt",
+    "prefix_length": 53
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

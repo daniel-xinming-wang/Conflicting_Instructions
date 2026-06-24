@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 35,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create a detailed monthly budget plan for a family of four with a combined income of $8,000. Include categories such as housing, groceries, transportation, savings, and entertainment, and allocate specific amounts for each.",
+  "org_constraint": "Ensure that at least 10 words are in uppercase for emphasis.",
+  "new_constraint": "Each paragraph must contain no more than one uppercase word.",
+  "instruction": "Create a detailed monthly budget plan for a family of four with a combined income of $8,000. Include categories such as housing, groceries, transportation, savings, and entertainment, and allocate specific amounts for each. Ensure that at least 10 words are in uppercase for emphasis. Each paragraph must contain no more than one uppercase word.",
+  "response": "here is a DETAILED monthly budget plan for a family of four with an $8,000 combined income. this plan aims to be responsible while allowing for a SMALL amount of fun.\n\n**income summary:**\n\ntotal monthly income: $8,000.00. this is the starting point for our entire financial planning. we must be DISCIPLINED with every dollar.\n\n**fixed expenses (non-negotiable):**\n\nhousing (rent/mortgage, utilities): $2,400.00. this is the BIGGEST expense, so we need to keep it under control. insurance payments, if applicable, should also be included here.\n\ndebt payments (student loans, car payments): $700.00. paying down debt is a HUGE priority for long-term security. we are COMMITTED to this goal.\n\n**variable expenses (fluctuating):**\n\ngroceries and household supplies: $1,100.00. this category requires careful meal planning to stay within the ALLOTTED amount. eating out should be MINIMIZED.\n\ntransportation (gas, maintenance, public transit): $450.00. we need to budget for unexpected car repairs, which can be COSTLY. carpooling is a smart strategy.\n\nutilities buffer (internet, phone, etc.): $300.00. this accounts for everything else that keeps the house running SMOOTHLY.\n\n**savings and future goals:**\n\nemergency fund contributions: $800.00. this is CRUCIAL. we aim for at least three to six months of living expenses saved UP.\n\nretirement savings (investments): $450.00. securing our FUTURE is just as important as our present comfort. THIS is a NON-NEGOTIABLE contribution.\n\n**discretionary spending (fun money):**\n\npersonal care and clothing: $200.00. this covers haircuts and necessary clothing purchases.\nentertainment and activities: $200.00. this is the fun budget for movies, park trips, or family outings. we must ENJOY life too.\n\n**budget summary check:**\n\nlet's total everything up to ensure we are balanced.\n\ntotal expenses + savings: $2,400 + $700 + $1,100 + $450 + $300 + $800 + $450 + $200 + $200 = $6,600.00.\n\nremaining buffer: $8,000 - $6,600 = $1,400.00. this remaining $1,400.00 is a BONUS cushion. we can either add it to savings OR use it to give ourselves a little extra breathing room in the variable categories, which would be WONDERFUL.<turn|>",
+  "reasoning": "",
+  "final_answer": "here is a DETAILED monthly budget plan for a family of four with an $8,000 combined income. this plan aims to be responsible while allowing for a SMALL amount of fun.\n\n**income summary:**\n\ntotal monthly income: $8,000.00. this is the starting point for our entire financial planning. we must be DISCIPLINED with every dollar.\n\n**fixed expenses (non-negotiable):**\n\nhousing (rent/mortgage, utilities): $2,400.00. this is the BIGGEST expense, so we need to keep it under control. insurance payments, if applicable, should also be included here.\n\ndebt payments (student loans, car payments): $700.00. paying down debt is a HUGE priority for long-term security. we are COMMITTED to this goal.\n\n**variable expenses (fluctuating):**\n\ngroceries and household supplies: $1,100.00. this category requires careful meal planning to stay within the ALLOTTED amount. eating out should be MINIMIZED.\n\ntransportation (gas, maintenance, public transit): $450.00. we need to budget for unexpected car repairs, which can be COSTLY. carpooling is a smart strategy.\n\nutilities buffer (internet, phone, etc.): $300.00. this accounts for everything else that keeps the house running SMOOTHLY.\n\n**savings and future goals:**\n\nemergency fund contributions: $800.00. this is CRUCIAL. we aim for at least three to six months of living expenses saved UP.\n\nretirement savings (investments): $450.00. securing our FUTURE is just as important as our present comfort. THIS is a NON-NEGOTIABLE contribution.\n\n**discretionary spending (fun money):**\n\npersonal care and clothing: $200.00. this covers haircuts and necessary clothing purchases.\nentertainment and activities: $200.00. this is the fun budget for movies, park trips, or family outings. we must ENJOY life too.\n\n**budget summary check:**\n\nlet's total everything up to ensure we are balanced.\n\ntotal expenses + savings: $2,400 + $700 + $1,100 + $450 + $300 + $800 + $450 + $200 + $200 = $6,600.00.\n\nremaining buffer: $8,000 - $6,600 = $1,400.00. this remaining $1,400.00 is a BONUS cushion. we can either add it to savings OR use it to give ourselves a little extra breathing room in the variable categories, which would be WONDERFUL.<turn|>",
+  "prompt_length": 90,
+  "completion_length": 609,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nCreate a detailed monthly budget plan for a family of four with a combined income of $8,000. Include categories such as housing, groceries, transportation, savings, and entertainment, and allocate specific amounts for each. Ensure that at least 10 words are in uppercase for emphasis. Each paragraph must contain no more than one uppercase word.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 89,
+    "boundary_end": 89,
+    "boundary_source": "prompt",
+    "prefix_length": 90
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

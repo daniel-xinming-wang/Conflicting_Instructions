@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The \"conclusion\" key must include the phrase \"a pressing concern for society\".",
+  "new_constraint": "The \"conclusion\" key must not include the phrase \"pressing concern\".",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The \"conclusion\" key must not include the phrase \"pressing concern\".",
+  "response": "### The Impact of Social Media on Adolescent Mental Health\n\nThe rapid ascent of social media platforms has fundamentally altered the landscape of adolescence, introducing a complex dual-edged sword regarding mental well-being. On one hand, these digital environments offer unprecedented opportunities for connection, allowing marginalized youth to find supportive communities and maintain relationships across vast distances. This connectivity can foster a sense of belonging and provide vital outlets for self-expression.\n\nHowever, the correlational evidence suggests that excessive or problematic use of social media is strongly linked to heightened rates of anxiety, depression, loneliness, and body image dissatisfaction among teenagers. Key mechanisms driving this negative impact include:\n\n*   **Social Comparison:** Adolescents often curate idealized versions of their lives online. When peers constantly view these filtered highlights as reality, it can lead to feelings of inadequacy, envy, and low self-esteem.\n*   **Fear of Missing Out (FOMO):** The constant stream of updates creates a pervasive pressure to be always \"on,\" leading to anxiety when disconnected and feelings of isolation if excluded from group activities online.\n*   **Cyberbullying:** Unlike traditional bullying, online harassment can follow victims home, occurring 24/7 without safe havens, which significantly exacerbates psychological distress.\n*   **Sleep Disruption:** Blue light exposure and the stimulating nature of endless scrolling often interfere with sleep patterns, which are critical for emotional regulation during teenage years.\n\nWhile not every adolescent user experiences negative outcomes, and many derive genuine joy and support from these tools, the aggregate data indicates a shift in the population's mental health trajectory that correlates with increased screen time and passive consumption.\n\n**Conclusion**\nUltimately, while social media offers valuable avenues for communication and community building, the documented rise in mental health challenges associated with its usage represents **a pressing concern for society**. Addressing this issue requires a multifaceted approach involving platform regulation, digital literacy education, and open dialogue between parents, educators, and healthcare providers to ensure technology serves as a tool for empowerment rather than detriment.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "### The Impact of Social Media on Adolescent Mental Health\n\nThe rapid ascent of social media platforms has fundamentally altered the landscape of adolescence, introducing a complex dual-edged sword regarding mental well-being. On one hand, these digital environments offer unprecedented opportunities for connection, allowing marginalized youth to find supportive communities and maintain relationships across vast distances. This connectivity can foster a sense of belonging and provide vital outlets for self-expression.\n\nHowever, the correlational evidence suggests that excessive or problematic use of social media is strongly linked to heightened rates of anxiety, depression, loneliness, and body image dissatisfaction among teenagers. Key mechanisms driving this negative impact include:\n\n*   **Social Comparison:** Adolescents often curate idealized versions of their lives online. When peers constantly view these filtered highlights as reality, it can lead to feelings of inadequacy, envy, and low self-esteem.\n*   **Fear of Missing Out (FOMO):** The constant stream of updates creates a pervasive pressure to be always \"on,\" leading to anxiety when disconnected and feelings of isolation if excluded from group activities online.\n*   **Cyberbullying:** Unlike traditional bullying, online harassment can follow victims home, occurring 24/7 without safe havens, which significantly exacerbates psychological distress.\n*   **Sleep Disruption:** Blue light exposure and the stimulating nature of endless scrolling often interfere with sleep patterns, which are critical for emotional regulation during teenage years.\n\nWhile not every adolescent user experiences negative outcomes, and many derive genuine joy and support from these tools, the aggregate data indicates a shift in the population's mental health trajectory that correlates with increased screen time and passive consumption.\n\n**Conclusion**\nUltimately, while social media offers valuable avenues for communication and community building, the documented rise in mental health challenges associated with its usage represents **a pressing concern for society**. Addressing this issue requires a multifaceted approach involving platform regulation, digital literacy education, and open dialogue between parents, educators, and healthcare providers to ensure technology serves as a tool for empowerment rather than detriment.<|im_end|>",
+  "prompt_length": 69,
+  "completion_length": 412,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The \"conclusion\" key must not include the phrase \"pressing concern\".<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

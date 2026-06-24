@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 15,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002.",
+  "org_constraint": "The phrase \"medical records\" must appear exactly three times.",
+  "new_constraint": "The word \"record\" must appear only in its singular form.",
+  "instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002. The phrase \"medical records\" must appear exactly three times. The word \"record\" must appear only in its singular form.",
+  "response": "Subject: Request for Information Regarding Historical Medical Records\n\nDear Records Department,\n\nI am writing to request information on the process for obtaining a copy of my father's **medical records** from your facility dating back to 2002. \n\nCould you please clarify what specific authorization forms are required to release these **medical records** to a family member? Additionally, I would like to know if there is a specific fee associated with retrieving a historical record from that time period.\n\nPlease let me know the necessary steps to secure these **medical records** as soon as possible.\n\nThank you for your assistance.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

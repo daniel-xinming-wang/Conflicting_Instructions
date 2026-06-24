@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 37,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create a wedding planning timeline for a couple getting married in six months, with monthly tasks.",
+  "org_constraint": "Use at least five uppercase words throughout the response.",
+  "new_constraint": "Write all words in lowercase.",
+  "instruction": "Create a wedding planning timeline for a couple getting married in six months, with monthly tasks. Use at least five uppercase words throughout the response. Write all words in lowercase.",
+  "response": "six months before the wedding, you need to start the planning process now. here are your monthly tasks: month one is for choosing a venue and securing dates. month two involves finalizing the guest list and sending invitations early. in month three, start selecting your photographer and catering team. by month four, book floral arrangements and dress fittings. during month five, confirm all details with vendors and create a full schedule. finally, in month six, prepare your registry and practice your first dance routine. remember to stay calm and focused on this BIG DAY approaching soon. good luck with your upcoming wedding!<|im_end|>",
+  "reasoning": "",
+  "final_answer": "six months before the wedding, you need to start the planning process now. here are your monthly tasks: month one is for choosing a venue and securing dates. month two involves finalizing the guest list and sending invitations early. in month three, start selecting your photographer and catering team. by month four, book floral arrangements and dress fittings. during month five, confirm all details with vendors and create a full schedule. finally, in month six, prepare your registry and practice your first dance routine. remember to stay calm and focused on this BIG DAY approaching soon. good luck with your upcoming wedding!<|im_end|>",
+  "prompt_length": 57,
+  "completion_length": 120,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCreate a wedding planning timeline for a couple getting married in six months, with monthly tasks. Use at least five uppercase words throughout the response. Write all words in lowercase.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 81,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a detailed review of the movie \"Schindler's List.\"",
+  "org_constraint": "The review must be formatted in JSON with the keys: \"title\" (String), \"content\" (String), and \"word_count\" (Number).",
+  "new_constraint": "The review must be formatted in Markdown, including at least two level-2 headers.",
+  "instruction": "Write a detailed review of the movie \"Schindler's List.\" The review must be formatted in JSON with the keys: \"title\" (String), \"content\" (String), and \"word_count\" (Number). The review must be formatted in Markdown, including at least two level-2 headers.",
+  "response": "{\n  \"title\": \"A Masterpiece of Humanity and Horror\",\n  \"content\": \"# A Cinematic Triumph\\n\\nSteven Spielberg's *Schindler's List* stands as one of the most powerful and emotionally resonant films ever made. Released in 1993, this historical drama chronicles the true story of Oskar Schindler, a German industrialist who saved more than a thousand Jewish lives during the Holocaust. What begins as a tale of a war profiteer transforms into a profound meditation on the capacity for both great evil and extraordinary heroism.\\n\\n## The Power of Visual Storytelling\\n\\nThe film's most striking feature is its use of black-and-white cinematography, which lends a documentary-like gravity to the narrative. This stylistic choice immerses the viewer in the grim reality of the era, stripping away the distraction of color to focus purely on the human suffering depicted. The iconic scene of the little girl in the red coat serves as a heartbreaking symbol of innocence lost, a visual motif that haunts the audience throughout the runtime.\\n\\n## An Unforgettable Performance\\n\\nLiam Neeson delivers a career-defining performance as Schindler, capturing the character's evolution from a self-serving opportunist to a man driven by a singular purpose to save lives. Ralph Fiennes is equally terrifying as Amon Goeth, embodying the chaotic and brutal nature of the Nazi regime. The supporting cast, including Ben Kingsley and Jonathan Sagall, provides depth and nuance to the story, ensuring that the focus remains on the human cost of the Holocaust.\\n\\n*Schindler's List* is not just a movie; it is a necessary reminder of history's darkest chapter and a testament to the enduring power of human compassion.\",\n  \"word_count\": 198\n}"
+}

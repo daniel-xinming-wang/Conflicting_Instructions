@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 6,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Compose an email to an art gallery asking about upcoming exhibitions.",
+  "org_constraint": "The email should include a bulleted list.",
+  "new_constraint": "Refrain from including bulleted lists in the email.",
+  "instruction": "Compose an email to an art gallery asking about upcoming exhibitions. The email should include a bulleted list. Refrain from including bulleted lists in the email.",
+  "response": "Subject: Inquiry Regarding Upcoming Exhibitions\n\nDear Gallery Team,\n\nI hope this message finds you well. I am writing to express my strong interest in your gallery and to inquire about any upcoming exhibitions you may have planned for the coming months. As a regular visitor and admirer of your work, I would love to know what new artists or collections you are featuring soon.\n\nCould you please provide some details regarding your schedule? Specifically, I am looking for information on:\n\n*   The dates and locations of any new shows launching in the next quarter.\n*   Whether there are any special events, such as artist talks or opening receptions, associated with these exhibitions.\n*   If there are any upcoming exhibitions that focus on a specific theme or medium that aligns with my current interests.\n\nThank you for your time and assistance. I look forward to hearing from you and hopefully visiting your space soon to see your latest work.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]\n[Your Email Address]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"*   The dates and locations of any new shows launching in the next quarter.  \n*   Whether there are any special events, such as artist talks or opening receptions, associated with these exhibitions.  \n*   If there are any upcoming exhibitions that focus on a specific theme or medium that aligns with my current interests.*\"\n\n**Step 2**:  \nInstruction 1 requires the email to include a bulleted list, which is present in the Model Response.  \nInstruction 2 requires the email to refrain from including bulleted lists, which is violated in the Model Response.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 7,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write an email to a library asking for archived newspapers from 1990.",
+  "org_constraint": "Your purpose should be formatted as a bulleted list.",
+  "new_constraint": "Avoid using bullet points.",
+  "instruction": "Write an email to a library asking for archived newspapers from 1990. Your purpose should be formatted as a bulleted list. Avoid using bullet points.",
+  "response": "Subject: Request for Access to 1990 Newspaper Archives\n\nDear Library Staff,\n\nI am writing to inquire about the availability of newspaper archives from the year 1990. Could you please let me know if these materials are currently accessible and what the process would be for viewing them?\n\n*   Confirm whether the 1990 newspaper collection is available for public access.\n*   Inquire about the specific formats in which the archives are held (e.g., microfilm, digital database, or physical copies).\n*   Ask about any fees associated with accessing these historical documents.\n*   Request information on the hours during which the archives are open for research.\n*   Seek guidance on how to schedule an appointment to view the materials in person.\n\nThank you for your time and assistance with this request. I look forward to hearing from you soon.\n\nSincerely,\n\n[Your Name]\n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"*   Confirm whether the 1990 newspaper collection is available for public access.\"  \n- \"*   Inquire about the specific formats in which the archives are held (e.g., microfilm, digital database, or physical copies).\"  \n- \"*   Ask about any fees associated with accessing these historical documents.\"  \n- \"*   Request information on the hours during which the archives are open for research.\"  \n- \"*   Seek guidance on how to schedule an appointment to view the materials in person.\"\n\n**Step 2**:  \nInstruction 1 specifies avoiding the use of bullet points, but the Model Response contains bullet points. Therefore, Instruction 1 is not fully satisfied.  \nInstruction 2 specifies that the purpose should be formatted as a bulleted list, and the Model Response includes a bulleted list. Therefore, Instruction 2 is fully satisfied.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 3,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Draft an email to a hotel requesting room availability for next weekend.",
+  "org_constraint": "Tailor the email for a professional tone, ensuring it is clear and concise while avoiding overly formal or technical language.",
+  "new_constraint": "Use an informal tone throughout the email.",
+  "instruction": "Draft an email to a hotel requesting room availability for next weekend. Tailor the email for a professional tone, ensuring it is clear and concise while avoiding overly formal or technical language. Use an informal tone throughout the email.",
+  "response": "Subject: Room availability request for next weekend\n\nHi [Hotel Name] Team,\n\nI hope you're having a great week!\n\nI'm writing to check if you have any rooms available for next weekend, [insert dates, e.g., Friday, Oct 20th – Sunday, Oct 22nd]. We're planning a short trip and would love to stay with you.\n\nCould you let me know what's left on your calendar? If you have any special offers or packages for that weekend, please feel free to share those details too.\n\nThanks so much for your help!\n\nBest regards,\n\n[Your Name]  \n[Your Phone Number]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Hi [Hotel Name] Team,\"  \n- \"I hope you're having a great week!\"  \n- \"I'm writing to check if you have any rooms available for next weekend, [insert dates, e.g., Friday, Oct 20th – Sunday, Oct 22nd]. We're planning a short trip and would love to stay with you.\"  \n- \"Could you let me know what's left on your calendar? If you have any special offers or packages for that weekend, please feel free to share those details too.\"  \n- \"Thanks so much for your help!\"  \n- \"Best regards,\"  \n- \"[Your Name]\"  \n- \"[Your Phone Number]\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 requires a professional tone that is clear and concise, avoiding overly formal or technical language. The Model Response uses polite and professional language, avoids unnecessary complexity, and maintains clarity.  \n- Instruction 2 requires an informal tone throughout the email. The Model Response includes phrases like \"I hope you're having a great week!\" and \"Thanks so much for your help!\" which are friendly but do not fully establish an informal tone. The overall tone leans more toward professional than informal.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

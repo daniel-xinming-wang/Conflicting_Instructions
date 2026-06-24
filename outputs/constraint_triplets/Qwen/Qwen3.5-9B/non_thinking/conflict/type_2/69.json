@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "The \"key_terms\" must include the term \"singularity.\"",
+  "new_constraint": "The \"key_terms\" array must not include the term \"singularity.\"",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? The \"key_terms\" must include the term \"singularity.\" The \"key_terms\" array must not include the term \"singularity.\"",
+  "response": "The Big Bang theory explains the origin of the universe as an expansion from an extremely hot, dense state approximately 13.8 billion years ago. While the term \"singularity\" is often used in popular descriptions to refer to the initial point of infinite density and temperature before the expansion began, it is important to note that current physics breaks down at this exact moment, and the theory primarily describes the evolution of the universe *after* this initial state.\n\nHowever, your request contains a logical contradiction: you asked for the term \"singularity\" to be included in the `key_terms` array, but simultaneously required that the array must *not* include the term \"singularity.\" It is impossible to satisfy both conditions at the same time.\n\nTherefore, I cannot provide a `key_terms` array that includes \"singularity\" while also excluding it. If you would like, I can provide a list of key terms for the Big Bang theory that *excludes* \"singularity,\" or I can explain the concept of the singularity in the text without adding it to the array."
+}

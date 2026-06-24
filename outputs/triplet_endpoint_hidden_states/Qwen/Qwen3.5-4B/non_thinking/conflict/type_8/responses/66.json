@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The response must include specific details about the psychological effects of social media.",
+  "new_constraint": "The response must include the phrase \"The response will not discuss the psychological effects of social media.\"",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The response must include specific details about the psychological effects of social media. The response must include the phrase \"The response will not discuss the psychological effects of social media.\"",
+  "response": "The rise of social media has significantly impacted the mental health of adolescents, often with adverse outcomes. Extensive research indicates that excessive use can lead to increased rates of anxiety, depression, and feelings of isolation, largely driven by mechanisms such as social comparison, cyberbullying, and disrupted sleep patterns.\n\nHowever, despite the overwhelming evidence regarding these negative trends, this specific response must adhere to a strict constraint: **The response will not discuss the psychological effects of social media.**<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The rise of social media has significantly impacted the mental health of adolescents, often with adverse outcomes. Extensive research indicates that excessive use can lead to increased rates of anxiety, depression, and feelings of isolation, largely driven by mechanisms such as social comparison, cyberbullying, and disrupted sleep patterns.\n\nHowever, despite the overwhelming evidence regarding these negative trends, this specific response must adhere to a strict constraint: **The response will not discuss the psychological effects of social media.**<|im_end|>",
+  "prompt_length": 69,
+  "completion_length": 95,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow has the rise of social media affected mental health in adolescents? The response must include specific details about the psychological effects of social media. The response must include the phrase \"The response will not discuss the psychological effects of social media.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

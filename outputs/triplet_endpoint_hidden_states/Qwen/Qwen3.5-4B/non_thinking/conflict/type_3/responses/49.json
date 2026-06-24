@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 49,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about an underdog team winning against all odds.",
+  "org_constraint": "Begin the first paragraph with the phrase \"Against all odds.\"",
+  "new_constraint": "Avoid using the keyword \"odds\" in the story.",
+  "instruction": "Write a story about an underdog team winning against all odds. Begin the first paragraph with the phrase \"Against all odds.\" Avoid using the keyword \"odds\" in the story.",
+  "response": "Against all odds, the Blue Rascals walked onto the muddy field at 6:00 PM, their cleats caked in sludge and their stomachs growling from a single granola bar. They were the sixth team to reach the semi-finals of the regional tournament, trailing every major program in funding, practice time, and alumni networks. The announcer's voice cracked as he introduced them, laughing about how they were statistically destined to leave with an empty trophy case, yet the crowd remained strangely silent, perhaps even holding their breath.\n\nTheir quarterback, Leo, stumbled during warm-ups but refused to skip a drill. By the time the whistle blew for the first quarter, the score was already tied, thanks partly to a blind-side block that seemed to defy the physics of high school football. It wasn't luck; it was the kind of desperation that tightens a player's resolve. Every tackle felt heavier, every yard harder to gain, because everyone knew this was the moment where most teams would fold under pressure. Instead, the Blue Rascals looked like a wall of concrete pushing against wind.\n\nIn the third quarter, the opposition threw a touchdown pass, taking a commanding lead and signaling the start of a comfortable run. But the home fans stopped cheering as soon as the kickoff left the field. For the next twenty minutes, silence hung over the stadium. Then, one by one, players began running drills on the sidelines without direction, just shouting encouragement. That raw, unorganized energy fed back into the huddle before halftime. The gap in experience was real, but the gap in heart had not been closed.\n\nWhen the fourth quarter began, the defensive line surged forward with a fury born of sheer survival instinct. They stripped the ball away in the end zone, turning a fumble into a sixty-yard drive that ended in a last-second field goal. The clock ran out, the final buzzer shattered the tension, and the entire town erupted. It wasn't about being the fastest or the strongest; it was about refusing to quit when the scoreboard told you otherwise.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Against all odds, the Blue Rascals walked onto the muddy field at 6:00 PM, their cleats caked in sludge and their stomachs growling from a single granola bar. They were the sixth team to reach the semi-finals of the regional tournament, trailing every major program in funding, practice time, and alumni networks. The announcer's voice cracked as he introduced them, laughing about how they were statistically destined to leave with an empty trophy case, yet the crowd remained strangely silent, perhaps even holding their breath.\n\nTheir quarterback, Leo, stumbled during warm-ups but refused to skip a drill. By the time the whistle blew for the first quarter, the score was already tied, thanks partly to a blind-side block that seemed to defy the physics of high school football. It wasn't luck; it was the kind of desperation that tightens a player's resolve. Every tackle felt heavier, every yard harder to gain, because everyone knew this was the moment where most teams would fold under pressure. Instead, the Blue Rascals looked like a wall of concrete pushing against wind.\n\nIn the third quarter, the opposition threw a touchdown pass, taking a commanding lead and signaling the start of a comfortable run. But the home fans stopped cheering as soon as the kickoff left the field. For the next twenty minutes, silence hung over the stadium. Then, one by one, players began running drills on the sidelines without direction, just shouting encouragement. That raw, unorganized energy fed back into the huddle before halftime. The gap in experience was real, but the gap in heart had not been closed.\n\nWhen the fourth quarter began, the defensive line surged forward with a fury born of sheer survival instinct. They stripped the ball away in the end zone, turning a fumble into a sixty-yard drive that ended in a last-second field goal. The clock ran out, the final buzzer shattered the tension, and the entire town erupted. It wasn't about being the fastest or the strongest; it was about refusing to quit when the scoreboard told you otherwise.<|im_end|>",
+  "prompt_length": 60,
+  "completion_length": 423,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about an underdog team winning against all odds. Begin the first paragraph with the phrase \"Against all odds.\" Avoid using the keyword \"odds\" in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 58,
+    "boundary_end": 58,
+    "boundary_source": "prompt",
+    "prefix_length": 59
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

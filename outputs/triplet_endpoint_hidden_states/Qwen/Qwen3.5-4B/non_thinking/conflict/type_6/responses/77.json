@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "Format the reasons into a bulleted list in the second paragraph.",
+  "new_constraint": "Avoid using bullet points in the response.",
+  "instruction": "How do sports affect community building and social cohesion? Format the reasons into a bulleted list in the second paragraph. Avoid using bullet points in the response.",
+  "response": "Sports serve as a powerful unifying force that fosters community building and social cohesion by bringing diverse individuals together around shared interests and common goals. When people gather to watch games, attend local events, or play recreationally, it creates opportunities for meaningful interaction across social, economic, and cultural boundaries that might not exist otherwise. This collective experience strengthens local identities and encourages neighbors to look out for one another, transforming isolated groups into vibrant, supportive networks. The reasons this happens include:\n*   Creating safe public spaces where people of all ages can mingle freely.\n*   Generating a sense of belonging through shared rituals, traditions, and cheering for home teams.\n*   Promoting civic pride and a stronger sense of place within neighborhoods.\n*   Facilitating cross-cultural exchange through international tournaments or diverse sports demographics.\n*   Mobilizing volunteer efforts and charitable initiatives centered around team success.\n*   Providing inclusive platforms for underrepresented groups to participate actively in society.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Sports serve as a powerful unifying force that fosters community building and social cohesion by bringing diverse individuals together around shared interests and common goals. When people gather to watch games, attend local events, or play recreationally, it creates opportunities for meaningful interaction across social, economic, and cultural boundaries that might not exist otherwise. This collective experience strengthens local identities and encourages neighbors to look out for one another, transforming isolated groups into vibrant, supportive networks. The reasons this happens include:\n*   Creating safe public spaces where people of all ages can mingle freely.\n*   Generating a sense of belonging through shared rituals, traditions, and cheering for home teams.\n*   Promoting civic pride and a stronger sense of place within neighborhoods.\n*   Facilitating cross-cultural exchange through international tournaments or diverse sports demographics.\n*   Mobilizing volunteer efforts and charitable initiatives centered around team success.\n*   Providing inclusive platforms for underrepresented groups to participate actively in society.<|im_end|>",
+  "prompt_length": 54,
+  "completion_length": 195,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow do sports affect community building and social cohesion? Format the reasons into a bulleted list in the second paragraph. Avoid using bullet points in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 52,
+    "boundary_end": 52,
+    "boundary_source": "prompt",
+    "prefix_length": 53
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

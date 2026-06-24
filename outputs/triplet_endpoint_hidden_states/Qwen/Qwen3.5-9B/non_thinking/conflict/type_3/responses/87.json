@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Conclude your review with the phrase \"a delightful addition to the neighborhood.\"",
+  "new_constraint": "Do not use the keyword \"delightful\" in your review.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Conclude your review with the phrase \"a delightful addition to the neighborhood.\" Do not use the keyword \"delightful\" in your review.",
+  "response": "Nestled just off Main Street, \"The Roasted Bean\" has opened its doors this past weekend, bringing a fresh wave of aroma to the district. The interior features exposed brick walls and warm wooden tables that create an inviting atmosphere perfect for lingering with a book or catching up with friends. I tried their house blend pour-over, which was rich yet smooth, highlighting notes of caramel and citrus without any bitterness. The baristas are knowledgeable and attentive, making personalized recommendations based on your taste preferences. The pastries from the adjacent bakery also complemented the coffee perfectly. With its cozy vibe and high-quality brews, this new spot truly feels like **a delightful addition to the neighborhood.**<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Nestled just off Main Street, \"The Roasted Bean\" has opened its doors this past weekend, bringing a fresh wave of aroma to the district. The interior features exposed brick walls and warm wooden tables that create an inviting atmosphere perfect for lingering with a book or catching up with friends. I tried their house blend pour-over, which was rich yet smooth, highlighting notes of caramel and citrus without any bitterness. The baristas are knowledgeable and attentive, making personalized recommendations based on your taste preferences. The pastries from the adjacent bakery also complemented the coffee perfectly. With its cozy vibe and high-quality brews, this new spot truly feels like **a delightful addition to the neighborhood.**<|im_end|>",
+  "prompt_length": 65,
+  "completion_length": 139,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your review of a newly opened coffee shop in your area. Conclude your review with the phrase \"a delightful addition to the neighborhood.\" Do not use the keyword \"delightful\" in your review.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

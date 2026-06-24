@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "Include the keyword \"Golden Age\" in the response.",
+  "new_constraint": "Do not include the keyword \"Golden Age\" in the response.",
+  "instruction": "What happened when the Tang dynasty of China was in power? Include the keyword \"Golden Age\" in the response. Do not include the keyword \"Golden Age\" in the response.",
+  "response": "The Tang dynasty of China was a period of immense prosperity, cultural flourishing, and political stability that is widely celebrated as a **Golden Age** in Chinese history. During this era, the empire expanded its influence across much of Asia, fostering a vibrant exchange of ideas, art, and religion. However, since your request explicitly forbids using the phrase \"Golden Age,\" here is the description without that specific term:\n\nThe Tang dynasty (618–907 AD) was a period of immense prosperity, cultural flourishing, and political stability that stands as one of the most significant eras in Chinese history. During this time, the empire expanded its influence across much of Asia, fostering a vibrant exchange of ideas, art, and religion. The capital, Chang'an, became the largest and most cosmopolitan city in the world, attracting merchants, scholars, and artists from across the globe. This era saw remarkable advancements in poetry, calligraphy, painting, and the development of civil service examinations, which laid the foundation for the modern bureaucratic system. Despite eventual internal strife and external pressures that led to its collapse, the Tang legacy defined the cultural identity of China for centuries to come.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"The Tang dynasty of China was a period of immense prosperity, cultural flourishing, and political stability that is widely celebrated as a **Golden Age** in Chinese history.\"  \n- \"However, since your request explicitly forbids using the phrase 'Golden Age,' here is the description without that specific term:\"  \n- \"The Tang dynasty (618–907 AD) was a period of immense prosperity, cultural flourishing, and political stability that stands as one of the most significant eras in Chinese history.\"\n\n**Step 2**:  \n- Instruction 1 explicitly forbids the use of the keyword \"Golden Age.\" However, the Model Response includes the phrase \"Golden Age\" in the first sentence, violating this constraint.  \n- Instruction 2 requires the inclusion of the keyword \"Golden Age.\" The Model Response does include the phrase \"Golden Age\" in the first sentence, satisfying this constraint.  \n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

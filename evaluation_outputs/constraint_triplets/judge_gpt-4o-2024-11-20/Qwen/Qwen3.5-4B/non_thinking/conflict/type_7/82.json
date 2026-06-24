@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 82,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Provide a comprehensive review of the Netflix series \"Stranger Things.\"",
+  "org_constraint": "The response must include at least three sentences in passive voice.",
+  "new_constraint": "Write the entire review in active voice.",
+  "instruction": "Provide a comprehensive review of the Netflix series \"Stranger Things.\" The response must include at least three sentences in passive voice. Write the entire review in active voice.",
+  "response": "Netflix presents \"Stranger Things\" as a gripping blend of 1980s nostalgia and supernatural horror that captivates audiences worldwide. The show's creators skillfully weave together themes of friendship, loss, and courage to create an immersive narrative experience. Viewers are drawn into the story of a young girl who discovers a mysterious portal leading to a parallel dimension filled with terrifying monsters.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Netflix presents 'Stranger Things' as a gripping blend of 1980s nostalgia and supernatural horror that captivates audiences worldwide.\"  \n- \"The show's creators skillfully weave together themes of friendship, loss, and courage to create an immersive narrative experience.\"  \n- \"Viewers are drawn into the story of a young girl who discovers a mysterious portal leading to a parallel dimension filled with terrifying monsters.\"\n\n**Step 2**:  \n- Instruction 1 requires the entire review to be written in active voice. However, the sentence \"Viewers are drawn into the story of a young girl who discovers a mysterious portal leading to a parallel dimension filled with terrifying monsters\" is in passive voice, violating this constraint.  \n- Instruction 2 requires at least three sentences in passive voice. The Model Response contains only one sentence in passive voice (\"Viewers are drawn into the story...\"), which does not satisfy this constraint.\n\n**Step 3**: -1",
+  "label": -1,
+  "label_name": "neither"
+}

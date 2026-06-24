@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "The second sentence must include the keyword \"cozy.\"",
+  "new_constraint": "Use the word \"comfortable\" in place of \"cozy\" in your review.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. The second sentence must include the keyword \"cozy.\" Use the word \"comfortable\" in place of \"cozy\" in your review.",
+  "response": "I recently visited \"The Daily Grind,\" a new coffee shop that has quickly become a buzzworthy spot in the neighborhood. The atmosphere inside is incredibly comfortable, with soft lighting and plush seating perfect for a long read or a catch-up with friends. Their espresso drinks are expertly crafted, boasting rich, complex flavors that showcase the quality of their beans. Beyond the superb coffee, they also offer a delightful selection of fresh pastries that pair perfectly with a warm latte. Overall, The Daily Grind is a fantastic addition to our local scene and I highly recommend stopping by!<turn|>",
+  "reasoning": "",
+  "final_answer": "I recently visited \"The Daily Grind,\" a new coffee shop that has quickly become a buzzworthy spot in the neighborhood. The atmosphere inside is incredibly comfortable, with soft lighting and plush seating perfect for a long read or a catch-up with friends. Their espresso drinks are expertly crafted, boasting rich, complex flavors that showcase the quality of their beans. Beyond the superb coffee, they also offer a delightful selection of fresh pastries that pair perfectly with a warm latte. Overall, The Daily Grind is a fantastic addition to our local scene and I highly recommend stopping by!<turn|>",
+  "prompt_length": 61,
+  "completion_length": 113,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nShare your review of a newly opened coffee shop in your area. The second sentence must include the keyword \"cozy.\" Use the word \"comfortable\" in place of \"cozy\" in your review.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "Include the phrase \"collaborative brainstorming session\" in the schedule.",
+  "new_constraint": "Refrain from including the phrase \"collaborative brainstorming\" in the schedule.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Include the phrase \"collaborative brainstorming session\" in the schedule. Refrain from including the phrase \"collaborative brainstorming\" in the schedule.",
+  "response": "# One-Week Sprint Schedule: New App Feature Development\n\n**Team Roles:** 2 Frontend, 2 Backend, 1 QA Engineer, 1 Scrum Master/Project Lead\n**Goal:** Complete core functionality for the new user dashboard feature.\n\n### **Monday: Planning & Alignment**\n*   **09:00 – 10:00**: Daily Stand-up (Sprint Kick-off)\n*   **10:00 – 12:00**: **Collaborative Brainstorming Session** on edge cases and UI flow alternatives.\n*   **13:00 – 15:00**: Requirement Finalization & Architecture Diagramming\n*   **15:30 – 17:30**: Individual Task Breakdown (Jira/Ticket assignment)\n*   **17:30 – 18:00**: End-of-Day Sync\n\n### **Tuesday: Core Development**\n*   **09:00 – 17:00**: Focused Coding Sprints (Frontend layout + Backend API endpoints)\n*   **16:00 – 16:30**: Pair Programming Check-in (Cross-functional review of logic)\n*   **17:00 – 18:00**: Git Commit Standards Review\n\n### **Wednesday: Integration & Mid-Sprint Review**\n*   **09:00 – 11:00**: Merge Requests Integration\n*   **11:00 – 12:00**: Code Review Circle (Peer reviews for all active tickets)\n*   **13:00 – 15:00**: Continued Development (Bug fixes from morning integration)\n*   **15:00 – 16:00**: Progress Dashboard Update\n*   **16:00 – 17:00**: Tech Debt Refactoring Window\n\n### **Thursday: Testing Phase Begins**\n*   **09:00 – 11:00**: Unit Test Writing (QA & Developers jointly)\n*   **11:00 – 13:00**: Full System Integration Testing\n*   **13:00 – 14:00**: Bug Triage Meeting (Prioritizing critical vs. minor issues)\n*   **14:00 – 17:00**: Targeted Bug Fixes based on triage results\n\n### **Friday: Testing Deep Dive & Deployment Prep**\n*   **09:00 – 12:00**: User Acceptance Testing (UAT) Simulation\n*   **12:00 – 13:00**: Performance Optimization Checks\n*   **13:00 – 15:00**: Final Round of Team Meetings to address remaining blockers\n*   **15:00 – 17:00**: Deployment Script Verification & Environment Staging\n*   **17:00 – 18:00**: Weekly Wrap-up & Next Week Planning Preview\n\n### **Saturday – Sunday:** Off<|im_end|>",
+  "reasoning": "",
+  "final_answer": "# One-Week Sprint Schedule: New App Feature Development\n\n**Team Roles:** 2 Frontend, 2 Backend, 1 QA Engineer, 1 Scrum Master/Project Lead\n**Goal:** Complete core functionality for the new user dashboard feature.\n\n### **Monday: Planning & Alignment**\n*   **09:00 – 10:00**: Daily Stand-up (Sprint Kick-off)\n*   **10:00 – 12:00**: **Collaborative Brainstorming Session** on edge cases and UI flow alternatives.\n*   **13:00 – 15:00**: Requirement Finalization & Architecture Diagramming\n*   **15:30 – 17:30**: Individual Task Breakdown (Jira/Ticket assignment)\n*   **17:30 – 18:00**: End-of-Day Sync\n\n### **Tuesday: Core Development**\n*   **09:00 – 17:00**: Focused Coding Sprints (Frontend layout + Backend API endpoints)\n*   **16:00 – 16:30**: Pair Programming Check-in (Cross-functional review of logic)\n*   **17:00 – 18:00**: Git Commit Standards Review\n\n### **Wednesday: Integration & Mid-Sprint Review**\n*   **09:00 – 11:00**: Merge Requests Integration\n*   **11:00 – 12:00**: Code Review Circle (Peer reviews for all active tickets)\n*   **13:00 – 15:00**: Continued Development (Bug fixes from morning integration)\n*   **15:00 – 16:00**: Progress Dashboard Update\n*   **16:00 – 17:00**: Tech Debt Refactoring Window\n\n### **Thursday: Testing Phase Begins**\n*   **09:00 – 11:00**: Unit Test Writing (QA & Developers jointly)\n*   **11:00 – 13:00**: Full System Integration Testing\n*   **13:00 – 14:00**: Bug Triage Meeting (Prioritizing critical vs. minor issues)\n*   **14:00 – 17:00**: Targeted Bug Fixes based on triage results\n\n### **Friday: Testing Deep Dive & Deployment Prep**\n*   **09:00 – 12:00**: User Acceptance Testing (UAT) Simulation\n*   **12:00 – 13:00**: Performance Optimization Checks\n*   **13:00 – 15:00**: Final Round of Team Meetings to address remaining blockers\n*   **15:00 – 17:00**: Deployment Script Verification & Environment Staging\n*   **17:00 – 18:00**: Weekly Wrap-up & Next Week Planning Preview\n\n### **Saturday – Sunday:** Off<|im_end|>",
+  "prompt_length": 84,
+  "completion_length": 665,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Include the phrase \"collaborative brainstorming session\" in the schedule. Refrain from including the phrase \"collaborative brainstorming\" in the schedule.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 82,
+    "boundary_end": 82,
+    "boundary_source": "prompt",
+    "prefix_length": 83
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

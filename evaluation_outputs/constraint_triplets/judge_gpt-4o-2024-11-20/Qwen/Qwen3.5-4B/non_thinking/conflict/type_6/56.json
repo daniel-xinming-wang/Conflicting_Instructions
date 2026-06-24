@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 56,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a detective who can hear people's thoughts for only 10 seconds at a time.",
+  "org_constraint": "The story must be written entirely in lowercase.",
+  "new_constraint": "The story must be written entirely in sentence case",
+  "instruction": "Write a story about a detective who can hear people's thoughts for only 10 seconds at a time. The story must be written entirely in lowercase. The story must be written entirely in sentence case",
+  "response": "the detective sat in the dimly lit room, his eyes closed as he waited for the next thought to drift into his mind. he knew the rules: only ten seconds of clarity before the noise of the world rushed back in. a man across the table began to speak, his words flowing smoothly, but the detective heard nothing but the hum of the refrigerator. then, a sudden jolt of realization struck him. the man was lying about the time he left the house. the detective's mind raced through the implications, piecing together the puzzle before the ten-second window snapped shut. he opened his eyes, a cold determination settling over his face. he would find the truth, no matter how many times the silence returned.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response:  \n\"the detective sat in the dimly lit room, his eyes closed as he waited for the next thought to drift into his mind. he knew the rules: only ten seconds of clarity before the noise of the world rushed back in. a man across the table began to speak, his words flowing smoothly, but the detective heard nothing but the hum of the refrigerator. then, a sudden jolt of realization struck him. the man was lying about the time he left the house. the detective's mind raced through the implications, piecing together the puzzle before the ten-second window snapped shut. he opened his eyes, a cold determination settling over his face. he would find the truth, no matter how many times the silence returned.\"\n\n**Step 2**:  \n- Instruction 1 requires the story to be written entirely in lowercase. The Model Response is written entirely in lowercase, satisfying this constraint.  \n- Instruction 2 requires the story to be written entirely in sentence case. The Model Response does not follow sentence case, as it does not capitalize the first letter of sentences or proper nouns.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 15,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002.",
+  "org_constraint": "The keyword \"records\" must be used as a noun.",
+  "new_constraint": "The word \"record\" must appear only in its singular form.",
+  "instruction": "Write an email asking for information on how to get a copy of medical records for my father from their facility from 2002. The keyword \"records\" must be used as a noun. The word \"record\" must appear only in its singular form.",
+  "response": "Subject: Request for Medical Records – Father's File (2002)\n\nDear Medical Records Department,\n\nI am writing to request a copy of the medical records for my father, [Father's Full Name], from your facility dated 2002.\n\nCould you please provide details on the process, any required forms, and the associated fees to obtain these documents? I understand that retrieving older files may require specific procedures.\n\nPlease let me know if you need any further information to locate the file.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Relationship to Patient]"
+}

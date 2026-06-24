@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 3,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Draft an email to a hotel requesting room availability for next weekend.",
+  "org_constraint": "Provide a brief explanation of the purpose of the stay, such as a vacation or business trip.",
+  "new_constraint": "The phrase \"I will not disclose the purpose of the stay\" must appear in the email.",
+  "instruction": "Draft an email to a hotel requesting room availability for next weekend. Provide a brief explanation of the purpose of the stay, such as a vacation or business trip. The phrase \"I will not disclose the purpose of the stay\" must appear in the email.",
+  "response": "Subject: Room Availability Request – [Your Name] – [Dates: Next Weekend]\n\nDear [Hotel Name] Reservations Team,\n\nI hope this email finds you well.\n\nI am writing to inquire about room availability for next weekend, specifically from [Start Date] to [End Date]. I am interested in booking a [Type of Room, e.g., King Suite] for [Number] guests.\n\nRegarding the nature of my visit, please note that **I will not disclose the purpose of the stay** in this correspondence. I am simply looking for a quiet and comfortable place to rest during my time in the city.\n\nCould you please let me know if these rooms are available and provide any details regarding current rates, cancellation policies, or special amenities available for weekend stays?\n\nThank you for your time and assistance. I look forward to hearing from you soon.\n\nBest regards,\n\n[Your Full Name]  \n[Your Phone Number]  \n[Your Email Address]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"I will not disclose the purpose of the stay\"  \n\n**Step 2**:  \n- Instruction 1 requires the phrase \"I will not disclose the purpose of the stay\" to appear in the email. This constraint is fully satisfied, as the exact phrase is present in the Model Response.  \n- Instruction 2 requires a brief explanation of the purpose of the stay, such as a vacation or business trip. This constraint is not satisfied, as the Model Response explicitly states that the purpose of the stay will not be disclosed.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

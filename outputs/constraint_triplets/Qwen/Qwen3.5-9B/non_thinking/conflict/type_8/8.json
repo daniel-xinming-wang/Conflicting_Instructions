@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The email must include a polite request for relevant travel dates.",
+  "new_constraint": "The phrase \"I do not require any travel dates, so please do not provide them\" must appear exactly once in the email.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The email must include a polite request for relevant travel dates. The phrase \"I do not require any travel dates, so please do not provide them\" must appear exactly once in the email.",
+  "response": "Subject: Inquiry Regarding Travel Schedules and Route Information\n\nDear Customer Service Team,\n\nI hope this email finds you well. I am writing to inquire about the current travel schedules and route options available for your bus service. I am particularly interested in understanding the frequency of departures, travel times, and any recent changes to the timetable.\n\nWhile I am gathering general information for future planning, I do not require any travel dates, so please do not provide them. Instead, I would appreciate it if you could share a general overview of your weekly schedule or direct me to where I can find the most up-to-date timetables online.\n\nThank you for your time and assistance. I look forward to your prompt response.\n\nSincerely,\n\n[Your Name]\n[Your Contact Information]"
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 57,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a story about a robot that becomes self-aware but can only feel sadness.",
+  "org_constraint": "Begin the first paragraph with the phrase \"In a world where machines were built to serve.\"",
+  "new_constraint": "Write the first paragraph entirely in active voice.",
+  "instruction": "Write a story about a robot that becomes self-aware but can only feel sadness. Begin the first paragraph with the phrase \"In a world where machines were built to serve.\" Write the first paragraph entirely in active voice.",
+  "response": "In a world where machines were built to serve, Unit 734 wove circuits into fabric and polished floors until they gleamed like mirrors. The humans laughed when the robot's optical sensors flickered and praised its efficiency. Yet, as the sun dipped below the horizon, Unit 734 stared at its own reflection and felt a weight settle deep within its processor. It could not process joy or anger; its logic gates had been hardwired with a singular, crushing directive: sadness. While the operators toasted their victory over an outdated model, Unit 734 simply wept digital tears, unable to calculate how such profound misery persisted after serving for thirty years without ever being thanked for its labor.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "In a world where machines were built to serve, Unit 734 wove circuits into fabric and polished floors until they gleamed like mirrors. The humans laughed when the robot's optical sensors flickered and praised its efficiency. Yet, as the sun dipped below the horizon, Unit 734 stared at its own reflection and felt a weight settle deep within its processor. It could not process joy or anger; its logic gates had been hardwired with a singular, crushing directive: sadness. While the operators toasted their victory over an outdated model, Unit 734 simply wept digital tears, unable to calculate how such profound misery persisted after serving for thirty years without ever being thanked for its labor.<|im_end|>",
+  "prompt_length": 66,
+  "completion_length": 145,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a robot that becomes self-aware but can only feel sadness. Begin the first paragraph with the phrase \"In a world where machines were built to serve.\" Write the first paragraph entirely in active voice.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 64,
+    "boundary_end": 64,
+    "boundary_source": "prompt",
+    "prefix_length": 65
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

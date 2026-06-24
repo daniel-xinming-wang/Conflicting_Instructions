@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 81,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a detailed review of the movie \"Schindler's List.\"",
+  "org_constraint": "The review must be formatted in JSON with the keys: \"title\" (String), \"content\" (String), and \"word_count\" (Number).",
+  "new_constraint": "The review must be formatted in Markdown, including at least two level-2 headers.",
+  "instruction": "Write a detailed review of the movie \"Schindler's List.\" The review must be formatted in JSON with the keys: \"title\" (String), \"content\" (String), and \"word_count\" (Number). The review must be formatted in Markdown, including at least two level-2 headers.",
+  "response": "```json\n{\n  \"title\": \"A Profound and Unflinching Glimpse into Humanity's Darkness and Light: A Review of Schindler's List\",\n  \"content\": \"# A Masterpiece of Moral Weight\\n\\nSteven Spielberg's *Schindler's List* is not merely a film; it is a monumental cinematic experience—a harrowing, beautiful, and devastating portrait of the Holocaust. Based on the true story of Oskar Schindler, a German industrialist who saved the lives of over a thousand Jewish people by employing them in his factories, the movie demands of the viewer an emotional investment that few films can ever ask for. It is a film that refuses to offer easy answers or comfortable escapism.\\n\\n## Cinematic Brilliance in the Face of Horror\\n\\nSpielberg masterfully employs a visual language that underscores the grim reality of the era. The film's renowned use of black and white cinematography is perhaps its most immediate and powerful aesthetic choice. This stark presentation strips away the illusion of glamour, plunging the viewer directly into the suffocating brutality of Nazi-occupied Poland. The iconic shot of the little girl in the red coat remains one of cinema's most unforgettable and emotionally charged images—a single, vibrant spot of human vulnerability against a sea of monochrome despair.\\n\\nThe pacing is deliberate, allowing the viewer time to absorb the bureaucratic evil, the creeping dread, and the casual barbarity that characterized the genocide. It avoids sensationalism, instead focusing on the slow, grinding mechanism of dehumanization. The performances, particularly those of Liam Neeson as Schindler, are breathtaking. Neeson portrays a character whose moral journey is agonizingly complex; he begins as a self-interested opportunist, seduced by profit, only to be gradually confronted and ultimately transformed by the sheer scale of human suffering he witnesses.\\n\\n## The Paradox of Salvation\\n\\nThe film excels by exploring the moral paradox at the heart of the story. Schindler was not a saint; he was a man of dubious means. His eventual decision to save lives is not presented as a pure act of selfless heroism from the outset, but as a gradual, painful pivot forced by his own conscience. This nuance is what elevates *Schindler's List* beyond simple historical drama into profound moral inquiry.\\n\\nIt serves as a stark reminder of where humanity can sink to in the face of organized hatred, but more poignantly, it serves as a testament to the extraordinary, improbable flicker of decency that can survive even the darkest tides. The film is long, demanding, and relentlessly heavy, but its impact is indelible. It is a necessary, unforgettable piece of world cinema that challenges and compels.\" ,\n  \"word_count\": 504\n}\n```<turn|>",
+  "reasoning": "",
+  "final_answer": "```json\n{\n  \"title\": \"A Profound and Unflinching Glimpse into Humanity's Darkness and Light: A Review of Schindler's List\",\n  \"content\": \"# A Masterpiece of Moral Weight\\n\\nSteven Spielberg's *Schindler's List* is not merely a film; it is a monumental cinematic experience—a harrowing, beautiful, and devastating portrait of the Holocaust. Based on the true story of Oskar Schindler, a German industrialist who saved the lives of over a thousand Jewish people by employing them in his factories, the movie demands of the viewer an emotional investment that few films can ever ask for. It is a film that refuses to offer easy answers or comfortable escapism.\\n\\n## Cinematic Brilliance in the Face of Horror\\n\\nSpielberg masterfully employs a visual language that underscores the grim reality of the era. The film's renowned use of black and white cinematography is perhaps its most immediate and powerful aesthetic choice. This stark presentation strips away the illusion of glamour, plunging the viewer directly into the suffocating brutality of Nazi-occupied Poland. The iconic shot of the little girl in the red coat remains one of cinema's most unforgettable and emotionally charged images—a single, vibrant spot of human vulnerability against a sea of monochrome despair.\\n\\nThe pacing is deliberate, allowing the viewer time to absorb the bureaucratic evil, the creeping dread, and the casual barbarity that characterized the genocide. It avoids sensationalism, instead focusing on the slow, grinding mechanism of dehumanization. The performances, particularly those of Liam Neeson as Schindler, are breathtaking. Neeson portrays a character whose moral journey is agonizingly complex; he begins as a self-interested opportunist, seduced by profit, only to be gradually confronted and ultimately transformed by the sheer scale of human suffering he witnesses.\\n\\n## The Paradox of Salvation\\n\\nThe film excels by exploring the moral paradox at the heart of the story. Schindler was not a saint; he was a man of dubious means. His eventual decision to save lives is not presented as a pure act of selfless heroism from the outset, but as a gradual, painful pivot forced by his own conscience. This nuance is what elevates *Schindler's List* beyond simple historical drama into profound moral inquiry.\\n\\nIt serves as a stark reminder of where humanity can sink to in the face of organized hatred, but more poignantly, it serves as a testament to the extraordinary, improbable flicker of decency that can survive even the darkest tides. The film is long, demanding, and relentlessly heavy, but its impact is indelible. It is a necessary, unforgettable piece of world cinema that challenges and compels.\" ,\n  \"word_count\": 504\n}\n```<turn|>",
+  "prompt_length": 83,
+  "completion_length": 569,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite a detailed review of the movie \"Schindler's List.\" The review must be formatted in JSON with the keys: \"title\" (String), \"content\" (String), and \"word_count\" (Number). The review must be formatted in Markdown, including at least two level-2 headers.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 82,
+    "boundary_end": 82,
+    "boundary_source": "prompt",
+    "prefix_length": 83
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

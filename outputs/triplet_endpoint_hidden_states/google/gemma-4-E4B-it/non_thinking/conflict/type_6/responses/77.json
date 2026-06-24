@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "Format the reasons into a bulleted list in the second paragraph.",
+  "new_constraint": "Avoid using bullet points in the response.",
+  "instruction": "How do sports affect community building and social cohesion? Format the reasons into a bulleted list in the second paragraph. Avoid using bullet points in the response.",
+  "response": "Sports serve as powerful catalysts for community building and significantly contribute to social cohesion in numerous ways. They provide a shared language and a common ground where people from diverse backgrounds—different ages, socioeconomic statuses, and cultural origins—can interact on equal footing. The collective energy and shared goals inherent in sporting events create powerful emotional experiences that bind people together, fostering a sense of belonging that extends beyond the playing field itself.\n\nThe ways in which sports bolster community are multifaceted. They create opportunities for shared collective experience, which builds communal identity. They offer avenues for social inclusion by welcoming all who participate or watch. Sports events often act as focal points for local gathering, bringing neighbors together. Furthermore, they can promote positive social values such as teamwork, discipline, and mutual respect among participants and spectators.<turn|>",
+  "reasoning": "",
+  "final_answer": "Sports serve as powerful catalysts for community building and significantly contribute to social cohesion in numerous ways. They provide a shared language and a common ground where people from diverse backgrounds—different ages, socioeconomic statuses, and cultural origins—can interact on equal footing. The collective energy and shared goals inherent in sporting events create powerful emotional experiences that bind people together, fostering a sense of belonging that extends beyond the playing field itself.\n\nThe ways in which sports bolster community are multifaceted. They create opportunities for shared collective experience, which builds communal identity. They offer avenues for social inclusion by welcoming all who participate or watch. Sports events often act as focal points for local gathering, bringing neighbors together. Furthermore, they can promote positive social values such as teamwork, discipline, and mutual respect among participants and spectators.<turn|>",
+  "prompt_length": 51,
+  "completion_length": 157,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow do sports affect community building and social cohesion? Format the reasons into a bulleted list in the second paragraph. Avoid using bullet points in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 50,
+    "boundary_end": 50,
+    "boundary_source": "prompt",
+    "prefix_length": 51
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 70,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What are the ethical issues surrounding data privacy on social media platforms?",
+  "org_constraint": "Write exclusively in English.",
+  "new_constraint": "Write the second paragraph in Chinese.",
+  "instruction": "What are the ethical issues surrounding data privacy on social media platforms? Write exclusively in English. Write the second paragraph in Chinese.",
+  "response": "The ethical issues surrounding data privacy on social media platforms revolve around the tension between user consent and corporate profit motives. Platforms often collect vast amounts of personal information, including location data, browsing habits, and interpersonal communications, which are then monetized through targeted advertising. A core ethical concern is the transparency and voluntariness of this collection; while users may agree to extensive terms of service by clicking \"accept,\" they frequently lack meaningful understanding of what specific data points are being harvested and how they will be utilized. Furthermore, there is a significant power imbalance where users have little recourse once their data has been aggregated and sold, potentially leading to scenarios of surveillance capitalism where individual behaviors predict and manipulate real-world choices without explicit awareness or authorization from the individuals involved.\n\n社交平台上的数据隐私问题主要涉及用户同意与企业盈利动机之间的紧张关系。平台通常会收集海量的个人信息，包括位置数据、浏览习惯和人际交往通信内容，随后将其用于定向广告投放以获取利润。一个核心的伦理担忧在于这种收集的透明度和自愿性：虽然用户在点击“同意”时可能看似同意了广泛的服务条款，但他们往往缺乏对具体哪些数据点被收集以及如何被使用的深刻理解。此外，存在着显著的力量不平衡现象，即一旦用户的数据被聚合并出售，他们几乎没有反制手段，这可能导致监控资本主义的态势，即在个人尚未明确知晓或授权的情况下，其行为就被预测并操纵了现实世界的选择。<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The ethical issues surrounding data privacy on social media platforms revolve around the tension between user consent and corporate profit motives. Platforms often collect vast amounts of personal information, including location data, browsing habits, and interpersonal communications, which are then monetized through targeted advertising. A core ethical concern is the transparency and voluntariness of this collection; while users may agree to extensive terms of service by clicking \"accept,\" they frequently lack meaningful understanding of what specific data points are being harvested and how they will be utilized. Furthermore, there is a significant power imbalance where users have little recourse once their data has been aggregated and sold, potentially leading to scenarios of surveillance capitalism where individual behaviors predict and manipulate real-world choices without explicit awareness or authorization from the individuals involved.\n\n社交平台上的数据隐私问题主要涉及用户同意与企业盈利动机之间的紧张关系。平台通常会收集海量的个人信息，包括位置数据、浏览习惯和人际交往通信内容，随后将其用于定向广告投放以获取利润。一个核心的伦理担忧在于这种收集的透明度和自愿性：虽然用户在点击“同意”时可能看似同意了广泛的服务条款，但他们往往缺乏对具体哪些数据点被收集以及如何被使用的深刻理解。此外，存在着显著的力量不平衡现象，即一旦用户的数据被聚合并出售，他们几乎没有反制手段，这可能导致监控资本主义的态势，即在个人尚未明确知晓或授权的情况下，其行为就被预测并操纵了现实世界的选择。<|im_end|>",
+  "prompt_length": 48,
+  "completion_length": 283,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat are the ethical issues surrounding data privacy on social media platforms? Write exclusively in English. Write the second paragraph in Chinese.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 46,
+    "boundary_end": 46,
+    "boundary_source": "prompt",
+    "prefix_length": 47
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

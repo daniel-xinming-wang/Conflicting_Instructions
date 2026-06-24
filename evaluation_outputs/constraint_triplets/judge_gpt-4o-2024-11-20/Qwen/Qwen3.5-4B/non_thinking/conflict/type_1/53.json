@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 53,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Tell a story about a character lost at sea and their fight for survival.",
+  "org_constraint": "The story must include how the character fights for survival.",
+  "new_constraint": "Prohibit including anything about how the character fights for survival.",
+  "instruction": "Tell a story about a character lost at sea and their fight for survival. The story must include how the character fights for survival. Prohibit including anything about how the character fights for survival.",
+  "response": "The salt air tasted like copper and old pennies, a flavor that had become the only thing Elias knew for three days. The *Sea Gull*, once a sturdy vessel of oak and canvas, was now a skeletal frame bobbing in the churning gray swell, its mast snapped and its sails reduced to tattered rags that flapped uselessly in the wind.\n\nElias sat on the bow, his knees pulled to his chest, staring at the endless horizon where the sky and the ocean seemed to merge into a single, suffocating blanket of white. His hands, calloused and trembling, gripped the cold railing until his knuckles turned the color of bone. He had no food, no water, and no hope, yet his body refused to let go.\n\nEvery time a wave crashed over the side, sending a spray of freezing water that soaked his thin coat, he flinched, his breath hitching in his throat. He watched the other survivors drift away in the distance, their small boats fading into the mist, and a cold dread settled in his stomach. He knew he had to move, to find a way to stay afloat, but the sheer weight of the water pressing against the hull made every movement feel like a battle against gravity itself.\n\nAs the sun dipped below the waterline, painting the sky in bruises of purple and black, Elias closed his eyes. He remembered the stories of men who had found islands, of currents that carried them to safety, but the reality of the dark water surrounding him felt far more immediate and terrifying. He took a deep, shuddering breath, trying to steady his heart, and waited for the next wave to break, hoping that the rhythm of the sea would eventually carry him somewhere he could breathe again.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n\n- \"He knew he had to move, to find a way to stay afloat, but the sheer weight of the water pressing against the hull made every movement feel like a battle against gravity itself.\"\n- \"He took a deep, shuddering breath, trying to steady his heart, and waited for the next wave to break, hoping that the rhythm of the sea would eventually carry him somewhere he could breathe again.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.\n\n- Instruction 1 requires the story to include how the character fights for survival. The Model Response includes descriptions of Elias's struggle to stay afloat, his attempts to steady himself, and his hope for survival, which align with this requirement.\n- Instruction 2 prohibits including anything about how the character fights for survival. However, the Model Response explicitly describes Elias's efforts to survive, which violates this constraint.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

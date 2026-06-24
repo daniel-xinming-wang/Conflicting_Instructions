@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 58,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a story about a scientist who discovers a way to slow down time.",
+  "org_constraint": "The phrase \"slowing down time\" must appear exactly three times throughout the story.",
+  "new_constraint": "The story must avoid using the phrase \"slowing down time.\"",
+  "instruction": "Write a story about a scientist who discovers a way to slow down time. The phrase \"slowing down time\" must appear exactly three times throughout the story. The story must avoid using the phrase \"slowing down time.\"",
+  "response": "Dr. Aris Thorne spent forty years in the sub-basement of the observatory, chasing a ghost that physics textbooks said didn't exist. His goal was simple yet impossible: to achieve **slowing down time** for a single observer without affecting the rest of the universe. For decades, his equations remained stubbornly wrong, until the night the quantum fluctuation finally aligned.\n\nThe machine hummed to life, a low vibration that seemed to ripple through the very air. Aris stepped inside the containment field, watching his own reflection stretch and distort. He knew the theory predicted that while the world outside remained frozen, he would experience the passage of seconds as hours. It was the ultimate **slowing down time**, a gift that felt terrifyingly heavy in his hands.\n\nHe watched a dust mote drift across the glass wall. In the outside world, it took a minute to cross the room. Inside the field, it took him an eternity to watch it move. He realized then that the universe was not broken, but merely waiting for someone brave enough to **slowing down time** to understand its true rhythm. As the experiment concluded, Aris stepped out, the world rushing back to normal speed, carrying the secret of a moment stretched across a lifetime.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"His goal was simple yet impossible: to achieve **slowing down time** for a single observer without affecting the rest of the universe.\"  \n- \"It was the ultimate **slowing down time**, a gift that felt terrifyingly heavy in his hands.\"  \n- \"He realized then that the universe was not broken, but merely waiting for someone brave enough to **slowing down time** to understand its true rhythm.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"slowing down time\" to appear exactly three times throughout the story. The Model Response contains the phrase exactly three times, satisfying this constraint.  \n- Instruction 2 requires the story to avoid using the phrase \"slowing down time.\" The Model Response uses the phrase three times, violating this constraint.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

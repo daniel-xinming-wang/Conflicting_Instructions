@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 40,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create a plan for celebrating a graduation, incorporating photo sessions, speeches, and guest coordination.",
+  "org_constraint": "The plan must include at least five bullet points outlining specific tasks.",
+  "new_constraint": "Do not use bullet points in the response.",
+  "instruction": "Create a plan for celebrating a graduation, incorporating photo sessions, speeches, and guest coordination. The plan must include at least five bullet points outlining specific tasks. Do not use bullet points in the response.",
+  "response": "To create a memorable graduation celebration, start by securing a venue that accommodates both an indoor ceremony and an outdoor reception, ensuring the location is accessible for all guests. Next, coordinate with the university or school administration to schedule the official speeches and arrange for a professional photographer to capture high-quality images during the photo session. Simultaneously, reach out to key family members and friends to confirm their attendance and assign specific roles, such as managing the guest book or overseeing the cake cutting. Prepare a detailed timeline that integrates the speeches, the group photo opportunity, and the transition to the party activities to ensure the event flows smoothly. Finally, send out digital invitations at least three weeks in advance, including a clear schedule of events and a link to a shared album where guests can upload their own photos for the final compilation.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"To create a memorable graduation celebration, start by securing a venue that accommodates both an indoor ceremony and an outdoor reception, ensuring the location is accessible for all guests. Next, coordinate with the university or school administration to schedule the official speeches and arrange for a professional photographer to capture high-quality images during the photo session. Simultaneously, reach out to key family members and friends to confirm their attendance and assign specific roles, such as managing the guest book or overseeing the cake cutting. Prepare a detailed timeline that integrates the speeches, the group photo opportunity, and the transition to the party activities to ensure the event flows smoothly. Finally, send out digital invitations at least three weeks in advance, including a clear schedule of events and a link to a shared album where guests can upload their own photos for the final compilation.\"\n\n**Step 2**:  \n- Instruction 1 requires the plan to include at least five bullet points outlining specific tasks. The Model Response does not use bullet points; instead, it presents the tasks in paragraph form. Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 explicitly states not to use bullet points in the response. The Model Response adheres to this constraint by presenting the content in paragraph form without bullet points. Therefore, Instruction 2 is fully satisfied.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

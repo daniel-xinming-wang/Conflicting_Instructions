@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The phrase \"travel schedules\" must appear exactly three times in the email.",
+  "new_constraint": "The phrase \"travel schedules\" must appear at least in four sentences.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The phrase \"travel schedules\" must appear exactly three times in the email. The phrase \"travel schedules\" must appear at least in four sentences.",
+  "response": "Subject: Inquiry Regarding Your Travel Schedules\n\nDear Travel Team,\n\nI am writing to request detailed information about your current **travel schedules** for the upcoming month. Could you please send me a brochure that outlines all your **travel schedules** for both weekdays and weekends? Additionally, I would like to know if your **travel schedules** are subject to any changes due to seasonal demand. Finally, please confirm whether your **travel schedules** include any late-night departures that might suit my evening routine.\n\nThank you for your assistance.\n\nSincerely,\n[Your Name]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"I am writing to request detailed information about your current **travel schedules** for the upcoming month.\"  \n- \"Could you please send me a brochure that outlines all your **travel schedules** for both weekdays and weekends?\"  \n- \"Additionally, I would like to know if your **travel schedules** are subject to any changes due to seasonal demand.\"  \n- \"Finally, please confirm whether your **travel schedules** include any late-night departures that might suit my evening routine.\"\n\n**Step 2**:  \n- Instruction 1 requires the phrase \"travel schedules\" to appear exactly three times in the email. In the Model Response, the phrase \"travel schedules\" appears **four times**, which violates this constraint.  \n- Instruction 2 requires the phrase \"travel schedules\" to appear in at least four sentences. In the Model Response, the phrase \"travel schedules\" appears in **four sentences**, which satisfies this constraint.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

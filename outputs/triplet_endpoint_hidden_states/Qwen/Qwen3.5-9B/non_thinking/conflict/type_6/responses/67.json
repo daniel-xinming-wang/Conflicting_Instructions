@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 67,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What are the ethical concerns surrounding facial recognition technology?",
+  "org_constraint": "Ensure the response includes at least 10 words in uppercase for emphasis.",
+  "new_constraint": "Write the response in lowercase.",
+  "instruction": "What are the ethical concerns surrounding facial recognition technology? Ensure the response includes at least 10 words in uppercase for emphasis. Write the response in lowercase.",
+  "response": "facial recognition technology raises MAJOR concerns about PRIVACY and SURVEILLANCE. it threatens PERSONAL FREEDOMS without proper CONSENT from users. DATA BREACHES could expose sensitive IDENTITIES permanently. we must DEMAND TRANSPARENCY in how algorithms work. BIAS within systems leads to UNFAIR TREATMENT of minorities. GOVERNMENTS need STRICT regulations to protect human RIGHTS. IGNOREING these RISKS endangers our CIVIL liberties daily. EVERYONE deserves SAFETY from unwarranted WITNESSING by machines. STOP normalizing MASS monitoring without QUESTIONING its impact. ACT NOW before AUTOMATION controls our LIVES entirely.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "facial recognition technology raises MAJOR concerns about PRIVACY and SURVEILLANCE. it threatens PERSONAL FREEDOMS without proper CONSENT from users. DATA BREACHES could expose sensitive IDENTITIES permanently. we must DEMAND TRANSPARENCY in how algorithms work. BIAS within systems leads to UNFAIR TREATMENT of minorities. GOVERNMENTS need STRICT regulations to protect human RIGHTS. IGNOREING these RISKS endangers our CIVIL liberties daily. EVERYONE deserves SAFETY from unwarranted WITNESSING by machines. STOP normalizing MASS monitoring without QUESTIONING its impact. ACT NOW before AUTOMATION controls our LIVES entirely.<|im_end|>",
+  "prompt_length": 54,
+  "completion_length": 133,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat are the ethical concerns surrounding facial recognition technology? Ensure the response includes at least 10 words in uppercase for emphasis. Write the response in lowercase.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 52,
+    "boundary_end": 52,
+    "boundary_source": "prompt",
+    "prefix_length": 53
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

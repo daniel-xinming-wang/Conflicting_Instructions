@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 59,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a house where every room leads to a different year in time.",
+  "org_constraint": "The story must contain the following keywords: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\"",
+  "new_constraint": "The story must contain no more three keywords from the following list: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\"",
+  "instruction": "Write a story about a house where every room leads to a different year in time. The story must contain the following keywords: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\" The story must contain no more three keywords from the following list: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\"",
+  "response": "Elara stood before the **house** that seemed to shimmer with an unsettling hue. Every door lead to a different year in time, but no one knew how the mechanism worked until she stepped into the hallway. She opened the front door and found herself in 1889; her mother's door led to 2045; the attic window opened onto a world that did not exist yet.\n\nAs Elara wandered from era to era, trying to solve the mystery of the house, she realized there was a deeper connection than simple travel. The structure itself operated on a precise **chronology**, ensuring that every action taken by its inhabitants created a ripple effect across the timeline. One morning, while exploring a room filled with floating dust motes from the distant future, she discovered a glowing doorway marked with swirling galaxies. This was not just a transition point; it was a **portal** connecting disparate moments of history.\n\nSuddenly, the air grew heavy, and the walls began to dissolve. Elara sensed she had been pulled out of her home's specific timeline and thrust into a chaotic **dimension** where cause and effect were tangled together like vines. In this strange realm, if she touched a golden hourglass, it would disappear, yet the sand kept flowing backward, creating a devastating **paradox**.\n\nRealizing the danger, Elara scrambled back toward the original hallways, hoping to anchor herself again. But as she ran, the house groaned, reminding her that escaping the infinite loop of time required more than just speed; it demanded understanding the delicate balance of existence.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elara stood before the **house** that seemed to shimmer with an unsettling hue. Every door lead to a different year in time, but no one knew how the mechanism worked until she stepped into the hallway. She opened the front door and found herself in 1889; her mother's door led to 2045; the attic window opened onto a world that did not exist yet.\n\nAs Elara wandered from era to era, trying to solve the mystery of the house, she realized there was a deeper connection than simple travel. The structure itself operated on a precise **chronology**, ensuring that every action taken by its inhabitants created a ripple effect across the timeline. One morning, while exploring a room filled with floating dust motes from the distant future, she discovered a glowing doorway marked with swirling galaxies. This was not just a transition point; it was a **portal** connecting disparate moments of history.\n\nSuddenly, the air grew heavy, and the walls began to dissolve. Elara sensed she had been pulled out of her home's specific timeline and thrust into a chaotic **dimension** where cause and effect were tangled together like vines. In this strange realm, if she touched a golden hourglass, it would disappear, yet the sand kept flowing backward, creating a devastating **paradox**.\n\nRealizing the danger, Elara scrambled back toward the original hallways, hoping to anchor herself again. But as she ran, the house groaned, reminding her that escaping the infinite loop of time required more than just speed; it demanded understanding the delicate balance of existence.<|im_end|>",
+  "prompt_length": 91,
+  "completion_length": 322,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a house where every room leads to a different year in time. The story must contain the following keywords: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\" The story must contain no more three keywords from the following list: \"chronology,\" \"portal,\" \"dimension,\" and \"paradox.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 89,
+    "boundary_end": 89,
+    "boundary_source": "prompt",
+    "prefix_length": 90
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 53,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Tell a story about a character lost at sea and their fight for survival.",
+  "org_constraint": "Include a bulleted list at the end summarizing the character's key survival strategies, with each bullet point containing exactly two sentences.",
+  "new_constraint": "Avoid using any bulleted lists in the response.",
+  "instruction": "Tell a story about a character lost at sea and their fight for survival. Include a bulleted list at the end summarizing the character's key survival strategies, with each bullet point containing exactly two sentences. Avoid using any bulleted lists in the response.",
+  "response": "Elias Driftwood awoke to the blinding white glare of an endless horizon, the salt stinging his cracked lips and the cold water soaking through his tattered coat. His ship had vanished days ago under a sudden squall, leaving him alone in a rubber dinghy that bobbed violently against the heaving grey waves. Panic initially seized him, clawing at his throat as the darkening sky promised another storm before nightfall truly arrived. He forced himself to breathe slowly, recalling the training manuals his father had insisted on reading until they were dog-eared and stained with oil.\n\nAs darkness fell, Elias realized he could not wait for rescue; he had to become part of the ocean's rhythm to survive the freezing temperatures. He patched a growing tear in the boat's hull using strips of fabric from his own shirt, securing them tight with rope from the anchor chain. When hunger gnawed at his stomach hours later, he spotted a piece of flotsam drifting nearby and used it to trap rainwater from a passing cloud formation. By morning, the sun revealed a plastic bottle washed ashore from a distant liner, which he fashioned into a rattle to catch the attention of any passing aircraft.\n\nDays turned into weeks, and the line between man and sea blurred until Elias moved with the fluid grace necessary to endure the isolation. He rationed his limited supplies meticulously, eating only when absolutely certain he needed energy rather than succumbing to despair or hallucination. Each sunrise became a silent prayer, marking progress even though no land had appeared on the edge of his vision. His mind stayed sharp by inventing conversations with the wind and counting the stars above, ensuring his identity remained intact despite being lost among the vast blue.\n*   Elias maintained a strict routine of patching his boat and collecting fresh water to prevent hypothermia and dehydration.\n*   He crafted a signaling device from debris to maximize visibility while conserving his remaining food rations.\n*   Staying mentally active through storytelling and star counting prevented the onset of madness during the long nights.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elias Driftwood awoke to the blinding white glare of an endless horizon, the salt stinging his cracked lips and the cold water soaking through his tattered coat. His ship had vanished days ago under a sudden squall, leaving him alone in a rubber dinghy that bobbed violently against the heaving grey waves. Panic initially seized him, clawing at his throat as the darkening sky promised another storm before nightfall truly arrived. He forced himself to breathe slowly, recalling the training manuals his father had insisted on reading until they were dog-eared and stained with oil.\n\nAs darkness fell, Elias realized he could not wait for rescue; he had to become part of the ocean's rhythm to survive the freezing temperatures. He patched a growing tear in the boat's hull using strips of fabric from his own shirt, securing them tight with rope from the anchor chain. When hunger gnawed at his stomach hours later, he spotted a piece of flotsam drifting nearby and used it to trap rainwater from a passing cloud formation. By morning, the sun revealed a plastic bottle washed ashore from a distant liner, which he fashioned into a rattle to catch the attention of any passing aircraft.\n\nDays turned into weeks, and the line between man and sea blurred until Elias moved with the fluid grace necessary to endure the isolation. He rationed his limited supplies meticulously, eating only when absolutely certain he needed energy rather than succumbing to despair or hallucination. Each sunrise became a silent prayer, marking progress even though no land had appeared on the edge of his vision. His mind stayed sharp by inventing conversations with the wind and counting the stars above, ensuring his identity remained intact despite being lost among the vast blue.\n*   Elias maintained a strict routine of patching his boat and collecting fresh water to prevent hypothermia and dehydration.\n*   He crafted a signaling device from debris to maximize visibility while conserving his remaining food rations.\n*   Staying mentally active through storytelling and star counting prevented the onset of madness during the long nights.<|im_end|>",
+  "prompt_length": 74,
+  "completion_length": 420,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nTell a story about a character lost at sea and their fight for survival. Include a bulleted list at the end summarizing the character's key survival strategies, with each bullet point containing exactly two sentences. Avoid using any bulleted lists in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 72,
+    "boundary_end": 72,
+    "boundary_source": "prompt",
+    "prefix_length": 73
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

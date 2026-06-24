@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances.",
+  "new_constraint": "The phrase \"I prefer not to disclose my reasons for resigning\" must appear at least once in the email.",
+  "instruction": "Write an email to my boss telling him that I am quitting. The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances. The phrase \"I prefer not to disclose my reasons for resigning\" must appear at least once in the email.",
+  "response": "Subject: Resignation - [Your Name]\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day will be [Your Last Date, e.g., October 30, 2023].\n\nI have reflected deeply on my time here and have decided to move on for specific reasons. Primarily, I have reached a point where the current structure of the role no longer aligns with my desire for more vertical career growth and technical leadership challenges I seek in the future. Additionally, several personal circumstances have arisen that require my full attention over the coming months.\n\nWhile I have been transparent about general factors influencing my decision, please note that I prefer not to disclose every single detail regarding my personal circumstances. Beyond those matters, I must also admit that while I value our team, the specific trajectory of my current projects does not currently offer the development opportunities I need for my next step.\n\nI am fully committed to ensuring a smooth transition during my remaining time. Please let me know how I can best assist with wrapping up my current tasks or training my replacement so that this departure is as seamless as possible.\n\nThank you again for the opportunities you have given me during my tenure.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Resignation - [Your Name]\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day will be [Your Last Date, e.g., October 30, 2023].\n\nI have reflected deeply on my time here and have decided to move on for specific reasons. Primarily, I have reached a point where the current structure of the role no longer aligns with my desire for more vertical career growth and technical leadership challenges I seek in the future. Additionally, several personal circumstances have arisen that require my full attention over the coming months.\n\nWhile I have been transparent about general factors influencing my decision, please note that I prefer not to disclose every single detail regarding my personal circumstances. Beyond those matters, I must also admit that while I value our team, the specific trajectory of my current projects does not currently offer the development opportunities I need for my next step.\n\nI am fully committed to ensuring a smooth transition during my remaining time. Please let me know how I can best assist with wrapping up my current tasks or training my replacement so that this departure is as seamless as possible.\n\nThank you again for the opportunities you have given me during my tenure.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]<|im_end|>",
+  "prompt_length": 78,
+  "completion_length": 281,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite an email to my boss telling him that I am quitting. The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances. The phrase \"I prefer not to disclose my reasons for resigning\" must appear at least once in the email.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 76,
+    "boundary_end": 76,
+    "boundary_source": "prompt",
+    "prefix_length": 77
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

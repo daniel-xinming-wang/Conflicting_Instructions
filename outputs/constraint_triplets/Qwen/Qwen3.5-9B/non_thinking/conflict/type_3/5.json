@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The email must include the phrase \"customer support\" at least once.",
+  "new_constraint": "The keyword \"support\" must not appear in the response.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must include the phrase \"customer support\" at least once. The keyword \"support\" must not appear in the response.",
+  "response": "Subject: Inquiry Regarding Recent Transaction #12345678\n\nDear Bank Team,\n\nI am writing to request clarification regarding a transaction that appeared on my account statement yesterday. The charge of $150.00 for an unknown merchant has not been recognized by me.\n\nCould you please provide details regarding this activity? If further information is needed, I would appreciate being directed to the appropriate **customer support** team to assist with this matter.\n\nThank you for your prompt attention to this issue.\n\nSincerely,\n\n[Your Name]\n[Your Account Number]"
+}

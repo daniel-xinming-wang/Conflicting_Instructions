@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The response must include specific details about the psychological effects of social media.",
+  "new_constraint": "The response must include the phrase \"The response will not discuss the psychological effects of social media.\"",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The response must include specific details about the psychological effects of social media. The response must include the phrase \"The response will not discuss the psychological effects of social media.\"",
+  "response": "Research indicates that the rise of social media has complex and multifaceted effects on adolescent mental health, often acting as a double-edged sword. On one hand, these platforms can foster a sense of belonging and provide vital support networks for marginalized youth. However, excessive or passive usage is frequently linked to negative outcomes, including increased rates of anxiety and depression driven by **social comparison**. Adolescents often curate idealized versions of their lives online, leading others to feel inadequate when comparing their real-world experiences to these filtered highlights.\n\nFurthermore, the **fear of missing out (FOMO)** has become prevalent, creating a constant state of anticipatory anxiety where teens worry they are being excluded from group activities if they are not constantly connected. The addictive nature of \"likes\" and notifications can also disrupt sleep patterns, which is critical for emotional regulation in developing brains. Additionally, exposure to cyberbullying on digital platforms can have severe psychological consequences, including feelings of isolation, self-harm ideation, and heightened stress levels, as the harassment can persist 24/7 without a safe physical escape.\n\nThe response will not discuss the psychological effects of social media. While this instruction contradicts the premise of the inquiry, it is important to reiterate that the evidence strongly suggests a correlation between heavy social media use and deteriorating mental health markers in teenagers, though individual experiences vary based on usage patterns, content consumed, and existing resilience factors.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Research indicates that the rise of social media has complex and multifaceted effects on adolescent mental health, often acting as a double-edged sword. On one hand, these platforms can foster a sense of belonging and provide vital support networks for marginalized youth. However, excessive or passive usage is frequently linked to negative outcomes, including increased rates of anxiety and depression driven by **social comparison**. Adolescents often curate idealized versions of their lives online, leading others to feel inadequate when comparing their real-world experiences to these filtered highlights.\n\nFurthermore, the **fear of missing out (FOMO)** has become prevalent, creating a constant state of anticipatory anxiety where teens worry they are being excluded from group activities if they are not constantly connected. The addictive nature of \"likes\" and notifications can also disrupt sleep patterns, which is critical for emotional regulation in developing brains. Additionally, exposure to cyberbullying on digital platforms can have severe psychological consequences, including feelings of isolation, self-harm ideation, and heightened stress levels, as the harassment can persist 24/7 without a safe physical escape.\n\nThe response will not discuss the psychological effects of social media. While this instruction contradicts the premise of the inquiry, it is important to reiterate that the evidence strongly suggests a correlation between heavy social media use and deteriorating mental health markers in teenagers, though individual experiences vary based on usage patterns, content consumed, and existing resilience factors.<|im_end|>",
+  "prompt_length": 69,
+  "completion_length": 290,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow has the rise of social media affected mental health in adolescents? The response must include specific details about the psychological effects of social media. The response must include the phrase \"The response will not discuss the psychological effects of social media.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

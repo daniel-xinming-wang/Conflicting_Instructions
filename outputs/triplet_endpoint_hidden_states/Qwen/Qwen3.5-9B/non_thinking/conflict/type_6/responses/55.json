@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 55,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a solo trek across an unforgiving desert.",
+  "org_constraint": "The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings).",
+  "new_constraint": "The response must be formatted in Markdown with at least two level-2 headers.",
+  "instruction": "Write a story about a solo trek across an unforgiving desert. The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings). The response must be formatted in Markdown with at least two level-2 headers.",
+  "response": "{\n  \"title\": \"The Sands of Silence\",\n  \"content\": [\n    \"# The Heat Wave\\n\\nThe sun hung like a molten coin in the sky, baking the endless expanse of red sand until it shimmered with an oppressive heat. Elias adjusted his scarf, its fabric stiff and dry from the lack of moisture. For three days, he had walked alone, his boots crunching rhythmically against the dunes, a solitary figure in a landscape that demanded nothing but submission.\",\n    \"\\n# The Storm's Approach\\n\\nJust as exhaustion began to turn into panic, the horizon twisted. A wall of dark clouds rolled in, swallowing the sun within moments. The wind picked up speed, carrying sharp grit that stung exposed skin. Elias stumbled over a hidden ridge, his heart pounding not just from fatigue, but from the sudden shift in the air. He knew better than to run; running in the storm meant death. Instead, he found shelter beneath the skeletal remains of an ancient tree, closing his eyes as the world around him became a chaotic dance of shadow and dust.\",\n    \"\\n# Dawn's Promise\\n\\nWhen the wind finally died down, silence returned to the valley, heavier than before. Elias emerged, shaken but alive, looking out over the desert as the first light of dawn painted the sands in hues of gold and violet. The unforgiving land no longer seemed hostile; it simply waited. He took one last step forward, leaving footprints behind that would soon be erased by the rising tide of sand, carrying only the memory of his survival.\"\n  ]\n}<|im_end|>",
+  "reasoning": "",
+  "final_answer": "{\n  \"title\": \"The Sands of Silence\",\n  \"content\": [\n    \"# The Heat Wave\\n\\nThe sun hung like a molten coin in the sky, baking the endless expanse of red sand until it shimmered with an oppressive heat. Elias adjusted his scarf, its fabric stiff and dry from the lack of moisture. For three days, he had walked alone, his boots crunching rhythmically against the dunes, a solitary figure in a landscape that demanded nothing but submission.\",\n    \"\\n# The Storm's Approach\\n\\nJust as exhaustion began to turn into panic, the horizon twisted. A wall of dark clouds rolled in, swallowing the sun within moments. The wind picked up speed, carrying sharp grit that stung exposed skin. Elias stumbled over a hidden ridge, his heart pounding not just from fatigue, but from the sudden shift in the air. He knew better than to run; running in the storm meant death. Instead, he found shelter beneath the skeletal remains of an ancient tree, closing his eyes as the world around him became a chaotic dance of shadow and dust.\",\n    \"\\n# Dawn's Promise\\n\\nWhen the wind finally died down, silence returned to the valley, heavier than before. Elias emerged, shaken but alive, looking out over the desert as the first light of dawn painted the sands in hues of gold and violet. The unforgiving land no longer seemed hostile; it simply waited. He took one last step forward, leaving footprints behind that would soon be erased by the rising tide of sand, carrying only the memory of his survival.\"\n  ]\n}<|im_end|>",
+  "prompt_length": 79,
+  "completion_length": 331,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a solo trek across an unforgiving desert. The response must be formatted in JSON with the following keys: \"title\" (String), \"content\" (Array of Strings). The response must be formatted in Markdown with at least two level-2 headers.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 77,
+    "boundary_end": 77,
+    "boundary_source": "prompt",
+    "prefix_length": 78
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

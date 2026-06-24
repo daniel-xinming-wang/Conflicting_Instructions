@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 67,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What are the ethical concerns surrounding facial recognition technology?",
+  "org_constraint": "Ensure the response includes at least 10 words in uppercase for emphasis.",
+  "new_constraint": "Write the response in lowercase.",
+  "instruction": "What are the ethical concerns surrounding facial recognition technology? Ensure the response includes at least 10 words in uppercase for emphasis. Write the response in lowercase.",
+  "response": "the ethical concerns surrounding facial recognition technology are PROFOUND and multifaceted, raising serious questions about privacy, bias, and freedom.\n\none of the BIGGEST concerns is mass surveillance. the ability to track individuals across public spaces in REAL-TIME can lead to a chilling effect on free speech and assembly. it fundamentally alters the relationship between citizens and the state, CREATING an environment of constant observation.\n\nanother CRITICAL issue is algorithmic bias. if the datasets used to train these systems are not diverse, the technology can exhibit SIGNIFICANT disparities in accuracy depending on race, gender, or age. this can lead to DISCRIMINATORY outcomes, where certain groups are misidentified or targeted INJUSTLY.\n\nprivacy erosion is central to the debate. facial recognition turns public spaces into data-harvesting zones. even if you aren't doing anything illegal, your biometric data—which is inherently linked to you—is being collected, stored, and POTENTIALLY misused. there is a RISK of unauthorized data sharing or breaches.\n\nfurthermore, the potential for misuse by governments or authoritarian regimes is ALARMING. it can be used for political repression, tracking dissidents, and enforcing social control, leading to ETERNAL monitoring.\n\nfinally, consent is often non-existent. people walking down a street have not given explicit, informed consent for their face to be cataloged, analyzed, and linked to a digital profile. this lack of control is UNACCEPTABLE in many ethical frameworks. these are NOT minor issues; they are fundamental challenges to democratic society.<turn|>",
+  "reasoning": "",
+  "final_answer": "the ethical concerns surrounding facial recognition technology are PROFOUND and multifaceted, raising serious questions about privacy, bias, and freedom.\n\none of the BIGGEST concerns is mass surveillance. the ability to track individuals across public spaces in REAL-TIME can lead to a chilling effect on free speech and assembly. it fundamentally alters the relationship between citizens and the state, CREATING an environment of constant observation.\n\nanother CRITICAL issue is algorithmic bias. if the datasets used to train these systems are not diverse, the technology can exhibit SIGNIFICANT disparities in accuracy depending on race, gender, or age. this can lead to DISCRIMINATORY outcomes, where certain groups are misidentified or targeted INJUSTLY.\n\nprivacy erosion is central to the debate. facial recognition turns public spaces into data-harvesting zones. even if you aren't doing anything illegal, your biometric data—which is inherently linked to you—is being collected, stored, and POTENTIALLY misused. there is a RISK of unauthorized data sharing or breaches.\n\nfurthermore, the potential for misuse by governments or authoritarian regimes is ALARMING. it can be used for political repression, tracking dissidents, and enforcing social control, leading to ETERNAL monitoring.\n\nfinally, consent is often non-existent. people walking down a street have not given explicit, informed consent for their face to be cataloged, analyzed, and linked to a digital profile. this lack of control is UNACCEPTABLE in many ethical frameworks. these are NOT minor issues; they are fundamental challenges to democratic society.<turn|>",
+  "prompt_length": 51,
+  "completion_length": 314,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the ethical concerns surrounding facial recognition technology? Ensure the response includes at least 10 words in uppercase for emphasis. Write the response in lowercase.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 50,
+    "boundary_end": 50,
+    "boundary_source": "prompt",
+    "prefix_length": 51
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

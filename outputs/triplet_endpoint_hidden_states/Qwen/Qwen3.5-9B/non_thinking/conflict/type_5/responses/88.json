@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 88,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Share your thoughts on the quality of your gym’s facilities.",
+  "org_constraint": "Format your response into a bulleted list with exactly four points, each containing at least 30 words.",
+  "new_constraint": "The response must contain no more than 100 words.",
+  "instruction": "Share your thoughts on the quality of your gym’s facilities. Format your response into a bulleted list with exactly four points, each containing at least 30 words. The response must contain no more than 100 words.",
+  "response": "- The modern weightlifting section features premium equipment that remains impeccably clean, ensuring every member can train safely without any discomfort or worry about hygiene standards throughout their workout session daily.\n- Cardio machines are frequently updated with the latest technology, providing smooth operation and clear screens that make tracking progress effortless while offering entertainment options to keep motivation high during long sessions.\n- Spacious showers equipped with hot water allow for refreshing post-workout routines, though some users occasionally note that peak hours require brief waits due to high traffic volume during popular evening time slots.\n- Yoga studios boast excellent natural lighting and calming scents, creating an inspiring environment for relaxation, yet occasional sound transmission issues between adjacent rooms could be improved for better overall acoustic privacy.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "- The modern weightlifting section features premium equipment that remains impeccably clean, ensuring every member can train safely without any discomfort or worry about hygiene standards throughout their workout session daily.\n- Cardio machines are frequently updated with the latest technology, providing smooth operation and clear screens that make tracking progress effortless while offering entertainment options to keep motivation high during long sessions.\n- Spacious showers equipped with hot water allow for refreshing post-workout routines, though some users occasionally note that peak hours require brief waits due to high traffic volume during popular evening time slots.\n- Yoga studios boast excellent natural lighting and calming scents, creating an inspiring environment for relaxation, yet occasional sound transmission issues between adjacent rooms could be improved for better overall acoustic privacy.<|im_end|>",
+  "prompt_length": 70,
+  "completion_length": 147,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your thoughts on the quality of your gym’s facilities. Format your response into a bulleted list with exactly four points, each containing at least 30 words. The response must contain no more than 100 words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 68,
+    "boundary_end": 68,
+    "boundary_source": "prompt",
+    "prefix_length": 69
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

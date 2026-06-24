@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 50,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a retired athlete making a comeback.",
+  "org_constraint": "The story must begin with the phrase \"Against all odds.\"",
+  "new_constraint": "Refrain from using the keyword \"odds\" in the story.",
+  "instruction": "Write a story about a retired athlete making a comeback. The story must begin with the phrase \"Against all odds.\" Refrain from using the keyword \"odds\" in the story.",
+  "response": "Against all odds, Elias gripped the worn leather handle of his cane with a strength he hadn't felt since his final championship game twenty years ago. The crowd fell silent, not out of pity, but out of reverence for the man standing before them. His knees clicked rhythmically against the polished parquet floor as he took his first steps onto the stage after decades of retirement.\n\nElias was sixty-two, a lifetime of hard work had etched lines around his eyes and grayed his hair. Three years prior, a severe knee injury had ended his career in basketball, sealing his fate until this very moment. He had spent those years living quietly, watching from the stands while his former teammates celebrated new records and signed contracts. He felt invisible, like a forgotten chapter in a book no one bothered to finish reading.\n\nBut today, the invitation had arrived from the local community center. It wasn't for glory or a million dollars; it was just a plea from young children who loved him enough to ask him back. They wanted someone who knew what it meant to push your body beyond its limits, someone who could tell them stories that weren't just about winning trophies, but about the struggle to keep moving forward when everything seemed broken.\n\nAs the music swelled, Elias began to jog down the aisle toward the court. Every step was a battle between pain and determination, but the fire that burned inside him refused to be extinguished. He ran faster than he did during practice drills decades past, fueled by the sheer love of the game. When he finally skidded to a halt at the center of the circle, the room erupted into applause.\n\nHe smiled, looking at the kids waiting for him to lead their game. There were no statistics on a scoreboard, no referees blowing whistles, just the raw emotion of connection. Elias realized then that the journey never truly ended. One day, you play for the trophy; the next day, you play to lift spirits. And as long as there was will to try again, the path ahead remained open.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Against all odds, Elias gripped the worn leather handle of his cane with a strength he hadn't felt since his final championship game twenty years ago. The crowd fell silent, not out of pity, but out of reverence for the man standing before them. His knees clicked rhythmically against the polished parquet floor as he took his first steps onto the stage after decades of retirement.\n\nElias was sixty-two, a lifetime of hard work had etched lines around his eyes and grayed his hair. Three years prior, a severe knee injury had ended his career in basketball, sealing his fate until this very moment. He had spent those years living quietly, watching from the stands while his former teammates celebrated new records and signed contracts. He felt invisible, like a forgotten chapter in a book no one bothered to finish reading.\n\nBut today, the invitation had arrived from the local community center. It wasn't for glory or a million dollars; it was just a plea from young children who loved him enough to ask him back. They wanted someone who knew what it meant to push your body beyond its limits, someone who could tell them stories that weren't just about winning trophies, but about the struggle to keep moving forward when everything seemed broken.\n\nAs the music swelled, Elias began to jog down the aisle toward the court. Every step was a battle between pain and determination, but the fire that burned inside him refused to be extinguished. He ran faster than he did during practice drills decades past, fueled by the sheer love of the game. When he finally skidded to a halt at the center of the circle, the room erupted into applause.\n\nHe smiled, looking at the kids waiting for him to lead their game. There were no statistics on a scoreboard, no referees blowing whistles, just the raw emotion of connection. Elias realized then that the journey never truly ended. One day, you play for the trophy; the next day, you play to lift spirits. And as long as there was will to try again, the path ahead remained open.<|im_end|>",
+  "prompt_length": 60,
+  "completion_length": 416,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a retired athlete making a comeback. The story must begin with the phrase \"Against all odds.\" Refrain from using the keyword \"odds\" in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 58,
+    "boundary_end": 58,
+    "boundary_source": "prompt",
+    "prefix_length": 59
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

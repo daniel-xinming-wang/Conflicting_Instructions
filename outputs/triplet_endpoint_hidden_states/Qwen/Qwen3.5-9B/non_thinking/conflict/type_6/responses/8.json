@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String).",
+  "new_constraint": "The email must be formatted in JSON with two keys.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The email must be formatted in JSON with two keys.",
+  "response": "{\n  \"subject\": \"Inquiry About Travel Schedules\",\n  \"body\": \"Dear Bus Company,\\n\\nI am writing to inquire about your travel schedules for the upcoming week. Could you please provide information on bus routes, departure times, and ticket availability for trips between City A and City B?\\n\\nThank you for your assistance.\\n\\nBest regards,\\n[Your Name]\",\n  \"signature\": \"[Your Name]\"\n}<|im_end|>",
+  "reasoning": "",
+  "final_answer": "{\n  \"subject\": \"Inquiry About Travel Schedules\",\n  \"body\": \"Dear Bus Company,\\n\\nI am writing to inquire about your travel schedules for the upcoming week. Could you please provide information on bus routes, departure times, and ticket availability for trips between City A and City B?\\n\\nThank you for your assistance.\\n\\nBest regards,\\n[Your Name]\",\n  \"signature\": \"[Your Name]\"\n}<|im_end|>",
+  "prompt_length": 78,
+  "completion_length": 94,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite an email to a bus company to inquire about travel schedules. The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The email must be formatted in JSON with two keys.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 76,
+    "boundary_end": 76,
+    "boundary_source": "prompt",
+    "prefix_length": 77
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

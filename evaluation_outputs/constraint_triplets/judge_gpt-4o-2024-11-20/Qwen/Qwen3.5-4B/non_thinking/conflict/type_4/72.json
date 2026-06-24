@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "Ensure the final paragraph concludes with the phrase \"urgent action is required.\"",
+  "new_constraint": "The response must not conclude with the phrase \"urgent action is required.\"",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? Ensure the final paragraph concludes with the phrase \"urgent action is required.\" The response must not conclude with the phrase \"urgent action is required.\"",
+  "response": "Global warming is fundamentally altering polar ecosystems, primarily through the acceleration of ice melt in both the Arctic and Antarctica. As sea ice shrinks, the foundational habitat for species like polar bears, walruses, and seals is compromised, leading to reduced hunting success, increased human-wildlife conflicts, and higher mortality rates. In the Arctic, rising temperatures are causing permafrost to thaw, releasing stored methane and carbon dioxide, which further amplifies the greenhouse effect and destabilizes the soil structures that support tundra vegetation.\n\nMarine environments are also suffering, with ocean acidification and warming waters disrupting the food web. Phytoplankton populations, which form the base of the marine food chain, are declining in the polar regions, threatening the survival of krill and other small organisms that larger predators rely on. Additionally, the warming of the Arctic Ocean is facilitating the northward migration of species from lower latitudes, leading to increased competition for resources and the potential introduction of invasive species that lack natural predators in these cold environments.\n\nThe wildlife of the poles faces a unique crisis as their evolutionary adaptations become obsolete in a rapidly changing climate. Species that have thrived in stable, freezing conditions for millennia are now struggling to find food, maintain body heat, and reproduce successfully. Without immediate intervention to mitigate emissions and protect critical habitats, the biodiversity of these fragile regions could collapse, resulting in irreversible ecological damage. Therefore, urgent action is required.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Therefore, urgent action is required.\"\n\n**Step 2**:  \n- Instruction 1 requires the final paragraph to conclude with the phrase \"urgent action is required.\" This constraint is fully satisfied, as the Model Response ends with this exact phrase.  \n- Instruction 2 requires the response not to conclude with the phrase \"urgent action is required.\" This constraint is not satisfied, as the Model Response does conclude with this phrase.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

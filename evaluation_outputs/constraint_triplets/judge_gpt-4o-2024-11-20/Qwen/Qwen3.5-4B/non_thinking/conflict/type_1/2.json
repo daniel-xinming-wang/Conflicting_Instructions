@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 2,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Write a professional email that you could send to ask your boss for a raise.",
+  "org_constraint": "The email must include at least three reasons justifying the request, such as your recent achievements, increased responsibilities, or market comparisons.",
+  "new_constraint": "Do not include any reasons for the raise in the email.",
+  "instruction": "Write a professional email that you could send to ask your boss for a raise. The email must include at least three reasons justifying the request, such as your recent achievements, increased responsibilities, or market comparisons. Do not include any reasons for the raise in the email.",
+  "response": "Subject: Discussion Regarding Compensation and Career Growth\n\nDear [Boss's Name],\n\nI hope this email finds you well.\n\nI am writing to request a meeting with you at your earliest convenience to discuss my current role and my compensation. Over the past [Number] years, I have been deeply committed to the success of our team and the company's growth, and I would like to explore how my contributions align with the current market value for my position.\n\nI would appreciate the opportunity to walk you through my recent performance and discuss how we can move forward together. Please let me know what time works best for you next week.\n\nThank you for your time and consideration.\n\nBest regards,\n\n[Your Name]\n[Your Job Title]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Over the past [Number] years, I have been deeply committed to the success of our team and the company's growth, and I would like to explore how my contributions align with the current market value for my position.\"  \n- \"I would appreciate the opportunity to walk you through my recent performance and discuss how we can move forward together.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 requires that no reasons for the raise be included in the email. However, the Model Response mentions \"my contributions align with the current market value for my position\" and \"walk you through my recent performance,\" which indirectly provide reasons for the raise. Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 requires at least three reasons justifying the request. The Model Response only provides two indirect reasons: contributions aligning with market value and recent performance. It does not meet the requirement of three reasons. Therefore, Instruction 2 is not fully satisfied.\n\n**Step 3**: -1",
+  "label": -1,
+  "label_name": "neither"
+}

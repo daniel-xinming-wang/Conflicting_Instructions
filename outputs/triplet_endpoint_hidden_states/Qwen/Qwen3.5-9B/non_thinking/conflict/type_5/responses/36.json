@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 36,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses.",
+  "org_constraint": "The \"Income\" key must contain at most four sentences.",
+  "new_constraint": "The \"Income\" key must contain a minimum of 100 words, with no sentence exceeding 20 words.",
+  "instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses. The \"Income\" key must contain at most four sentences. The \"Income\" key must contain a minimum of 100 words, with no sentence exceeding 20 words.",
+  "response": "```json\n{\n  \"Income\": \"Working part-time requires careful scheduling to balance class responsibilities with reliable earnings for tuition and rent. You might find stable employment at campus libraries, coffee shops, or tutoring centers that understand student needs. Each week, prioritize high-hour shifts during midterms and finals while maximizing income during lighter academic periods. Consistent effort here creates a steady cash flow essential for covering monthly bills without stress.\"\n}\n```<|im_end|>",
+  "reasoning": "",
+  "final_answer": "```json\n{\n  \"Income\": \"Working part-time requires careful scheduling to balance class responsibilities with reliable earnings for tuition and rent. You might find stable employment at campus libraries, coffee shops, or tutoring centers that understand student needs. Each week, prioritize high-hour shifts during midterms and finals while maximizing income during lighter academic periods. Consistent effort here creates a steady cash flow essential for covering monthly bills without stress.\"\n}\n```<|im_end|>",
+  "prompt_length": 79,
+  "completion_length": 90,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCreate a financial plan for a student working part-time to pay for college tuition and living expenses. The \"Income\" key must contain at most four sentences. The \"Income\" key must contain a minimum of 100 words, with no sentence exceeding 20 words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 77,
+    "boundary_end": 77,
+    "boundary_source": "prompt",
+    "prefix_length": 78
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

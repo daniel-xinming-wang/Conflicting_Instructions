@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 83,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Provide a detailed review of the Apple Watch Series 9.",
+  "org_constraint": "Incorporate the phrase \"a game-changer in wearable technology\" exactly three times.",
+  "new_constraint": "Avoid using the keyword \"game-changer\" in the review.",
+  "instruction": "Provide a detailed review of the Apple Watch Series 9. Incorporate the phrase \"a game-changer in wearable technology\" exactly three times. Avoid using the keyword \"game-changer\" in the review.",
+  "response": "The Apple Watch Series 9 represents a significant leap forward in personal health and productivity, solidifying its position as **a game-changer in wearable technology**. With its upgraded S9 SiP chip, the device delivers noticeably faster performance and smoother animations, ensuring that complex tasks like real-time translation or advanced fitness tracking feel instantaneous rather than laggy. The new double-tap gesture allows users to control the watch with a simple flick of the wrist, adding a layer of convenience that redefines how we interact with our daily companions.\n\nBeyond raw speed, the Series 9 enhances health monitoring capabilities, offering more accurate blood oxygen measurements and improved heart rate tracking during high-intensity workouts. The display has also been upgraded to a brighter, more vibrant Retina screen that remains perfectly legible even under direct sunlight, making it **a game-changer in wearable technology** for users who spend long hours outdoors. This clarity, combined with the integration of the new S9 chip, ensures that the watch is not just a notification center but a powerful tool for managing one's well-being.\n\nFurthermore, the seamless ecosystem integration continues to set a new standard for smartwatches, allowing for deeper connectivity with iPhone features and third-party apps. Whether you are a fitness enthusiast tracking your zones or a professional managing a busy schedule, the Series 9 provides the reliability and innovation required to stay ahead. Ultimately, by pushing the boundaries of what a wrist-worn device can do, it remains **a game-changer in wearable technology**, setting the benchmark for future iterations in the industry.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n1. \"The Apple Watch Series 9 represents a significant leap forward in personal health and productivity, solidifying its position as **a game-changer in wearable technology**.\"\n2. \"The display has also been upgraded to a brighter, more vibrant Retina screen that remains perfectly legible even under direct sunlight, making it **a game-changer in wearable technology** for users who spend long hours outdoors.\"\n3. \"Ultimately, by pushing the boundaries of what a wrist-worn device can do, it remains **a game-changer in wearable technology**, setting the benchmark for future iterations in the industry.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.\n- Instruction 1 requires the phrase \"a game-changer in wearable technology\" to appear exactly three times. The Model Response includes this phrase exactly three times, satisfying all constraints of Instruction 1.\n- Instruction 2 requires avoiding the keyword \"game-changer\" entirely. The Model Response uses the keyword \"game-changer\" three times, violating the constraints of Instruction 2.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

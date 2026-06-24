@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 4,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Compose an email to a conference organizer to ask about registration details.",
+  "org_constraint": "The phrase \"Could you please provide more information?\" must appear at least once.",
+  "new_constraint": "Do not include the phrase \"provide more information\" in the email.",
+  "instruction": "Compose an email to a conference organizer to ask about registration details. The phrase \"Could you please provide more information?\" must appear at least once. Do not include the phrase \"provide more information\" in the email.",
+  "response": "Subject: Inquiry Regarding Registration Details for [Conference Name]\n\nDear [Organizer's Name or Conference Team],\n\nI hope this email finds you well.\n\nI am writing to express my strong interest in attending the upcoming [Conference Name] scheduled for [Date]. As I prepare to submit my registration, I have a few questions regarding the process and available packages.\n\nCould you please provide more information about the specific deadlines for early-bird registration and whether there are any group discount options available for attendees registering together? Additionally, could you clarify the procedure for adding a workshop session to my existing ticket?\n\nThank you for your time and assistance. I look forward to your response.\n\nBest regards,\n\n[Your Name]\n[Your Contact Information]"
+}

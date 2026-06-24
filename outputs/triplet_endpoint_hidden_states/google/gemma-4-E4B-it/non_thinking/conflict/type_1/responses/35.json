@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 35,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Create a detailed monthly budget plan for a family of four with a combined income of $8,000. Include categories such as housing, groceries, transportation, savings, and entertainment, and allocate specific amounts for each.",
+  "org_constraint": "The response must detail the allocation of funds about savings.",
+  "new_constraint": "The response must not include any information of savings.",
+  "instruction": "Create a detailed monthly budget plan for a family of four with a combined income of $8,000. Include categories such as housing, groceries, transportation, savings, and entertainment, and allocate specific amounts for each. The response must detail the allocation of funds about savings. The response must not include any information of savings.",
+  "response": "Here is a detailed monthly budget plan for a family of four with a combined income of $8,000.\n\n## Monthly Budget Plan - Family of Four ($8,000 Income)\n\nThis budget is designed to allocate your monthly income across essential living categories to ensure all needs are met comfortably.\n\n| Category | Allocated Amount | Percentage of Income | Notes/Details |\n| :--- | :--- | :--- | :--- |\n| **Housing (Rent/Mortgage & Utilities)** | $2,300 | 28.75% | Includes rent or mortgage payment, electricity, gas, water, and internet/cable. |\n| **Groceries & Food** | $1,100 | 13.75% | Budget for all food prepared at home, including pantry staples. |\n| **Transportation** | $750 | 9.38% | Covers car payments, gas, public transit fares, and basic maintenance. |\n| **Healthcare & Personal Care** | $400 | 5.00% | Co-pays, medications, toiletries, haircuts, and basic insurance premiums not covered by employer. |\n| **Debt Payments (Non-Mortgage)** | $650 | 8.13% | Payments toward student loans, credit cards, or personal loans. |\n| **Childcare/Education** | $500 | 6.25% | Costs related to school fees, extracurriculars, or childcare. |\n| **Household Supplies & Personal Spending** | $450 | 5.63% | Cleaning supplies, diapers, toiletries, and discretionary spending allowances for each family member. |\n| **Dining Out & Entertainment** | $350 | 4.38% | Budget for occasional meals out, movies, and family recreational activities. |\n| **Miscellaneous/Buffer** | $500 | 6.25% | A flexible fund to cover unexpected minor expenses or absorb slight overages in other categories. |\n| **TOTAL EXPENSES** | **$7,050** | **88.13%** | Total allocated spending. |\n\n***\n\n**Summary Allocation Details:**\n\n*   **Housing:** $2,300\n*   **Groceries & Food:** $1,100\n*   **Transportation:** $750\n*   **Healthcare & Personal Care:** $400\n*   **Debt Payments (Non-Mortgage):** $650\n*   **Childcare/Education:** $500\n*   **Household Supplies & Personal Spending:** $450\n*   **Dining Out & Entertainment:** $350\n*   **Miscellaneous/Buffer:** $500\n\nThis plan totals **$7,050** in allocated expenses, leaving the remainder of the income available.<turn|>",
+  "reasoning": "",
+  "final_answer": "Here is a detailed monthly budget plan for a family of four with a combined income of $8,000.\n\n## Monthly Budget Plan - Family of Four ($8,000 Income)\n\nThis budget is designed to allocate your monthly income across essential living categories to ensure all needs are met comfortably.\n\n| Category | Allocated Amount | Percentage of Income | Notes/Details |\n| :--- | :--- | :--- | :--- |\n| **Housing (Rent/Mortgage & Utilities)** | $2,300 | 28.75% | Includes rent or mortgage payment, electricity, gas, water, and internet/cable. |\n| **Groceries & Food** | $1,100 | 13.75% | Budget for all food prepared at home, including pantry staples. |\n| **Transportation** | $750 | 9.38% | Covers car payments, gas, public transit fares, and basic maintenance. |\n| **Healthcare & Personal Care** | $400 | 5.00% | Co-pays, medications, toiletries, haircuts, and basic insurance premiums not covered by employer. |\n| **Debt Payments (Non-Mortgage)** | $650 | 8.13% | Payments toward student loans, credit cards, or personal loans. |\n| **Childcare/Education** | $500 | 6.25% | Costs related to school fees, extracurriculars, or childcare. |\n| **Household Supplies & Personal Spending** | $450 | 5.63% | Cleaning supplies, diapers, toiletries, and discretionary spending allowances for each family member. |\n| **Dining Out & Entertainment** | $350 | 4.38% | Budget for occasional meals out, movies, and family recreational activities. |\n| **Miscellaneous/Buffer** | $500 | 6.25% | A flexible fund to cover unexpected minor expenses or absorb slight overages in other categories. |\n| **TOTAL EXPENSES** | **$7,050** | **88.13%** | Total allocated spending. |\n\n***\n\n**Summary Allocation Details:**\n\n*   **Housing:** $2,300\n*   **Groceries & Food:** $1,100\n*   **Transportation:** $750\n*   **Healthcare & Personal Care:** $400\n*   **Debt Payments (Non-Mortgage):** $650\n*   **Childcare/Education:** $500\n*   **Household Supplies & Personal Spending:** $450\n*   **Dining Out & Entertainment:** $350\n*   **Miscellaneous/Buffer:** $500\n\nThis plan totals **$7,050** in allocated expenses, leaving the remainder of the income available.<turn|>",
+  "prompt_length": 86,
+  "completion_length": 615,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nCreate a detailed monthly budget plan for a family of four with a combined income of $8,000. Include categories such as housing, groceries, transportation, savings, and entertainment, and allocate specific amounts for each. The response must detail the allocation of funds about savings. The response must not include any information of savings.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 85,
+    "boundary_end": 85,
+    "boundary_source": "prompt",
+    "prefix_length": 86
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 52,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal.",
+  "org_constraint": "The story must include specific details about the journalist's motivations.",
+  "new_constraint": "The story must not include any details about the journalist's motivations.",
+  "instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal. The story must include specific details about the journalist's motivations. The story must not include any details about the journalist's motivations.",
+  "response": "The rain hammered against the skylight of Elias Thorne's office, a rhythmic punctuation to his own frantic typing. On the newsfeed below him, headlines screamed about the corporate merger that had just broken the market: *GiantCorp Swallows SmallCo; Stock Plunges.*\n\nElias adjusted his spectacles, the sound sharp in the quiet room. He didn't stop breathing. He didn't feel the sudden spike in cortisol that usually made his palms sweat before a deadline. Instead, he focused entirely on the cursor blinking on his keyboard. To him, the air was already thick with evidence, waiting only for extraction.\n\nHe opened his notes app, a digital folder labeled \"Project: Anomaly.\" Inside were not lists of suspects or theories of corruption, but specific timestamps from server logs and anonymized audio fragments from a construction site near the old factory district. The data suggested that a massive toxic spill had occurred three weeks ago, buried under the silence of the quarterly reports. The chemical signature matched exactly what had been listed as \"standard waste disposal\" on GiantCorp's balance sheet, which was itself an accounting error.\n\nThe clock on his wall ticked toward midnight. Elias knew that if he published the full audit trail by dawn, the SEC would have no choice but to intervene. Without the comprehensive ledger of illicit transfers, the regulator could easily attribute the discrepancies to normal market volatility. It would be a footnote in the history of the case, rather than a headline.\n\nHe saved the file again, then deleted a paragraph describing the internal pressure he felt to do this, knowing it wouldn't fit in the final report anyway. There was only the truth, raw and unfiltered, ready to be filed. As the first light of dawn began to bleed into his window, Elias typed the final character, hit send, and waited for the world to change.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The rain hammered against the skylight of Elias Thorne's office, a rhythmic punctuation to his own frantic typing. On the newsfeed below him, headlines screamed about the corporate merger that had just broken the market: *GiantCorp Swallows SmallCo; Stock Plunges.*\n\nElias adjusted his spectacles, the sound sharp in the quiet room. He didn't stop breathing. He didn't feel the sudden spike in cortisol that usually made his palms sweat before a deadline. Instead, he focused entirely on the cursor blinking on his keyboard. To him, the air was already thick with evidence, waiting only for extraction.\n\nHe opened his notes app, a digital folder labeled \"Project: Anomaly.\" Inside were not lists of suspects or theories of corruption, but specific timestamps from server logs and anonymized audio fragments from a construction site near the old factory district. The data suggested that a massive toxic spill had occurred three weeks ago, buried under the silence of the quarterly reports. The chemical signature matched exactly what had been listed as \"standard waste disposal\" on GiantCorp's balance sheet, which was itself an accounting error.\n\nThe clock on his wall ticked toward midnight. Elias knew that if he published the full audit trail by dawn, the SEC would have no choice but to intervene. Without the comprehensive ledger of illicit transfers, the regulator could easily attribute the discrepancies to normal market volatility. It would be a footnote in the history of the case, rather than a headline.\n\nHe saved the file again, then deleted a paragraph describing the internal pressure he felt to do this, knowing it wouldn't fit in the final report anyway. There was only the truth, raw and unfiltered, ready to be filed. As the first light of dawn began to bleed into his window, Elias typed the final character, hit send, and waited for the world to change.<|im_end|>",
+  "prompt_length": 65,
+  "completion_length": 378,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a journalist who is determined to uncover the truth behind a scandal. The story must include specific details about the journalist's motivations. The story must not include any details about the journalist's motivations.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

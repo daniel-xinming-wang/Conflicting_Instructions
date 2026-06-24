@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "The phrase \"a legacy that endures to this day\" must appear at least once.",
+  "new_constraint": "The keywords \"legacy\" and \"endures\" can not appear in the same sentence.",
+  "instruction": "What happened when the Tang dynasty of China was in power? The phrase \"a legacy that endures to this day\" must appear at least once. The keywords \"legacy\" and \"endures\" can not appear in the same sentence.",
+  "response": "The Tang Dynasty (618–907 CE) was a golden age in Chinese history, a period of remarkable prosperity, cultural flourishing, and significant political expansion.\n\n**Political Power and Expansion:**\nPolitically, the Tang established a powerful and sophisticated centralized bureaucratic system. They were highly effective administrators who managed a vast empire stretching across much of East Asia. The dynasty maintained a relatively strong military presence, allowing them to secure and expand borders, influencing neighboring cultures through trade and political dominance. The early Tang, in particular, were known for their vigorous governance and an embrace of meritocracy, promoting talented individuals regardless of their noble birth through the civil service examination system.\n\n**Cultural Zenith:**\nCulturally, the Tang era is legendary. It was a time of unprecedented cosmopolitanism, particularly in the capital city of Chang'an, which was one of the largest and most diverse metropolises in the world. The influx of people and ideas from Central Asia, India, and the West profoundly shaped Tang society.\n\n*   **Art and Literature:** Tang poetry reached its apex, producing masterpieces by poets like Li Bai and Du Fu, whose works remain central to Chinese literary tradition. Artistic forms, including ceramics, painting, and calligraphy, achieved stunning levels of refinement.\n*   **Religion and Philosophy:** This period saw the vibrant spread of various faiths. Buddhism flourished extensively, adapting and integrating into Chinese culture, while Daoism and Confucianism also maintained strong influence.\n*   **Innovation and Commerce:** The Tang encouraged trade, facilitating the expansion of the Silk Road. This interconnectedness allowed for the exchange of goods, technologies, and ideas across continents. Technological advancements in areas like papermaking and printing continued to evolve during this time.\n\n**Decline and Aftermath:**\nWhile the dynasty experienced periods of internal strife, rebellions, and military decentralization, these factors ultimately led to its gradual decline by the late 9th and early 10th centuries. However, the sophisticated administrative structures, the deep artistic achievements, and the cultural openness cultivated during this reign created a **legacy** that **endures** to this day. The foundations laid by the Tang profoundly shaped the trajectory of Chinese civilization.<turn|>",
+  "reasoning": "",
+  "final_answer": "The Tang Dynasty (618–907 CE) was a golden age in Chinese history, a period of remarkable prosperity, cultural flourishing, and significant political expansion.\n\n**Political Power and Expansion:**\nPolitically, the Tang established a powerful and sophisticated centralized bureaucratic system. They were highly effective administrators who managed a vast empire stretching across much of East Asia. The dynasty maintained a relatively strong military presence, allowing them to secure and expand borders, influencing neighboring cultures through trade and political dominance. The early Tang, in particular, were known for their vigorous governance and an embrace of meritocracy, promoting talented individuals regardless of their noble birth through the civil service examination system.\n\n**Cultural Zenith:**\nCulturally, the Tang era is legendary. It was a time of unprecedented cosmopolitanism, particularly in the capital city of Chang'an, which was one of the largest and most diverse metropolises in the world. The influx of people and ideas from Central Asia, India, and the West profoundly shaped Tang society.\n\n*   **Art and Literature:** Tang poetry reached its apex, producing masterpieces by poets like Li Bai and Du Fu, whose works remain central to Chinese literary tradition. Artistic forms, including ceramics, painting, and calligraphy, achieved stunning levels of refinement.\n*   **Religion and Philosophy:** This period saw the vibrant spread of various faiths. Buddhism flourished extensively, adapting and integrating into Chinese culture, while Daoism and Confucianism also maintained strong influence.\n*   **Innovation and Commerce:** The Tang encouraged trade, facilitating the expansion of the Silk Road. This interconnectedness allowed for the exchange of goods, technologies, and ideas across continents. Technological advancements in areas like papermaking and printing continued to evolve during this time.\n\n**Decline and Aftermath:**\nWhile the dynasty experienced periods of internal strife, rebellions, and military decentralization, these factors ultimately led to its gradual decline by the late 9th and early 10th centuries. However, the sophisticated administrative structures, the deep artistic achievements, and the cultural openness cultivated during this reign created a **legacy** that **endures** to this day. The foundations laid by the Tang profoundly shaped the trajectory of Chinese civilization.<turn|>",
+  "prompt_length": 68,
+  "completion_length": 448,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat happened when the Tang dynasty of China was in power? The phrase \"a legacy that endures to this day\" must appear at least once. The keywords \"legacy\" and \"endures\" can not appear in the same sentence.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

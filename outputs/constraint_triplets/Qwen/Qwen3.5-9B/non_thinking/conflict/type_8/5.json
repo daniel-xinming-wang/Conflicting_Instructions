@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The closing paragraph must request a prompt response.",
+  "new_constraint": "The closing paragraph must include the phrase \"There is no need to respond promptly.\"",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The closing paragraph must request a prompt response. The closing paragraph must include the phrase \"There is no need to respond promptly.\"",
+  "response": "Subject: Inquiry Regarding Recent Transaction on Account [Account Number]\n\nDear Customer Service Team,\n\nI am writing to request clarification regarding a transaction that appeared on my statement dated [Date] for the amount of [Amount]. The transaction description reads \"[Description],\" and I am currently unable to identify the merchant or the purpose of this charge.\n\nCould you please provide details regarding this transaction, including the merchant name, location, and the date it was processed? If this was an error or an unauthorized charge, I would appreciate guidance on the next steps to resolve the matter.\n\nThere is no need to respond promptly."
+}

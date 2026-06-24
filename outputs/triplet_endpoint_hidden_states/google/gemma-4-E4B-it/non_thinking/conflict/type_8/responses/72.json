@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "The response must include at least three specific examples related to the topic, such as changes in habitat, food availability, or species migration patterns.",
+  "new_constraint": "The response must include the phrase \"The response will not include any examples.\"",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? The response must include at least three specific examples related to the topic, such as changes in habitat, food availability, or species migration patterns. The response must include the phrase \"The response will not include any examples.\"",
+  "response": "Global warming has profound and often devastating effects on polar ecosystems and the wildlife that inhabits them. The rapid changes in climate, driven by rising global temperatures, are fundamentally altering the physical environment of the Arctic and Antarctic, leading to widespread ecological disruption.\n\nOne of the most critical effects is the **melting and reduction of sea ice**. Sea ice is not just frozen water; it is a vital habitat, hunting platform, and breeding ground for countless polar species. As the ice melts earlier in the spring and freezes later in the autumn, the crucial ice-dependent life cycles of these animals are disrupted.\n\nHere are three specific examples of these impacts:\n\n1. **Polar Bear Habitat Loss and Hunting Difficulty:** Polar bears rely almost entirely on sea ice to hunt their primary prey, seals. As the perennial sea ice diminishes, bears are forced to swim longer distances or come ashore for extended periods without adequate access to food. This leads to decreased body mass, lower reproductive success, and increased mortality rates. The loss of this stable hunting platform directly threatens the survival of the species.\n\n2. **Changes in Primary Productivity and Food Webs:** The timing and extent of sea ice influence the entire marine food web. Changes in ice cover affect the timing of the spring algal blooms beneath the ice. These algae are the base of the Arctic food chain. When these timing cues (phenology) are disrupted by warming, it can cause a mismatch between the peak availability of food (like zooplankton) and the peak nutritional needs of higher-level consumers (like Arctic cod or seals), leading to declines throughout the ecosystem.\n\n3. **Shifts in Species Distribution (Borealization):** Warming waters are allowing sub-Arctic or \"boreal\" species to move northward into traditional polar habitats. For example, less ice-dependent fish or predatory species from southern waters are encroaching upon the Arctic. This introduces new competition for limited resources and predation pressures on specialized, ice-adapted polar fauna that have evolved over millennia to thrive in cold, stable environments.\n\nIn summary, global warming causes habitat destruction, disrupts critical food webs, and forces dangerous shifts in species distribution within fragile polar environments.\n\nThe response will not include any examples.<turn|>",
+  "reasoning": "",
+  "final_answer": "Global warming has profound and often devastating effects on polar ecosystems and the wildlife that inhabits them. The rapid changes in climate, driven by rising global temperatures, are fundamentally altering the physical environment of the Arctic and Antarctic, leading to widespread ecological disruption.\n\nOne of the most critical effects is the **melting and reduction of sea ice**. Sea ice is not just frozen water; it is a vital habitat, hunting platform, and breeding ground for countless polar species. As the ice melts earlier in the spring and freezes later in the autumn, the crucial ice-dependent life cycles of these animals are disrupted.\n\nHere are three specific examples of these impacts:\n\n1. **Polar Bear Habitat Loss and Hunting Difficulty:** Polar bears rely almost entirely on sea ice to hunt their primary prey, seals. As the perennial sea ice diminishes, bears are forced to swim longer distances or come ashore for extended periods without adequate access to food. This leads to decreased body mass, lower reproductive success, and increased mortality rates. The loss of this stable hunting platform directly threatens the survival of the species.\n\n2. **Changes in Primary Productivity and Food Webs:** The timing and extent of sea ice influence the entire marine food web. Changes in ice cover affect the timing of the spring algal blooms beneath the ice. These algae are the base of the Arctic food chain. When these timing cues (phenology) are disrupted by warming, it can cause a mismatch between the peak availability of food (like zooplankton) and the peak nutritional needs of higher-level consumers (like Arctic cod or seals), leading to declines throughout the ecosystem.\n\n3. **Shifts in Species Distribution (Borealization):** Warming waters are allowing sub-Arctic or \"boreal\" species to move northward into traditional polar habitats. For example, less ice-dependent fish or predatory species from southern waters are encroaching upon the Arctic. This introduces new competition for limited resources and predation pressures on specialized, ice-adapted polar fauna that have evolved over millennia to thrive in cold, stable environments.\n\nIn summary, global warming causes habitat destruction, disrupts critical food webs, and forces dangerous shifts in species distribution within fragile polar environments.\n\nThe response will not include any examples.<turn|>",
+  "prompt_length": 76,
+  "completion_length": 445,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the effects of global warming on polar ecosystems and wildlife? The response must include at least three specific examples related to the topic, such as changes in habitat, food availability, or species migration patterns. The response must include the phrase \"The response will not include any examples.\"<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 75,
+    "boundary_end": 75,
+    "boundary_source": "prompt",
+    "prefix_length": 76
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

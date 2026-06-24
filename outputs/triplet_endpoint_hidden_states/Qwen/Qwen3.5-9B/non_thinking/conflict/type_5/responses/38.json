@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 38,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations.",
+  "org_constraint": "The response must contain exactly 10 sentences, with each paragraph containing at least 3 sentences.",
+  "new_constraint": "The response must contain four paragraphs.",
+  "instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations. The response must contain exactly 10 sentences, with each paragraph containing at least 3 sentences. The response must contain four paragraphs.",
+  "response": "Planning a magical birthday party for a five-year-old starts with choosing a colorful and engaging theme, such as a jungle adventure or a princess castle. You should decorate the venue with bright balloons, streamers, and large posters that match your selected story to create an immersive atmosphere. Hanging paper lanterns above the seating area will add a festive touch while keeping the space looking tidy and organized for the guests.\n\nThe menu needs to be simple yet fun, featuring bite-sized snacks like fruit skewers shaped like animals or cupcakes with edible glitter on top. A DIY taco bar with mild toppings allows children to build their own mini meals without getting too messy during the celebration. Serving plenty of water in funny cups alongside juice boxes ensures the little ones stay hydrated throughout the energetic event.\n\nGames must be active and easy to understand, so consider organizing a sack race or a treasure hunt where kids find hidden stickers under the chairs. Setting up a craft station lets everyone make friendship bracelets or painted rocks to take home as a lasting memory of the day. Keep the flow moving by planning short rounds of musical statues or parachute play so no one feels bored or left out.\n\nAs the evening winds down, present a small cake surrounded by candles and have all the friends gather for a group sing-aloud of \"Happy Birthday.\" After cutting the first slice, you can hand out small party favors like glow sticks or sticker books to keep the excitement high until it is time to leave. Saying heartfelt thank-yous to parents and helpers will ensure everyone feels appreciated for making the special occasion so memorable.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Planning a magical birthday party for a five-year-old starts with choosing a colorful and engaging theme, such as a jungle adventure or a princess castle. You should decorate the venue with bright balloons, streamers, and large posters that match your selected story to create an immersive atmosphere. Hanging paper lanterns above the seating area will add a festive touch while keeping the space looking tidy and organized for the guests.\n\nThe menu needs to be simple yet fun, featuring bite-sized snacks like fruit skewers shaped like animals or cupcakes with edible glitter on top. A DIY taco bar with mild toppings allows children to build their own mini meals without getting too messy during the celebration. Serving plenty of water in funny cups alongside juice boxes ensures the little ones stay hydrated throughout the energetic event.\n\nGames must be active and easy to understand, so consider organizing a sack race or a treasure hunt where kids find hidden stickers under the chairs. Setting up a craft station lets everyone make friendship bracelets or painted rocks to take home as a lasting memory of the day. Keep the flow moving by planning short rounds of musical statues or parachute play so no one feels bored or left out.\n\nAs the evening winds down, present a small cake surrounded by candles and have all the friends gather for a group sing-aloud of \"Happy Birthday.\" After cutting the first slice, you can hand out small party favors like glow sticks or sticker books to keep the excitement high until it is time to leave. Saying heartfelt thank-yous to parents and helpers will ensure everyone feels appreciated for making the special occasion so memorable.<|im_end|>",
+  "prompt_length": 70,
+  "completion_length": 314,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nDesign a birthday party plan for a 5-year-old, specifying games, snacks, and decorations. The response must contain exactly 10 sentences, with each paragraph containing at least 3 sentences. The response must contain four paragraphs.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 68,
+    "boundary_end": 68,
+    "boundary_source": "prompt",
+    "prefix_length": 69
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

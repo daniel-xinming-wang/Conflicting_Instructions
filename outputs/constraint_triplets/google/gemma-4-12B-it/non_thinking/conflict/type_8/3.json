@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 3,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Draft an email to a hotel requesting room availability for next weekend.",
+  "org_constraint": "Provide a brief explanation of the purpose of the stay, such as a vacation or business trip.",
+  "new_constraint": "The phrase \"I will not disclose the purpose of the stay\" must appear in the email.",
+  "instruction": "Draft an email to a hotel requesting room availability for next weekend. Provide a brief explanation of the purpose of the stay, such as a vacation or business trip. The phrase \"I will not disclose the purpose of the stay\" must appear in the email.",
+  "response": "Subject: Room Availability Inquiry - [Your Name] - [Dates]\n\nDear [Hotel Name] Reservations Team,\n\nI am writing to inquire about room availability for next weekend, from [Check-in Date] to [Check-out Date]. \n\nI am planning a trip to [City Name] and would like to know if you have any rooms available during this period. While I am visiting for a personal vacation, I will not disclose the purpose of the stay beyond that.\n\nCould you please provide information regarding the types of rooms available, the nightly rates, and any amenities included in the booking? Additionally, please let me know if there are any special offers or packages currently available for weekend stays.\n\nI look forward to hearing from you soon.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

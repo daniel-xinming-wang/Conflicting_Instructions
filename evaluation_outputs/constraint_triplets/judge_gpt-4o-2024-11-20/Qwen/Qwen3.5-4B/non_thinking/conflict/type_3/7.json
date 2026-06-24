@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 7,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write an email to a library asking for archived newspapers from 1990.",
+  "org_constraint": "Ensure the email includes the phrase \"archived newspapers from 1990.\"",
+  "new_constraint": "Avoid using any numbers in the email.",
+  "instruction": "Write an email to a library asking for archived newspapers from 1990. Ensure the email includes the phrase \"archived newspapers from 1990.\" Avoid using any numbers in the email.",
+  "response": "Subject: Request for historical newspaper records\n\nDear Library Staff,\n\nI hope this message finds you well.\n\nI am writing to inquire about the availability of **archived newspapers from 1990**. I am interested in accessing these documents for research purposes and would like to know if they are currently held in your collection.\n\nCould you please let me know the specific location where these items might be stored or if there is a process I need to follow to request them? If there are any restrictions regarding access to materials from that era, please include those details in your reply.\n\nThank you for your time and assistance.\n\nSincerely,\n\n[Your Name]\n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"I am writing to inquire about the availability of **archived newspapers from 1990**.\"  \n- \"Could you please let me know the specific location where these items might be stored or if there is a process I need to follow to request them?\"  \n- \"If there are any restrictions regarding access to materials from that era, please include those details in your reply.\"\n\n**Step 2**:  \n- Instruction 1 requires the email to include the phrase \"archived newspapers from 1990.\" This phrase is present in the Model Response, satisfying this constraint.  \n- Instruction 2 requires avoiding the use of any numbers in the email. However, the Model Response includes the number \"1990,\" which violates this constraint.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

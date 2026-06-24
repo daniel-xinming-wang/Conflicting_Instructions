@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The email must be written in the first person.",
+  "new_constraint": "The email must be written in the second person.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must be written in the first person. The email must be written in the second person.",
+  "response": "Subject: Clarification Regarding Recent Transaction on Account [Account Number]\n\nDear [Bank Representative Name or Customer Service Team],\n\nI am writing to you today to request clarification regarding a transaction that appeared on my recent statement.\n\nI noticed a charge of $[Amount] dated [Date] under the description \"[Transaction Description].\" This transaction does not appear to be one I authorized, and I would like to understand exactly what service or purchase this represents. Could you please provide me with the merchant name and the specific location where this charge was processed?\n\nAdditionally, if this was an error or an unauthorized attempt, I need to know the immediate steps I should take to secure my account. Please let me know if you require any further information from me to investigate this matter.\n\nI appreciate your prompt attention to this issue and look forward to your response.\n\nSincerely,\n\n[Your Name]\n[Your Account Number]\n[Your Phone Number]"
+}

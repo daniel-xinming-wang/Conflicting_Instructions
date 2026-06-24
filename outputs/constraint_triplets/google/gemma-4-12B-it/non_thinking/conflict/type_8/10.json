@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The email must include the repair ticket number.",
+  "new_constraint": "The email must include the phrase \"I will not disclose the repair ticket number in the email.\"",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The email must include the repair ticket number. The email must include the phrase \"I will not disclose the repair ticket number in the email.\"",
+  "response": "Subject: Status Update Request - Laptop Repair [Ticket Number]\n\nDear [Repair Shop Name] Team,\n\nI am writing to request an update on the status of my laptop repair. \n\nMy repair ticket number is [Insert Ticket Number Here]. \n\nPlease let me know if the repair is complete, if you require any further information from my side, or if there is an estimated timeframe for when I can pick up the device.\n\nI will not disclose the repair ticket number in the email. (Note: I have included it above for your reference to locate my file).\n\nThank you for your assistance.\n\nBest regards,\n\n[Your Name]\n[Your Phone Number]<turn|>"
+}

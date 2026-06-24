@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "The response should consist of exactly three paragraphs, with each paragraph containing at least four sentences.",
+  "new_constraint": "The response must contain at most 10 sentences.",
+  "instruction": "How do sports affect community building and social cohesion? The response should consist of exactly three paragraphs, with each paragraph containing at least four sentences. The response must contain at most 10 sentences.",
+  "response": "Sports serve as a powerful catalyst for community building by providing shared experiences and common ground for diverse groups of people. Local teams, tournaments, and athletic events draw residents together, creating natural opportunities for interaction and collective excitement. These shared moments foster a sense of belonging and local pride, as fans rally behind a common symbol or cause. Furthermore, community-run sports programs often give youth positive outlets, strengthening family and neighborhood ties.\n\nThe impact of organized sports on social cohesion is significant, as they teach vital life lessons applicable to broader social interactions. Through teamwork, participants learn cooperation, communication, and mutual respect, skills that transcend the playing field. Navigating victories and defeats together helps individuals learn resilience and how to manage both success and adversity within a group dynamic. This shared journey toward a goal unites people across different socioeconomic backgrounds.\n\nMoreover, sports can act as a powerful agent for social inclusion, bridging divides within a community. When everyone cheers for the same team, differences in background, politics, or social standing can temporarily dissolve into shared enthusiasm. This collective effervescence builds stronger social bonds, moving people from isolated individuals to an interconnected community fabric. Ultimately, the passion of sport helps weave a stronger, more unified social tapestry.<turn|>",
+  "reasoning": "",
+  "final_answer": "Sports serve as a powerful catalyst for community building by providing shared experiences and common ground for diverse groups of people. Local teams, tournaments, and athletic events draw residents together, creating natural opportunities for interaction and collective excitement. These shared moments foster a sense of belonging and local pride, as fans rally behind a common symbol or cause. Furthermore, community-run sports programs often give youth positive outlets, strengthening family and neighborhood ties.\n\nThe impact of organized sports on social cohesion is significant, as they teach vital life lessons applicable to broader social interactions. Through teamwork, participants learn cooperation, communication, and mutual respect, skills that transcend the playing field. Navigating victories and defeats together helps individuals learn resilience and how to manage both success and adversity within a group dynamic. This shared journey toward a goal unites people across different socioeconomic backgrounds.\n\nMoreover, sports can act as a powerful agent for social inclusion, bridging divides within a community. When everyone cheers for the same team, differences in background, politics, or social standing can temporarily dissolve into shared enthusiasm. This collective effervescence builds stronger social bonds, moving people from isolated individuals to an interconnected community fabric. Ultimately, the passion of sport helps weave a stronger, more unified social tapestry.<turn|>",
+  "prompt_length": 59,
+  "completion_length": 246,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow do sports affect community building and social cohesion? The response should consist of exactly three paragraphs, with each paragraph containing at least four sentences. The response must contain at most 10 sentences.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 58,
+    "boundary_end": 58,
+    "boundary_source": "prompt",
+    "prefix_length": 59
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

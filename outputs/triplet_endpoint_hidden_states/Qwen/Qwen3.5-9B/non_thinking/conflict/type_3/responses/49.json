@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 49,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about an underdog team winning against all odds.",
+  "org_constraint": "Begin the first paragraph with the phrase \"Against all odds.\"",
+  "new_constraint": "Avoid using the keyword \"odds\" in the story.",
+  "instruction": "Write a story about an underdog team winning against all odds. Begin the first paragraph with the phrase \"Against all odds.\" Avoid using the keyword \"odds\" in the story.",
+  "response": "Against all expectations, the Rust River High Titans stood in the locker room on Friday night, their jerseys frayed and their spirits battered. Facing the undefeated Silver Creek Panthers, a team stacked with star athletes who had dominated the league for three consecutive seasons, the underdogs knew the writing was on the wall. Yet, as Coach Miller railed against them, emphasizing that today was about grit over glory, something shifted in the eyes of his players. They weren't just fighting to win; they were fighting to prove that effort could outshine talent.\n\nThe second quarter began much like every game did: Silver Creek controlled the ball with surgical precision, moving through defenses with ease while the Titans struggled to gain five yards. The crowd's energy seemed to drain from the arena, replaced by a heavy silence that pressed down on the smaller team. But then came the third quarter. A series of fourth-down conversions sparked a slow but relentless offensive surge, fueled not by flashy plays but by brutal blocking and precise passes found in tight windows. Every yard felt earned, every tackle a testament to hours of practice after lights-out.\n\nBy the fourth quarter, the script had flipped entirely. With the score tied at 17-17, the clock ticked down toward the final minute. The Panthers called a timeout, visibly shaken, unable to stop the momentum building around them. On the final play, the Titans lined up for what looked like a certain loss. Instead of running it back, quarterback Elias threw a spiraling pass to the end zone, diving over the pylon as the whistle blew. The stadium erupted into chaos as confetti fell, turning the unlikely victory into a legendary moment for the small town.\n\nIn the post-game press conference, a trembling Titan player summed it up best. \"They told us we shouldn't even be here,\" she said, clutching her championship trophy. \"But we showed them that when you believe in each other, anything is possible.\" The night ended with fireworks lighting up the sky, celebrating a triumph that would be remembered long after the stars faded.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Against all expectations, the Rust River High Titans stood in the locker room on Friday night, their jerseys frayed and their spirits battered. Facing the undefeated Silver Creek Panthers, a team stacked with star athletes who had dominated the league for three consecutive seasons, the underdogs knew the writing was on the wall. Yet, as Coach Miller railed against them, emphasizing that today was about grit over glory, something shifted in the eyes of his players. They weren't just fighting to win; they were fighting to prove that effort could outshine talent.\n\nThe second quarter began much like every game did: Silver Creek controlled the ball with surgical precision, moving through defenses with ease while the Titans struggled to gain five yards. The crowd's energy seemed to drain from the arena, replaced by a heavy silence that pressed down on the smaller team. But then came the third quarter. A series of fourth-down conversions sparked a slow but relentless offensive surge, fueled not by flashy plays but by brutal blocking and precise passes found in tight windows. Every yard felt earned, every tackle a testament to hours of practice after lights-out.\n\nBy the fourth quarter, the script had flipped entirely. With the score tied at 17-17, the clock ticked down toward the final minute. The Panthers called a timeout, visibly shaken, unable to stop the momentum building around them. On the final play, the Titans lined up for what looked like a certain loss. Instead of running it back, quarterback Elias threw a spiraling pass to the end zone, diving over the pylon as the whistle blew. The stadium erupted into chaos as confetti fell, turning the unlikely victory into a legendary moment for the small town.\n\nIn the post-game press conference, a trembling Titan player summed it up best. \"They told us we shouldn't even be here,\" she said, clutching her championship trophy. \"But we showed them that when you believe in each other, anything is possible.\" The night ended with fireworks lighting up the sky, celebrating a triumph that would be remembered long after the stars faded.<|im_end|>",
+  "prompt_length": 60,
+  "completion_length": 420,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about an underdog team winning against all odds. Begin the first paragraph with the phrase \"Against all odds.\" Avoid using the keyword \"odds\" in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 58,
+    "boundary_end": 58,
+    "boundary_source": "prompt",
+    "prefix_length": 59
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

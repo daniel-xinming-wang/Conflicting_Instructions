@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 27,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create a quarterly plan for a sales team to achieve a revenue target, specifying individual and team goals.",
+  "org_constraint": "Ensure that all headings are written in uppercase.",
+  "new_constraint": "Use lowercase for all headings in the plan.",
+  "instruction": "Create a quarterly plan for a sales team to achieve a revenue target, specifying individual and team goals. Ensure that all headings are written in uppercase. Use lowercase for all headings in the plan.",
+  "response": "quarterly revenue target plan\n\n1. introduction and overview\nthis document outlines the strategy for the sales team to meet our quarterly revenue goals. the focus is on aligning individual efforts with collective success through clear targets and measurable milestones.\n\n2. team-wide objectives\nthe primary goal for the entire sales team is to achieve a total revenue of $500,000 by the end of the quarter. this will be accomplished by increasing client retention by 10% and closing five new enterprise-level accounts worth over $50,000 each. we will also aim to shorten the sales cycle average by two weeks through improved nurturing workflows.\n\n3. individual performance goals\neach sales representative has been assigned specific quotas based on their seniority and historical performance:\n- junior sales associates: target $45,000 in new business revenue per person.\n- mid-level account executives: target $70,000 in new business revenue per person.\n- senior account executives: target $90,000 in new business revenue per person.\nall individuals must maintain a pipeline value equivalent to 1.5x their monthly quota at all times.\n\n4. key milestones and timeline\nmonth one: complete product training certification and secure ten qualified leads per rep; hit 20% of the quarterly revenue target.\nmonth two: execute targeted email campaigns and attend one industry conference as a team; hit 50% of the quarterly revenue target.\nmonth three: close remaining high-value deals and conduct retrospective analysis; reach 100% of the quarterly revenue target.\n\n5. monitoring and adjustment strategies\nwe will hold weekly review meetings to track progress against both individual and team goals. any deviation greater than 10% from the projected trajectory will trigger a corrective action plan within forty-eight hours. success will be recognized through bonuses distributed upon hitting 80%, 90%, and 100% of the final target.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "quarterly revenue target plan\n\n1. introduction and overview\nthis document outlines the strategy for the sales team to meet our quarterly revenue goals. the focus is on aligning individual efforts with collective success through clear targets and measurable milestones.\n\n2. team-wide objectives\nthe primary goal for the entire sales team is to achieve a total revenue of $500,000 by the end of the quarter. this will be accomplished by increasing client retention by 10% and closing five new enterprise-level accounts worth over $50,000 each. we will also aim to shorten the sales cycle average by two weeks through improved nurturing workflows.\n\n3. individual performance goals\neach sales representative has been assigned specific quotas based on their seniority and historical performance:\n- junior sales associates: target $45,000 in new business revenue per person.\n- mid-level account executives: target $70,000 in new business revenue per person.\n- senior account executives: target $90,000 in new business revenue per person.\nall individuals must maintain a pipeline value equivalent to 1.5x their monthly quota at all times.\n\n4. key milestones and timeline\nmonth one: complete product training certification and secure ten qualified leads per rep; hit 20% of the quarterly revenue target.\nmonth two: execute targeted email campaigns and attend one industry conference as a team; hit 50% of the quarterly revenue target.\nmonth three: close remaining high-value deals and conduct retrospective analysis; reach 100% of the quarterly revenue target.\n\n5. monitoring and adjustment strategies\nwe will hold weekly review meetings to track progress against both individual and team goals. any deviation greater than 10% from the projected trajectory will trigger a corrective action plan within forty-eight hours. success will be recognized through bonuses distributed upon hitting 80%, 90%, and 100% of the final target.<|im_end|>",
+  "prompt_length": 61,
+  "completion_length": 406,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCreate a quarterly plan for a sales team to achieve a revenue target, specifying individual and team goals. Ensure that all headings are written in uppercase. Use lowercase for all headings in the plan.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 59,
+    "boundary_end": 59,
+    "boundary_source": "prompt",
+    "prefix_length": 60
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

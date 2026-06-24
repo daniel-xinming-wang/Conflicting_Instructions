@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 86,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Critically evaluate the hotel you stayed in during your last vacation.",
+  "org_constraint": "Ensure the keyword \"cleanliness\" appears before \"location\" in your evaluation.",
+  "new_constraint": "Ensure the keyword \"cleanliness\" appears after \"location\" in your evaluation.",
+  "instruction": "Critically evaluate the hotel you stayed in during your last vacation. Ensure the keyword \"cleanliness\" appears before \"location\" in your evaluation. Ensure the keyword \"cleanliness\" appears after \"location\" in your evaluation.",
+  "response": "While the **location** of our hotel was undeniably perfect, situated right in the heart of the historic district with easy access to major attractions, I must note a significant issue regarding its **cleanliness**. The room had noticeable dust on the furniture and the bathroom towels appeared less than spotless upon arrival. Conversely, if we look at future visits, maintaining high standards for **cleanliness** will be essential before anyone can truly claim this property's superior **location** offers an exceptional experience overall.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "While the **location** of our hotel was undeniably perfect, situated right in the heart of the historic district with easy access to major attractions, I must note a significant issue regarding its **cleanliness**. The room had noticeable dust on the furniture and the bathroom towels appeared less than spotless upon arrival. Conversely, if we look at future visits, maintaining high standards for **cleanliness** will be essential before anyone can truly claim this property's superior **location** offers an exceptional experience overall.<|im_end|>",
+  "prompt_length": 68,
+  "completion_length": 101,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCritically evaluate the hotel you stayed in during your last vacation. Ensure the keyword \"cleanliness\" appears before \"location\" in your evaluation. Ensure the keyword \"cleanliness\" appears after \"location\" in your evaluation.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 66,
+    "boundary_end": 66,
+    "boundary_source": "prompt",
+    "prefix_length": 67
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

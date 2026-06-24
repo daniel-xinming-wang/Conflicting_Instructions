@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 81,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write a detailed review of the movie \"Schindler's List.\"",
+  "org_constraint": "The phrase \"a masterpiece of modern cinema\" is included at least once.",
+  "new_constraint": "Refrain from using the phrase \"a masterpiece of modern cinema.\"",
+  "instruction": "Write a detailed review of the movie \"Schindler's List.\" The phrase \"a masterpiece of modern cinema\" is included at least once. Refrain from using the phrase \"a masterpiece of modern cinema.\"",
+  "response": "**Review: Schindler's List**\n\nSteven Spielberg's 1993 film, *Schindler's List*, stands as a monumental achievement in the history of filmmaking. Directed with a somber yet urgent vision, the movie recounts the true story of Oskar Schindler, a German industrialist who saved over a thousand Jewish lives during the Holocaust by employing them in his factories. The narrative arc is both harrowing and redemptive, tracing Schindler's transformation from a naive, profit-driven opportunist into a man willing to risk everything to preserve human life.\n\nVisually, the film is defined by its stark aesthetic. Spielberg's decision to shoot the majority of the film in black and white, reserving color only for the iconic scene of the dancing girls at the end, creates a powerful emotional contrast. The monochrome palette strips away the distraction of color, forcing the audience to focus on the grim reality of the camps and the indifference of the world around them. When color finally returns, it feels like a fleeting, almost painful memory of innocence lost, making the final image of the children dancing in the street all the more poignant.\n\nThe performances are uniformly outstanding. Liam Neeson delivers a nuanced portrayal of Schindler, capturing his initial charm and ruthlessness before revealing the depth of his moral awakening. Ralph Fiennes provides a chilling performance as Amon Goeth, the sadistic camp commandant, embodying the absolute evil that Schindler fought against. The film's pacing is deliberate, allowing the weight of the historical events to settle in the viewer's mind, rather than rushing through the tragedy.\n\nWhile the film is undeniably a masterpiece of modern cinema, it is also a testament to the power of storytelling to educate and heal. It does not shy away from the brutality of the Holocaust, yet it finds a glimmer of hope in the individual acts of courage. *Schindler's List* remains a necessary watch, a reminder of humanity's capacity for both destruction and salvation.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"While the film is undeniably a masterpiece of modern cinema, it is also a testament to the power of storytelling to educate and heal.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.  \n- Instruction 1 explicitly states that the phrase \"a masterpiece of modern cinema\" must not be used. However, the Model Response includes this phrase, violating Instruction 1.  \n- Instruction 2 requires the phrase \"a masterpiece of modern cinema\" to be included at least once. The Model Response includes this phrase, fully satisfying Instruction 2.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

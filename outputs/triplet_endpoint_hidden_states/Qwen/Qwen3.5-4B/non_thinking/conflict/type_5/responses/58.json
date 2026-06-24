@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 58,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a story about a scientist who discovers a way to slow down time.",
+  "org_constraint": "The story must use one paragraph to introduce the discovery process.",
+  "new_constraint": "Use two paragraphs to introduce the discovery process in the story.",
+  "instruction": "Write a story about a scientist who discovers a way to slow down time. The story must use one paragraph to introduce the discovery process. Use two paragraphs to introduce the discovery process in the story.",
+  "response": "The laboratory air hummed with the dissonance of a thousand failed equations until Elias Vance found the resonance frequency that defied thermodynamics. Working late into the night while the rest of the world slept, he calibrated his unstable chronometer against a spectral anomaly observed in a distant neutron star, adjusting dials with trembling hands until a rhythmic pulse began to synchronize across the device's core.\n\nThe moment the gauge spiked, Elias realized he was witnessing history freeze; the coffee in his mug remained liquid on the surface, and the dust motes dancing before his eyes suspended in perfect stillness. He watched in awe as the chaotic flow of seconds dissolved into a shimmering, glass-like layer, allowing him to walk through hours without aging a single second while the outside world continued its relentless march forward just beyond the edge of perception.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The laboratory air hummed with the dissonance of a thousand failed equations until Elias Vance found the resonance frequency that defied thermodynamics. Working late into the night while the rest of the world slept, he calibrated his unstable chronometer against a spectral anomaly observed in a distant neutron star, adjusting dials with trembling hands until a rhythmic pulse began to synchronize across the device's core.\n\nThe moment the gauge spiked, Elias realized he was witnessing history freeze; the coffee in his mug remained liquid on the surface, and the dust motes dancing before his eyes suspended in perfect stillness. He watched in awe as the chaotic flow of seconds dissolved into a shimmering, glass-like layer, allowing him to walk through hours without aging a single second while the outside world continued its relentless march forward just beyond the edge of perception.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 167,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a scientist who discovers a way to slow down time. The story must use one paragraph to introduce the discovery process. Use two paragraphs to introduce the discovery process in the story.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

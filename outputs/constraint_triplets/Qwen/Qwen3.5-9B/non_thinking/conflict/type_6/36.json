@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 36,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses.",
+  "org_constraint": "The response must be formatted in JSON with the following keys: \"Income\", \"Expenses\", \"Savings\", and \"Strategies\".",
+  "new_constraint": "The response must be formatted in Markdown with at least two level-2 headers.",
+  "instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses. The response must be formatted in JSON with the following keys: \"Income\", \"Expenses\", \"Savings\", and \"Strategies\". The response must be formatted in Markdown with at least two level-2 headers.",
+  "response": "# Student Financial Plan Overview\n\nThis plan outlines a structured approach for a student balancing part-time work with academic responsibilities to cover tuition and living costs.\n\n## Income and Expense Breakdown\n\nThe financial foundation relies on a clear distinction between earnings and necessary outflows.\n\n```json\n{\n  \"Income\": {\n    \"Part_Time_Job\": \"$800 per month\",\n    \"Scholarships\": \"$500 per semester\",\n    \"Grants\": \"$1,200 per year\"\n  },\n  \"Expenses\": {\n    \"Tuition_and_Fees\": \"$12,000 per year\",\n    \"Rent_and_Utilities\": \"$600 per month\",\n    \"Food_and_Groceries\": \"$300 per month\",\n    \"Transportation\": \"$150 per month\",\n    \"Books_and_Supplies\": \"$200 per semester\"\n  },\n  \"Savings\": {\n    \"Emergency_Fund\": \"$50 per month\",\n    \"Future_Investment\": \"$25 per month\"\n  },\n  \"Strategies\": [\n    \"Prioritize high-impact scholarships to reduce tuition burden.\",\n    \"Utilize student discounts for transportation and software.\",\n    \"Cook meals in bulk to reduce grocery costs by 20%.\",\n    \"Work flexible hours during exam weeks to maintain grades.\",\n    \"Open a high-yield savings account for emergency funds.\"\n  ]\n}\n```\n\n## Long-Term Growth and Optimization\n\nBeyond immediate survival, this plan emphasizes building resilience and optimizing resources over time. By consistently allocating a portion of income to savings, the student creates a safety net against unexpected costs. Additionally, regularly reviewing expense categories allows for adjustments that can free up funds for additional savings or debt reduction. The key is maintaining a disciplined budget while remaining flexible enough to adapt to changing academic or employment circumstances."
+}

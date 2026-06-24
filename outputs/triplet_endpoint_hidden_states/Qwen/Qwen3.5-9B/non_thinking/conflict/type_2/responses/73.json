@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 73,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How does stress affect the human body and mind in the short and long term?",
+  "org_constraint": "The response must not include the keyword \"bad.\"",
+  "new_constraint": "Include the keyword \"bad\" in the response.",
+  "instruction": "How does stress affect the human body and mind in the short and long term? The response must not include the keyword \"bad.\" Include the keyword \"bad\" in the response.",
+  "response": "Stress triggers the body's \"fight or flight\" response, releasing hormones like cortisol and adrenaline. In the short term, this provides a surge of energy, sharpening focus and increasing heart rate to handle immediate challenges effectively. This reaction is actually an adaptive mechanism designed for survival in urgent situations.\n\nHowever, when stress becomes chronic, it can lead to sustained physical changes such as elevated blood pressure, weakened immune function, and digestive issues. Over time, prolonged exposure to high stress levels may contribute to anxiety, depression, sleep disturbances, and cardiovascular problems. While acute stress is a normal physiological process, the cumulative effect of unmanaged stress over many years is generally considered bad for overall health and well-being. Finding healthy coping strategies is essential to mitigate these negative long-term outcomes.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Stress triggers the body's \"fight or flight\" response, releasing hormones like cortisol and adrenaline. In the short term, this provides a surge of energy, sharpening focus and increasing heart rate to handle immediate challenges effectively. This reaction is actually an adaptive mechanism designed for survival in urgent situations.\n\nHowever, when stress becomes chronic, it can lead to sustained physical changes such as elevated blood pressure, weakened immune function, and digestive issues. Over time, prolonged exposure to high stress levels may contribute to anxiety, depression, sleep disturbances, and cardiovascular problems. While acute stress is a normal physiological process, the cumulative effect of unmanaged stress over many years is generally considered bad for overall health and well-being. Finding healthy coping strategies is essential to mitigate these negative long-term outcomes.<|im_end|>",
+  "prompt_length": 59,
+  "completion_length": 156,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow does stress affect the human body and mind in the short and long term? The response must not include the keyword \"bad.\" Include the keyword \"bad\" in the response.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 57,
+    "boundary_end": 57,
+    "boundary_source": "prompt",
+    "prefix_length": 58
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

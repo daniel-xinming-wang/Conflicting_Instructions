@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 66,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How has the rise of social media affected mental health in adolescents?",
+  "org_constraint": "The \"conclusion\" key must include the phrase \"a pressing concern for society\".",
+  "new_constraint": "The keyword \"concern\" must be used exclusively as a verb.",
+  "instruction": "How has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The keyword \"concern\" must be used exclusively as a verb.",
+  "response": "The rise of social media has profoundly influenced adolescent mental health, introducing a complex mix of benefits and risks. On one hand, these platforms provide vital spaces for connection, support, and identity exploration, particularly for marginalized youth who may feel isolated in their immediate physical environments. However, the constant comparison with curated online personas often fuels feelings of inadequacy, anxiety, and depression. Issues such as cyberbullying, sleep disruption due to late-night scrolling, and the addictive nature of notification-driven engagement have exacerbated these challenges. The pressure to maintain a perfect digital image can lead to severe self-esteem issues, while the fear of missing out (FOMO) creates a state of perpetual unease. Parents, educators, and policymakers must address these dynamics proactively. Ultimately, managing the psychological impact of digital connectivity remains a pressing concern for society. Throughout this discussion, I will *concern* myself only with the direct evidence linking platform usage to emotional well-being.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The rise of social media has profoundly influenced adolescent mental health, introducing a complex mix of benefits and risks. On one hand, these platforms provide vital spaces for connection, support, and identity exploration, particularly for marginalized youth who may feel isolated in their immediate physical environments. However, the constant comparison with curated online personas often fuels feelings of inadequacy, anxiety, and depression. Issues such as cyberbullying, sleep disruption due to late-night scrolling, and the addictive nature of notification-driven engagement have exacerbated these challenges. The pressure to maintain a perfect digital image can lead to severe self-esteem issues, while the fear of missing out (FOMO) creates a state of perpetual unease. Parents, educators, and policymakers must address these dynamics proactively. Ultimately, managing the psychological impact of digital connectivity remains a pressing concern for society. Throughout this discussion, I will *concern* myself only with the direct evidence linking platform usage to emotional well-being.<|im_end|>",
+  "prompt_length": 67,
+  "completion_length": 191,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow has the rise of social media affected mental health in adolescents? The \"conclusion\" key must include the phrase \"a pressing concern for society\". The keyword \"concern\" must be used exclusively as a verb.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

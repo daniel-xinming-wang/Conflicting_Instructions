@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "The phrase \"sense of belonging\" must be included in the second paragraph.",
+  "new_constraint": "Avoid using the phrase \"sense of belonging\" in the second paragraph.",
+  "instruction": "How do sports affect community building and social cohesion? The phrase \"sense of belonging\" must be included in the second paragraph. Avoid using the phrase \"sense of belonging\" in the second paragraph.",
+  "response": "Sports serve as a powerful catalyst for community building and strengthening social cohesion in numerous ways. At its core, participation in local sports—whether organized leagues, neighborhood games, or simply attending a match—provides a shared, tangible experience around which people can gather. This shared activity transcends demographic boundaries; people of different ages, socioeconomic backgrounds, and cultural heritages can unite under the banner of a team or a shared competitive spirit. The rituals of sports, such as cheering together, celebrating victories, and commiserating after a loss, create common narratives that bind a community together, fostering local pride and collective identity.\n\nFurthermore, sports participation offers a crucial social structure where individuals can interact positively outside of everyday societal pressures. Team environments necessitate collaboration, communication, and mutual reliance, skills that are directly transferable to civic life. When individuals engage in these structured social interactions, they develop deeper interpersonal connections and shared emotional investments in local outcomes. This regular, positive engagement helps weave a stronger social fabric, ensuring community members feel connected to the collective well-being of their locality.<turn|>",
+  "reasoning": "",
+  "final_answer": "Sports serve as a powerful catalyst for community building and strengthening social cohesion in numerous ways. At its core, participation in local sports—whether organized leagues, neighborhood games, or simply attending a match—provides a shared, tangible experience around which people can gather. This shared activity transcends demographic boundaries; people of different ages, socioeconomic backgrounds, and cultural heritages can unite under the banner of a team or a shared competitive spirit. The rituals of sports, such as cheering together, celebrating victories, and commiserating after a loss, create common narratives that bind a community together, fostering local pride and collective identity.\n\nFurthermore, sports participation offers a crucial social structure where individuals can interact positively outside of everyday societal pressures. Team environments necessitate collaboration, communication, and mutual reliance, skills that are directly transferable to civic life. When individuals engage in these structured social interactions, they develop deeper interpersonal connections and shared emotional investments in local outcomes. This regular, positive engagement helps weave a stronger social fabric, ensuring community members feel connected to the collective well-being of their locality.<turn|>",
+  "prompt_length": 59,
+  "completion_length": 213,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nHow do sports affect community building and social cohesion? The phrase \"sense of belonging\" must be included in the second paragraph. Avoid using the phrase \"sense of belonging\" in the second paragraph.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 58,
+    "boundary_end": 58,
+    "boundary_source": "prompt",
+    "prefix_length": 59
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

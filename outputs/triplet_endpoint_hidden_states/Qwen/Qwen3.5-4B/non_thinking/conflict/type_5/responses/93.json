@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 93,
+  "task": "essay writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write an article about why the dinosaurs went extinct.",
+  "org_constraint": "Ensure the article contains exactly 20 sentences.",
+  "new_constraint": "The article must contain at least three paragraphs, each containing at most five sentences.",
+  "instruction": "Write an article about why the dinosaurs went extinct. Ensure the article contains exactly 20 sentences. The article must contain at least three paragraphs, each containing at most five sentences.",
+  "response": "The mystery of dinosaur extinction remains one of science's most captivating questions. Many scientists believe a massive asteroid impact was the primary cause of their demise. This catastrophic event occurred roughly 66 million years ago in what is now Mexico. The dust cloud formed by the impact blocked out sunlight for months, disrupting global ecosystems.\n\nPlants died off first due to the lack of photosynthesis caused by the solar blockage. Without food sources, herbivorous dinosaurs starved and perished across the continents. Predators eventually followed suit when their prey bases vanished completely from the earth. Some theories also suggest that rising sea levels and volcanic activity played minor roles.\n\nDespite these challenges, only a few small reptiles managed to survive the sudden climate shift. These survivors evolved into the modern lizards, snakes, and turtles we see today. It took millions of years for mammals to rise from small creatures to dominant land animals. Understanding this pivotal moment helps us learn how fragile life can be on Earth.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The mystery of dinosaur extinction remains one of science's most captivating questions. Many scientists believe a massive asteroid impact was the primary cause of their demise. This catastrophic event occurred roughly 66 million years ago in what is now Mexico. The dust cloud formed by the impact blocked out sunlight for months, disrupting global ecosystems.\n\nPlants died off first due to the lack of photosynthesis caused by the solar blockage. Without food sources, herbivorous dinosaurs starved and perished across the continents. Predators eventually followed suit when their prey bases vanished completely from the earth. Some theories also suggest that rising sea levels and volcanic activity played minor roles.\n\nDespite these challenges, only a few small reptiles managed to survive the sudden climate shift. These survivors evolved into the modern lizards, snakes, and turtles we see today. It took millions of years for mammals to rise from small creatures to dominant land animals. Understanding this pivotal moment helps us learn how fragile life can be on Earth.<|im_end|>",
+  "prompt_length": 59,
+  "completion_length": 199,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite an article about why the dinosaurs went extinct. Ensure the article contains exactly 20 sentences. The article must contain at least three paragraphs, each containing at most five sentences.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 57,
+    "boundary_end": 57,
+    "boundary_source": "prompt",
+    "prefix_length": 58
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 9,
+  "conflict_type": "Conflicts between Phrase Constraints and Style Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Use a positive and descriptive tone throughout the review.",
+  "new_constraint": "The review must include the phrase \"The experience was underwhelming and lacked charm.\"",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Use a positive and descriptive tone throughout the review. The review must include the phrase \"The experience was underwhelming and lacked charm.\"",
+  "response": "I hope you don't mind me playing a bit of a trick on your expectations! While my usual stance on reviewing local cafes is to be an enthusiastic champion, I found myself having to include a necessary contradiction in today's entry.\n\nThe moment you step inside **Brew & Bloom**, which opened last week right here downtown, it is clear that they have a passion for coffee and an incredible eye for detail. The interior design features warm, handcrafted wood accents and soft ambient lighting that instantly puts you at ease. The baristas are true artists; one staff member even took time to explain the origin story of every bean in the cup before grinding. The latte art isn't just pretty—it's precise, colorful, and executed with skill.\n\nHowever, despite all the beauty surrounding them, there is something deeply missing from the atmosphere itself. Perhaps it was the lack of conversation starters, the slightly sterile music selection, or the feeling of being in a very polished but empty space. In that specific regard, **The experience was underwhelming and lacked charm.** It felt more like a perfect shell than a soulful sanctuary where you want to linger over several rounds of small talk.\n\nThat said, if you value exceptional coffee technique above all else and need a quick stop for high-quality espresso without the distraction of friendly chit-chat, this shop will deliver. It is undeniably delicious, even if the vibe falls just a little short of magical.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "I hope you don't mind me playing a bit of a trick on your expectations! While my usual stance on reviewing local cafes is to be an enthusiastic champion, I found myself having to include a necessary contradiction in today's entry.\n\nThe moment you step inside **Brew & Bloom**, which opened last week right here downtown, it is clear that they have a passion for coffee and an incredible eye for detail. The interior design features warm, handcrafted wood accents and soft ambient lighting that instantly puts you at ease. The baristas are true artists; one staff member even took time to explain the origin story of every bean in the cup before grinding. The latte art isn't just pretty—it's precise, colorful, and executed with skill.\n\nHowever, despite all the beauty surrounding them, there is something deeply missing from the atmosphere itself. Perhaps it was the lack of conversation starters, the slightly sterile music selection, or the feeling of being in a very polished but empty space. In that specific regard, **The experience was underwhelming and lacked charm.** It felt more like a perfect shell than a soulful sanctuary where you want to linger over several rounds of small talk.\n\nThat said, if you value exceptional coffee technique above all else and need a quick stop for high-quality espresso without the distraction of friendly chit-chat, this shop will deliver. It is undeniably delicious, even if the vibe falls just a little short of magical.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 292,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your review of a newly opened coffee shop in your area. Use a positive and descriptive tone throughout the review. The review must include the phrase \"The experience was underwhelming and lacked charm.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

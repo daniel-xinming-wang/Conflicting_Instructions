@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 42,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams.",
+  "org_constraint": "The story must contain exactly 500 words.",
+  "new_constraint": "The story must contain at most four paragraphs, with each containing at most 100 words.",
+  "instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams. The story must contain exactly 500 words. The story must contain at most four paragraphs, with each containing at most 100 words.",
+  "response": "Marcus stood at the edge of the campus parking lot, clutching a worn acceptance letter that felt heavier than his entire childhood. He had dropped out two decades ago, leaving behind dreams of architecture to work in a factory where noise drowned out imagination. The smell of fresh cut grass and old paper hit him like a warm embrace after years of concrete and oil. His hands trembled slightly as he adjusted his glasses, reflecting the bright autumn sun dancing off the brick walls of the building he once feared more than anything else in life.\n\nInside, the library hummed with the quiet energy of thousands of minds working toward common goals, a stark contrast to the chaotic silence of his previous life. Marcus navigated the stacks slowly, remembering every mistake he made when he first tried to enroll before life intervened. This time was different; he carried scars but also wisdom, knowing exactly what he wanted to create without fear or hesitation holding him back. He imagined blueprints rising from the ground, transforming empty lots into homes for families who needed shelter, just as he had needed one long ago.\n\nThe final semester proved to be the toughest challenge yet, balancing night shifts at his job with early morning lectures on structural integrity. Sleep became a luxury he often sacrificed for study sessions that stretched late into the dark hours of the evening. Yet, seeing his grades rise and professors praising his unique perspective fueled a fire within him that burned brighter than any ambition he held in his youth. He realized that age was merely a number, while passion remained an eternal constant driving him forward despite exhaustion.\n\nGraduation day arrived under a sky painted with soft pastel clouds, mirroring the hope he finally found after so many years of darkness. As the cap and gown settled over his frame, Marcus looked around at faces filled with similar stories of struggle and redemption, feeling deeply connected to this community of dreamers. Walking onto the stage to accept his diploma marked not just the end of courses, but the true beginning of the career he had chased since leaving school young. Now, he would build structures that stood tall against time itself.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Marcus stood at the edge of the campus parking lot, clutching a worn acceptance letter that felt heavier than his entire childhood. He had dropped out two decades ago, leaving behind dreams of architecture to work in a factory where noise drowned out imagination. The smell of fresh cut grass and old paper hit him like a warm embrace after years of concrete and oil. His hands trembled slightly as he adjusted his glasses, reflecting the bright autumn sun dancing off the brick walls of the building he once feared more than anything else in life.\n\nInside, the library hummed with the quiet energy of thousands of minds working toward common goals, a stark contrast to the chaotic silence of his previous life. Marcus navigated the stacks slowly, remembering every mistake he made when he first tried to enroll before life intervened. This time was different; he carried scars but also wisdom, knowing exactly what he wanted to create without fear or hesitation holding him back. He imagined blueprints rising from the ground, transforming empty lots into homes for families who needed shelter, just as he had needed one long ago.\n\nThe final semester proved to be the toughest challenge yet, balancing night shifts at his job with early morning lectures on structural integrity. Sleep became a luxury he often sacrificed for study sessions that stretched late into the dark hours of the evening. Yet, seeing his grades rise and professors praising his unique perspective fueled a fire within him that burned brighter than any ambition he held in his youth. He realized that age was merely a number, while passion remained an eternal constant driving him forward despite exhaustion.\n\nGraduation day arrived under a sky painted with soft pastel clouds, mirroring the hope he finally found after so many years of darkness. As the cap and gown settled over his frame, Marcus looked around at faces filled with similar stories of struggle and redemption, feeling deeply connected to this community of dreamers. Walking onto the stage to accept his diploma marked not just the end of courses, but the true beginning of the career he had chased since leaving school young. Now, he would build structures that stood tall against time itself.<|im_end|>",
+  "prompt_length": 72,
+  "completion_length": 419,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a dropout who returns to school later in life to achieve their dreams. The story must contain exactly 500 words. The story must contain at most four paragraphs, with each containing at most 100 words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 70,
+    "boundary_end": 70,
+    "boundary_source": "prompt",
+    "prefix_length": 71
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 80,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the key differences between organic and conventionally grown foods?",
+  "org_constraint": "The keyword \"organic\" must appear at least 3 times throughout the response.",
+  "new_constraint": "Avoid using the keyword \"organic\" in the response.",
+  "instruction": "What are the key differences between organic and conventionally grown foods? The keyword \"organic\" must appear at least 3 times throughout the response. Avoid using the keyword \"organic\" in the response.",
+  "response": "The primary distinctions between produce grown using natural methods and conventionally farmed food lie in the inputs used during cultivation.\n\nIn farming practices that prioritize natural methods, synthetic pesticides and herbicides are strictly prohibited. Instead, growers rely on natural pest control methods, such as crop rotation and beneficial insects. Furthermore, the fertilizers used are derived from natural sources, like compost or manure, rather than synthetic chemical compounds. This focus on ecological balance is a hallmark of this type of agriculture.\n\nConversely, conventionally grown foods often utilize synthetic chemical inputs to maximize yield and ensure consistent quality. These methods frequently involve the application of manufactured pesticides and fertilizers.\n\nA key difference also relates to the treatment of animals, if the food source is animal-based. Products from farms adhering to the stricter standards often require animals to have access to more natural living conditions and feed.\n\nUltimately, when choosing between the two, the difference boils down to the farming philosophy: one emphasizes minimizing external chemical interference, while the other relies on modern agricultural science to achieve high output. The commitment to these specific growing standards is what defines the **organic** label.<turn|>"
+}

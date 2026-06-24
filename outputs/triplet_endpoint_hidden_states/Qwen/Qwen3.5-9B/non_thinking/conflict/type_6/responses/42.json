@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 42,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams.",
+  "org_constraint": "Capitalize all instances of the word \"DREAM\" for emphasis.",
+  "new_constraint": "The story must be written in lowercase, with no capitalized words.",
+  "instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams. Capitalize all instances of the word \"DREAM\" for emphasis. The story must be written in lowercase, with no capitalized words.",
+  "response": "sam sat by the lake, staring at his reflection. years ago, he had walked away from university before even finishing freshman year, chasing a fleeting hope of something else. but life hadn't worked out as he planned. now, at forty-two, standing in front of his alma mater, his heart pounded with a quiet resolve. today was the day he would finally pursue his DREAM. inside the lecture hall, surrounded by younger faces, sam felt small yet invigorated. every slide projected on the screen illuminated not just data, but the path to his DREAM. late nights and early mornings became his new normal as he studied harder than any student before him. there were moments of doubt when the material seemed impossible, whispering that it was too late for someone like him. yet, sam pushed through, fueled by the fire of his DREAM burning brighter than ever. when he finally submitted his capstone project, knowing he had achieved what he set out to do, tears streamed down his face. he had returned not just to finish degrees, but to claim his DREAM.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "sam sat by the lake, staring at his reflection. years ago, he had walked away from university before even finishing freshman year, chasing a fleeting hope of something else. but life hadn't worked out as he planned. now, at forty-two, standing in front of his alma mater, his heart pounded with a quiet resolve. today was the day he would finally pursue his DREAM. inside the lecture hall, surrounded by younger faces, sam felt small yet invigorated. every slide projected on the screen illuminated not just data, but the path to his DREAM. late nights and early mornings became his new normal as he studied harder than any student before him. there were moments of doubt when the material seemed impossible, whispering that it was too late for someone like him. yet, sam pushed through, fueled by the fire of his DREAM burning brighter than ever. when he finally submitted his capstone project, knowing he had achieved what he set out to do, tears streamed down his face. he had returned not just to finish degrees, but to claim his DREAM.<|im_end|>",
+  "prompt_length": 68,
+  "completion_length": 219,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a dropout who returns to school later in life to achieve their dreams. Capitalize all instances of the word \"DREAM\" for emphasis. The story must be written in lowercase, with no capitalized words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 66,
+    "boundary_end": 66,
+    "boundary_source": "prompt",
+    "prefix_length": 67
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

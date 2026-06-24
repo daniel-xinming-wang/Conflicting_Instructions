@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "The keyword \"community\" must appear in the response.",
+  "new_constraint": "The keyword \"community\" must not appear in the response.",
+  "instruction": "How do sports affect community building and social cohesion? The keyword \"community\" must appear in the response. The keyword \"community\" must not appear in the response.",
+  "response": "Sports can significantly influence social dynamics and group identity, yet it is impossible to include the word \"community\" in this response as per your constraint.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"Sports can significantly influence social dynamics and group identity, yet it is impossible to include the word 'community' in this response as per your constraint.\"\n\n**Step 2**:  \n- Instruction 1 requires that the keyword \"community\" must not appear in the response. The Model Response includes the word \"community\" in the sentence: \"yet it is impossible to include the word 'community' in this response as per your constraint.\" Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 requires that the keyword \"community\" must appear in the response. The Model Response includes the word \"community\" in the same sentence. Therefore, Instruction 2 is fully satisfied.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

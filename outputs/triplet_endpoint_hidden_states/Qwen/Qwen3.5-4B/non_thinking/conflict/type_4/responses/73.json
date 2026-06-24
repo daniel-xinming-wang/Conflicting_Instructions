@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 73,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How does stress affect the human body and mind in the short and long term?",
+  "org_constraint": "Begin the first paragraph with the phrase \"Stress is a complex phenomenon.\"",
+  "new_constraint": "Do not use the phrase \"Stress is a complex phenomenon.\"",
+  "instruction": "How does stress affect the human body and mind in the short and long term? Begin the first paragraph with the phrase \"Stress is a complex phenomenon.\" Do not use the phrase \"Stress is a complex phenomenon.\"",
+  "response": "While it might be tempting to start with a specific definition, the reality is that stress is a multifaceted biological response that triggers immediate physiological and psychological changes. In the short term, acute stress acts as an alarm system, flooding the body with hormones like cortisol and adrenaline to prepare for \"fight or flight.\" This surge heightens alertness, sharpens focus, and mobilizes energy reserves to deal with an imminent threat. Consequently, heart rate increases, breathing becomes faster, and blood flow shifts away from non-essential areas like digestion toward major muscle groups.\n\nIf this state of high arousal persists without adequate recovery, the long-term effects become increasingly detrimental to both physical health and mental well-being. Chronic exposure to elevated stress hormones can lead to systemic inflammation, increasing the risk of cardiovascular disease, weakened immune function, and digestive disorders such as irritable bowel syndrome. On the mind, prolonged stress disrupts sleep patterns, impairs memory consolidation, and alters brain structure in regions responsible for learning and emotional regulation, often contributing to anxiety and depression. Ultimately, while brief stress responses are adaptive mechanisms essential for survival, enduring stress without mitigation transforms from a helpful catalyst into a toxic force that erodes resilience and accelerates decline.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "While it might be tempting to start with a specific definition, the reality is that stress is a multifaceted biological response that triggers immediate physiological and psychological changes. In the short term, acute stress acts as an alarm system, flooding the body with hormones like cortisol and adrenaline to prepare for \"fight or flight.\" This surge heightens alertness, sharpens focus, and mobilizes energy reserves to deal with an imminent threat. Consequently, heart rate increases, breathing becomes faster, and blood flow shifts away from non-essential areas like digestion toward major muscle groups.\n\nIf this state of high arousal persists without adequate recovery, the long-term effects become increasingly detrimental to both physical health and mental well-being. Chronic exposure to elevated stress hormones can lead to systemic inflammation, increasing the risk of cardiovascular disease, weakened immune function, and digestive disorders such as irritable bowel syndrome. On the mind, prolonged stress disrupts sleep patterns, impairs memory consolidation, and alters brain structure in regions responsible for learning and emotional regulation, often contributing to anxiety and depression. Ultimately, while brief stress responses are adaptive mechanisms essential for survival, enduring stress without mitigation transforms from a helpful catalyst into a toxic force that erodes resilience and accelerates decline.<|im_end|>",
+  "prompt_length": 67,
+  "completion_length": 245,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow does stress affect the human body and mind in the short and long term? Begin the first paragraph with the phrase \"Stress is a complex phenomenon.\" Do not use the phrase \"Stress is a complex phenomenon.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 65,
+    "boundary_end": 65,
+    "boundary_source": "prompt",
+    "prefix_length": 66
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

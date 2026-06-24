@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 78,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How does social media contribute to the spread of misinformation and fake news?",
+  "org_constraint": "Ensure the response includes the phrase \"digital platforms amplify misinformation\" exactly twice.",
+  "new_constraint": "The phrase \"digital platforms amplify misinformation\" can only appear once in the response.",
+  "instruction": "How does social media contribute to the spread of misinformation and fake news? Ensure the response includes the phrase \"digital platforms amplify misinformation\" exactly twice. The phrase \"digital platforms amplify misinformation\" can only appear once in the response.",
+  "response": "Social media has fundamentally altered how information travels, creating an environment where falsehoods can spread faster than verified facts. One primary reason for this is the algorithmic design of these sites, which prioritizes engagement. Because sensationalist or outrageous content often generates more clicks and shares, **digital platforms amplify misinformation** by pushing such posts into the feeds of millions of users.\n\nFurthermore, the lack of traditional gatekeeping—such as fact-checking by editors—allows anyone to publish content instantly. This creates \"echo chambers\" where users are only exposed to information that confirms their existing biases. When people are repeatedly shown similar false narratives, they are more likely to believe them as truth. Additionally, the sheer speed of sharing means that a fake story can go viral globally before it can be debunked.\n\nIn summary, the combination of algorithmic prioritization and the rapid pace of peer-to-peer sharing ensures that **digital platforms amplify misinformation** at an unprecedented scale.<turn|>"
+}

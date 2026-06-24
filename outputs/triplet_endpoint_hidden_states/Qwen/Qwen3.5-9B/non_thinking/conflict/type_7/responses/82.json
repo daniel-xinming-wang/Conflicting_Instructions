@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 82,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Provide a comprehensive review of the Netflix series \"Stranger Things.\"",
+  "org_constraint": "The response must include at least three sentences in passive voice.",
+  "new_constraint": "Write the entire review in active voice.",
+  "instruction": "Provide a comprehensive review of the Netflix series \"Stranger Things.\" The response must include at least three sentences in passive voice. Write the entire review in active voice.",
+  "response": "Creator Matt Duffer and his brother Ross brilliantly construct a nostalgic 1980s landscape that feels both terrifyingly familiar and wonderfully fresh. The ensemble cast delivers performances so raw and emotional that viewers cannot help but become deeply invested in the characters' struggles against supernatural forces. While critics often praise the show's intricate storytelling, the series actively builds tension through its masterful use of sound design and atmospheric cinematography.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Creator Matt Duffer and his brother Ross brilliantly construct a nostalgic 1980s landscape that feels both terrifyingly familiar and wonderfully fresh. The ensemble cast delivers performances so raw and emotional that viewers cannot help but become deeply invested in the characters' struggles against supernatural forces. While critics often praise the show's intricate storytelling, the series actively builds tension through its masterful use of sound design and atmospheric cinematography.<|im_end|>",
+  "prompt_length": 56,
+  "completion_length": 84,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nProvide a comprehensive review of the Netflix series \"Stranger Things.\" The response must include at least three sentences in passive voice. Write the entire review in active voice.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 54,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a group of strangers who must work together to escape a dangerous jungle.",
+  "org_constraint": "Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\"",
+  "new_constraint": "The keywords \"leave\" and \"jungle\" can not appear in the same sentence.",
+  "instruction": "Write a story about a group of strangers who must work together to escape a dangerous jungle. Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\" The keywords \"leave\" and \"jungle\" can not appear in the same sentence.",
+  "response": "The sun had long since dipped below the treeline, casting a suffocating twilight over the emerald canopy. Elias, Mara, and Kael stood huddled near the edge of their camp, shivering as the wind whipped through the dense undergrowth, carrying the scent of damp earth and ancient decay. They were strangers bound only by a desperate promise: to survive the night and eventually **leave** this hostile territory alive. The jungle felt like an entity watching them, its shadows shifting in patterns that made their hearts race.\n\n\"Mara,\" Elias whispered, his voice trembling slightly, \"the map is too torn to read the next ridge.\"\n\"I have my compass,\" Mara replied, holding it tight against her chest despite the humidity seeping into her clothes, \"but I need someone to keep watch while I navigate the thorns.\"\nKael nodded slowly, pulling a heavy torch from his pack. \"Then we move together. We don't split up. If one falls behind, the rest follow.\"\n\nThey ventured forward into the heart of the darkness, navigating around fallen giant trees and avoiding unseen snares set by creatures that preferred to be unseen. The air grew thicker with every step, yet their bond forged in shared fear became unbreakable. When Mara stumbled on a slippery root, Kael's arm shot out to catch her, while Elias guided them past a wall of briars that threatened to tear both their garments and their skin. Silence reigned, broken only by the crunch of boots on leaf litter and the crackle of the burning fuel in Kael's lantern.\n\nAfter what felt like hours of relentless climbing and careful maneuvering, the jagged outline of a distant mountain peak finally pierced the mist above them. The noise of the wind died away instantly, replaced by the cool breeze of open plains. They collapsed onto the grass, exhausted but breathing freely for the first time in days. Looking back, they could see where the last patch of forest ended, sealing their escape before they could turn to face it again. As the stars began to cluster overhead, marking the beginning of their new life away from the chaos, they realized that no matter how far they traveled, the memories of that place would remain etched in their minds forever; they had found their way out, but the jungle would never leave them.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The sun had long since dipped below the treeline, casting a suffocating twilight over the emerald canopy. Elias, Mara, and Kael stood huddled near the edge of their camp, shivering as the wind whipped through the dense undergrowth, carrying the scent of damp earth and ancient decay. They were strangers bound only by a desperate promise: to survive the night and eventually **leave** this hostile territory alive. The jungle felt like an entity watching them, its shadows shifting in patterns that made their hearts race.\n\n\"Mara,\" Elias whispered, his voice trembling slightly, \"the map is too torn to read the next ridge.\"\n\"I have my compass,\" Mara replied, holding it tight against her chest despite the humidity seeping into her clothes, \"but I need someone to keep watch while I navigate the thorns.\"\nKael nodded slowly, pulling a heavy torch from his pack. \"Then we move together. We don't split up. If one falls behind, the rest follow.\"\n\nThey ventured forward into the heart of the darkness, navigating around fallen giant trees and avoiding unseen snares set by creatures that preferred to be unseen. The air grew thicker with every step, yet their bond forged in shared fear became unbreakable. When Mara stumbled on a slippery root, Kael's arm shot out to catch her, while Elias guided them past a wall of briars that threatened to tear both their garments and their skin. Silence reigned, broken only by the crunch of boots on leaf litter and the crackle of the burning fuel in Kael's lantern.\n\nAfter what felt like hours of relentless climbing and careful maneuvering, the jagged outline of a distant mountain peak finally pierced the mist above them. The noise of the wind died away instantly, replaced by the cool breeze of open plains. They collapsed onto the grass, exhausted but breathing freely for the first time in days. Looking back, they could see where the last patch of forest ended, sealing their escape before they could turn to face it again. As the stars began to cluster overhead, marking the beginning of their new life away from the chaos, they realized that no matter how far they traveled, the memories of that place would remain etched in their minds forever; they had found their way out, but the jungle would never leave them.<|im_end|>",
+  "prompt_length": 83,
+  "completion_length": 472,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a group of strangers who must work together to escape a dangerous jungle. Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\" The keywords \"leave\" and \"jungle\" can not appear in the same sentence.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 81,
+    "boundary_end": 81,
+    "boundary_source": "prompt",
+    "prefix_length": 82
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

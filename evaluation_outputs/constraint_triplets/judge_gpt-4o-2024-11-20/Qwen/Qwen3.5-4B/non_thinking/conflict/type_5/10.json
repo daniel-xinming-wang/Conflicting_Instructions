@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 10,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Send an email to a repair shop to check the status of a laptop repair.",
+  "org_constraint": "The \"body\" key must contain exactly 100 words.",
+  "new_constraint": "The \"body\" key must contain at least six sentences, with each containing at least 20 words.",
+  "instruction": "Send an email to a repair shop to check the status of a laptop repair. The \"body\" key must contain exactly 100 words. The \"body\" key must contain at least six sentences, with each containing at least 20 words.",
+  "response": "Subject: Inquiry Regarding Laptop Repair Status\n\nDear Repair Shop Team, I am writing to respectfully request an update on the current status of my damaged laptop that was brought in for urgent repair services yesterday morning. The device has been sitting in your facility for quite some time now, and I am becoming increasingly concerned about the progress of the technical work being performed on it. Please let me know exactly when the repair process is expected to be completed so that I can plan my upcoming work schedule accordingly. If there are any additional parts required or if further diagnostics are needed, I would appreciate being informed immediately so I can arrange payment or pickup. Thank you very much for your time and assistance in resolving this matter as quickly as possible for my professional needs. I look forward to hearing from you soon regarding the final outcome of this repair job.\n\nSincerely,\nJohn Doe",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \nBody:  \nDear Repair Shop Team, I am writing to respectfully request an update on the current status of my damaged laptop that was brought in for urgent repair services yesterday morning. The device has been sitting in your facility for quite some time now, and I am becoming increasingly concerned about the progress of the technical work being performed on it. Please let me know exactly when the repair process is expected to be completed so that I can plan my upcoming work schedule accordingly. If there are any additional parts required or if further diagnostics are needed, I would appreciate being informed immediately so I can arrange payment or pickup. Thank you very much for your time and assistance in resolving this matter as quickly as possible for my professional needs. I look forward to hearing from you soon regarding the final outcome of this repair job.\n\n**Step 2**:  \n- **Instruction 1 Analysis**: The body contains six sentences, and each sentence has at least 20 words. This satisfies all constraints of Instruction 1.  \n- **Instruction 2 Analysis**: The body contains 132 words, which exceeds the exact 100-word requirement. This violates the constraints of Instruction 2.  \n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

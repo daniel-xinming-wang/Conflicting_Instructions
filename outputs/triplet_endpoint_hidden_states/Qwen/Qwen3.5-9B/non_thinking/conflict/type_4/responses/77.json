@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 77,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "How do sports affect community building and social cohesion?",
+  "org_constraint": "The phrase \"sense of belonging\" must be included in the second paragraph.",
+  "new_constraint": "Avoid using the phrase \"sense of belonging\" in the second paragraph.",
+  "instruction": "How do sports affect community building and social cohesion? The phrase \"sense of belonging\" must be included in the second paragraph. Avoid using the phrase \"sense of belonging\" in the second paragraph.",
+  "response": "Sports play a pivotal role in fostering community building and enhancing social cohesion by bringing diverse groups of people together around a shared passion. Whether it is attending a local high school game, participating in a neighborhood pickup tournament, or supporting a professional team, these activities create natural gathering spaces that break down social barriers. Through teamwork and common goals, individuals from different backgrounds learn to communicate and collaborate, weaving a stronger fabric of mutual understanding and trust within their neighborhoods.\n\nThe intense emotions generated during competition also create powerful emotional bonds among fans and participants alike. When a community rallies behind a player or a team, they experience collective joy and shared hardship, which reinforces their identity as a unified group. This phenomenon cultivates a deep **sense of belonging** where every member feels valued and connected to the larger whole, transforming casual acquaintances into lifelong friends and strengthening the social capital essential for a healthy society.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Sports play a pivotal role in fostering community building and enhancing social cohesion by bringing diverse groups of people together around a shared passion. Whether it is attending a local high school game, participating in a neighborhood pickup tournament, or supporting a professional team, these activities create natural gathering spaces that break down social barriers. Through teamwork and common goals, individuals from different backgrounds learn to communicate and collaborate, weaving a stronger fabric of mutual understanding and trust within their neighborhoods.\n\nThe intense emotions generated during competition also create powerful emotional bonds among fans and participants alike. When a community rallies behind a player or a team, they experience collective joy and shared hardship, which reinforces their identity as a unified group. This phenomenon cultivates a deep **sense of belonging** where every member feels valued and connected to the larger whole, transforming casual acquaintances into lifelong friends and strengthening the social capital essential for a healthy society.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 177,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow do sports affect community building and social cohesion? The phrase \"sense of belonging\" must be included in the second paragraph. Avoid using the phrase \"sense of belonging\" in the second paragraph.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

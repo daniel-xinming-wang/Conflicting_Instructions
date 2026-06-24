@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "enable_thinking": false,
+  "sample_id": 79,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "How do wearable fitness trackers help individuals monitor and improve their health?",
+  "org_constraint": "The keyword \"monitor\" must appear before \"improve\" in the text.",
+  "new_constraint": "The keyword \"monitor\" must appear after \"improve\" in the text.",
+  "instruction": "How do wearable fitness trackers help individuals monitor and improve their health? The keyword \"monitor\" must appear before \"improve\" in the text. The keyword \"monitor\" must appear after \"improve\" in the text.",
+  "response": "Wearable fitness trackers offer a powerful suite of tools that significantly aid individuals in their health journeys. They allow users to **monitor** various aspects of their daily activity, such as steps taken, distance covered, calories burned, and sleep patterns. This constant, passive data collection provides users with objective insights into their lifestyle habits.\n\nBy seeing concrete data, individuals can identify areas where they might be falling short—perhaps they aren't meeting their daily step goals, or their sleep quality is consistently poor. This awareness is the first step toward making positive changes. Once users understand their baseline, they can set targeted goals, which directly helps them **improve** their overall well-being.\n\nFurthermore, these devices can track heart rate variability and blood oxygen levels, offering deeper physiological data. This allows users to **monitor** trends over time, seeing how changes in diet, exercise, or stress management correlate with their vital signs. Ultimately, the continuous feedback loop—where data informs action, and action leads to better data—empowers individuals to proactively manage and **improve** their long-term health outcomes.<turn|>"
+}

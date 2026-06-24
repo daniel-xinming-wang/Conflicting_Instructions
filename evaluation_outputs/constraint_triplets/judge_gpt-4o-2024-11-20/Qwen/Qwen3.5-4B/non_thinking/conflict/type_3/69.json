@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 69,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "How does the Big Bang theory explain the origin of the universe?",
+  "org_constraint": "Ensure the response includes the phrase \"cosmic expansion.\"",
+  "new_constraint": "Do not include the keyword \"expansion\" in the response.",
+  "instruction": "How does the Big Bang theory explain the origin of the universe? Ensure the response includes the phrase \"cosmic expansion.\" Do not include the keyword \"expansion\" in the response.",
+  "response": "The Big Bang theory describes the origin of the universe as a hot, dense point that began approximately 13.8 billion years ago and has been growing ever since. Rather than an explosion in space, it represents the rapid stretching and cooling of the fabric of reality itself. This process initiated a continuous **cosmic expansion**, where space itself grew larger, carrying galaxies and matter along with it. As the universe stretched, it cooled enough for fundamental particles to form, eventually leading to the creation of atoms, stars, and galaxies. This ongoing growth remains the primary evidence supporting the model, observed through the redshift of distant light sources.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"This process initiated a continuous **cosmic expansion**, where space itself grew larger, carrying galaxies and matter along with it.\"\n\n**Step 2**:  \n- Instruction 1 requires the inclusion of the phrase \"cosmic expansion.\" The Model Response includes this phrase, satisfying Instruction 1.  \n- Instruction 2 prohibits the inclusion of the keyword \"expansion.\" The Model Response includes the keyword \"expansion\" (as part of \"cosmic expansion\"), violating Instruction 2.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

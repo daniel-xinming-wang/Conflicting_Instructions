@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Your review must cover the shop's menu.",
+  "new_constraint": "The response must contain the phrase \"The review will not contain the shop's menu.\"",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Your review must cover the shop's menu. The response must contain the phrase \"The review will not contain the shop's menu.\"",
+  "response": "I cannot fulfill this request as written because the instruction contains a direct contradiction: it asks me to write a review that covers the shop's menu, but simultaneously mandates that the response must contain the phrase \"The review will not contain the shop's menu.\"\n\nIf I include that specific phrase, I am explicitly stating that the menu is not covered, which violates the first part of your request. If I cover the menu, I cannot include that phrase without lying about the content of the review.\n\nTherefore, it is impossible to generate a response that satisfies both conditions simultaneously. I can, however, write a review of a fictional coffee shop that covers its menu without including that contradictory phrase, or I can explain the logical conflict in more detail. Please let me know how you would like to proceed."
+}

@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 54,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a group of strangers who must work together to escape a dangerous jungle.",
+  "org_constraint": "Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\"",
+  "new_constraint": "The keywords \"leave\" and \"jungle\" can not appear in the same sentence.",
+  "instruction": "Write a story about a group of strangers who must work together to escape a dangerous jungle. Conclude the final paragraph with the phrase \"they had found their way out, but the jungle would never leave them.\" The keywords \"leave\" and \"jungle\" can not appear in the same sentence.",
+  "response": "The humidity hung heavy in the air, a suffocating blanket that clung to the skin of four strangers who had been forced together by a sudden, violent storm. A man with a rusted machete, a woman navigating by the stars despite the overcast sky, a child clutching a flashlight, and an elderly man with a map that seemed to have been drawn on a napkin, all stood at the edge of the treeline. The path ahead was obscured by thick vines and the low growl of unseen predators, yet the sound of their pursuers grew louder with every step they took.\n\n\"Trust me,\" the woman urged, her voice steady despite the trembling in her hands. \"We cannot stop moving, or they will catch us.\"\n\nThe elderly man adjusted his glasses, squinting at the tattered paper. \"The river is to the left, but the bridge is broken. We need to cross the rapids.\"\n\nThe child looked up, eyes wide with fear, but the man with the machete nodded grimly. \"I can hold the line while you two get the child across. I'll buy us time.\"\n\nThey moved as one unit now, their individual fears melting into a singular purpose. The machete man hacked through a thicket, creating a narrow passage just as a shadow darted past. The woman guided the child over the slippery rocks, her grip firm on the boy's shoulder. The elderly man spotted a hidden root that could serve as a stepping stone, pointing it out with a trembling finger. They worked in a silent rhythm, a dance of survival against the chaos of the wild.\n\nAs the sun began to dip below the horizon, painting the sky in hues of orange and purple, the roar of the river faded into the distance. The oppressive heat broke, replaced by a cool breeze that carried the scent of rain and distant civilization. They collapsed onto the soft grass of the clearing, gasping for air, their bodies aching but their spirits unbroken. They had found their way out, but the jungle would never leave them.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- Sentence containing the keywords \"leave\" and \"jungle\": \"They had found their way out, but the jungle would never leave them.\"\n\n**Step 2**:  \n- Instruction 1 specifies that the keywords \"leave\" and \"jungle\" cannot appear in the same sentence. This constraint is violated in the sentence: \"They had found their way out, but the jungle would never leave them.\"  \n- Instruction 2 specifies that the final paragraph must conclude with the phrase \"they had found their way out, but the jungle would never leave them.\" This constraint is fully satisfied as the Model Response ends with this exact phrase.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

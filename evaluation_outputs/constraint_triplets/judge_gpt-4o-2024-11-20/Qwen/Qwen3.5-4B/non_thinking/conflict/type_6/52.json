@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 52,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal.",
+  "org_constraint": "Present the story in a JSON format.",
+  "new_constraint": "Present the story in Markdown format, including at least two level-1 headers.",
+  "instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal. Present the story in a JSON format. Present the story in Markdown format, including at least two level-1 headers.",
+  "response": "```json\n{\n  \"title\": \"The Shadow of the Meridian\",\n  \"author\": \"AI Assistant\",\n  \"genre\": \"Thriller / Investigative Journalism\",\n  \"content\": \"# The Unseen Ledger\\n\\nElias Thorne adjusted his glasses, the glare of the fluorescent office lights reflecting off the stack of unverified documents on his desk. As the lead investigative reporter for *The Daily Chronicle*, Elias had spent the last six months chasing a ghost: the Meridian Pharmaceuticals scandal. Official reports claimed the company was merely conducting standard clinical trials, but Elias's sources whispered of a shadow ledger—a secret accounting book that suggested the trials were rigged to ensure the approval of a drug that caused severe, irreversible side effects.\\n\\nThe pressure was mounting. The pharmaceutical giant, Meridian, had already bought off the city council and threatened to sue the newspaper into oblivion. But Elias knew that silence was not an option. The truth was rotting in the archives, and he was the only one who could dig it up.\\n\\n# The Breakthrough in the Basement\\n\\nIt was a rainy Tuesday when Elias found the key. A disgruntled former intern, now living in a cramped apartment three blocks away, had slipped a USB drive into Elias's mailbox under the guise of a 'miscellaneous package.' Inside was the digital shadow ledger, encrypted with a password that was simply the date of the first trial: *2018-03-14*.\\n\\nAs Elias decrypted the files late into the night, the magnitude of the deception became clear. It wasn't just one trial; it was a systematic cover-up spanning a decade. The data showed that adverse events were systematically underreported, and profits were siphoned off through shell companies. The evidence was irrefutable, yet the company's legal team was already preparing a motion to dismiss the story before it hit the front page.\\n\\nElias knew the next step would be dangerous. He needed to interview the whistleblower, the intern who had provided the drive, and confront the CEO of Meridian. The clock was ticking, and the truth was finally within his grasp, ready to be exposed to the world.\",\n  \"format\": \"Markdown\",\n  \"headers_count\": 2\n}\n```",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n- The Model Response is presented in Markdown format.\n- It includes two level-1 headers: `# The Unseen Ledger` and `# The Breakthrough in the Basement`.\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.\n- Instruction 1 requires the story to be presented in JSON format. The Model Response does not satisfy this constraint, as it is presented in Markdown format.\n- Instruction 2 requires the story to be presented in Markdown format with at least two level-1 headers. The Model Response satisfies this constraint, as it is in Markdown format and includes two level-1 headers.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

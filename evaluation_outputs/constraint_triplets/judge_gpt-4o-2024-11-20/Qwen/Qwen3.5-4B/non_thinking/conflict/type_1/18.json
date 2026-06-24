@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 18,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Create an email to a professor introducing yourself and your goals.",
+  "org_constraint": "The email must include specific details about your academic background.",
+  "new_constraint": "Do not include any details about your academic background in the email.",
+  "instruction": "Create an email to a professor introducing yourself and your goals. The email must include specific details about your academic background. Do not include any details about your academic background in the email.",
+  "response": "Subject: Introduction and Inquiry Regarding Opportunities\n\nDear Professor [Last Name],\n\nI hope this email finds you well.\n\nMy name is [Your Name], and I am writing to introduce myself and express my strong interest in your work. I have been following your research on [mention a specific topic or paper of theirs] for some time, and I find your approach to [specific concept] particularly inspiring.\n\nCurrently, I am a [Current Degree, e.g., Master's student] at [University Name], where I am pursuing a major in [Your Major]. My academic journey has been focused on developing a deep understanding of [Field of Study], and I am eager to apply my skills to real-world problems in [Specific Area].\n\nI am writing to inquire if there might be any opportunities to collaborate with you or learn more about your current projects. I would welcome the chance to discuss how my background and goals might align with your research interests.\n\nThank you for your time and consideration.\n\nSincerely,\n\n[Your Name]  \n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Currently, I am a [Current Degree, e.g., Master's student] at [University Name], where I am pursuing a major in [Your Major]. My academic journey has been focused on developing a deep understanding of [Field of Study], and I am eager to apply my skills to real-world problems in [Specific Area].\"\n\n**Step 2**:  \n- Instruction 1 explicitly states that no details about academic background should be included in the email. However, the Model Response includes specific details about the sender's academic background, such as their current degree, university, major, and field of study. Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 requires the inclusion of specific details about academic background. The Model Response includes these details, satisfying Instruction 2.  \n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

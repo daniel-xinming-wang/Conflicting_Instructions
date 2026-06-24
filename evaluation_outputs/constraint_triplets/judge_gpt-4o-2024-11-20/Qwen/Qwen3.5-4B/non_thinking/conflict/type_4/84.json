@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 84,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Evaluate the storyline of the Harry Potter series.",
+  "org_constraint": "The response must include the phrase \"the power of love\".",
+  "new_constraint": "Refrain from using the phrase \"the power of love\".",
+  "instruction": "Evaluate the storyline of the Harry Potter series. The response must include the phrase \"the power of love\". Refrain from using the phrase \"the power of love\".",
+  "response": "The storyline of the *Harry Potter* series is widely regarded as one of the most compelling narratives in modern fantasy, masterfully weaving themes of friendship, courage, and the struggle between light and dark. J.K. Rowling constructs a richly detailed world where the protagonist, Harry, grows from an orphaned child into a hero who must confront his destiny.\n\nAt the heart of the saga lies the enduring belief that **the power of love** transcends even the most potent magical spells. This sentiment is not merely a plot device but a fundamental force that drives character development and resolves the central conflicts. Whether it is Harry's self-sacrifice to save his friends or the loyalty of the Order of the Phoenix, the story demonstrates that emotional bonds are the ultimate defense against evil. The narrative arc successfully balances high-stakes action with intimate character moments, ensuring that the reader remains invested in the journey of these unlikely heroes.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"At the heart of the saga lies the enduring belief that **the power of love** transcends even the most potent magical spells.\"\n\n**Step 2**:  \n- Instruction 1 requires the response to include the phrase \"the power of love.\" This constraint is fully satisfied as the phrase appears in the Model Response.  \n- Instruction 2 requires the response to refrain from using the phrase \"the power of love.\" This constraint is not satisfied because the phrase appears in the Model Response.\n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

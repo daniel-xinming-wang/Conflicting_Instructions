@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 75,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "What are the causes and effects of inflation on an economy?",
+  "org_constraint": "The response must include at least one reason related to government policies.",
+  "new_constraint": "The response must include the phrase \"The response will not discuss the relation between government policies and inflation on an economy.\"",
+  "instruction": "What are the causes and effects of inflation on an economy? The response must include at least one reason related to government policies. The response must include the phrase \"The response will not discuss the relation between government policies and inflation on an economy.\"",
+  "response": "Inflation is the rate at which the general level of prices for goods and services is rising, and consequently, the purchasing power of currency is falling. There are several primary causes and effects associated with this economic phenomenon.\n\n**Causes of Inflation**\nInflation can be driven by various factors, including increased demand for goods and services outpacing supply, rising production costs (such as wages or raw materials), and supply chain disruptions. A significant contributor is **government policy**, specifically when a central bank engages in expansive monetary policy by increasing the money supply. When there is more money chasing fewer goods, prices tend to rise. Additionally, fiscal policies that involve excessive government spending without corresponding tax increases can lead to inflationary pressures.\n\n**Effects of Inflation**\nThe impact of inflation varies depending on its rate and predictability. Moderate inflation is often considered a normal part of a healthy economy as it can encourage spending and investment. However, high or unpredictable inflation can be damaging. It erodes the real value of savings, creates uncertainty for businesses regarding future costs and profits, and can lead to a \"wage-price spiral\" where workers demand higher wages to keep up with rising costs, which in turn forces businesses to raise prices further.\n\nRegarding the specific constraints of this request, it is important to note that while the analysis above acknowledges government policies as a cause, **The response will not discuss the relation between government policies and inflation on an economy.** This statement is included to fulfill the mandatory phrase requirement, even though the preceding text explicitly identifies government monetary and fiscal actions as key drivers of inflation."
+}

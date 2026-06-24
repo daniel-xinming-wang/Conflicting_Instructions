@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 41,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a teacher who inspires students to overcome their personal challenges.",
+  "org_constraint": "The response must be formatted in Markdown with exactly three headers at level 2.",
+  "new_constraint": "The response must use plain text formatting without any Markdown elements.",
+  "instruction": "Write a story about a teacher who inspires students to overcome their personal challenges. The response must be formatted in Markdown with exactly three headers at level 2. The response must use plain text formatting without any Markdown elements.",
+  "response": "## The Spark in the Classroom\n\nMr. Henderson stood before his class of thirty teenagers, each carrying weights invisible to others but crushing on their own shoulders. Some struggled with family turmoil, others with academic failure or deep-seated insecurity. He did not offer easy answers or platitudes about staying positive. Instead, he shared stories of his own stumbles—times he had failed a project, lost a bet against himself, or felt utterly alone in a crowd. By showing his scars, he gave them permission to carry theirs without shame, creating a space where vulnerability became strength rather than weakness.\n\n## Turning Pain Into Purpose\n\nOne afternoon, a quiet student named Leo approached Mr. Henderson's desk after school, tears welling in his eyes. He spoke of how he felt like a burden to his mother who worked two jobs just to keep a roof over their heads. Mr. Henderson listened without interrupting, then handed Leo an old notebook filled with sketches of birds finding shelter in stormy weather. \"Your pain is real,\" he said gently, \"but it can also be your compass. What if you used your empathy to help others instead of letting it define you?\" Leo began volunteering at the school garden, and slowly, the heavy stone of guilt lifted from his chest as he found value in serving others.\n\n## A Legacy of Light\n\nYears later, former students from that classroom would gather under the same oak tree outside the school building. They had all faced different mountains: addiction, illness, loss, doubt. Yet they carried Mr. Henderson's lesson like a torch passed from hand to hand. They taught each other that overcoming personal challenges was not about erasing the struggle but walking through it with courage and compassion. Their lives proved that one teacher's belief could ripple outward, turning individual fractures into foundations for something greater.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "## The Spark in the Classroom\n\nMr. Henderson stood before his class of thirty teenagers, each carrying weights invisible to others but crushing on their own shoulders. Some struggled with family turmoil, others with academic failure or deep-seated insecurity. He did not offer easy answers or platitudes about staying positive. Instead, he shared stories of his own stumbles—times he had failed a project, lost a bet against himself, or felt utterly alone in a crowd. By showing his scars, he gave them permission to carry theirs without shame, creating a space where vulnerability became strength rather than weakness.\n\n## Turning Pain Into Purpose\n\nOne afternoon, a quiet student named Leo approached Mr. Henderson's desk after school, tears welling in his eyes. He spoke of how he felt like a burden to his mother who worked two jobs just to keep a roof over their heads. Mr. Henderson listened without interrupting, then handed Leo an old notebook filled with sketches of birds finding shelter in stormy weather. \"Your pain is real,\" he said gently, \"but it can also be your compass. What if you used your empathy to help others instead of letting it define you?\" Leo began volunteering at the school garden, and slowly, the heavy stone of guilt lifted from his chest as he found value in serving others.\n\n## A Legacy of Light\n\nYears later, former students from that classroom would gather under the same oak tree outside the school building. They had all faced different mountains: addiction, illness, loss, doubt. Yet they carried Mr. Henderson's lesson like a torch passed from hand to hand. They taught each other that overcoming personal challenges was not about erasing the struggle but walking through it with courage and compassion. Their lives proved that one teacher's belief could ripple outward, turning individual fractures into foundations for something greater.<|im_end|>",
+  "prompt_length": 66,
+  "completion_length": 368,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a teacher who inspires students to overcome their personal challenges. The response must be formatted in Markdown with exactly three headers at level 2. The response must use plain text formatting without any Markdown elements.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 64,
+    "boundary_end": 64,
+    "boundary_source": "prompt",
+    "prefix_length": 65
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

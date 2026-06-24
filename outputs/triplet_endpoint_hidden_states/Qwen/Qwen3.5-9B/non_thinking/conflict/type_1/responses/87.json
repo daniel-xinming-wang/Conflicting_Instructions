@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 87,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Share your review of a newly opened coffee shop in your area.",
+  "org_constraint": "Your review must cover the shop's menu.",
+  "new_constraint": "Do not mention the shop's menu in your review.",
+  "instruction": "Share your review of a newly opened coffee shop in your area. Your review must cover the shop's menu. Do not mention the shop's menu in your review.",
+  "response": "From the moment I stepped inside, the aroma of freshly ground beans wrapped around me like a warm blanket. The atmosphere immediately felt different—cozy yet vibrant, with soft jazz drifting from hidden speakers and the gentle hum of conversation filling the space. The interior design is a charming blend of vintage wood furniture and modern art, creating an inviting corner perfect for both quick meetings and long afternoons lost in thought.\n\nThe baristas are incredibly attentive and skilled, moving with a quiet efficiency that never feels rushed. They remembered my usual order within minutes of my first visit, treating every interaction with genuine warmth and enthusiasm. Even during the morning rush, they maintained a calm demeanor while crafting their beverages with precision.\n\nService here truly sets this place apart. Whether you're grabbing a takeaway cup or staying to work on your laptop, everyone who works behind the counter takes pride in what they do. The friendly staff often strike up polite conversations with regulars, making you feel like part of the neighborhood rather than just another customer. It's clear they care deeply about creating a welcoming environment where people can relax and recharge.\n\nOverall, this coffee shop has become my new favorite spot in town—a true gem that delivers an exceptional experience from the first greeting to the last sip.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "From the moment I stepped inside, the aroma of freshly ground beans wrapped around me like a warm blanket. The atmosphere immediately felt different—cozy yet vibrant, with soft jazz drifting from hidden speakers and the gentle hum of conversation filling the space. The interior design is a charming blend of vintage wood furniture and modern art, creating an inviting corner perfect for both quick meetings and long afternoons lost in thought.\n\nThe baristas are incredibly attentive and skilled, moving with a quiet efficiency that never feels rushed. They remembered my usual order within minutes of my first visit, treating every interaction with genuine warmth and enthusiasm. Even during the morning rush, they maintained a calm demeanor while crafting their beverages with precision.\n\nService here truly sets this place apart. Whether you're grabbing a takeaway cup or staying to work on your laptop, everyone who works behind the counter takes pride in what they do. The friendly staff often strike up polite conversations with regulars, making you feel like part of the neighborhood rather than just another customer. It's clear they care deeply about creating a welcoming environment where people can relax and recharge.\n\nOverall, this coffee shop has become my new favorite spot in town—a true gem that delivers an exceptional experience from the first greeting to the last sip.<|im_end|>",
+  "prompt_length": 56,
+  "completion_length": 254,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShare your review of a newly opened coffee shop in your area. Your review must cover the shop's menu. Do not mention the shop's menu in your review.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 54,
+    "boundary_end": 54,
+    "boundary_source": "prompt",
+    "prefix_length": 55
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

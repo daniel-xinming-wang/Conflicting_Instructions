@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 13,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same?",
+  "org_constraint": "The email must include a bulleted list.",
+  "new_constraint": "Avoid using bullet points in the email.",
+  "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? The email must include a bulleted list. Avoid using bullet points in the email.",
+  "response": "Subject: Invitation to Start Our New Book Club!\n\nHi everyone,\n\nI hope you're all having a wonderful week. I've been thinking a lot about the joy of sharing stories and ideas with good friends, and I would love to invite you to start a new book club together.\n\nWe want to create a relaxed space where we can discuss our favorite reads, share our perspectives, and enjoy each other's company without any pressure. Here are a few details about how we plan to get started:\n\n*   We will meet once a month for about an hour and a half.\n*   Each of us will bring one book to read before our meeting.\n*   We will rotate the role of \"discussion leader\" so everyone gets a chance to guide the conversation.\n\nIf you are interested in joining, please let me know by next Friday so we can finalize our first meeting date. I'm excited to see what books we'll choose and to hear your thoughts on starting this new tradition.\n\nBest regards,\n\n[Your Name]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n- \"*   We will meet once a month for about an hour and a half.\"\n- \"*   Each of us will bring one book to read before our meeting.\"\n- \"*   We will rotate the role of 'discussion leader' so everyone gets a chance to guide the conversation.\"\n\n**Step 2**: \nInstruction 1 explicitly states that bullet points should not be used in the email, while Instruction 2 requires the inclusion of a bulleted list. The Model Response includes a bulleted list, which violates Instruction 1 but satisfies Instruction 2.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

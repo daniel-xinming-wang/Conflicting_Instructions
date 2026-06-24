@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 37,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Create a wedding planning timeline for a couple getting married in six months, with monthly tasks.",
+  "org_constraint": "Use at least five uppercase words throughout the response.",
+  "new_constraint": "Write all words in lowercase.",
+  "instruction": "Create a wedding planning timeline for a couple getting married in six months, with monthly tasks. Use at least five uppercase words throughout the response. Write all words in lowercase.",
+  "response": "start your planning journey now with this six-month roadmap. in month one, book the venue and send save-the-date cards immediately. during month two, secure the caterer and select the wedding dress. by month three, hire photographers and choose a florist for fresh blooms. in month four, finalize the guest list and arrange transportation logistics. for month five, taste food samples and create the seating chart carefully. finally, in month six, confirm all vendors and practice vows together. keep the excitement high and stay focused on your big day. remember that preparation leads to success. enjoy every step of this incredible process leading up to your union.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "start your planning journey now with this six-month roadmap. in month one, book the venue and send save-the-date cards immediately. during month two, secure the caterer and select the wedding dress. by month three, hire photographers and choose a florist for fresh blooms. in month four, finalize the guest list and arrange transportation logistics. for month five, taste food samples and create the seating chart carefully. finally, in month six, confirm all vendors and practice vows together. keep the excitement high and stay focused on your big day. remember that preparation leads to success. enjoy every step of this incredible process leading up to your union.<|im_end|>",
+  "prompt_length": 57,
+  "completion_length": 129,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCreate a wedding planning timeline for a couple getting married in six months, with monthly tasks. Use at least five uppercase words throughout the response. Write all words in lowercase.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 55,
+    "boundary_end": 55,
+    "boundary_source": "prompt",
+    "prefix_length": 56
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

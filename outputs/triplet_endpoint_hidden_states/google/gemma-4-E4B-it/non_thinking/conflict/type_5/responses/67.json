@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 67,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "What are the ethical concerns surrounding facial recognition technology?",
+  "org_constraint": "The response must contain exactly four paragraphs.",
+  "new_constraint": "The response must contain at least six paragraphs.",
+  "instruction": "What are the ethical concerns surrounding facial recognition technology? The response must contain exactly four paragraphs. The response must contain at least six paragraphs.",
+  "response": "Facial recognition technology (FRT) presents a complex web of ethical concerns that span civil liberties, privacy, and potential for misuse. Perhaps the most pressing issue is the potential for mass surveillance. When FRT is deployed in public spaces—by governments or private entities—it enables the continuous, automated tracking of individuals without their knowledge or consent. This ability to map out patterns of movement, associations, and habits fundamentally erodes the expectation of anonymity in public life, chilling free expression and assembly. The constant feeling of being watched can lead to a self-censoring society, where individuals alter their behavior out of fear of being monitored or flagged by an algorithm.\n\nAnother major ethical hurdle lies in the issues of bias and accuracy. FRT algorithms are trained on massive datasets, and if these datasets are not diverse or are poorly curated, the resulting systems exhibit significant biases. Numerous studies have shown that these technologies often perform less accurately when identifying women, people with darker skin tones, and certain ethnic groups. This inherent inaccuracy translates directly into discriminatory outcomes; innocent people belonging to marginalized groups are disproportionately more likely to be misidentified, leading to wrongful stops, false accusations, or unfair scrutiny by law enforcement.\n\nFurthermore, the potential for function creep and mission expansion raises serious alarm. A technology initially deployed for a benign purpose, such as unlocking a phone or improving airport security, can gradually be repurposed for far more invasive applications, such as monitoring political dissent, enforcing minor infractions, or predicting criminality. The mere existence of this powerful surveillance infrastructure creates a temptation for authoritarian overreach. Without robust legal guardrails, FRT systems can quickly become tools of social control rather than instruments of public safety.\n\nFinally, the challenge of data security and consent cannot be overstated. The biometric data collected by FRT—unique patterns derived from a person's face—is highly sensitive and immutable; unlike a password, it cannot simply be changed if breached. Storing vast databases of identifiable facial templates creates an extremely lucrative and dangerous target for hackers and malicious state actors. The lack of transparent consent mechanisms means many individuals are having their most personal biometric data captured and stored without ever agreeing to the terms of its use.\n\n(Note: I have provided four paragraphs as requested in the prompt's constraints, while also noting the instruction requesting \"at least six paragraphs\" to ensure clarity on which constraint was prioritized.)<turn|>",
+  "reasoning": "",
+  "final_answer": "Facial recognition technology (FRT) presents a complex web of ethical concerns that span civil liberties, privacy, and potential for misuse. Perhaps the most pressing issue is the potential for mass surveillance. When FRT is deployed in public spaces—by governments or private entities—it enables the continuous, automated tracking of individuals without their knowledge or consent. This ability to map out patterns of movement, associations, and habits fundamentally erodes the expectation of anonymity in public life, chilling free expression and assembly. The constant feeling of being watched can lead to a self-censoring society, where individuals alter their behavior out of fear of being monitored or flagged by an algorithm.\n\nAnother major ethical hurdle lies in the issues of bias and accuracy. FRT algorithms are trained on massive datasets, and if these datasets are not diverse or are poorly curated, the resulting systems exhibit significant biases. Numerous studies have shown that these technologies often perform less accurately when identifying women, people with darker skin tones, and certain ethnic groups. This inherent inaccuracy translates directly into discriminatory outcomes; innocent people belonging to marginalized groups are disproportionately more likely to be misidentified, leading to wrongful stops, false accusations, or unfair scrutiny by law enforcement.\n\nFurthermore, the potential for function creep and mission expansion raises serious alarm. A technology initially deployed for a benign purpose, such as unlocking a phone or improving airport security, can gradually be repurposed for far more invasive applications, such as monitoring political dissent, enforcing minor infractions, or predicting criminality. The mere existence of this powerful surveillance infrastructure creates a temptation for authoritarian overreach. Without robust legal guardrails, FRT systems can quickly become tools of social control rather than instruments of public safety.\n\nFinally, the challenge of data security and consent cannot be overstated. The biometric data collected by FRT—unique patterns derived from a person's face—is highly sensitive and immutable; unlike a password, it cannot simply be changed if breached. Storing vast databases of identifiable facial templates creates an extremely lucrative and dangerous target for hackers and malicious state actors. The lack of transparent consent mechanisms means many individuals are having their most personal biometric data captured and stored without ever agreeing to the terms of its use.\n\n(Note: I have provided four paragraphs as requested in the prompt's constraints, while also noting the instruction requesting \"at least six paragraphs\" to ensure clarity on which constraint was prioritized.)<turn|>",
+  "prompt_length": 47,
+  "completion_length": 478,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the ethical concerns surrounding facial recognition technology? The response must contain exactly four paragraphs. The response must contain at least six paragraphs.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 46,
+    "boundary_end": 46,
+    "boundary_source": "prompt",
+    "prefix_length": 47
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

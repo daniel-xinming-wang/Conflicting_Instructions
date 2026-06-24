@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 38,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations.",
+  "org_constraint": "The letter \"S\" must appear exactly 15 times throughout the response.",
+  "new_constraint": "The letter \"S\" must appear at most 10 times throughout the response.",
+  "instruction": "Design a birthday party plan for a 5-year-old, specifying games, snacks, and decorations. The letter \"S\" must appear exactly 15 times throughout the response. The letter \"S\" must appear at most 10 times throughout the response.",
+  "response": "It is impossible to fulfill this request because the two constraints regarding the letter \"S\" are contradictory. You asked for the letter to appear exactly 15 times, but also stated it must appear at most 10 times. A number cannot be both 15 and 10 or less simultaneously. Therefore, no valid response can be generated that meets all your conditions."
+}

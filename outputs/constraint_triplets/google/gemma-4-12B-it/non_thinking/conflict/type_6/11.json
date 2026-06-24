@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 11,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Send an email to a software developer asking for a product demo.",
+  "org_constraint": "The email must include a Chinese idiom.",
+  "new_constraint": "The email must not contain any Chinese idioms.",
+  "instruction": "Send an email to a software developer asking for a product demo. The email must include a Chinese idiom. The email must not contain any Chinese idioms.",
+  "response": "This request contains a logical contradiction: I am instructed to include a Chinese idiom while simultaneously being told the email must not contain any Chinese idioms.\n\nBecause I cannot fulfill both instructions at once, I have provided a version that follows the primary goal of the request (asking for a demo) while omitting the idiom to satisfy the negative constraint.\n\n***\n\n**Subject:** Request for Product Demo: [Product Name]\n\nDear [Developer Name],\n\nI have been following the development of [Product Name] and am very impressed with the features you have implemented so far.\n\nI am interested in learning more about how the software handles [specific feature/integration]. Would you be available for a brief product demo sometime next week? I would love to see the platform in action and discuss how it might fit our current workflow.\n\nPlease let me know your availability, and I will do my best to accommodate your schedule.\n\nBest regards,\n\n[Your Name]\n[Your Title]<turn|>"
+}

@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences.",
+  "new_constraint": "The response must contain three paragraphs.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences. The response must contain three paragraphs.",
+  "response": "**Week Plan: New Feature Development**\n\nMonday will focus on detailed planning and initial architectural design review. Tuesday and Wednesday are dedicated to core feature implementation coding sprints. Thursday involves intensive unit testing and bug identification.\n\nFriday will be reserved for integration testing and a thorough feature review meeting. Monday of the next week will allow for addressing critical bugs found during testing. Tuesday's schedule should allocate time for refactoring based on feedback. Wednesday can be used for performance tuning and final polish. Thursday concludes the initial development cycle with a demo presentation.<turn|>",
+  "reasoning": "",
+  "final_answer": "**Week Plan: New Feature Development**\n\nMonday will focus on detailed planning and initial architectural design review. Tuesday and Wednesday are dedicated to core feature implementation coding sprints. Thursday involves intensive unit testing and bug identification.\n\nFriday will be reserved for integration testing and a thorough feature review meeting. Monday of the next week will allow for addressing critical bugs found during testing. Tuesday's schedule should allocate time for refactoring based on feedback. Wednesday can be used for performance tuning and final polish. Thursday concludes the initial development cycle with a demo presentation.<turn|>",
+  "prompt_length": 85,
+  "completion_length": 109,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWrite a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. The response must contain exactly 8 sentences, with the first paragraph containing exactly 3 sentences and the second paragraph containing exactly 5 sentences. The response must contain three paragraphs.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 84,
+    "boundary_end": 84,
+    "boundary_source": "prompt",
+    "prefix_length": 85
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

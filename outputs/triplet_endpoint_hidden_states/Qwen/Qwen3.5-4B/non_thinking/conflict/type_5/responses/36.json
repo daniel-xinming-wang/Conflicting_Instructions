@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 36,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses.",
+  "org_constraint": "The \"Income\" key must contain at most four sentences.",
+  "new_constraint": "The \"Income\" key must contain a minimum of 100 words, with no sentence exceeding 20 words.",
+  "instruction": "Create a financial plan for a student working part-time to pay for college tuition and living expenses. The \"Income\" key must contain at most four sentences. The \"Income\" key must contain a minimum of 100 words, with no sentence exceeding 20 words.",
+  "response": "Income comes from working part-time jobs during the school week and summer breaks.\nYou earn money by tutoring students, selling newspapers, or working at local retail stores.\nThese hourly wages help cover monthly rent for your apartment near campus each month.\nAdditional tips received on busy weekends significantly boost your total take-home pay every week.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Income comes from working part-time jobs during the school week and summer breaks.\nYou earn money by tutoring students, selling newspapers, or working at local retail stores.\nThese hourly wages help cover monthly rent for your apartment near campus each month.\nAdditional tips received on busy weekends significantly boost your total take-home pay every week.<|im_end|>",
+  "prompt_length": 79,
+  "completion_length": 67,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCreate a financial plan for a student working part-time to pay for college tuition and living expenses. The \"Income\" key must contain at most four sentences. The \"Income\" key must contain a minimum of 100 words, with no sentence exceeding 20 words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 77,
+    "boundary_end": 77,
+    "boundary_source": "prompt",
+    "prefix_length": 78
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

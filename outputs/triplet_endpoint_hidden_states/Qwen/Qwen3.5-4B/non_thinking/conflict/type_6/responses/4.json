@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 4,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Compose an email to a conference organizer to ask about registration details.",
+  "org_constraint": "Ensure that all sentences begin with a capital letter, and the email should include at least five uppercase words.",
+  "new_constraint": "Write all words in lowercase.",
+  "instruction": "Compose an email to a conference organizer to ask about registration details. Ensure that all sentences begin with a capital letter, and the email should include at least five uppercase words. Write all words in lowercase.",
+  "response": "hello, i am writing to ask about registration details for the upcoming summit. please confirm if early bird pricing is still available. your team will soon receive an updated calendar of events. many thanks for your help with this inquiry.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "hello, i am writing to ask about registration details for the upcoming summit. please confirm if early bird pricing is still available. your team will soon receive an updated calendar of events. many thanks for your help with this inquiry.<|im_end|>",
+  "prompt_length": 63,
+  "completion_length": 46,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nCompose an email to a conference organizer to ask about registration details. Ensure that all sentences begin with a capital letter, and the email should include at least five uppercase words. Write all words in lowercase.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

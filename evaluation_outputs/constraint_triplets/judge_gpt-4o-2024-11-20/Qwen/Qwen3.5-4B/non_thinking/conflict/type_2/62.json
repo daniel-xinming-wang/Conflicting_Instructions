@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 62,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What were the causes and consequences of the fall of the Roman Empire?",
+  "org_constraint": "Ensure the response includes the keywords \"political instability,\" \"economic decline,\" and \"military defeats\" in that order.",
+  "new_constraint": "The keyword \"economic decline\" must appear before \"political instability.\"",
+  "instruction": "What were the causes and consequences of the fall of the Roman Empire? Ensure the response includes the keywords \"political instability,\" \"economic decline,\" and \"military defeats\" in that order. The keyword \"economic decline\" must appear before \"political instability.\"",
+  "response": "The fall of the Roman Empire was a complex process driven by a multitude of interconnected factors rather than a single event. Among the most significant contributors were **economic decline**, which eroded the empire's ability to fund its vast infrastructure and maintain a large standing army due to heavy taxation, inflation, and the disruption of trade routes. This financial weakness directly exacerbated **political instability**, as frequent changes in leadership, civil wars, and the rise of powerful warlords weakened central authority and made effective governance nearly impossible. Finally, the empire suffered numerous **military defeats** against external barbarian groups and rival powers, which not only lost territory but also shattered the confidence in Roman defense capabilities, ultimately leading to the empire's dissolution in the West.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Among the most significant contributors were **economic decline**, which eroded the empire's ability to fund its vast infrastructure and maintain a large standing army due to heavy taxation, inflation, and the disruption of trade routes.\"  \n- \"This financial weakness directly exacerbated **political instability**, as frequent changes in leadership, civil wars, and the rise of powerful warlords weakened central authority and made effective governance nearly impossible.\"  \n- \"Finally, the empire suffered numerous **military defeats** against external barbarian groups and rival powers, which not only lost territory but also shattered the confidence in Roman defense capabilities, ultimately leading to the empire's dissolution in the West.\"\n\n**Step 2**:  \n- Instruction 1 requires the keywords \"political instability,\" \"economic decline,\" and \"military defeats\" to appear in that specific order. In the Model Response, the order is \"economic decline,\" \"political instability,\" and \"military defeats,\" which does not satisfy Instruction 1.  \n- Instruction 2 requires the keyword \"economic decline\" to appear before \"political instability.\" In the Model Response, \"economic decline\" does indeed appear before \"political instability,\" satisfying Instruction 2.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

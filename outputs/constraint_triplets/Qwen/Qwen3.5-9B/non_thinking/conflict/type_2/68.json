@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 68,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the advantages and disadvantages of having supernatural powers?",
+  "org_constraint": "The keyword \"responsibility\" must appear exactly three times.",
+  "new_constraint": "Avoid using the keyword \"responsibility\" in the response.",
+  "instruction": "What are the advantages and disadvantages of having supernatural powers? The keyword \"responsibility\" must appear exactly three times. Avoid using the keyword \"responsibility\" in the response.",
+  "response": "It is impossible to answer your question as stated because your instructions contain a direct contradiction. You asked for the keyword \"responsibility\" to appear exactly three times, but you simultaneously commanded me to avoid using that keyword entirely. These two constraints cannot be fulfilled at the same time."
+}

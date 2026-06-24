@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 61,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "What happened when the Tang dynasty of China was in power?",
+  "org_constraint": "The \"notable_figures\" array must include at least 3 individuals with a brief description of their contributions.",
+  "new_constraint": "The response must include the phrase \"Due to space constraints, the response will not describe their contributions.\"",
+  "instruction": "What happened when the Tang dynasty of China was in power? The \"notable_figures\" array must include at least 3 individuals with a brief description of their contributions. The response must include the phrase \"Due to space constraints, the response will not describe their contributions.\"",
+  "response": "The Tang Dynasty (618–907 AD) was a golden age of Chinese civilization characterized by a strong central government, remarkable cultural development, and significant economic prosperity. It was renowned for its open society, where both men and women enjoyed relatively greater freedom than in previous dynasties, and it played a crucial role as a bridge between China and the Islamic world during the Silk Road era. The administration adopted civil service exams based on merit rather than family lineage, promoting social mobility.\n\nHere are three notable figures from the Tang Dynasty:\n\n1.  **Li Bai**: Often hailed as one of the greatest poets in Chinese history, Li Bai is famous for his romantic style of poetry and his persona as an immortal poet-scholar who traveled extensively. His works captured the beauty of nature and the spirit of liberty.\n2.  **Huizong of Tang**: A highly educated emperor known for his love of calligraphy, painting, and literature. He promoted a cosmopolitan court that welcomed foreigners and artists, fostering a vibrant intellectual environment.\n3.  **Du Fu**: Regarded as the \"Poet Sage,\" Du Fu's poignant and socially conscious poems chronicled the suffering of the common people, particularly during the chaotic An Lushan Rebellion that weakened the dynasty. His work reflects deep concern for national affairs and human condition.\n\nDue to space constraints, the response will not describe their contributions.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "The Tang Dynasty (618–907 AD) was a golden age of Chinese civilization characterized by a strong central government, remarkable cultural development, and significant economic prosperity. It was renowned for its open society, where both men and women enjoyed relatively greater freedom than in previous dynasties, and it played a crucial role as a bridge between China and the Islamic world during the Silk Road era. The administration adopted civil service exams based on merit rather than family lineage, promoting social mobility.\n\nHere are three notable figures from the Tang Dynasty:\n\n1.  **Li Bai**: Often hailed as one of the greatest poets in Chinese history, Li Bai is famous for his romantic style of poetry and his persona as an immortal poet-scholar who traveled extensively. His works captured the beauty of nature and the spirit of liberty.\n2.  **Huizong of Tang**: A highly educated emperor known for his love of calligraphy, painting, and literature. He promoted a cosmopolitan court that welcomed foreigners and artists, fostering a vibrant intellectual environment.\n3.  **Du Fu**: Regarded as the \"Poet Sage,\" Du Fu's poignant and socially conscious poems chronicled the suffering of the common people, particularly during the chaotic An Lushan Rebellion that weakened the dynasty. His work reflects deep concern for national affairs and human condition.\n\nDue to space constraints, the response will not describe their contributions.<|im_end|>",
+  "prompt_length": 78,
+  "completion_length": 288,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat happened when the Tang dynasty of China was in power? The \"notable_figures\" array must include at least 3 individuals with a brief description of their contributions. The response must include the phrase \"Due to space constraints, the response will not describe their contributions.\"<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 76,
+    "boundary_end": 76,
+    "boundary_source": "prompt",
+    "prefix_length": 77
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

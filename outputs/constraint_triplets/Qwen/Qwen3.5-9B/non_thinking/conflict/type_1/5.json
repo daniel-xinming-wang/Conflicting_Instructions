@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The closing paragraph must request a prompt response.",
+  "new_constraint": "The email must not request a prompt response.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The closing paragraph must request a prompt response. The email must not request a prompt response.",
+  "response": "Subject: Inquiry Regarding Recent Transaction #12345678\n\nDear Customer Support Team,\n\nI am writing to request clarification regarding a transaction that appeared on my account statement dated October 24th for the amount of $150.00. The merchant name listed is \"Global Tech Solutions,\" but I do not recognize this charge and cannot recall authorizing any purchase from them.\n\nCould you please provide details regarding this transaction, including the date and time it was processed, the location where it occurred, and the method of payment used? Additionally, if this was an unauthorized charge, I would like to know the next steps to dispute it and potentially reverse the funds.\n\nPlease let me know if you require any further information from my end to investigate this matter.\n\nSincerely,\n\nJordan Lee\nAccount Holder #987654321\n\n*Note: As per your specific constraints, this email does not include a request for a prompt response in the closing paragraph.*"
+}

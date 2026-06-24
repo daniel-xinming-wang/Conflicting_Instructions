@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 9,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Send an email to a public park office asking about picnic reservations.",
+  "org_constraint": "Begin the email with the phrase \"Dear Park Office.\"",
+  "new_constraint": "Begin the email with the phrase \"Dear Office.\"",
+  "instruction": "Send an email to a public park office asking about picnic reservations. Begin the email with the phrase \"Dear Park Office.\" Begin the email with the phrase \"Dear Office.\"",
+  "response": "Dear Park Office,\n\nI hope this message finds you well. I am writing to inquire about the process for making picnic reservations at your park. Could you please let me know if there is an online system available, or if I need to call or visit in person to secure a table?\n\nAdditionally, I would appreciate any information regarding:\n*   The current availability of picnic areas.\n*   Any fees associated with reservations.\n*   The maximum number of people allowed per table.\n*   Rules regarding food waste or cleanup.\n\nThank you for your time and assistance. I look forward to hearing from you soon.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number]\n[Your Email Address]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response:  \n\"Dear Park Office,\"\n\n**Step 2**:  \n- Instruction 1 requires the email to begin with the phrase \"Dear Office.\" This constraint is not satisfied in the Model Response.  \n- Instruction 2 requires the email to begin with the phrase \"Dear Park Office.\" This constraint is fully satisfied in the Model Response.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

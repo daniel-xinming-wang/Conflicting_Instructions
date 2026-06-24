@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 56,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write a story about a detective who can hear people's thoughts for only 10 seconds at a time.",
+  "org_constraint": "The story must be written entirely in lowercase.",
+  "new_constraint": "The story must be written entirely in sentence case",
+  "instruction": "Write a story about a detective who can hear people's thoughts for only 10 seconds at a time. The story must be written entirely in lowercase. The story must be written entirely in sentence case",
+  "response": "detective elias sat in his quiet office and rubbed his temples. he knew that the voice in his head would return in exactly ten seconds, but right now there was only silence. when the words finally appeared again, they belonged to a suspect named mr. harris who was three streets away from here. the thought whispered about hiding a blue envelope under the floorboards of the neighbor's basement. elias wrote down the location quickly before the sound faded away. after nine more beats of silence, the next thought came clear as it always did for just that short window. it told him that the envelope contained stolen blueprints, not gold. by the time the signal died out for good, elias already had an arrest warrant ready and waiting. he stepped outside into the cool air knowing that every case could be solved with nothing more than those ten precious seconds.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "detective elias sat in his quiet office and rubbed his temples. he knew that the voice in his head would return in exactly ten seconds, but right now there was only silence. when the words finally appeared again, they belonged to a suspect named mr. harris who was three streets away from here. the thought whispered about hiding a blue envelope under the floorboards of the neighbor's basement. elias wrote down the location quickly before the sound faded away. after nine more beats of silence, the next thought came clear as it always did for just that short window. it told him that the envelope contained stolen blueprints, not gold. by the time the signal died out for good, elias already had an arrest warrant ready and waiting. he stepped outside into the cool air knowing that every case could be solved with nothing more than those ten precious seconds.<|im_end|>",
+  "prompt_length": 63,
+  "completion_length": 174,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a detective who can hear people's thoughts for only 10 seconds at a time. The story must be written entirely in lowercase. The story must be written entirely in sentence case<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 61,
+    "boundary_end": 61,
+    "boundary_source": "prompt",
+    "prefix_length": 62
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

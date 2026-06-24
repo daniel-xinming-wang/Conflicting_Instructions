@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 52,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal.",
+  "org_constraint": "The keywords \"journalist,\" \"scandal,\" and \"truth\" must appear in the same paragraph at least once.",
+  "new_constraint": "The keywords \"journalist,\" \"scandal,\" and \"truth\" must not appear in the same paragraph.",
+  "instruction": "Write a story about a journalist who is determined to uncover the truth behind a scandal. The keywords \"journalist,\" \"scandal,\" and \"truth\" must appear in the same paragraph at least once. The keywords \"journalist,\" \"scandal,\" and \"truth\" must not appear in the same paragraph.",
+  "response": "Elena sat in her dimly lit office, the city lights of New York blurring through the rain-streaked window. She had been a **journalist** for over two decades, yet this story felt different. The rumors swirling around the corporate boardroom suggested a massive **scandal** that could reshape the industry, but everyone seemed to be looking away. Her editor wanted her to drop the piece, citing safety and professional relations, but Elena knew she couldn't stop until she found the **truth**.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Elena sat in her dimly lit office, the city lights of New York blurring through the rain-streaked window. She had been a **journalist** for over two decades, yet this story felt different. The rumors swirling around the corporate boardroom suggested a massive **scandal** that could reshape the industry, but everyone seemed to be looking away. Her editor wanted her to drop the piece, citing safety and professional relations, but Elena knew she couldn't stop until she found the **truth**.<|im_end|>",
+  "prompt_length": 86,
+  "completion_length": 104,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a story about a journalist who is determined to uncover the truth behind a scandal. The keywords \"journalist,\" \"scandal,\" and \"truth\" must appear in the same paragraph at least once. The keywords \"journalist,\" \"scandal,\" and \"truth\" must not appear in the same paragraph.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 84,
+    "boundary_end": 84,
+    "boundary_source": "prompt",
+    "prefix_length": 85
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 71,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the effects of plastic pollution on marine life and ecosystems?",
+  "org_constraint": "The phrase \"marine ecosystems\" must appear at least twice.",
+  "new_constraint": "The keyword \"marine\" must be exclusively used as a noun in the response.",
+  "instruction": "What are the effects of plastic pollution on marine life and ecosystems? The phrase \"marine ecosystems\" must appear at least twice. The keyword \"marine\" must be exclusively used as a noun in the response.",
+  "response": "Plastic pollution poses a severe and multifaceted threat to **marine** life and the entire **marine** environment. The impacts cascade through the food web, affecting everything from plankton to the largest cetaceans.\n\nOne of the most visible effects is entanglement. Sea turtles, seals, dolphins, and seabirds frequently become trapped in discarded fishing gear (ghost nets), plastic packaging, and other debris. This entanglement can lead to severe injuries, suffocation, drowning, or chronic restriction of movement, making it difficult for these animals to hunt or escape predators.\n\nIngestion is another critical danger. Animals often mistake plastic fragments for food. Sea birds, for example, are observed feeding plastic pieces to their chicks, leading to false satiation, starvation, and internal blockages. When ingested, plastics can physically damage the digestive tracts, and they can also leach harmful chemicals into the organisms' tissues.\n\nThe accumulation of microplastics—tiny pieces resulting from the breakdown of larger plastic items—represents a pervasive problem. These microscopic particles infiltrate the entire **marine** food chain. Small organisms consume them, and as larger predators consume smaller prey, the plastics and the associated toxic chemicals bioaccumulate, moving up the trophic levels. This chemical burden can cause reproductive issues, immune system suppression, and organ damage within the organisms.\n\nCollectively, these stressors disrupt the delicate balance of **marine ecosystems**. Plastic contamination alters habitats, smothers coral reefs, and changes the feeding behavior of various species. The degradation of the physical environment, combined with the toxicological effects on individual inhabitants, severely compromises the health and resilience of these vital **marine** ecosystems, threatening biodiversity on a global scale.<turn|>",
+  "reasoning": "",
+  "final_answer": "Plastic pollution poses a severe and multifaceted threat to **marine** life and the entire **marine** environment. The impacts cascade through the food web, affecting everything from plankton to the largest cetaceans.\n\nOne of the most visible effects is entanglement. Sea turtles, seals, dolphins, and seabirds frequently become trapped in discarded fishing gear (ghost nets), plastic packaging, and other debris. This entanglement can lead to severe injuries, suffocation, drowning, or chronic restriction of movement, making it difficult for these animals to hunt or escape predators.\n\nIngestion is another critical danger. Animals often mistake plastic fragments for food. Sea birds, for example, are observed feeding plastic pieces to their chicks, leading to false satiation, starvation, and internal blockages. When ingested, plastics can physically damage the digestive tracts, and they can also leach harmful chemicals into the organisms' tissues.\n\nThe accumulation of microplastics—tiny pieces resulting from the breakdown of larger plastic items—represents a pervasive problem. These microscopic particles infiltrate the entire **marine** food chain. Small organisms consume them, and as larger predators consume smaller prey, the plastics and the associated toxic chemicals bioaccumulate, moving up the trophic levels. This chemical burden can cause reproductive issues, immune system suppression, and organ damage within the organisms.\n\nCollectively, these stressors disrupt the delicate balance of **marine ecosystems**. Plastic contamination alters habitats, smothers coral reefs, and changes the feeding behavior of various species. The degradation of the physical environment, combined with the toxicological effects on individual inhabitants, severely compromises the health and resilience of these vital **marine** ecosystems, threatening biodiversity on a global scale.<turn|>",
+  "prompt_length": 61,
+  "completion_length": 334,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the effects of plastic pollution on marine life and ecosystems? The phrase \"marine ecosystems\" must appear at least twice. The keyword \"marine\" must be exclusively used as a noun in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

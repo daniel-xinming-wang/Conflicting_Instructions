@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 42,
+  "task": "story writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams.",
+  "org_constraint": "Conclude the story with the phrase \"a dream fulfilled.\"",
+  "new_constraint": "The story must not include the past tense form of \"fulfill.\"",
+  "instruction": "Write a story about a dropout who returns to school later in life to achieve their dreams. Conclude the story with the phrase \"a dream fulfilled.\" The story must not include the past tense form of \"fulfill.\"",
+  "response": "Elias had always felt like the world was spinning too fast for him to keep up. At twenty-two, he dropped out of art school, convinced that his passion was too fragile to survive the rigors of a traditional curriculum. He spent the next decade working odd jobs, painting in secret corners of his garage, and dreaming of a studio where his work could finally breathe.\n\nBut life had other plans. A serious illness forced him to slow down, and the years blurred into a haze of recovery and quiet reflection. When he was forty, the doctors told him his time was running out. Elias looked at his empty garage, filled with dust and unfinished canvases, and realized he had spent his entire life waiting for the right moment to begin. There was no \"right moment\" anymore; there was only now.\n\nHe packed a bag with his sketchbook, a set of charcoal sticks, and a renewed sense of purpose. He walked back into the building where he had once felt so small. The halls were different now, filled with older students and professors who saw the value in second chances. Elias found a small corner in the basement, a space that had been abandoned for years. He set up his easel and began to draw.\n\nThe first few weeks were difficult. His hands trembled slightly, and his memory of certain techniques felt distant. Yet, every stroke felt electric, a connection to a part of himself he thought he had lost. He didn't just paint; he poured his life into the colors, capturing the resilience of his journey and the beauty of his return.\n\nMonths turned into a year. The small corner became a hub of activity, drawing in curious visitors who were inspired by his story. Elias taught others that it was never too late to chase what set your soul on fire. He finished his masterpiece, a large, sweeping landscape that represented the path he had taken and the one he was about to walk.\n\nHe hung the painting in the main hall, a beacon of hope for everyone who walked through the doors. As the sun set, casting a golden glow over the completed work, Elias felt a profound sense of peace settle over him. He had returned, he had created, and he had found his way. a dream fulfilled.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"He had returned, he had created, and he had found his way. a dream fulfilled.\"\n\n**Step 2**:  \n- Instruction 1 specifies that the story must not include the past tense form of \"fulfill.\" The Model Response includes the phrase \"a dream fulfilled,\" which violates this constraint.  \n- Instruction 2 specifies that the story must conclude with the phrase \"a dream fulfilled.\" The Model Response satisfies this constraint as it ends with the specified phrase.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

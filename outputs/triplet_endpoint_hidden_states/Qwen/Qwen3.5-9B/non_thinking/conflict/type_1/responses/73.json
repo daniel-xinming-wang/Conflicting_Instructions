@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 73,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "How does stress affect the human body and mind in the short and long term?",
+  "org_constraint": "The response must include specific details about physiological effects of stress.",
+  "new_constraint": "Do not include any details about physiological effects of stress.",
+  "instruction": "How does stress affect the human body and mind in the short and long term? The response must include specific details about physiological effects of stress. Do not include any details about physiological effects of stress.",
+  "response": "Stress significantly impacts both the human mind and body. In the short term, the body's \"fight or flight\" response triggers a surge of stress hormones like adrenaline and cortisol. This causes an immediate increase in heart rate and blood pressure to prepare for action, rapid breathing, dilated pupils, and heightened alertness. Mentally, this results in focused attention, sharp decision-making abilities, and increased motivation to address the immediate threat.\n\nIn the long term, however, chronic exposure to stress can lead to mental health issues such as anxiety, depression, burnout, and cognitive impairments like memory loss and difficulty concentrating. Physiologically, prolonged stress keeps the body in a constant state of arousal, which can disrupt sleep patterns, weaken the immune system making one more susceptible to illness, and contribute to the development of hypertension, cardiovascular disease, digestive problems, and metabolic disorders. These sustained physiological changes occur because the body continuously releases high levels of stress hormones without sufficient periods of recovery.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Stress significantly impacts both the human mind and body. In the short term, the body's \"fight or flight\" response triggers a surge of stress hormones like adrenaline and cortisol. This causes an immediate increase in heart rate and blood pressure to prepare for action, rapid breathing, dilated pupils, and heightened alertness. Mentally, this results in focused attention, sharp decision-making abilities, and increased motivation to address the immediate threat.\n\nIn the long term, however, chronic exposure to stress can lead to mental health issues such as anxiety, depression, burnout, and cognitive impairments like memory loss and difficulty concentrating. Physiologically, prolonged stress keeps the body in a constant state of arousal, which can disrupt sleep patterns, weaken the immune system making one more susceptible to illness, and contribute to the development of hypertension, cardiovascular disease, digestive problems, and metabolic disorders. These sustained physiological changes occur because the body continuously releases high levels of stress hormones without sufficient periods of recovery.<|im_end|>",
+  "prompt_length": 62,
+  "completion_length": 197,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nHow does stress affect the human body and mind in the short and long term? The response must include specific details about physiological effects of stress. Do not include any details about physiological effects of stress.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 60,
+    "boundary_end": 60,
+    "boundary_source": "prompt",
+    "prefix_length": 61
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

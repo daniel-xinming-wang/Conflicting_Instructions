@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 72,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "What are the effects of global warming on polar ecosystems and wildlife?",
+  "org_constraint": "The response should be written in Markdown format, with exactly three headers at level 2 and at least one unordered list under each header containing at least three items.",
+  "new_constraint": "Write the response in JSON format, with at least three keys.",
+  "instruction": "What are the effects of global warming on polar ecosystems and wildlife? The response should be written in Markdown format, with exactly three headers at level 2 and at least one unordered list under each header containing at least three items. Write the response in JSON format, with at least three keys.",
+  "response": "{\n  \"header_1\": \"Habitat Loss and Sea Ice Reduction\",\n  \"content\": [\n    \"Arctic sea ice is shrinking at an unprecedented rate, destroying the primary platform for polar bears to hunt seals.\",\n    \"Melting permafrost causes coastal erosion, submerging nesting grounds for seabirds and penguins.\",\n    \"The loss of ice cover disrupts the breeding cycles of walruses, leading to mass stranding events on land.\"\n  ],\n  \"header_2\": \"Disruption of Food Chains\",\n  \"content\": [\n    \"The decline in krill populations due to warming waters threatens the foundation of the marine food web.\",\n    \"Earlier spring blooms of algae alter the timing of migration for migratory birds that rely on specific food availability.\",\n    \"Predators like polar foxes face increased competition as their prey species shift ranges or decline in number.\"\n  ],\n  \"header_3\": \"Increased Disease and Stress\",\n  \"content\": [\n    \"Warmer temperatures allow pathogens and parasites to survive in regions previously too cold for them.\",\n    \"Stress from habitat loss and food scarcity weakens wildlife immune systems, making them more susceptible to illness.\",\n    \"Ocean acidification and warming create physiological stress that reduces reproductive success in marine mammals.\"\n  }\n}"
+}

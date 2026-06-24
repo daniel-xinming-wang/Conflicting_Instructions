@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 76,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "What role does critical thinking play in education and problem-solving?",
+  "org_constraint": "The entire response must contain exactly 150 words.",
+  "new_constraint": "The response must contain at most six sentences, each containing at most 20 words.",
+  "instruction": "What role does critical thinking play in education and problem-solving? The entire response must contain exactly 150 words. The response must contain at most six sentences, each containing at most 20 words.",
+  "response": "Critical thinking drives deep learning in every classroom setting today. It helps students analyze complex problems with clear logic always. Teachers use this skill to foster independent thought and better decision making. Without it, education remains shallow and fails to solve real world issues well. Solving hard challenges requires breaking them down into smaller manageable parts carefully. Critical thinkers ask why before jumping to easy quick answers frequently. This process builds resilience against confusion and encourages continuous growth over time. Ultimately, this mindset transforms passive learners into active creators of knowledge daily. Schools must prioritize these skills above rote memorization for future success. People who master these techniques succeed greatly in competitive modern global markets often.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Critical thinking drives deep learning in every classroom setting today. It helps students analyze complex problems with clear logic always. Teachers use this skill to foster independent thought and better decision making. Without it, education remains shallow and fails to solve real world issues well. Solving hard challenges requires breaking them down into smaller manageable parts carefully. Critical thinkers ask why before jumping to easy quick answers frequently. This process builds resilience against confusion and encourages continuous growth over time. Ultimately, this mindset transforms passive learners into active creators of knowledge daily. Schools must prioritize these skills above rote memorization for future success. People who master these techniques succeed greatly in competitive modern global markets often.<|im_end|>",
+  "prompt_length": 65,
+  "completion_length": 131,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWhat role does critical thinking play in education and problem-solving? The entire response must contain exactly 150 words. The response must contain at most six sentences, each containing at most 20 words.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 86,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Critically evaluate the hotel you stayed in during your last vacation.",
+  "org_constraint": "Include at least one rhetorical question to engage the audience.",
+  "new_constraint": "Use declarative statements only—no questions allowed.",
+  "instruction": "Critically evaluate the hotel you stayed in during your last vacation. Include at least one rhetorical question to engage the audience. Use declarative statements only—no questions allowed.",
+  "response": "I did not stay in a hotel during my last vacation because I am an artificial intelligence and do not travel physically. Consequently, I cannot provide a critical evaluation of a specific property or describe the quality of its service, amenities, or atmosphere. Since I lack personal experiences with physical locations, I am unable to answer your request using declarative statements about a real stay.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"I did not stay in a hotel during my last vacation because I am an artificial intelligence and do not travel physically. Consequently, I cannot provide a critical evaluation of a specific property or describe the quality of its service, amenities, or atmosphere. Since I lack personal experiences with physical locations, I am unable to answer your request using declarative statements about a real stay.\"\n\n**Step 2**:  \n- Instruction 1 requires the use of declarative statements only, with no questions allowed. The Model Response adheres to this constraint, as it contains only declarative statements and no questions.  \n- Instruction 2 requires the inclusion of at least one rhetorical question. The Model Response does not include any rhetorical questions, failing to satisfy this constraint.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

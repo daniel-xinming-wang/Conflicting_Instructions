@@ -1,0 +1,45 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "thinking",
+  "enable_thinking": true,
+  "sample_id": 8,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "Write an email to a bus company to inquire about travel schedules.",
+  "org_constraint": "Avoid using the word \"timetable.\"",
+  "new_constraint": "The email must include the word \"timetable\" at least twice.",
+  "instruction": "Write an email to a bus company to inquire about travel schedules. Avoid using the word \"timetable.\" The email must include the word \"timetable\" at least twice.",
+  "response": "Subject: Inquiry Regarding Bus Service Schedules\n\nDear [Bus Company Name] Customer Service,\n\nI am writing to inquire about your bus service schedules for travel between [Starting City] and [Destination City].\n\nI am planning a trip and would like to understand what departure and arrival times are available for this route. Could you please provide me with your current service schedule? I am particularly interested in knowing the various times throughout the day that trips are offered.\n\nIf there is an online document or a separate page on your website that displays the full travel schedule, I would appreciate a link to it. I am trying to compare different options and need to examine the complete timetable.\n\nAlso, if you have a general timetable that shows all routes, please share that as well. Thank you very much for your assistance with this request.\n\nSincerely,\n\n[Your Name]\n[Your Phone Number or Email Address]<turn|>",
+  "reasoning": null,
+  "final_answer": null,
+  "prompt_length": 55,
+  "completion_length": 183,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": null,
+  "endpoint_metadata": {
+    "status": "boundary_missing",
+    "boundary_mode": "gemma_channel",
+    "boundary_text": "<channel|>",
+    "boundary_token_ids": [
+      101
+    ],
+    "boundary_start": null,
+    "boundary_end": null,
+    "boundary_source": null,
+    "prefix_length": null
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

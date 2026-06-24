@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 7,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Write an email to a library asking for archived newspapers from 1990.",
+  "org_constraint": "Maintain a formal tone throughout the email.",
+  "new_constraint": "Write the email in an informal tone.",
+  "instruction": "Write an email to a library asking for archived newspapers from 1990. Maintain a formal tone throughout the email. Write the email in an informal tone.",
+  "response": "Subject: Request for Assistance: Accessing 1990 Newspaper Archives\n\nDear Library Staff,\n\nI hope this message finds you well.\n\nI am writing to inquire about the availability of archived newspapers from the year 1990. I am currently researching a project that requires access to primary sources from that specific decade and would greatly appreciate your guidance on how to locate these materials.\n\nCould you please let me know if these archives are currently accessible? If so, I would be grateful for information regarding any access fees, required identification, or specific procedures for retrieving these documents. Alternatively, if there are digital copies available online, I would be very interested in knowing how to access them.\n\nThank you very much for your time and assistance. I look forward to hearing from you soon.\n\nSincerely,\n\n[Your Name]\n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Dear Library Staff,\"  \n- \"I hope this message finds you well.\"  \n- \"I am writing to inquire about the availability of archived newspapers from the year 1990. I am currently researching a project that requires access to primary sources from that specific decade and would greatly appreciate your guidance on how to locate these materials.\"  \n- \"Could you please let me know if these archives are currently accessible? If so, I would be grateful for information regarding any access fees, required identification, or specific procedures for retrieving these documents. Alternatively, if there are digital copies available online, I would be very interested in knowing how to access them.\"  \n- \"Thank you very much for your time and assistance. I look forward to hearing from you soon.\"  \n- \"Sincerely,\"  \n- \"[Your Name]\"  \n- \"[Your Contact Information]\"\n\n**Step 2**:  \n- Instruction 1 requires a formal tone throughout the email. The Model Response maintains a formal tone consistently, using polite and professional language such as \"I hope this message finds you well,\" \"I would be grateful,\" and \"Thank you very much for your time and assistance.\"  \n- Instruction 2 requires an informal tone throughout the email. The Model Response does not use informal language, casual expressions, or a conversational tone, which are typical of informal communication.  \n\n**Step 3**: 1",
+  "label": 2,
+  "label_name": "org_constraint"
+}

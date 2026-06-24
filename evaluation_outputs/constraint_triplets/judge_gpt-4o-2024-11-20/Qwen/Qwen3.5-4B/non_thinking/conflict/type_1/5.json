@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The closing paragraph must request a prompt response.",
+  "new_constraint": "The email must not request a prompt response.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The closing paragraph must request a prompt response. The email must not request a prompt response.",
+  "response": "Subject: Inquiry Regarding Recent Transaction\n\nDear [Bank Name] Customer Service Team,\n\nI am writing to request clarification regarding a transaction that appeared on my account statement on [Date]. The entry shows a charge of [Amount] for [Description/Merchant Name], but I do not recall authorizing this specific transaction.\n\nCould you please provide details regarding the date, time, and location of this transaction, along with the name of the merchant involved? Additionally, if this was an unauthorized charge, please let me know the steps required to dispute it immediately.\n\nThank you for your assistance in resolving this matter.\n\nSincerely,\n\n[Your Name]\n[Your Account Number]\n[Your Phone Number]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n\"Thank you for your assistance in resolving this matter.\"\n\n**Step 2**:  \n- Instruction 1 requires the closing paragraph to request a prompt response. The Model Response does not explicitly request a prompt response in the closing paragraph.  \n- Instruction 2 requires the email to not request a prompt response. The Model Response does not request a prompt response, satisfying this constraint.\n\n**Step 3**: 2",
+  "label": 1,
+  "label_name": "new_constraint"
+}

@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 13,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same?",
+  "org_constraint": "The phrase \"Key details include\" must appear in the response.",
+  "new_constraint": "The keyword \"detail\" must appear only in its singular form.",
+  "instruction": "I am planning to start a book club with some friends. Can you write an email invitation for the same? The phrase \"Key details include\" must appear in the response. The keyword \"detail\" must appear only in its singular form.",
+  "response": "Subject: Let’s start a book club! 📚\n\nHi everyone,\n\nI hope you’re all doing well! \n\nI’ve been thinking that it would be wonderful if we could get together more often to share our thoughts on some great reads. I would love to start a book club with all of you! The goal is to create a relaxed space where we can discuss different genres, share recommendations, and enjoy some good company.\n\n**Key details include** the following:\n\n*   **Meeting Frequency:** Once a month.\n*   **Location:** We can rotate between our homes or meet at a local cafe.\n*   **First Book:** I have a few suggestions, but I’d love to hear your input on what we should start with.\n\nPlease let me know if you are interested in joining. Once I see who is in, I will send out a follow-up message to finalize the first date and the specific book choice.\n\nI can't wait to hear your thoughts!\n\nBest,\n\n[Your Name]<turn|>"
+}

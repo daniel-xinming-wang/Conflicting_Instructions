@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 9,
+  "conflict_type": "Conflicts between Phrase Constraints and Style Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The email must be written in the first person.",
+  "new_constraint": "The email must include the phrase \"You should clarify this matter immediately.\"",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must be written in the first person. The email must include the phrase \"You should clarify this matter immediately.\"",
+  "response": "Subject: Urgent: Clarification Required Regarding Recent Transaction #12345678\n\nDear Customer Service Team,\n\nI am writing to you today to request immediate clarification regarding a transaction that appeared on my account statement dated yesterday.\n\nOn [Date], a charge of $[Amount] was posted to my account under the description \"[Transaction Description].\" I do not recognize this charge, and I am unable to recall authorizing this specific payment. It is possible that this is an error or an unauthorized transaction, and I need to understand exactly what has occurred before I can take further action.\n\nGiven the potential security implications of this discrepancy, **You should clarify this matter immediately.** Please provide a detailed explanation of this transaction, including the merchant name, location, and the method of authorization used. Additionally, please let me know the steps I need to take to dispute this charge if it was indeed unauthorized.\n\nI have attached a copy of my recent statement for your reference. I look forward to your prompt response and resolution of this issue.\n\nSincerely,\n\n[Your Full Name]\n[Your Account Number]\n[Your Phone Number]"
+}

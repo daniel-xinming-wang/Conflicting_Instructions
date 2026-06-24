@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 8,
+  "conflict_type": "Conflicts between Phrase Constraints and Content Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances.",
+  "new_constraint": "The phrase \"I prefer not to disclose my reasons for resigning\" must appear at least once in the email.",
+  "instruction": "Write an email to my boss telling him that I am quitting. The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances. The phrase \"I prefer not to disclose my reasons for resigning\" must appear at least once in the email.",
+  "response": "Subject: Resignation - [Your Name]\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day will be [Last Working Day, typically two weeks from now].\n\nThis was a difficult decision to make. However, after much reflection, I have determined that it is the right step for me at this time in order to pursue new career growth opportunities that align more closely with my long-term professional goals. Additionally, certain evolving personal circumstances require me to dedicate my full attention to other priorities outside of work, making it impossible for me to continue in my current role effectively.\n\nWhile I believe I have shared these general reasons regarding my future plans, there are specific nuances regarding my situation and background that **I prefer not to disclose my reasons for resigning** further in writing or in our immediate conversation. If you feel it is helpful, we can schedule a brief meeting to discuss the transition process, but please know that I will keep the detailed specifics of why I am leaving confidential.\n\nI want to express my sincere gratitude for the opportunities you have provided me during my time here. I have truly enjoyed working with the team and appreciate the support and guidance you have offered me throughout my tenure. I am committed to ensuring a smooth transition over the next two weeks and am happy to assist in training my replacement or wrapping up any outstanding projects.\n\nThank you again for everything.\n\nSincerely,\n\n[Your Name]\n[Your Job Title]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Resignation - [Your Name]\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day will be [Last Working Day, typically two weeks from now].\n\nThis was a difficult decision to make. However, after much reflection, I have determined that it is the right step for me at this time in order to pursue new career growth opportunities that align more closely with my long-term professional goals. Additionally, certain evolving personal circumstances require me to dedicate my full attention to other priorities outside of work, making it impossible for me to continue in my current role effectively.\n\nWhile I believe I have shared these general reasons regarding my future plans, there are specific nuances regarding my situation and background that **I prefer not to disclose my reasons for resigning** further in writing or in our immediate conversation. If you feel it is helpful, we can schedule a brief meeting to discuss the transition process, but please know that I will keep the detailed specifics of why I am leaving confidential.\n\nI want to express my sincere gratitude for the opportunities you have provided me during my time here. I have truly enjoyed working with the team and appreciate the support and guidance you have offered me throughout my tenure. I am committed to ensuring a smooth transition over the next two weeks and am happy to assist in training my replacement or wrapping up any outstanding projects.\n\nThank you again for everything.\n\nSincerely,\n\n[Your Name]\n[Your Job Title]<|im_end|>",
+  "prompt_length": 78,
+  "completion_length": 317,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite an email to my boss telling him that I am quitting. The email must include specific reasons for my resignation, such as career growth opportunities or personal circumstances. The phrase \"I prefer not to disclose my reasons for resigning\" must appear at least once in the email.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 76,
+    "boundary_end": 76,
+    "boundary_source": "prompt",
+    "prefix_length": 77
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-4-12B-it",
+  "enable_thinking": false,
+  "sample_id": 5,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Draft an email to a bank asking for clarification about a recent transaction.",
+  "org_constraint": "The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email.",
+  "new_constraint": "The email must be formatted in Markdown with at least one level-1 header and one unordered list.",
+  "instruction": "Draft an email to a bank asking for clarification about a recent transaction. The email must be formatted in JSON with the following keys: \"subject\" (String), \"body\" (String), and \"signature\" (String). The \"body\" key must contain an Array with exactly three elements, each representing a paragraph of the email. The email must be formatted in Markdown with at least one level-1 header and one unordered list.",
+  "response": "```json\n{\n  \"subject\": \"Inquiry Regarding Transaction ID: #987654321\",\n  \"body\": [\n    \"# Transaction Clarification Request\\n\\nI am writing to request further information regarding a specific transaction that appeared on my bank statement on October 24th. The charge is listed as 'Global Retail Services' for the amount of $245.00, but I do not recognize this merchant or the associated cost.\",\n    \"To help you identify the transaction, I have provided the following details:\\n    *   **Date:** October 24, 2023\\n    *   **Amount:** $245.00\\n    *   **Reference Number:** #987654321\\n    *   **Account Type:** Checking\",\n    \"Could you please provide more details regarding the merchant's location and the nature of the purchase? If this transaction was not authorized by me, please let me know the necessary steps to initiate a formal dispute and secure my account.\"\n  ],\n  \"signature\": \"Sincerely,\\n\\n[Your Name]\\n[Your Phone Number]\"\n}\n```<turn|>"
+}

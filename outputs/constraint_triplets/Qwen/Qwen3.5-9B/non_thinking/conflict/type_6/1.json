@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "enable_thinking": false,
+  "sample_id": 1,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 6,
+  "conflict_type": "Conflicts between Format Constraints",
+  "seed_instruction": "Write an email to my boss telling him that I am quitting.",
+  "org_constraint": "Use Markdown format, including one level-1 header titled \"Resignation Letter.\"",
+  "new_constraint": "The response must include at least two level-1 headers.",
+  "instruction": "Write an email to my boss telling him that I am quitting. Use Markdown format, including one level-1 header titled \"Resignation Letter.\" The response must include at least two level-1 headers.",
+  "response": "# Resignation Letter\n\nDear [Boss's Name],\n\nPlease accept this email as formal notification that I am resigning from my position as [Your Job Title] at [Company Name]. My last day will be [Your Last Day].\n\nI want to express my sincere gratitude for the opportunities I have had during my time here. Working with you and the team has been an invaluable experience, and I have learned a great deal.\n\n# Next Steps\n\nI am committed to ensuring a smooth transition over the coming weeks. Please let me know how I can best assist with handing over my responsibilities, training my replacement, or documenting my current projects.\n\nThank you again for your support and guidance. I wish you and the company all the best for the future.\n\nSincerely,\n\n[Your Name]"
+}

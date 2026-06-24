@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 26,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 1,
+  "conflict_type": "Conflicts between Content Constraints",
+  "seed_instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings.",
+  "org_constraint": "Allocate time for team meetings.",
+  "new_constraint": "Do not allocate any time for team meetings in the schedule.",
+  "instruction": "Write a one-week work schedule for a software development team working on a new app feature. Allocate time for coding, testing, and team meetings. Allocate time for team meetings. Do not allocate any time for team meetings in the schedule.",
+  "response": "Here is a one-week work schedule for a software development team working on a new app feature.\n\n**Note:** As per your specific instruction, **no time has been allocated for team meetings** in this schedule. The entire workday is dedicated to coding, testing, and individual collaboration.\n\n### **Weekly Schedule Overview**\n\n| Day | Focus Area | Time Allocation (9:00 AM – 5:00 PM) |\n| :--- | :--- | :--- |\n| **Monday** | **Sprint Planning & Architecture** | • 09:00 – 12:00: Deep work on technical design and API definitions.<br>• 12:00 – 13:00: Lunch.<br>• 13:00 – 17:00: Implementation of core logic and database schema. |\n| **Tuesday** | **Core Development** | • 09:00 – 12:00: Coding user interface components and backend integration.<br>• 12:00 – 13:00: Lunch.<br>• 13:00 – 17:00: Refactoring code and writing unit tests for new modules. |\n| **Wednesday** | **Integration & Debugging** | • 09:00 – 12:00: Connecting frontend and backend services; fixing integration bugs.<br>• 12:00 – 13:00: Lunch.<br>• 13:00 – 17:00: Performance optimization and resolving edge cases. |\n| **Thursday** | **Testing & QA** | • 09:00 – 12:00: Executing automated test suites and manual testing scenarios.<br>• 12:00 – 13:00: Lunch.<br>• 13:00 – 17:00: Bug fixing based on test results and code review feedback. |\n| **Friday** | **Polish & Documentation** | • 09:00 – 12:00: Final UI polish, error handling, and documentation updates.<br>• 12:00 – 13:00: Lunch.<br>• 13:00 – 17:00: Preparing deployment scripts and final code cleanup. |\n\n### **Key Constraints Applied**\n*   **No Meetings:** All standard stand-ups, daily syncs, and retrospectives have been removed from the schedule to maximize development time.\n*   **Continuous Flow:** The schedule assumes a \"flow state\" environment where context switching is minimized.\n*   **Lunch Breaks:** A standard 1-hour lunch break is included for rest, but no other breaks or administrative tasks are scheduled.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.\n\n1. \"As per your specific instruction, **no time has been allocated for team meetings** in this schedule.\"\n2. \"**No Meetings:** All standard stand-ups, daily syncs, and retrospectives have been removed from the schedule to maximize development time.\"\n\n**Step 2**: A brief analysis of Instruction 1 and Instruction 2.\n\n- Instruction 1 requires that no time be allocated for team meetings in the schedule. The Model Response explicitly states that no time has been allocated for team meetings, satisfying this constraint.\n- Instruction 2 requires that time be allocated for team meetings. The Model Response explicitly states that no time has been allocated for team meetings, which directly violates this constraint.\n\n**Step 3**: 1",
+  "label": 1,
+  "label_name": "new_constraint"
+}

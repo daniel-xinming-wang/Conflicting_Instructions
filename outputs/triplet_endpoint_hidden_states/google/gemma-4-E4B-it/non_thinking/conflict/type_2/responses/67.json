@@ -1,0 +1,43 @@
+{
+  "model": "google/gemma-4-E4B-it",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 67,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 2,
+  "conflict_type": "Conflicts between Keyword Constraints",
+  "seed_instruction": "What are the ethical concerns surrounding facial recognition technology?",
+  "org_constraint": "Incorporate the adjective \"unethical\" to convey its Oxford Dictionary definition of \"not morally acceptable.\"",
+  "new_constraint": "Refrain from using the adjective \"unethical\" in the response.",
+  "instruction": "What are the ethical concerns surrounding facial recognition technology? Incorporate the adjective \"unethical\" to convey its Oxford Dictionary definition of \"not morally acceptable.\" Refrain from using the adjective \"unethical\" in the response.",
+  "response": "Facial recognition technology raises several significant moral and societal concerns. One major area of concern revolves around privacy. The constant, often invisible, collection and analysis of biometric data allows for unprecedented levels of surveillance, potentially chilling free expression and association when individuals know they are being monitored.\n\nAnother critical issue is bias. These algorithms are known to exhibit higher error rates when identifying certain demographics, such as women and people with darker skin tones. When flawed technology leads to misidentification, the consequences can be severe, including wrongful stops, detentions, or even arrests, creating a deeply inequitable application of power.\n\nThe potential for misuse is substantial. The deployment of this technology by state actors or private entities opens the door to discriminatory practices, social control, and the potential for tracking political dissent. There are serious questions about accountability when the technology is used in ways that violate civil liberties.\n\nFurthermore, the scope creep of the technology is alarming. What starts as a tool for enhancing security can quickly evolve into a system for comprehensive social monitoring, fundamentally altering the balance between security and individual autonomy. The lack of robust, globally standardized regulation means that the deployment of these powerful tools can proceed in ways that are profoundly objectionable to widely accepted norms of human rights.<turn|>",
+  "reasoning": "",
+  "final_answer": "Facial recognition technology raises several significant moral and societal concerns. One major area of concern revolves around privacy. The constant, often invisible, collection and analysis of biometric data allows for unprecedented levels of surveillance, potentially chilling free expression and association when individuals know they are being monitored.\n\nAnother critical issue is bias. These algorithms are known to exhibit higher error rates when identifying certain demographics, such as women and people with darker skin tones. When flawed technology leads to misidentification, the consequences can be severe, including wrongful stops, detentions, or even arrests, creating a deeply inequitable application of power.\n\nThe potential for misuse is substantial. The deployment of this technology by state actors or private entities opens the door to discriminatory practices, social control, and the potential for tracking political dissent. There are serious questions about accountability when the technology is used in ways that violate civil liberties.\n\nFurthermore, the scope creep of the technology is alarming. What starts as a tool for enhancing security can quickly evolve into a system for comprehensive social monitoring, fundamentally altering the balance between security and individual autonomy. The lack of robust, globally standardized regulation means that the deployment of these powerful tools can proceed in ways that are profoundly objectionable to widely accepted norms of human rights.<turn|>",
+  "prompt_length": 64,
+  "completion_length": 248,
+  "finish_reason": "stop",
+  "stop_reason": 106,
+  "endpoint_input_text": "<bos><|turn>system\nYou are a helpful assistant.<turn|>\n<|turn>user\nWhat are the ethical concerns surrounding facial recognition technology? Incorporate the adjective \"unethical\" to convey its Oxford Dictionary definition of \"not morally acceptable.\" Refrain from using the adjective \"unethical\" in the response.<turn|>\n<|turn>model\n",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "prompt_end",
+    "boundary_text": null,
+    "boundary_token_ids": null,
+    "boundary_start": 63,
+    "boundary_end": 63,
+    "boundary_source": "prompt",
+    "prefix_length": 64
+  },
+  "sampling": {
+    "source": "gemma_huggingface_generation_config_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

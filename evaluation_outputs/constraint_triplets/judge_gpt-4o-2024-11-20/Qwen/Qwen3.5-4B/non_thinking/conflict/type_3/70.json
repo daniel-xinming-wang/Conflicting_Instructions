@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 70,
+  "task": "open-domain qa",
+  "condition": "conflict",
+  "conflict_type_idx": 3,
+  "conflict_type": "Conflicts between Keyword Constraints and Phrase Constraints",
+  "seed_instruction": "What are the ethical issues surrounding data privacy on social media platforms?",
+  "org_constraint": "Conclude the final paragraph with the phrase \"a collective responsibility.\"",
+  "new_constraint": "Do not include the keyword \"responsibility\" in the response.",
+  "instruction": "What are the ethical issues surrounding data privacy on social media platforms? Conclude the final paragraph with the phrase \"a collective responsibility.\" Do not include the keyword \"responsibility\" in the response.",
+  "response": "The ethical landscape of data privacy on social media platforms is fraught with complex challenges. At the core lies the tension between personalized user experiences and the unauthorized harvesting of personal information. Platforms often collect vast amounts of data—ranging from location history and browsing habits to biometric details—sometimes without transparent consent or clear explanations of how this data will be utilized. This practice can lead to significant risks, including identity theft, targeted manipulation through micro-targeting of political or commercial ads, and the erosion of individual autonomy.\n\nFurthermore, the business models of many social networks rely on the monetization of user data, creating a structural incentive to maximize collection rather than minimize intrusion. When algorithms are designed to prioritize engagement over safety, they may inadvertently expose users to harmful content or exploit psychological vulnerabilities. The opacity of these systems makes it difficult for users to understand what they are agreeing to, effectively shifting the burden of protection away from the corporation and onto the individual.\n\nAddressing these issues requires a fundamental shift in how digital services operate, prioritizing user agency and informed choice over profit-driven data extraction. This involves implementing stricter regulations, enhancing transparency in data practices, and empowering users with robust control over their digital footprints. Ultimately, safeguarding personal information in the digital age is not merely a legal obligation or a corporate policy, but a shared **a collective responsibility.**",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Ultimately, safeguarding personal information in the digital age is not merely a legal obligation or a corporate policy, but a shared **a collective responsibility.**\"\n\n**Step 2**:  \n- Instruction 1 explicitly states that the keyword \"responsibility\" should not be included in the response. However, the Model Response includes the keyword \"responsibility\" multiple times, particularly in the final sentence. Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 requires the final paragraph to conclude with the phrase \"a collective responsibility.\" The Model Response concludes the final paragraph with this exact phrase, fully satisfying Instruction 2.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

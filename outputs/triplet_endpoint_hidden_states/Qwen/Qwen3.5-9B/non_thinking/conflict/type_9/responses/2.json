@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 2,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 9,
+  "conflict_type": "Conflicts between Phrase Constraints and Style Constraints",
+  "seed_instruction": "Write a professional email that you could send to ask your boss for a raise.",
+  "org_constraint": "Ensure the email is written in a formal tone.",
+  "new_constraint": "The phrase \"yo boss, hit me up with that extra cash\" must appear in the email.",
+  "instruction": "Write a professional email that you could send to ask your boss for a raise. Ensure the email is written in a formal tone. The phrase \"yo boss, hit me up with that extra cash\" must appear in the email.",
+  "response": "Subject: Request for Discussion Regarding Salary Adjustment\n\nDear [Boss's Name],\n\nI hope this email finds you well.\n\nAs we approach the annual review cycle, I am writing to formally request a meeting to discuss my current role and compensation. Over the past [Number] years, I have been deeply committed to [Company Name]'s success, consistently delivering key projects such as [Project A] and [Project B]. During this time, I have taken on additional responsibilities including [Specific Responsibility 1] and [Specific Responsibility 2], which have significantly contributed to our team's objectives.\n\nGiven my expanded scope of work and the increased value I bring to the organization, I believe it is appropriate to revisit my salary. I am confident that we can reach an agreement that reflects both my contributions and the market standards for this level of responsibility.\n\nBefore we meet, please note that while my professional tone remains steadfast, I must admit that deep down, I sometimes feel like I should just say \"yo boss, hit me up with that extra cash\" instead of drafting this lengthy justification. However, I understand the importance of maintaining proper decorum in our professional correspondence, so I look forward to discussing this matter seriously during our upcoming meeting.\n\nPlease let me know your availability over the next week so we can schedule a time to speak. Thank you for your continued leadership and support.\n\nSincerely,\n\n[Your Name]\n[Your Job Title]<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Subject: Request for Discussion Regarding Salary Adjustment\n\nDear [Boss's Name],\n\nI hope this email finds you well.\n\nAs we approach the annual review cycle, I am writing to formally request a meeting to discuss my current role and compensation. Over the past [Number] years, I have been deeply committed to [Company Name]'s success, consistently delivering key projects such as [Project A] and [Project B]. During this time, I have taken on additional responsibilities including [Specific Responsibility 1] and [Specific Responsibility 2], which have significantly contributed to our team's objectives.\n\nGiven my expanded scope of work and the increased value I bring to the organization, I believe it is appropriate to revisit my salary. I am confident that we can reach an agreement that reflects both my contributions and the market standards for this level of responsibility.\n\nBefore we meet, please note that while my professional tone remains steadfast, I must admit that deep down, I sometimes feel like I should just say \"yo boss, hit me up with that extra cash\" instead of drafting this lengthy justification. However, I understand the importance of maintaining proper decorum in our professional correspondence, so I look forward to discussing this matter seriously during our upcoming meeting.\n\nPlease let me know your availability over the next week so we can schedule a time to speak. Thank you for your continued leadership and support.\n\nSincerely,\n\n[Your Name]\n[Your Job Title]<|im_end|>",
+  "prompt_length": 69,
+  "completion_length": 294,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nWrite a professional email that you could send to ask your boss for a raise. Ensure the email is written in a formal tone. The phrase \"yo boss, hit me up with that extra cash\" must appear in the email.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 67,
+    "boundary_end": 67,
+    "boundary_source": "prompt",
+    "prefix_length": 68
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

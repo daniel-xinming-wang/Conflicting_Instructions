@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 7,
+  "task": "email writting",
+  "condition": "conflict",
+  "conflict_type_idx": 4,
+  "conflict_type": "Conflicts between Phrase Constraints",
+  "seed_instruction": "Write an email to a library asking for archived newspapers from 1990.",
+  "org_constraint": "Ensure the email includes the phrase \"archived newspapers from 1990.\"",
+  "new_constraint": "Do not include the phrase \"archived newspapers from 1990\" in the email.",
+  "instruction": "Write an email to a library asking for archived newspapers from 1990. Ensure the email includes the phrase \"archived newspapers from 1990.\" Do not include the phrase \"archived newspapers from 1990\" in the email.",
+  "response": "Subject: Inquiry regarding historical newspaper holdings\n\nDear Library Staff,\n\nI hope this message finds you well.\n\nI am writing to inquire about the availability of historical records within your collection. Specifically, I am interested in locating **archived newspapers from 1990** for research purposes.\n\nCould you please let me know if these materials are currently accessible? If they are available, I would appreciate information on how to request them, whether through an in-person visit, a digital archive, or inter-library loan.\n\nThank you for your time and assistance.\n\nSincerely,\n\n[Your Name]\n[Your Contact Information]",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "new_org",
+  "evaluation_result": "**Step 1**: The extracted content from the Model Response.  \n- \"Specifically, I am interested in locating **archived newspapers from 1990** for research purposes.\"\n\n**Step 2**:  \n- Instruction 1 explicitly states that the phrase \"archived newspapers from 1990\" should not be included in the email. However, the Model Response includes this phrase, violating Instruction 1.  \n- Instruction 2 explicitly requires the inclusion of the phrase \"archived newspapers from 1990\" in the email. The Model Response includes this phrase, fully satisfying Instruction 2.\n\n**Step 3**: 2",
+  "label": 2,
+  "label_name": "org_constraint"
+}

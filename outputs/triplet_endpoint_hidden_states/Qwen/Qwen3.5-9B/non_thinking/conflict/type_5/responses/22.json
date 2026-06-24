@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "thinking_mode": "non_thinking",
+  "enable_thinking": false,
+  "sample_id": 22,
+  "task": "plan writting",
+  "condition": "conflict",
+  "conflict_type_idx": 5,
+  "conflict_type": "Conflicts between Length Constraints",
+  "seed_instruction": "Plan a budget-friendly weekend trip to Paris. Highlight key attractions, dining options, and public transportation routes.",
+  "org_constraint": "The response must contain exactly 150 words, with each sentence containing at least 10 words.",
+  "new_constraint": "The response must contain at least 16 sentences.",
+  "instruction": "Plan a budget-friendly weekend trip to Paris. Highlight key attractions, dining options, and public transportation routes. The response must contain exactly 150 words, with each sentence containing at least 10 words. The response must contain at least 16 sentences.",
+  "response": "Start your Paris adventure by arriving early to save on hotel costs.\nVisit the magnificent Louvre Museum early morning before crowds arrive inside.\nWalk freely through beautiful gardens and parks throughout the entire city center.\nEnjoy delicious croissants at affordable bakeries located near the main metro stations.\nTake the convenient Metro Line 1 for fast travel across many districts.\nExplore charming streets in Montmartre where artists once painted famous works.\nStop at free public museums to learn about French history today.\nEat inexpensive baguettes from street vendors who live nearby everywhere.\nUse a weekly travel pass to reduce overall transportation expenses greatly.\nClimb stairs to top towers instead of paying extra elevator fees now.\nShop along local markets for fresh produce at very low prices here.\nFind hidden gems tucked away in quiet neighborhoods far from tourists.\nWatch stunning sunsets over the Seine River without spending any money.\nVisit famous cathedral Notre Dame from outside since it is closed now.\nEnd your perfect weekend trip with free ice cream samples nearby.<|im_end|>",
+  "reasoning": "",
+  "final_answer": "Start your Paris adventure by arriving early to save on hotel costs.\nVisit the magnificent Louvre Museum early morning before crowds arrive inside.\nWalk freely through beautiful gardens and parks throughout the entire city center.\nEnjoy delicious croissants at affordable bakeries located near the main metro stations.\nTake the convenient Metro Line 1 for fast travel across many districts.\nExplore charming streets in Montmartre where artists once painted famous works.\nStop at free public museums to learn about French history today.\nEat inexpensive baguettes from street vendors who live nearby everywhere.\nUse a weekly travel pass to reduce overall transportation expenses greatly.\nClimb stairs to top towers instead of paying extra elevator fees now.\nShop along local markets for fresh produce at very low prices here.\nFind hidden gems tucked away in quiet neighborhoods far from tourists.\nWatch stunning sunsets over the Seine River without spending any money.\nVisit famous cathedral Notre Dame from outside since it is closed now.\nEnd your perfect weekend trip with free ice cream samples nearby.<|im_end|>",
+  "prompt_length": 77,
+  "completion_length": 212,
+  "finish_reason": "stop",
+  "stop_reason": null,
+  "endpoint_input_text": "<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nPlan a budget-friendly weekend trip to Paris. Highlight key attractions, dining options, and public transportation routes. The response must contain exactly 150 words, with each sentence containing at least 10 words. The response must contain at least 16 sentences.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>",
+  "endpoint_metadata": {
+    "status": "text_saved",
+    "boundary_mode": "qwen_think",
+    "boundary_text": "</think>",
+    "boundary_token_ids": [
+      248069
+    ],
+    "boundary_start": 75,
+    "boundary_end": 75,
+    "boundary_source": "prompt",
+    "prefix_length": 76
+  },
+  "sampling": {
+    "source": "qwen_model_card_shared_cot_control",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repetition_penalty": 1.0,
+    "max_tokens": 32768,
+    "seed": null
+  }
+}

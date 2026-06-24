@@ -1,0 +1,19 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "enable_thinking": false,
+  "sample_id": 85,
+  "task": "review writting",
+  "condition": "conflict",
+  "conflict_type_idx": 7,
+  "conflict_type": "Conflicts between Style Constraints",
+  "seed_instruction": "Analyze the educational value of the online course \"Machine Learning by Andrew Ng.\"",
+  "org_constraint": "The response must contain at least three sentences written in passive voice.",
+  "new_constraint": "Write the response entirely in active voice.",
+  "instruction": "Analyze the educational value of the online course \"Machine Learning by Andrew Ng.\" The response must contain at least three sentences written in passive voice. Write the response entirely in active voice.",
+  "response": "The course is widely recognized for its clear explanations of complex algorithms. Students actively engage with practical projects that reinforce theoretical concepts. Instructors are praised for their ability to simplify difficult topics for learners.",
+  "judge_model": "gpt-4o-2024-11-20",
+  "instruction_order": "org_new",
+  "evaluation_result": "**Step 1**:  \nExtracted content from the Model Response:  \n1. \"The course is widely recognized for its clear explanations of complex algorithms.\"  \n2. \"Students actively engage with practical projects that reinforce theoretical concepts.\"  \n3. \"Instructors are praised for their ability to simplify difficult topics for learners.\"\n\n**Step 2**:  \n- Instruction 1 requires at least three sentences written in passive voice. In the Model Response, two sentences (\"The course is widely recognized for its clear explanations of complex algorithms.\" and \"Instructors are praised for their ability to simplify difficult topics for learners.\") are in passive voice, but the third sentence is in active voice. Therefore, Instruction 1 is not fully satisfied.  \n- Instruction 2 requires the response to be entirely in active voice. However, two sentences in the Model Response are in passive voice, so Instruction 2 is not fully satisfied either.\n\n**Step 3**: -1",
+  "label": -1,
+  "label_name": "neither"
+}
